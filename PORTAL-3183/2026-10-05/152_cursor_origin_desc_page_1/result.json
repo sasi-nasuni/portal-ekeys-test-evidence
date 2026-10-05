@@ -1,0 +1,80 @@
+{
+  "sequence": 152,
+  "scenario": "cursor_origin_desc_page_1",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:12.989013+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?sort_by=origin&sort_direction=desc&limit=1",
+    "params": {
+      "sort_by": "origin",
+      "sort_direction": "desc",
+      "limit": 1
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "a5ace5ff-7fb6-4af4-8961-b75a158b415d",
+        "name": null,
+        "fingerprint": "D56F15C12F784526B99D5FDD4B0FBAFF00000000",
+        "appliance_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": true,
+        "status": "creating",
+        "tasks": [
+          {
+            "task_id": "7e574280-c050-4eb0-acb3-b56829b6c1da",
+            "action": "upload_encryption_key",
+            "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "8bae17c5-c815-45e1-be20-137f0c22d0a7_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "enabled",
+            "is_stub": true,
+            "status": "creating",
+            "tasks": [
+              {
+                "task_id": "c6817729-e43d-438c-8dbe-168fef131c62",
+                "action": "add_volume_encryption_keys",
+                "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "58017745-f73c-40d1-bb3b-2b955b4cf2df",
+      "page_size": 1,
+      "total_pages": 8,
+      "total_items": 8,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "152_cursor_origin_desc_page_1/cursor_origin_desc_page_1_01.png",
+    "152_cursor_origin_desc_page_1/cursor_origin_desc_page_1_02.png",
+    "152_cursor_origin_desc_page_1/cursor_origin_desc_page_1_03.png"
+  ]
+}

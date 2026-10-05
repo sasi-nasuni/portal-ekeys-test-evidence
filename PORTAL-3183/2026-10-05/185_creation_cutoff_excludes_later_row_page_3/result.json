@@ -1,0 +1,113 @@
+{
+  "sequence": 185,
+  "scenario": "creation_cutoff_excludes_later_row_page_3",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:53.987786+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=5320cce7-f219-464f-9e37-343b21e04b99&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "5320cce7-f219-464f-9e37-343b21e04b99"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "d3d4592c-a389-4fdf-be86-19d824cdfa14",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Backup-West",
+        "fingerprint": "3FD93C42B9EE4879AAFF34883E99601A00000007",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "8bae17c5-c815-45e1-be20-137f0c22d0a7_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      },
+      {
+        "id": "af2fde01-75a0-48db-a346-eab45742adcb",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-beta",
+        "fingerprint": "904DD4AEABC5418D89E70F121B7A031700000003",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "9b9a4c77-3702-4a0a-a422-0af601200c0a",
+            "action": "delete_encryption_key",
+            "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-05T07:14:42.191093Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "76999b1f-8756-49a9-b90d-13b923120677_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "90d51643-de90-45bd-aa0c-b9f8b27d0832",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-05T07:14:42.191093Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "bb27cf85-0035-4097-99a3-c53483af1d4d",
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 3
+    }
+  },
+  "screenshots": [
+    "185_creation_cutoff_excludes_later_row_page_3/creation_cutoff_excludes_later_row_page_3_01.png",
+    "185_creation_cutoff_excludes_later_row_page_3/creation_cutoff_excludes_later_row_page_3_02.png",
+    "185_creation_cutoff_excludes_later_row_page_3/creation_cutoff_excludes_later_row_page_3_03.png",
+    "185_creation_cutoff_excludes_later_row_page_3/creation_cutoff_excludes_later_row_page_3_04.png"
+  ]
+}

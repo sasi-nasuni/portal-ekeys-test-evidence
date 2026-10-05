@@ -1,0 +1,87 @@
+{
+  "sequence": 132,
+  "scenario": "cursor_type_asc_page_8",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:46:53.430357+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?sort_by=type&sort_direction=asc&iterator_id=537097da-e361-4679-a91b-7a6eff3c54cd&limit=1",
+    "params": {
+      "sort_by": "type",
+      "sort_direction": "asc",
+      "limit": 1,
+      "iterator_id": "537097da-e361-4679-a91b-7a6eff3c54cd"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "af2fde01-75a0-48db-a346-eab45742adcb",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-beta",
+        "fingerprint": "904DD4AEABC5418D89E70F121B7A031700000003",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "9b9a4c77-3702-4a0a-a422-0af601200c0a",
+            "action": "delete_encryption_key",
+            "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-05T07:14:42.191093Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "76999b1f-8756-49a9-b90d-13b923120677_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "90d51643-de90-45bd-aa0c-b9f8b27d0832",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-05T07:14:42.191093Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 8,
+      "total_items": 8,
+      "page": 8
+    }
+  },
+  "screenshots": [
+    "132_cursor_type_asc_page_8/cursor_type_asc_page_8_01.png",
+    "132_cursor_type_asc_page_8/cursor_type_asc_page_8_02.png",
+    "132_cursor_type_asc_page_8/cursor_type_asc_page_8_03.png"
+  ]
+}

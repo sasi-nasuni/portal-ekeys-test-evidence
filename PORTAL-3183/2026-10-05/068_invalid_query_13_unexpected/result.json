@@ -1,0 +1,36 @@
+{
+  "sequence": 68,
+  "scenario": "invalid_query_13_unexpected",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "Swagger requestInterceptor used for invalid query",
+  "captured_at": "2026-10-05T12:51:19.339971+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50&unexpected=value",
+    "params": {
+      "unexpected": "value"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "extra_forbidden",
+        "loc": [
+          "query",
+          "unexpected"
+        ],
+        "msg": "Extra inputs are not permitted",
+        "input": "value"
+      }
+    ]
+  },
+  "screenshots": [
+    "068_invalid_query_13_unexpected/server-validation/invalid_query_13_unexpected.png"
+  ]
+}

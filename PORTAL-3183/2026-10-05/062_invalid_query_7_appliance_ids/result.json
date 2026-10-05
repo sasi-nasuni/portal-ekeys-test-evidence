@@ -1,0 +1,40 @@
+{
+  "sequence": 62,
+  "scenario": "invalid_query_7_appliance_ids",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:45:30.897396+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?appliance_ids=not-a-uuid&limit=50",
+    "params": {
+      "appliance_ids": "not-a-uuid"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "query",
+          "appliance_ids",
+          0
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1",
+        "input": "not-a-uuid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1"
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "062_invalid_query_7_appliance_ids/invalid_query_7_appliance_ids.png"
+  ]
+}

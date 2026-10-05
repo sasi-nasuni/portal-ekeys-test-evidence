@@ -1,0 +1,39 @@
+{
+  "sequence": 58,
+  "scenario": "invalid_query_3_origin",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "Swagger requestInterceptor used for invalid query",
+  "captured_at": "2026-10-05T12:51:13.907290+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50&origin=invalid",
+    "params": {
+      "origin": "invalid"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "enum",
+        "loc": [
+          "query",
+          "origin"
+        ],
+        "msg": "Input should be 'generated' or 'uploaded'",
+        "input": "invalid",
+        "ctx": {
+          "expected": "'generated' or 'uploaded'"
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "058_invalid_query_3_origin/server-validation/invalid_query_3_origin.png"
+  ]
+}

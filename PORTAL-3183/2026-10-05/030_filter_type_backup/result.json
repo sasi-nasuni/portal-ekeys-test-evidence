@@ -1,0 +1,80 @@
+{
+  "sequence": 30,
+  "scenario": "filter_type_backup",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:17.219517+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?type=backup&limit=50",
+    "params": {
+      "type": "backup"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "a3d512a7-55e8-4d1d-bc25-7c006ba47952",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Backup-East",
+        "fingerprint": "8B39E6FA2A5A4501B77F52A4E706A2E200000006",
+        "appliance_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      },
+      {
+        "id": "4d2caaf9-f84d-4f3c-9fd4-577f689f36ca",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Backup-West",
+        "fingerprint": "239AFC5CE49A432B91DAA170A68E82B000000007",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "a779e654-7363-4f5d-818e-b1270f99b0a4_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 2,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "030_filter_type_backup/filter_type_backup_01.png",
+    "030_filter_type_backup/filter_type_backup_02.png",
+    "030_filter_type_backup/filter_type_backup_03.png"
+  ]
+}

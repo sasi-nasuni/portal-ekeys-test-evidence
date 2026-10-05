@@ -1,0 +1,39 @@
+{
+  "sequence": 63,
+  "scenario": "invalid_query_8_iterator_id",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:45:31.720723+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=not-a-uuid&limit=50",
+    "params": {
+      "iterator_id": "not-a-uuid"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "query",
+          "iterator_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1",
+        "input": "not-a-uuid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1"
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "063_invalid_query_8_iterator_id/invalid_query_8_iterator_id.png"
+  ]
+}

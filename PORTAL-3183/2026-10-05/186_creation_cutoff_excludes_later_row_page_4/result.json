@@ -1,0 +1,71 @@
+{
+  "sequence": 186,
+  "scenario": "creation_cutoff_excludes_later_row_page_4",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:54.862726+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=bb27cf85-0035-4097-99a3-c53483af1d4d&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "bb27cf85-0035-4097-99a3-c53483af1d4d"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "6139ad3d-ce2c-428a-bcaf-66f28af91161",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "93692BD3C54A40BB956AB2A2CF1761BA00000004",
+        "appliance_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "8d85c341-a106-4a17-a42d-6282823e6d95",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "77C15368868F432CA2917862AC2A79D400000005",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 4
+    }
+  },
+  "screenshots": [
+    "186_creation_cutoff_excludes_later_row_page_4/creation_cutoff_excludes_later_row_page_4_01.png",
+    "186_creation_cutoff_excludes_later_row_page_4/creation_cutoff_excludes_later_row_page_4_02.png"
+  ]
+}

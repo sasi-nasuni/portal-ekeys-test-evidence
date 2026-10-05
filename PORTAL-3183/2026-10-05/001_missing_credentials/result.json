@@ -1,0 +1,24 @@
+{
+  "sequence": 1,
+  "scenario": "missing_credentials",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:38:10.402890+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50",
+    "params": null,
+    "authentication": "none"
+  },
+  "expected_status": 401,
+  "actual_status": 401,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "No credentials provided",
+    "detail": null
+  },
+  "screenshots": [
+    "001_missing_credentials/missing_credentials.png"
+  ]
+}

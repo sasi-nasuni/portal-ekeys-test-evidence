@@ -1,0 +1,103 @@
+{
+  "sequence": 36,
+  "scenario": "filter_algorithm_elgamal",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:23.837358+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?algorithm=elgamal&limit=50",
+    "params": {
+      "algorithm": "elgamal"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "7433f9b7-e326-4856-8d40-8e413e0f4f60",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-beta",
+        "fingerprint": "32489CFF1BCA484EADDD8AA7F8711C1900000003",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "3802caa8-40aa-4215-8ec0-d0f1e4bc1b2d",
+            "action": "delete_encryption_key",
+            "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-05T07:08:11.560355Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "81385622-592e-44b8-a3a2-953e582685d0_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "24551089-bb47-4eda-b6be-168cfb785b30",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-05T07:08:11.560355Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "6f81a6bf-a1fb-4d3e-995c-774b4af557b8",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "3577362F8DBE42FBB44CA50B138F90DD00000005",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 2,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "036_filter_algorithm_elgamal/filter_algorithm_elgamal_01.png",
+    "036_filter_algorithm_elgamal/filter_algorithm_elgamal_02.png",
+    "036_filter_algorithm_elgamal/filter_algorithm_elgamal_03.png",
+    "036_filter_algorithm_elgamal/filter_algorithm_elgamal_04.png"
+  ]
+}

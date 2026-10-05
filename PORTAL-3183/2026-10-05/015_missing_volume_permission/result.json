@@ -1,0 +1,24 @@
+{
+  "sequence": 15,
+  "scenario": "missing_volume_permission",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:38:44.523511+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50",
+    "params": null,
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 403,
+  "actual_status": 403,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "User does not have the required permissions: View Volume Encryption Keys",
+    "detail": null
+  },
+  "screenshots": [
+    "015_missing_volume_permission/missing_volume_permission.png"
+  ]
+}

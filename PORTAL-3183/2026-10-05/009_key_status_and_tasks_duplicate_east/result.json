@@ -1,0 +1,52 @@
+{
+  "sequence": 9,
+  "scenario": "key_status_and_tasks_duplicate_east",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:38:36.724238+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?search=C24ED7F3B57D4D2E81B61B53D31A288800000004&limit=50",
+    "params": {
+      "search": "C24ED7F3B57D4D2E81B61B53D31A288800000004"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "255fb151-277b-4ad6-9f97-11314dd1cd3f",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "C24ED7F3B57D4D2E81B61B53D31A288800000004",
+        "appliance_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "009_key_status_and_tasks_duplicate_east/key_status_and_tasks_duplicate_east_01.png",
+    "009_key_status_and_tasks_duplicate_east/key_status_and_tasks_duplicate_east_02.png"
+  ]
+}

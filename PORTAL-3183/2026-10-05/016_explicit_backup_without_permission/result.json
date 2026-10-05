@@ -1,0 +1,26 @@
+{
+  "sequence": 16,
+  "scenario": "explicit_backup_without_permission",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:38:45.993385+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?type=backup&limit=50",
+    "params": {
+      "type": "backup"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 403,
+  "actual_status": 403,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "User does not have the required permission: View Backup Keys",
+    "detail": null
+  },
+  "screenshots": [
+    "016_explicit_backup_without_permission/explicit_backup_without_permission.png"
+  ]
+}

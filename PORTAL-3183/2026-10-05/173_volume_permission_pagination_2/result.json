@@ -1,0 +1,144 @@
+{
+  "sequence": 173,
+  "scenario": "volume_permission_pagination_2",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:34.361759+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=e3d954b4-1321-440f-a8d9-6501f19fa4b3&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "e3d954b4-1321-440f-a8d9-6501f19fa4b3"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "08696cba-e2c7-43e8-a82a-b9418d795868",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Alpha",
+        "fingerprint": "A398133AF0524C32BC83382904A13C3B00000002",
+        "appliance_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "pending",
+        "tasks": [
+          {
+            "task_id": "281b06f0-1305-4663-96f2-f0db6c9a6c70",
+            "action": "escrow_encryption_key",
+            "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+            "state": "in_progress",
+            "error": null
+          },
+          {
+            "task_id": "eb11709d-c873-4c58-a794-4223d0c83aec",
+            "action": "delete_encryption_key",
+            "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+            "state": "failed",
+            "error": {
+              "message": "Test deletion failed",
+              "detected_at": "2026-10-05T07:14:42.191093Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "8bae17c5-c815-45e1-be20-137f0c22d0a7_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "volume_guid": "a5051ba0-2aab-48c0-adfa-edca1a59aca2_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-MiXeD 100%_Path\\Name",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "c0a34439-b32c-4633-9980-740e36a1b316",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "af2fde01-75a0-48db-a346-eab45742adcb",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-beta",
+        "fingerprint": "904DD4AEABC5418D89E70F121B7A031700000003",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "9b9a4c77-3702-4a0a-a422-0af601200c0a",
+            "action": "delete_encryption_key",
+            "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-05T07:14:42.191093Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "76999b1f-8756-49a9-b90d-13b923120677_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "90d51643-de90-45bd-aa0c-b9f8b27d0832",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-05T07:14:42.191093Z"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "iterator_id": "ac870434-fae4-4c01-8b4e-9b0510f2402b",
+      "page_size": 2,
+      "total_pages": 3,
+      "total_items": 6,
+      "page": 2
+    }
+  },
+  "screenshots": [
+    "173_volume_permission_pagination_2/volume_permission_pagination_2_01.png",
+    "173_volume_permission_pagination_2/volume_permission_pagination_2_02.png",
+    "173_volume_permission_pagination_2/volume_permission_pagination_2_03.png",
+    "173_volume_permission_pagination_2/volume_permission_pagination_2_04.png",
+    "173_volume_permission_pagination_2/volume_permission_pagination_2_05.png"
+  ]
+}

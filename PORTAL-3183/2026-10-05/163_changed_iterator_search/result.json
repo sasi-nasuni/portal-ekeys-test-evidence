@@ -1,0 +1,28 @@
+{
+  "sequence": 163,
+  "scenario": "changed_iterator_search",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:23.972792+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?search=Alpha&iterator_id=96dec665-70cf-4da5-863a-6bfc538c5984&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "96dec665-70cf-4da5-863a-6bfc538c5984",
+      "search": "Alpha"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 400,
+  "actual_status": 400,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Iterator parameters do not match current request.",
+    "detail": null
+  },
+  "screenshots": [
+    "163_changed_iterator_search/changed_iterator_search.png"
+  ]
+}

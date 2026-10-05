@@ -1,0 +1,32 @@
+{
+  "sequence": 44,
+  "scenario": "foreign_search_empty",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:32.147561+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?search=FOREIGN-SENTINEL&limit=50",
+    "params": {
+      "search": "FOREIGN-SENTINEL"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "044_foreign_search_empty/foreign_search_empty.png"
+  ]
+}

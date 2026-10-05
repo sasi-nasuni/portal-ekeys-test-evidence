@@ -1,0 +1,78 @@
+{
+  "sequence": 5,
+  "scenario": "key_status_and_tasks_stub_null",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:38:33.166904+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?search=C8CAFF9613F94862A055C979216F8DC300000000&limit=50",
+    "params": {
+      "search": "C8CAFF9613F94862A055C979216F8DC300000000"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "5cfcea61-ed52-4de0-b8e9-c01912072a6e",
+        "name": null,
+        "fingerprint": "C8CAFF9613F94862A055C979216F8DC300000000",
+        "appliance_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": true,
+        "status": "creating",
+        "tasks": [
+          {
+            "task_id": "554bad5f-b341-4913-af7d-e114c0b674e6",
+            "action": "upload_encryption_key",
+            "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "a779e654-7363-4f5d-818e-b1270f99b0a4_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "enabled",
+            "is_stub": true,
+            "status": "creating",
+            "tasks": [
+              {
+                "task_id": "74ba4a20-7c85-497f-8f61-63db26ee1353",
+                "action": "add_volume_encryption_keys",
+                "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "005_key_status_and_tasks_stub_null/key_status_and_tasks_stub_null_01.png",
+    "005_key_status_and_tasks_stub_null/key_status_and_tasks_stub_null_02.png",
+    "005_key_status_and_tasks_stub_null/key_status_and_tasks_stub_null_03.png"
+  ]
+}

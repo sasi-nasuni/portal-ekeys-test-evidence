@@ -1,0 +1,27 @@
+{
+  "sequence": 180,
+  "scenario": "restricted_user_rejects_full_scope_iterator",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:42.607895+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=6c7149c9-8ccf-4ac5-8181-049bd28c418a&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "6c7149c9-8ccf-4ac5-8181-049bd28c418a"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 400,
+  "actual_status": 400,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Iterator parameters do not match current request.",
+    "detail": null
+  },
+  "screenshots": [
+    "180_restricted_user_rejects_full_scope_iterator/restricted_user_rejects_full_scope_iterator.png"
+  ]
+}

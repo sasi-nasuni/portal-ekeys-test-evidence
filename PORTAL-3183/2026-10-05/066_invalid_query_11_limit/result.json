@@ -1,0 +1,39 @@
+{
+  "sequence": 66,
+  "scenario": "invalid_query_11_limit",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "Swagger requestInterceptor used for invalid query",
+  "captured_at": "2026-10-05T12:51:18.566600+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=101",
+    "params": {
+      "limit": "101"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "less_than_equal",
+        "loc": [
+          "query",
+          "limit"
+        ],
+        "msg": "Input should be less than or equal to 100",
+        "input": "101",
+        "ctx": {
+          "le": 100
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "066_invalid_query_11_limit/server-validation/invalid_query_11_limit.png"
+  ]
+}

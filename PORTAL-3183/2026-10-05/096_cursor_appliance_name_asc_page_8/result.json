@@ -1,0 +1,64 @@
+{
+  "sequence": 96,
+  "scenario": "cursor_appliance_name_asc_page_8",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:46:19.089722+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?sort_by=appliance_name&sort_direction=asc&iterator_id=ae52edd5-d714-4fef-8cde-0229a6f863b2&limit=1",
+    "params": {
+      "sort_by": "appliance_name",
+      "sort_direction": "asc",
+      "limit": 1,
+      "iterator_id": "ae52edd5-d714-4fef-8cde-0229a6f863b2"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "d3d4592c-a389-4fdf-be86-19d824cdfa14",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Backup-West",
+        "fingerprint": "3FD93C42B9EE4879AAFF34883E99601A00000007",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "8bae17c5-c815-45e1-be20-137f0c22d0a7_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 8,
+      "total_items": 8,
+      "page": 8
+    }
+  },
+  "screenshots": [
+    "096_cursor_appliance_name_asc_page_8/cursor_appliance_name_asc_page_8_01.png",
+    "096_cursor_appliance_name_asc_page_8/cursor_appliance_name_asc_page_8_02.png"
+  ]
+}

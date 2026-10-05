@@ -1,0 +1,67 @@
+{
+  "sequence": 174,
+  "scenario": "volume_permission_pagination_3",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:35.235739+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=ac870434-fae4-4c01-8b4e-9b0510f2402b&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "ac870434-fae4-4c01-8b4e-9b0510f2402b"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "6139ad3d-ce2c-428a-bcaf-66f28af91161",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "93692BD3C54A40BB956AB2A2CF1761BA00000004",
+        "appliance_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": []
+      },
+      {
+        "id": "8d85c341-a106-4a17-a42d-6282823e6d95",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "77C15368868F432CA2917862AC2A79D400000005",
+        "appliance_id": "d5976d30-47e8-4a68-b38c-d4514f43bb01",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 2,
+      "total_pages": 3,
+      "total_items": 6,
+      "page": 3
+    }
+  },
+  "screenshots": [
+    "174_volume_permission_pagination_3/volume_permission_pagination_3_01.png",
+    "174_volume_permission_pagination_3/volume_permission_pagination_3_02.png"
+  ]
+}

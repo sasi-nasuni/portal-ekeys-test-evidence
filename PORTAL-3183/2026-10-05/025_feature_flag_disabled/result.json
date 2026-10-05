@@ -1,0 +1,24 @@
+{
+  "sequence": 25,
+  "scenario": "feature_flag_disabled",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:03.518795+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50",
+    "params": null,
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 403,
+  "actual_status": 403,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "This feature is not enabled for your account",
+    "detail": null
+  },
+  "screenshots": [
+    "025_feature_flag_disabled/feature_flag_disabled.png"
+  ]
+}

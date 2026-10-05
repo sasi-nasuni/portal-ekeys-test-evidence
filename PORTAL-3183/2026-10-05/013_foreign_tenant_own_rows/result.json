@@ -1,0 +1,76 @@
+{
+  "sequence": 13,
+  "scenario": "foreign_tenant_own_rows",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:38:40.938330+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50",
+    "params": null,
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "12efb8a9-b699-43d1-8ddd-2c9e9d375e27",
+        "name": "PORTAL3183TEST-20261005-full-swagger-B-FOREIGN-SENTINEL",
+        "fingerprint": "74DCA0FC36504284B97874E72BE471A700000000",
+        "appliance_id": "e60e403d-0852-4399-a7c0-598b341c873f",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-B-appliance-foreign",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "pending",
+        "tasks": [
+          {
+            "task_id": "69b718f2-96f9-4acc-8ef5-0b22a92e34f1",
+            "action": "escrow_encryption_key",
+            "executor_id": "e60e403d-0852-4399-a7c0-598b341c873f",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "77a05f89-5f6c-46bb-8d23-de8bfe05c45e_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-B-FOREIGN-VOLUME",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "e1fcd3c0-f485-4fe6-b800-6f7b88c0d77f",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "e60e403d-0852-4399-a7c0-598b341c873f",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "013_foreign_tenant_own_rows/foreign_tenant_own_rows_01.png",
+    "013_foreign_tenant_own_rows/foreign_tenant_own_rows_02.png",
+    "013_foreign_tenant_own_rows/foreign_tenant_own_rows_03.png"
+  ]
+}

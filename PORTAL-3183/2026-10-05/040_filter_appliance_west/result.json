@@ -1,0 +1,161 @@
+{
+  "sequence": 40,
+  "scenario": "filter_appliance_west",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:28.461294+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?appliance_ids=4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59&limit=50",
+    "params": {
+      "appliance_ids": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "f4abb4d9-e015-45fb-b20f-0f8e533246e0",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Zeta-stub",
+        "fingerprint": "821F9325DB294B739A203C19837F229700000001",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "a53a2032-edef-4055-aff0-5acd8488fd2d",
+            "action": "upload_encryption_key",
+            "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-05T07:08:11.560355Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "4d2caaf9-f84d-4f3c-9fd4-577f689f36ca",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Backup-West",
+        "fingerprint": "239AFC5CE49A432B91DAA170A68E82B000000007",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "a779e654-7363-4f5d-818e-b1270f99b0a4_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      },
+      {
+        "id": "7433f9b7-e326-4856-8d40-8e413e0f4f60",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-beta",
+        "fingerprint": "32489CFF1BCA484EADDD8AA7F8711C1900000003",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "3802caa8-40aa-4215-8ec0-d0f1e4bc1b2d",
+            "action": "delete_encryption_key",
+            "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-05T07:08:11.560355Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "81385622-592e-44b8-a3a2-953e582685d0_0",
+            "volume_name": "PORTAL3183TEST-20261005-full-swagger-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "24551089-bb47-4eda-b6be-168cfb785b30",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-05T07:08:11.560355Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "6f81a6bf-a1fb-4d3e-995c-774b4af557b8",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "3577362F8DBE42FBB44CA50B138F90DD00000005",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 4,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "040_filter_appliance_west/filter_appliance_west_01.png",
+    "040_filter_appliance_west/filter_appliance_west_02.png",
+    "040_filter_appliance_west/filter_appliance_west_03.png",
+    "040_filter_appliance_west/filter_appliance_west_04.png",
+    "040_filter_appliance_west/filter_appliance_west_05.png",
+    "040_filter_appliance_west/filter_appliance_west_06.png"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "sequence": 130,
+  "scenario": "cursor_type_asc_page_6",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:46:51.645829+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?sort_by=type&sort_direction=asc&iterator_id=8dcef3f2-57c7-4981-a933-7641fed5a038&limit=1",
+    "params": {
+      "sort_by": "type",
+      "sort_direction": "asc",
+      "limit": 1,
+      "iterator_id": "8dcef3f2-57c7-4981-a933-7641fed5a038"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "6139ad3d-ce2c-428a-bcaf-66f28af91161",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "93692BD3C54A40BB956AB2A2CF1761BA00000004",
+        "appliance_id": "f997baf5-6d81-4b6b-90ba-bd2d2037798b",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "885c65c2-b4b2-4859-8201-61c95c91b7fd",
+      "page_size": 1,
+      "total_pages": 8,
+      "total_items": 8,
+      "page": 6
+    }
+  },
+  "screenshots": [
+    "130_cursor_type_asc_page_6/cursor_type_asc_page_6_01.png",
+    "130_cursor_type_asc_page_6/cursor_type_asc_page_6_02.png"
+  ]
+}

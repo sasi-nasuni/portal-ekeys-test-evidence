@@ -1,0 +1,36 @@
+{
+  "sequence": 64,
+  "scenario": "invalid_query_9_is_escrowed",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "Swagger requestInterceptor used for invalid query",
+  "captured_at": "2026-10-05T12:51:17.007418+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50&is_escrowed=invalid",
+    "params": {
+      "is_escrowed": "invalid"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "bool_parsing",
+        "loc": [
+          "query",
+          "is_escrowed"
+        ],
+        "msg": "Input should be a valid boolean, unable to interpret input",
+        "input": "invalid"
+      }
+    ]
+  },
+  "screenshots": [
+    "064_invalid_query_9_is_escrowed/server-validation/invalid_query_9_is_escrowed.png"
+  ]
+}

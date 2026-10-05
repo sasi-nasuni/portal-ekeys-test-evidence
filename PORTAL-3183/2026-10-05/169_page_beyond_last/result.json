@@ -1,0 +1,33 @@
+{
+  "sequence": 169,
+  "scenario": "page_beyond_last",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:29.565062+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?page=8&limit=2",
+    "params": {
+      "limit": 2,
+      "page": 8
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 8
+    }
+  },
+  "screenshots": [
+    "169_page_beyond_last/page_beyond_last.png"
+  ]
+}

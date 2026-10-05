@@ -1,0 +1,119 @@
+{
+  "sequence": 32,
+  "scenario": "filter_state_unused",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:19.496027+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?state=unused&limit=50",
+    "params": {
+      "state": "unused"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [
+      {
+        "id": "f4abb4d9-e015-45fb-b20f-0f8e533246e0",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Zeta-stub",
+        "fingerprint": "821F9325DB294B739A203C19837F229700000001",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "a53a2032-edef-4055-aff0-5acd8488fd2d",
+            "action": "upload_encryption_key",
+            "executor_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-05T07:08:11.560355Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "a3d512a7-55e8-4d1d-bc25-7c006ba47952",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Backup-East",
+        "fingerprint": "8B39E6FA2A5A4501B77F52A4E706A2E200000006",
+        "appliance_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      },
+      {
+        "id": "255fb151-277b-4ad6-9f97-11314dd1cd3f",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "C24ED7F3B57D4D2E81B61B53D31A288800000004",
+        "appliance_id": "dbec955c-11b4-4682-96f0-25dc9dd2210e",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "6f81a6bf-a1fb-4d3e-995c-774b4af557b8",
+        "name": "PORTAL3183TEST-20261005-full-swagger-A-Duplicate",
+        "fingerprint": "3577362F8DBE42FBB44CA50B138F90DD00000005",
+        "appliance_id": "4d0d1073-a71e-4c5c-b59a-6a3f5d6cdf59",
+        "appliance_name": "PORTAL3183TEST-20261005-full-swagger-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 4,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "032_filter_state_unused/filter_state_unused_01.png",
+    "032_filter_state_unused/filter_state_unused_02.png",
+    "032_filter_state_unused/filter_state_unused_03.png",
+    "032_filter_state_unused/filter_state_unused_04.png"
+  ]
+}

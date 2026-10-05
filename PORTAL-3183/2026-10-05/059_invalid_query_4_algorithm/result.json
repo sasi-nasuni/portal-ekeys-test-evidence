@@ -1,0 +1,39 @@
+{
+  "sequence": 59,
+  "scenario": "invalid_query_4_algorithm",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "Swagger requestInterceptor used for invalid query",
+  "captured_at": "2026-10-05T12:51:14.682360+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50&algorithm=aes",
+    "params": {
+      "algorithm": "aes"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "enum",
+        "loc": [
+          "query",
+          "algorithm"
+        ],
+        "msg": "Input should be 'rsa' or 'elgamal'",
+        "input": "aes",
+        "ctx": {
+          "expected": "'rsa' or 'elgamal'"
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "059_invalid_query_4_algorithm/server-validation/invalid_query_4_algorithm.png"
+  ]
+}

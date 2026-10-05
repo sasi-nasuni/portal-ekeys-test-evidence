@@ -1,0 +1,32 @@
+{
+  "sequence": 43,
+  "scenario": "foreign_appliance_empty",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:39:31.329370+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?appliance_ids=e60e403d-0852-4399-a7c0-598b341c873f&limit=50",
+    "params": {
+      "appliance_ids": "e60e403d-0852-4399-a7c0-598b341c873f"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 200,
+  "actual_status": 200,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "screenshots": [
+    "043_foreign_appliance_empty/foreign_appliance_empty.png"
+  ]
+}

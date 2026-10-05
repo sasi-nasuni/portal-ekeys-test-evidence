@@ -1,0 +1,39 @@
+{
+  "sequence": 60,
+  "scenario": "invalid_query_5_sort_by",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "Swagger requestInterceptor used for invalid query",
+  "captured_at": "2026-10-05T12:51:15.458280+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?limit=50&sort_by=invalid",
+    "params": {
+      "sort_by": "invalid"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 422,
+  "actual_status": 422,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "enum",
+        "loc": [
+          "query",
+          "sort_by"
+        ],
+        "msg": "Input should be 'name', 'appliance_name', 'fingerprint', 'type' or 'origin'",
+        "input": "invalid",
+        "ctx": {
+          "expected": "'name', 'appliance_name', 'fingerprint', 'type' or 'origin'"
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "060_invalid_query_5_sort_by/server-validation/invalid_query_5_sort_by.png"
+  ]
+}

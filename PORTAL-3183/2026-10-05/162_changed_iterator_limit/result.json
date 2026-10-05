@@ -1,0 +1,27 @@
+{
+  "sequence": 162,
+  "scenario": "changed_iterator_limit",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:23.143346+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=96dec665-70cf-4da5-863a-6bfc538c5984&limit=3",
+    "params": {
+      "limit": 3,
+      "iterator_id": "96dec665-70cf-4da5-863a-6bfc538c5984"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 400,
+  "actual_status": 400,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Iterator parameters do not match current request.",
+    "detail": null
+  },
+  "screenshots": [
+    "162_changed_iterator_limit/changed_iterator_limit.png"
+  ]
+}

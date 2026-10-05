@@ -1,0 +1,27 @@
+{
+  "sequence": 166,
+  "scenario": "consumed_iterator_rejected",
+  "source": "Swagger UI Try it out / Execute",
+  "detail": "",
+  "captured_at": "2026-10-05T12:47:26.565665+05:30",
+  "request": {
+    "url": "http://localhost:8000/encryption-keys?iterator_id=96dec665-70cf-4da5-863a-6bfc538c5984&limit=2",
+    "params": {
+      "limit": 2,
+      "iterator_id": "96dec665-70cf-4da5-863a-6bfc538c5984"
+    },
+    "authentication": "Bearer [REDACTED]"
+  },
+  "expected_status": 400,
+  "actual_status": 400,
+  "outcome": "PASS",
+  "assertion_failures": [],
+  "limitation": null,
+  "response": {
+    "message": "Iterator expired or not found",
+    "detail": null
+  },
+  "screenshots": [
+    "166_consumed_iterator_rejected/consumed_iterator_rejected.png"
+  ]
+}

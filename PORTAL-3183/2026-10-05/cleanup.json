@@ -1,0 +1,16 @@
+{
+  "scope": "Synthetic database records across all fixture batches",
+  "remaining_fixture_rows": {
+    "accounts": 0,
+    "users": 0,
+    "roles": 0,
+    "user_role": 0,
+    "role_permissions": 0,
+    "edges_v2": 0,
+    "volumes_v2": 0,
+    "encryption_keys": 0,
+    "volume_encryption_key_associations": 0,
+    "tasks": 0
+  },
+  "note": "Database cleanup was verified after testing. This report does not assert termination of every local browser process."
+}
