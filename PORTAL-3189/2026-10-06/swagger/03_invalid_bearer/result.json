@@ -1,0 +1,23 @@
+{
+  "id": 3,
+  "name": "invalid_bearer",
+  "status": 401,
+  "body": {
+    "message": "Invalid token",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/03_invalid_bearer/invalid_bearer_inputs.png",
+    "swagger/03_invalid_bearer/invalid_bearer_response.png"
+  ],
+  "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 401,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:19:08.472Z",
+  "scenario": "invalid_bearer",
+  "detail": "",
+  "passed": true
+}

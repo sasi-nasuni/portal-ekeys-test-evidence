@@ -1,0 +1,25 @@
+{
+  "id": 22,
+  "name": "download_already_in_progress",
+  "status": 500,
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/22_download_already_in_progress/download_already_in_progress_inputs.png",
+    "swagger/22_download_already_in_progress/download_already_in_progress_response.png"
+  ],
+  "request_path": "/edges/5f5e8dae-795b-5d36-b67d-9f81a190da53/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 409,
+  "matches_expected": false,
+  "captured_at": "2026-10-06T07:22:01.102Z",
+  "scenario": "download_already_in_progress",
+  "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+  "passed": null,
+  "outcome": "FIXTURE_ERROR",
+  "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+}

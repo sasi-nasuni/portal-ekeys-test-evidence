@@ -1,0 +1,24 @@
+{
+  "id": 24,
+  "name": "feature_flag_disabled",
+  "status": 403,
+  "body": {
+    "message": "This feature is not enabled for your account",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/24_feature_flag_disabled/feature_flag_disabled_inputs.png",
+    "swagger/24_feature_flag_disabled/feature_flag_disabled_response.png"
+  ],
+  "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 403,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:23:47.882Z",
+  "scenario": "feature_flag_disabled",
+  "detail": "Only isolated synthetic tenant feature cache disabled.",
+  "passed": true,
+  "outcome": "PASS"
+}

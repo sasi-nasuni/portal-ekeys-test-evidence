@@ -1,0 +1,23 @@
+{
+  "id": 6,
+  "name": "private_key_rejected",
+  "status": 400,
+  "body": {
+    "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/06_private_key_rejected/private_key_rejected_inputs.png",
+    "swagger/06_private_key_rejected/private_key_rejected_response.png"
+  ],
+  "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 400,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:19:11.800Z",
+  "scenario": "private_key_rejected",
+  "detail": "Disposable test key only; key material masked in evidence.",
+  "passed": true
+}

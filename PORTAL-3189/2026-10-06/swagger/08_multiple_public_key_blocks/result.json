@@ -1,0 +1,23 @@
+{
+  "id": 8,
+  "name": "multiple_public_key_blocks",
+  "status": 400,
+  "body": {
+    "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_inputs.png",
+    "swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_response.png"
+  ],
+  "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 400,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:19:13.458Z",
+  "scenario": "multiple_public_key_blocks",
+  "detail": "",
+  "passed": true
+}

@@ -1,0 +1,24 @@
+{
+  "id": 30,
+  "name": "download_already_in_progress",
+  "status": 409,
+  "body": {
+    "message": "An operation is already in progress",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/30_download_already_in_progress/download_already_in_progress_inputs.png",
+    "swagger/30_download_already_in_progress/download_already_in_progress_response.png"
+  ],
+  "request_path": "/edges/5f5e8dae-795b-5d36-b67d-9f81a190da53/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 409,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:23:57.936Z",
+  "scenario": "download_already_in_progress",
+  "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+  "passed": true,
+  "outcome": "PASS"
+}

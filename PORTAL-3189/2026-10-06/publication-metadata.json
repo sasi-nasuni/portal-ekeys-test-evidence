@@ -1,0 +1,22 @@
+{
+  "test_date": "2026-10-06",
+  "product_repository": "nasuni/portal",
+  "product_commit": "beac6fbde997d79fdb31a26bfe3b6b67e7bc7e24",
+  "pull_request": "https://github.com/nasuni/portal/pull/2792",
+  "endpoint": "POST /edges/{appliance_id}/encryption-keys/downloads",
+  "passing_http_checks": 25,
+  "recorded_attempts": 33,
+  "screenshots": 66,
+  "untested": [
+    "PORTAL-3190 status endpoint",
+    "artifact retrieval and decryption",
+    "artifact expiry and single use",
+    "dedicated HTTP 500 fault injection"
+  ],
+  "packaging": [
+    "PNG bytes preserved",
+    "JSON screenshot paths made relative",
+    "HTML gallery regenerated",
+    "automation scripts and runtime metadata excluded"
+  ]
+}

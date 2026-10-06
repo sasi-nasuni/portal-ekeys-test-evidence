@@ -1,0 +1,25 @@
+{
+  "id": 23,
+  "name": "daily_rate_limit",
+  "status": 500,
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/23_daily_rate_limit/daily_rate_limit_inputs.png",
+    "swagger/23_daily_rate_limit/daily_rate_limit_response.png"
+  ],
+  "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 429,
+  "matches_expected": false,
+  "captured_at": "2026-10-06T07:22:09.369Z",
+  "scenario": "daily_rate_limit",
+  "detail": "Synthetic user-key JWT plus synthetic tenant daily counter at configured quota; no request flooding.",
+  "passed": null,
+  "outcome": "FIXTURE_ERROR",
+  "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+}

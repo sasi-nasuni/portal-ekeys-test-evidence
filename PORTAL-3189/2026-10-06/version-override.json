@@ -1,0 +1,12 @@
+{
+  "original_minimum": "10.6",
+  "temporary_minimum": "10.5",
+  "user_approved": true,
+  "original_sha256": "ac09c93eff20be3bcaf2a10d9ced7aa0671c7c55b1bc7019d47fe0051c088b02",
+  "started_at": "2026-10-06T07:24:17.944559+00:00",
+  "restored": true,
+  "browser_exit_code": 0,
+  "restored_at": "2026-10-06T07:25:18.303844+00:00",
+  "runtime_restored": true,
+  "restore_note": "Source bytes restored immediately; a timestamp refresh was needed for the development watcher to reload."
+}

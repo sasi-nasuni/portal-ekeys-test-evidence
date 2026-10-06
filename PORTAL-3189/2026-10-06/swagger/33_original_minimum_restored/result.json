@@ -1,0 +1,24 @@
+{
+  "id": 33,
+  "name": "original_minimum_restored",
+  "status": 405,
+  "body": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/33_original_minimum_restored/original_minimum_restored_inputs.png",
+    "swagger/33_original_minimum_restored/original_minimum_restored_response.png"
+  ],
+  "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 405,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:30:01.178Z",
+  "scenario": "original_minimum_restored",
+  "detail": "Post-dispatch verification: original10.6 minimum restored; same10.5 realfiler rejected again.",
+  "passed": true,
+  "outcome": "PASS"
+}

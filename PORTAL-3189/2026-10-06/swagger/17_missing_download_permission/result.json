@@ -1,0 +1,24 @@
+{
+  "id": 17,
+  "name": "missing_download_permission",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: Download Generated Keys",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/17_missing_download_permission/missing_download_permission_inputs.png",
+    "swagger/17_missing_download_permission/missing_download_permission_response.png"
+  ],
+  "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 403,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:21:53.434Z",
+  "scenario": "missing_download_permission",
+  "detail": "Persisted synthetic user has no permission role; real user roles unchanged.",
+  "passed": true,
+  "outcome": "PASS"
+}

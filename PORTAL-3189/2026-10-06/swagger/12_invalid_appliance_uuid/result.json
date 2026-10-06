@@ -1,0 +1,17 @@
+{
+  "id": 12,
+  "name": "invalid_appliance_uuid",
+  "status": null,
+  "body": null,
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/12_invalid_appliance_uuid/invalid_appliance_uuid_inputs.png"
+  ],
+  "request_path": "/edges/invalid-appliance-uuid/encryption-keys/downloads",
+  "error": "Swagger UI rejected the input before sending an HTTP request",
+  "client_validation": true,
+  "scenario": "invalid_appliance_uuid",
+  "detail": "",
+  "passed": null,
+  "outcome": "UI_LIMITATION"
+}

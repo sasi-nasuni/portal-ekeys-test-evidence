@@ -1,0 +1,27 @@
+{
+  "id": 31,
+  "name": "daily_rate_limit",
+  "status": 429,
+  "body": {
+    "message": "Daily request quota exceeded.",
+    "detail": {
+      "retry_after_seconds": 0,
+      "daily_limit": 1000000
+    }
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/31_daily_rate_limit/daily_rate_limit_inputs.png",
+    "swagger/31_daily_rate_limit/daily_rate_limit_response.png"
+  ],
+  "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 429,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:24:05.711Z",
+  "scenario": "daily_rate_limit",
+  "detail": "Synthetic user-key JWT plus synthetic tenant daily counter at configured quota; no request flooding.",
+  "passed": true,
+  "outcome": "PASS"
+}

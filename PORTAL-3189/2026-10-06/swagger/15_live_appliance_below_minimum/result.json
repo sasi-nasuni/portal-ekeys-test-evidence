@@ -1,0 +1,24 @@
+{
+  "id": 15,
+  "name": "live_appliance_below_minimum",
+  "status": 405,
+  "body": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_inputs.png",
+    "swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_response.png"
+  ],
+  "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "expected_status": 405,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:20:27.712Z",
+  "scenario": "live_appliance_below_minimum",
+  "detail": "Real DEV-E-KEYS-POC reports10.5; unmodified endpoint requires10.6.",
+  "passed": true,
+  "outcome": "PASS"
+}

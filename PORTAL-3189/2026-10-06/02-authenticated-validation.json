@@ -1,0 +1,14 @@
+{
+  "scenario": "authenticated_invalid_public_key",
+  "source": "Swagger UI Try it out / Execute",
+  "authentication": "temporary development token for existing permitted user; header supplied by browser routing",
+  "expected_status": 400,
+  "status": 400,
+  "passed": true,
+  "body": {
+    "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+    "detail": null
+  },
+  "screenshot": "02-swagger-authenticated-validation.png",
+  "captured_at": "2026-10-06T06:58:22.715Z"
+}

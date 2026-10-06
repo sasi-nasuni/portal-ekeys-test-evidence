@@ -1,0 +1,47 @@
+{
+  "task": {
+    "id": "c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+    "action": "download_encryption_keys",
+    "state": "completed",
+    "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "created_at": "2026-10-06T07:25:00.931468+00:00",
+    "last_updated_at": "2026-10-06T07:25:21.660639+00:00"
+  },
+  "messages": [
+    {
+      "id": "6c3a42b2-3229-46a6-af07-c435c1f09df7",
+      "origin": "dvista1",
+      "target": "edge",
+      "command": "download_encryption_keys",
+      "event": null,
+      "public_key_md5": "995738bf4cb9b9912d7a2d8ec7f9f3db",
+      "fingerprints": null,
+      "included_count": null,
+      "payload_keys": [
+        "command",
+        "fingerprints",
+        "recipient_public_key"
+      ],
+      "sent_at": "2026-10-06T07:25:00.966952+00:00",
+      "received_at": null
+    },
+    {
+      "id": "5b0a82f8-2d92-4d53-a4ca-be07e4b93bd9",
+      "origin": "edge",
+      "target": "dvista1",
+      "command": null,
+      "event": "encryption_keys_downloaded",
+      "public_key_md5": null,
+      "fingerprints": null,
+      "included_count": 2,
+      "payload_keys": [
+        "data",
+        "event"
+      ],
+      "sent_at": "2026-10-06T07:25:19.074242+00:00",
+      "received_at": "2026-10-06T07:25:21.551712+00:00"
+    }
+  ],
+  "recipient_public_key_matches": true
+}

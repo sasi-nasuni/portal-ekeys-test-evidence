@@ -1,0 +1,38 @@
+{
+  "id": 13,
+  "name": "invalid_uuid_server_validation",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "path",
+          "appliance_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1",
+        "input": "invalid-appliance-uuid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1"
+        }
+      }
+    ]
+  },
+  "source": "Swagger UI Try it out / Execute",
+  "screenshots": [
+    "swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_inputs.png",
+    "swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_response.png"
+  ],
+  "request_path": "/edges/invalid-appliance-uuid/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+  "public_key_transport_verified": true,
+  "path_transport_note": "Swagger requestInterceptor replaced the appliance ID after client-side UUID validation to test server-side validation.",
+  "expected_status": 422,
+  "matches_expected": true,
+  "captured_at": "2026-10-06T07:20:24.120Z",
+  "scenario": "invalid_uuid_server_validation",
+  "detail": "Swagger rejects malformed UUID before sending; interceptor changes the validated path only to exercise real server422.",
+  "passed": true,
+  "outcome": "PASS"
+}

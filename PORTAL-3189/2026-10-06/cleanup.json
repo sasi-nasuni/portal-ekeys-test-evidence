@@ -1,0 +1,23 @@
+{
+  "controls": {
+    "deleted_cache_keys": 2,
+    "remaining_cache_keys": 0
+  },
+  "counts": {
+    "accounts": 0,
+    "users": 0,
+    "roles": 0,
+    "role_permissions": 0,
+    "user_role": 0,
+    "userkeys": 0,
+    "edges_v2": 0,
+    "tasks": 0,
+    "task_steps": 0,
+    "messages": 0
+  },
+  "version_setting_restored": true,
+  "restored_gate_verified_with_http_405": true,
+  "repository_clean": true,
+  "real_test_task_retained": "c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+  "temporary_auth_file_cleared": true
+}

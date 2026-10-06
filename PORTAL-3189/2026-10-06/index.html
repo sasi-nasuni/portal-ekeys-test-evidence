@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>PORTAL-3189 — Swagger and live dispatch evidence</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#18283d;background:#edf2f7}*{box-sizing:border-box}body{margin:0}main{max-width:1250px;margin:auto;padding:32px 24px 70px}h1{font-size:28px;margin:0 0 8px}h2{font-size:19px;margin:0}h3{font-size:17px}p,li{line-height:1.55}a{color:#145f98}.muted,.meta{color:#596a7b}.meta{font-size:13px}.summary{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.summary div{min-width:110px;background:white;border:1px solid #d4dce6;border-radius:9px;padding:15px 20px}.summary strong{display:block;font-size:26px}.summary span{font-size:12px;color:#596a7b}.case,.overview{background:white;border:1px solid #d4dce6;border-radius:10px;padding:22px;margin:20px 0}header{display:flex;align-items:center;gap:14px;justify-content:space-between}.badge{display:inline-block;white-space:nowrap;border-radius:30px;padding:4px 10px;font-size:11px;font-weight:700;background:#eef1f4;color:#576371}.pass{background:#d9f5e8;color:#156241}.fail,.error{background:#ffe0e0;color:#a02121}.ui-limitation,.not-verified{background:#fff0cd;color:#865c00}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:11px 12px;border-bottom:1px solid #e1e8ef;text-align:left}th{background:#f5f8fb}.table-wrap{overflow:auto}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:16px;margin:20px 0}figure{margin:0;min-width:0}img{max-width:100%;height:auto;border:1px solid #cbd5df;border-radius:6px}figcaption{font-size:12px;padding:7px 0}details{margin-top:14px}summary{font-weight:600;cursor:pointer}pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.5;white-space:pre-wrap;word-break:break-word;background:#f4f7fa;border:1px solid #e1e8ef;border-radius:6px;padding:14px;max-height:600px;overflow:auto}.note{font-size:13px;border-left:3px solid #8da9c6;padding-left:12px;color:#455a70}li+li{margin-top:7px}footer{font-size:12px;color:#596a7b}@media print{details{display:block}.case{break-inside:avoid}main{max-width:none;padding:0}}
+</style></head><body><main>
+<h1>PORTAL-3189 · Encryption key download testing</h1><p class="muted">Swagger request evidence and live command correlation · Built 2026-10-06 13:10:23 IST</p>
+<div class="summary"><div><strong>25</strong><span>PASS</span></div><div><strong>1</strong><span>UI LIMITATION</span></div><div><strong>7</strong><span>FIXTURE ERROR</span></div></div>
+<section class="overview"><h2>Scenario results</h2><p class="meta">Expected and actual HTTP status are taken from each saved result. Separate executions remain separate rows.</p><div class="table-wrap"><table><thead><tr><th>Scenario</th><th>Expected</th><th>Actual</th><th>Outcome</th></tr></thead><tbody><tr><td><a href="#case-1">missing_credentials</a></td><td>401</td><td>401</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-2">authenticated_invalid_public_key</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-3">invalid_bearer</a></td><td>401</td><td>401</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-4">invalid_public_key</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-5">signing_only_public_key</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-6">private_key_rejected</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-7">invalid_armor_checksum</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-8">multiple_public_key_blocks</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-9">malformed_packet_order</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-10">malformed_packet_body</a></td><td>400</td><td>400</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-11">missing_public_key</a></td><td>422</td><td>422</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-12">invalid_appliance_uuid</a></td><td>—</td><td>—</td><td><span class="badge ui-limitation">UI LIMITATION</span></td></tr><tr><td><a href="#case-13">invalid_uuid_server_validation</a></td><td>422</td><td>422</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-14">unknown_appliance</a></td><td>404</td><td>404</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-15">live_appliance_below_minimum</a></td><td>405</td><td>405</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-16">feature_flag_disabled</a></td><td>403</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-17">missing_download_permission</a></td><td>403</td><td>403</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-18">cross_tenant_appliance</a></td><td>404</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-19">wrong_appliance_family</a></td><td>405</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-20">synthetic_below_version</a></td><td>405</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-21">offline_appliance</a></td><td>503</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-22">download_already_in_progress</a></td><td>409</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-23">daily_rate_limit</a></td><td>429</td><td>500</td><td><span class="badge fixture-error">FIXTURE ERROR</span></td></tr><tr><td><a href="#case-24">feature_flag_disabled</a></td><td>403</td><td>403</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-25">missing_download_permission</a></td><td>403</td><td>403</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-26">cross_tenant_appliance</a></td><td>404</td><td>404</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-27">wrong_appliance_family</a></td><td>405</td><td>405</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-28">synthetic_below_version</a></td><td>405</td><td>405</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-29">offline_appliance</a></td><td>503</td><td>503</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-30">download_already_in_progress</a></td><td>409</td><td>409</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-31">daily_rate_limit</a></td><td>429</td><td>429</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-32">live_download_dispatch</a></td><td>202</td><td>202</td><td><span class="badge pass">PASS</span></td></tr><tr><td><a href="#case-33">original_minimum_restored</a></td><td>405</td><td>405</td><td><span class="badge pass">PASS</span></td></tr></tbody></table></div></section>
+<section class="overview"><h2>Method and limits</h2><ul><li>Endpoint requests are issued through the served Swagger UI Try it out / Execute controls; returned responses come from the real local Portal server.</li><li>Swagger uses a single-line input for public_key. Recorded interceptor use preserves multiline armor; explicit invalid-input cases may modify the outgoing parameter after browser validation. Transport notes on each case describe this.</li><li>Authorization is supplied through local browser request routing. Keys and authorization are omitted from this gallery; masked screenshot regions contain request input or cURL/URL details.</li><li>An HTTP response screenshot alone does not prove command execution on the filer. Edge Console and filer evidence are reported separately below.</li><li>UI LIMITATION means browser validation prevented an HTTP request. Such a row is not a verified backend response.</li><li>The live dev filer reports version 10.5. A user-approved temporary local minimum of 10.5 permits the live dispatch exercise; it does not establish compatibility with the unmodified 10.6 version gate. Check the restoration evidence below for cleanup status.</li><li>Fixture-based cases verify Portal behavior for the recorded setup. They do not imply that those states were observed on the physical filer.</li><li>FIXTURE ERROR marks the initial synthetic role setup that omitted an ORM-only default. Those attempts failed before the endpoint; their evidence is preserved, and corrected reruns are listed separately. These are not endpoint test failures.</li><li>No separate artificial server-failure injection was performed for HTTP 500. The initial fixture error did exercise the generic 500 response. Dedicated download status/artifact routes belong to PORTAL-3190 and are absent on this branch.</li></ul></section>
+<article id="case-1" class="case">
+<header><h2>missing credentials</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 401 · Actual HTTP 401 · Swagger UI Try it out / Execute</p>
+<div class="gallery"><figure><a href="01-swagger-no-credentials.png" target="_blank" rel="noopener"><img loading="lazy" src="01-swagger-no-credentials.png" alt="01-swagger-no-credentials"></a><figcaption><a href="01-swagger-no-credentials.png">01-swagger-no-credentials</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;No credentials provided&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;scenario&quot;: &quot;missing_credentials&quot;,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;expected_status&quot;: 401,
+  &quot;status&quot;: 401,
+  &quot;passed&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T06:38:31.899Z&quot;,
+  &quot;evidence_file&quot;: &quot;01-no-credentials.json&quot;
+}</pre></details>
+</article><article id="case-2" class="case">
+<header><h2>authenticated invalid public key</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<div class="gallery"><figure><a href="02-swagger-authenticated-validation.png" target="_blank" rel="noopener"><img loading="lazy" src="02-swagger-authenticated-validation.png" alt="02-swagger-authenticated-validation"></a><figcaption><a href="02-swagger-authenticated-validation.png">02-swagger-authenticated-validation</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;scenario&quot;: &quot;authenticated_invalid_public_key&quot;,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;authentication&quot;: &quot;temporary development token for existing permitted user; header supplied by browser routing&quot;,
+  &quot;expected_status&quot;: 400,
+  &quot;status&quot;: 400,
+  &quot;passed&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T06:58:22.715Z&quot;,
+  &quot;evidence_file&quot;: &quot;02-authenticated-validation.json&quot;
+}</pre></details>
+</article><article id="case-3" class="case">
+<header><h2>invalid bearer</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 401 · Actual HTTP 401 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/03_invalid_bearer/invalid_bearer_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/03_invalid_bearer/invalid_bearer_inputs.png" alt="invalid Bearer [REDACTED]"></a><figcaption><a href="swagger/03_invalid_bearer/invalid_bearer_inputs.png">invalid Bearer [REDACTED]</a></figcaption></figure><figure><a href="swagger/03_invalid_bearer/invalid_bearer_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/03_invalid_bearer/invalid_bearer_response.png" alt="invalid Bearer [REDACTED]"></a><figcaption><a href="swagger/03_invalid_bearer/invalid_bearer_response.png">invalid Bearer [REDACTED]</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Invalid token&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 3,
+  &quot;name&quot;: &quot;invalid_bearer&quot;,
+  &quot;status&quot;: 401,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 401,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:08.472Z&quot;,
+  &quot;scenario&quot;: &quot;invalid_bearer&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-4" class="case">
+<header><h2>invalid public key</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/04_invalid_public_key/invalid_public_key_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/04_invalid_public_key/invalid_public_key_inputs.png" alt="invalid public key inputs"></a><figcaption><a href="swagger/04_invalid_public_key/invalid_public_key_inputs.png">invalid public key inputs</a></figcaption></figure><figure><a href="swagger/04_invalid_public_key/invalid_public_key_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/04_invalid_public_key/invalid_public_key_response.png" alt="invalid public key response"></a><figcaption><a href="swagger/04_invalid_public_key/invalid_public_key_response.png">invalid public key response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 4,
+  &quot;name&quot;: &quot;invalid_public_key&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:09.471Z&quot;,
+  &quot;scenario&quot;: &quot;invalid_public_key&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-5" class="case">
+<header><h2>signing only public key</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/05_signing_only_public_key/signing_only_public_key_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/05_signing_only_public_key/signing_only_public_key_inputs.png" alt="signing only public key inputs"></a><figcaption><a href="swagger/05_signing_only_public_key/signing_only_public_key_inputs.png">signing only public key inputs</a></figcaption></figure><figure><a href="swagger/05_signing_only_public_key/signing_only_public_key_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/05_signing_only_public_key/signing_only_public_key_response.png" alt="signing only public key response"></a><figcaption><a href="swagger/05_signing_only_public_key/signing_only_public_key_response.png">signing only public key response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 5,
+  &quot;name&quot;: &quot;signing_only_public_key&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:10.958Z&quot;,
+  &quot;scenario&quot;: &quot;signing_only_public_key&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-6" class="case">
+<header><h2>private key rejected</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p>Disposable test key only; key material masked in evidence.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/06_private_key_rejected/private_key_rejected_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/06_private_key_rejected/private_key_rejected_inputs.png" alt="private key rejected inputs"></a><figcaption><a href="swagger/06_private_key_rejected/private_key_rejected_inputs.png">private key rejected inputs</a></figcaption></figure><figure><a href="swagger/06_private_key_rejected/private_key_rejected_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/06_private_key_rejected/private_key_rejected_response.png" alt="private key rejected response"></a><figcaption><a href="swagger/06_private_key_rejected/private_key_rejected_response.png">private key rejected response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 6,
+  &quot;name&quot;: &quot;private_key_rejected&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:11.800Z&quot;,
+  &quot;scenario&quot;: &quot;private_key_rejected&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-7" class="case">
+<header><h2>invalid armor checksum</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/07_invalid_armor_checksum/invalid_armor_checksum_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/07_invalid_armor_checksum/invalid_armor_checksum_inputs.png" alt="invalid armor checksum inputs"></a><figcaption><a href="swagger/07_invalid_armor_checksum/invalid_armor_checksum_inputs.png">invalid armor checksum inputs</a></figcaption></figure><figure><a href="swagger/07_invalid_armor_checksum/invalid_armor_checksum_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/07_invalid_armor_checksum/invalid_armor_checksum_response.png" alt="invalid armor checksum response"></a><figcaption><a href="swagger/07_invalid_armor_checksum/invalid_armor_checksum_response.png">invalid armor checksum response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 7,
+  &quot;name&quot;: &quot;invalid_armor_checksum&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:12.633Z&quot;,
+  &quot;scenario&quot;: &quot;invalid_armor_checksum&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-8" class="case">
+<header><h2>multiple public key blocks</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_inputs.png" alt="multiple public key blocks inputs"></a><figcaption><a href="swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_inputs.png">multiple public key blocks inputs</a></figcaption></figure><figure><a href="swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_response.png" alt="multiple public key blocks response"></a><figcaption><a href="swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_response.png">multiple public key blocks response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 8,
+  &quot;name&quot;: &quot;multiple_public_key_blocks&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:13.458Z&quot;,
+  &quot;scenario&quot;: &quot;multiple_public_key_blocks&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-9" class="case">
+<header><h2>malformed packet order</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/09_malformed_packet_order/malformed_packet_order_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/09_malformed_packet_order/malformed_packet_order_inputs.png" alt="malformed packet order inputs"></a><figcaption><a href="swagger/09_malformed_packet_order/malformed_packet_order_inputs.png">malformed packet order inputs</a></figcaption></figure><figure><a href="swagger/09_malformed_packet_order/malformed_packet_order_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/09_malformed_packet_order/malformed_packet_order_response.png" alt="malformed packet order response"></a><figcaption><a href="swagger/09_malformed_packet_order/malformed_packet_order_response.png">malformed packet order response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 9,
+  &quot;name&quot;: &quot;malformed_packet_order&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:14.304Z&quot;,
+  &quot;scenario&quot;: &quot;malformed_packet_order&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-10" class="case">
+<header><h2>malformed packet body</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 400 · Actual HTTP 400 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/10_malformed_packet_body/malformed_packet_body_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/10_malformed_packet_body/malformed_packet_body_inputs.png" alt="malformed packet body inputs"></a><figcaption><a href="swagger/10_malformed_packet_body/malformed_packet_body_inputs.png">malformed packet body inputs</a></figcaption></figure><figure><a href="swagger/10_malformed_packet_body/malformed_packet_body_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/10_malformed_packet_body/malformed_packet_body_response.png" alt="malformed packet body response"></a><figcaption><a href="swagger/10_malformed_packet_body/malformed_packet_body_response.png">malformed packet body response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 10,
+  &quot;name&quot;: &quot;malformed_packet_body&quot;,
+  &quot;status&quot;: 400,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 400,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:15.198Z&quot;,
+  &quot;scenario&quot;: &quot;malformed_packet_body&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-11" class="case">
+<header><h2>missing public key</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 422 · Actual HTTP 422 · Swagger UI Try it out / Execute</p>
+<p>Swagger interceptor removes the required query parameter after UI validation.</p><p class="note">Swagger requestInterceptor removed required public_key query after UI validation; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/11_missing_public_key/missing_public_key_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/11_missing_public_key/missing_public_key_inputs.png" alt="missing public key inputs"></a><figcaption><a href="swagger/11_missing_public_key/missing_public_key_inputs.png">missing public key inputs</a></figcaption></figure><figure><a href="swagger/11_missing_public_key/missing_public_key_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/11_missing_public_key/missing_public_key_response.png" alt="missing public key response"></a><figcaption><a href="swagger/11_missing_public_key/missing_public_key_response.png">missing public key response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Validation Error&quot;,
+  &quot;detail&quot;: [
+    {
+      &quot;type&quot;: &quot;missing&quot;,
+      &quot;loc&quot;: [
+        &quot;query&quot;,
+        &quot;public_key&quot;
+      ],
+      &quot;msg&quot;: &quot;Field required&quot;,
+      &quot;input&quot;: null
+    }
+  ]
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 11,
+  &quot;name&quot;: &quot;missing_public_key&quot;,
+  &quot;status&quot;: 422,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 422,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:19:16.049Z&quot;,
+  &quot;scenario&quot;: &quot;missing_public_key&quot;,
+  &quot;passed&quot;: true,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-12" class="case">
+<header><h2>invalid appliance uuid</h2><span class="badge ui-limitation">UI LIMITATION</span></header>
+<p class="meta">Expected HTTP — · Actual HTTP — · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger UI rejected the input before sending an HTTP request</p><div class="gallery"><figure><a href="swagger/12_invalid_appliance_uuid/invalid_appliance_uuid_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/12_invalid_appliance_uuid/invalid_appliance_uuid_inputs.png" alt="invalid appliance uuid inputs"></a><figcaption><a href="swagger/12_invalid_appliance_uuid/invalid_appliance_uuid_inputs.png">invalid appliance uuid inputs</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>null</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 12,
+  &quot;name&quot;: &quot;invalid_appliance_uuid&quot;,
+  &quot;status&quot;: null,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/invalid-appliance-uuid/encryption-keys/downloads&quot;,
+  &quot;error&quot;: &quot;Swagger UI rejected the input before sending an HTTP request&quot;,
+  &quot;client_validation&quot;: true,
+  &quot;scenario&quot;: &quot;invalid_appliance_uuid&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;UI_LIMITATION&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-13" class="case">
+<header><h2>invalid uuid server validation</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 422 · Actual HTTP 422 · Swagger UI Try it out / Execute</p>
+<p>Swagger rejects malformed UUID before sending; interceptor changes the validated path only to exercise real server422.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_inputs.png" alt="invalid uuid server validation inputs"></a><figcaption><a href="swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_inputs.png">invalid uuid server validation inputs</a></figcaption></figure><figure><a href="swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_response.png" alt="invalid uuid server validation response"></a><figcaption><a href="swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_response.png">invalid uuid server validation response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Validation Error&quot;,
+  &quot;detail&quot;: [
+    {
+      &quot;type&quot;: &quot;uuid_parsing&quot;,
+      &quot;loc&quot;: [
+        &quot;path&quot;,
+        &quot;appliance_id&quot;
+      ],
+      &quot;msg&quot;: &quot;Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1&quot;,
+      &quot;input&quot;: &quot;invalid-appliance-uuid&quot;,
+      &quot;ctx&quot;: {
+        &quot;error&quot;: &quot;invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1&quot;
+      }
+    }
+  ]
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 13,
+  &quot;name&quot;: &quot;invalid_uuid_server_validation&quot;,
+  &quot;status&quot;: 422,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/invalid-appliance-uuid/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;path_transport_note&quot;: &quot;Swagger requestInterceptor replaced the appliance ID after client-side UUID validation to test server-side validation.&quot;,
+  &quot;expected_status&quot;: 422,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:20:24.120Z&quot;,
+  &quot;scenario&quot;: &quot;invalid_uuid_server_validation&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-14" class="case">
+<header><h2>unknown appliance</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 404 · Actual HTTP 404 · Swagger UI Try it out / Execute</p>
+<p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/14_unknown_appliance/unknown_appliance_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/14_unknown_appliance/unknown_appliance_inputs.png" alt="unknown appliance inputs"></a><figcaption><a href="swagger/14_unknown_appliance/unknown_appliance_inputs.png">unknown appliance inputs</a></figcaption></figure><figure><a href="swagger/14_unknown_appliance/unknown_appliance_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/14_unknown_appliance/unknown_appliance_response.png" alt="unknown appliance response"></a><figcaption><a href="swagger/14_unknown_appliance/unknown_appliance_response.png">unknown appliance response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Not found&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 14,
+  &quot;name&quot;: &quot;unknown_appliance&quot;,
+  &quot;status&quot;: 404,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/908e080f-cfc5-4d83-a381-3596bc4b038a/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 404,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:20:25.192Z&quot;,
+  &quot;scenario&quot;: &quot;unknown_appliance&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-15" class="case">
+<header><h2>live appliance below minimum</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 405 · Actual HTTP 405 · Swagger UI Try it out / Execute</p>
+<p>Real DEV-E-KEYS-POC reports10.5; unmodified endpoint requires10.6.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_inputs.png" alt="live appliance below minimum inputs"></a><figcaption><a href="swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_inputs.png">live appliance below minimum inputs</a></figcaption></figure><figure><a href="swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_response.png" alt="live appliance below minimum response"></a><figcaption><a href="swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_response.png">live appliance below minimum response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Appliance is below the minimum supported version&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 15,
+  &quot;name&quot;: &quot;live_appliance_below_minimum&quot;,
+  &quot;status&quot;: 405,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 405,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:20:27.712Z&quot;,
+  &quot;scenario&quot;: &quot;live_appliance_below_minimum&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-16" class="case">
+<header><h2>feature flag disabled</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 403 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Only isolated synthetic tenant feature cache disabled.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/16_feature_flag_disabled/feature_flag_disabled_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/16_feature_flag_disabled/feature_flag_disabled_inputs.png" alt="feature flag disabled inputs"></a><figcaption><a href="swagger/16_feature_flag_disabled/feature_flag_disabled_inputs.png">feature flag disabled inputs</a></figcaption></figure><figure><a href="swagger/16_feature_flag_disabled/feature_flag_disabled_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/16_feature_flag_disabled/feature_flag_disabled_response.png" alt="feature flag disabled response"></a><figcaption><a href="swagger/16_feature_flag_disabled/feature_flag_disabled_response.png">feature flag disabled response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 16,
+  &quot;name&quot;: &quot;feature_flag_disabled&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 403,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:21:49.022Z&quot;,
+  &quot;scenario&quot;: &quot;feature_flag_disabled&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-17" class="case">
+<header><h2>missing download permission</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 403 · Actual HTTP 403 · Swagger UI Try it out / Execute</p>
+<p>Persisted synthetic user has no permission role; real user roles unchanged.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/17_missing_download_permission/missing_download_permission_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/17_missing_download_permission/missing_download_permission_inputs.png" alt="missing download permission inputs"></a><figcaption><a href="swagger/17_missing_download_permission/missing_download_permission_inputs.png">missing download permission inputs</a></figcaption></figure><figure><a href="swagger/17_missing_download_permission/missing_download_permission_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/17_missing_download_permission/missing_download_permission_response.png" alt="missing download permission response"></a><figcaption><a href="swagger/17_missing_download_permission/missing_download_permission_response.png">missing download permission response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;User does not have the required permissions: Download Generated Keys&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 17,
+  &quot;name&quot;: &quot;missing_download_permission&quot;,
+  &quot;status&quot;: 403,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 403,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:21:53.434Z&quot;,
+  &quot;scenario&quot;: &quot;missing_download_permission&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-18" class="case">
+<header><h2>cross tenant appliance</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 404 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Existing real filer is invisible to isolated synthetic tenant.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/18_cross_tenant_appliance/cross_tenant_appliance_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/18_cross_tenant_appliance/cross_tenant_appliance_inputs.png" alt="cross tenant appliance inputs"></a><figcaption><a href="swagger/18_cross_tenant_appliance/cross_tenant_appliance_inputs.png">cross tenant appliance inputs</a></figcaption></figure><figure><a href="swagger/18_cross_tenant_appliance/cross_tenant_appliance_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/18_cross_tenant_appliance/cross_tenant_appliance_response.png" alt="cross tenant appliance response"></a><figcaption><a href="swagger/18_cross_tenant_appliance/cross_tenant_appliance_response.png">cross tenant appliance response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 18,
+  &quot;name&quot;: &quot;cross_tenant_appliance&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 404,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:21:54.358Z&quot;,
+  &quot;scenario&quot;: &quot;cross_tenant_appliance&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-19" class="case">
+<header><h2>wrong appliance family</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 405 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/19_wrong_appliance_family/wrong_appliance_family_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/19_wrong_appliance_family/wrong_appliance_family_inputs.png" alt="wrong appliance family inputs"></a><figcaption><a href="swagger/19_wrong_appliance_family/wrong_appliance_family_inputs.png">wrong appliance family inputs</a></figcaption></figure><figure><a href="swagger/19_wrong_appliance_family/wrong_appliance_family_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/19_wrong_appliance_family/wrong_appliance_family_response.png" alt="wrong appliance family response"></a><figcaption><a href="swagger/19_wrong_appliance_family/wrong_appliance_family_response.png">wrong appliance family response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 19,
+  &quot;name&quot;: &quot;wrong_appliance_family&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/371f425c-b371-5eae-a915-09ab8469611b/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 405,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:21:55.515Z&quot;,
+  &quot;scenario&quot;: &quot;wrong_appliance_family&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-20" class="case">
+<header><h2>synthetic below version</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 405 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/20_synthetic_below_version/synthetic_below_version_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/20_synthetic_below_version/synthetic_below_version_inputs.png" alt="synthetic below version inputs"></a><figcaption><a href="swagger/20_synthetic_below_version/synthetic_below_version_inputs.png">synthetic below version inputs</a></figcaption></figure><figure><a href="swagger/20_synthetic_below_version/synthetic_below_version_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/20_synthetic_below_version/synthetic_below_version_response.png" alt="synthetic below version response"></a><figcaption><a href="swagger/20_synthetic_below_version/synthetic_below_version_response.png">synthetic below version response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 20,
+  &quot;name&quot;: &quot;synthetic_below_version&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/1fd2800e-c91c-5f3b-b409-372336dc40ba/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 405,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:21:59.278Z&quot;,
+  &quot;scenario&quot;: &quot;synthetic_below_version&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-21" class="case">
+<header><h2>offline appliance</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 503 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/21_offline_appliance/offline_appliance_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/21_offline_appliance/offline_appliance_inputs.png" alt="offline appliance inputs"></a><figcaption><a href="swagger/21_offline_appliance/offline_appliance_inputs.png">offline appliance inputs</a></figcaption></figure><figure><a href="swagger/21_offline_appliance/offline_appliance_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/21_offline_appliance/offline_appliance_response.png" alt="offline appliance response"></a><figcaption><a href="swagger/21_offline_appliance/offline_appliance_response.png">offline appliance response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 21,
+  &quot;name&quot;: &quot;offline_appliance&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 503,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:22:00.220Z&quot;,
+  &quot;scenario&quot;: &quot;offline_appliance&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-22" class="case">
+<header><h2>download already in progress</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 409 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/22_download_already_in_progress/download_already_in_progress_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/22_download_already_in_progress/download_already_in_progress_inputs.png" alt="download already in progress inputs"></a><figcaption><a href="swagger/22_download_already_in_progress/download_already_in_progress_inputs.png">download already in progress inputs</a></figcaption></figure><figure><a href="swagger/22_download_already_in_progress/download_already_in_progress_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/22_download_already_in_progress/download_already_in_progress_response.png" alt="download already in progress response"></a><figcaption><a href="swagger/22_download_already_in_progress/download_already_in_progress_response.png">download already in progress response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 22,
+  &quot;name&quot;: &quot;download_already_in_progress&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/5f5e8dae-795b-5d36-b67d-9f81a190da53/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 409,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:22:01.102Z&quot;,
+  &quot;scenario&quot;: &quot;download_already_in_progress&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-23" class="case">
+<header><h2>daily rate limit</h2><span class="badge fixture-error">FIXTURE ERROR</span></header>
+<p class="meta">Expected HTTP 429 · Actual HTTP 500 · Swagger UI Try it out / Execute</p>
+<p>Synthetic user-key JWT plus synthetic tenant daily counter at configured quota; no request flooding.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/23_daily_rate_limit/daily_rate_limit_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/23_daily_rate_limit/daily_rate_limit_inputs.png" alt="daily rate limit inputs"></a><figcaption><a href="swagger/23_daily_rate_limit/daily_rate_limit_inputs.png">daily rate limit inputs</a></figcaption></figure><figure><a href="swagger/23_daily_rate_limit/daily_rate_limit_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/23_daily_rate_limit/daily_rate_limit_response.png" alt="daily rate limit response"></a><figcaption><a href="swagger/23_daily_rate_limit/daily_rate_limit_response.png">daily rate limit response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Unknown error. Please contact Nasuni Support.&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 23,
+  &quot;name&quot;: &quot;daily_rate_limit&quot;,
+  &quot;status&quot;: 500,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 429,
+  &quot;matches_expected&quot;: false,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:22:09.369Z&quot;,
+  &quot;scenario&quot;: &quot;daily_rate_limit&quot;,
+  &quot;passed&quot;: null,
+  &quot;outcome&quot;: &quot;FIXTURE_ERROR&quot;,
+  &quot;fixture_error&quot;: &quot;Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt.&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-24" class="case">
+<header><h2>feature flag disabled</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 403 · Actual HTTP 403 · Swagger UI Try it out / Execute</p>
+<p>Only isolated synthetic tenant feature cache disabled.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/24_feature_flag_disabled/feature_flag_disabled_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/24_feature_flag_disabled/feature_flag_disabled_inputs.png" alt="feature flag disabled inputs"></a><figcaption><a href="swagger/24_feature_flag_disabled/feature_flag_disabled_inputs.png">feature flag disabled inputs</a></figcaption></figure><figure><a href="swagger/24_feature_flag_disabled/feature_flag_disabled_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/24_feature_flag_disabled/feature_flag_disabled_response.png" alt="feature flag disabled response"></a><figcaption><a href="swagger/24_feature_flag_disabled/feature_flag_disabled_response.png">feature flag disabled response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;This feature is not enabled for your account&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 24,
+  &quot;name&quot;: &quot;feature_flag_disabled&quot;,
+  &quot;status&quot;: 403,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 403,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:47.882Z&quot;,
+  &quot;scenario&quot;: &quot;feature_flag_disabled&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-25" class="case">
+<header><h2>missing download permission</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 403 · Actual HTTP 403 · Swagger UI Try it out / Execute</p>
+<p>Persisted synthetic user has no permission role; real user roles unchanged.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/25_missing_download_permission/missing_download_permission_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/25_missing_download_permission/missing_download_permission_inputs.png" alt="missing download permission inputs"></a><figcaption><a href="swagger/25_missing_download_permission/missing_download_permission_inputs.png">missing download permission inputs</a></figcaption></figure><figure><a href="swagger/25_missing_download_permission/missing_download_permission_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/25_missing_download_permission/missing_download_permission_response.png" alt="missing download permission response"></a><figcaption><a href="swagger/25_missing_download_permission/missing_download_permission_response.png">missing download permission response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;User does not have the required permissions: Download Generated Keys&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 25,
+  &quot;name&quot;: &quot;missing_download_permission&quot;,
+  &quot;status&quot;: 403,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 403,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:53.571Z&quot;,
+  &quot;scenario&quot;: &quot;missing_download_permission&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-26" class="case">
+<header><h2>cross tenant appliance</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 404 · Actual HTTP 404 · Swagger UI Try it out / Execute</p>
+<p>Existing real filer is invisible to isolated synthetic tenant.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/26_cross_tenant_appliance/cross_tenant_appliance_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/26_cross_tenant_appliance/cross_tenant_appliance_inputs.png" alt="cross tenant appliance inputs"></a><figcaption><a href="swagger/26_cross_tenant_appliance/cross_tenant_appliance_inputs.png">cross tenant appliance inputs</a></figcaption></figure><figure><a href="swagger/26_cross_tenant_appliance/cross_tenant_appliance_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/26_cross_tenant_appliance/cross_tenant_appliance_response.png" alt="cross tenant appliance response"></a><figcaption><a href="swagger/26_cross_tenant_appliance/cross_tenant_appliance_response.png">cross tenant appliance response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Not found&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 26,
+  &quot;name&quot;: &quot;cross_tenant_appliance&quot;,
+  &quot;status&quot;: 404,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 404,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:54.469Z&quot;,
+  &quot;scenario&quot;: &quot;cross_tenant_appliance&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-27" class="case">
+<header><h2>wrong appliance family</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 405 · Actual HTTP 405 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/27_wrong_appliance_family/wrong_appliance_family_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/27_wrong_appliance_family/wrong_appliance_family_inputs.png" alt="wrong appliance family inputs"></a><figcaption><a href="swagger/27_wrong_appliance_family/wrong_appliance_family_inputs.png">wrong appliance family inputs</a></figcaption></figure><figure><a href="swagger/27_wrong_appliance_family/wrong_appliance_family_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/27_wrong_appliance_family/wrong_appliance_family_response.png" alt="wrong appliance family response"></a><figcaption><a href="swagger/27_wrong_appliance_family/wrong_appliance_family_response.png">wrong appliance family response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;This operation is not supported on this appliance&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 27,
+  &quot;name&quot;: &quot;wrong_appliance_family&quot;,
+  &quot;status&quot;: 405,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/371f425c-b371-5eae-a915-09ab8469611b/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 405,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:55.370Z&quot;,
+  &quot;scenario&quot;: &quot;wrong_appliance_family&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-28" class="case">
+<header><h2>synthetic below version</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 405 · Actual HTTP 405 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/28_synthetic_below_version/synthetic_below_version_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/28_synthetic_below_version/synthetic_below_version_inputs.png" alt="synthetic below version inputs"></a><figcaption><a href="swagger/28_synthetic_below_version/synthetic_below_version_inputs.png">synthetic below version inputs</a></figcaption></figure><figure><a href="swagger/28_synthetic_below_version/synthetic_below_version_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/28_synthetic_below_version/synthetic_below_version_response.png" alt="synthetic below version response"></a><figcaption><a href="swagger/28_synthetic_below_version/synthetic_below_version_response.png">synthetic below version response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Appliance is below the minimum supported version&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 28,
+  &quot;name&quot;: &quot;synthetic_below_version&quot;,
+  &quot;status&quot;: 405,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/1fd2800e-c91c-5f3b-b409-372336dc40ba/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 405,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:56.237Z&quot;,
+  &quot;scenario&quot;: &quot;synthetic_below_version&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-29" class="case">
+<header><h2>offline appliance</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 503 · Actual HTTP 503 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/29_offline_appliance/offline_appliance_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/29_offline_appliance/offline_appliance_inputs.png" alt="offline appliance inputs"></a><figcaption><a href="swagger/29_offline_appliance/offline_appliance_inputs.png">offline appliance inputs</a></figcaption></figure><figure><a href="swagger/29_offline_appliance/offline_appliance_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/29_offline_appliance/offline_appliance_response.png" alt="offline appliance response"></a><figcaption><a href="swagger/29_offline_appliance/offline_appliance_response.png">offline appliance response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Appliance is offline&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 29,
+  &quot;name&quot;: &quot;offline_appliance&quot;,
+  &quot;status&quot;: 503,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 503,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:57.128Z&quot;,
+  &quot;scenario&quot;: &quot;offline_appliance&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-30" class="case">
+<header><h2>download already in progress</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 409 · Actual HTTP 409 · Swagger UI Try it out / Execute</p>
+<p>Run-owned synthetic appliance; gate rejects before any appliance command.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/30_download_already_in_progress/download_already_in_progress_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/30_download_already_in_progress/download_already_in_progress_inputs.png" alt="download already in progress inputs"></a><figcaption><a href="swagger/30_download_already_in_progress/download_already_in_progress_inputs.png">download already in progress inputs</a></figcaption></figure><figure><a href="swagger/30_download_already_in_progress/download_already_in_progress_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/30_download_already_in_progress/download_already_in_progress_response.png" alt="download already in progress response"></a><figcaption><a href="swagger/30_download_already_in_progress/download_already_in_progress_response.png">download already in progress response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;An operation is already in progress&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 30,
+  &quot;name&quot;: &quot;download_already_in_progress&quot;,
+  &quot;status&quot;: 409,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/5f5e8dae-795b-5d36-b67d-9f81a190da53/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 409,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:23:57.936Z&quot;,
+  &quot;scenario&quot;: &quot;download_already_in_progress&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-31" class="case">
+<header><h2>daily rate limit</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 429 · Actual HTTP 429 · Swagger UI Try it out / Execute</p>
+<p>Synthetic user-key JWT plus synthetic tenant daily counter at configured quota; no request flooding.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/31_daily_rate_limit/daily_rate_limit_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/31_daily_rate_limit/daily_rate_limit_inputs.png" alt="daily rate limit inputs"></a><figcaption><a href="swagger/31_daily_rate_limit/daily_rate_limit_inputs.png">daily rate limit inputs</a></figcaption></figure><figure><a href="swagger/31_daily_rate_limit/daily_rate_limit_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/31_daily_rate_limit/daily_rate_limit_response.png" alt="daily rate limit response"></a><figcaption><a href="swagger/31_daily_rate_limit/daily_rate_limit_response.png">daily rate limit response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Daily request quota exceeded.&quot;,
+  &quot;detail&quot;: {
+    &quot;retry_after_seconds&quot;: 0,
+    &quot;daily_limit&quot;: 1000000
+  }
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 31,
+  &quot;name&quot;: &quot;daily_rate_limit&quot;,
+  &quot;status&quot;: 429,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 429,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:24:05.711Z&quot;,
+  &quot;scenario&quot;: &quot;daily_rate_limit&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-32" class="case">
+<header><h2>live download dispatch</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 202 · Actual HTTP 202 · Swagger UI Try it out / Execute</p>
+<p>User-approved temporary local minimum10.5 for this dev filer; production minimum restored afterward.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/32_live_download_dispatch/live_download_dispatch_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/32_live_download_dispatch/live_download_dispatch_inputs.png" alt="live download dispatch inputs"></a><figcaption><a href="swagger/32_live_download_dispatch/live_download_dispatch_inputs.png">live download dispatch inputs</a></figcaption></figure><figure><a href="swagger/32_live_download_dispatch/live_download_dispatch_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/32_live_download_dispatch/live_download_dispatch_response.png" alt="live download dispatch response"></a><figcaption><a href="swagger/32_live_download_dispatch/live_download_dispatch_response.png">live download dispatch response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+  &quot;state&quot;: &quot;in_progress&quot;,
+  &quot;status_url&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 32,
+  &quot;name&quot;: &quot;live_download_dispatch&quot;,
+  &quot;status&quot;: 202,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 202,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:25:18.106Z&quot;,
+  &quot;scenario&quot;: &quot;live_download_dispatch&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article><article id="case-33" class="case">
+<header><h2>original minimum restored</h2><span class="badge pass">PASS</span></header>
+<p class="meta">Expected HTTP 405 · Actual HTTP 405 · Swagger UI Try it out / Execute</p>
+<p>Post-dispatch verification: original10.6 minimum restored; same10.5 realfiler rejected again.</p><p class="note">Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.</p><div class="gallery"><figure><a href="swagger/33_original_minimum_restored/original_minimum_restored_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/33_original_minimum_restored/original_minimum_restored_inputs.png" alt="original minimum restored inputs"></a><figcaption><a href="swagger/33_original_minimum_restored/original_minimum_restored_inputs.png">original minimum restored inputs</a></figcaption></figure><figure><a href="swagger/33_original_minimum_restored/original_minimum_restored_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/33_original_minimum_restored/original_minimum_restored_response.png" alt="original minimum restored response"></a><figcaption><a href="swagger/33_original_minimum_restored/original_minimum_restored_response.png">original minimum restored response</a></figcaption></figure></div>
+<details open><summary>Response body</summary><pre>{
+  &quot;message&quot;: &quot;Appliance is below the minimum supported version&quot;,
+  &quot;detail&quot;: null
+}</pre></details>
+<details><summary>Case metadata</summary><pre>{
+  &quot;id&quot;: 33,
+  &quot;name&quot;: &quot;original_minimum_restored&quot;,
+  &quot;status&quot;: 405,
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 405,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:30:01.178Z&quot;,
+  &quot;scenario&quot;: &quot;original_minimum_restored&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;,
+  &quot;evidence_file&quot;: &quot;test-results.json&quot;
+}</pre></details>
+</article>
+<section class="case"><h2>Live download dispatch</h2><div class="gallery"><figure><a href="swagger/32_live_download_dispatch/live_download_dispatch_inputs.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/32_live_download_dispatch/live_download_dispatch_inputs.png" alt="live download dispatch inputs"></a><figcaption><a href="swagger/32_live_download_dispatch/live_download_dispatch_inputs.png">live download dispatch inputs</a></figcaption></figure><figure><a href="swagger/32_live_download_dispatch/live_download_dispatch_response.png" target="_blank" rel="noopener"><img loading="lazy" src="swagger/32_live_download_dispatch/live_download_dispatch_response.png" alt="live download dispatch response"></a><figcaption><a href="swagger/32_live_download_dispatch/live_download_dispatch_response.png">live download dispatch response</a></figcaption></figure></div><details open><summary>Recorded evidence</summary><pre>{
+  &quot;id&quot;: 32,
+  &quot;name&quot;: &quot;live_download_dispatch&quot;,
+  &quot;status&quot;: 202,
+  &quot;body&quot;: {
+    &quot;id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+    &quot;state&quot;: &quot;in_progress&quot;,
+    &quot;status_url&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;
+  },
+  &quot;source&quot;: &quot;Swagger UI Try it out / Execute&quot;,
+  &quot;screenshots&quot;: [
+    &quot;swagger/32_live_download_dispatch/live_download_dispatch_inputs.png&quot;,
+    &quot;swagger/32_live_download_dispatch/live_download_dispatch_response.png&quot;
+  ],
+  &quot;request_path&quot;: &quot;/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads&quot;,
+  &quot;transport_note&quot;: &quot;Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.&quot;,
+  &quot;public_key_transport_verified&quot;: true,
+  &quot;expected_status&quot;: 202,
+  &quot;matches_expected&quot;: true,
+  &quot;captured_at&quot;: &quot;2026-10-06T07:25:18.106Z&quot;,
+  &quot;scenario&quot;: &quot;live_download_dispatch&quot;,
+  &quot;detail&quot;: &quot;User-approved temporary local minimum10.5 for this dev filer; production minimum restored afterward.&quot;,
+  &quot;passed&quot;: true,
+  &quot;outcome&quot;: &quot;PASS&quot;
+}</pre></details></section><section class="case"><h2>Edge Console command evidence</h2><div class="gallery"><figure><a href="edge-console-messages.png" target="_blank" rel="noopener"><img loading="lazy" src="edge-console-messages.png" alt="edge-console-messages"></a><figcaption><a href="edge-console-messages.png">edge-console-messages</a></figcaption></figure><figure><a href="task-detail.png" target="_blank" rel="noopener"><img loading="lazy" src="task-detail.png" alt="task-detail"></a><figcaption><a href="task-detail.png">task-detail</a></figcaption></figure></div><details open><summary>Recorded evidence</summary><pre>{
+  &quot;task_id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+  &quot;source&quot;: &quot;portal&quot;,
+  &quot;account_id&quot;: &quot;f902fd2c-796c-403b-837b-89d5625319a9&quot;,
+  &quot;started_at&quot;: &quot;2026-10-06T07:25:54.567Z&quot;,
+  &quot;messages&quot;: [
+    {
+      &quot;id&quot;: &quot;5b0a82f8-2d92-4d53-a4ca-be07e4b93bd9&quot;,
+      &quot;source&quot;: &quot;portal&quot;,
+      &quot;type&quot;: &quot;encryption_keys_downloaded&quot;,
+      &quot;family&quot;: &quot;classic_nea&quot;,
+      &quot;direction&quot;: &quot;inbound&quot;,
+      &quot;origin_id&quot;: &quot;31d629af-30b3-413e-a583-d5d3da651eb9&quot;,
+      &quot;target_id&quot;: &quot;88d7b064-c472-4f80-9ea7-468d760e5a1b&quot;,
+      &quot;account_id&quot;: &quot;f902fd2c-796c-403b-837b-89d5625319a9&quot;,
+      &quot;task_id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+      &quot;timestamp&quot;: &quot;2026-10-06T07:25:21.551712+00:00&quot;
+    },
+    {
+      &quot;id&quot;: &quot;6c3a42b2-3229-46a6-af07-c435c1f09df7&quot;,
+      &quot;source&quot;: &quot;portal&quot;,
+      &quot;type&quot;: &quot;download_encryption_keys&quot;,
+      &quot;family&quot;: &quot;classic_nea&quot;,
+      &quot;direction&quot;: &quot;inbound&quot;,
+      &quot;origin_id&quot;: &quot;88d7b064-c472-4f80-9ea7-468d760e5a1b&quot;,
+      &quot;target_id&quot;: &quot;31d629af-30b3-413e-a583-d5d3da651eb9&quot;,
+      &quot;account_id&quot;: &quot;f902fd2c-796c-403b-837b-89d5625319a9&quot;,
+      &quot;task_id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+      &quot;timestamp&quot;: &quot;2026-10-06T07:25:00.966952+00:00&quot;
+    }
+  ],
+  &quot;task&quot;: {
+    &quot;id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+    &quot;created_at&quot;: &quot;2026-10-06 07:25:00.931468+00:00&quot;,
+    &quot;updated_at&quot;: &quot;2026-10-06 07:25:21.660639+00:00&quot;,
+    &quot;message_count&quot;: 2,
+    &quot;available&quot;: true,
+    &quot;action&quot;: &quot;download_encryption_keys&quot;,
+    &quot;state&quot;: &quot;completed&quot;,
+    &quot;steps&quot;: [
+      {
+        &quot;name&quot;: &quot;download_encryption_keys&quot;,
+        &quot;state&quot;: &quot;completed&quot;,
+        &quot;created_at&quot;: &quot;2026-10-06 07:25:00&quot;,
+        &quot;updated_at&quot;: &quot;07:25:21&quot;
+      }
+    ]
+  },
+  &quot;observations&quot;: [
+    {
+      &quot;at&quot;: &quot;2026-10-06T07:25:58.398Z&quot;,
+      &quot;message_count&quot;: 2,
+      &quot;task_state&quot;: &quot;completed&quot;,
+      &quot;step_states&quot;: [
+        {
+          &quot;name&quot;: &quot;download_encryption_keys&quot;,
+          &quot;state&quot;: &quot;completed&quot;
+        }
+      ]
+    }
+  ],
+  &quot;screenshots&quot;: {
+    &quot;messages&quot;: &quot;edge-console-messages.png&quot;,
+    &quot;task&quot;: &quot;task-detail.png&quot;
+  },
+  &quot;blocked_write_requests&quot;: 0,
+  &quot;max_poll_seconds&quot;: 90,
+  &quot;poll_elapsed_seconds&quot;: 0,
+  &quot;outbound_download_seen&quot;: false,
+  &quot;finished_at&quot;: &quot;2026-10-06T07:25:58.710Z&quot;,
+  &quot;outbound_download_verified_in_database&quot;: true,
+  &quot;ui_direction_issue&quot;: {
+    &quot;summary&quot;: &quot;Edge Console incorrectly labels the outbound command as inbound because it only recognizes origin=portal; this environment uses origin=dvista1.&quot;,
+    &quot;source&quot;: &quot;devtools/edge-console/app/sources/portal.py:208&quot;,
+    &quot;database_command_origin&quot;: &quot;dvista1&quot;,
+    &quot;database_command_target&quot;: &quot;edge&quot;,
+    &quot;dispatch_verified&quot;: true,
+    &quot;repository_changed&quot;: false
+  }
+}</pre></details></section><section class="case"><h2>Filer log evidence</h2><div class="gallery"><figure><a href="filer-log.png" target="_blank" rel="noopener"><img loading="lazy" src="filer-log.png" alt="filer-log"></a><figcaption><a href="filer-log.png">filer-log</a></figcaption></figure></div><details open><summary>Recorded evidence</summary><pre>{
+  &quot;task_id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+  &quot;host&quot;: &quot;10.84.2.115&quot;,
+  &quot;port&quot;: 222,
+  &quot;log&quot;: &quot;/var/log/nasuni/broadcast_network.log&quot;,
+  &quot;ssh_exit_code&quot;: 0,
+  &quot;matched_task_lines&quot;: 1,
+  &quot;safe_log_lines&quot;: [
+    &quot;2026-10-06 03:25:19.011 DEV-E-KEYS-POC nbn-service.py[23239]: INFO: CommandAckEvent published task_id=c4f9073e-e563-40c4-9d4e-ef59f995e90a status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/88d7b064-c472-4f80-9ea7-468d760e5a1b/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack&quot;,
+    &quot;2026-10-06 03:25:19.011 DEV-E-KEYS-POC nbn-service.py[23239]: INFO: Routing DownloadEncryptionKeysCommand -&gt; configuration.encryption_keys.download&quot;
+  ],
+  &quot;ack_accepted&quot;: true,
+  &quot;routing_seen&quot;: true,
+  &quot;context_note&quot;: &quot;Routing line from the three lines before/five lines after the exact task-ID match.&quot;,
+  &quot;screenshot&quot;: &quot;filer-log.png&quot;
+}</pre></details></section><section class="case"><h2>Database correlation and result manifest</h2><p class="muted">No screenshot file linked in this record.</p><details open><summary>Recorded evidence</summary><pre>{
+  &quot;task&quot;: {
+    &quot;id&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+    &quot;action&quot;: &quot;download_encryption_keys&quot;,
+    &quot;state&quot;: &quot;completed&quot;,
+    &quot;resource_id&quot;: &quot;31d629af-30b3-413e-a583-d5d3da651eb9&quot;,
+    &quot;executor_id&quot;: &quot;31d629af-30b3-413e-a583-d5d3da651eb9&quot;,
+    &quot;created_at&quot;: &quot;2026-10-06T07:25:00.931468+00:00&quot;,
+    &quot;last_updated_at&quot;: &quot;2026-10-06T07:25:21.660639+00:00&quot;
+  },
+  &quot;messages&quot;: [
+    {
+      &quot;id&quot;: &quot;6c3a42b2-3229-46a6-af07-c435c1f09df7&quot;,
+      &quot;origin&quot;: &quot;dvista1&quot;,
+      &quot;target&quot;: &quot;edge&quot;,
+      &quot;command&quot;: &quot;download_encryption_keys&quot;,
+      &quot;event&quot;: null,
+      &quot;public_key_md5&quot;: &quot;995738bf4cb9b9912d7a2d8ec7f9f3db&quot;,
+      &quot;fingerprints&quot;: null,
+      &quot;included_count&quot;: null,
+      &quot;payload_keys&quot;: [
+        &quot;command&quot;,
+        &quot;fingerprints&quot;,
+        &quot;recipient_public_key&quot;
+      ],
+      &quot;sent_at&quot;: &quot;2026-10-06T07:25:00.966952+00:00&quot;,
+      &quot;received_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;5b0a82f8-2d92-4d53-a4ca-be07e4b93bd9&quot;,
+      &quot;origin&quot;: &quot;edge&quot;,
+      &quot;target&quot;: &quot;dvista1&quot;,
+      &quot;command&quot;: null,
+      &quot;event&quot;: &quot;encryption_keys_downloaded&quot;,
+      &quot;public_key_md5&quot;: null,
+      &quot;fingerprints&quot;: null,
+      &quot;included_count&quot;: 2,
+      &quot;payload_keys&quot;: [
+        &quot;data&quot;,
+        &quot;event&quot;
+      ],
+      &quot;sent_at&quot;: &quot;2026-10-06T07:25:19.074242+00:00&quot;,
+      &quot;received_at&quot;: &quot;2026-10-06T07:25:21.551712+00:00&quot;
+    }
+  ],
+  &quot;recipient_public_key_matches&quot;: true
+}</pre></details></section><section class="case"><h2>Version setting restoration</h2><p class="muted">No screenshot file linked in this record.</p><details open><summary>Recorded evidence</summary><pre>{
+  &quot;original_minimum&quot;: &quot;10.6&quot;,
+  &quot;temporary_minimum&quot;: &quot;10.5&quot;,
+  &quot;user_approved&quot;: true,
+  &quot;original_sha256&quot;: &quot;ac09c93eff20be3bcaf2a10d9ced7aa0671c7c55b1bc7019d47fe0051c088b02&quot;,
+  &quot;started_at&quot;: &quot;2026-10-06T07:24:17.944559+00:00&quot;,
+  &quot;restored&quot;: true,
+  &quot;browser_exit_code&quot;: 0,
+  &quot;restored_at&quot;: &quot;2026-10-06T07:25:18.303844+00:00&quot;,
+  &quot;runtime_restored&quot;: true,
+  &quot;restore_note&quot;: &quot;Source bytes restored immediately; a timestamp refresh was needed for the development watcher to reload.&quot;
+}</pre></details></section><section class="case"><h2>Restoration and cleanup</h2><p class="muted">No screenshot file linked in this record.</p><details open><summary>Recorded evidence</summary><pre>{
+  &quot;controls&quot;: {
+    &quot;deleted_cache_keys&quot;: 2,
+    &quot;remaining_cache_keys&quot;: 0
+  },
+  &quot;counts&quot;: {
+    &quot;accounts&quot;: 0,
+    &quot;users&quot;: 0,
+    &quot;roles&quot;: 0,
+    &quot;role_permissions&quot;: 0,
+    &quot;user_role&quot;: 0,
+    &quot;userkeys&quot;: 0,
+    &quot;edges_v2&quot;: 0,
+    &quot;tasks&quot;: 0,
+    &quot;task_steps&quot;: 0,
+    &quot;messages&quot;: 0
+  },
+  &quot;version_setting_restored&quot;: true,
+  &quot;restored_gate_verified_with_http_405&quot;: true,
+  &quot;repository_clean&quot;: true,
+  &quot;real_test_task_retained&quot;: &quot;c4f9073e-e563-40c4-9d4e-ef59f995e90a&quot;,
+  &quot;temporary_auth_file_cleared&quot;: true
+}</pre></details></section>
+<footer>Generated only from the named JSON evidence files in this directory. No application calls are made by this generator. Screenshots open locally at full resolution.</footer>
+</main></body></html>

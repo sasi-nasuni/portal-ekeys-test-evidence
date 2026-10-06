@@ -1,0 +1,765 @@
+[
+  {
+    "id": 3,
+    "name": "invalid_bearer",
+    "status": 401,
+    "body": {
+      "message": "Invalid token",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/03_invalid_bearer/invalid_bearer_inputs.png",
+      "swagger/03_invalid_bearer/invalid_bearer_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 401,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:08.472Z",
+    "scenario": "invalid_bearer",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 4,
+    "name": "invalid_public_key",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/04_invalid_public_key/invalid_public_key_inputs.png",
+      "swagger/04_invalid_public_key/invalid_public_key_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:09.471Z",
+    "scenario": "invalid_public_key",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 5,
+    "name": "signing_only_public_key",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/05_signing_only_public_key/signing_only_public_key_inputs.png",
+      "swagger/05_signing_only_public_key/signing_only_public_key_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:10.958Z",
+    "scenario": "signing_only_public_key",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 6,
+    "name": "private_key_rejected",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/06_private_key_rejected/private_key_rejected_inputs.png",
+      "swagger/06_private_key_rejected/private_key_rejected_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:11.800Z",
+    "scenario": "private_key_rejected",
+    "detail": "Disposable test key only; key material masked in evidence.",
+    "passed": true
+  },
+  {
+    "id": 7,
+    "name": "invalid_armor_checksum",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/07_invalid_armor_checksum/invalid_armor_checksum_inputs.png",
+      "swagger/07_invalid_armor_checksum/invalid_armor_checksum_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:12.633Z",
+    "scenario": "invalid_armor_checksum",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 8,
+    "name": "multiple_public_key_blocks",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_inputs.png",
+      "swagger/08_multiple_public_key_blocks/multiple_public_key_blocks_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:13.458Z",
+    "scenario": "multiple_public_key_blocks",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 9,
+    "name": "malformed_packet_order",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/09_malformed_packet_order/malformed_packet_order_inputs.png",
+      "swagger/09_malformed_packet_order/malformed_packet_order_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:14.304Z",
+    "scenario": "malformed_packet_order",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 10,
+    "name": "malformed_packet_body",
+    "status": 400,
+    "body": {
+      "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/10_malformed_packet_body/malformed_packet_body_inputs.png",
+      "swagger/10_malformed_packet_body/malformed_packet_body_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 400,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:15.198Z",
+    "scenario": "malformed_packet_body",
+    "detail": "",
+    "passed": true
+  },
+  {
+    "id": 11,
+    "name": "missing_public_key",
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "missing",
+          "loc": [
+            "query",
+            "public_key"
+          ],
+          "msg": "Field required",
+          "input": null
+        }
+      ]
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/11_missing_public_key/missing_public_key_inputs.png",
+      "swagger/11_missing_public_key/missing_public_key_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor removed required public_key query after UI validation; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 422,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:19:16.049Z",
+    "scenario": "missing_public_key",
+    "detail": "Swagger interceptor removes the required query parameter after UI validation.",
+    "passed": true
+  },
+  {
+    "id": 12,
+    "name": "invalid_appliance_uuid",
+    "status": null,
+    "body": null,
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/12_invalid_appliance_uuid/invalid_appliance_uuid_inputs.png"
+    ],
+    "request_path": "/edges/invalid-appliance-uuid/encryption-keys/downloads",
+    "error": "Swagger UI rejected the input before sending an HTTP request",
+    "client_validation": true,
+    "scenario": "invalid_appliance_uuid",
+    "detail": "",
+    "passed": null,
+    "outcome": "UI_LIMITATION"
+  },
+  {
+    "id": 13,
+    "name": "invalid_uuid_server_validation",
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "appliance_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1",
+          "input": "invalid-appliance-uuid",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1"
+          }
+        }
+      ]
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_inputs.png",
+      "swagger/13_invalid_uuid_server_validation/invalid_uuid_server_validation_response.png"
+    ],
+    "request_path": "/edges/invalid-appliance-uuid/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "path_transport_note": "Swagger requestInterceptor replaced the appliance ID after client-side UUID validation to test server-side validation.",
+    "expected_status": 422,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:20:24.120Z",
+    "scenario": "invalid_uuid_server_validation",
+    "detail": "Swagger rejects malformed UUID before sending; interceptor changes the validated path only to exercise real server422.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 14,
+    "name": "unknown_appliance",
+    "status": 404,
+    "body": {
+      "message": "Not found",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/14_unknown_appliance/unknown_appliance_inputs.png",
+      "swagger/14_unknown_appliance/unknown_appliance_response.png"
+    ],
+    "request_path": "/edges/908e080f-cfc5-4d83-a381-3596bc4b038a/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 404,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:20:25.192Z",
+    "scenario": "unknown_appliance",
+    "detail": "",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 15,
+    "name": "live_appliance_below_minimum",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_inputs.png",
+      "swagger/15_live_appliance_below_minimum/live_appliance_below_minimum_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 405,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:20:27.712Z",
+    "scenario": "live_appliance_below_minimum",
+    "detail": "Real DEV-E-KEYS-POC reports10.5; unmodified endpoint requires10.6.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 16,
+    "name": "feature_flag_disabled",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/16_feature_flag_disabled/feature_flag_disabled_inputs.png",
+      "swagger/16_feature_flag_disabled/feature_flag_disabled_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 403,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:21:49.022Z",
+    "scenario": "feature_flag_disabled",
+    "detail": "Only isolated synthetic tenant feature cache disabled.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 17,
+    "name": "missing_download_permission",
+    "status": 403,
+    "body": {
+      "message": "User does not have the required permissions: Download Generated Keys",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/17_missing_download_permission/missing_download_permission_inputs.png",
+      "swagger/17_missing_download_permission/missing_download_permission_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 403,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:21:53.434Z",
+    "scenario": "missing_download_permission",
+    "detail": "Persisted synthetic user has no permission role; real user roles unchanged.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 18,
+    "name": "cross_tenant_appliance",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/18_cross_tenant_appliance/cross_tenant_appliance_inputs.png",
+      "swagger/18_cross_tenant_appliance/cross_tenant_appliance_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 404,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:21:54.358Z",
+    "scenario": "cross_tenant_appliance",
+    "detail": "Existing real filer is invisible to isolated synthetic tenant.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 19,
+    "name": "wrong_appliance_family",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/19_wrong_appliance_family/wrong_appliance_family_inputs.png",
+      "swagger/19_wrong_appliance_family/wrong_appliance_family_response.png"
+    ],
+    "request_path": "/edges/371f425c-b371-5eae-a915-09ab8469611b/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 405,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:21:55.515Z",
+    "scenario": "wrong_appliance_family",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 20,
+    "name": "synthetic_below_version",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/20_synthetic_below_version/synthetic_below_version_inputs.png",
+      "swagger/20_synthetic_below_version/synthetic_below_version_response.png"
+    ],
+    "request_path": "/edges/1fd2800e-c91c-5f3b-b409-372336dc40ba/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 405,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:21:59.278Z",
+    "scenario": "synthetic_below_version",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 21,
+    "name": "offline_appliance",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/21_offline_appliance/offline_appliance_inputs.png",
+      "swagger/21_offline_appliance/offline_appliance_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 503,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:22:00.220Z",
+    "scenario": "offline_appliance",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 22,
+    "name": "download_already_in_progress",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/22_download_already_in_progress/download_already_in_progress_inputs.png",
+      "swagger/22_download_already_in_progress/download_already_in_progress_response.png"
+    ],
+    "request_path": "/edges/5f5e8dae-795b-5d36-b67d-9f81a190da53/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 409,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:22:01.102Z",
+    "scenario": "download_already_in_progress",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 23,
+    "name": "daily_rate_limit",
+    "status": 500,
+    "body": {
+      "message": "Unknown error. Please contact Nasuni Support.",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/23_daily_rate_limit/daily_rate_limit_inputs.png",
+      "swagger/23_daily_rate_limit/daily_rate_limit_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 429,
+    "matches_expected": false,
+    "captured_at": "2026-10-06T07:22:09.369Z",
+    "scenario": "daily_rate_limit",
+    "detail": "Synthetic user-key JWT plus synthetic tenant daily counter at configured quota; no request flooding.",
+    "passed": null,
+    "outcome": "FIXTURE_ERROR",
+    "fixture_error": "Raw SQL fixture omitted the ORM-only default roles.sso_group_names=[]; RoleDto rejected NULL before endpoint validation. Fixture corrected; see subsequent attempt."
+  },
+  {
+    "id": 24,
+    "name": "feature_flag_disabled",
+    "status": 403,
+    "body": {
+      "message": "This feature is not enabled for your account",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/24_feature_flag_disabled/feature_flag_disabled_inputs.png",
+      "swagger/24_feature_flag_disabled/feature_flag_disabled_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 403,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:47.882Z",
+    "scenario": "feature_flag_disabled",
+    "detail": "Only isolated synthetic tenant feature cache disabled.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 25,
+    "name": "missing_download_permission",
+    "status": 403,
+    "body": {
+      "message": "User does not have the required permissions: Download Generated Keys",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/25_missing_download_permission/missing_download_permission_inputs.png",
+      "swagger/25_missing_download_permission/missing_download_permission_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 403,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:53.571Z",
+    "scenario": "missing_download_permission",
+    "detail": "Persisted synthetic user has no permission role; real user roles unchanged.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 26,
+    "name": "cross_tenant_appliance",
+    "status": 404,
+    "body": {
+      "message": "Not found",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/26_cross_tenant_appliance/cross_tenant_appliance_inputs.png",
+      "swagger/26_cross_tenant_appliance/cross_tenant_appliance_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 404,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:54.469Z",
+    "scenario": "cross_tenant_appliance",
+    "detail": "Existing real filer is invisible to isolated synthetic tenant.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 27,
+    "name": "wrong_appliance_family",
+    "status": 405,
+    "body": {
+      "message": "This operation is not supported on this appliance",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/27_wrong_appliance_family/wrong_appliance_family_inputs.png",
+      "swagger/27_wrong_appliance_family/wrong_appliance_family_response.png"
+    ],
+    "request_path": "/edges/371f425c-b371-5eae-a915-09ab8469611b/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 405,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:55.370Z",
+    "scenario": "wrong_appliance_family",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 28,
+    "name": "synthetic_below_version",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/28_synthetic_below_version/synthetic_below_version_inputs.png",
+      "swagger/28_synthetic_below_version/synthetic_below_version_response.png"
+    ],
+    "request_path": "/edges/1fd2800e-c91c-5f3b-b409-372336dc40ba/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 405,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:56.237Z",
+    "scenario": "synthetic_below_version",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 29,
+    "name": "offline_appliance",
+    "status": 503,
+    "body": {
+      "message": "Appliance is offline",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/29_offline_appliance/offline_appliance_inputs.png",
+      "swagger/29_offline_appliance/offline_appliance_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 503,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:57.128Z",
+    "scenario": "offline_appliance",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 30,
+    "name": "download_already_in_progress",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/30_download_already_in_progress/download_already_in_progress_inputs.png",
+      "swagger/30_download_already_in_progress/download_already_in_progress_response.png"
+    ],
+    "request_path": "/edges/5f5e8dae-795b-5d36-b67d-9f81a190da53/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 409,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:23:57.936Z",
+    "scenario": "download_already_in_progress",
+    "detail": "Run-owned synthetic appliance; gate rejects before any appliance command.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 31,
+    "name": "daily_rate_limit",
+    "status": 429,
+    "body": {
+      "message": "Daily request quota exceeded.",
+      "detail": {
+        "retry_after_seconds": 0,
+        "daily_limit": 1000000
+      }
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/31_daily_rate_limit/daily_rate_limit_inputs.png",
+      "swagger/31_daily_rate_limit/daily_rate_limit_response.png"
+    ],
+    "request_path": "/edges/b08a2245-dfbe-5d5d-aa75-2f7e2fe70a09/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 429,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:24:05.711Z",
+    "scenario": "daily_rate_limit",
+    "detail": "Synthetic user-key JWT plus synthetic tenant daily counter at configured quota; no request flooding.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 32,
+    "name": "live_download_dispatch",
+    "status": 202,
+    "body": {
+      "id": "c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+      "state": "in_progress",
+      "status_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a"
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/32_live_download_dispatch/live_download_dispatch_inputs.png",
+      "swagger/32_live_download_dispatch/live_download_dispatch_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 202,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:25:18.106Z",
+    "scenario": "live_download_dispatch",
+    "detail": "User-approved temporary local minimum10.5 for this dev filer; production minimum restored afterward.",
+    "passed": true,
+    "outcome": "PASS"
+  },
+  {
+    "id": 33,
+    "name": "original_minimum_restored",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "source": "Swagger UI Try it out / Execute",
+    "screenshots": [
+      "swagger/33_original_minimum_restored/original_minimum_restored_inputs.png",
+      "swagger/33_original_minimum_restored/original_minimum_restored_response.png"
+    ],
+    "request_path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor preserves exact public_key content including newlines; localhost-only Playwright routing supplies authorization when provided.",
+    "public_key_transport_verified": true,
+    "expected_status": 405,
+    "matches_expected": true,
+    "captured_at": "2026-10-06T07:30:01.178Z",
+    "scenario": "original_minimum_restored",
+    "detail": "Post-dispatch verification: original10.6 minimum restored; same10.5 realfiler rejected again.",
+    "passed": true,
+    "outcome": "PASS"
+  }
+]
