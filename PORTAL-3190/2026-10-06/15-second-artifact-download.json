@@ -1,0 +1,15 @@
+{
+  "scenario": "15-second-artifact-download",
+  "method": "GET",
+  "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/e2d73634-dbe4-4257-9d09-54f05ddf3df6/content",
+  "status": 404,
+  "source": "Swagger Try it out / Execute",
+  "captured_at": "2026-10-06T09:43:47.215Z",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "message": "Encryption-key download is unknown, expired, or already retrieved",
+    "detail": null
+  }
+}

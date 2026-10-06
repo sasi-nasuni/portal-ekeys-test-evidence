@@ -1,0 +1,15 @@
+{
+  "scenario": "07-content-without-auth",
+  "method": "GET",
+  "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/04efd604-4255-4baa-9505-7764fdbb8db6/content",
+  "status": 401,
+  "source": "Swagger Try it out / Execute",
+  "captured_at": "2026-10-06T08:12:47.265Z",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "message": "No credentials provided",
+    "detail": null
+  }
+}

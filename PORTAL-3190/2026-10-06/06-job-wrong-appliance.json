@@ -1,0 +1,15 @@
+{
+  "scenario": "06-job-wrong-appliance",
+  "method": "GET",
+  "path": "/edges/65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+  "status": 404,
+  "source": "Swagger Try it out / Execute",
+  "captured_at": "2026-10-06T08:12:44.295Z",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": {
+    "message": "Encryption-key download job c4f9073e-e563-40c4-9d4e-ef59f995e90a does not exist",
+    "detail": null
+  }
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "scenario": "original_version_gate",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:09:58.387Z",
+    "expected_status": 405,
+    "outcome": "PASS",
+    "evidence_file": "01-version-gate.json"
+  },
+  {
+    "scenario": "02-expired-export-status",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+    "status": 200,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:11:19.206Z",
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": "no-store"
+    },
+    "body": {
+      "task_id": "c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+      "status": "completed",
+      "result": {
+        "download_id": "04efd604-4255-4baa-9505-7764fdbb8db6",
+        "content_url": null,
+        "included_count": 2,
+        "expires_at": "2026-10-06T07:30:21.630305Z"
+      },
+      "error": null
+    },
+    "expected_status": 200,
+    "outcome": "PASS",
+    "evidence_file": "02-expired-export-status.json"
+  },
+  {
+    "scenario": "03-status-without-auth",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+    "status": 401,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:11:49.739Z",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": {
+      "message": "No credentials provided",
+      "detail": null
+    },
+    "expected_status": 401,
+    "outcome": "PASS",
+    "evidence_file": "03-status-without-auth.json"
+  },
+  {
+    "scenario": "04-expired-artifact",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/04efd604-4255-4baa-9505-7764fdbb8db6/content",
+    "status": 404,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:11:52.724Z",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": {
+      "message": "Encryption-key download is unknown, expired, or already retrieved",
+      "detail": null
+    },
+    "expected_status": 404,
+    "outcome": "PASS",
+    "evidence_file": "04-expired-artifact.json"
+  },
+  {
+    "scenario": "05-unknown-job",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/20db395c-7a6b-4d51-bc97-2fa7d3e19e56",
+    "status": 404,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:11:55.899Z",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": {
+      "message": "Job 20db395c-7a6b-4d51-bc97-2fa7d3e19e56 does not exist",
+      "detail": null
+    },
+    "expected_status": 404,
+    "outcome": "PASS",
+    "evidence_file": "05-unknown-job.json"
+  },
+  {
+    "scenario": "06-job-wrong-appliance",
+    "method": "GET",
+    "path": "/edges/65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e/encryption-keys/downloads/c4f9073e-e563-40c4-9d4e-ef59f995e90a",
+    "status": 404,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:12:44.295Z",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": {
+      "message": "Encryption-key download job c4f9073e-e563-40c4-9d4e-ef59f995e90a does not exist",
+      "detail": null
+    },
+    "expected_status": 404,
+    "outcome": "PASS",
+    "evidence_file": "06-job-wrong-appliance.json"
+  },
+  {
+    "scenario": "07-content-without-auth",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/04efd604-4255-4baa-9505-7764fdbb8db6/content",
+    "status": 401,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T08:12:47.265Z",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": {
+      "message": "No credentials provided",
+      "detail": null
+    },
+    "expected_status": 401,
+    "outcome": "PASS",
+    "evidence_file": "07-content-without-auth.json"
+  },
+  {
+    "scenario": "08-live-trigger",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "source": "Swagger Try it out / Execute",
+    "temporary_minimum": "10.5",
+    "captured_at": "2026-10-06T09:41:07.796Z",
+    "note": "Request reached old runtime before hot reload; returned405 and dispatched no task.",
+    "outcome": "SETUP_RELOAD_DELAY",
+    "evidence_file": "08-live-trigger.json"
+  },
+  {
+    "scenario": "09-live-trigger",
+    "status": 202,
+    "body": {
+      "id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+      "state": "in_progress",
+      "status_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/bb355c00-a3fe-4c87-a82c-fa48e55dfa48"
+    },
+    "source": "Swagger Try it out / Execute",
+    "temporary_minimum": "10.5",
+    "captured_at": "2026-10-06T09:42:36.612Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "evidence_file": "09-live-trigger.json"
+  },
+  {
+    "scenario": "10-first-status",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+    "status": 200,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:42:40.664Z",
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": "no-store"
+    },
+    "body": {
+      "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+      "status": "in_progress",
+      "result": null,
+      "error": null
+    },
+    "expected_status": 200,
+    "outcome": "PASS",
+    "evidence_file": "10-first-status.json"
+  },
+  {
+    "scenario": "12-status-after-filer",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+    "status": 200,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:43:06.704Z",
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": "no-store"
+    },
+    "body": {
+      "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+      "status": "completed",
+      "result": {
+        "download_id": "e2d73634-dbe4-4257-9d09-54f05ddf3df6",
+        "content_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/e2d73634-dbe4-4257-9d09-54f05ddf3df6/content",
+        "included_count": 2,
+        "expires_at": "2026-10-06T09:47:40.982455Z"
+      },
+      "error": null
+    },
+    "expected_status": 200,
+    "outcome": "PASS",
+    "evidence_file": "12-status-after-filer.json"
+  },
+  {
+    "scenario": "13-repeat-status-before-download",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+    "status": 200,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:43:39.246Z",
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": "no-store"
+    },
+    "body": {
+      "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+      "status": "completed",
+      "result": {
+        "download_id": "e2d73634-dbe4-4257-9d09-54f05ddf3df6",
+        "content_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/e2d73634-dbe4-4257-9d09-54f05ddf3df6/content",
+        "included_count": 2,
+        "expires_at": "2026-10-06T09:47:40.982455Z"
+      },
+      "error": null
+    },
+    "expected_status": 200,
+    "outcome": "PASS",
+    "evidence_file": "13-repeat-status-before-download.json"
+  },
+  {
+    "scenario": "14-first-artifact-download",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/e2d73634-dbe4-4257-9d09-54f05ddf3df6/content",
+    "status": 200,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:43:43.203Z",
+    "headers": {
+      "content-type": "application/octet-stream",
+      "cache-control": "no-store",
+      "content-disposition": "attachment; filename=\"encryption-keys-e2d73634-dbe4-4257-9d09-54f05ddf3df6.gpg\""
+    },
+    "artifact": {
+      "bytes": 10028,
+      "sha256": "62a502349485d2bdee017b32d883c05fd01e11d20cbe4e0d80b1adb185532f64",
+      "capture_method": "Swagger Download file browser blob; no second API retrieval",
+      "initial_capture_note": "Playwright response.body returned empty; actual browser download used instead"
+    },
+    "expected_status": 200,
+    "outcome": "PASS",
+    "evidence_file": "14-first-artifact-download.json"
+  },
+  {
+    "scenario": "15-second-artifact-download",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/e2d73634-dbe4-4257-9d09-54f05ddf3df6/content",
+    "status": 404,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:43:47.215Z",
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": {
+      "message": "Encryption-key download is unknown, expired, or already retrieved",
+      "detail": null
+    },
+    "expected_status": 404,
+    "outcome": "PASS",
+    "evidence_file": "15-second-artifact-download.json"
+  },
+  {
+    "scenario": "16-status-after-consumption",
+    "method": "GET",
+    "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+    "status": 200,
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:43:51.070Z",
+    "headers": {
+      "content-type": "application/json",
+      "cache-control": "no-store"
+    },
+    "body": {
+      "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+      "status": "completed",
+      "result": {
+        "download_id": "e2d73634-dbe4-4257-9d09-54f05ddf3df6",
+        "content_url": null,
+        "included_count": 2,
+        "expires_at": "2026-10-06T09:47:40.982455Z"
+      },
+      "error": null
+    },
+    "expected_status": 200,
+    "outcome": "PASS",
+    "evidence_file": "16-status-after-consumption.json"
+  },
+  {
+    "scenario": "17-restored-version-gate",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "source": "Swagger Try it out / Execute",
+    "captured_at": "2026-10-06T09:47:17.013Z",
+    "expected_status": 405,
+    "outcome": "PASS",
+    "evidence_file": "17-restored-version-gate.json"
+  }
+]

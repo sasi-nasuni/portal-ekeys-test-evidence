@@ -1,0 +1,125 @@
+{
+  "ticket": "PORTAL-3190",
+  "pull_request": "https://github.com/nasuni/portal/pull/2794",
+  "test_date": "2026-10-06",
+  "tested_commit": "ee84f7b1fd9f070f45376f43e10a1e73057e60ed",
+  "http_attempts": 16,
+  "http_passes": 15,
+  "passing_http_status_counts": {
+    "200": 6,
+    "202": 1,
+    "401": 2,
+    "404": 4,
+    "405": 2
+  },
+  "setup_reload_delay_attempts": 1,
+  "original_screenshots": 18,
+  "rendered_json_screenshots": 13,
+  "artifact_format_passed": false,
+  "removed_local_path_fields": [
+    "evidence_dir",
+    "private_path",
+    "runtime_dir"
+  ],
+  "excluded_material": [
+    "Bearer credentials",
+    "Recipient private and public key payloads",
+    "Encrypted artifact bytes",
+    "Decrypted key material",
+    "Runtime scripts and environment files"
+  ],
+  "render_provenance": "Rendered from recorded JSON evidence; not a terminal, browser, or database UI capture.",
+  "json_renders": [
+    {
+      "file": "19-initial-task-step-json.png",
+      "title": "Database task and step / initial snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094251893714Z.json",
+      "selection": "common identifiers + database.tasks, database.steps, database.ok, database.expected_download_task",
+      "note": "Both task and step completed. The database acknowledgment field is null; filer acceptance is recorded separately."
+    },
+    {
+      "file": "20-initial-messages-json.png",
+      "title": "Database command and result messages / initial snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094251893714Z.json",
+      "selection": "common identifiers + database.messages",
+      "note": "Origin/target confirm dvista1 to edge dispatch and edge to dvista1 result. Message payloads and key material are excluded."
+    },
+    {
+      "file": "21-initial-audit-json.png",
+      "title": "Database retrieval audit / initial snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094251893714Z.json",
+      "selection": "common identifiers + database.download_audits, database.audits_checked",
+      "note": "Initial snapshot did not query audits; its empty list is not evidence of zero audits."
+    },
+    {
+      "file": "22-initial-filer-json.png",
+      "title": "Filer acknowledgment and routing / initial snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094251893714Z.json",
+      "selection": "common identifiers + filer",
+      "note": "Sanitized metadata from broadcast_network.log, not raw log lines. Acknowledgment contains the exact task ID; routing is correlated by adjacent context (within three lines). Log timestamps retain the filer clock."
+    },
+    {
+      "file": "23-final-task-step-json.png",
+      "title": "Database task and step / final snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094443484932Z.json",
+      "selection": "common identifiers + database.tasks, database.steps, database.ok, database.expected_download_task",
+      "note": "Both task and step completed. The database acknowledgment field is null; filer acceptance is recorded separately."
+    },
+    {
+      "file": "24-final-messages-json.png",
+      "title": "Database command and result messages / final snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094443484932Z.json",
+      "selection": "common identifiers + database.messages",
+      "note": "Origin/target confirm dvista1 to edge dispatch and edge to dvista1 result. Message payloads and key material are excluded."
+    },
+    {
+      "file": "25-final-audit-json.png",
+      "title": "Database retrieval audit / final snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094443484932Z.json",
+      "selection": "common identifiers + database.download_audits, database.audits_checked",
+      "note": "Final snapshot contains one download audit, including the appliance name and download ID."
+    },
+    {
+      "file": "26-final-filer-json.png",
+      "title": "Filer acknowledgment and routing / final snapshot",
+      "source": "verification-bb355c00-a3fe-4c87-a82c-fa48e55dfa48-20261006T094443484932Z.json",
+      "selection": "common identifiers + filer",
+      "note": "Sanitized metadata from broadcast_network.log, not raw log lines. Acknowledgment contains the exact task ID; routing is correlated by adjacent context (within three lines). Log timestamps retain the filer clock."
+    },
+    {
+      "file": "27-artifact-validation-json.png",
+      "title": "Artifact validation / unresolved format failure",
+      "source": "artifact-verification.json",
+      "selection": "$",
+      "note": "HTTP retrieval passed, but the raw .gpg file is base64 text and fails OpenPGP parsing. Only the decoded bytes parse and decrypt. No key material is included."
+    },
+    {
+      "file": "28-version-restoration-json.png",
+      "title": "Approved version override and restoration",
+      "source": "version-override.json",
+      "selection": "$",
+      "note": "The live appliance reports 10.5. The approved local override was restored to 10.6 and verified again through Swagger (405)."
+    },
+    {
+      "file": "29-cleanup-json.png",
+      "title": "Cleanup verification",
+      "source": "cleanup.json",
+      "selection": "$",
+      "note": "Temporary authentication and private-key files were cleared. The real completed task and audit were retained; no synthetic database rows were created."
+    },
+    {
+      "file": "30-run-summary-json.png",
+      "title": "Run summary / HTTP passes and artifact failure",
+      "source": "test-summary.json",
+      "selection": "$",
+      "note": "15 HTTP assertions passed; one setup reload retry is separate. The raw artifact format failure remains unresolved. This summary does not claim a fully passing end-to-end export."
+    },
+    {
+      "file": "31-run-metadata-json.png",
+      "title": "Run metadata",
+      "source": "run-metadata.json",
+      "selection": "$",
+      "note": "Local filesystem paths were removed for publication. The recipient fingerprint identifies a disposable test recipient; no public or private key payload is published."
+    }
+  ]
+}

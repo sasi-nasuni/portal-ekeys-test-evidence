@@ -1,0 +1,8 @@
+{
+  "temporary_bearer_file_cleared": true,
+  "disposable_private_key_file_cleared": true,
+  "minimum_restored": "10.6",
+  "synthetic_database_rows_created": 0,
+  "real_test_task_and_audit_retained": true,
+  "plaintext_key_material_persisted": false
+}

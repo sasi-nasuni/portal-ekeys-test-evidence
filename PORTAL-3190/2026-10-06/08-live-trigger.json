@@ -1,0 +1,12 @@
+{
+  "scenario": "08-live-trigger",
+  "status": 405,
+  "body": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "source": "Swagger Try it out / Execute",
+  "temporary_minimum": "10.5",
+  "captured_at": "2026-10-06T09:41:07.796Z",
+  "note": "Attempt occurred before development reload completed; runtime still enforced10.6 and dispatched no task."
+}

@@ -1,0 +1,40 @@
+{
+  "raw_bytes": 10028,
+  "raw_sha256": "62a502349485d2bdee017b32d883c05fd01e11d20cbe4e0d80b1adb185532f64",
+  "raw_pgp_parse": {
+    "success": false,
+    "error_type": "ValueError"
+  },
+  "base64": {
+    "valid": true,
+    "decoded_bytes": 7519
+  },
+  "decoded_pgp_parse": {
+    "success": true,
+    "encrypted": true
+  },
+  "recipient_key_matches": true,
+  "decryption": {
+    "success": true,
+    "plaintext_bytes": 7240,
+    "private_key_armor_blocks": 0,
+    "public_key_armor_blocks": 0,
+    "zip_signature": false,
+    "gzip_signature": false,
+    "json_like": false
+  },
+  "decrypted_key_bundle": {
+    "parsed": true,
+    "unique_primary_key_count": 2,
+    "private_primary_key_count": 2,
+    "subkey_count": 2,
+    "matches_status_included_count": true
+  },
+  "finding": "Downloaded .gpg attachment is base64 text; decoding is required before OpenPGP parsing/decryption.",
+  "sensitive_material_handling": "Existing ciphertext artifact and disposable private key were read only; decrypted keys remained in process memory and were neither printed nor persisted.",
+  "gpg_raw_file_check": {
+    "exit_code": 2,
+    "raw_file_recognized": false,
+    "no_valid_openpgp_data": true
+  }
+}

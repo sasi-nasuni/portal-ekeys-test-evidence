@@ -1,0 +1,10 @@
+{
+  "original_minimum": "10.6",
+  "temporary_minimum": "10.5",
+  "authorized": true,
+  "original_sha256": "ac09c93eff20be3bcaf2a10d9ced7aa0671c7c55b1bc7019d47fe0051c088b02",
+  "started_at": "2026-10-06T09:40:30.746665+00:00",
+  "restored": true,
+  "restored_at": "2026-10-06T09:45:30.394056+00:00",
+  "runtime_restored": true
+}

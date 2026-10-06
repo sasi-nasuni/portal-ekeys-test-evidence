@@ -1,0 +1,10 @@
+{
+  "scenario": "17-restored-version-gate",
+  "status": 405,
+  "body": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "source": "Swagger Try it out / Execute",
+  "captured_at": "2026-10-06T09:47:17.013Z"
+}

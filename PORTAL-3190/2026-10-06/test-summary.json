@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-10-06T15:18:53.747187+05:30",
+  "appliance": "DEV-E-KEYS-POC",
+  "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+  "download_id": "e2d73634-dbe4-4257-9d09-54f05ddf3df6",
+  "http_assertions_passed": 15,
+  "setup_reload_retries": 1,
+  "task_completed": true,
+  "filer_acceptance_verified": true,
+  "filer_routing_verified": true,
+  "edge_console_verified": true,
+  "included_count": 2,
+  "artifact_bytes": 10028,
+  "single_use_verified": true,
+  "status_retained_after_consumption": true,
+  "audit_count": 1,
+  "audit_appliance_name": "DEV-E-KEYS-POC",
+  "artifact_format_passed": false,
+  "finding": "Downloaded .gpg attachment is base64 text; decoding is required before OpenPGP parsing/decryption.",
+  "decoded_artifact_decrypts": true,
+  "decoded_private_primary_key_count": 2,
+  "minimum_restored": "10.6",
+  "repository_clean": true,
+  "test_rows_seeded": 0,
+  "real_test_task_and_audit_retained": true,
+  "not_exercised": [
+    "Permission removal / feature-flag-off scenarios",
+    "Different-account isolation with real auth",
+    "Fresh empty/failed job outcomes",
+    "Timeout/cancellation behavior"
+  ],
+  "cleanup": {
+    "temporary_bearer_file_cleared": true,
+    "disposable_private_key_file_cleared": true,
+    "minimum_restored": "10.6",
+    "synthetic_database_rows_created": 0,
+    "real_test_task_and_audit_retained": true,
+    "plaintext_key_material_persisted": false
+  }
+}

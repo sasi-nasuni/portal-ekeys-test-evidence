@@ -1,0 +1,97 @@
+{
+  "captured_at": "2026-10-06T09:44:43.484932+00:00",
+  "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+  "download_id": "e2d73634-dbe4-4257-9d09-54f05ddf3df6",
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+  "database": {
+    "tasks": [
+      {
+        "id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "resource": "edge",
+        "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "action": "download_encryption_keys",
+        "executor": "edge",
+        "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "state": "completed",
+        "created_at": "2026-10-06T09:42:25.440293+00:00",
+        "last_updated_at": "2026-10-06T09:42:40.991383+00:00",
+        "acknowledged": null
+      }
+    ],
+    "steps": [
+      {
+        "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+        "name": "download_encryption_keys",
+        "state": "completed",
+        "created_at": "2026-10-06T09:42:25.440293+00:00",
+        "updated_at": "2026-10-06T09:42:40.991383+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "c5970c95-b853-4123-93a7-f5ee365ec511",
+        "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "origin": "dvista1",
+        "target": "edge",
+        "origin_id": "88d7b064-c472-4f80-9ea7-468d760e5a1b",
+        "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "sent_at": "2026-10-06T09:42:25.473753+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "b937340d-7348-41d5-9e11-98e548b0cc02",
+        "task_id": "bb355c00-a3fe-4c87-a82c-fa48e55dfa48",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "origin": "edge",
+        "target": "dvista1",
+        "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "target_id": "88d7b064-c472-4f80-9ea7-468d760e5a1b",
+        "sent_at": "2026-10-06T09:42:37.927955+00:00",
+        "received_at": "2026-10-06T09:42:40.971603+00:00",
+        "acked_at": null
+      }
+    ],
+    "download_audits": [
+      {
+        "id": "914f1521-5b9e-4816-a849-8b2d4b2b6286",
+        "action": "Encryption Keys Downloaded",
+        "timestamp": "2026-10-06T09:43:43.160168+00:00",
+        "target": "Edge",
+        "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "target_description": "DEV-E-KEYS-POC",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "download_id": "e2d73634-dbe4-4257-9d09-54f05ddf3df6"
+      }
+    ],
+    "ok": true,
+    "audits_checked": true,
+    "expected_download_task": true
+  },
+  "filer": {
+    "ok": true,
+    "matching_task_lines_found": true,
+    "records": [
+      {
+        "line_number": 22033,
+        "kind": "command_ack_accepted",
+        "task_id_on_same_line": true,
+        "correlation_basis": "same_line",
+        "log_timestamp": "2026-10-06 05:42:37.859"
+      },
+      {
+        "line_number": 22034,
+        "kind": "routing_download_encryption_keys",
+        "task_id_on_same_line": false,
+        "correlation_basis": "within_3_lines",
+        "log_timestamp": "2026-10-06 05:42:37.859"
+      }
+    ],
+    "scope": "exact task UUID matches with three context lines; safe tokens only",
+    "raw_lines_retained": false
+  }
+}
