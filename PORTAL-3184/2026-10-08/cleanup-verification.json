@@ -1,0 +1,56 @@
+{
+  "all_runs_clean": true,
+  "runs": [
+    {
+      "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+      "account_ids": [
+        "45bb5ce3-7f61-4ccf-8d69-824912f50b4c",
+        "0b2d337c-d4cf-4619-b0b0-b08e610d49e3"
+      ],
+      "cleanup": {
+        "remaining_fixture_rows_by_table": {
+          "task_steps": 0,
+          "tasks": 0,
+          "volume_encryption_key_associations": 0,
+          "encryption_keys": 0,
+          "volumes_v2": 0,
+          "edges_v2": 0,
+          "role_permissions": 0,
+          "user_role": 0,
+          "users": 0,
+          "roles": 0,
+          "accounts": 0
+        },
+        "remaining_fixture_cache_keys": 0,
+        "source_or_global_settings_modified": false,
+        "passed": true
+      }
+    },
+    {
+      "run": "PORTAL-3184-20261007T205806Z-208e690a",
+      "account_ids": [
+        "f73baf74-0a15-44f3-9d1d-cbc06870c60f",
+        "cac855fd-689b-40a3-a7e0-d7ee4e9b50a2"
+      ],
+      "cleanup": {
+        "remaining_fixture_rows_by_table": {
+          "task_steps": 0,
+          "tasks": 0,
+          "volume_encryption_key_associations": 0,
+          "encryption_keys": 0,
+          "volumes_v2": 0,
+          "edges_v2": 0,
+          "role_permissions": 0,
+          "user_role": 0,
+          "users": 0,
+          "roles": 0,
+          "accounts": 0
+        },
+        "remaining_fixture_cache_keys": 0,
+        "source_or_global_settings_modified": false,
+        "passed": true
+      }
+    }
+  ],
+  "authentication_cleanup": "Swagger HTTPBearer logout and isolated browser context closed after each run; fixture users deleted."
+}

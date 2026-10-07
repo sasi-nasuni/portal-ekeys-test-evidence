@@ -1,0 +1,830 @@
+[
+  {
+    "number": 1,
+    "scenario": "Missing bearer",
+    "expected_status": 401,
+    "http_status": 401,
+    "screenshot": "001_missing_bearer/01_401_missing-bearer.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": false,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "e477777a8c67c748934ea979f154d319cbdd4bb25842d91cce14e1a2af614df0",
+    "image_size": [
+      1392,
+      1071
+    ],
+    "png_sha256": "69cfe20afbfec5054685bbac00af1c39dd69a4919c8338acde379ba66eee76c6",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "001_missing_bearer/result.json"
+  },
+  {
+    "number": 2,
+    "scenario": "Malformed bearer",
+    "expected_status": 401,
+    "http_status": 401,
+    "screenshot": "002_malformed_bearer/02_401_malformed-bearer.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b59bf9762f57cc599c03d2a3e8df33e2cc53ca9c19ed8fa682be72331eb54a2d",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "6837db12b043d61753bd9cbc001d890b956365489f792ba12462377b340ffbcd",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "002_malformed_bearer/result.json"
+  },
+  {
+    "number": 3,
+    "scenario": "Invalid signature",
+    "expected_status": 401,
+    "http_status": 401,
+    "screenshot": "003_invalid_signature/03_401_invalid-signature.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b59bf9762f57cc599c03d2a3e8df33e2cc53ca9c19ed8fa682be72331eb54a2d",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "6837db12b043d61753bd9cbc001d890b956365489f792ba12462377b340ffbcd",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "003_invalid_signature/result.json"
+  },
+  {
+    "number": 4,
+    "scenario": "Expired bearer",
+    "expected_status": 401,
+    "http_status": 401,
+    "screenshot": "004_expired_bearer/04_401_expired-bearer.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b59bf9762f57cc599c03d2a3e8df33e2cc53ca9c19ed8fa682be72331eb54a2d",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "6837db12b043d61753bd9cbc001d890b956365489f792ba12462377b340ffbcd",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "004_expired_bearer/result.json"
+  },
+  {
+    "number": 5,
+    "scenario": "Wrong token audience",
+    "expected_status": 401,
+    "http_status": 401,
+    "screenshot": "005_wrong_token_audience/05_401_wrong-token-audience.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "86e3eac0066c42bae09d6ca196c3518f47a0087a2b40ad2ec75cf5a5547d54a0",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "1d5cf83ab2aa8885342f8a7a4cfdef23d58844a59cf185d8e6aefbbbde8b8ea4",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "005_wrong_token_audience/result.json"
+  },
+  {
+    "number": 6,
+    "scenario": "Unknown user",
+    "expected_status": 401,
+    "http_status": 401,
+    "screenshot": "006_unknown_user/06_401_unknown-user.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "9abd35c2426d8d05b1505f16ee2d69f9876aada5559bf1fbb13b523f6db12297",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "ec959440ca9519ed0292bcfaf8b8c76f479d57711162101da463e596609477f1",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "006_unknown_user/result.json"
+  },
+  {
+    "number": 7,
+    "scenario": "Missing base permission",
+    "expected_status": 403,
+    "http_status": 403,
+    "screenshot": "007_missing_base_permission/07_403_missing-base-permission.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "6a0d32217acbc0b02a7d7800736130c72fac5bfa5a63db29819f52227129fc4c",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "1940c6c0c996dd58074f699909f3d080976fa29fb182d793798f82e89d592d00",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "007_missing_base_permission/result.json"
+  },
+  {
+    "number": 8,
+    "scenario": "Backup/escrow permissions do not replace base permission",
+    "expected_status": 403,
+    "http_status": 403,
+    "screenshot": "008_backup_escrow_permissions_do_not_replace_base_permission/08_403_backup-escrow-permissions-do-not-replace-base-permission.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "6a0d32217acbc0b02a7d7800736130c72fac5bfa5a63db29819f52227129fc4c",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "1940c6c0c996dd58074f699909f3d080976fa29fb182d793798f82e89d592d00",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "008_backup_escrow_permissions_do_not_replace_base_permission/result.json"
+  },
+  {
+    "number": 9,
+    "scenario": "Feature flag disabled",
+    "expected_status": 403,
+    "http_status": 403,
+    "screenshot": "009_feature_flag_disabled/09_403_feature-flag-disabled.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "53f2d061ae6e679818d7ccd70efaf7877c3b2fcc73cb4e9315a9f6d5eae0364d",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "11ea32c408a78411189dd841f3b78b7f6a7da9160ea35691e6653c063f4aa1b4",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "009_feature_flag_disabled/result.json"
+  },
+  {
+    "number": 10,
+    "scenario": "Malformed key UUID",
+    "expected_status": 422,
+    "http_status": 422,
+    "screenshot": "010_malformed_key_uuid/10_422_malformed-key-uuid.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": true,
+    "response_sha256": "9840c483aa34252fdd11161dfc37d6d930b0e8ac4dc2fb20d0bcddc3cbc997ce",
+    "image_size": [
+      1392,
+      1429
+    ],
+    "png_sha256": "03484cddfbdc2cf8757eb08daae120c85cd759426b838c3a7d30ecb348833f4c",
+    "run": "PORTAL-3184-20261007T205806Z-208e690a",
+    "result": "010_malformed_key_uuid/result.json"
+  },
+  {
+    "number": 11,
+    "scenario": "Unknown key UUID",
+    "expected_status": 404,
+    "http_status": 404,
+    "screenshot": "011_unknown_key_uuid/11_404_unknown-key-uuid.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "2edf5989f19e888594047b9aa5ea45e11f437c97ad729a0b087ba942dff38d9c",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "b6de31bbfe775b215c25a8be324e92392c3baabdd5d5d0d1601f61df6aaa42ee",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "011_unknown_key_uuid/result.json"
+  },
+  {
+    "number": 12,
+    "scenario": "Other tenant key hidden",
+    "expected_status": 404,
+    "http_status": 404,
+    "screenshot": "012_other_tenant_key_hidden/12_404_other-tenant-key-hidden.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "2edf5989f19e888594047b9aa5ea45e11f437c97ad729a0b087ba942dff38d9c",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "b36fe70c594f1d7645a93d195f66369ca3de760836e6ab034323058a721f5fee",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "012_other_tenant_key_hidden/result.json"
+  },
+  {
+    "number": 13,
+    "scenario": "Backup key hidden without permission",
+    "expected_status": 404,
+    "http_status": 404,
+    "screenshot": "013_backup_key_hidden_without_permission/13_404_backup-key-hidden-without-permission.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "2edf5989f19e888594047b9aa5ea45e11f437c97ad729a0b087ba942dff38d9c",
+    "image_size": [
+      1392,
+      1070
+    ],
+    "png_sha256": "d745f33c5b299d403ead8634ce83b015f26bbf57721b58cde4fb6484b1679f9e",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "013_backup_key_hidden_without_permission/result.json"
+  },
+  {
+    "number": 14,
+    "scenario": "Full metadata, sorted mixed associations, offline old appliance readable",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "014_full_metadata_sorted_mixed_associations_offline_old_appliance_readable/14_200_full-metadata-sorted-mixed-associations-offline-old-appliance-readable.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "c59435a5b62cc6cab676921b6d5a990f3b87eae76361794ef7063226d2587562",
+    "image_size": [
+      1392,
+      1690
+    ],
+    "png_sha256": "105061d5f42877c89bb44596ca8b6d87587a42ef517f42a3fc5ca463bdcddf4d",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "014_full_metadata_sorted_mixed_associations_offline_old_appliance_readable/result.json"
+  },
+  {
+    "number": 15,
+    "scenario": "Backup key visible with permission",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "015_backup_key_visible_with_permission/15_200_backup-key-visible-with-permission.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "ae69973c3671aa25d5283eb99495035536c4d7746f70bd5f8baaa0db78c620e5",
+    "image_size": [
+      1392,
+      1290
+    ],
+    "png_sha256": "f5c7abeb737a269c28c93575f2358a531ff6a81be6b9b45759719515d09df161",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "015_backup_key_visible_with_permission/result.json"
+  },
+  {
+    "number": 16,
+    "scenario": "Unused uploaded ElGamal key and false escrow flag",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "016_unused_uploaded_elgamal_key_and_false_escrow_flag/16_200_unused-uploaded-elgamal-key-and-false-escrow-flag.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "776e42374fabd7cc9dd65de3196de45f88dae62d63d536672aa66f440e5e634f",
+    "image_size": [
+      1392,
+      1290
+    ],
+    "png_sha256": "f24ae48d7817c562da8ca756c8bc26042c412deaa04ccacfa869e2bb927443f7",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "016_unused_uploaded_elgamal_key_and_false_escrow_flag/result.json"
+  },
+  {
+    "number": 17,
+    "scenario": "Disabled-only association still means used",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "017_disabled_only_association_still_means_used/17_200_disabled-only-association-still-means-used.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "df6c01ef14109aeca9f6e0639358fe260167c826db969147db63de7972425d21",
+    "image_size": [
+      1392,
+      1434
+    ],
+    "png_sha256": "fb54bb5b857ac092d8fe755f93325131a6483f944db5ebcf6ee08f09835b6f52",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "017_disabled_only_association_still_means_used/result.json"
+  },
+  {
+    "number": 18,
+    "scenario": "Same fingerprint on second appliance stays isolated",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "018_same_fingerprint_on_second_appliance_stays_isolated/18_200_same-fingerprint-on-second-appliance-stays-isolated.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "ef546660f1f0444a32fc6467abbaff1a2aa9314244f7254d152c7b5404fc3ad9",
+    "image_size": [
+      1392,
+      1290
+    ],
+    "png_sha256": "17178583405263c0f6e50ab902a3897d9c2fdcd51c792b770abc9c3d40b0fc1f",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "018_same_fingerprint_on_second_appliance_stays_isolated/result.json"
+  },
+  {
+    "number": 19,
+    "scenario": "Upload stub retains null metadata and creating status",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "019_upload_stub_retains_null_metadata_and_creating_status/19_200_upload-stub-retains-null-metadata-and-creating-status.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b59f201591366fb351bb86dbbc0faf6eaafaa232a669ed47bef8abc175940606",
+    "image_size": [
+      1392,
+      1290
+    ],
+    "png_sha256": "e11dab437694e65666a35e83952a5c050cd480d31040908918aac9a44107301d",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "019_upload_stub_retains_null_metadata_and_creating_status/result.json"
+  },
+  {
+    "number": 20,
+    "scenario": "Non-stub key supports unknown algorithm/length",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "020_non_stub_key_supports_unknown_algorithm_length/20_200_non-stub-key-supports-unknown-algorithm-length.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b19ab47c87de3390f3a6cde5526e24318460bf7c62c09b44d96124141dd18077",
+    "image_size": [
+      1392,
+      1290
+    ],
+    "png_sha256": "94103fbb057f55244aee7159487a00600a0da95848f1a12348c4bf6377c3ba2b",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "020_non_stub_key_supports_unknown_algorithm_length/result.json"
+  },
+  {
+    "number": 21,
+    "scenario": "Field visibility: full, escrow license True",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "021_field_visibility_full_escrow_license_true/21_200_field-visibility-full-escrow-license-true.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "c59435a5b62cc6cab676921b6d5a990f3b87eae76361794ef7063226d2587562",
+    "image_size": [
+      1392,
+      1690
+    ],
+    "png_sha256": "38d41790bd18af738afb8d64f687a70f35c557d25267d4912ddcc083878e288e",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "021_field_visibility_full_escrow_license_true/result.json"
+  },
+  {
+    "number": 22,
+    "scenario": "Field visibility: base, escrow license True",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "022_field_visibility_base_escrow_license_true/22_200_field-visibility-base-escrow-license-true.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "e81669ca5fa60480740d31539f7432259da6f34e637ebe12468579d95e3eb80e",
+    "image_size": [
+      1392,
+      1658
+    ],
+    "png_sha256": "a7bc057b9ba111fcb0de4b84bf4748a324dbc1ac0d056dacc0f74bda4ab3681b",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "022_field_visibility_base_escrow_license_true/result.json"
+  },
+  {
+    "number": 23,
+    "scenario": "Field visibility: base_backup, escrow license True",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "023_field_visibility_base_backup_escrow_license_true/23_200_field-visibility-base-backup-escrow-license-true.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "1a0dee10edfec8a5dc2ab856e1747553db35bd852cfb72e09033e74a021ce5ff",
+    "image_size": [
+      1392,
+      1674
+    ],
+    "png_sha256": "6384f26c701674183354bd3d3190a40d1c8935352763938d81c086193e940edb",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "023_field_visibility_base_backup_escrow_license_true/result.json"
+  },
+  {
+    "number": 24,
+    "scenario": "Field visibility: base_escrow, escrow license True",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "024_field_visibility_base_escrow_escrow_license_true/24_200_field-visibility-base-escrow-escrow-license-true.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "dfb6bd0edd3ad3e6a36a55eb8b4d8f43b29f8b780fc678dd5bf9586039101240",
+    "image_size": [
+      1392,
+      1674
+    ],
+    "png_sha256": "17f3da1469890b2f0ec1a94147ded8fea59d13e0df0273956d70bfc6960ebcf7",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "024_field_visibility_base_escrow_escrow_license_true/result.json"
+  },
+  {
+    "number": 25,
+    "scenario": "Field visibility: full, escrow license False",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "025_field_visibility_full_escrow_license_false/25_200_field-visibility-full-escrow-license-false.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "1a0dee10edfec8a5dc2ab856e1747553db35bd852cfb72e09033e74a021ce5ff",
+    "image_size": [
+      1392,
+      1674
+    ],
+    "png_sha256": "081ddb42b4322911bb37a242df4c985bc8137e7445b63e139adb01d3321a8191",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "025_field_visibility_full_escrow_license_false/result.json"
+  },
+  {
+    "number": 26,
+    "scenario": "Field visibility: base, escrow license False",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "026_field_visibility_base_escrow_license_false/26_200_field-visibility-base-escrow-license-false.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "e81669ca5fa60480740d31539f7432259da6f34e637ebe12468579d95e3eb80e",
+    "image_size": [
+      1392,
+      1658
+    ],
+    "png_sha256": "cd70e4aaefe585630a06df65e41f6f980d9f9b2ff3a86b72f9544d82f0f63f17",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "026_field_visibility_base_escrow_license_false/result.json"
+  },
+  {
+    "number": 27,
+    "scenario": "Field visibility: base_backup, escrow license False",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "027_field_visibility_base_backup_escrow_license_false/27_200_field-visibility-base-backup-escrow-license-false.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "1a0dee10edfec8a5dc2ab856e1747553db35bd852cfb72e09033e74a021ce5ff",
+    "image_size": [
+      1392,
+      1674
+    ],
+    "png_sha256": "081ddb42b4322911bb37a242df4c985bc8137e7445b63e139adb01d3321a8191",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "027_field_visibility_base_backup_escrow_license_false/result.json"
+  },
+  {
+    "number": 28,
+    "scenario": "Field visibility: base_escrow, escrow license False",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "028_field_visibility_base_escrow_escrow_license_false/28_200_field-visibility-base-escrow-escrow-license-false.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "e81669ca5fa60480740d31539f7432259da6f34e637ebe12468579d95e3eb80e",
+    "image_size": [
+      1392,
+      1658
+    ],
+    "png_sha256": "cd70e4aaefe585630a06df65e41f6f980d9f9b2ff3a86b72f9544d82f0f63f17",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "028_field_visibility_base_escrow_escrow_license_false/result.json"
+  },
+  {
+    "number": 29,
+    "scenario": "Key failed while volume association pending",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "029_key_failed_while_volume_association_pending/29_200_key-failed-while-volume-association-pending.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b2348d9f4823a48ec64bdf8bf8b2fdb6aba135da75cfab6bf1c9c1062708b94f",
+    "image_size": [
+      1392,
+      1994
+    ],
+    "png_sha256": "bcc2fc984a32fd61804d2e82edad154d7e8e0e84008167a4fbc0a0fc33eb96d2",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "029_key_failed_while_volume_association_pending/result.json"
+  },
+  {
+    "number": 30,
+    "scenario": "Uncurated failed task keeps null error message",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "030_uncurated_failed_task_keeps_null_error_message/30_200_uncurated-failed-task-keeps-null-error-message.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "6bf68f9b7dda3e0272d31c1674c71955984ed15bca4055432dd7207d37acac78",
+    "image_size": [
+      1392,
+      1994
+    ],
+    "png_sha256": "aff63b90401f615784709a71d6f34b32440a3b3f76b4b923e4b6708a1296a76b",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "030_uncurated_failed_task_keeps_null_error_message/result.json"
+  },
+  {
+    "number": 31,
+    "scenario": "In-progress wins over failure; association stays independently failed",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "031_in_progress_wins_over_failure_association_stays_independently_failed/31_200_in-progress-wins-over-failure-association-stays-independently-failed.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "8960a0550e082f3bbd1847eab3cfeb7db6496a4df9c52457361bdbe7949e9a33",
+    "image_size": [
+      1392,
+      2154
+    ],
+    "png_sha256": "295c166caa7b8268cd51bae76aa18149bc195b889fa38d7db8ed35922ad69ef2",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "031_in_progress_wins_over_failure_association_stays_independently_failed/result.json"
+  },
+  {
+    "number": 32,
+    "scenario": "Task scopes exclude completed, dismissed, wrong action/resource/tenant/ID",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "032_task_scopes_exclude_completed_dismissed_wrong_action_resource_tenant_id/32_200_task-scopes-exclude-completed-dismissed-wrong-action-resource-tenant-id.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "8960a0550e082f3bbd1847eab3cfeb7db6496a4df9c52457361bdbe7949e9a33",
+    "image_size": [
+      1392,
+      2154
+    ],
+    "png_sha256": "295c166caa7b8268cd51bae76aa18149bc195b889fa38d7db8ed35922ad69ef2",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "032_task_scopes_exclude_completed_dismissed_wrong_action_resource_tenant_id/result.json"
+  },
+  {
+    "number": 33,
+    "scenario": "Equal task timestamps use deterministic UUID ordering",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "033_equal_task_timestamps_use_deterministic_uuid_ordering/33_200_equal-task-timestamps-use-deterministic-uuid-ordering.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "73a93cdfd36459ae3d2246e18a09611af633830e246fc19108f683bbcae07769",
+    "image_size": [
+      1392,
+      2266
+    ],
+    "png_sha256": "c13e62917b8b347e6e549b19e0f8b60507370490a147a170d9a46c950059fa8e",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "033_equal_task_timestamps_use_deterministic_uuid_ordering/result.json"
+  },
+  {
+    "number": 34,
+    "scenario": "Completion and dismissal immediately return resources to synced",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "034_completion_and_dismissal_immediately_return_resources_to_synced/34_200_completion-and-dismissal-immediately-return-resources-to-synced.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "c59435a5b62cc6cab676921b6d5a990f3b87eae76361794ef7063226d2587562",
+    "image_size": [
+      1392,
+      1690
+    ],
+    "png_sha256": "839438b6063d65f6b09ac715990a89084dc27e56be0bb1ef22c9edddda4c9482",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "034_completion_and_dismissal_immediately_return_resources_to_synced/result.json"
+  },
+  {
+    "number": 35,
+    "scenario": "Failed upload stub",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "035_failed_upload_stub/35_200_failed-upload-stub.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "75f0e1e7cfcf470e53210c6b5d2b0fed3d6728fd3439b6d369984a697572a6f7",
+    "image_size": [
+      1392,
+      1466
+    ],
+    "png_sha256": "7ede246af6fdd1a8daf596a9aaa4136e44b95b89a9a0065ca40565335a3ed33f",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "035_failed_upload_stub/result.json"
+  },
+  {
+    "number": 36,
+    "scenario": "In-progress upload stub wins over failed task",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "036_in_progress_upload_stub_wins_over_failed_task/36_200_in-progress-upload-stub-wins-over-failed-task.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "2932a5089fca01826e6ce889a04cf56e53629bcac806dfb4a45dcdd0e494e8d1",
+    "image_size": [
+      1392,
+      1578
+    ],
+    "png_sha256": "ed9e5603b10a2239cbaccf149a2722a03efdd6321e73e94af42400bc6eadff4f",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "036_in_progress_upload_stub_wins_over_failed_task/result.json"
+  },
+  {
+    "number": 37,
+    "scenario": "Stub remains creating after inactive tasks excluded",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "037_stub_remains_creating_after_inactive_tasks_excluded/37_200_stub-remains-creating-after-inactive-tasks-excluded.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b59f201591366fb351bb86dbbc0faf6eaafaa232a669ed47bef8abc175940606",
+    "image_size": [
+      1392,
+      1290
+    ],
+    "png_sha256": "5561c66a8ada2cf8123558abb893f29ad134d477a48e81d747e96eefd7ad234a",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "037_stub_remains_creating_after_inactive_tasks_excluded/result.json"
+  },
+  {
+    "number": 38,
+    "scenario": "Association stub independently creating",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "038_association_stub_independently_creating/38_200_association-stub-independently-creating.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "0a1af5b32ee59576147628e01bd1a5f58e47d880bd60ca22094f32ac1e8bf808",
+    "image_size": [
+      1392,
+      1690
+    ],
+    "png_sha256": "3e74f31540f9670ccc74b2f592c8fef45d26927b754b356255e4982eca50b08f",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "038_association_stub_independently_creating/result.json"
+  },
+  {
+    "number": 39,
+    "scenario": "Association stub failed",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "039_association_stub_failed/39_200_association-stub-failed.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "0896d4e3ebd3dca4484540d3fa91b17ba8632b215dcc6f69f40c5836737d6e2f",
+    "image_size": [
+      1392,
+      1866
+    ],
+    "png_sha256": "24acfa58711fbfcbc0fd9f2d6aefee9376fb35fb6b26e00537a2aa45005bdbc4",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "039_association_stub_failed/result.json"
+  },
+  {
+    "number": 40,
+    "scenario": "Association stub in-progress wins over failure",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "040_association_stub_in_progress_wins_over_failure/40_200_association-stub-in-progress-wins-over-failure.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "71eb0619d566fe6b0c0538a9f37073d0b309ba0ea2340e5e7192d485f3ebefec",
+    "image_size": [
+      1392,
+      1978
+    ],
+    "png_sha256": "987da67371160100959a6ef13c576e769e1d9a688c0dc9f4beb1955ddb0aa5fc",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "040_association_stub_in_progress_wins_over_failure/result.json"
+  },
+  {
+    "number": 41,
+    "scenario": "Key action supported: upload_encryption_key",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "041_key_action_supported_upload_encryption_key/41_200_key-action-supported-upload-encryption-key.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "7536239b67d1fe471668ed1c1ef1d0a2027c5ad7cd19b97992e2ef4ac587484a",
+    "image_size": [
+      1392,
+      1818
+    ],
+    "png_sha256": "2bb75ecd6a5a2d09f3d8ce02126f4dcceb76ae4632a770f2d23c71639d88f957",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "041_key_action_supported_upload_encryption_key/result.json"
+  },
+  {
+    "number": 42,
+    "scenario": "Key action supported: escrow_encryption_key",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "042_key_action_supported_escrow_encryption_key/42_200_key-action-supported-escrow-encryption-key.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "b455fc6ba9b9a32e2d91350a71fff31191f4df5328c0df5a3a368f0f8fc6d2ad",
+    "image_size": [
+      1392,
+      1818
+    ],
+    "png_sha256": "64e8a3aae5b91470f22b1f75e5715d89cb9667325e56e7626ca50240d1957a83",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "042_key_action_supported_escrow_encryption_key/result.json"
+  },
+  {
+    "number": 43,
+    "scenario": "Key action supported: delete_encryption_key",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "043_key_action_supported_delete_encryption_key/43_200_key-action-supported-delete-encryption-key.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "2f5ce810c28eea3307e08ce834f5a5e2f7241ef34473aa0f6412e904f839ebbf",
+    "image_size": [
+      1392,
+      1818
+    ],
+    "png_sha256": "4587b348be5e80a8ec29b1d4fdd8477bb9bd249b842ee654c4ac9d9c10831161",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "043_key_action_supported_delete_encryption_key/result.json"
+  },
+  {
+    "number": 44,
+    "scenario": "Association action supported: add_volume_encryption_keys",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "044_association_action_supported_add_volume_encryption_keys/44_200_association-action-supported-add-volume-encryption-keys.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "c02b8aebcbf051ab1cfcf3dcd5e430edbcc1fd3c7f1f24dc1261f6225afc04dd",
+    "image_size": [
+      1392,
+      1818
+    ],
+    "png_sha256": "d5e184bbf5254a1097fe01039d74a9d70e59a5f84bf05f6f206a2ceb7ead850a",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "044_association_action_supported_add_volume_encryption_keys/result.json"
+  },
+  {
+    "number": 45,
+    "scenario": "Association action supported: enable_volume_encryption_keys",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "045_association_action_supported_enable_volume_encryption_keys/45_200_association-action-supported-enable-volume-encryption-keys.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "8ee59760474ad130e9413cffede034d5f4e79b461640c53251e7cf99ff74d2c4",
+    "image_size": [
+      1392,
+      1818
+    ],
+    "png_sha256": "b13b3b1c3b16e3ed98f3581d096152be48cec8fe136c013e80d09f1f5065f2d1",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "045_association_action_supported_enable_volume_encryption_keys/result.json"
+  },
+  {
+    "number": 46,
+    "scenario": "Association action supported: disable_volume_encryption_keys",
+    "expected_status": 200,
+    "http_status": 200,
+    "screenshot": "046_association_action_supported_disable_volume_encryption_keys/46_200_association-action-supported-disable-volume-encryption-keys.png",
+    "response_verified_in_swagger": true,
+    "authorization_redacted": true,
+    "browser_uuid_validation_bypassed": false,
+    "response_sha256": "51ccbd459439396edb3b4d97cf8b2f545f17827ef5535a9be43a6c5414d9a38c",
+    "image_size": [
+      1392,
+      1818
+    ],
+    "png_sha256": "f4e5fe41c092cf45dba35bddd5bbd4f96397028fae245586228ff493ace247a9",
+    "run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+    "result": "046_association_action_supported_disable_volume_encryption_keys/result.json"
+  }
+]

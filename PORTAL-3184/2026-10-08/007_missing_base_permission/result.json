@@ -1,0 +1,26 @@
+{
+  "number": 7,
+  "scenario": "Missing base permission",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/e2a62b6f-18a3-47c8-9922-dd7abb74c904",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "none"
+  },
+  "expected_status": 403,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true
+  },
+  "actual_status": 403,
+  "response": {
+    "message": "User does not have the required permissions: View Volume Encryption Keys",
+    "detail": null
+  },
+  "elapsed_ms": 138.7,
+  "passed": true,
+  "screenshot": "007_missing_base_permission/07_403_missing-base-permission.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

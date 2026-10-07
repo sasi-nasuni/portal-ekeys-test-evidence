@@ -1,0 +1,46 @@
+{
+  "number": 16,
+  "scenario": "Unused uploaded ElGamal key and false escrow flag",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/0a6b78de-e876-4d3c-be02-cea701c23f27",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 200,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Response DTO validates": true,
+    "Requested UUID returned": true,
+    "Single resource, no list envelope": true,
+    "Unused has no volumes": true,
+    "Uploaded ElGamal metadata": true,
+    "Authorized false fields are present": true
+  },
+  "actual_status": 200,
+  "response": {
+    "id": "0a6b78de-e876-4d3c-be02-cea701c23f27",
+    "name": "E2E unused uploaded key",
+    "fingerprint": "ED8D63B5911244AAB18102A550469F8C12345678",
+    "appliance_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+    "appliance_name": "E2E offline appliance",
+    "algorithm": "elgamal",
+    "length": 2048,
+    "type": "volume",
+    "origin": "uploaded",
+    "used": false,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [],
+    "is_escrowed": false,
+    "is_backup_key": false
+  },
+  "elapsed_ms": 165.2,
+  "passed": true,
+  "screenshot": "016_unused_uploaded_elgamal_key_and_false_escrow_flag/16_200_unused-uploaded-elgamal-key-and-false-escrow-flag.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

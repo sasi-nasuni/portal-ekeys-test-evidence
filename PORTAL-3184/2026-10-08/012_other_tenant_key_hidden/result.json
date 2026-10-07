@@ -1,0 +1,27 @@
+{
+  "number": 12,
+  "scenario": "Other tenant key hidden",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/c33df9f8-6064-44be-ab94-9280de8af267",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 404,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Same not-found body as unknown key": true
+  },
+  "actual_status": 404,
+  "response": {
+    "message": "Encryption key not found",
+    "detail": null
+  },
+  "elapsed_ms": 165.2,
+  "passed": true,
+  "screenshot": "012_other_tenant_key_hidden/12_404_other-tenant-key-hidden.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

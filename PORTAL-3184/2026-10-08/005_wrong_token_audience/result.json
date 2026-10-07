@@ -1,0 +1,26 @@
+{
+  "number": 5,
+  "scenario": "Wrong token audience",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/e2a62b6f-18a3-47c8-9922-dd7abb74c904",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 401,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true
+  },
+  "actual_status": 401,
+  "response": {
+    "message": "Token not valid for this service",
+    "detail": null
+  },
+  "elapsed_ms": 174.0,
+  "passed": true,
+  "screenshot": "005_wrong_token_audience/05_401_wrong-token-audience.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

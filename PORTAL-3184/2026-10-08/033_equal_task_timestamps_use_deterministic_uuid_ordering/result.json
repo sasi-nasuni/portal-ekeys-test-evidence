@@ -1,0 +1,105 @@
+{
+  "number": 33,
+  "scenario": "Equal task timestamps use deterministic UUID ordering",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/e2a62b6f-18a3-47c8-9922-dd7abb74c904",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 200,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Response DTO validates": true,
+    "Requested UUID returned": true,
+    "Single resource, no list envelope": true,
+    "Newest timestamp then descending task UUID": true
+  },
+  "actual_status": 200,
+  "response": {
+    "id": "e2a62b6f-18a3-47c8-9922-dd7abb74c904",
+    "name": "E2E generated key",
+    "fingerprint": "8203AB30FF9C14779966945AA19389EAFCACB321",
+    "appliance_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+    "appliance_name": "E2E offline appliance",
+    "algorithm": "rsa",
+    "length": 4096,
+    "type": "volume",
+    "origin": "generated",
+    "used": true,
+    "is_stub": false,
+    "status": "pending",
+    "tasks": [
+      {
+        "task_id": "c2c6b943-a750-47a2-ac17-6350a0232772",
+        "action": "escrow_encryption_key",
+        "executor_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+        "state": "in_progress",
+        "error": null
+      },
+      {
+        "task_id": "037723ad-53b5-4b64-b2f7-a30acc855e4d",
+        "action": "delete_encryption_key",
+        "executor_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+        "state": "in_progress",
+        "error": null
+      },
+      {
+        "task_id": "89081530-ed86-46bc-a7a6-9043aa3c6a1e",
+        "action": "upload_encryption_key",
+        "executor_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+        "state": "failed",
+        "error": {
+          "message": null,
+          "detected_at": "2026-10-07T20:55:40.775711Z"
+        }
+      }
+    ],
+    "volumes": [
+      {
+        "volume_guid": "22c1568f-98b7-455b-a98e-90373fe80556_0",
+        "volume_name": "alpha",
+        "state": "enabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "volume_guid": "91c5e232-f1f1-4a4f-9a99-53144854a081_0",
+        "volume_name": "Alpha",
+        "state": "disabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "volume_guid": "2ff8da76-2b3f-41b9-ad29-35b77aabf976_0",
+        "volume_name": "zeta",
+        "state": "enabled",
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "094a516b-949f-45c4-8f0a-d42c6e76a566",
+            "action": "enable_volume_encryption_keys",
+            "executor_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+            "state": "failed",
+            "error": {
+              "message": "Synthetic association failure",
+              "detected_at": "2026-10-07T20:55:40.775711Z"
+            }
+          }
+        ]
+      }
+    ],
+    "is_escrowed": true,
+    "is_backup_key": false
+  },
+  "elapsed_ms": 187.3,
+  "passed": true,
+  "screenshot": "033_equal_task_timestamps_use_deterministic_uuid_ordering/33_200_equal-task-timestamps-use-deterministic-uuid-ordering.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

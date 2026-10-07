@@ -1,0 +1,39 @@
+{
+  "number": 10,
+  "scenario": "Malformed key UUID",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/not-a-uuid",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 422,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true
+  },
+  "actual_status": 422,
+  "response": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "path",
+          "key_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1",
+        "input": "not-a-uuid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1"
+        }
+      }
+    ]
+  },
+  "elapsed_ms": 4336.5,
+  "passed": true,
+  "screenshot": "010_malformed_key_uuid/10_422_malformed-key-uuid.png",
+  "source_run": "PORTAL-3184-20261007T205806Z-208e690a",
+  "browser_uuid_validation_bypassed": true
+}

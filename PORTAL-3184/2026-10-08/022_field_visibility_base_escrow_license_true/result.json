@@ -1,0 +1,73 @@
+{
+  "number": 22,
+  "scenario": "Field visibility: base, escrow license True",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/e2a62b6f-18a3-47c8-9922-dd7abb74c904",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "base"
+  },
+  "expected_status": 200,
+  "conditions": {
+    "key_escrow_enabled": true,
+    "escrow_visible": false,
+    "backup_visible": false
+  },
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Response DTO validates": true,
+    "Requested UUID returned": true,
+    "Single resource, no list envelope": true,
+    "Escrow value included only when both prerequisites hold": true,
+    "Backup false value included only with permission": true,
+    "License does not block endpoint": true
+  },
+  "actual_status": 200,
+  "response": {
+    "id": "e2a62b6f-18a3-47c8-9922-dd7abb74c904",
+    "name": "E2E generated key",
+    "fingerprint": "8203AB30FF9C14779966945AA19389EAFCACB321",
+    "appliance_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+    "appliance_name": "E2E offline appliance",
+    "algorithm": "rsa",
+    "length": 4096,
+    "type": "volume",
+    "origin": "generated",
+    "used": true,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [
+      {
+        "volume_guid": "22c1568f-98b7-455b-a98e-90373fe80556_0",
+        "volume_name": "alpha",
+        "state": "enabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "volume_guid": "91c5e232-f1f1-4a4f-9a99-53144854a081_0",
+        "volume_name": "Alpha",
+        "state": "disabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "volume_guid": "2ff8da76-2b3f-41b9-ad29-35b77aabf976_0",
+        "volume_name": "zeta",
+        "state": "enabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      }
+    ]
+  },
+  "elapsed_ms": 176.6,
+  "passed": true,
+  "screenshot": "022_field_visibility_base_escrow_license_true/22_200_field-visibility-base-escrow-license-true.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

@@ -1,0 +1,44 @@
+{
+  "number": 15,
+  "scenario": "Backup key visible with permission",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/aeb43a3a-78df-4022-b83e-d0795731faf8",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 200,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Response DTO validates": true,
+    "Requested UUID returned": true,
+    "Single resource, no list envelope": true,
+    "Backup type and flag": true
+  },
+  "actual_status": 200,
+  "response": {
+    "id": "aeb43a3a-78df-4022-b83e-d0795731faf8",
+    "name": "E2E backup key",
+    "fingerprint": "CF0F56BB549E4620BDE09E78BFEBBDFA12345678",
+    "appliance_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+    "appliance_name": "E2E offline appliance",
+    "algorithm": "rsa",
+    "length": 4096,
+    "type": "backup",
+    "origin": "generated",
+    "used": false,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [],
+    "is_escrowed": false,
+    "is_backup_key": true
+  },
+  "elapsed_ms": 160.2,
+  "passed": true,
+  "screenshot": "015_backup_key_visible_with_permission/15_200_backup-key-visible-with-permission.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

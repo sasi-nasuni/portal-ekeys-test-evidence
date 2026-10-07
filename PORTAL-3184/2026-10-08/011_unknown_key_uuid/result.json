@@ -1,0 +1,27 @@
+{
+  "number": 11,
+  "scenario": "Unknown key UUID",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/24909810-65ef-4fcc-9ef3-87c43be2d8cb",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 404,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Generic not-found message": true
+  },
+  "actual_status": 404,
+  "response": {
+    "message": "Encryption key not found",
+    "detail": null
+  },
+  "elapsed_ms": 255.1,
+  "passed": true,
+  "screenshot": "011_unknown_key_uuid/11_404_unknown-key-uuid.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

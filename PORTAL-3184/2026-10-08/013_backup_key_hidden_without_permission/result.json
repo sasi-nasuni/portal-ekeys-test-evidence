@@ -1,0 +1,27 @@
+{
+  "number": 13,
+  "scenario": "Backup key hidden without permission",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/aeb43a3a-78df-4022-b83e-d0795731faf8",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "base"
+  },
+  "expected_status": 404,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Same not-found body as unknown and foreign key": true
+  },
+  "actual_status": 404,
+  "response": {
+    "message": "Encryption key not found",
+    "detail": null
+  },
+  "elapsed_ms": 184.4,
+  "passed": true,
+  "screenshot": "013_backup_key_hidden_without_permission/13_404_backup-key-hidden-without-permission.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}

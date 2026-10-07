@@ -1,0 +1,44 @@
+{
+  "number": 37,
+  "scenario": "Stub remains creating after inactive tasks excluded",
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/encryption-keys/aab39216-038f-4f76-a277-92089dfbbed4",
+    "authorization": "Bearer [REDACTED]",
+    "actor": "full"
+  },
+  "expected_status": 200,
+  "conditions": {},
+  "checks": {
+    "HTTP status": true,
+    "GET did not mutate fixture records or enqueue messages": true,
+    "Response DTO validates": true,
+    "Requested UUID returned": true,
+    "Single resource, no list envelope": true,
+    "Stub creating with no active tasks": true
+  },
+  "actual_status": 200,
+  "response": {
+    "id": "aab39216-038f-4f76-a277-92089dfbbed4",
+    "name": null,
+    "fingerprint": "CA4C86807EB84727A831150D8A8F1EE012345678",
+    "appliance_id": "3fd4a80d-0ea6-4cb8-b272-d3527c0c2eed",
+    "appliance_name": "E2E offline appliance",
+    "algorithm": null,
+    "length": null,
+    "type": "volume",
+    "origin": "uploaded",
+    "used": false,
+    "is_stub": true,
+    "status": "creating",
+    "tasks": [],
+    "volumes": [],
+    "is_escrowed": false,
+    "is_backup_key": false
+  },
+  "elapsed_ms": 220.4,
+  "passed": true,
+  "screenshot": "037_stub_remains_creating_after_inactive_tasks_excluded/37_200_stub-remains-creating-after-inactive-tasks-excluded.png",
+  "source_run": "PORTAL-3184-20261007T205540Z-e98dc4b2",
+  "browser_uuid_validation_bypassed": false
+}
