@@ -1,0 +1,47 @@
+{
+  "id": 28,
+  "name": "invalid_query_is_escrowed_invalid",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "bool_parsing",
+        "loc": [
+          "query",
+          "is_escrowed"
+        ],
+        "msg": "Input should be a valid boolean, unable to interpret input",
+        "input": "invalid"
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=50&is_escrowed=invalid",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/028_invalid_query_is_escrowed_invalid/invalid_query_is_escrowed_invalid_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/028_invalid_query_is_escrowed_invalid/invalid_query_is_escrowed_invalid_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/028_invalid_query_is_escrowed_invalid/invalid_query_is_escrowed_invalid_response.png"
+  ],
+  "captured_at": "2026-10-07T22:16:36.151Z",
+  "parameters": {},
+  "query": {
+    "is_escrowed": "invalid"
+  },
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

@@ -1,0 +1,42 @@
+{
+  "id": 16,
+  "name": "metadata_summary_readable_strider",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 200,
+  "body": {
+    "total": 2,
+    "generated_count": 2,
+    "escrowed": 0,
+    "not_escrowed": 2,
+    "backup_key": null,
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": []
+  },
+  "request_url": "http://localhost:8000/edges/093430a1-2aa6-407c-9522-365a7348b366/encryption-keys/summary",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/016_metadata_summary_readable_strider/metadata_summary_readable_strider_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/016_metadata_summary_readable_strider/metadata_summary_readable_strider_response.png"
+  ],
+  "captured_at": "2026-10-07T22:27:21.530Z",
+  "parameters": {
+    "appliance_id": "093430a1-2aa6-407c-9522-365a7348b366"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Full summary matches SQL despite write-ineligible appliance readiness"
+  ],
+  "outcome": "PASS"
+}

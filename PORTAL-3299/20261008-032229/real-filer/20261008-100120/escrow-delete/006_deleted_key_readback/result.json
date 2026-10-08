@@ -1,0 +1,39 @@
+{
+  "id": 6,
+  "name": "deleted_key_readback",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:18000/encryption-keys?search=3F71ED8A2CC242F09A2308D02246E2E9960AC12F&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/006_deleted_key_readback/deleted_key_readback_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/006_deleted_key_readback/deleted_key_readback_parameters_02.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/006_deleted_key_readback/deleted_key_readback_response.png"
+  ],
+  "captured_at": "2026-10-08T06:28:05.565Z",
+  "expected_status": 200,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

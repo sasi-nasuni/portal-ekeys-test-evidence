@@ -1,0 +1,36 @@
+{
+  "id": 37,
+  "name": "expired_or_unknown_cursor",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 400,
+  "body": {
+    "message": "Iterator expired or not found",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&iterator_id=67aec864-923c-4cfc-8d4f-9f9542eec939&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/037_expired_or_unknown_cursor/expired_or_unknown_cursor_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/037_expired_or_unknown_cursor/expired_or_unknown_cursor_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/037_expired_or_unknown_cursor/expired_or_unknown_cursor_response.png"
+  ],
+  "captured_at": "2026-10-07T22:17:11.784Z",
+  "parameters": {},
+  "query": {
+    "iterator_id": "67aec864-923c-4cfc-8d4f-9f9542eec939"
+  },
+  "expected_status": 400,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

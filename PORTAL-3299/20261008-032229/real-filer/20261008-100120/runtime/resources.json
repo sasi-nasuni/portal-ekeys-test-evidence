@@ -1,0 +1,84 @@
+{
+  "created_at": "2026-10-08T04:56:21.508443+00:00",
+  "owner": "portal3299-20261008-100120",
+  "account_filter": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "region": "us-east-2",
+  "profile": "portal-dev",
+  "tags": {
+    "Owner": "portal3299-20261008-100120",
+    "Purpose": "PORTAL-3299-isolated-validation",
+    "AccountFilter": "f902fd2c-796c-403b-837b-89d5625319a9"
+  },
+  "topics": {
+    "fifo": [
+      "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo",
+      "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo"
+    ],
+    "nonfifo": [
+      "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo",
+      "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo"
+    ]
+  },
+  "queues": [
+    {
+      "name": "portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "url": "https://sqs.us-east-2.amazonaws.com/851725431039/portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "arn": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "delete_requested_at": "2026-10-08T06:47:13.529255+00:00"
+    },
+    {
+      "name": "portal-dev-portal3299-20261008-100120-nbn-queue",
+      "url": "https://sqs.us-east-2.amazonaws.com/851725431039/portal-dev-portal3299-20261008-100120-nbn-queue",
+      "arn": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue",
+      "delete_requested_at": "2026-10-08T06:47:14.211157+00:00"
+    }
+  ],
+  "subscriptions": [
+    {
+      "arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo:69dedf07-0b02-46fd-9e2e-59bfdbab0f0b",
+      "topic_arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo",
+      "endpoint": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "filter_policy": {
+        "account_guid": [
+          "f902fd2c-796c-403b-837b-89d5625319a9"
+        ]
+      },
+      "unsubscribed_at": "2026-10-08T06:47:08.918337+00:00"
+    },
+    {
+      "arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo:abb990c8-9541-4c1f-91cd-f641579fc8ae",
+      "topic_arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo",
+      "endpoint": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "filter_policy": {
+        "account_guid": [
+          "f902fd2c-796c-403b-837b-89d5625319a9"
+        ]
+      },
+      "unsubscribed_at": "2026-10-08T06:47:10.268158+00:00"
+    },
+    {
+      "arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo:c991f99c-fac2-477b-9315-15c64d4f0404",
+      "topic_arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo",
+      "endpoint": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue",
+      "filter_policy": {
+        "account_guid": [
+          "f902fd2c-796c-403b-837b-89d5625319a9"
+        ]
+      },
+      "unsubscribed_at": "2026-10-08T06:47:11.485484+00:00"
+    },
+    {
+      "arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo:743cb374-1cc0-44c0-9314-83a177671258",
+      "topic_arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo",
+      "endpoint": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue",
+      "filter_policy": {
+        "account_guid": [
+          "f902fd2c-796c-403b-837b-89d5625319a9"
+        ]
+      },
+      "unsubscribed_at": "2026-10-08T06:47:12.837558+00:00"
+    }
+  ],
+  "complete": true,
+  "cleanup_requested_at": "2026-10-08T06:47:14.211522+00:00"
+}

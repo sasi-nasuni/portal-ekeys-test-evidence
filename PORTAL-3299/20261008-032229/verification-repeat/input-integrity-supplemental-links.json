@@ -1,0 +1,110 @@
+[
+  {
+    "name": "download_auth_missing",
+    "expected_status": 401,
+    "actual_status": 401,
+    "outcome": "PASS",
+    "exact_public_key_query_verified": true,
+    "resource_task_message_rows_unchanged": true,
+    "original_attempts": [
+      {
+        "name": "download_auth_missing",
+        "status": 401,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/results.json"
+      }
+    ],
+    "replacement_results": "PORTAL-3299/20261008-032229/verification-repeat/results.json"
+  },
+  {
+    "name": "download_auth_invalid",
+    "expected_status": 401,
+    "actual_status": 401,
+    "outcome": "PASS",
+    "exact_public_key_query_verified": true,
+    "resource_task_message_rows_unchanged": true,
+    "original_attempts": [
+      {
+        "name": "download_auth_invalid",
+        "status": 401,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/results.json"
+      }
+    ],
+    "replacement_results": "PORTAL-3299/20261008-032229/verification-repeat/results.json"
+  },
+  {
+    "name": "download_auth_expired",
+    "expected_status": 401,
+    "actual_status": 401,
+    "outcome": "PASS",
+    "exact_public_key_query_verified": true,
+    "resource_task_message_rows_unchanged": true,
+    "original_attempts": [
+      {
+        "name": "download_auth_expired",
+        "status": 401,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/results.json"
+      }
+    ],
+    "replacement_results": "PORTAL-3299/20261008-032229/verification-repeat/results.json"
+  },
+  {
+    "name": "download_auth_wrong_audience",
+    "expected_status": 401,
+    "actual_status": 401,
+    "outcome": "PASS",
+    "exact_public_key_query_verified": true,
+    "resource_task_message_rows_unchanged": true,
+    "original_attempts": [
+      {
+        "name": "download_auth_wrong_audience",
+        "status": 401,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/results.json"
+      }
+    ],
+    "replacement_results": "PORTAL-3299/20261008-032229/verification-repeat/results.json"
+  },
+  {
+    "name": "download_auth_no_permission",
+    "expected_status": 403,
+    "actual_status": 403,
+    "outcome": "PASS",
+    "exact_public_key_query_verified": true,
+    "resource_task_message_rows_unchanged": true,
+    "original_attempts": [
+      {
+        "name": "download_auth_no_permission",
+        "status": 403,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/results.json"
+      }
+    ],
+    "replacement_results": "PORTAL-3299/20261008-032229/verification-repeat/results.json"
+  },
+  {
+    "name": "download_feature_disabled",
+    "expected_status": 403,
+    "actual_status": 403,
+    "outcome": "PASS",
+    "exact_public_key_query_verified": true,
+    "resource_task_message_rows_unchanged": true,
+    "original_attempts": [
+      {
+        "name": "download_feature_disabled",
+        "status": 403,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/results.json"
+      }
+    ],
+    "replacement_results": "PORTAL-3299/20261008-032229/verification-repeat/results.json"
+  }
+]

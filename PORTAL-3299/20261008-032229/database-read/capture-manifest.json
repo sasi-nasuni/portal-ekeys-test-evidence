@@ -1,0 +1,52 @@
+{
+  "generated_at_utc": "2026-10-07T22:03:01.547801+00:00",
+  "snapshot": {
+    "snapshot_time": "2026-10-07 22:03:01.531403+00:00",
+    "transaction_read_only": "on",
+    "transaction_isolation": "repeatable read"
+  },
+  "query_results": [
+    {
+      "name": "keys",
+      "row_count": 9,
+      "sql": "keys.sql",
+      "json": "keys.json"
+    },
+    {
+      "name": "associations",
+      "row_count": 6,
+      "sql": "associations.sql",
+      "json": "associations.json"
+    },
+    {
+      "name": "tasks",
+      "row_count": 26,
+      "sql": "tasks.sql",
+      "json": "tasks.json"
+    },
+    {
+      "name": "appliance_summary",
+      "row_count": 3,
+      "sql": "appliance_summary.sql",
+      "json": "appliance_summary.json"
+    },
+    {
+      "name": "volume_masters",
+      "row_count": 6,
+      "sql": "volume_masters.sql",
+      "json": "volume_masters.json"
+    }
+  ],
+  "fixture_accounts": [
+    {
+      "id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    }
+  ],
+  "database_mutations": false,
+  "credentials": "Read in memory only; never written to evidence"
+}

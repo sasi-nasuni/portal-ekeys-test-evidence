@@ -1,0 +1,297 @@
+{
+  "id": 11,
+  "name": "bulk_maximum_25_unknown_keys",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "ba78ac17-2efd-48a7-85de-64e0c85db92a"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "dfe43b70-3cb8-4985-b92c-69a27fcc8538"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "f0cb40e6-730d-416f-887a-fcd5f74fe406"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "265711df-f96a-4542-ad6c-e312eec06bc5"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "c342b753-0fd3-4cc2-b549-854974d2e552"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "e788b605-71e7-4dc8-8e7f-1e8503d492fe"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "31ed6684-2497-4c9e-89ab-59dd292d756f"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "cc6d107b-8d92-4165-b9d2-1f4a90860a91"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "6c216910-4602-4bd2-8bec-8bee2545259e"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "31a8957c-f82c-474b-bab2-45df416ecc1d"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "7c227864-97eb-4454-8a65-e74cfd561724"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "ee8418d8-76c5-42be-a09f-fe0770fb628c"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "fd9df6f3-f431-40d2-93a2-5fa2df0da8bc"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "fda0c645-d65d-4c8a-abae-0771e3c08c54"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "74cd66ec-e93d-4880-afe6-b6f02d31f4d4"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "0e32d039-88f3-4596-81dc-415629f4c888"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "ef3c50a6-7355-491f-b98d-53fc1ccf03aa"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "89be4028-9dd1-41ef-a50a-7268c55c29cb"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "bfef7ce3-9805-4286-a81c-3367e5b0be42"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "70c4a595-944e-470e-896d-0f937ef348e6"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "349fb0ed-303b-4939-963c-8ba09026ad81"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "22a610d6-58e9-4a9e-bbdd-729369088483"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "2d7cbdff-1b32-43ff-96b7-e0b6c7837872"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "c340da1e-3ae3-4c70-8edd-1c7001928de9"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "6f02c720-3dfe-4024-9321-d2575b14bda7"
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_03.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_04.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_05.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_06.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_07.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_08.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_09.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_10.png"
+  ],
+  "captured_at": "2026-10-07T22:27:01.530Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 202,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Inclusive maximum25 unique keys accepted and returned in input order; every rejection has no task"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "ba78ac17-2efd-48a7-85de-64e0c85db92a",
+      "dfe43b70-3cb8-4985-b92c-69a27fcc8538",
+      "f0cb40e6-730d-416f-887a-fcd5f74fe406",
+      "265711df-f96a-4542-ad6c-e312eec06bc5",
+      "c342b753-0fd3-4cc2-b549-854974d2e552",
+      "e788b605-71e7-4dc8-8e7f-1e8503d492fe",
+      "31ed6684-2497-4c9e-89ab-59dd292d756f",
+      "cc6d107b-8d92-4165-b9d2-1f4a90860a91",
+      "6c216910-4602-4bd2-8bec-8bee2545259e",
+      "31a8957c-f82c-474b-bab2-45df416ecc1d",
+      "7c227864-97eb-4454-8a65-e74cfd561724",
+      "ee8418d8-76c5-42be-a09f-fe0770fb628c",
+      "fd9df6f3-f431-40d2-93a2-5fa2df0da8bc",
+      "fda0c645-d65d-4c8a-abae-0771e3c08c54",
+      "74cd66ec-e93d-4880-afe6-b6f02d31f4d4",
+      "0e32d039-88f3-4596-81dc-415629f4c888",
+      "ef3c50a6-7355-491f-b98d-53fc1ccf03aa",
+      "89be4028-9dd1-41ef-a50a-7268c55c29cb",
+      "bfef7ce3-9805-4286-a81c-3367e5b0be42",
+      "70c4a595-944e-470e-896d-0f937ef348e6",
+      "349fb0ed-303b-4939-963c-8ba09026ad81",
+      "22a610d6-58e9-4a9e-bbdd-729369088483",
+      "2d7cbdff-1b32-43ff-96b7-e0b6c7837872",
+      "c340da1e-3ae3-4c70-8edd-1c7001928de9",
+      "6f02c720-3dfe-4024-9321-d2575b14bda7"
+    ]
+  }
+}

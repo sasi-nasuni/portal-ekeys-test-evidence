@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "name": "set_temporary_passphrase",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 202,
+    "body": {
+      "id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "state": "in_progress",
+      "status_url": "/tasks/f6b3f605-7175-4c72-b932-fc11ad33b70c"
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/001_set_temporary_passphrase/set_temporary_passphrase_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/001_set_temporary_passphrase/set_temporary_passphrase_response.png"
+    ],
+    "captured_at": "2026-10-08T06:20:53.273Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": "[REDACTED encrypted passphrase]",
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+  },
+  {
+    "id": 2,
+    "name": "set_temporary_passphrase_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "created_at": "2026-10-08T06:20:51.346122Z",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "stack_id": null,
+      "action": "update_escrow_passphrase",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:20:56.149069Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:20:56.149069Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/f6b3f605-7175-4c72-b932-fc11ad33b70c",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/002_set_temporary_passphrase_terminal/set_temporary_passphrase_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/002_set_temporary_passphrase_terminal/set_temporary_passphrase_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:21:02.265Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+  },
+  {
+    "id": 3,
+    "name": "restore_original_passphrase",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 202,
+    "body": {
+      "id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "state": "in_progress",
+      "status_url": "/tasks/13793e81-1aed-41c6-84c1-96a7d4651672"
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/003_restore_original_passphrase/restore_original_passphrase_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/003_restore_original_passphrase/restore_original_passphrase_response.png"
+    ],
+    "captured_at": "2026-10-08T06:21:24.750Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": "[REDACTED encrypted passphrase]",
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+  },
+  {
+    "id": 4,
+    "name": "restore_original_passphrase_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "created_at": "2026-10-08T06:21:23.302376Z",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "stack_id": null,
+      "action": "update_escrow_passphrase",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:22:02.631075Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:22:02.631075Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/13793e81-1aed-41c6-84c1-96a7d4651672",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/004_restore_original_passphrase_terminal/restore_original_passphrase_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/004_restore_original_passphrase_terminal/restore_original_passphrase_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:22:11.224Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+  }
+]

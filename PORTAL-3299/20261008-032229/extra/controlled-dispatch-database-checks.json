@@ -1,0 +1,275 @@
+[
+  {
+    "operation": "bulk_escrow",
+    "cache_before": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1800
+    },
+    "cache_after": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1793
+    },
+    "outcomes": [
+      {
+        "task": {
+          "created_at": "2026-10-07T22:29:24.819123+00:00",
+          "resource": "encryption_key",
+          "resource_id": "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+          "action": "escrow_encryption_key",
+          "executor": "edge",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "initiated_by": "portal",
+          "initiator_id": "90a4fada-7ef9-4592-a379-778620058aca",
+          "activity_log_id": null,
+          "status": null,
+          "state": "failed",
+          "last_updated_at": "2026-10-07T22:29:24.925987+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "25463890-e2c3-45f8-81e5-8afa08f9a542",
+          "reason": "The operation could not be completed. Please try again.",
+          "user_acknowledged_at": "2026-10-07T22:29:24.925987+00:00",
+          "stack_id": null
+        },
+        "step": {
+          "task_id": "25463890-e2c3-45f8-81e5-8afa08f9a542",
+          "name": "escrow_encryption_key",
+          "state": "failed",
+          "reason": "EncryptionError: PGP encryption failed for filer 97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+          "created_at": "2026-10-07T22:29:24.819123+00:00",
+          "updated_at": "2026-10-07T22:29:24.925987+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "49b99eb8-2f8a-4a3f-896c-4297b8799147"
+        },
+        "messages_created": 0,
+        "excluded_from_active_predicate": true
+      },
+      {
+        "task": {
+          "created_at": "2026-10-07T22:29:24.959554+00:00",
+          "resource": "encryption_key",
+          "resource_id": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a",
+          "action": "escrow_encryption_key",
+          "executor": "edge",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "initiated_by": "portal",
+          "initiator_id": "90a4fada-7ef9-4592-a379-778620058aca",
+          "activity_log_id": null,
+          "status": null,
+          "state": "failed",
+          "last_updated_at": "2026-10-07T22:29:24.982198+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+          "reason": "The operation could not be completed. Please try again.",
+          "user_acknowledged_at": "2026-10-07T22:29:24.982198+00:00",
+          "stack_id": null
+        },
+        "step": {
+          "task_id": "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+          "name": "escrow_encryption_key",
+          "state": "failed",
+          "reason": "EncryptionError: PGP encryption failed for filer 97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+          "created_at": "2026-10-07T22:29:24.959554+00:00",
+          "updated_at": "2026-10-07T22:29:24.982198+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "9bec2b49-f492-4a13-acb3-221c6dd79939"
+        },
+        "messages_created": 0,
+        "excluded_from_active_predicate": true
+      }
+    ]
+  },
+  {
+    "operation": "delete",
+    "cache_before": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1800
+    },
+    "cache_after": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1795
+    },
+    "outcomes": [
+      {
+        "task": {
+          "created_at": "2026-10-07T22:29:30.789482+00:00",
+          "resource": "encryption_key",
+          "resource_id": "dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12",
+          "action": "delete_encryption_key",
+          "executor": "edge",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "initiated_by": "portal",
+          "initiator_id": "90a4fada-7ef9-4592-a379-778620058aca",
+          "activity_log_id": null,
+          "status": null,
+          "state": "failed",
+          "last_updated_at": "2026-10-07T22:29:30.802191+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "752185cc-30e4-46d4-8d97-81c218574570",
+          "reason": "The operation could not be completed. Please try again.",
+          "user_acknowledged_at": "2026-10-07T22:29:30.802191+00:00",
+          "stack_id": null
+        },
+        "step": {
+          "task_id": "752185cc-30e4-46d4-8d97-81c218574570",
+          "name": "delete_encryption_key",
+          "state": "failed",
+          "reason": "EncryptionError: PGP encryption failed for filer 97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+          "created_at": "2026-10-07T22:29:30.789482+00:00",
+          "updated_at": "2026-10-07T22:29:30.802191+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "c5461bdd-332f-44cc-983c-591c80d8083e"
+        },
+        "messages_created": 0,
+        "excluded_from_active_predicate": true
+      }
+    ]
+  },
+  {
+    "operation": "enable",
+    "cache_before": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1800
+    },
+    "cache_after": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1795
+    },
+    "outcomes": [
+      {
+        "task": {
+          "created_at": "2026-10-07T22:29:36.722705+00:00",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "666fe2e9-9cbd-415e-ab14-15b005ec6a71",
+          "action": "enable_volume_encryption_keys",
+          "executor": "edge",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "initiated_by": "portal",
+          "initiator_id": "90a4fada-7ef9-4592-a379-778620058aca",
+          "activity_log_id": null,
+          "status": null,
+          "state": "failed",
+          "last_updated_at": "2026-10-07T22:29:36.738834+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "ae1e8f89-9c3d-4087-b125-8341a79948a4",
+          "reason": "The operation could not be completed. Please try again.",
+          "user_acknowledged_at": "2026-10-07T22:29:36.738834+00:00",
+          "stack_id": null
+        },
+        "step": {
+          "task_id": "ae1e8f89-9c3d-4087-b125-8341a79948a4",
+          "name": "enable_volume_encryption_keys",
+          "state": "failed",
+          "reason": "EncryptionError: PGP encryption failed for filer 97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+          "created_at": "2026-10-07T22:29:36.722705+00:00",
+          "updated_at": "2026-10-07T22:29:36.738834+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "8f02316d-90c2-43c3-9605-8bce5c15ce97"
+        },
+        "messages_created": 0,
+        "excluded_from_active_predicate": true
+      }
+    ]
+  },
+  {
+    "operation": "disable",
+    "cache_before": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1800
+    },
+    "cache_after": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1795
+    },
+    "outcomes": [
+      {
+        "task": {
+          "created_at": "2026-10-07T22:29:42.236135+00:00",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "666fe2e9-9cbd-415e-ab14-15b005ec6a71",
+          "action": "disable_volume_encryption_keys",
+          "executor": "edge",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "initiated_by": "portal",
+          "initiator_id": "90a4fada-7ef9-4592-a379-778620058aca",
+          "activity_log_id": null,
+          "status": null,
+          "state": "failed",
+          "last_updated_at": "2026-10-07T22:29:42.265686+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1",
+          "reason": "The operation could not be completed. Please try again.",
+          "user_acknowledged_at": "2026-10-07T22:29:42.265686+00:00",
+          "stack_id": null
+        },
+        "step": {
+          "task_id": "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1",
+          "name": "disable_volume_encryption_keys",
+          "state": "failed",
+          "reason": "EncryptionError: PGP encryption failed for filer 97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+          "created_at": "2026-10-07T22:29:42.236135+00:00",
+          "updated_at": "2026-10-07T22:29:42.265686+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "b342f976-8249-4a35-a1da-a391d00a675b"
+        },
+        "messages_created": 0,
+        "excluded_from_active_predicate": true
+      }
+    ]
+  },
+  {
+    "operation": "download",
+    "cache_before": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1800
+    },
+    "cache_after": {
+      "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+      "fixture_value_verified": true,
+      "ttl_seconds": 1795
+    },
+    "outcomes": [
+      {
+        "task": {
+          "created_at": "2026-10-07T22:29:47.903029+00:00",
+          "resource": "edge",
+          "resource_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "action": "download_encryption_keys",
+          "executor": "edge",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "initiated_by": "portal",
+          "initiator_id": "90a4fada-7ef9-4592-a379-778620058aca",
+          "activity_log_id": null,
+          "status": null,
+          "state": "failed",
+          "last_updated_at": "2026-10-07T22:29:47.918663+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "aa76bada-3b8b-45e5-973d-dac161f4f997",
+          "reason": "The operation could not be completed. Please try again.",
+          "user_acknowledged_at": "2026-10-07T22:29:47.918663+00:00",
+          "stack_id": null
+        },
+        "step": {
+          "task_id": "aa76bada-3b8b-45e5-973d-dac161f4f997",
+          "name": "download_encryption_keys",
+          "state": "failed",
+          "reason": "EncryptionError: PGP encryption failed for filer 97caf46b-fb4b-4a5d-bceb-91cb055f9c87",
+          "created_at": "2026-10-07T22:29:47.903029+00:00",
+          "updated_at": "2026-10-07T22:29:47.918663+00:00",
+          "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+          "id": "6947d7a8-c9d4-46ae-be6f-74353e717b69"
+        },
+        "messages_created": 0,
+        "excluded_from_active_predicate": true
+      }
+    ]
+  }
+]

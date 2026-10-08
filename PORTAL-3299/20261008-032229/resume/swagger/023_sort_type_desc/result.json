@@ -1,0 +1,322 @@
+{
+  "id": 23,
+  "name": "sort_type_desc",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "fe677921-0d25-4baf-8c7e-e6f0d378e6a9",
+        "name": null,
+        "fingerprint": "EB7D5EA26D65427DB6DADD194023C9FE00000000",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": true,
+        "status": "creating",
+        "tasks": [
+          {
+            "task_id": "348097e9-4747-4e10-87fe-95eeb839857b",
+            "action": "upload_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": true,
+            "status": "creating",
+            "tasks": [
+              {
+                "task_id": "e279914c-3c6c-4965-8c99-b7d671834d73",
+                "action": "add_volume_encryption_keys",
+                "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "f6bebd33-0636-465b-8498-e969a51b1dec",
+        "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+        "fingerprint": "3FBFD8D857284FFD9458E0A8A864380700000001",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "d0818bfa-e61b-45d0-8315-f85af8c17dcc",
+            "action": "upload_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "ef451aae-68b4-4038-b759-2f5a7c5f2bfe",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "9CA9519D8D2F48A2A641027D90A070C300000004",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "438ff27f-27c5-42b7-a5f9-9934fbedc0a4",
+        "name": "PORTAL3299TEST-20261008-032229-A-beta",
+        "fingerprint": "3AE80B34A8774593945D44600406015200000003",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "12fe5d84-2eeb-46c7-bf0b-f4fba6a96a01",
+            "action": "delete_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "98e78d4a-bf61-4cf2-b967-484e8d2132ca_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "bc7f39ba-40f2-4a23-a791-5c3935143a79",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-07T22:13:53.051880Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "30fb3517-47d1-4f10-9b54-7f52e06dfaa0",
+        "name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+        "fingerprint": "D50B5EA60D35427F92CFFCBB2E99858500000002",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "pending",
+        "tasks": [
+          {
+            "task_id": "e47e9b23-9b72-4ac3-a7a6-5bba2bc7e945",
+            "action": "escrow_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "in_progress",
+            "error": null
+          },
+          {
+            "task_id": "4afd23e0-249d-4ee4-b648-e4f4b8d0e69d",
+            "action": "delete_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": "Test deletion failed",
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "volume_guid": "a7f33abf-07db-4d36-81c0-d894be7e67cd_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-MiXeD 100%_Path\\Name",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "85151aea-65c2-423d-86b5-cd6acc038556",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "0cd05796-9914-48ba-a403-f04c68f07061",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "6D6224B4F3A8495697963E5EAABFB8F400000005",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "ec9e549d-e34d-4f2f-816e-20676311bfc1",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+        "fingerprint": "62D261E4663E4488AC6AF610EB640A3C00000007",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      },
+      {
+        "id": "ccf4cf1b-ed4b-4f27-b175-cda24a065133",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+        "fingerprint": "2D7DACC01F9A44D4BB4AB24F0272BB0800000006",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 8,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=type&sort_direction=desc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_03.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_04.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_05.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_06.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_07.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_08.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_09.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_10.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/023_sort_type_desc/sort_type_desc_response_11.png"
+  ],
+  "captured_at": "2026-10-07T22:16:16.284Z",
+  "parameters": {},
+  "query": {
+    "sort_by": "type",
+    "sort_direction": "desc"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 8,
+      "associations": 5,
+      "tasks": 8
+    }
+  ],
+  "outcome": "PASS"
+}

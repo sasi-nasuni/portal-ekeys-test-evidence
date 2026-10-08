@@ -1,0 +1,50 @@
+{
+  "id": 32,
+  "name": "invalid_query_limit_101",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "less_than_equal",
+        "loc": [
+          "query",
+          "limit"
+        ],
+        "msg": "Input should be less than or equal to 100",
+        "input": "101",
+        "ctx": {
+          "le": 100
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=101",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/032_invalid_query_limit_101/invalid_query_limit_101_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/032_invalid_query_limit_101/invalid_query_limit_101_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/032_invalid_query_limit_101/invalid_query_limit_101_response.png"
+  ],
+  "captured_at": "2026-10-07T22:16:52.013Z",
+  "parameters": {},
+  "query": {
+    "limit": 101
+  },
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

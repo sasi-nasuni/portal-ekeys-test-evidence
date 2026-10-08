@@ -1,0 +1,36 @@
+{
+  "id": 40,
+  "name": "disable_auth_no_permission",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: Disable Encryption Keys",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/970f3e0e-e956-4968-9a59-dc49c4ba82c5_0/encryption-keys/970f3e0e-e956-4968-9a59-dc49c4ba82c5/disable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/040_disable_auth_no_permission/disable_auth_no_permission_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/040_disable_auth_no_permission/disable_auth_no_permission_response.png"
+  ],
+  "captured_at": "2026-10-07T22:04:05.821Z",
+  "parameters": {
+    "volume_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5_0",
+    "key_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+  },
+  "query": {},
+  "expected_status": 403,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

@@ -1,0 +1,36 @@
+{
+  "id": 103,
+  "name": "enable_unknown_resource",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 404,
+  "body": {
+    "message": "Volume 67aec864-923c-4cfc-8d4f-9f9542eec939_0 not found",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/67aec864-923c-4cfc-8d4f-9f9542eec939_0/encryption-keys/67aec864-923c-4cfc-8d4f-9f9542eec939/enable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/103_enable_unknown_resource/enable_unknown_resource_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/103_enable_unknown_resource/enable_unknown_resource_response.png"
+  ],
+  "captured_at": "2026-10-07T22:21:56.232Z",
+  "parameters": {
+    "volume_id": "67aec864-923c-4cfc-8d4f-9f9542eec939_0",
+    "key_id": "67aec864-923c-4cfc-8d4f-9f9542eec939"
+  },
+  "query": {},
+  "expected_status": 404,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

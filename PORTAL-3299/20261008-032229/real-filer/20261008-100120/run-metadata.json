@@ -1,0 +1,26 @@
+{
+  "ticket": "PORTAL-3299",
+  "purpose": "Remaining real-filer command delivery/completion testing requested by user",
+  "user_authorized_remaining_tests": true,
+  "filer": "10.84.2.115:222",
+  "head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "initial_worktree": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html",
+  "state": "Six real-filer write flows verified; local/filer/runtime cleanup completed with documented external limitations",
+  "existing_resources_preserved": true,
+  "private_credentials_in_evidence": false,
+  "new_filer_commands_sent": 9,
+  "new_database_fixtures_created": 1,
+  "new_aws_queues_created": 2,
+  "services_started_or_restarted": true,
+  "blockers": [],
+  "approvals": {
+    "at": "2026-10-08T04:55:45.498848+00:00",
+    "temporary_source_minimum_version": "10.5; restore10.6 after test",
+    "global_passphrase_change": true,
+    "temporary_runtime_and_exact_cleanup": true
+  },
+  "completed_at": "2026-10-08T07:09:54.283802+00:00",
+  "completion_summary": "completion-summary.json",
+  "final_verification": "final-verification.json",
+  "final_worktree": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html"
+}

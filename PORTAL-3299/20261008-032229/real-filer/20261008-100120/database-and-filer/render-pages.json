@@ -1,0 +1,154 @@
+{
+  "pages": [
+    {
+      "html": "task-01-download_encryption_keys.html",
+      "screenshot": "task-01-download_encryption_keys.png",
+      "task_id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-02-update_escrow_passphrase.html",
+      "screenshot": "task-02-update_escrow_passphrase.png",
+      "task_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-03-update_escrow_passphrase.html",
+      "screenshot": "task-03-update_escrow_passphrase.png",
+      "task_id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-04-escrow_encryption_key.html",
+      "screenshot": "task-04-escrow_encryption_key.png",
+      "task_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-05-delete_encryption_key.html",
+      "screenshot": "task-05-delete_encryption_key.png",
+      "task_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-06-disable_volume_encryption_keys.html",
+      "screenshot": "task-06-disable_volume_encryption_keys.png",
+      "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-07-enable_volume_encryption_keys.html",
+      "screenshot": "task-07-enable_volume_encryption_keys.png",
+      "task_id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-08-delete_encryption_key.html",
+      "screenshot": "task-08-delete_encryption_key.png",
+      "task_id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "task-09-delete_encryption_key.html",
+      "screenshot": "task-09-delete_encryption_key.png",
+      "task_id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+      "source": "../all-task-evidence.json",
+      "kind": "actual PostgreSQL rows rendered as HTML"
+    },
+    {
+      "html": "filer-01.html",
+      "screenshot": "filer-01.png",
+      "task_id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "source": "../download/filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-02.html",
+      "screenshot": "filer-02.png",
+      "task_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "source": "../escrow-delete/delete-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-03.html",
+      "screenshot": "filer-03.png",
+      "task_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "source": "../escrow-delete/escrow-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-04.html",
+      "screenshot": "filer-04.png",
+      "task_id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+      "source": "../key-cleanup/volume-base-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-05.html",
+      "screenshot": "filer-05.png",
+      "task_id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+      "source": "../key-cleanup/volume-secondary-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-06.html",
+      "screenshot": "filer-06.png",
+      "task_id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "source": "../passphrase/restore_original_passphrase-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-07.html",
+      "screenshot": "filer-07.png",
+      "task_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "source": "../passphrase/set_temporary_passphrase-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-08.html",
+      "screenshot": "filer-08.png",
+      "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "source": "../volume-operations/disable-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "filer-09.html",
+      "screenshot": "filer-09.png",
+      "task_id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+      "source": "../volume-operations/enable-filer-log.json",
+      "kind": "sanitized actual filer log"
+    },
+    {
+      "html": "activity-audit.html",
+      "screenshot": "activity-audit.png",
+      "source": "../activity-audit.json",
+      "kind": "saved audit or cleanup verification"
+    },
+    {
+      "html": "local-cleanup.html",
+      "screenshot": "local-cleanup.png",
+      "source": "../local-cleanup.json",
+      "kind": "saved audit or cleanup verification"
+    },
+    {
+      "html": "runtime-cleanup-verification.html",
+      "screenshot": "runtime-cleanup-verification.png",
+      "source": "../runtime-cleanup-verification.json",
+      "kind": "saved audit or cleanup verification"
+    },
+    {
+      "html": "filer-cleanup.html",
+      "screenshot": "filer-cleanup.png",
+      "source": "../filer-cleanup.json",
+      "kind": "saved audit or cleanup verification"
+    }
+  ]
+}

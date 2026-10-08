@@ -1,0 +1,69 @@
+{
+  "source_artifacts": [
+    {
+      "path": "extra/controlled-dispatch-database-checks.json",
+      "sha256": "9da06f9b07df86146574762f1839b9ba7668753e94a788f7c61fddde518c50fa"
+    },
+    {
+      "path": "extra/active-task-exclusion.json",
+      "sha256": "9914a4b2704e698bfc962b652c018bc8e2bc2bfc81f10434ec2a71443654d00d"
+    },
+    {
+      "path": "extra/database-final-before-cleanup.json",
+      "sha256": "36a31422ec955cdf29dde13f48f5cf653a409b04e4638aa4fc573078724a04c8"
+    },
+    {
+      "path": "extra/fixture-metadata.json",
+      "sha256": "48ae9ed3cf6e66cf1afe1bf451ce5b3b12af5202216a85970682020758f1f310"
+    },
+    {
+      "path": "extra/cleanup.json",
+      "sha256": "a3b81caa69415bc623989ad69843528f7a8a8a43a718fc58ed575e75e5af5e9d"
+    },
+    {
+      "path": "extra/results.json",
+      "sha256": "08e80299787ca9bc43a5e30f4aea48502eec260c8e013d3eb4e4d164d70f5811"
+    }
+  ],
+  "rendered_task_count": 6,
+  "rendered_step_count": 6,
+  "task_ids": [
+    "25463890-e2c3-45f8-81e5-8afa08f9a542",
+    "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+    "752185cc-30e4-46d4-8d97-81c218574570",
+    "ae1e8f89-9c3d-4087-b125-8341a79948a4",
+    "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1",
+    "aa76bada-3b8b-45e5-973d-dac161f4f997"
+  ],
+  "step_ids": [
+    "49b99eb8-2f8a-4a3f-896c-4297b8799147",
+    "9bec2b49-f492-4a13-acb3-221c6dd79939",
+    "c5461bdd-332f-44cc-983c-591c80d8083e",
+    "8f02316d-90c2-43c3-9605-8bce5c15ce97",
+    "b342f976-8249-4a35-a1da-a391d00a675b",
+    "6947d7a8-c9d4-46ae-be6f-74353e717b69"
+  ],
+  "active_task_sql_rows": [],
+  "messages_in_final_fixture_snapshot": 0,
+  "cleanup_database_verified": true,
+  "remaining_fixture_rows": {
+    "accounts": 0,
+    "users": 0,
+    "roles": 0,
+    "role_permissions": 0,
+    "user_role": 0,
+    "edges_v2": 0,
+    "volumes_v2": 0,
+    "volume_connections": 0,
+    "encryption_keys": 0,
+    "volume_encryption_key_associations": 0,
+    "tasks": 0,
+    "task_steps": 0,
+    "messages": 0
+  },
+  "cleanup_cache_verified": true,
+  "limitations": [
+    "Rows are the extra runner saved pre-cleanup PostgreSQL snapshot, not a new live query after cleanup.",
+    "Controlled fake-appliance PGP preparation errors establish local failure handling; they do not establish real filer delivery or success."
+  ]
+}

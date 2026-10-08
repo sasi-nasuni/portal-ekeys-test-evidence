@@ -1,0 +1,8 @@
+{
+  "verified_at": "2026-10-08T06:01:48.910507+00:00",
+  "api_owned": true,
+  "owned_queues": 2,
+  "source_head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "policy_task_count": 0,
+  "reused_existing_resources": true
+}

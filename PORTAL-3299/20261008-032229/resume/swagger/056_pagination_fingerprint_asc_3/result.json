@@ -1,0 +1,98 @@
+{
+  "id": 56,
+  "name": "pagination_fingerprint_asc_3",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "ec9e549d-e34d-4f2f-816e-20676311bfc1",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+        "fingerprint": "62D261E4663E4488AC6AF610EB640A3C00000007",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      },
+      {
+        "id": "0cd05796-9914-48ba-a403-f04c68f07061",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "6D6224B4F3A8495697963E5EAABFB8F400000005",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "74092d78-7d8a-4fab-b63e-fff773516543",
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 3
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=fingerprint&sort_direction=asc&iterator_id=ba49a76e-d384-4e2b-a4b9-7dede0e534d0&limit=2",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/056_pagination_fingerprint_asc_3/pagination_fingerprint_asc_3_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/056_pagination_fingerprint_asc_3/pagination_fingerprint_asc_3_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/056_pagination_fingerprint_asc_3/pagination_fingerprint_asc_3_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/056_pagination_fingerprint_asc_3/pagination_fingerprint_asc_3_response_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/056_pagination_fingerprint_asc_3/pagination_fingerprint_asc_3_response_03.png"
+  ],
+  "captured_at": "2026-10-07T22:18:36.971Z",
+  "parameters": {},
+  "query": {
+    "limit": 2,
+    "sort_by": "fingerprint",
+    "sort_direction": "asc",
+    "iterator_id": "ba49a76e-d384-4e2b-a4b9-7dede0e534d0"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 1,
+      "tasks": 0
+    }
+  ],
+  "outcome": "PASS"
+}

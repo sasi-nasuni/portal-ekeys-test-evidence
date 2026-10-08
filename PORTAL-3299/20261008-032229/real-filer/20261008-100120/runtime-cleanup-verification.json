@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-08T06:50:58.656853+00:00",
+  "queues_absent": {
+    "portal-dev-portal3299-20261008-100120-nbn-queue.fifo": true,
+    "portal-dev-portal3299-20261008-100120-nbn-queue": true
+  },
+  "subscriptions_absent": {
+    "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo:69dedf07-0b02-46fd-9e2e-59bfdbab0f0b": true,
+    "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo:abb990c8-9541-4c1f-91cd-f641579fc8ae": true,
+    "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo:c991f99c-fac2-477b-9315-15c64d4f0404": true,
+    "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo:743cb374-1cc0-44c0-9314-83a177671258": true
+  },
+  "processes": {
+    "api": {
+      "absent": true,
+      "exit_code": -15
+    },
+    "eventhub": {
+      "absent": true,
+      "exit_code": 0
+    }
+  },
+  "port_18000_released": true,
+  "swagger_driver_absent": true,
+  "verified": true,
+  "shutdown_note": "API terminated by the explicitly requested SIGTERM (-15); worker exited 0. Both are absent and the port is free.",
+  "verification_updated_at": "2026-10-08T07:00:41.961687+00:00"
+}

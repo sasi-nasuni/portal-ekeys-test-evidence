@@ -1,0 +1,38 @@
+{
+  "id": 124,
+  "name": "passphrase_readiness_malformed",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 405,
+  "body": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/cef7bbd6-1885-46b3-b4d3-e36b55fd2f88/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/124_passphrase_readiness_malformed/passphrase_readiness_malformed_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/124_passphrase_readiness_malformed/passphrase_readiness_malformed_response.png"
+  ],
+  "captured_at": "2026-10-07T22:23:18.392Z",
+  "parameters": {
+    "appliance_id": "cef7bbd6-1885-46b3-b4d3-e36b55fd2f88"
+  },
+  "query": {},
+  "expected_status": 405,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

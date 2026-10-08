@@ -1,0 +1,35 @@
+{
+  "id": 97,
+  "name": "summary_unknown",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 404,
+  "body": {
+    "message": "Appliance 67aec864-923c-4cfc-8d4f-9f9542eec939 not found",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/67aec864-923c-4cfc-8d4f-9f9542eec939/encryption-keys/summary",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/097_summary_unknown/summary_unknown_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/097_summary_unknown/summary_unknown_response.png"
+  ],
+  "captured_at": "2026-10-07T22:21:33.330Z",
+  "parameters": {
+    "appliance_id": "67aec864-923c-4cfc-8d4f-9f9542eec939"
+  },
+  "query": {},
+  "expected_status": 404,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

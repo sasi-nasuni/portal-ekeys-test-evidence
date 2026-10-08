@@ -1,0 +1,8 @@
+{
+  "path": "backend/libs/portal-api/portal/api/appliance_versions.py",
+  "original": "10.6",
+  "temporary": "10.5",
+  "user_authorized": true,
+  "restored": true,
+  "verified_at": "2026-10-08T06:49:59.200116+00:00"
+}

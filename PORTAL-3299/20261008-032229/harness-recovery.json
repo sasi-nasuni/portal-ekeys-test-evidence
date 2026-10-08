@@ -1,0 +1,27 @@
+{
+  "initial_attempt": {
+    "passed": 78,
+    "ui_failures": 3,
+    "requests_sent_for_failed_cases": false
+  },
+  "failed_scenarios": [
+    {
+      "id": 79,
+      "name": "filter_appliance_east"
+    },
+    {
+      "id": 80,
+      "name": "filter_appliance_west"
+    },
+    {
+      "id": 81,
+      "name": "filter_foreign_appliance_empty"
+    }
+  ],
+  "cause": "Full-page screenshot capture resized/scrolled the browser and caused Swagger virtualization to remove the operation before Execute. Native array entry itself succeeded.",
+  "correction": "Capture bounded viewport images without resizing; preserve native UI state. Resume remaining cases using new fixture accounts after verified cleanup.",
+  "browser_cleanup": "Original wait timed out because stdin stayed open. A later exact process check verified no driver process remained; subsequent runs close stdin before waiting.",
+  "evidence_preserved": true,
+  "resume_results": "resume/results.json",
+  "process_verification": "browser-process-verification.json"
+}

@@ -1,0 +1,2944 @@
+[
+  {
+    "id": 1,
+    "name": "extra_cursor_start",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "0475adad-304d-49a1-abc3-952dac0e9339",
+          "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+          "fingerprint": "1AA5F026F4254275AF00C46BEC96288400000001",
+          "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": true,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "82f39865-7cea-412e-85bc-d8fbde6e637a",
+              "action": "upload_encryption_key",
+              "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+              "state": "failed",
+              "error": {
+                "message": "Test upload failed",
+                "detected_at": "2026-10-07T22:26:08.499851Z"
+              }
+            }
+          ],
+          "volumes": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "1a79eb51-04f0-48dc-91e1-820bc333d9bd",
+          "name": null,
+          "fingerprint": "0F5135DB4F2C4638933D56413AC0B38100000000",
+          "appliance_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+          "algorithm": null,
+          "length": null,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": true,
+          "status": "creating",
+          "tasks": [
+            {
+              "task_id": "6f453faf-a8cd-4a8c-b4e3-2c95d859d283",
+              "action": "upload_encryption_key",
+              "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+              "state": "in_progress",
+              "error": null
+            }
+          ],
+          "volumes": [
+            {
+              "volume_guid": "052078a1-da91-4fd9-899f-d1d0a29848b6_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+              "state": "enabled",
+              "is_stub": true,
+              "status": "creating",
+              "tasks": [
+                {
+                  "task_id": "7b7a9e48-3834-4bca-9e27-0e5c62aa1771",
+                  "action": "add_volume_encryption_keys",
+                  "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+                  "state": "in_progress",
+                  "error": null
+                }
+              ]
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": "70e7efb5-f712-40d1-b09e-c3b3bdbf6a11",
+        "page_size": 2,
+        "total_pages": 4,
+        "total_items": 8,
+        "page": 1
+      }
+    },
+    "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=2",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_parameters_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_03.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_04.png"
+    ],
+    "captured_at": "2026-10-07T22:26:19.258Z",
+    "parameters": {},
+    "query": {
+      "limit": 2
+    },
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      {
+        "keys": 2,
+        "associations": 1,
+        "tasks": 3
+      }
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 2,
+    "name": "extra_cursor_jump_to_page3",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "b39a5d9b-555c-4746-96f8-539908dc29c5",
+          "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+          "fingerprint": "415AD85E574745A48A9B3C5ED352F80500000007",
+          "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+          "algorithm": null,
+          "length": null,
+          "type": "backup",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "052078a1-da91-4fd9-899f-d1d0a29848b6_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": true
+        },
+        {
+          "id": "5d658321-beda-4425-a8ef-27761bc680e4",
+          "name": "PORTAL3299TEST-20261008-032229-A-beta",
+          "fingerprint": "76B561437CAE407FBDDE3A1618C69D5900000003",
+          "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+          "algorithm": "elgamal",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "b4ed6210-2a75-4165-a1d3-7dbb2e3a6d66",
+              "action": "delete_encryption_key",
+              "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+              "state": "failed",
+              "error": {
+                "message": null,
+                "detected_at": "2026-10-07T22:26:08.499851Z"
+              }
+            }
+          ],
+          "volumes": [
+            {
+              "volume_guid": "0d714f03-89a7-4539-bf70-ca6a79d62be1_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+              "state": "disabled",
+              "is_stub": false,
+              "status": "failed",
+              "tasks": [
+                {
+                  "task_id": "8aca74c0-2f41-4681-bd59-cc37830438a0",
+                  "action": "disable_volume_encryption_keys",
+                  "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+                  "state": "failed",
+                  "error": {
+                    "message": "Test disable failed",
+                    "detected_at": "2026-10-07T22:26:08.499851Z"
+                  }
+                }
+              ]
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": "22318e5e-de88-472e-97f3-25d32155b8ae",
+        "page_size": 2,
+        "total_pages": 4,
+        "total_items": 8,
+        "page": 3
+      }
+    },
+    "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&iterator_id=70e7efb5-f712-40d1-b09e-c3b3bdbf6a11&page=3&limit=2",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/002_extra_cursor_jump_to_page3/extra_cursor_jump_to_page3_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/002_extra_cursor_jump_to_page3/extra_cursor_jump_to_page3_parameters_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/002_extra_cursor_jump_to_page3/extra_cursor_jump_to_page3_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/002_extra_cursor_jump_to_page3/extra_cursor_jump_to_page3_response_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/002_extra_cursor_jump_to_page3/extra_cursor_jump_to_page3_response_03.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/002_extra_cursor_jump_to_page3/extra_cursor_jump_to_page3_response_04.png"
+    ],
+    "captured_at": "2026-10-07T22:26:23.559Z",
+    "parameters": {},
+    "query": {
+      "limit": 2,
+      "iterator_id": "70e7efb5-f712-40d1-b09e-c3b3bdbf6a11",
+      "page": 3
+    },
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      {
+        "keys": 2,
+        "associations": 2,
+        "tasks": 2
+      }
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 3,
+    "name": "extra_cursor_backward_to_page1",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "0475adad-304d-49a1-abc3-952dac0e9339",
+          "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+          "fingerprint": "1AA5F026F4254275AF00C46BEC96288400000001",
+          "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": true,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "82f39865-7cea-412e-85bc-d8fbde6e637a",
+              "action": "upload_encryption_key",
+              "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+              "state": "failed",
+              "error": {
+                "message": "Test upload failed",
+                "detected_at": "2026-10-07T22:26:08.499851Z"
+              }
+            }
+          ],
+          "volumes": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "1a79eb51-04f0-48dc-91e1-820bc333d9bd",
+          "name": null,
+          "fingerprint": "0F5135DB4F2C4638933D56413AC0B38100000000",
+          "appliance_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+          "algorithm": null,
+          "length": null,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": true,
+          "status": "creating",
+          "tasks": [
+            {
+              "task_id": "6f453faf-a8cd-4a8c-b4e3-2c95d859d283",
+              "action": "upload_encryption_key",
+              "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+              "state": "in_progress",
+              "error": null
+            }
+          ],
+          "volumes": [
+            {
+              "volume_guid": "052078a1-da91-4fd9-899f-d1d0a29848b6_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+              "state": "enabled",
+              "is_stub": true,
+              "status": "creating",
+              "tasks": [
+                {
+                  "task_id": "7b7a9e48-3834-4bca-9e27-0e5c62aa1771",
+                  "action": "add_volume_encryption_keys",
+                  "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+                  "state": "in_progress",
+                  "error": null
+                }
+              ]
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": "0bed30a1-f74f-46a5-9b58-5f550455d33c",
+        "page_size": 2,
+        "total_pages": 4,
+        "total_items": 8,
+        "page": 1
+      }
+    },
+    "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&iterator_id=22318e5e-de88-472e-97f3-25d32155b8ae&page=1&limit=2",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/003_extra_cursor_backward_to_page1/extra_cursor_backward_to_page1_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/003_extra_cursor_backward_to_page1/extra_cursor_backward_to_page1_parameters_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/003_extra_cursor_backward_to_page1/extra_cursor_backward_to_page1_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/003_extra_cursor_backward_to_page1/extra_cursor_backward_to_page1_response_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/003_extra_cursor_backward_to_page1/extra_cursor_backward_to_page1_response_03.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/003_extra_cursor_backward_to_page1/extra_cursor_backward_to_page1_response_04.png"
+    ],
+    "captured_at": "2026-10-07T22:26:27.879Z",
+    "parameters": {},
+    "query": {
+      "limit": 2,
+      "iterator_id": "22318e5e-de88-472e-97f3-25d32155b8ae",
+      "page": 1
+    },
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      {
+        "keys": 2,
+        "associations": 1,
+        "tasks": 3
+      }
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 4,
+    "name": "extra_absolute_page3_without_cursor",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "b39a5d9b-555c-4746-96f8-539908dc29c5",
+          "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+          "fingerprint": "415AD85E574745A48A9B3C5ED352F80500000007",
+          "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+          "algorithm": null,
+          "length": null,
+          "type": "backup",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "052078a1-da91-4fd9-899f-d1d0a29848b6_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": true
+        },
+        {
+          "id": "5d658321-beda-4425-a8ef-27761bc680e4",
+          "name": "PORTAL3299TEST-20261008-032229-A-beta",
+          "fingerprint": "76B561437CAE407FBDDE3A1618C69D5900000003",
+          "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+          "algorithm": "elgamal",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "b4ed6210-2a75-4165-a1d3-7dbb2e3a6d66",
+              "action": "delete_encryption_key",
+              "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+              "state": "failed",
+              "error": {
+                "message": null,
+                "detected_at": "2026-10-07T22:26:08.499851Z"
+              }
+            }
+          ],
+          "volumes": [
+            {
+              "volume_guid": "0d714f03-89a7-4539-bf70-ca6a79d62be1_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+              "state": "disabled",
+              "is_stub": false,
+              "status": "failed",
+              "tasks": [
+                {
+                  "task_id": "8aca74c0-2f41-4681-bd59-cc37830438a0",
+                  "action": "disable_volume_encryption_keys",
+                  "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+                  "state": "failed",
+                  "error": {
+                    "message": "Test disable failed",
+                    "detected_at": "2026-10-07T22:26:08.499851Z"
+                  }
+                }
+              ]
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": "8e76ce9c-62be-4c42-bdca-3f769174a9ee",
+        "page_size": 2,
+        "total_pages": 4,
+        "total_items": 8,
+        "page": 3
+      }
+    },
+    "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&page=3&limit=2",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_parameters_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_03.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_04.png"
+    ],
+    "captured_at": "2026-10-07T22:26:32.219Z",
+    "parameters": {},
+    "query": {
+      "limit": 2,
+      "page": 3
+    },
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      {
+        "keys": 2,
+        "associations": 2,
+        "tasks": 2
+      }
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 5,
+    "name": "summary_invalid",
+    "method": "GET",
+    "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+    "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+    "input_limitations": [
+      "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+    ],
+    "raw_path_params": {
+      "appliance_id": "bad-id"
+    },
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "appliance_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+          "input": "bad-id",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+          }
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/edges/bad-id/encryption-keys/summary",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/005_summary_invalid/summary_invalid_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/005_summary_invalid/summary_invalid_response.png"
+    ],
+    "captured_at": "2026-10-07T22:26:36.399Z",
+    "parameters": {
+      "appliance_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+    },
+    "query": {},
+    "expected_status": 422,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Server returned422 for malformed path, independently of native Swagger UUID validation"
+    ],
+    "outcome": "PASS",
+    "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+  },
+  {
+    "id": 6,
+    "name": "delete_invalid_path",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+    "input_limitations": [
+      "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+    ],
+    "raw_path_params": {
+      "key_id": "bad-id"
+    },
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "key_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+          "input": "bad-id",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+          }
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/encryption-keys/bad-id",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/006_delete_invalid_path/delete_invalid_path_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/006_delete_invalid_path/delete_invalid_path_response.png"
+    ],
+    "captured_at": "2026-10-07T22:26:40.341Z",
+    "parameters": {
+      "key_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+    },
+    "query": {},
+    "expected_status": 422,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Server returned422 for malformed path, independently of native Swagger UUID validation"
+    ],
+    "outcome": "PASS",
+    "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+  },
+  {
+    "id": 7,
+    "name": "enable_invalid_path",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+    "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+    "input_limitations": [
+      "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+    ],
+    "raw_path_params": {
+      "volume_id": "bad-id",
+      "key_id": "bad-id"
+    },
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "value_error",
+          "loc": [
+            "path",
+            "volume_id"
+          ],
+          "msg": "Value error, Value must be in format <uuid>_<suffix> or <hex>, got: bad-id",
+          "input": "bad-id",
+          "ctx": {
+            "error": {}
+          }
+        },
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "key_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+          "input": "bad-id",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+          }
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/volumes/bad-id/encryption-keys/bad-id/enable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/007_enable_invalid_path/enable_invalid_path_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/007_enable_invalid_path/enable_invalid_path_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/007_enable_invalid_path/enable_invalid_path_response_02.png"
+    ],
+    "captured_at": "2026-10-07T22:26:44.652Z",
+    "parameters": {
+      "volume_id": "2a71fd0e-e1ac-4fa1-942c-4912ada38b23_0",
+      "key_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+    },
+    "query": {},
+    "expected_status": 422,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Server returned422 for malformed path, independently of native Swagger UUID validation"
+    ],
+    "outcome": "PASS",
+    "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+  },
+  {
+    "id": 8,
+    "name": "disable_invalid_path",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+    "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+    "input_limitations": [
+      "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+    ],
+    "raw_path_params": {
+      "volume_id": "bad-id",
+      "key_id": "bad-id"
+    },
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "value_error",
+          "loc": [
+            "path",
+            "volume_id"
+          ],
+          "msg": "Value error, Value must be in format <uuid>_<suffix> or <hex>, got: bad-id",
+          "input": "bad-id",
+          "ctx": {
+            "error": {}
+          }
+        },
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "key_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+          "input": "bad-id",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+          }
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/volumes/bad-id/encryption-keys/bad-id/disable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/008_disable_invalid_path/disable_invalid_path_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/008_disable_invalid_path/disable_invalid_path_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/008_disable_invalid_path/disable_invalid_path_response_02.png"
+    ],
+    "captured_at": "2026-10-07T22:26:48.728Z",
+    "parameters": {
+      "volume_id": "2a71fd0e-e1ac-4fa1-942c-4912ada38b23_0",
+      "key_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+    },
+    "query": {},
+    "expected_status": 422,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Server returned422 for malformed path, independently of native Swagger UUID validation"
+    ],
+    "outcome": "PASS",
+    "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+  },
+  {
+    "id": 9,
+    "name": "passphrase_invalid_path",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+    "input_limitations": [
+      "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+    ],
+    "raw_path_params": {
+      "appliance_id": "bad-id"
+    },
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "appliance_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+          "input": "bad-id",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+          }
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/edges/bad-id/escrow-passphrase",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/009_passphrase_invalid_path/passphrase_invalid_path_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/009_passphrase_invalid_path/passphrase_invalid_path_response.png"
+    ],
+    "captured_at": "2026-10-07T22:26:52.759Z",
+    "parameters": {
+      "appliance_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+    },
+    "query": {},
+    "expected_status": 422,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Server returned422 for malformed path, independently of native Swagger UUID validation"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "passphrase": "[REDACTED encrypted test passphrase]"
+    },
+    "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+  },
+  {
+    "id": 10,
+    "name": "download_invalid_path",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; explicit malformed path (valid native UI placeholders; actual malformed URL verified); multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "input_limitations": [
+      "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+    ],
+    "raw_path_params": {
+      "appliance_id": "bad-id"
+    },
+    "status": 422,
+    "body": {
+      "message": "Validation Error",
+      "detail": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "path",
+            "appliance_id"
+          ],
+          "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+          "input": "bad-id",
+          "ctx": {
+            "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+          }
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/edges/bad-id/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/010_download_invalid_path/download_invalid_path_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/010_download_invalid_path/download_invalid_path_response.png"
+    ],
+    "captured_at": "2026-10-07T22:26:56.939Z",
+    "parameters": {
+      "appliance_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 422,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Server returned422 for malformed path, independently of native Swagger UUID validation"
+    ],
+    "outcome": "PASS",
+    "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+  },
+  {
+    "id": 11,
+    "name": "bulk_maximum_25_unknown_keys",
+    "method": "POST",
+    "path_template": "/encryption-keys/escrow",
+    "status": 202,
+    "body": {
+      "items": [
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "ba78ac17-2efd-48a7-85de-64e0c85db92a"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "dfe43b70-3cb8-4985-b92c-69a27fcc8538"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "f0cb40e6-730d-416f-887a-fcd5f74fe406"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "265711df-f96a-4542-ad6c-e312eec06bc5"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "c342b753-0fd3-4cc2-b549-854974d2e552"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "e788b605-71e7-4dc8-8e7f-1e8503d492fe"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "31ed6684-2497-4c9e-89ab-59dd292d756f"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "cc6d107b-8d92-4165-b9d2-1f4a90860a91"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "6c216910-4602-4bd2-8bec-8bee2545259e"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "31a8957c-f82c-474b-bab2-45df416ecc1d"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "7c227864-97eb-4454-8a65-e74cfd561724"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "ee8418d8-76c5-42be-a09f-fe0770fb628c"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "fd9df6f3-f431-40d2-93a2-5fa2df0da8bc"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "fda0c645-d65d-4c8a-abae-0771e3c08c54"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "74cd66ec-e93d-4880-afe6-b6f02d31f4d4"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "0e32d039-88f3-4596-81dc-415629f4c888"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "ef3c50a6-7355-491f-b98d-53fc1ccf03aa"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "89be4028-9dd1-41ef-a50a-7268c55c29cb"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "bfef7ce3-9805-4286-a81c-3367e5b0be42"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "70c4a595-944e-470e-896d-0f937ef348e6"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "349fb0ed-303b-4939-963c-8ba09026ad81"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "22a610d6-58e9-4a9e-bbdd-729369088483"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "2d7cbdff-1b32-43ff-96b7-e0b6c7837872"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "c340da1e-3ae3-4c70-8edd-1c7001928de9"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "6f02c720-3dfe-4024-9321-d2575b14bda7"
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/encryption-keys/escrow",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_03.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_04.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_05.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_06.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_07.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_08.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_09.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/011_bulk_maximum_25_unknown_keys/bulk_maximum_25_unknown_keys_response_10.png"
+    ],
+    "captured_at": "2026-10-07T22:27:01.530Z",
+    "parameters": {},
+    "query": {},
+    "expected_status": 202,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Inclusive maximum25 unique keys accepted and returned in input order; every rejection has no task"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "key_ids": [
+        "ba78ac17-2efd-48a7-85de-64e0c85db92a",
+        "dfe43b70-3cb8-4985-b92c-69a27fcc8538",
+        "f0cb40e6-730d-416f-887a-fcd5f74fe406",
+        "265711df-f96a-4542-ad6c-e312eec06bc5",
+        "c342b753-0fd3-4cc2-b549-854974d2e552",
+        "e788b605-71e7-4dc8-8e7f-1e8503d492fe",
+        "31ed6684-2497-4c9e-89ab-59dd292d756f",
+        "cc6d107b-8d92-4165-b9d2-1f4a90860a91",
+        "6c216910-4602-4bd2-8bec-8bee2545259e",
+        "31a8957c-f82c-474b-bab2-45df416ecc1d",
+        "7c227864-97eb-4454-8a65-e74cfd561724",
+        "ee8418d8-76c5-42be-a09f-fe0770fb628c",
+        "fd9df6f3-f431-40d2-93a2-5fa2df0da8bc",
+        "fda0c645-d65d-4c8a-abae-0771e3c08c54",
+        "74cd66ec-e93d-4880-afe6-b6f02d31f4d4",
+        "0e32d039-88f3-4596-81dc-415629f4c888",
+        "ef3c50a6-7355-491f-b98d-53fc1ccf03aa",
+        "89be4028-9dd1-41ef-a50a-7268c55c29cb",
+        "bfef7ce3-9805-4286-a81c-3367e5b0be42",
+        "70c4a595-944e-470e-896d-0f937ef348e6",
+        "349fb0ed-303b-4939-963c-8ba09026ad81",
+        "22a610d6-58e9-4a9e-bbdd-729369088483",
+        "2d7cbdff-1b32-43ff-96b7-e0b6c7837872",
+        "c340da1e-3ae3-4c70-8edd-1c7001928de9",
+        "6f02c720-3dfe-4024-9321-d2575b14bda7"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "metadata_summary_readable_offline",
+    "method": "GET",
+    "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+    "status": 200,
+    "body": {
+      "total": 2,
+      "generated_count": 2,
+      "escrowed": 0,
+      "not_escrowed": 2,
+      "backup_key": null,
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    "request_url": "http://localhost:8000/edges/5b8686c8-d949-4f04-b00a-ffde2e396577/encryption-keys/summary",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/012_metadata_summary_readable_offline/metadata_summary_readable_offline_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/012_metadata_summary_readable_offline/metadata_summary_readable_offline_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:05.553Z",
+    "parameters": {
+      "appliance_id": "5b8686c8-d949-4f04-b00a-ffde2e396577"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Full summary matches SQL despite write-ineligible appliance readiness"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 13,
+    "name": "metadata_volume_readable_offline",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "body": [
+      {
+        "id": "adaf56c8-bd4c-40e0-8940-7f37d18a99d3",
+        "name": "PORTAL3299TEST-20261008-032229-A-offline-adaf56c8",
+        "fingerprint": "45F2A3543E804BE0B487BD127EDD129101234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "a284b1a0-143b-409b-84a5-9fdf119fca9b",
+        "name": "PORTAL3299TEST-20261008-032229-A-offline-a284b1a0",
+        "fingerprint": "0AF82FFBAF1D47FC8A00ECB10B96647601234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "request_url": "http://localhost:8000/volumes/5d22e52c-1616-4d20-8eb8-22603c346d1d_0/encryption-keys",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/013_metadata_volume_readable_offline/metadata_volume_readable_offline_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/013_metadata_volume_readable_offline/metadata_volume_readable_offline_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:09.541Z",
+    "parameters": {
+      "volume_id": "5d22e52c-1616-4d20-8eb8-22603c346d1d_0"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "All volume key fields match SQL despite write-ineligible master readiness"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 14,
+    "name": "metadata_summary_readable_below",
+    "method": "GET",
+    "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+    "status": 200,
+    "body": {
+      "total": 2,
+      "generated_count": 2,
+      "escrowed": 0,
+      "not_escrowed": 2,
+      "backup_key": null,
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    "request_url": "http://localhost:8000/edges/cf449e7f-678f-4a1e-8aea-6d02874154df/encryption-keys/summary",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/014_metadata_summary_readable_below/metadata_summary_readable_below_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/014_metadata_summary_readable_below/metadata_summary_readable_below_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:13.520Z",
+    "parameters": {
+      "appliance_id": "cf449e7f-678f-4a1e-8aea-6d02874154df"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Full summary matches SQL despite write-ineligible appliance readiness"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 15,
+    "name": "metadata_volume_readable_below",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "body": [
+      {
+        "id": "6c6e40ea-987e-4336-94a6-da75a3a95196",
+        "name": "PORTAL3299TEST-20261008-032229-A-below-6c6e40ea",
+        "fingerprint": "56D439C89DA64ADCB857E795F3B31E5C01234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "f456197b-2c6f-4130-9750-9c89cdb71b90",
+        "name": "PORTAL3299TEST-20261008-032229-A-below-f456197b",
+        "fingerprint": "37E13B9B9CA941688242F1C216F3EEE101234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "request_url": "http://localhost:8000/volumes/f4211e66-fd71-4d80-a374-90a389395551_0/encryption-keys",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/015_metadata_volume_readable_below/metadata_volume_readable_below_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/015_metadata_volume_readable_below/metadata_volume_readable_below_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:17.506Z",
+    "parameters": {
+      "volume_id": "f4211e66-fd71-4d80-a374-90a389395551_0"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "All volume key fields match SQL despite write-ineligible master readiness"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 16,
+    "name": "metadata_summary_readable_strider",
+    "method": "GET",
+    "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+    "status": 200,
+    "body": {
+      "total": 2,
+      "generated_count": 2,
+      "escrowed": 0,
+      "not_escrowed": 2,
+      "backup_key": null,
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    "request_url": "http://localhost:8000/edges/093430a1-2aa6-407c-9522-365a7348b366/encryption-keys/summary",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/016_metadata_summary_readable_strider/metadata_summary_readable_strider_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/016_metadata_summary_readable_strider/metadata_summary_readable_strider_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:21.530Z",
+    "parameters": {
+      "appliance_id": "093430a1-2aa6-407c-9522-365a7348b366"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Full summary matches SQL despite write-ineligible appliance readiness"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 17,
+    "name": "metadata_volume_readable_strider",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "body": [
+      {
+        "id": "035d0145-e7e2-4185-95b1-1c8696d27566",
+        "name": "PORTAL3299TEST-20261008-032229-A-strider-035d0145",
+        "fingerprint": "B9F31709DEE143A48C4BFD725EF7637D01234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "5fdee543-63cb-4c7e-8590-81e661f3078d",
+        "name": "PORTAL3299TEST-20261008-032229-A-strider-5fdee543",
+        "fingerprint": "391718DF51624B30B44B18A584FA3A6401234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "request_url": "http://localhost:8000/volumes/f8e876ca-51f4-477a-9797-c0210a823f7d_0/encryption-keys",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/017_metadata_volume_readable_strider/metadata_volume_readable_strider_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/017_metadata_volume_readable_strider/metadata_volume_readable_strider_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:25.573Z",
+    "parameters": {
+      "volume_id": "f8e876ca-51f4-477a-9797-c0210a823f7d_0"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "All volume key fields match SQL despite write-ineligible master readiness"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 18,
+    "name": "download_valid_multiline_gate_unknown",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 404,
+    "body": {
+      "message": "Not found",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/2975c973-12e7-4f92-8207-eb3837fc13fa/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/018_download_valid_multiline_gate_unknown/download_valid_multiline_gate_unknown_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/018_download_valid_multiline_gate_unknown/download_valid_multiline_gate_unknown_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:29.609Z",
+    "parameters": {
+      "appliance_id": "2975c973-12e7-4f92-8207-eb3837fc13fa"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 404,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 19,
+    "name": "download_valid_multiline_gate_foreign",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 404,
+    "body": {
+      "message": "Not found",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/75215bfb-af0c-4da2-980d-cd958801a495/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/019_download_valid_multiline_gate_foreign/download_valid_multiline_gate_foreign_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/019_download_valid_multiline_gate_foreign/download_valid_multiline_gate_foreign_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:33.691Z",
+    "parameters": {
+      "appliance_id": "75215bfb-af0c-4da2-980d-cd958801a495"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 404,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 20,
+    "name": "download_valid_multiline_gate_below",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/cf449e7f-678f-4a1e-8aea-6d02874154df/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/020_download_valid_multiline_gate_below/download_valid_multiline_gate_below_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/020_download_valid_multiline_gate_below/download_valid_multiline_gate_below_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:37.821Z",
+    "parameters": {
+      "appliance_id": "cf449e7f-678f-4a1e-8aea-6d02874154df"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 405,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 21,
+    "name": "download_valid_multiline_gate_malformed",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 405,
+    "body": {
+      "message": "Appliance is below the minimum supported version",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/33c771d2-96f4-4f66-88de-64354d7dba6a/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/021_download_valid_multiline_gate_malformed/download_valid_multiline_gate_malformed_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/021_download_valid_multiline_gate_malformed/download_valid_multiline_gate_malformed_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:41.901Z",
+    "parameters": {
+      "appliance_id": "33c771d2-96f4-4f66-88de-64354d7dba6a"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 405,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 22,
+    "name": "download_valid_multiline_gate_strider",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 405,
+    "body": {
+      "message": "This operation is not supported on this appliance",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/093430a1-2aa6-407c-9522-365a7348b366/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/022_download_valid_multiline_gate_strider/download_valid_multiline_gate_strider_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/022_download_valid_multiline_gate_strider/download_valid_multiline_gate_strider_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:45.950Z",
+    "parameters": {
+      "appliance_id": "093430a1-2aa6-407c-9522-365a7348b366"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 405,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 23,
+    "name": "download_valid_multiline_gate_offline",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 503,
+    "body": {
+      "message": "Appliance is offline",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/5b8686c8-d949-4f04-b00a-ffde2e396577/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/023_download_valid_multiline_gate_offline/download_valid_multiline_gate_offline_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/023_download_valid_multiline_gate_offline/download_valid_multiline_gate_offline_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:50.043Z",
+    "parameters": {
+      "appliance_id": "5b8686c8-d949-4f04-b00a-ffde2e396577"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 503,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 24,
+    "name": "download_valid_multiline_gate_stub",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 404,
+    "body": {
+      "message": "Not found",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/7f652f88-6056-4304-8afb-2765b4681256/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/024_download_valid_multiline_gate_stub/download_valid_multiline_gate_stub_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/024_download_valid_multiline_gate_stub/download_valid_multiline_gate_stub_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:54.042Z",
+    "parameters": {
+      "appliance_id": "7f652f88-6056-4304-8afb-2765b4681256"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 404,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 25,
+    "name": "download_valid_multiline_gate_duplicate",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/0fddcb00-b8dd-4db5-80e2-25a065302bb9/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/025_download_valid_multiline_gate_duplicate/download_valid_multiline_gate_duplicate_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/025_download_valid_multiline_gate_duplicate/download_valid_multiline_gate_duplicate_response.png"
+    ],
+    "captured_at": "2026-10-07T22:27:58.304Z",
+    "parameters": {
+      "appliance_id": "0fddcb00-b8dd-4db5-80e2-25a065302bb9"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 26,
+    "name": "passphrase_valid_cipher_wrong_recipient",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 400,
+    "body": {
+      "message": "Passphrase must be encrypted to the appliance's escrow public key",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/0fddcb00-b8dd-4db5-80e2-25a065302bb9/escrow-passphrase",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/026_passphrase_valid_cipher_wrong_recipient/passphrase_valid_cipher_wrong_recipient_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/026_passphrase_valid_cipher_wrong_recipient/passphrase_valid_cipher_wrong_recipient_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:03.412Z",
+    "parameters": {
+      "appliance_id": "0fddcb00-b8dd-4db5-80e2-25a065302bb9"
+    },
+    "query": {},
+    "expected_status": 400,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Ciphertext for ephemeral A rejected against cached ephemeral B before task creation or transport"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "passphrase": "[REDACTED encrypted test passphrase]"
+    }
+  },
+  {
+    "id": 27,
+    "name": "sentinel_none_enable_in_progress",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+    "status": 409,
+    "body": {
+      "message": "An operation to enable encryption-key association 370457ce-5d32-4d13-91f8-35408b842e90 is already in progress on volume ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0/encryption-keys/e4da94cd-2ca1-479f-bae3-aef6d1539905/enable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/027_sentinel_none_enable_in_progress/sentinel_none_enable_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/027_sentinel_none_enable_in_progress/sentinel_none_enable_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:08.464Z",
+    "parameters": {
+      "volume_id": "ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+      "key_id": "e4da94cd-2ca1-479f-bae3-aef6d1539905"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 28,
+    "name": "sentinel_none_disable_in_progress",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+    "status": 409,
+    "body": {
+      "message": "An operation to disable encryption-key association 370457ce-5d32-4d13-91f8-35408b842e90 is already in progress on volume ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0/encryption-keys/e4da94cd-2ca1-479f-bae3-aef6d1539905/disable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/028_sentinel_none_disable_in_progress/sentinel_none_disable_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/028_sentinel_none_disable_in_progress/sentinel_none_disable_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:12.511Z",
+    "parameters": {
+      "volume_id": "ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+      "key_id": "e4da94cd-2ca1-479f-bae3-aef6d1539905"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 29,
+    "name": "sentinel_none_passphrase_in_progress",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/1d2669a3-bf65-446e-a66d-c125354c62b1/escrow-passphrase",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/029_sentinel_none_passphrase_in_progress/sentinel_none_passphrase_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/029_sentinel_none_passphrase_in_progress/sentinel_none_passphrase_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:16.554Z",
+    "parameters": {
+      "appliance_id": "1d2669a3-bf65-446e-a66d-c125354c62b1"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "passphrase": "[REDACTED encrypted test passphrase]"
+    }
+  },
+  {
+    "id": 30,
+    "name": "sentinel_none_download_in_progress",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/1d2669a3-bf65-446e-a66d-c125354c62b1/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/030_sentinel_none_download_in_progress/sentinel_none_download_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/030_sentinel_none_download_in_progress/sentinel_none_download_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:20.602Z",
+    "parameters": {
+      "appliance_id": "1d2669a3-bf65-446e-a66d-c125354c62b1"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 31,
+    "name": "sentinel_none_delete_in_progress",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress for encryption_key 179a62ca-2177-43d3-8bf5-b437c849a8e0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/encryption-keys/179a62ca-2177-43d3-8bf5-b437c849a8e0",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/031_sentinel_none_delete_in_progress/sentinel_none_delete_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/031_sentinel_none_delete_in_progress/sentinel_none_delete_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:24.596Z",
+    "parameters": {
+      "key_id": "179a62ca-2177-43d3-8bf5-b437c849a8e0"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 32,
+    "name": "sentinel_none_escrow_in_progress",
+    "method": "POST",
+    "path_template": "/encryption-keys/escrow",
+    "status": 202,
+    "body": {
+      "items": [
+        {
+          "task": null,
+          "rejection": {
+            "reason": "in_progress",
+            "message": "An operation is already in progress",
+            "metadata": null
+          },
+          "key_id": "e4da94cd-2ca1-479f-bae3-aef6d1539905"
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/encryption-keys/escrow",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/032_sentinel_none_escrow_in_progress/sentinel_none_escrow_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/032_sentinel_none_escrow_in_progress/sentinel_none_escrow_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:28.740Z",
+    "parameters": {},
+    "query": {},
+    "expected_status": 202,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "key_ids": [
+        "e4da94cd-2ca1-479f-bae3-aef6d1539905"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "sentinel_master_enable_in_progress",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+    "status": 409,
+    "body": {
+      "message": "An operation to enable encryption-key association ecb5c867-640f-49d6-a842-c8cf8bbdf4bc is already in progress on volume 604528ef-a5e5-4a1c-a189-a025933bfdbe_0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/604528ef-a5e5-4a1c-a189-a025933bfdbe_0/encryption-keys/fcd7c253-a6e2-4da6-a532-56e7002d9738/enable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/033_sentinel_master_enable_in_progress/sentinel_master_enable_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/033_sentinel_master_enable_in_progress/sentinel_master_enable_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:32.773Z",
+    "parameters": {
+      "volume_id": "604528ef-a5e5-4a1c-a189-a025933bfdbe_0",
+      "key_id": "fcd7c253-a6e2-4da6-a532-56e7002d9738"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 34,
+    "name": "sentinel_master_disable_in_progress",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+    "status": 409,
+    "body": {
+      "message": "An operation to disable encryption-key association ecb5c867-640f-49d6-a842-c8cf8bbdf4bc is already in progress on volume 604528ef-a5e5-4a1c-a189-a025933bfdbe_0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/604528ef-a5e5-4a1c-a189-a025933bfdbe_0/encryption-keys/fcd7c253-a6e2-4da6-a532-56e7002d9738/disable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/034_sentinel_master_disable_in_progress/sentinel_master_disable_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/034_sentinel_master_disable_in_progress/sentinel_master_disable_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:36.829Z",
+    "parameters": {
+      "volume_id": "604528ef-a5e5-4a1c-a189-a025933bfdbe_0",
+      "key_id": "fcd7c253-a6e2-4da6-a532-56e7002d9738"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 35,
+    "name": "sentinel_master_passphrase_in_progress",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/e81c9ae7-17b2-4ad9-ba93-73bb7efb70af/escrow-passphrase",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/035_sentinel_master_passphrase_in_progress/sentinel_master_passphrase_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/035_sentinel_master_passphrase_in_progress/sentinel_master_passphrase_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:40.949Z",
+    "parameters": {
+      "appliance_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "passphrase": "[REDACTED encrypted test passphrase]"
+    }
+  },
+  {
+    "id": 36,
+    "name": "sentinel_master_download_in_progress",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/e81c9ae7-17b2-4ad9-ba93-73bb7efb70af/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/036_sentinel_master_download_in_progress/sentinel_master_download_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/036_sentinel_master_download_in_progress/sentinel_master_download_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:45.518Z",
+    "parameters": {
+      "appliance_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 37,
+    "name": "sentinel_master_delete_in_progress",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress for encryption_key 76707ee5-3d27-4b3b-b2a8-485df877bce3",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/encryption-keys/76707ee5-3d27-4b3b-b2a8-485df877bce3",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/037_sentinel_master_delete_in_progress/sentinel_master_delete_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/037_sentinel_master_delete_in_progress/sentinel_master_delete_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:49.498Z",
+    "parameters": {
+      "key_id": "76707ee5-3d27-4b3b-b2a8-485df877bce3"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 38,
+    "name": "sentinel_master_escrow_in_progress",
+    "method": "POST",
+    "path_template": "/encryption-keys/escrow",
+    "status": 202,
+    "body": {
+      "items": [
+        {
+          "task": null,
+          "rejection": {
+            "reason": "in_progress",
+            "message": "An operation is already in progress",
+            "metadata": null
+          },
+          "key_id": "fcd7c253-a6e2-4da6-a532-56e7002d9738"
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/encryption-keys/escrow",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/038_sentinel_master_escrow_in_progress/sentinel_master_escrow_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/038_sentinel_master_escrow_in_progress/sentinel_master_escrow_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:53.517Z",
+    "parameters": {},
+    "query": {},
+    "expected_status": 202,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "key_ids": [
+        "fcd7c253-a6e2-4da6-a532-56e7002d9738"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "sentinel_unknown_enable_in_progress",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+    "status": 409,
+    "body": {
+      "message": "An operation to enable encryption-key association 133e0fe3-4096-45c9-8d05-8cc676c4eb52 is already in progress on volume 208362d9-0bd0-440e-a5b2-cbf5754b2b16_0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/208362d9-0bd0-440e-a5b2-cbf5754b2b16_0/encryption-keys/926d8243-ca9c-4018-b776-8363857e7067/enable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/039_sentinel_unknown_enable_in_progress/sentinel_unknown_enable_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/039_sentinel_unknown_enable_in_progress/sentinel_unknown_enable_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:28:57.487Z",
+    "parameters": {
+      "volume_id": "208362d9-0bd0-440e-a5b2-cbf5754b2b16_0",
+      "key_id": "926d8243-ca9c-4018-b776-8363857e7067"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 40,
+    "name": "sentinel_unknown_disable_in_progress",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+    "status": 409,
+    "body": {
+      "message": "An operation to disable encryption-key association 133e0fe3-4096-45c9-8d05-8cc676c4eb52 is already in progress on volume 208362d9-0bd0-440e-a5b2-cbf5754b2b16_0",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/208362d9-0bd0-440e-a5b2-cbf5754b2b16_0/encryption-keys/926d8243-ca9c-4018-b776-8363857e7067/disable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/040_sentinel_unknown_disable_in_progress/sentinel_unknown_disable_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/040_sentinel_unknown_disable_in_progress/sentinel_unknown_disable_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:01.713Z",
+    "parameters": {
+      "volume_id": "208362d9-0bd0-440e-a5b2-cbf5754b2b16_0",
+      "key_id": "926d8243-ca9c-4018-b776-8363857e7067"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 41,
+    "name": "sentinel_unknown_passphrase_in_progress",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/3946531d-fa7c-47ae-b948-4e94b0caaf09/escrow-passphrase",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/041_sentinel_unknown_passphrase_in_progress/sentinel_unknown_passphrase_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/041_sentinel_unknown_passphrase_in_progress/sentinel_unknown_passphrase_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:05.747Z",
+    "parameters": {
+      "appliance_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "passphrase": "[REDACTED encrypted test passphrase]"
+    }
+  },
+  {
+    "id": 42,
+    "name": "sentinel_unknown_download_in_progress",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/3946531d-fa7c-47ae-b948-4e94b0caaf09/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/042_sentinel_unknown_download_in_progress/sentinel_unknown_download_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/042_sentinel_unknown_download_in_progress/sentinel_unknown_download_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:09.744Z",
+    "parameters": {
+      "appliance_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 43,
+    "name": "sentinel_unknown_delete_in_progress",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 409,
+    "body": {
+      "message": "An operation is already in progress for encryption_key f40aa416-1047-4c4c-add9-94de6ca4305d",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/encryption-keys/f40aa416-1047-4c4c-add9-94de6ca4305d",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/043_sentinel_unknown_delete_in_progress/sentinel_unknown_delete_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/043_sentinel_unknown_delete_in_progress/sentinel_unknown_delete_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:13.729Z",
+    "parameters": {
+      "key_id": "f40aa416-1047-4c4c-add9-94de6ca4305d"
+    },
+    "query": {},
+    "expected_status": 409,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 44,
+    "name": "sentinel_unknown_escrow_in_progress",
+    "method": "POST",
+    "path_template": "/encryption-keys/escrow",
+    "status": 202,
+    "body": {
+      "items": [
+        {
+          "task": null,
+          "rejection": {
+            "reason": "in_progress",
+            "message": "An operation is already in progress",
+            "metadata": null
+          },
+          "key_id": "926d8243-ca9c-4018-b776-8363857e7067"
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/encryption-keys/escrow",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/044_sentinel_unknown_escrow_in_progress/sentinel_unknown_escrow_in_progress_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/044_sentinel_unknown_escrow_in_progress/sentinel_unknown_escrow_in_progress_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:17.709Z",
+    "parameters": {},
+    "query": {},
+    "expected_status": 202,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "key_ids": [
+        "926d8243-ca9c-4018-b776-8363857e7067"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "name": "bulk_rejection_then_two_controlled_dispatch_failures",
+    "method": "POST",
+    "path_template": "/encryption-keys/escrow",
+    "status": 202,
+    "body": {
+      "items": [
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "85239d8f-ffc9-4cfa-89e4-9bbe1b29cefd"
+        },
+        {
+          "task": {
+            "task_id": "25463890-e2c3-45f8-81e5-8afa08f9a542",
+            "action": "escrow_encryption_key",
+            "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+            "state": "failed",
+            "error": {
+              "message": "The operation could not be completed. Please try again.",
+              "detected_at": "2026-10-07T22:29:24.925987Z"
+            }
+          },
+          "rejection": null,
+          "key_id": "bb9eeae2-a526-400c-a1c5-4458d69dce72"
+        },
+        {
+          "task": {
+            "task_id": "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+            "action": "escrow_encryption_key",
+            "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+            "state": "failed",
+            "error": {
+              "message": "The operation could not be completed. Please try again.",
+              "detected_at": "2026-10-07T22:29:24.982198Z"
+            }
+          },
+          "rejection": null,
+          "key_id": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a"
+        }
+      ]
+    },
+    "request_url": "http://localhost:8000/encryption-keys/escrow",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/045_bulk_rejection_then_two_controlled_dispatch_failures/bulk_rejection_then_two_controlled_dispatch_failures_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/045_bulk_rejection_then_two_controlled_dispatch_failures/bulk_rejection_then_two_controlled_dispatch_failures_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/045_bulk_rejection_then_two_controlled_dispatch_failures/bulk_rejection_then_two_controlled_dispatch_failures_response_02.png"
+    ],
+    "captured_at": "2026-10-07T22:29:25.433Z",
+    "parameters": {},
+    "query": {},
+    "expected_status": 202,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Ordered rejection + failed task + later failed task; complete DTOs match persisted acknowledged parent/step failures"
+    ],
+    "outcome": "PASS",
+    "request_body": {
+      "key_ids": [
+        "85239d8f-ffc9-4cfa-89e4-9bbe1b29cefd",
+        "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+        "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a"
+      ]
+    },
+    "note": "Controlled local dependency: invalid per-tenant PGP key for a freshly generated fake appliance GUID; encryption fails before FIFO/MQTT"
+  },
+  {
+    "id": 46,
+    "name": "delete_controlled_local_dispatch_failure",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 500,
+    "body": {
+      "message": "Internal Error. Please contact Nasuni support.",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/encryption-keys/dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/046_delete_controlled_local_dispatch_failure/delete_controlled_local_dispatch_failure_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/046_delete_controlled_local_dispatch_failure/delete_controlled_local_dispatch_failure_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:31.245Z",
+    "parameters": {
+      "key_id": "dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12"
+    },
+    "query": {},
+    "expected_status": 500,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "HTTP500 preserves failed step + failed acknowledged parent; no message or domain mutation"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 47,
+    "name": "enable_controlled_local_dispatch_failure",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+    "status": 500,
+    "body": {
+      "message": "Internal Error. Please contact Nasuni support.",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/d06287cd-cc1b-481f-a89f-a4d338f0a38f_0/encryption-keys/bb9eeae2-a526-400c-a1c5-4458d69dce72/enable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/047_enable_controlled_local_dispatch_failure/enable_controlled_local_dispatch_failure_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/047_enable_controlled_local_dispatch_failure/enable_controlled_local_dispatch_failure_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:37.128Z",
+    "parameters": {
+      "volume_id": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+      "key_id": "bb9eeae2-a526-400c-a1c5-4458d69dce72"
+    },
+    "query": {},
+    "expected_status": 500,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "HTTP500 preserves failed step + failed acknowledged parent; no message or domain mutation"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 48,
+    "name": "disable_controlled_local_dispatch_failure",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+    "status": 500,
+    "body": {
+      "message": "Internal Error. Please contact Nasuni support.",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/volumes/d06287cd-cc1b-481f-a89f-a4d338f0a38f_0/encryption-keys/bb9eeae2-a526-400c-a1c5-4458d69dce72/disable",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/048_disable_controlled_local_dispatch_failure/disable_controlled_local_dispatch_failure_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/048_disable_controlled_local_dispatch_failure/disable_controlled_local_dispatch_failure_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:42.704Z",
+    "parameters": {
+      "volume_id": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+      "key_id": "bb9eeae2-a526-400c-a1c5-4458d69dce72"
+    },
+    "query": {},
+    "expected_status": 500,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "HTTP500 preserves failed step + failed acknowledged parent; no message or domain mutation"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 49,
+    "name": "download_controlled_local_dispatch_failure",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 500,
+    "body": {
+      "message": "Internal Error. Please contact Nasuni support.",
+      "detail": null
+    },
+    "request_url": "http://localhost:8000/edges/c7ba979d-8190-4e1d-a09e-9056b0a05f2b/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/049_download_controlled_local_dispatch_failure/download_controlled_local_dispatch_failure_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/049_download_controlled_local_dispatch_failure/download_controlled_local_dispatch_failure_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:48.371Z",
+    "parameters": {
+      "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b"
+    },
+    "query": {
+      "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+    },
+    "expected_status": 500,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "HTTP500 preserves failed step + failed acknowledged parent; no message or domain mutation"
+    ],
+    "outcome": "PASS",
+    "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+  },
+  {
+    "id": 50,
+    "name": "list_excludes_acknowledged_dispatch_failures",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12",
+          "name": "PORTAL3299TEST-20261008-032229-A-extra-dispatch-delete",
+          "fingerprint": "ABD071E516E54526A1B25DB219BF8BDF01234567",
+          "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-command-ready",
+          "algorithm": null,
+          "length": null,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a",
+          "name": "PORTAL3299TEST-20261008-032229-A-ready-1b336dfc",
+          "fingerprint": "5722A05FBBCA4A62B3963A0B8E1122ED01234567",
+          "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-command-ready",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-ready",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+          "name": "PORTAL3299TEST-20261008-032229-A-ready-bb9eeae2",
+          "fingerprint": "7543D0E118374026A24BE44DA446A0EE01234567",
+          "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "appliance_name": "PORTAL3299TEST-20261008-032229-A-command-ready",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+              "volume_name": "PORTAL3299TEST-20261008-032229-A-ready",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": null,
+        "page_size": 50,
+        "total_pages": 1,
+        "total_items": 3,
+        "page": 1
+      }
+    },
+    "request_url": "http://localhost:8000/encryption-keys?appliance_ids=c7ba979d-8190-4e1d-a09e-9056b0a05f2b&sort_by=name&sort_direction=asc&limit=50",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_parameters_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_02.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_03.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_04.png"
+    ],
+    "captured_at": "2026-10-07T22:29:53.728Z",
+    "parameters": {},
+    "query": {
+      "appliance_ids": [
+        "c7ba979d-8190-4e1d-a09e-9056b0a05f2b"
+      ]
+    },
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Acknowledged dispatch failures absent; resource status remains synced"
+    ],
+    "outcome": "PASS"
+  },
+  {
+    "id": 51,
+    "name": "volume_excludes_acknowledged_dispatch_failures",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "body": [
+      {
+        "id": "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+        "name": "PORTAL3299TEST-20261008-032229-A-ready-bb9eeae2",
+        "fingerprint": "7543D0E118374026A24BE44DA446A0EE01234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a",
+        "name": "PORTAL3299TEST-20261008-032229-A-ready-1b336dfc",
+        "fingerprint": "5722A05FBBCA4A62B3963A0B8E1122ED01234567",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "generated",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "request_url": "http://localhost:8000/volumes/d06287cd-cc1b-481f-a89f-a4d338f0a38f_0/encryption-keys",
+    "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/extra/swagger/051_volume_excludes_acknowledged_dispatch_failures/volume_excludes_acknowledged_dispatch_failures_parameters_01.png",
+      "PORTAL-3299/20261008-032229/extra/swagger/051_volume_excludes_acknowledged_dispatch_failures/volume_excludes_acknowledged_dispatch_failures_response.png"
+    ],
+    "captured_at": "2026-10-07T22:29:57.842Z",
+    "parameters": {
+      "volume_id": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0"
+    },
+    "query": {},
+    "expected_status": 200,
+    "assertions": [
+      "HTTP status matches contract",
+      "Live Swagger response equals network response",
+      "Acknowledged dispatch failures absent; resource status remains synced"
+    ],
+    "outcome": "PASS"
+  }
+]

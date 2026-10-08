@@ -1,0 +1,70 @@
+{
+  "id": 13,
+  "name": "combined_filters",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "ef451aae-68b4-4038-b759-2f5a7c5f2bfe",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "9CA9519D8D2F48A2A641027D90A070C300000004",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?search=duplicate&type=volume&origin=generated&algorithm=rsa&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/013_combined_filters/combined_filters_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/013_combined_filters/combined_filters_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/013_combined_filters/combined_filters_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/013_combined_filters/combined_filters_response_02.png"
+  ],
+  "captured_at": "2026-10-07T22:15:29.394Z",
+  "parameters": {},
+  "query": {
+    "type": "volume",
+    "origin": "generated",
+    "algorithm": "rsa",
+    "search": "duplicate"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 1,
+      "associations": 0,
+      "tasks": 0
+    }
+  ],
+  "outcome": "PASS"
+}

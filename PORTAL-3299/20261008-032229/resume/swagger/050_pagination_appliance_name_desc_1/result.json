@@ -1,0 +1,125 @@
+{
+  "id": 50,
+  "name": "pagination_appliance_name_desc_1",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "f6bebd33-0636-465b-8498-e969a51b1dec",
+        "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+        "fingerprint": "3FBFD8D857284FFD9458E0A8A864380700000001",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "d0818bfa-e61b-45d0-8315-f85af8c17dcc",
+            "action": "upload_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "fe677921-0d25-4baf-8c7e-e6f0d378e6a9",
+        "name": null,
+        "fingerprint": "EB7D5EA26D65427DB6DADD194023C9FE00000000",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": true,
+        "status": "creating",
+        "tasks": [
+          {
+            "task_id": "348097e9-4747-4e10-87fe-95eeb839857b",
+            "action": "upload_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": true,
+            "status": "creating",
+            "tasks": [
+              {
+                "task_id": "e279914c-3c6c-4965-8c99-b7d671834d73",
+                "action": "add_volume_encryption_keys",
+                "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "98d89f18-f285-41d5-8370-ff2094c71609",
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=appliance_name&sort_direction=desc&limit=2",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/050_pagination_appliance_name_desc_1/pagination_appliance_name_desc_1_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/050_pagination_appliance_name_desc_1/pagination_appliance_name_desc_1_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/050_pagination_appliance_name_desc_1/pagination_appliance_name_desc_1_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/050_pagination_appliance_name_desc_1/pagination_appliance_name_desc_1_response_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/050_pagination_appliance_name_desc_1/pagination_appliance_name_desc_1_response_03.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/050_pagination_appliance_name_desc_1/pagination_appliance_name_desc_1_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:18:11.497Z",
+  "parameters": {},
+  "query": {
+    "limit": 2,
+    "sort_by": "appliance_name",
+    "sort_direction": "desc"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 1,
+      "tasks": 3
+    }
+  ],
+  "outcome": "PASS"
+}

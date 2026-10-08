@@ -1,0 +1,59 @@
+{
+  "id": 10,
+  "name": "download_invalid_path",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; explicit malformed path (valid native UI placeholders; actual malformed URL verified); multiline query preservation (native single-line input removes line breaks); response unmodified",
+  "input_limitations": [
+    "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+  ],
+  "raw_path_params": {
+    "appliance_id": "bad-id"
+  },
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "path",
+          "appliance_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+        "input": "bad-id",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/edges/bad-id/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/010_download_invalid_path/download_invalid_path_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/010_download_invalid_path/download_invalid_path_response.png"
+  ],
+  "captured_at": "2026-10-07T22:26:56.939Z",
+  "parameters": {
+    "appliance_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+  },
+  "query": {
+    "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+  },
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Server returned422 for malformed path, independently of native Swagger UUID validation"
+  ],
+  "outcome": "PASS",
+  "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+}

@@ -1,0 +1,35 @@
+{
+  "id": 25,
+  "name": "delete_auth_no_permission",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: Delete Unused Keys",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/970f3e0e-e956-4968-9a59-dc49c4ba82c5",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/025_delete_auth_no_permission/delete_auth_no_permission_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/025_delete_auth_no_permission/delete_auth_no_permission_response.png"
+  ],
+  "captured_at": "2026-10-07T22:03:05.277Z",
+  "parameters": {
+    "key_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+  },
+  "query": {},
+  "expected_status": 403,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

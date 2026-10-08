@@ -1,0 +1,36 @@
+{
+  "id": 122,
+  "name": "disable_readiness_below",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+  "status": 405,
+  "body": {
+    "message": "Master appliance for volume a1a3965e-43cf-4663-bd68-b56c4f02b0ce_0: Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/a1a3965e-43cf-4663-bd68-b56c4f02b0ce_0/encryption-keys/dfffde51-cd94-430f-b0a9-ffc5d0a07c46/disable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/122_disable_readiness_below/disable_readiness_below_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/122_disable_readiness_below/disable_readiness_below_response.png"
+  ],
+  "captured_at": "2026-10-07T22:23:10.424Z",
+  "parameters": {
+    "volume_id": "a1a3965e-43cf-4663-bd68-b56c4f02b0ce_0",
+    "key_id": "dfffde51-cd94-430f-b0a9-ffc5d0a07c46"
+  },
+  "query": {},
+  "expected_status": 405,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

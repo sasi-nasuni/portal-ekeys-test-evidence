@@ -1,0 +1,19 @@
+{
+  "initial_local_scenarios_passed": 284,
+  "initial_automated_tests_passed": 782,
+  "initial_postgres_tests_passed": 201,
+  "additional_real_swagger_requests_passed": 24,
+  "completed_real_tasks": 9,
+  "screenshots_total": 1181,
+  "real_filer_report": "real-filer/20261008-100120/report.md",
+  "real_filer_gallery": "real-filer/20261008-100120/index.html",
+  "verification": "real-filer/20261008-100120/final-verification.json",
+  "source_and_passphrase_restored": true,
+  "cleanup_verified_scope": "local fixtures, current filer state, temporary runtime and cloud queues",
+  "limitations": [
+    "Public download status/content endpoint remains unimplemented (PORTAL-3190); verified generation and Redis ciphertext metadata only",
+    "Independent NOC volume lookup returned 401; external NOC record removal was not independently confirmed",
+    "Current filer inventory/private keyrings and current escrow refresh verified; historical NOC escrow activity or retained storage versions were not erased",
+    "No production-scale query/load testing; no new CI run or evidence publication performed"
+  ]
+}

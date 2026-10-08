@@ -1,0 +1,35 @@
+{
+  "id": 131,
+  "name": "delete_readiness_strider",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 405,
+  "body": {
+    "message": "Cannot delete encryption key with ID 98c8a323-7e1c-4777-9575-69d6dba999a5: This operation is not supported on this appliance",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/98c8a323-7e1c-4777-9575-69d6dba999a5",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/131_delete_readiness_strider/delete_readiness_strider_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/131_delete_readiness_strider/delete_readiness_strider_response.png"
+  ],
+  "captured_at": "2026-10-07T22:23:46.649Z",
+  "parameters": {
+    "key_id": "98c8a323-7e1c-4777-9575-69d6dba999a5"
+  },
+  "query": {},
+  "expected_status": 405,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

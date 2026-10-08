@@ -1,0 +1,33 @@
+{
+  "id": 86,
+  "name": "volume_empty",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 200,
+  "body": [],
+  "request_url": "http://localhost:8000/volumes/48f88174-1509-49ae-b004-cebfbd7f5b95_0/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/086_volume_empty/volume_empty_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/086_volume_empty/volume_empty_response.png"
+  ],
+  "captured_at": "2026-10-07T22:20:41.687Z",
+  "parameters": {
+    "volume_id": "48f88174-1509-49ae-b004-cebfbd7f5b95_0"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS"
+}

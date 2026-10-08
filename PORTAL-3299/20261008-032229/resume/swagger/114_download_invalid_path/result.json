@@ -1,0 +1,23 @@
+{
+  "id": 114,
+  "name": "download_invalid_path",
+  "client_validation": true,
+  "reason": "Swagger UI rejected these inputs before issuing an HTTP request",
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/114_download_invalid_path/download_invalid_path_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/114_download_invalid_path/download_invalid_path_validation_01.png"
+  ],
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "parameters": {
+    "appliance_id": "bad-id"
+  },
+  "query": {
+    "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxDgBCACGE81p0iuGjxXapKTRa2SJOIXKYcvx2ACmoUxeupI54MiRuP03\nPkt5CQ4lMHjCymtDNMJ8k2lGXjaXAhB1FGeRQ86A0nb5bdzFxqvYhgRfYeJWETLf\nGOesaRa1UpovATzTmmInq/qvmiu15EqHWz6Q0k4SbH87r1Xqy+DKZbOs9+DEwVZb\njHMks6UUxs/bVKafkp4QA7w6Q8goBOSvIMcy1xv51yuCGidAfv1IHlXCuL28PpAY\nEg8bP3E73n5Qttm5ipHfJJsgnKdZQeMHlxNwcA+g5bYbK8mWWjsSTu4bC18Pbak1\nmUsKtiVoJTL6B6gY+v5c2M8YZUPyIGX3JRS5ABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxsQ4AhsMAgsJAhUIAhYA\nAh4BFiEE2kAq8CrXLpsoukV5pnXniKewO18ACgkQpnXniKewO1/HwQf8CDGbKNb4\nXiGUjPrEnQzDsuL85hT0qLzJBY69oyKqgHXye8z1Ucbww2nY5Qqq/gYVDjBD7ffy\nXNkJ3OH1pNeNqbJaMhK13YKlmJmSYFR4k2Clq/Gfni2vAUsTYufS04I2gsTGi9Zz\ncWBTcbrUGsaZmVYAV8d9b2v9/f7bDqrotgoigmAEEKEtKMNUcP80NviT+Ha0rqYD\nh12BNOxfYDRXlBXkDKNWnN4qTTt9HFSp7ha17iQ+wLs1s9xi2lsalnZDnnwQjaq5\n+Yfgm/AkTG85gUNjMdh5g6qqO/cIzecRsqO8B23sYID2L3c37FSMvwlhYW+HyX76\nrOjhjRn6uMdNcQ==\n=7WeB\n-----END PGP PUBLIC KEY BLOCK-----\n"
+  },
+  "expected_status": 422,
+  "assertions": [],
+  "outcome": "FAIL",
+  "failure": "Expected HTTP 422, got None; Swagger UI rejected these inputs before issuing an HTTP request"
+}

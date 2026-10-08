@@ -1,0 +1,178 @@
+{
+  "id": 75,
+  "name": "filter_algorithm_rsa",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "4b2612de-a496-49c8-91a2-7caa6aa5d44a",
+        "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+        "fingerprint": "1831BC84321E4DFF9BAE012EA35DFA9500000001",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "7e0e1d98-d1e5-4279-99d9-8569f805a002",
+            "action": "upload_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-07T22:00:56.378214Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "fdee3c7b-8787-40f8-a565-c2f241d224fa",
+        "name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+        "fingerprint": "64BDE87BB850406881E624231A6A27D900000002",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "pending",
+        "tasks": [
+          {
+            "task_id": "6db79a34-bca2-47c6-9aca-be68c67e2a4c",
+            "action": "escrow_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "in_progress",
+            "error": null
+          },
+          {
+            "task_id": "384830ad-9dfb-440f-b4f6-1445b126e9a0",
+            "action": "delete_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "failed",
+            "error": {
+              "message": "Test deletion failed",
+              "detected_at": "2026-10-07T22:00:56.378214Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "volume_guid": "eb6df8cb-e145-4dd5-b04b-5e385de67586_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-MiXeD 100%_Path\\Name",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "f78d8737-2f80-4c6d-9e9a-02805448b6f4",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "c9154b06-abe0-40fa-940d-c8dbcd70ca73",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+        "fingerprint": "DC21A6C019AE4FAE83EEB15A0F976F6B00000006",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      },
+      {
+        "id": "f5929b6a-8270-4503-947a-40837ae159eb",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "D6B095CE5C0A438F8FD4FF192699644B00000004",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 4,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?algorithm=rsa&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_response_01.png",
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_response_02.png",
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_response_03.png",
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_response_04.png",
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_response_05.png",
+    "PORTAL-3299/20261008-032229/swagger/075_filter_algorithm_rsa/filter_algorithm_rsa_response_06.png"
+  ],
+  "captured_at": "2026-10-07T22:06:56.625Z",
+  "parameters": {},
+  "query": {
+    "algorithm": "rsa"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 4,
+      "associations": 2,
+      "tasks": 4
+    }
+  ],
+  "outcome": "PASS"
+}

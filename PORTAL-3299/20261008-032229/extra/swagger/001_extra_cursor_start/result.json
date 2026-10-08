@@ -1,0 +1,123 @@
+{
+  "id": 1,
+  "name": "extra_cursor_start",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "0475adad-304d-49a1-abc3-952dac0e9339",
+        "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+        "fingerprint": "1AA5F026F4254275AF00C46BEC96288400000001",
+        "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "82f39865-7cea-412e-85bc-d8fbde6e637a",
+            "action": "upload_encryption_key",
+            "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-07T22:26:08.499851Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "1a79eb51-04f0-48dc-91e1-820bc333d9bd",
+        "name": null,
+        "fingerprint": "0F5135DB4F2C4638933D56413AC0B38100000000",
+        "appliance_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": true,
+        "status": "creating",
+        "tasks": [
+          {
+            "task_id": "6f453faf-a8cd-4a8c-b4e3-2c95d859d283",
+            "action": "upload_encryption_key",
+            "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "052078a1-da91-4fd9-899f-d1d0a29848b6_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": true,
+            "status": "creating",
+            "tasks": [
+              {
+                "task_id": "7b7a9e48-3834-4bca-9e27-0e5c62aa1771",
+                "action": "add_volume_encryption_keys",
+                "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "70e7efb5-f712-40d1-b09e-c3b3bdbf6a11",
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=2",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_parameters_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_03.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/001_extra_cursor_start/extra_cursor_start_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:26:19.258Z",
+  "parameters": {},
+  "query": {
+    "limit": 2
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 1,
+      "tasks": 3
+    }
+  ],
+  "outcome": "PASS"
+}

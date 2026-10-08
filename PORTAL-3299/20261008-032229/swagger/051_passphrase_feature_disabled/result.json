@@ -1,0 +1,38 @@
+{
+  "id": 51,
+  "name": "passphrase_feature_disabled",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 403,
+  "body": {
+    "message": "This feature is not enabled for your account",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/970f3e0e-e956-4968-9a59-dc49c4ba82c5/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/051_passphrase_feature_disabled/passphrase_feature_disabled_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/051_passphrase_feature_disabled/passphrase_feature_disabled_response.png"
+  ],
+  "captured_at": "2026-10-07T22:04:57.946Z",
+  "parameters": {
+    "appliance_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+  },
+  "query": {},
+  "expected_status": 403,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

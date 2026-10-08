@@ -1,0 +1,56 @@
+{
+  "id": 13,
+  "name": "metadata_volume_readable_offline",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 200,
+  "body": [
+    {
+      "id": "adaf56c8-bd4c-40e0-8940-7f37d18a99d3",
+      "name": "PORTAL3299TEST-20261008-032229-A-offline-adaf56c8",
+      "fingerprint": "45F2A3543E804BE0B487BD127EDD129101234567",
+      "algorithm": "rsa",
+      "length": 2048,
+      "origin": "generated",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "a284b1a0-143b-409b-84a5-9fdf119fca9b",
+      "name": "PORTAL3299TEST-20261008-032229-A-offline-a284b1a0",
+      "fingerprint": "0AF82FFBAF1D47FC8A00ECB10B96647601234567",
+      "algorithm": "rsa",
+      "length": 2048,
+      "origin": "generated",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    }
+  ],
+  "request_url": "http://localhost:8000/volumes/5d22e52c-1616-4d20-8eb8-22603c346d1d_0/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/013_metadata_volume_readable_offline/metadata_volume_readable_offline_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/013_metadata_volume_readable_offline/metadata_volume_readable_offline_response.png"
+  ],
+  "captured_at": "2026-10-07T22:27:09.541Z",
+  "parameters": {
+    "volume_id": "5d22e52c-1616-4d20-8eb8-22603c346d1d_0"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "All volume key fields match SQL despite write-ineligible master readiness"
+  ],
+  "outcome": "PASS"
+}

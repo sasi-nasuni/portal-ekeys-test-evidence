@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-07T21:55:27.733307+00:00",
+  "fixture": {
+    "database": "test_ichgqg",
+    "role": "dhymlu"
+  },
+  "database_remaining": false,
+  "generated_role_existed_after_pytest": true,
+  "generated_role_remaining": false,
+  "cleanup_scope": "Only exact generated role tracked from the database pytest fixture; database already removed by fixture finalizer"
+}

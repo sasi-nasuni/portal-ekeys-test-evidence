@@ -1,0 +1,19 @@
+{
+  "suite": "webapi_focused",
+  "cwd": "[APPLICATION_WORKTREE]/backend/portal-webapi",
+  "command": "[APPLICATION_WORKTREE]/.venv/bin/python -m pytest tests/unit/test_encryption_keys_routes.py tests/unit/test_encryption_key_download_route.py tests/unit/test_tasks_route.py tests/unit/test_task_acknowledgement_repo.py tests/unit/test_task_acknowledgement_service.py -q -o addopts= -o log_cli=false -o log_level=ERROR --tb=short --no-showlocals --show-capture=no -o junit_logging=no --junitxml=PORTAL-3299/20261008-032229/automated/webapi_focused.xml",
+  "environment_policy": "Only PATH/HOME/USER/LOGNAME/TMPDIR/LANG inherited; no dotenv loaded; no AWS profile/config/credentials; synthetic NOC secret; source DB defaults",
+  "environment_overrides": {
+    "AWS_CONFIG_FILE": "/dev/null",
+    "AWS_SHARED_CREDENTIALS_FILE": "/dev/null",
+    "AWS_EC2_METADATA_DISABLED": "true",
+    "AWS_DEFAULT_REGION": "us-east-2",
+    "PORTAL_AUTH_NOC_SECRET": "test-only-placeholder",
+    "PORTAL_SENTRY_DISABLED": "true",
+    "PORTAL_OBSERVABILITY_ENABLED": "false",
+    "REDIS_SSL": "false",
+    "PYTHONPATH": "PORTAL-3299/20261008-032229/automated",
+    "PORTAL_TEST_FIXTURE_RECORD": "PORTAL-3299/20261008-032229/automated/postgres-fixture.json"
+  },
+  "started_at_utc": "2026-10-07T21:54:21.398142+00:00"
+}

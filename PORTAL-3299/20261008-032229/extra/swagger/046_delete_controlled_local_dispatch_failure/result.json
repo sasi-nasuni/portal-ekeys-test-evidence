@@ -1,0 +1,36 @@
+{
+  "id": 46,
+  "name": "delete_controlled_local_dispatch_failure",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 500,
+  "body": {
+    "message": "Internal Error. Please contact Nasuni support.",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/046_delete_controlled_local_dispatch_failure/delete_controlled_local_dispatch_failure_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/046_delete_controlled_local_dispatch_failure/delete_controlled_local_dispatch_failure_response.png"
+  ],
+  "captured_at": "2026-10-07T22:29:31.245Z",
+  "parameters": {
+    "key_id": "dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12"
+  },
+  "query": {},
+  "expected_status": 500,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "HTTP500 preserves failed step + failed acknowledged parent; no message or domain mutation"
+  ],
+  "outcome": "PASS"
+}

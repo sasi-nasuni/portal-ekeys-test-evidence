@@ -1,0 +1,41 @@
+{
+  "requested_at_utc": "2026-10-07T22:30:16.209196+00:00",
+  "host": "10.84.2.115",
+  "port": 222,
+  "user": "root",
+  "task_ids": [
+    "25463890-e2c3-45f8-81e5-8afa08f9a542",
+    "752185cc-30e4-46d4-8d97-81c218574570",
+    "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+    "aa76bada-3b8b-45e5-973d-dac161f4f997",
+    "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1",
+    "ae1e8f89-9c3d-4087-b125-8341a79948a4"
+  ],
+  "log_path": "/var/log/nasuni/broadcast_network.log",
+  "scope": "Current file only; rotated files and other log paths not searched",
+  "limitation": "Negative correlation only. Zero task-ID matches do not prove successful dispatch, delivery, or filer completion.",
+  "command": "ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=10 -p 222 root@10.84.2.115 'python3 -c '\"'\"'import datetime,json,os,re\nlog='\"'\"'\"'\"'\"'\"'\"'\"'/var/log/nasuni/broadcast_network.log'\"'\"'\"'\"'\"'\"'\"'\"'\nids=['\"'\"'\"'\"'\"'\"'\"'\"'25463890-e2c3-45f8-81e5-8afa08f9a542'\"'\"'\"'\"'\"'\"'\"'\"', '\"'\"'\"'\"'\"'\"'\"'\"'752185cc-30e4-46d4-8d97-81c218574570'\"'\"'\"'\"'\"'\"'\"'\"', '\"'\"'\"'\"'\"'\"'\"'\"'7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f'\"'\"'\"'\"'\"'\"'\"'\"', '\"'\"'\"'\"'\"'\"'\"'\"'aa76bada-3b8b-45e5-973d-dac161f4f997'\"'\"'\"'\"'\"'\"'\"'\"', '\"'\"'\"'\"'\"'\"'\"'\"'aaeb3836-38c7-40b5-9c5e-f7659f5b2af1'\"'\"'\"'\"'\"'\"'\"'\"', '\"'\"'\"'\"'\"'\"'\"'\"'ae1e8f89-9c3d-4087-b125-8341a79948a4'\"'\"'\"'\"'\"'\"'\"'\"']\ncounts={value:0 for value in ids}\nfirst=None\nlast=None\nlines=0\nbefore=os.stat(log)\nwith open(log,'\"'\"'\"'\"'\"'\"'\"'\"'r'\"'\"'\"'\"'\"'\"'\"'\"',encoding='\"'\"'\"'\"'\"'\"'\"'\"'utf-8'\"'\"'\"'\"'\"'\"'\"'\"',errors='\"'\"'\"'\"'\"'\"'\"'\"'replace'\"'\"'\"'\"'\"'\"'\"'\"') as stream:\n    for line in stream:\n        lines+=1\n        timestamp=re.match(r'\"'\"'\"'\"'\"'\"'\"'\"'\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?'\"'\"'\"'\"'\"'\"'\"'\"',line)\n        if timestamp:\n            first=first or timestamp.group(0)\n            last=timestamp.group(0)\n        for value in ids:\n            if value in line: counts[value]+=1\nafter=os.stat(log)\nprint(json.dumps({'\"'\"'\"'\"'\"'\"'\"'\"'checked_at_utc'\"'\"'\"'\"'\"'\"'\"'\"':datetime.datetime.now(datetime.timezone.utc).isoformat(),'\"'\"'\"'\"'\"'\"'\"'\"'log_path'\"'\"'\"'\"'\"'\"'\"'\"':log,'\"'\"'\"'\"'\"'\"'\"'\"'lines_examined'\"'\"'\"'\"'\"'\"'\"'\"':lines,'\"'\"'\"'\"'\"'\"'\"'\"'first_log_timestamp_as_written'\"'\"'\"'\"'\"'\"'\"'\"':first,'\"'\"'\"'\"'\"'\"'\"'\"'last_log_timestamp_as_written'\"'\"'\"'\"'\"'\"'\"'\"':last,'\"'\"'\"'\"'\"'\"'\"'\"'per_task_matching_lines'\"'\"'\"'\"'\"'\"'\"'\"':counts,'\"'\"'\"'\"'\"'\"'\"'\"'total_task_matches'\"'\"'\"'\"'\"'\"'\"'\"':sum(counts.values()),'\"'\"'\"'\"'\"'\"'\"'\"'source_inode_before'\"'\"'\"'\"'\"'\"'\"'\"':before.st_ino,'\"'\"'\"'\"'\"'\"'\"'\"'source_inode_after'\"'\"'\"'\"'\"'\"'\"'\"':after.st_ino,'\"'\"'\"'\"'\"'\"'\"'\"'source_bytes_before'\"'\"'\"'\"'\"'\"'\"'\"':before.st_size,'\"'\"'\"'\"'\"'\"'\"'\"'source_bytes_after'\"'\"'\"'\"'\"'\"'\"'\"':after.st_size,'\"'\"'\"'\"'\"'\"'\"'\"'source_changed_during_scan'\"'\"'\"'\"'\"'\"'\"'\"':before.st_ino!=after.st_ino or before.st_size!=after.st_size,'\"'\"'\"'\"'\"'\"'\"'\"'read_only'\"'\"'\"'\"'\"'\"'\"'\"':True}))\n'\"'\"''",
+  "ssh_exit_code": 0,
+  "remote_result": {
+    "checked_at_utc": "2026-10-07T22:30:18.797732+00:00",
+    "log_path": "/var/log/nasuni/broadcast_network.log",
+    "lines_examined": 32445,
+    "first_log_timestamp_as_written": "2026-10-02 02:29:46.401",
+    "last_log_timestamp_as_written": "2026-10-07 18:30:15.862",
+    "per_task_matching_lines": {
+      "25463890-e2c3-45f8-81e5-8afa08f9a542": 0,
+      "752185cc-30e4-46d4-8d97-81c218574570": 0,
+      "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f": 0,
+      "aa76bada-3b8b-45e5-973d-dac161f4f997": 0,
+      "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1": 0,
+      "ae1e8f89-9c3d-4087-b125-8341a79948a4": 0
+    },
+    "total_task_matches": 0,
+    "source_inode_before": 1049185,
+    "source_inode_after": 1049185,
+    "source_bytes_before": 6856918,
+    "source_bytes_after": 6856918,
+    "source_changed_during_scan": false,
+    "read_only": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": 1,
+  "name": "escrow_disposable_key",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "task": {
+          "task_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+          "action": "escrow_encryption_key",
+          "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "state": "in_progress",
+          "error": null
+        },
+        "rejection": null,
+        "key_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "3c209528-a9a6-4845-9d22-fa7de41b6e45"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:18000/encryption-keys/escrow",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/001_escrow_disposable_key/escrow_disposable_key_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/001_escrow_disposable_key/escrow_disposable_key_response.png"
+  ],
+  "captured_at": "2026-10-08T06:27:07.777Z",
+  "expected_status": 202,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": {
+    "key_ids": [
+      "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "3c209528-a9a6-4845-9d22-fa7de41b6e45"
+    ]
+  },
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

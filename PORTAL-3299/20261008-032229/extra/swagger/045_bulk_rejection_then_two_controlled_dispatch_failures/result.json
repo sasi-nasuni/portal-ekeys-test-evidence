@@ -1,0 +1,80 @@
+{
+  "id": 45,
+  "name": "bulk_rejection_then_two_controlled_dispatch_failures",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "85239d8f-ffc9-4cfa-89e4-9bbe1b29cefd"
+      },
+      {
+        "task": {
+          "task_id": "25463890-e2c3-45f8-81e5-8afa08f9a542",
+          "action": "escrow_encryption_key",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "state": "failed",
+          "error": {
+            "message": "The operation could not be completed. Please try again.",
+            "detected_at": "2026-10-07T22:29:24.925987Z"
+          }
+        },
+        "rejection": null,
+        "key_id": "bb9eeae2-a526-400c-a1c5-4458d69dce72"
+      },
+      {
+        "task": {
+          "task_id": "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+          "action": "escrow_encryption_key",
+          "executor_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+          "state": "failed",
+          "error": {
+            "message": "The operation could not be completed. Please try again.",
+            "detected_at": "2026-10-07T22:29:24.982198Z"
+          }
+        },
+        "rejection": null,
+        "key_id": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a"
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/045_bulk_rejection_then_two_controlled_dispatch_failures/bulk_rejection_then_two_controlled_dispatch_failures_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/045_bulk_rejection_then_two_controlled_dispatch_failures/bulk_rejection_then_two_controlled_dispatch_failures_response_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/045_bulk_rejection_then_two_controlled_dispatch_failures/bulk_rejection_then_two_controlled_dispatch_failures_response_02.png"
+  ],
+  "captured_at": "2026-10-07T22:29:25.433Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 202,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Ordered rejection + failed task + later failed task; complete DTOs match persisted acknowledged parent/step failures"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "85239d8f-ffc9-4cfa-89e4-9bbe1b29cefd",
+      "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+      "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a"
+    ]
+  },
+  "note": "Controlled local dependency: invalid per-tenant PGP key for a freshly generated fake appliance GUID; encryption fails before FIFO/MQTT"
+}

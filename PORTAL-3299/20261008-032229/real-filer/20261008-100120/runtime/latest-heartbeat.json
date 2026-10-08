@@ -1,0 +1,6 @@
+{
+  "received_at": "2026-10-08T06:45:33.054221+00:00",
+  "sent_at": "2026-10-08T06:45:29.756136+00:00",
+  "event_message_id": "7ccfe623-37ab-49ff-a8b8-f699465847fa",
+  "source": "Decoded real NBN heartbeat; processor not invoked"
+}

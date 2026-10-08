@@ -1,0 +1,10 @@
+{
+  "host": "10.84.2.115",
+  "port": 222,
+  "source": "/var/log/nasuni/broadcast_network.log",
+  "command": "tail -50",
+  "exit_code": 0,
+  "read_only": true,
+  "correlated_to_this_run": false,
+  "redaction": "Authorization/JWT/secrets and payload/key-material lines"
+}

@@ -1,0 +1,16 @@
+{
+  "tests.unit.appliances.edge.test_command_gate": 27,
+  "tests.unit.encryption_keys.test_converters": 7,
+  "tests.unit.encryption_keys.test_dtos": 13,
+  "tests.unit.encryption_keys.test_filter_converter": 11,
+  "tests.unit.encryption_keys.test_repo": 17,
+  "tests.unit.encryption_keys.test_response_converter": 21,
+  "tests.unit.encryption_keys.test_scaffolding": 1,
+  "tests.unit.encryption_keys.test_service": 93,
+  "tests.unit.messages.test_encryption": 11,
+  "tests.unit.messages.test_message_client_encryption": 13,
+  "tests.unit.messages.test_service": 32,
+  "tests.unit.tasks.test_converter": 16,
+  "tests.unit.tasks.test_service": 103,
+  "tests.unit.test_encryption_key_converters": 5
+}

@@ -1,0 +1,48 @@
+{
+  "id": 44,
+  "name": "sentinel_unknown_escrow_in_progress",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "task": null,
+        "rejection": {
+          "reason": "in_progress",
+          "message": "An operation is already in progress",
+          "metadata": null
+        },
+        "key_id": "926d8243-ca9c-4018-b776-8363857e7067"
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/044_sentinel_unknown_escrow_in_progress/sentinel_unknown_escrow_in_progress_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/044_sentinel_unknown_escrow_in_progress/sentinel_unknown_escrow_in_progress_response.png"
+  ],
+  "captured_at": "2026-10-07T22:29:17.709Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 202,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "926d8243-ca9c-4018-b776-8363857e7067"
+    ]
+  }
+}

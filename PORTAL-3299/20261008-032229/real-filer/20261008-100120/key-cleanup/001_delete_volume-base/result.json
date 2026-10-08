@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "name": "delete_volume-base",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 202,
+  "body": {
+    "id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+    "state": "in_progress",
+    "status_url": "/tasks/77ed5223-49de-456a-9d4e-dc024318fbee"
+  },
+  "request_url": "http://127.0.0.1:18000/encryption-keys/55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/001_delete_volume-base/delete_volume-base_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/001_delete_volume-base/delete_volume-base_response.png"
+  ],
+  "captured_at": "2026-10-08T06:41:31.856Z",
+  "expected_status": 202,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

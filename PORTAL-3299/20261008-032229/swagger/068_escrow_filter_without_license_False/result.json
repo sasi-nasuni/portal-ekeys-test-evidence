@@ -1,0 +1,35 @@
+{
+  "id": 68,
+  "name": "escrow_filter_without_license_False",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 403,
+  "body": {
+    "message": "Filtering by escrow status requires View Key Escrow permission and an enabled Key Escrow license",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys?is_escrowed=false&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/068_escrow_filter_without_license_False/escrow_filter_without_license_False_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/068_escrow_filter_without_license_False/escrow_filter_without_license_False_response.png"
+  ],
+  "captured_at": "2026-10-07T22:06:21.677Z",
+  "parameters": {},
+  "query": {
+    "is_escrowed": false
+  },
+  "expected_status": 403,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

@@ -1,0 +1,37 @@
+{
+  "id": 47,
+  "name": "enable_controlled_local_dispatch_failure",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 500,
+  "body": {
+    "message": "Internal Error. Please contact Nasuni support.",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/d06287cd-cc1b-481f-a89f-a4d338f0a38f_0/encryption-keys/bb9eeae2-a526-400c-a1c5-4458d69dce72/enable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/047_enable_controlled_local_dispatch_failure/enable_controlled_local_dispatch_failure_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/047_enable_controlled_local_dispatch_failure/enable_controlled_local_dispatch_failure_response.png"
+  ],
+  "captured_at": "2026-10-07T22:29:37.128Z",
+  "parameters": {
+    "volume_id": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+    "key_id": "bb9eeae2-a526-400c-a1c5-4458d69dce72"
+  },
+  "query": {},
+  "expected_status": 500,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "HTTP500 preserves failed step + failed acknowledged parent; no message or domain mutation"
+  ],
+  "outcome": "PASS"
+}

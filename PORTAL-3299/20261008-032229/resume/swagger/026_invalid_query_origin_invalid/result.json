@@ -1,0 +1,50 @@
+{
+  "id": 26,
+  "name": "invalid_query_origin_invalid",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "enum",
+        "loc": [
+          "query",
+          "origin"
+        ],
+        "msg": "Input should be 'generated' or 'uploaded'",
+        "input": "invalid",
+        "ctx": {
+          "expected": "'generated' or 'uploaded'"
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=50&origin=invalid",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/026_invalid_query_origin_invalid/invalid_query_origin_invalid_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/026_invalid_query_origin_invalid/invalid_query_origin_invalid_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/026_invalid_query_origin_invalid/invalid_query_origin_invalid_response.png"
+  ],
+  "captured_at": "2026-10-07T22:16:28.207Z",
+  "parameters": {},
+  "query": {
+    "origin": "invalid"
+  },
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

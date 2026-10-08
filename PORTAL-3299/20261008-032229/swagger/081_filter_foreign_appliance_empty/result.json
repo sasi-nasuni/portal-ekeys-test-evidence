@@ -1,0 +1,17 @@
+{
+  "id": 81,
+  "error": "locator.click: Timeout 30000ms exceeded.",
+  "browser_recovered": true,
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "parameters": {},
+  "query": {
+    "appliance_ids": [
+      "d5a3e473-e1ba-4638-8b3f-d5a481d4ee75"
+    ]
+  },
+  "expected_status": 200,
+  "assertions": [],
+  "outcome": "FAIL",
+  "failure": "Expected HTTP 200, got None; locator.click: Timeout 30000ms exceeded."
+}

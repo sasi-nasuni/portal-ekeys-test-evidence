@@ -1,0 +1,141 @@
+{
+  "id": 161,
+  "name": "bulk_mixed_readiness_rejections",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "67aec864-923c-4cfc-8d4f-9f9542eec939"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "c27bfe3a-36f8-4039-b2ed-1fac8213d1c1"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "fe677921-0d25-4baf-8c7e-e6f0d378e6a9"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "already_escrowed",
+          "message": "Key is already escrowed",
+          "metadata": null
+        },
+        "key_id": "30fb3517-47d1-4f10-9b54-7f52e06dfaa0"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "below_min_version",
+          "message": "Appliance is below the minimum supported version",
+          "metadata": null
+        },
+        "key_id": "dfffde51-cd94-430f-b0a9-ffc5d0a07c46"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "below_min_version",
+          "message": "Appliance is below the minimum supported version",
+          "metadata": null
+        },
+        "key_id": "9e1c294f-1cf8-4bc4-8fab-9faf991513bb"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "unsupported_by_appliance",
+          "message": "This operation is not supported on this appliance",
+          "metadata": null
+        },
+        "key_id": "326e48e9-6a36-487e-be2c-e2b9bb38232d"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "offline",
+          "message": "Appliance is offline",
+          "metadata": null
+        },
+        "key_id": "4f030954-6f28-4f69-a157-420fbe724dda"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "9f6f1ef1-42e6-4a6d-a9cc-9e3adbf62a99"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "no_escrow_passphrase",
+          "message": "Appliance has no escrow passphrase set",
+          "metadata": null
+        },
+        "key_id": "0742e997-131e-492f-8613-fd42cadbd7f6"
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/161_bulk_mixed_readiness_rejections/bulk_mixed_readiness_rejections_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/161_bulk_mixed_readiness_rejections/bulk_mixed_readiness_rejections_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/161_bulk_mixed_readiness_rejections/bulk_mixed_readiness_rejections_response_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/161_bulk_mixed_readiness_rejections/bulk_mixed_readiness_rejections_response_03.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/161_bulk_mixed_readiness_rejections/bulk_mixed_readiness_rejections_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:25:50.504Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 202,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "67aec864-923c-4cfc-8d4f-9f9542eec939",
+      "c27bfe3a-36f8-4039-b2ed-1fac8213d1c1",
+      "fe677921-0d25-4baf-8c7e-e6f0d378e6a9",
+      "30fb3517-47d1-4f10-9b54-7f52e06dfaa0",
+      "dfffde51-cd94-430f-b0a9-ffc5d0a07c46",
+      "9e1c294f-1cf8-4bc4-8fab-9faf991513bb",
+      "326e48e9-6a36-487e-be2c-e2b9bb38232d",
+      "4f030954-6f28-4f69-a157-420fbe724dda",
+      "9f6f1ef1-42e6-4a6d-a9cc-9e3adbf62a99",
+      "0742e997-131e-492f-8613-fd42cadbd7f6"
+    ]
+  }
+}

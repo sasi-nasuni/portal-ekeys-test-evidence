@@ -1,0 +1,21 @@
+{
+  "id": 99,
+  "name": "summary_invalid",
+  "client_validation": true,
+  "reason": "Swagger UI rejected these inputs before issuing an HTTP request",
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/099_summary_invalid/summary_invalid_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/099_summary_invalid/summary_invalid_validation_01.png"
+  ],
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "parameters": {
+    "appliance_id": "bad-id"
+  },
+  "query": {},
+  "expected_status": 422,
+  "assertions": [],
+  "outcome": "FAIL",
+  "failure": "Expected HTTP 422, got None; Swagger UI rejected these inputs before issuing an HTTP request"
+}

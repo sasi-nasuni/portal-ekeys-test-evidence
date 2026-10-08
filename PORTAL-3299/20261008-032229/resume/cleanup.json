@@ -1,0 +1,44 @@
+{
+  "database": {
+    "A": 1,
+    "B": 1
+  },
+  "cache": [
+    {
+      "account_id": "2f54719a-8b86-4813-b85d-7157d3bed2eb",
+      "keys_deleted": 3,
+      "remaining_tenant_cache_keys": 0,
+      "feature_flag_cache_exists": false,
+      "verified": true
+    },
+    {
+      "account_id": "9f433bba-1191-4012-b26d-f9ff21658089",
+      "keys_deleted": 2,
+      "remaining_tenant_cache_keys": 0,
+      "feature_flag_cache_exists": false,
+      "verified": true
+    }
+  ],
+  "remaining_fixture_rows": {
+    "accounts": 0,
+    "users": 0,
+    "roles": 0,
+    "role_permissions": 0,
+    "user_role": 0,
+    "edges_v2": 0,
+    "volumes_v2": 0,
+    "volume_connections": 0,
+    "encryption_keys": 0,
+    "volume_encryption_key_associations": 0,
+    "tasks": 0,
+    "task_steps": 0,
+    "messages": 0
+  },
+  "database_verified": true,
+  "browser": {
+    "exit_code": 0,
+    "driver": {
+      "closed": true
+    }
+  }
+}

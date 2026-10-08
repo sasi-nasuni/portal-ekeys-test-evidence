@@ -1,0 +1,15 @@
+{
+  "credentials": {
+    "passed": true
+  },
+  "region": {
+    "passed": true
+  },
+  "name": {
+    "passed": true
+  },
+  "key": {
+    "error_class": "VolumeCreateFailure",
+    "passed": false
+  }
+}

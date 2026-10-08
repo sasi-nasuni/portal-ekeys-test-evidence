@@ -1,0 +1,8 @@
+{
+  "lookup": "NOC pushlock peek; read-only operation",
+  "http_status": 401,
+  "error_class": "HTTPErrorResponse",
+  "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+  "license_lockserver_present": false,
+  "lookup_returned": false
+}

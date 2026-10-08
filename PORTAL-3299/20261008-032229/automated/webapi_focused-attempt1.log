@@ -1,0 +1,33 @@
+........................................................................ [ 52%]
+............................................................F....        [100%]
+=================================== FAILURES ===================================
+________ test_publication_failure_is_logged_without_failing_ack[False] _________
+tests/unit/test_task_acknowledgement_service.py:241: in test_publication_failure_is_logged_without_failing_ack
+    assert "Failed to publish acknowledgement refresh" in caplog.text
+E   AssertionError: assert 'Failed to publish acknowledgement refresh' in ''
+E    +  where '' = <_pytest.logging.LogCaptureFixture object at 0x115bc52b0>.text
+=============================== warnings summary ===============================
+tests/unit/test_encryption_keys_routes.py:39
+  [APPLICATION_WORKTREE]/backend/portal-webapi/tests/unit/test_encryption_keys_routes.py:39: DeprecationWarning: 'HTTP_413_REQUEST_ENTITY_TOO_LARGE' is deprecated. Use 'HTTP_413_CONTENT_TOO_LARGE' instead.
+    from portal.web.app import build_web_app
+
+tests/unit/test_encryption_keys_routes.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/volumes/{volume_id}/encryption-keys-get-extra_error_codes0-200-VolumeKeyDto]
+tests/unit/test_encryption_keys_routes.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/volumes/{volume_id}/encryption-keys/{key_id}/enable-post-extra_error_codes1-202-TaskCreatedDto]
+tests/unit/test_encryption_keys_routes.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/volumes/{volume_id}/encryption-keys/{key_id}/disable-post-extra_error_codes2-202-TaskCreatedDto]
+tests/unit/test_encryption_keys_routes.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/encryption-keys/escrow-post-extra_error_codes3-202-EscrowKeysResponseDto]
+tests/unit/test_encryption_keys_routes.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/edges/{appliance_id}/escrow-passphrase-post-extra_error_codes4-202-TaskCreatedDto]
+  [APPLICATION_WORKTREE]/.venv/lib/python3.14/site-packages/pydantic/json_schema.py:2448: PydanticJsonSchemaWarning: Default value UNSET is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+    warnings.warn(message, PydanticJsonSchemaWarning)
+
+tests/unit/test_encryption_key_download_route.py::test_download_rejects_unsupported_version[10.5.9]
+tests/unit/test_encryption_key_download_route.py::test_download_rejects_unsupported_version[not-a-version]
+tests/unit/test_encryption_key_download_route.py::test_download_returns_unavailable_for_offline_appliance
+tests/unit/test_encryption_key_download_route.py::test_download_rejects_strider_before_creating_task
+tests/unit/test_encryption_key_download_route.py::test_download_send_failure_fails_and_acknowledges_created_task
+  [APPLICATION_WORKTREE]/backend/libs/portal-runtime/portal/runtime/sentry.py:251: DeprecationWarning: sentry_sdk.push_scope is deprecated and will be removed in the next major version. Please consult our migration guide to learn how to migrate to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing
+    with sentry_sdk.push_scope() as scope:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/test_task_acknowledgement_service.py::test_publication_failure_is_logged_without_failing_ack[False]
+1 failed, 136 passed, 11 warnings in 10.98s

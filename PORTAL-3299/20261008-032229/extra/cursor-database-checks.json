@@ -1,0 +1,16 @@
+{
+  "ordered_key_ids": [
+    "0475adad-304d-49a1-abc3-952dac0e9339",
+    "1a79eb51-04f0-48dc-91e1-820bc333d9bd",
+    "aeb61778-5eab-4a21-8b51-229deacab6ec",
+    "912761a6-e8be-4402-afde-cd6deb2d7521",
+    "b39a5d9b-555c-4746-96f8-539908dc29c5",
+    "5d658321-beda-4425-a8ef-27761bc680e4",
+    "a993895a-7cd9-4d3e-8ee9-8bc52142b4d8",
+    "c2e24e92-2d5a-4fb4-be21-d363c07a08f0"
+  ],
+  "forward_jump_page": 3,
+  "backward_page": 1,
+  "absolute_page_without_cursor": 3,
+  "resource_task_message_rows_unchanged": true
+}

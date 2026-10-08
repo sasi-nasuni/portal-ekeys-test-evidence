@@ -1,0 +1,101 @@
+{
+  "title": "PostgreSQL query evidence: associations",
+  "source": "Actual SQL query against the running local PostgreSQL database; independent evidence rendering, not pgAdmin UI",
+  "snapshot": {
+    "snapshot_time": "2026-10-07 22:03:01.531403+00:00",
+    "transaction_read_only": "on",
+    "transaction_isolation": "repeatable read"
+  },
+  "fixture_accounts": [
+    {
+      "id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    }
+  ],
+  "parameters": {
+    "account_ids": [
+      "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128"
+    ]
+  },
+  "sql": "SELECT a.account_id::text, a.id::text AS association_id,\n       a.key_id::text, k.name AS key_name, a.volume_id,\n       v.name AS volume_name, a.state, a.is_stub,\n       k.appliance_id::text AS owning_appliance_id,\n       EXISTS (\n         SELECT 1 FROM volume_connections AS c\n         WHERE c.account_id = a.account_id AND c.volume_id = a.volume_id\n           AND c.edge_id = k.appliance_id AND c.is_master\n       ) AS key_owned_by_volume_master\nFROM volume_encryption_key_associations AS a\nJOIN encryption_keys AS k ON k.id = a.key_id AND k.account_id = a.account_id\nJOIN volumes_v2 AS v ON v.volume_id = a.volume_id AND v.account_id = a.account_id\nWHERE a.account_id = ANY(%s::uuid[])\nORDER BY a.account_id, v.name, k.name NULLS LAST, a.id",
+  "row_count": 6,
+  "rows": [
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "association_id": "0789e513-4ffb-4bf8-bb1f-7b4a1cf096ce",
+      "key_id": "fdee3c7b-8787-40f8-a565-c2f241d224fa",
+      "key_name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+      "volume_id": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+      "state": "disabled",
+      "is_stub": false,
+      "owning_appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+      "key_owned_by_volume_master": true
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "association_id": "23cd712c-6e51-47b7-bfa6-2d19b5c86b3d",
+      "key_id": "061636ac-75df-4a47-a3c3-7b1bd61fcb0d",
+      "key_name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+      "volume_id": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+      "state": "enabled",
+      "is_stub": false,
+      "owning_appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+      "key_owned_by_volume_master": false
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "association_id": "c1b0e7da-0a45-4fbc-817c-ffbb3079b5cc",
+      "key_id": "9a787b47-022e-496e-808e-ff47f739e4a1",
+      "key_name": null,
+      "volume_id": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+      "state": "enabled",
+      "is_stub": true,
+      "owning_appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+      "key_owned_by_volume_master": true
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "association_id": "3a25bf7d-37b2-4028-8b9c-ba0d6b894257",
+      "key_id": "fdee3c7b-8787-40f8-a565-c2f241d224fa",
+      "key_name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+      "volume_id": "eb6df8cb-e145-4dd5-b04b-5e385de67586_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-MiXeD 100%_Path\\Name",
+      "state": "enabled",
+      "is_stub": false,
+      "owning_appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+      "key_owned_by_volume_master": true
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "association_id": "6f43e7c4-5d78-430e-b4b1-e9b7faaeeb05",
+      "key_id": "6bc0f483-bffc-4e68-b550-827bbf08ef96",
+      "key_name": "PORTAL3299TEST-20261008-032229-A-beta",
+      "volume_id": "4b846469-b9e9-4368-8283-fb0a938be25e_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+      "state": "disabled",
+      "is_stub": false,
+      "owning_appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+      "key_owned_by_volume_master": true
+    },
+    {
+      "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "association_id": "54210dec-4a25-407b-b4d3-5aef28272aa8",
+      "key_id": "5081b725-b6af-4c73-a4d6-dfaa61b653e1",
+      "key_name": "PORTAL3299TEST-20261008-032229-B-FOREIGN-SENTINEL",
+      "volume_id": "3dd83c89-e327-4394-8db4-5d45af23a1d2_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-B-FOREIGN-VOLUME",
+      "state": "enabled",
+      "is_stub": false,
+      "owning_appliance_id": "d5a3e473-e1ba-4638-8b3f-d5a481d4ee75",
+      "key_owned_by_volume_master": true
+    }
+  ]
+}

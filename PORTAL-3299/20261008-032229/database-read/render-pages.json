@@ -1,0 +1,176 @@
+{
+  "generated_at_utc": "2026-10-07T22:04:07.331244+00:00",
+  "pages": [
+    {
+      "html": "keys-01.html",
+      "screenshot": "keys-01.png",
+      "source_json": "keys.json",
+      "source_sql": "keys.sql",
+      "row_start": 1,
+      "row_end": 3,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "keys-02.html",
+      "screenshot": "keys-02.png",
+      "source_json": "keys.json",
+      "source_sql": "keys.sql",
+      "row_start": 4,
+      "row_end": 6,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "keys-03.html",
+      "screenshot": "keys-03.png",
+      "source_json": "keys.json",
+      "source_sql": "keys.sql",
+      "row_start": 7,
+      "row_end": 9,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "associations-01.html",
+      "screenshot": "associations-01.png",
+      "source_json": "associations.json",
+      "source_sql": "associations.sql",
+      "row_start": 1,
+      "row_end": 3,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "associations-02.html",
+      "screenshot": "associations-02.png",
+      "source_json": "associations.json",
+      "source_sql": "associations.sql",
+      "row_start": 4,
+      "row_end": 6,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-01.html",
+      "screenshot": "tasks-01.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 1,
+      "row_end": 3,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-02.html",
+      "screenshot": "tasks-02.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 4,
+      "row_end": 6,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-03.html",
+      "screenshot": "tasks-03.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 7,
+      "row_end": 9,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-04.html",
+      "screenshot": "tasks-04.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 10,
+      "row_end": 12,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-05.html",
+      "screenshot": "tasks-05.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 13,
+      "row_end": 15,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-06.html",
+      "screenshot": "tasks-06.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 16,
+      "row_end": 18,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-07.html",
+      "screenshot": "tasks-07.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 19,
+      "row_end": 21,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-08.html",
+      "screenshot": "tasks-08.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 22,
+      "row_end": 24,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "tasks-09.html",
+      "screenshot": "tasks-09.png",
+      "source_json": "tasks.json",
+      "source_sql": "tasks.sql",
+      "row_start": 25,
+      "row_end": 26,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "appliance_summary-01.html",
+      "screenshot": "appliance_summary-01.png",
+      "source_json": "appliance_summary.json",
+      "source_sql": "appliance_summary.sql",
+      "row_start": 1,
+      "row_end": 3,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "volume_masters-01.html",
+      "screenshot": "volume_masters-01.png",
+      "source_json": "volume_masters.json",
+      "source_sql": "volume_masters.sql",
+      "row_start": 1,
+      "row_end": 3,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "volume_masters-02.html",
+      "screenshot": "volume_masters-02.png",
+      "source_json": "volume_masters.json",
+      "source_sql": "volume_masters.sql",
+      "row_start": 4,
+      "row_end": 6,
+      "label": "PostgreSQL query evidence; not pgAdmin UI"
+    },
+    {
+      "html": "filer-baseline-01.html",
+      "screenshot": "filer-baseline-01.png",
+      "source_log": "../filer-baseline-tail.log",
+      "source_sha256": "7099eb89c36761f5f5807fe078cd5ed60b53459abfe0ac30e58585f0415e4693",
+      "line_start": 1,
+      "line_end": 25,
+      "label": "Filer baseline only; not correlated with this test run"
+    },
+    {
+      "html": "filer-baseline-02.html",
+      "screenshot": "filer-baseline-02.png",
+      "source_log": "../filer-baseline-tail.log",
+      "source_sha256": "7099eb89c36761f5f5807fe078cd5ed60b53459abfe0ac30e58585f0415e4693",
+      "line_start": 26,
+      "line_end": 50,
+      "label": "Filer baseline only; not correlated with this test run"
+    }
+  ]
+}

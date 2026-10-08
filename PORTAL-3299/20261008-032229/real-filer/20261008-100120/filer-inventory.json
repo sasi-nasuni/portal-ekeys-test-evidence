@@ -1,0 +1,861 @@
+{
+  "backup_fingerprints": [
+    "94C67F945AB131418B070BB8BA740113340EB9F2"
+  ],
+  "checked_at_utc": "2026-10-08T04:34:51.457055Z",
+  "escrow_passphrase": {
+    "existence_check_success": true,
+    "present": true,
+    "secret_read": false
+  },
+  "gpg_keyring_file_metadata_unchanged": true,
+  "hostname": "DEV-E-KEYS-POC",
+  "identity": {
+    "ACCOUNT_GUID": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "FILER_GUID": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f",
+    "SERIAL_NUMBER": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "keys": [
+    {
+      "backup": false,
+      "escrowed": true,
+      "fingerprint": "315A2B36A084945B93772B84AC36F961A0356AFF",
+      "generated": true,
+      "name": "config-backup-key",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "FCFBD433DA581C8A14606D63DD161E60E20B98BB"
+      ],
+      "unescrowed_uploaded": false,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": true,
+      "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+      "generated": true,
+      "name": "E-Keys-Test-01",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "97A3F510722E4F995B5958CDF86EC91ED4E94C21"
+      ],
+      "unescrowed_uploaded": false,
+      "used_by_volume_guids": [
+        "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+      ]
+    },
+    {
+      "backup": false,
+      "escrowed": true,
+      "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+      "generated": false,
+      "name": "E-Keys-Upload-Test-2",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "6465830C4409AED08AC1AF49B12FDCD518A06910"
+      ],
+      "unescrowed_uploaded": false,
+      "used_by_volume_guids": [
+        "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+      ]
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+      "generated": false,
+      "name": "E-Keys-MsgViewer",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "A4C7ABF9E6C0AEEB7B2DEA1D785509B14F1513FF"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": [
+        "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+      ]
+    },
+    {
+      "backup": false,
+      "escrowed": true,
+      "fingerprint": "6C8BFF1D491773407101E2391EE2105F11756D4F",
+      "generated": false,
+      "name": "E-Keys-MsgViewer",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "ACA67C0E349C204716A3306E0D008EBE66E61441"
+      ],
+      "unescrowed_uploaded": false,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": true,
+      "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-E097E395",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "503167816C8B499FEE814ECF956BC319EBCEA5F8"
+      ],
+      "unescrowed_uploaded": false,
+      "used_by_volume_guids": [
+        "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+      ]
+    },
+    {
+      "backup": true,
+      "escrowed": false,
+      "fingerprint": "94C67F945AB131418B070BB8BA740113340EB9F2",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-D9C531CA",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "B25133F9BCE853CAC2081854D8578E73BE9E8FE4"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "BDEA37790138FEC9E00E6D53DF49A281C7371ACC",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-69B2917C",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "5B9BD42B040DC702943B7E9137450BC1AD2B84D2"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "2D54DAD4926FC85F1D4ACADC1E494F28C9DBDD38",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-9EE9B79C",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "5FBE13B40CF0D780F9D2A68925261BA079B161DE"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "F907AD264F69586C77982538C1A89BDE45227567",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-A312DA13",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "9E14B9774A9376E5333B732ED26C26461EB53A86"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "2FB298E0EE6A9EB91E787C63FB374EA346C8240B",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-CE96162F",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "60BBC9B93A6B57368C4DD4AB1995C93D161F4CA4"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "53F02681AF25DA5CBB5AEB0A0AEA327BE07D8DA7",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-A9943D18",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "4A05D99BE28CB3A7A3EF2053DFEF8DDE0B28BC81"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "801B2B814CD62FC979479E851033F31EC4C4DE91",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-82797E72",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "1FFEA46BF0C4E45B7D08A52BA17C863F9AA01277"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "D42F89C6D6F4F5E28E88246BC2EBD594D709FBBB",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-20D120B3",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "3F042FBA8C728AAD329CD38462CD74947AA0173F"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "83CC013CE960EB1383E6F5A15A1073AFED55D3FA",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-6217222A",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "2EFE81E82793868F3C867E8EDE2EED19BA88127A"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "0E9B810D41E9E403475FD2940892E65B2F8F067F",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-D1FAFBF4",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "746B93296595E4EE28D18780110AA30DC68792B7"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "DDFDADF86A898CAD7F88909F7C37A39DD9FAD79C",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-693D97C9",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "58240CEC04645BD62062D7180A9D153BF1EFDB34"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "3CEB261FF87C25FF6D2F387146AF974E195B7A15",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-8679694E",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "498CFE6CB5FC0315E92596D7871E75615127D5D6"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-63E6D744",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "D9C85C58A02C7A1294122A385BE5B061ED204E90"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": [
+        "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+      ]
+    },
+    {
+      "backup": false,
+      "escrowed": true,
+      "fingerprint": "D84A67BD382F811CD30B156C6F5DC2E99EC18D08",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-BE527471",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "ACC8432EC58B76707BF5E5C6A09653295C339A65"
+      ],
+      "unescrowed_uploaded": false,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "3BB5126F86665978EC5CBFEC59A300C1D5820238",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-461BC8F9",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "F8F48DA795FE0564033E87DD3958BEE61E51E8C5"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "6DB18894303280A18F6402FA50B596C575BEC982",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-512DFE79",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "C1DFB8733B8123ED11A1B8F7F1967D954C770C38"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "C59047365B28B3D5AB478B27240AB6A0493C459E",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-5101C732",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "16ED71F78326075255898E6EC24DC842DD3E4428"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "03E447BE8A45B36BAE85D250C109B2B9BEE593BD",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-47E6565F",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "9D75D9D87DB12F1F2C6569CD182830CBEA131D8B"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "ADCE52A97E1BCC087726FA69EB651D53123ACE5E",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-D7DA8B44",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "FCF6CC1CD3E913C24A4689835ADB390A471C3A11"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "6B46F658BDF82A981623309BD787D2F8442A416C",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-3FDFC1A6",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "886E8120C0CB460A3001D124EBD96C827E60E9FF"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "6652B591DF7D61ED4F31234D363D9CE915877CA9",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-B47C1504",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "9D8EE73083F7EEF9575CEBAED990243090D36248"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "3558A99FEEE0F8BEEDED20AD5E3156CF2BA84A7C",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-91F49343",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "687C68D3B7A0E057A243DCA90A6A66FB9340FD0C"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "AB9AC59694CE3BB738A7E61335BBED38C9F94041",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-C1B04D48",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "9704D2EBF5E220726A9B376C927AEA775FD80ECC"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "2F88491FE24369CD2F3F928D8F91D83E9D82BF13",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-A3BEDE8F",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "6B9B22F530B853DA59516F5DD6A819F3B990C169"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "E43B0124D99953330C22BB05554DCC356F30F7EB",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-5F527E75",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "30951FC7D5F4072642D7BECB44027A67883363B1"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "F469E0D5A4E14606C5EE107F2BD6570BE0269F5E",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-E34BC58F",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "3854C39D70CCA8A19F3FE04BE2D311BCAB64651E"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "31648A41B3E7D95338C96C735C70AAA863484BD2",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-91DDFCD9",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "D081D0D41252A5E5D65AD8944FFB418706980A4C"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "073C061DF9500E0C3DF91437450109652C6386BE",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-ACF6F51B",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "445A85C5682FEA6AD20BE58EAD4F97B928279AD2"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "DC0F22898D6651AA6B26B2884027C2AC98D14A1C",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-0EB16D90",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "35144BCC2162E45D908A237F339DC774A51D8296"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "459F2541E686BA490604AFB86E041B68B45B3F8B",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-583F6A6F",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "1A3B56144BEC385DCFA49368F1E2F30B1D5159A2"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "E82861AC7446D24A3F5BFE3ADD2B32CCEB80C1E7",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-34034624",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "43481C65C9976DD98A80A775B1870DA3A2D534AD"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "705B762FEA6A4BFF40E52BD982D487EFB612C72A",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-D632A8F1",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "05DC969F89E9C65435CA1C3A169E31304C9A8591"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "CDA788620FE65DA3D3F53B76F96B22FD176A6F34",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-EE786D0B",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "D2BDDAD37423D6803047AD4AF8294EB53241A643"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "187D5620B9D5ED2C00DF5757A2C1A83CE4472B8D",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-70FF3207",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "B1C0B153C6D8790E84D72E64D8C35F5D6D841EC3"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "1EFD8EAB74F844B2B7950C89190851C072886B14",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-E87648E4",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "53560485824DA5FCD68B9F527394EB62171271BF"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "7E28F4139FBC48BF7DB5C58B3D5B4F1C6049D590",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-E391565E",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "05A51062C6DD476573069523BC5E0C872B65DBBA"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "C0D8E927C1B9BEE65E9BE486F7789D3352DB2CA4",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-6126263B",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "9D3764B288D422E301BCD61E32290705B43E5546"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "8441CD0D1652824A65498018ACB39C04DD1899F9",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-8C547658",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "44A91FBDCF64E5C96C56AC03DB89660A8D46AA12"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "31DBE2FC6DFACD271766AC9AC9324A4D95C9A820",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-0A203180",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "375E4EF8E41DDC9EAAF326E3755D75927A268403"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "8313236FDE901052CF0F566AAA28D925A85B268D",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-A2C818D6",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "05C7ABB7B0F117CEADE68C62DC99101C3FB75AF5"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "137FE65FBDEEE6667FCF24B970CD72458DD6AEC2",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-9DC20936",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "91E82F28E615994FE1D532C644A47AD098DE7FAD"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "6AE7F3A06D5AE4F73920F76BA0E1A42D1F667270",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-BB20A9AD",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "D9D0495126036D199BF47E9C9C708E4F6F760BB7"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "1BCA54DDB743660638ACB91342F003853BFBCA69",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-D5FDB41B",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "24ED7501B227F8AC20286A4052BB36C01B2EAF24"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "4FA7FF701BB94719204BAC024D1C1CC1A5FA4878",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-6EC564F2",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "D9AD2AC53F7C8041D6B182A62CA952FCDF60CAFB"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "CC3BE76427EAE74A38AD273E9F040530C17E98E4",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-3A5AA05C",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "CAAF693B0E29E03463105AE25923F41D87071756"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "150AF149D2D70F71D115D486153A97FEF6902394",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-AEF51898",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "FABE0C78ACF98E55170315F90E96952E7BB4F5CE"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "15A7C5BBE9C2FFC39F877BF76D86D8841D9B6A0D",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-8BDD0F33",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "6D2835E13A3CFBCF197DC51E87ED7C53931C84C6"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "3E521DA7A562785F2D60C75E082214C5351A6145",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-390FB9AB",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "0EFB3E2AC5D52C0C95C6ECFFA079A9B5884C4141"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "ED577505F5C161D2B6DEF9EE3888525096E1A419",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-D020D5F5",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "9308763F0DE23CBA59DFB44A24A7483232657080"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "33BCFE22EA514172B0ED1FAA83BDEC60A6943CA4",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-70098E24",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "932E1E48BEE701D46E5BDF1C35F359E0F718EECB"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "D28ED3DC039A5AB363417C3846706A26771C05F0",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-63EFFB81",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "FD46E91665311EE256266314D94D4557901CCDCA"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    },
+    {
+      "backup": false,
+      "escrowed": false,
+      "fingerprint": "60C3653EDFC36A0908DB80C0103ED212090F3D8E",
+      "generated": false,
+      "name": "E-Keys-EdgeConsole-9C8F1CBD",
+      "revoked": false,
+      "subkey_fingerprints": [
+        "21EEB5B7D17F41A2F2F73C3839301DD364D3F8EC"
+      ],
+      "unescrowed_uploaded": true,
+      "used_by_volume_guids": []
+    }
+  ],
+  "public_key_list_success": true,
+  "remote_mutations_requested": false,
+  "ring_metadata_success": {
+    "secring-escrow.gpg": true,
+    "secring-generated.gpg": true,
+    "secring-noescrow.gpg": true,
+    "secring-shared.gpg": true
+  },
+  "secrets_or_private_key_material_in_output": false,
+  "version": {
+    "UNITY_BUILD": "6327",
+    "UNITY_VERSION": "10.5"
+  },
+  "volumes": [
+    {
+      "active": true,
+      "guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "keys": [
+        {
+          "enabled": true,
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8"
+        },
+        {
+          "enabled": false,
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500"
+        }
+      ],
+      "local": true,
+      "name": "E-Keys-Test-01",
+      "owner_guid": null
+    },
+    {
+      "active": true,
+      "guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+      "keys": [
+        {
+          "enabled": true,
+          "fingerprint": "F1A58FCB7082B2D45A1452DAE74C6E0239260937"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "9314D71ABAC46F1815FFF7AE57D6A087F81D1F33"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "7490E5EBDB426E33DBDB99B07BB615D2398423D0"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "789DF67487B6F014B0412540D4BFF26E08E831E0"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "75EB5275C22B666F10CA9021E7A3ED356FEE9DEA"
+        },
+        {
+          "enabled": false,
+          "fingerprint": "24CF3BD17A1FB1BC008903379504F441CC81E036"
+        }
+      ],
+      "local": false,
+      "name": "test-aws-03",
+      "owner_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3"
+    }
+  ]
+}

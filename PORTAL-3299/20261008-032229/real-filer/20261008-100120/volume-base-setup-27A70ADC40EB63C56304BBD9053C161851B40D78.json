@@ -1,0 +1,14 @@
+{
+  "matching_keys": 1,
+  "result": "success",
+  "metadata": {
+    "user_provided": true,
+    "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+    "length": "2048",
+    "backup_key": false,
+    "algo": "RSA",
+    "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+    "can_escrow": true,
+    "revoked": false
+  }
+}

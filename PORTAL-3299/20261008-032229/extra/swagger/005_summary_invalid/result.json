@@ -1,0 +1,57 @@
+{
+  "id": 5,
+  "name": "summary_invalid",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+  "input_limitations": [
+    "Swagger rejects malformed UUID path values before HTTP. Parameter screenshots show valid native placeholders; the documented requestInterceptor substitutes raw_path_params during Execute. The response screenshot Request URL shows the actual malformed path sent to the server."
+  ],
+  "raw_path_params": {
+    "appliance_id": "bad-id"
+  },
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "path",
+          "appliance_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+        "input": "bad-id",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/edges/bad-id/encryption-keys/summary",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/005_summary_invalid/summary_invalid_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/005_summary_invalid/summary_invalid_response.png"
+  ],
+  "captured_at": "2026-10-07T22:26:36.399Z",
+  "parameters": {
+    "appliance_id": "8ad216e9-0c17-48fe-aed0-34de81928225"
+  },
+  "query": {},
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Server returned422 for malformed path, independently of native Swagger UUID validation"
+  ],
+  "outcome": "PASS",
+  "note": "Native valid path input satisfies Swagger UI validation; explicit requestInterceptor substitutes requested malformed path before native Execute. Live server URL/status/body verified; main/resume UI-limitation artifacts preserved."
+}

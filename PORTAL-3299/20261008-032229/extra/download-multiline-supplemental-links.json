@@ -1,0 +1,154 @@
+[
+  {
+    "case": "unknown",
+    "expected_status": 404,
+    "actual_status": 404,
+    "outcome": "PASS",
+    "original_case_name": "download_unknown_resource",
+    "original_attempts": [
+      {
+        "name": "download_unknown_resource",
+        "status": 404,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "foreign",
+    "expected_status": 404,
+    "actual_status": 404,
+    "outcome": "PASS",
+    "original_case_name": "download_foreign_resource",
+    "original_attempts": [
+      {
+        "name": "download_foreign_resource",
+        "status": 404,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "below",
+    "expected_status": 405,
+    "actual_status": 405,
+    "outcome": "PASS",
+    "original_case_name": "download_readiness_below",
+    "original_attempts": [
+      {
+        "name": "download_readiness_below",
+        "status": 405,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "malformed",
+    "expected_status": 405,
+    "actual_status": 405,
+    "outcome": "PASS",
+    "original_case_name": "download_readiness_malformed",
+    "original_attempts": [
+      {
+        "name": "download_readiness_malformed",
+        "status": 405,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "strider",
+    "expected_status": 405,
+    "actual_status": 405,
+    "outcome": "PASS",
+    "original_case_name": "download_readiness_strider",
+    "original_attempts": [
+      {
+        "name": "download_readiness_strider",
+        "status": 405,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "offline",
+    "expected_status": 503,
+    "actual_status": 503,
+    "outcome": "PASS",
+    "original_case_name": "download_readiness_offline",
+    "original_attempts": [
+      {
+        "name": "download_readiness_offline",
+        "status": 503,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "stub",
+    "expected_status": 404,
+    "actual_status": 404,
+    "outcome": "PASS",
+    "original_case_name": "download_readiness_stub",
+    "original_attempts": [
+      {
+        "name": "download_readiness_stub",
+        "status": 404,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  },
+  {
+    "case": "duplicate",
+    "expected_status": 409,
+    "actual_status": 409,
+    "outcome": "PASS",
+    "original_case_name": "download_in_progress",
+    "original_attempts": [
+      {
+        "name": "download_in_progress",
+        "status": 409,
+        "outcome": "PASS",
+        "client_validation": null,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true,
+    "query_workaround": "Valid public-key armor preserved through explicit native Swagger requestInterceptor; main/resume artifacts unchanged"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "baseline_key_metadata_restored": true,
+  "baseline_volume_states_restored": true,
+  "original_passphrase_restored": true,
+  "current_escrow_refresh_completed": true,
+  "historical_noc_escrow_activity_retained": true
+}

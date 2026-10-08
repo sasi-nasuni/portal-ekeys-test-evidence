@@ -1,0 +1,83 @@
+{
+  "execution_state": "Prepared only; not executed by author",
+  "case_count": 51,
+  "authorization_bounds": [
+    "Root clarified NOC public-key READ lookup is permitted if Redis unexpectedly misses",
+    "No NOC mutation or real-filer command authorized or attempted",
+    "New random fixture account/edge serial/filer GUID only; SQL identity/name checks before every encryption-cache operation",
+    "Runner requires completed verified main cleanup and absence of same-prefix fixture accounts",
+    "Main browser original exit remains unknown; originaldriverabsence must be independently verified if exitcode unavailable, and resume database/cache/browser cleanup must succeed before extra run"
+  ],
+  "controlled_dependency": [
+    "Set only {new_account_uuid}_encryption_key:{new_fake_filer_guid} to deliberate non-PGP marker",
+    "Lease1800 seconds; exact marker and minimum300-second remaining TTL verified immediately before/after each controlled dispatch request",
+    "Cached marker is returned directly by OutboundEncryptionService._get_public_key; pgp_encrypt raises EncryptionError",
+    "SDK EdgeTransport.send awaits _prepare_payload before _send_fifo/_send_mqtt and has no plaintext fallback",
+    "MessageService persists message only after successful send; TaskService catches failure, stores failedstep/parent+ack, then strictthrows/bulkreturns",
+    "Cache-read failure is treated as miss by production code; could cause NOC READ for fake GUID; accepted bound, not hidden"
+  ],
+  "assertions": [
+    "18 None/master/N/A cases reach in_progress rejection with exact preseeded tuple and no resource/task/message mutations",
+    "4 cursor cases validate complete independently computed pages including backward and absolute offsets",
+    "6 metadata GET cases validate full summary and volume key contract despite offline, below-version, Strider write readiness",
+    "Bulk order: missing-key rejection, failedResourceTaskDto, laterfailedResourceTaskDto with exact SQL-backed fields",
+    "Four strict routes return customer-safe HTTP500; each leaves one failed parent, one correctly named failedstep, nonnull ack",
+    "Internal step reason must specifically identify PGP preparation EncryptionError, customer output must omit it",
+    "Existing task/step/domain rows unchanged, zero outbound messages inserted",
+    "Acknowledged failures excluded from SQL active predicate and live key/volume task projections",
+    "8 supplemental download guards preserve valid multiline public-key query and link original case names/statuses without altering main result artifacts",
+    "6 malformed UUID path cases bypass native Swagger client validation using explicit raw_path_params; real server422 and unchangedDB required; root+resume attempts linked",
+    "Inclusive maximum25 unknown keys accepted with ordered25 taskless not_found outcomes and zero task/message/domain changes",
+    "Valid ciphertext for ephemeral keyA mismatches cached valid ephemeral keyB for a separate fakeGUID, proven locally before HTTP;400 wrong recipient before task creation/transport;no changes"
+  ],
+  "multiline_download_query_workaround": "Native Swagger single-line public_key input strips newlines. Explicit requestInterceptor restores valid ASCII-armored public_key query; Execute remains request origin and responses are unmodified. Driver copy corrects evidence label.",
+  "cleanup": [
+    "Account-scoped tenant Redis keys including invalid publickey entries and ff key deleted and absence verified",
+    "Exact saved accountIDs+names verified then deleted through existing fixtures.cleanup, cascading only dedicated fixture rows",
+    "Remaining counts checked across13 domain/IAM/task/message tables",
+    "Own browser closed; no service restarts or repository edits",
+    "Inherited repaired Run.close closes stdin then waits45seconds; originalmain browser exitcode is never fabricated"
+  ],
+  "source_hashes": [
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/messages/encryption.py",
+      "sha256": "45cea4dae1186c25859a5b491bcc0281620173ec6cd677478bbdf2fb70f36188"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/messages/client.py",
+      "sha256": "beeaee6472d18c3b0d151471f0d5aaebbdcc39b1407df8b76dee82d6a36eec39"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/messages/service.py",
+      "sha256": "d37d38d0968ff210a0d38c646b9e79da929ca90a81e9ec9d8c93068e9c21cf1c"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/messages/instances.py",
+      "sha256": "4d12ab7d4f3fc2f29edbee0786b29568ea9e42db7261dd72e972e4feac034a9b"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/edge-sdk/edge_sdk/transport.py",
+      "sha256": "e9ba6cb9e8825cbb9876edd23ccd0d5b379d181e0ba9b33bacf5ec143b944c77"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-runtime/portal/runtime/tenant_cacheservice.py",
+      "sha256": "78054ebddf71a4874b73b9e0212da574ace08960f97e17f685fa7b03751e4e11"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/encryption_keys/service.py",
+      "sha256": "885d52649584815dc832148f2a64c4d47aff63593502bad32d870b66f2f5d4a5"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/tasks/service.py",
+      "sha256": "9ace79ceb4178a4b4b67b358eaa5adc022076c384b28ff980f89dcd854757b43"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-data/portal/data/tasks/repo.py",
+      "sha256": "1631893c93eb60583854bedb21a97ed4e1fb6947a24f80d2a7fc67de8a23e33c"
+    },
+    {
+      "path": "[APPLICATION_WORKTREE]/backend/libs/portal-core/portal/core/pgp.py",
+      "sha256": "d0882d5469bcb94d9c42fc8654e65df2a82350df1aaaf82557b77bd456c8a434"
+    }
+  ]
+}

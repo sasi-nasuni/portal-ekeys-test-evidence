@@ -1,0 +1,178 @@
+{
+  "id": 2,
+  "name": "filter_appliance_west",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "f6bebd33-0636-465b-8498-e969a51b1dec",
+        "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+        "fingerprint": "3FBFD8D857284FFD9458E0A8A864380700000001",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "d0818bfa-e61b-45d0-8315-f85af8c17dcc",
+            "action": "upload_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "ec9e549d-e34d-4f2f-816e-20676311bfc1",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+        "fingerprint": "62D261E4663E4488AC6AF610EB640A3C00000007",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      },
+      {
+        "id": "438ff27f-27c5-42b7-a5f9-9934fbedc0a4",
+        "name": "PORTAL3299TEST-20261008-032229-A-beta",
+        "fingerprint": "3AE80B34A8774593945D44600406015200000003",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "12fe5d84-2eeb-46c7-bf0b-f4fba6a96a01",
+            "action": "delete_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "98e78d4a-bf61-4cf2-b967-484e8d2132ca_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "bc7f39ba-40f2-4a23-a791-5c3935143a79",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-07T22:13:53.051880Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "0cd05796-9914-48ba-a403-f04c68f07061",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "6D6224B4F3A8495697963E5EAABFB8F400000005",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 4,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?appliance_ids=278a7eb3-ba2f-459e-a999-210197a96553&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_response_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_response_03.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_response_04.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_response_05.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/002_filter_appliance_west/filter_appliance_west_response_06.png"
+  ],
+  "captured_at": "2026-10-07T22:14:40.953Z",
+  "parameters": {},
+  "query": {
+    "appliance_ids": [
+      "278a7eb3-ba2f-459e-a999-210197a96553"
+    ]
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 4,
+      "associations": 2,
+      "tasks": 3
+    }
+  ],
+  "outcome": "PASS"
+}

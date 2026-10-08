@@ -1,0 +1,38 @@
+{
+  "id": 134,
+  "name": "passphrase_readiness_offline",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 503,
+  "body": {
+    "message": "Appliance is offline",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/60bd2377-c131-46d0-bbdd-53a026639f6d/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/134_passphrase_readiness_offline/passphrase_readiness_offline_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/134_passphrase_readiness_offline/passphrase_readiness_offline_response.png"
+  ],
+  "captured_at": "2026-10-07T22:24:03.486Z",
+  "parameters": {
+    "appliance_id": "60bd2377-c131-46d0-bbdd-53a026639f6d"
+  },
+  "query": {},
+  "expected_status": 503,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

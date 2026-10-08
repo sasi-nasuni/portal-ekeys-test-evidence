@@ -1,0 +1,12 @@
+{
+  "reason": "Independent finalizer found six initial download authentication/feature cases whose public_key query lost native Swagger HTML-input newlines. HTTP401/403 and displayed responses matched; query-integrity checks failed. Six corrected requests are being executed with the native requestInterceptor. Original assertions and responses retained; no product-source change.",
+  "affected": [
+    "download_auth_missing",
+    "download_auth_invalid",
+    "download_auth_expired",
+    "download_auth_wrong_audience",
+    "download_auth_no_permission",
+    "download_feature_disabled"
+  ],
+  "recovery_suite": "verification-repeat"
+}

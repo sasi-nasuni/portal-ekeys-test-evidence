@@ -1,0 +1,38 @@
+{
+  "id": 18,
+  "name": "escrow_auth_expired",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 401,
+  "body": {
+    "message": "Invalid token",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/018_escrow_auth_expired/escrow_auth_expired_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/018_escrow_auth_expired/escrow_auth_expired_response.png"
+  ],
+  "captured_at": "2026-10-07T22:02:37.103Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 401,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+    ]
+  }
+}

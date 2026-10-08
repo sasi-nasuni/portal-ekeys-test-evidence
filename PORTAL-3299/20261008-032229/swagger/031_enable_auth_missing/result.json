@@ -1,0 +1,36 @@
+{
+  "id": 31,
+  "name": "enable_auth_missing",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 401,
+  "body": {
+    "message": "No credentials provided",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/970f3e0e-e956-4968-9a59-dc49c4ba82c5_0/encryption-keys/970f3e0e-e956-4968-9a59-dc49c4ba82c5/enable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/031_enable_auth_missing/enable_auth_missing_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/031_enable_auth_missing/enable_auth_missing_response.png"
+  ],
+  "captured_at": "2026-10-07T22:03:28.816Z",
+  "parameters": {
+    "volume_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5_0",
+    "key_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+  },
+  "query": {},
+  "expected_status": 401,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

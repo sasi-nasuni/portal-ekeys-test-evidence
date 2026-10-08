@@ -1,0 +1,149 @@
+{
+  "status": "READ_ONLY_PLAN_NOT_EXECUTED",
+  "purpose": "Native Swagger success and real appliance completion for the six PORTAL-3299 write flows",
+  "prior_evidence": "Preserve all existing evidence; record this attempt separately",
+  "observed_identity": {
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "edge_serial": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "filer_instance_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f",
+    "hostname": "DEV-E-KEYS-POC",
+    "reported_version": "10.5",
+    "reported_build": "6327",
+    "identity_source": "Read-only inventory reported by endpoint_contract_audit; no duplicate SSH inspection by plan author"
+  },
+  "blocking_preconditions": [
+    "Current real filer reports10.5; Portal's six write services require Classic>=10.6. Do not alter local build_version or freshness to manufacture eligibility.",
+    "Local DB currently contains no accounts or edges. Bootstrap only the verified real account and ingest genuine appliance state before submitting a command; do not reuse synthetic tenant identities.",
+    "EventHub poller is stopped and has no queues configured. Normal inbound queue processing and usable transport credentials must be established before command submission; direct processor injection cannot prove transport E2E.",
+    "Existing escrow passphrase is set. Updating it affects the appliance's existing keys and backup state, so a complete six-flow run needs an isolated appliance or explicit acceptance of those concrete global effects.",
+    "Download is download-ALL: API always sends fingerprints=null. It cannot restrict output to dedicated test keys. Keep all encrypted bundle material and private recipient material out of evidence."
+  ],
+  "identity_contract": [
+    "Signed JWT account_id selects Portal tenant and becomes outbound NBN account_guid and envelope account_id.",
+    "NBN target is edge serial; local EdgeRepo resolves serial to instance_id for NOC public-key lookup.",
+    "Inbound SQS account_guid must equal envelope metadata.account_id; EventHub skips unknown local accounts.",
+    "Inbound metadata.origin_id is the appliance serial used for domain writes; metadata.trace_id is the Portal task UUID used for task-step settlement.",
+    "Accepted acknowledgements additionally correlate content.command_message_id with the persisted outbound message UUID. Receipt acknowledgement alone is not completion."
+  ],
+  "reusable_harness": {
+    "reuse": "run_live.Run.request and the corrected extra/swagger_rpc.cjs native Swagger Execute driver, copied into this attempt directory",
+    "do_not_reuse": [
+      "Synthetic fixtures/main/cleanup/cache helpers",
+      "run_live.crypto() for passphrase: it encrypts to a newly generated test recipient, not the actual appliance key",
+      "Any fixture function that fabricates recent heartbeat, supported build, associations, or task completion"
+    ],
+    "required_adjustments": [
+      "Pass real target IDs and user/tenant credentials held only in memory.",
+      "Require latest request record outcome PASS before continuing: Run.request records failures but returns a body rather than throwing.",
+      "After each202, poll GET /tasks/{id} to terminal state and independently read task_steps. Do not submit a dependent command until previous completion and domain state are verified.",
+      "Never blindly retry a write after UI/network uncertainty; first resolve whether a task or command was created.",
+      "For download preserve the complete armored public_key using the explicit query interceptor, and compare URL-decoded actual request bytes with intended input.",
+      "For real passphrase payloads mask request-body screenshot fields and persist only redacted text/hash. Keep plaintext, private keys, ciphertext bundle, bearer tokens, and AWS credentials out of evidence.",
+      "Close the harness-owned browser and preserve partial evidence on every exit path."
+    ]
+  },
+  "minimal_setup_after_preconditions": [
+    "Capture real account/edge identity, reported version and recent genuine heartbeat; confirm feature permissions/license without fabricating dispatch readiness.",
+    "Capture existing appliance key inventory, volume key states, backup fingerprint and passphrase-set boolean; exclude private material.",
+    "Create a fresh dedicated uploaded key that is nonbackup, unassociated and not escrowed. Generated keys already count as escrowed on this filer and are unsuitable for positive escrow setup.",
+    "Create a disposable volume and ensure two dedicated keys are genuinely enabled. Confirm the appliance and ingested Portal association states agree. Associations cannot be removed independently, so existing volumes are unsuitable under the preservation constraint.",
+    "Before each mutation assert exact target IDs/fingerprints belong to this run. Take account-scoped and resource-scoped before snapshots."
+  ],
+  "ordered_cases": [
+    {
+      "flow": "escrow-passphrase",
+      "scope": "Isolated appliance or explicitly accepted appliance-wide mutation only",
+      "method": "POST",
+      "path": "/edges/{appliance_id}/escrow-passphrase",
+      "action_and_step": "update_escrow_passphrase",
+      "resource": "edge",
+      "resource_id": "real edge serial",
+      "event": "escrow_passphrase_updated",
+      "oracle": "Task and step completed; actual event has matching account/origin/trace and has_escrow_passphrase=true; edge flag is true with event freshness respected. Verify backup/key inventory effects separately; a true flag alone does not prove a passphrase changed.",
+      "sequencing": "Run before creating the fresh unescrowed upload so automatic re-escrow does not invalidate its starting state"
+    },
+    {
+      "flow": "escrow",
+      "method": "POST",
+      "path": "/encryption-keys/escrow",
+      "action_and_step": "escrow_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "dedicated uploaded key UUID",
+      "event": "encryption_key_escrowed",
+      "oracle": "HTTP202 items contains the requested key and a nonfailed task, no rejection. Task and step complete; matching event fingerprint has is_escrowed=true; exact existing key row becomes escrowed and API list/summary match. Preserve non-target key and backup state."
+    },
+    {
+      "flow": "disable",
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+      "action_and_step": "disable_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "dedicated secondary association UUID (not key UUID)",
+      "event": "volume_encryption_keys_disabled",
+      "oracle": "Two enabled keys exist before request. Task/step complete; event volume_id/fingerprint identify the secondary key with disabled state. Exact association becomes disabled; other baseline key remains enabled; GET volume keys matches."
+    },
+    {
+      "flow": "enable",
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+      "action_and_step": "enable_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "same dedicated secondary association UUID",
+      "event": "volume_encryption_keys_enabled",
+      "oracle": "Secondary starts disabled. Task/step complete; matching event has enabled state; association becomes enabled and both dedicated keys remain enabled."
+    },
+    {
+      "flow": "download",
+      "method": "POST",
+      "path": "/edges/{appliance_id}/encryption-keys/downloads",
+      "action_and_step": "download_encryption_keys",
+      "resource": "edge",
+      "resource_id": "real edge serial",
+      "event": "encryption_keys_downloaded",
+      "oracle": "HTTP202, task/step complete; matching event metadata and included/missing fingerprint fields valid. Read tenant-scoped Redis handle promptly; for nonempty export verify nonsecret handle, bundle existence/TTL and byte count only. Durable messages must strip key_bundle. Do not assert an activity log at dispatch: download audit belongs to retrieval.",
+      "limitation": "Advertised custom status/download endpoint is TODO(PORTAL-3190). Poll generic /tasks/{id}; do not claim public artifact retrieval. Empty export is contract-success but must be reported as empty, not a downloaded bundle."
+    },
+    {
+      "flow": "delete",
+      "method": "DELETE",
+      "path": "/encryption-keys/{key_id}",
+      "action_and_step": "delete_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "dedicated unassociated uploaded key UUID",
+      "event": "encryption_key_deleted",
+      "oracle": "Before request exact fingerprint remains unassociated and is not backup. Task/step complete, matching deleted event; key absent from actual filer keyring and Portal key list/SQL. Preserve unrelated key/association rows."
+    }
+  ],
+  "per_case_evidence": [
+    "Native Swagger request controls, actual HTTP request integrity, actual202 body with generated task UUID, terminal GET /tasks/{id} response",
+    "Read-only SQL task, step, outbound/inbound message metadata and domain before/after snapshots scoped to exact real account and target/task IDs",
+    "Messages.content is compressed JSON: decode through its model type in memory; export only selected nonsensitive command/event metadata and fingerprints",
+    "Read-only filer broadcast_network.log exact task UUID correlation with operation name and event where present; record scan file/time bounds and never infer unlogged success",
+    "Actual appliance keyring/volume-state recheck, because processors can settle tasks even when a missing resource makes the freshness-gated domain write a no-op",
+    "Activity log for the five mutation flows, attributed to initiating task actor where available; logs are best-effort, so report missing audit independently",
+    "Screenshots/manifests clearly label PostgreSQL rendered evidence separately from native Swagger, plus SHA256 and size checks after browser close"
+  ],
+  "cleanup": [
+    "Use an exact creation ledger of only this run's remote key fingerprints, dedicated volume GUID and local support rows/cache keys. Do not use synthetic tenant cascade cleanup against the real account.",
+    "Delete disposable volume through the supported real path before deleting keys associated with it; verify actual removal and ingest resulting domain changes.",
+    "Preserve real task/message audit evidence and pre-existing remote keys/volumes. Remove only newly created evidence-owned cache entries if cleanup is authorized.",
+    "Verify baseline key/volume states and backup fingerprint. Global passphrase/backup effects cannot be represented as reversible fixture cleanup."
+  ],
+  "missing_coverage_before_run": [
+    "All six real successful command deliveries, actual completion events and corresponding Portal domain updates remain unproven.",
+    "Inbound event processing, accepted-message correlation, real PGP interoperability, and real passphrase dispatch failure are not established by previous controlled failures.",
+    "Download public retrieval is not implemented by this branch; real export-generation evidence cannot close that separate API gap."
+  ],
+  "source_paths": [
+    "[WORKSPACE_PARENT]/ss/AGENT_appliance_endpoint_test_runbook.md",
+    "backend/libs/portal-api/portal/api/appliance_versions.py",
+    "backend/libs/portal-data/portal/data/encryption_keys/service.py",
+    "backend/libs/portal-data/portal/data/messages/client.py",
+    "backend/stacks/portal-eventhub/src/events_hub_stack/handler.py",
+    "backend/stacks/portal-eventhub/src/events_hub_stack/tenant.py",
+    "backend/stacks/portal-eventhub/src/events_hub_stack/processors/utils/tasks.py",
+    "backend/stacks/portal-eventhub/src/events_hub_stack/processors/encryption_keys/",
+    "backend/libs/portal-data/portal/data/encryption_keys/download_store.py",
+    "backend/portal-webapi/portal/webapi/v1/routes/tasks.py"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "owner": "PORTAL3299-REAL-20261008-100120",
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "edge_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+  "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+  "role_id": "ad5f8a80-26b5-4261-acbd-1c7f38d5313e",
+  "username": "PORTAL3299-REAL-20261008-100120-operator",
+  "created_at": "2026-10-08T06:16:50.355108+00:00",
+  "keys": {
+    "315A2B36A084945B93772B84AC36F961A0356AFF": "c14e9d04-3907-41ff-b979-617c0fb58377",
+    "29470C5AA8EB787948BD1CD60413FA75D609C500": "d0a0c746-521e-42bf-9275-c00d1d1d8fbd",
+    "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8": "c42cead1-b482-4ddf-b804-386b68b1d993",
+    "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0": "c374ce43-4d88-47fa-a1ef-9f2eeb0eff35",
+    "6C8BFF1D491773407101E2391EE2105F11756D4F": "c4d6cee8-9141-46ad-9f15-a047911be51a",
+    "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD": "e79b813a-15a8-42b9-bd18-fc5aea04b5b2",
+    "94C67F945AB131418B070BB8BA740113340EB9F2": "3eb90535-298b-441a-bfe6-e6f24b333eb4",
+    "BDEA37790138FEC9E00E6D53DF49A281C7371ACC": "cd52768f-7b74-473d-81a9-878ef685a584",
+    "2D54DAD4926FC85F1D4ACADC1E494F28C9DBDD38": "ebeb3145-f6ef-4e29-8ae1-b40f0ffca0f0",
+    "F907AD264F69586C77982538C1A89BDE45227567": "62d1efb5-e7df-4a28-9b1f-40f3824d2e99",
+    "2FB298E0EE6A9EB91E787C63FB374EA346C8240B": "900e9b47-614b-4130-b6a6-61dbeaa225af",
+    "53F02681AF25DA5CBB5AEB0A0AEA327BE07D8DA7": "da60cda5-8bfb-458f-8de5-e3f1e0950c70",
+    "801B2B814CD62FC979479E851033F31EC4C4DE91": "6aa436db-986f-405a-accb-82d9f43e2c81",
+    "D42F89C6D6F4F5E28E88246BC2EBD594D709FBBB": "52ec6a9a-2c17-4ceb-8a74-be539853879d",
+    "83CC013CE960EB1383E6F5A15A1073AFED55D3FA": "4e674ecf-8e84-4d26-b1bb-07e815007c8a",
+    "0E9B810D41E9E403475FD2940892E65B2F8F067F": "1789c8cc-0696-4b09-9b2c-f57a9c019fdd",
+    "DDFDADF86A898CAD7F88909F7C37A39DD9FAD79C": "6f95dd85-7b0e-4a4d-ba02-c54d0133ca6b",
+    "3CEB261FF87C25FF6D2F387146AF974E195B7A15": "01a4665a-26ec-4fe8-a257-63e318f7c8aa",
+    "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83": "69e0c901-4851-4170-b380-8520f92d25e5",
+    "D84A67BD382F811CD30B156C6F5DC2E99EC18D08": "18620c78-36db-4289-824c-deb3ea32faf0",
+    "3BB5126F86665978EC5CBFEC59A300C1D5820238": "bcf5b5e0-c126-4756-a3ba-479761bff1f1",
+    "6DB18894303280A18F6402FA50B596C575BEC982": "ef81957d-db23-4421-9c0d-68d8105741b3",
+    "C59047365B28B3D5AB478B27240AB6A0493C459E": "a8cdf6d1-bc18-4397-a197-54b00dbd4d39",
+    "03E447BE8A45B36BAE85D250C109B2B9BEE593BD": "2aaff161-8285-4210-a606-6a00f2f01ccd",
+    "ADCE52A97E1BCC087726FA69EB651D53123ACE5E": "8af4a41d-fa4a-45ea-9e9e-e97ef76315e3",
+    "6B46F658BDF82A981623309BD787D2F8442A416C": "b836dd0b-9ce8-48ab-9358-d9e7ad51d798",
+    "6652B591DF7D61ED4F31234D363D9CE915877CA9": "7fc16a7e-167b-405b-ad21-89c4bd8190ed",
+    "3558A99FEEE0F8BEEDED20AD5E3156CF2BA84A7C": "e90f6826-eac1-4725-95f7-678d52815db7",
+    "AB9AC59694CE3BB738A7E61335BBED38C9F94041": "384c755e-48b2-4fc1-90cf-2bf2c9038797",
+    "2F88491FE24369CD2F3F928D8F91D83E9D82BF13": "0077d35c-94cf-4a8e-a6ae-24725f301022",
+    "E43B0124D99953330C22BB05554DCC356F30F7EB": "eea32106-98ff-44b0-91b8-9bfc5615eb49",
+    "F469E0D5A4E14606C5EE107F2BD6570BE0269F5E": "ea9e1eda-5c60-4e3f-8494-4cd503505d78",
+    "31648A41B3E7D95338C96C735C70AAA863484BD2": "c0d7ad4d-d484-4fec-8b99-6530069258f4",
+    "073C061DF9500E0C3DF91437450109652C6386BE": "a87c50df-9d5f-4be5-9bd7-bb9cb46b8393",
+    "DC0F22898D6651AA6B26B2884027C2AC98D14A1C": "9421c0dc-394c-4aad-be83-6177f51c707a",
+    "459F2541E686BA490604AFB86E041B68B45B3F8B": "b9f9a36a-7229-4c10-bf0b-1a91218bf57f",
+    "E82861AC7446D24A3F5BFE3ADD2B32CCEB80C1E7": "50d4eace-8d2a-41b7-8ed6-3555d981c34c",
+    "705B762FEA6A4BFF40E52BD982D487EFB612C72A": "dfd3c1ca-ca79-45d2-8704-2d2e4aa8b383",
+    "CDA788620FE65DA3D3F53B76F96B22FD176A6F34": "48b90627-2bb3-4054-9731-c265b8730bef",
+    "187D5620B9D5ED2C00DF5757A2C1A83CE4472B8D": "61a38e64-540c-4da8-9d4c-3d0afe03c8bb",
+    "1EFD8EAB74F844B2B7950C89190851C072886B14": "2374c700-6390-47de-85b3-50981ef6e09b",
+    "7E28F4139FBC48BF7DB5C58B3D5B4F1C6049D590": "80fd61ce-03a0-4666-b349-80ea21a42c2d",
+    "C0D8E927C1B9BEE65E9BE486F7789D3352DB2CA4": "b79fbcb1-6e5b-4d36-8821-bf009c38d234",
+    "8441CD0D1652824A65498018ACB39C04DD1899F9": "b6f26441-6830-4779-a23f-0329d735f6de",
+    "31DBE2FC6DFACD271766AC9AC9324A4D95C9A820": "f4afd04b-93e5-456a-a217-6610f31d2d37",
+    "8313236FDE901052CF0F566AAA28D925A85B268D": "23db9bbd-fd5b-4f94-a22f-1c20a0864055",
+    "137FE65FBDEEE6667FCF24B970CD72458DD6AEC2": "a170c412-10d7-40d8-9f33-f4068b44d503",
+    "6AE7F3A06D5AE4F73920F76BA0E1A42D1F667270": "ebeca7b5-bb72-4bf7-825d-611ce8b3a5ad",
+    "1BCA54DDB743660638ACB91342F003853BFBCA69": "1d53f0ee-f557-456c-8f59-4ff8baf4283f",
+    "4FA7FF701BB94719204BAC024D1C1CC1A5FA4878": "67aa8ff1-4c42-486d-825c-6e584e48fe3f",
+    "CC3BE76427EAE74A38AD273E9F040530C17E98E4": "0e989a79-4983-4143-aeb1-8c240bafb5ec",
+    "150AF149D2D70F71D115D486153A97FEF6902394": "c3745d2c-9482-4473-9f7b-92f3706cffb4",
+    "15A7C5BBE9C2FFC39F877BF76D86D8841D9B6A0D": "9362497e-d364-4b6e-a138-a8783842fd18",
+    "3E521DA7A562785F2D60C75E082214C5351A6145": "9c6b5157-aa8c-4d2c-80a7-33cbf84107dc",
+    "ED577505F5C161D2B6DEF9EE3888525096E1A419": "7e162480-5fab-4a84-a7f9-df03ef73b825",
+    "33BCFE22EA514172B0ED1FAA83BDEC60A6943CA4": "8b3328f2-1a8b-45dd-90f9-27cedbd3b35e",
+    "D28ED3DC039A5AB363417C3846706A26771C05F0": "ca130187-d244-484c-97cd-c45948d751c3",
+    "60C3653EDFC36A0908DB80C0103ED212090F3D8E": "f91729e9-bd59-47d8-a3df-0a68b540baf6",
+    "3F71ED8A2CC242F09A2308D02246E2E9960AC12F": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+    "27A70ADC40EB63C56304BBD9053C161851B40D78": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+    "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93": "102ab01b-23f0-477d-8b70-178eda26795a"
+  },
+  "volumes": {
+    "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1": "PORTAL3299-REAL-20261008-100120-volume"
+  },
+  "remote_keys_created": [
+    {
+      "label": "escrow",
+      "fingerprint": "B6B4C556B5F90E06AA5DD07AA5B15893A1DE6F9F",
+      "name": "PORTAL3299-REAL-20261008-100120-escrow",
+      "state": "rejected_absent"
+    },
+    {
+      "label": "escrow",
+      "fingerprint": "3F71ED8A2CC242F09A2308D02246E2E9960AC12F",
+      "name": "PORTAL3299-REAL-20261008-100120-escrow",
+      "state": "deleted",
+      "key_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096"
+    },
+    {
+      "label": "volume-base",
+      "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+      "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+      "state": "deleted",
+      "key_id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae"
+    },
+    {
+      "label": "volume-secondary",
+      "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+      "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+      "state": "deleted",
+      "key_id": "102ab01b-23f0-477d-8b70-178eda26795a"
+    }
+  ],
+  "remote_volumes_created": [
+    {
+      "name": "PORTAL3299-REAL-20261008-100120-volume",
+      "state": "deleted",
+      "baseline_key": {
+        "label": "volume-base",
+        "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+        "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+        "state": "created",
+        "key_id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae"
+      },
+      "secondary_key": {
+        "label": "volume-secondary",
+        "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+        "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+        "state": "created",
+        "key_id": "102ab01b-23f0-477d-8b70-178eda26795a"
+      },
+      "protocols": [],
+      "fsaccess": false,
+      "creation_attempt": 2,
+      "guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+      "associations": {
+        "27A70ADC40EB63C56304BBD9053C161851B40D78": "7288c5ac-7974-47a9-a6d6-463af3960324",
+        "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93": "6c6c0de0-25e8-4f3c-b94e-735c029417c4"
+      }
+    }
+  ],
+  "tasks": {
+    "116bf1a8-f17b-4a77-855c-3c7d10096903": {
+      "action": "download_encryption_keys",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+    },
+    "f6b3f605-7175-4c72-b932-fc11ad33b70c": {
+      "action": "update_escrow_passphrase",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+    },
+    "13793e81-1aed-41c6-84c1-96a7d4651672": {
+      "action": "update_escrow_passphrase",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+    },
+    "5cb3deeb-8537-4630-bd26-800d6a642d14": {
+      "action": "escrow_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "fingerprints": [
+        "3F71ED8A2CC242F09A2308D02246E2E9960AC12F"
+      ]
+    },
+    "902b2f74-a96e-485c-bd4e-88a2f0d55bd3": {
+      "action": "delete_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "fingerprints": [
+        "3F71ED8A2CC242F09A2308D02246E2E9960AC12F"
+      ]
+    },
+    "b8205f24-e19e-4d02-878a-2a09564d2a2c": {
+      "action": "disable_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+      "fingerprints": [
+        "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93"
+      ],
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1"
+    },
+    "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c": {
+      "action": "enable_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+      "fingerprints": [
+        "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93"
+      ],
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1"
+    },
+    "77ed5223-49de-456a-9d4e-dc024318fbee": {
+      "action": "delete_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+      "fingerprints": [
+        "27A70ADC40EB63C56304BBD9053C161851B40D78"
+      ]
+    },
+    "f61610ce-3d51-4d16-b193-3910c96b9832": {
+      "action": "delete_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "102ab01b-23f0-477d-8b70-178eda26795a",
+      "fingerprints": [
+        "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93"
+      ]
+    }
+  },
+  "baseline_source": "filer-route-metadata.json",
+  "heartbeat": {
+    "source": "Controlled local readiness from a successful SSH probe; not production heartbeat ingestion",
+    "sent_at": "2026-10-08T06:16:44.650942Z"
+  },
+  "database_created": true,
+  "cache_created": true,
+  "cache_keys_before": [],
+  "cache_controls": "Test-local feature flag and escrow-license cache; not a production entitlement test",
+  "local_database_deleted": true
+}

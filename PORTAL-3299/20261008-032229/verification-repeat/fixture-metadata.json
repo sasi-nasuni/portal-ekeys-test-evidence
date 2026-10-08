@@ -1,0 +1,408 @@
+{
+  "run_id": "20261008-032229",
+  "prefix": "PORTAL3299TEST-20261008-032229",
+  "accounts": {
+    "A": {
+      "id": "5f86fb10-fb18-4bdb-a201-61b44a16f681",
+      "name": "PORTAL3299TEST-20261008-032229-A",
+      "users": {
+        "full": {
+          "id": "36b1b4c0-17dd-47d7-8c3d-df07013707b5",
+          "username": "PORTAL3299TEST-20261008-032229-A-full",
+          "role_id": "7027224a-d0b9-4bf6-88d3-d3f4cd0910cb",
+          "permissions": [
+            "View Volume Encryption Keys",
+            "View Backup Keys",
+            "View Key Escrow",
+            "View Escrow Passphrase",
+            "Manage Volume Encryption Keys",
+            "Disable Encryption Keys",
+            "Escrow Keys",
+            "Delete Unused Keys",
+            "Manage Escrow Passphrase",
+            "Download Generated Keys"
+          ]
+        },
+        "volume_only": {
+          "id": "63571d28-214f-48dc-b7cd-2aed0ad42294",
+          "username": "PORTAL3299TEST-20261008-032229-A-volume_only",
+          "role_id": "63233beb-5750-474f-947f-13246975f495",
+          "permissions": [
+            "View Volume Encryption Keys"
+          ]
+        },
+        "volume_escrow": {
+          "id": "80bfd7e5-40e4-4cdc-b04d-90f017134ee1",
+          "username": "PORTAL3299TEST-20261008-032229-A-volume_escrow",
+          "role_id": "15f8a7eb-a64b-44fa-a6ac-6c1ba772cbc2",
+          "permissions": [
+            "View Volume Encryption Keys",
+            "View Key Escrow"
+          ]
+        },
+        "backup_no_escrow": {
+          "id": "249dbd44-be43-4f10-89f3-5fe3426c3c6e",
+          "username": "PORTAL3299TEST-20261008-032229-A-backup_no_escrow",
+          "role_id": "3d344d98-e0d9-468d-a2a0-4782dec27e3a",
+          "permissions": [
+            "View Volume Encryption Keys",
+            "View Backup Keys"
+          ]
+        },
+        "no_permission": {
+          "id": "5e6a3bee-fc6e-4eaa-8e56-7559a0c09f31",
+          "username": "PORTAL3299TEST-20261008-032229-A-no_permission",
+          "role_id": "1c8bf28c-fb8e-4472-b77b-38c6a6af788f",
+          "permissions": []
+        },
+        "passphrase_only": {
+          "id": "404f3d10-0f32-4937-bcd7-a3e42dbab2fc",
+          "username": "PORTAL3299TEST-20261008-032229-A-passphrase_only",
+          "role_id": "afef4806-400c-4879-ac4d-830782796af9",
+          "permissions": [
+            "View Volume Encryption Keys",
+            "View Escrow Passphrase"
+          ]
+        },
+        "all_read_no_passphrase": {
+          "id": "c2574ee5-c5a5-494d-9649-0e8005016fd9",
+          "username": "PORTAL3299TEST-20261008-032229-A-all_read_no_passphrase",
+          "role_id": "885359b2-49d4-4779-9c24-bb2758c734b3",
+          "permissions": [
+            "View Volume Encryption Keys",
+            "View Backup Keys",
+            "View Key Escrow"
+          ]
+        }
+      },
+      "edges": {
+        "east": {
+          "id": "33938cdc-10db-4bfd-bb8c-86701686a02f",
+          "name": "PORTAL3299TEST-20261008-032229-A-appliance-east"
+        },
+        "west": {
+          "id": "92291591-0163-4c1e-84d9-aa38df00c89c",
+          "name": "PORTAL3299TEST-20261008-032229-A-appliance-west"
+        }
+      },
+      "keys": {
+        "stub_null": {
+          "id": "e62887d2-8fac-4c62-8e4c-75731aec3136",
+          "name": null,
+          "fingerprint": "51871AD13726470F9161341CAA6A70CA00000000",
+          "edge_label": "east",
+          "is_stub": true
+        },
+        "stub_failed": {
+          "id": "3ccc5fca-68f2-41b3-bc98-9fa2cc7cf049",
+          "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+          "fingerprint": "7DF2F00C2AE848E397C9BEC2C5A5A3C100000001",
+          "edge_label": "west",
+          "is_stub": true
+        },
+        "alpha": {
+          "id": "a1fe64f7-9e9b-4d3e-a0e3-87b72a3b79da",
+          "name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+          "fingerprint": "D17F652347ED4654A0028B67363C003400000002",
+          "edge_label": "east",
+          "is_stub": false
+        },
+        "beta": {
+          "id": "5e2764c3-b84d-405a-9fed-60ab8ea67bda",
+          "name": "PORTAL3299TEST-20261008-032229-A-beta",
+          "fingerprint": "66B0884D7D024494BDFB9F707330462E00000003",
+          "edge_label": "west",
+          "is_stub": false
+        },
+        "duplicate_east": {
+          "id": "3bec3efa-c400-4111-8d76-c6e45989a3b1",
+          "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+          "fingerprint": "A73EF830CC84443BA5C661BE3F585CDA00000004",
+          "edge_label": "east",
+          "is_stub": false
+        },
+        "duplicate_west": {
+          "id": "fb58e8a9-5823-417c-ac2e-dd2bb4d853ac",
+          "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+          "fingerprint": "17356B8B49754540BF2C9888B5ABCE7300000005",
+          "edge_label": "west",
+          "is_stub": false
+        },
+        "backup_east": {
+          "id": "a5df8df5-c0b1-48b5-b103-12bcf5aaa53f",
+          "name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+          "fingerprint": "4EC7664430994364A239A8C61508EACF00000006",
+          "edge_label": "east",
+          "is_stub": false
+        },
+        "backup_west": {
+          "id": "e931ca8d-631b-4393-b896-e1036cab904a",
+          "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+          "fingerprint": "5B79E5231EFC48D8BF1B60D7BCF0150A00000007",
+          "edge_label": "west",
+          "is_stub": false
+        }
+      },
+      "volumes": {
+        "literal": {
+          "id": "10a521d9-159d-45ce-a29a-854beb77acc2",
+          "volume_id": "80c81f54-9d61-45e1-9049-eb56242f3388_0",
+          "name": "PORTAL3299TEST-20261008-032229-A-MiXeD 100%_Path\\Name"
+        },
+        "plain": {
+          "id": "2ccdf3bf-eed1-41f4-9631-e36325092b27",
+          "volume_id": "da268cdb-cdb6-44a6-99ca-6cc942734e00_0",
+          "name": "PORTAL3299TEST-20261008-032229-A-Archive"
+        },
+        "second": {
+          "id": "1d997c59-413e-4b8f-9d4b-a656f1739a4e",
+          "volume_id": "743ebdaf-799e-41ac-bf39-b4ee7496eddc_0",
+          "name": "PORTAL3299TEST-20261008-032229-A-zeta"
+        }
+      },
+      "associations": {
+        "alpha_literal": {
+          "id": "aef34045-b5fe-46ba-b0ea-4de8a3197a27",
+          "key_label": "alpha",
+          "volume_label": "literal"
+        },
+        "alpha_plain": {
+          "id": "358c00a0-9b7c-4b4a-8175-dffa1658d317",
+          "key_label": "alpha",
+          "volume_label": "plain"
+        },
+        "beta_disabled": {
+          "id": "e913760e-ada0-45d3-83a1-1f0a54fa125d",
+          "key_label": "beta",
+          "volume_label": "second"
+        },
+        "backup_used": {
+          "id": "f78ce2ce-68fe-4bf2-9484-65db0d141c84",
+          "key_label": "backup_west",
+          "volume_label": "plain"
+        },
+        "stub_association": {
+          "id": "72854a29-4ca4-4f79-a3cd-673ed9a15ef4",
+          "key_label": "stub_null",
+          "volume_label": "plain"
+        }
+      },
+      "tasks": {
+        "stub_upload": {
+          "id": "673971e1-c469-47d9-8273-9699fe2f05a1",
+          "resource": "encryption_key",
+          "resource_id": "e62887d2-8fac-4c62-8e4c-75731aec3136",
+          "action": "upload_encryption_key",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "stub_failed": {
+          "id": "47d1ce24-37c6-443c-868d-695582f2067d",
+          "resource": "encryption_key",
+          "resource_id": "3ccc5fca-68f2-41b3-bc98-9fa2cc7cf049",
+          "action": "upload_encryption_key",
+          "state": "failed",
+          "acknowledged": false
+        },
+        "alpha_active": {
+          "id": "3df77d46-10c9-407f-ad42-d9b87c63421f",
+          "resource": "encryption_key",
+          "resource_id": "a1fe64f7-9e9b-4d3e-a0e3-87b72a3b79da",
+          "action": "escrow_encryption_key",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "alpha_failed": {
+          "id": "60487fb7-facf-4be7-b939-15d00b876a49",
+          "resource": "encryption_key",
+          "resource_id": "a1fe64f7-9e9b-4d3e-a0e3-87b72a3b79da",
+          "action": "delete_encryption_key",
+          "state": "failed",
+          "acknowledged": false
+        },
+        "beta_failed_null_reason": {
+          "id": "4b805a66-074a-433c-85e5-b6d2bb17fefc",
+          "resource": "encryption_key",
+          "resource_id": "5e2764c3-b84d-405a-9fed-60ab8ea67bda",
+          "action": "delete_encryption_key",
+          "state": "failed",
+          "acknowledged": false
+        },
+        "completed_excluded": {
+          "id": "fb0818c1-5053-403b-85ba-aa8c294de15e",
+          "resource": "encryption_key",
+          "resource_id": "3bec3efa-c400-4111-8d76-c6e45989a3b1",
+          "action": "delete_encryption_key",
+          "state": "completed",
+          "acknowledged": false
+        },
+        "acknowledged_excluded": {
+          "id": "461260a3-e0e3-47ba-b16a-d355334b19c8",
+          "resource": "encryption_key",
+          "resource_id": "3bec3efa-c400-4111-8d76-c6e45989a3b1",
+          "action": "delete_encryption_key",
+          "state": "failed",
+          "acknowledged": true
+        },
+        "action_excluded": {
+          "id": "1066885f-f744-4262-9117-46465309f181",
+          "resource": "encryption_key",
+          "resource_id": "fb58e8a9-5823-417c-ac2e-dd2bb4d853ac",
+          "action": "keyring_refresh",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "wrong_resource_excluded": {
+          "id": "bf9754cd-17fe-488a-88ef-37574f2be364",
+          "resource": "edge",
+          "resource_id": "fb58e8a9-5823-417c-ac2e-dd2bb4d853ac",
+          "action": "upload_encryption_key",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "association_enable": {
+          "id": "debcdd18-97b1-4d0d-8835-2d9d7fefc6c4",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "aef34045-b5fe-46ba-b0ea-4de8a3197a27",
+          "action": "enable_volume_encryption_keys",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "association_failed": {
+          "id": "707ec1b1-1e12-4831-86de-7971e71aab22",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "e913760e-ada0-45d3-83a1-1f0a54fa125d",
+          "action": "disable_volume_encryption_keys",
+          "state": "failed",
+          "acknowledged": false
+        },
+        "association_add": {
+          "id": "17d262b0-10d0-4c57-acc7-bb440ddcf862",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "72854a29-4ca4-4f79-a3cd-673ed9a15ef4",
+          "action": "add_volume_encryption_keys",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "association_completed_excluded": {
+          "id": "1b327d17-04ae-46c4-b3ec-0b42b38ea958",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "358c00a0-9b7c-4b4a-8175-dffa1658d317",
+          "action": "enable_volume_encryption_keys",
+          "state": "completed",
+          "acknowledged": false
+        },
+        "association_acknowledged_excluded": {
+          "id": "4e4d08c5-ba31-4f07-b5a5-386a0b3313f7",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "358c00a0-9b7c-4b4a-8175-dffa1658d317",
+          "action": "disable_volume_encryption_keys",
+          "state": "failed",
+          "acknowledged": true
+        },
+        "association_action_excluded": {
+          "id": "b2d56338-512c-43aa-bee2-857f2c384fdb",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "f78ce2ce-68fe-4bf2-9484-65db0d141c84",
+          "action": "upload_encryption_key",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "key_association_action_excluded": {
+          "id": "beb69fbd-1f45-49eb-a87c-cdfd67accb19",
+          "resource": "encryption_key",
+          "resource_id": "fb58e8a9-5823-417c-ac2e-dd2bb4d853ac",
+          "action": "enable_volume_encryption_keys",
+          "state": "in_progress",
+          "acknowledged": false
+        }
+      }
+    },
+    "B": {
+      "id": "dda33173-cef7-4b66-9463-af5248ac9a35",
+      "name": "PORTAL3299TEST-20261008-032229-B",
+      "users": {
+        "full": {
+          "id": "88813fee-fa27-40fc-9ca9-dfdfb890edb4",
+          "username": "PORTAL3299TEST-20261008-032229-B-full",
+          "role_id": "73149df1-ffcd-40a8-953f-82de49289e12",
+          "permissions": [
+            "View Volume Encryption Keys",
+            "View Backup Keys",
+            "View Key Escrow",
+            "View Escrow Passphrase",
+            "Manage Volume Encryption Keys",
+            "Disable Encryption Keys",
+            "Escrow Keys",
+            "Delete Unused Keys",
+            "Manage Escrow Passphrase",
+            "Download Generated Keys"
+          ]
+        }
+      },
+      "edges": {
+        "foreign": {
+          "id": "14b39c98-7998-41ac-b224-557a60b64865",
+          "name": "PORTAL3299TEST-20261008-032229-B-appliance-foreign"
+        }
+      },
+      "keys": {
+        "foreign": {
+          "id": "15c5d0a9-69ee-4dd9-941f-e43020a18e7c",
+          "name": "PORTAL3299TEST-20261008-032229-B-FOREIGN-SENTINEL",
+          "fingerprint": "5B38DA2E2C1D499E96B5785ACEEC2A9B00000000",
+          "edge_label": "foreign",
+          "is_stub": false
+        }
+      },
+      "volumes": {
+        "foreign": {
+          "id": "9d6401a0-6dc0-4b4b-bcd1-45c19d7ae9ee",
+          "volume_id": "ab92ae56-2d63-414c-885e-03506a80ea6e_0",
+          "name": "PORTAL3299TEST-20261008-032229-B-FOREIGN-VOLUME"
+        }
+      },
+      "associations": {
+        "foreign": {
+          "id": "1b7711a0-d993-4f4d-baf6-eb31e72c2896",
+          "key_label": "foreign",
+          "volume_label": "foreign"
+        }
+      },
+      "tasks": {
+        "foreign_key": {
+          "id": "2dd7692e-9cc2-4886-8515-72a0c8db2efa",
+          "resource": "encryption_key",
+          "resource_id": "15c5d0a9-69ee-4dd9-941f-e43020a18e7c",
+          "action": "escrow_encryption_key",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "foreign_association": {
+          "id": "db27a4e1-5763-444d-9d3a-ce86eaab3f97",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "1b7711a0-d993-4f4d-baf6-eb31e72c2896",
+          "action": "enable_volume_encryption_keys",
+          "state": "in_progress",
+          "acknowledged": false
+        },
+        "foreign_matching_key_id": {
+          "id": "052629cb-1146-4e6a-9d3e-44ecd625233d",
+          "resource": "encryption_key",
+          "resource_id": "a1fe64f7-9e9b-4d3e-a0e3-87b72a3b79da",
+          "action": "escrow_encryption_key",
+          "state": "failed",
+          "acknowledged": false
+        },
+        "foreign_matching_association_id": {
+          "id": "843df185-18f9-4ef6-8e4f-9abc052bf537",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "aef34045-b5fe-46ba-b0ea-4de8a3197a27",
+          "action": "enable_volume_encryption_keys",
+          "state": "failed",
+          "acknowledged": false
+        }
+      }
+    }
+  }
+}

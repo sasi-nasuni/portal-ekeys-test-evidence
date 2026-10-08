@@ -1,0 +1,371 @@
+{
+  "116bf1a8-f17b-4a77-855c-3c7d10096903": {
+    "task": {
+      "id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "action": "download_encryption_keys",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:17:25.736635+00:00",
+      "last_updated_at": "2026-10-08 06:18:02.107363+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "download_encryption_keys",
+        "state": "completed",
+        "created_at": "2026-10-08 06:17:25.736635+00:00",
+        "updated_at": "2026-10-08 06:18:02.107363+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "bd4bba76-06a1-46a9-98cf-2fb4bd215c48",
+        "task_id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+        "sent_at": "2026-10-08 06:17:25.755616+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "32060202-f67a-4577-8842-4117fd659f9a",
+        "task_id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+        "sent_at": "2026-10-08 06:17:40.786385+00:00",
+        "received_at": "2026-10-08 06:18:02.093591+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "f6b3f605-7175-4c72-b932-fc11ad33b70c": {
+    "task": {
+      "id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "action": "update_escrow_passphrase",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:20:51.346122+00:00",
+      "last_updated_at": "2026-10-08 06:20:56.149069+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "update_escrow_passphrase",
+        "state": "completed",
+        "created_at": "2026-10-08 06:20:51.346122+00:00",
+        "updated_at": "2026-10-08 06:20:56.149069+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "a4d72a1f-d659-4cff-b216-886d1a3ec037",
+        "task_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+        "sent_at": "2026-10-08 06:20:51.353085+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "7684a79d-216f-4c34-8949-690efaaa304c",
+        "task_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+        "sent_at": "2026-10-08 06:20:54.918031+00:00",
+        "received_at": "2026-10-08 06:20:56.129526+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "13793e81-1aed-41c6-84c1-96a7d4651672": {
+    "task": {
+      "id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "action": "update_escrow_passphrase",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:21:23.302376+00:00",
+      "last_updated_at": "2026-10-08 06:22:02.631075+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "update_escrow_passphrase",
+        "state": "completed",
+        "created_at": "2026-10-08 06:21:23.302376+00:00",
+        "updated_at": "2026-10-08 06:22:02.631075+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "c65998ae-fa94-4ed2-83d9-534acd30ba45",
+        "task_id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+        "sent_at": "2026-10-08 06:21:23.320499+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "df1310c2-4c0f-4fde-bdc9-65064b2162a5",
+        "task_id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+        "sent_at": "2026-10-08 06:21:56.714216+00:00",
+        "received_at": "2026-10-08 06:22:02.617270+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "5cb3deeb-8537-4630-bd26-800d6a642d14": {
+    "task": {
+      "id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "action": "escrow_encryption_key",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:27:05.819403+00:00",
+      "last_updated_at": "2026-10-08 06:27:10.316532+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "escrow_encryption_key",
+        "state": "completed",
+        "created_at": "2026-10-08 06:27:05.819403+00:00",
+        "updated_at": "2026-10-08 06:27:10.316532+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "d2ec68e8-92af-467a-97b4-374f7679ed62",
+        "task_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+        "sent_at": "2026-10-08 06:27:05.839465+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "1791bd36-8992-407a-b646-0416b3a630c3",
+        "task_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+        "sent_at": "2026-10-08 06:27:08.661171+00:00",
+        "received_at": "2026-10-08 06:27:10.293564+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "902b2f74-a96e-485c-bd4e-88a2f0d55bd3": {
+    "task": {
+      "id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "action": "delete_encryption_key",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:27:41.203257+00:00",
+      "last_updated_at": "2026-10-08 06:27:46.183695+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "delete_encryption_key",
+        "state": "completed",
+        "created_at": "2026-10-08 06:27:41.203257+00:00",
+        "updated_at": "2026-10-08 06:27:46.183695+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "7d8b7d93-9c34-44c8-a545-15c29c49b6f4",
+        "task_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+        "sent_at": "2026-10-08 06:27:41.210017+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "ca152074-558e-4a43-938a-fc7553141989",
+        "task_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+        "sent_at": "2026-10-08 06:27:44.296001+00:00",
+        "received_at": "2026-10-08 06:27:46.043197+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "b8205f24-e19e-4d02-878a-2a09564d2a2c": {
+    "task": {
+      "id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+      "action": "disable_volume_encryption_keys",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:34:54.702342+00:00",
+      "last_updated_at": "2026-10-08 06:35:05.436819+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "disable_volume_encryption_keys",
+        "state": "completed",
+        "created_at": "2026-10-08 06:34:54.702342+00:00",
+        "updated_at": "2026-10-08 06:35:05.436819+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "db5d54d1-27ce-45b7-a067-a31c52c8b4ce",
+        "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+        "sent_at": "2026-10-08 06:34:54.712648+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "6f03fdd2-afa4-4fe9-af85-62f2dac8bcfa",
+        "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+        "sent_at": "2026-10-08 06:35:02.298114+00:00",
+        "received_at": "2026-10-08 06:35:05.394869+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c": {
+    "task": {
+      "id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+      "action": "enable_volume_encryption_keys",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:35:36.888658+00:00",
+      "last_updated_at": "2026-10-08 06:35:42.983886+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "enable_volume_encryption_keys",
+        "state": "completed",
+        "created_at": "2026-10-08 06:35:36.888658+00:00",
+        "updated_at": "2026-10-08 06:35:42.983886+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "44eed425-6b9c-43a4-aebd-ec2a601c979e",
+        "task_id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+        "sent_at": "2026-10-08 06:35:36.894349+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "b92fec64-1620-43be-9a2c-fda4b2d3815d",
+        "task_id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+        "sent_at": "2026-10-08 06:35:40.738618+00:00",
+        "received_at": "2026-10-08 06:35:42.961527+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "77ed5223-49de-456a-9d4e-dc024318fbee": {
+    "task": {
+      "id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "encryption_key",
+      "resource_id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+      "action": "delete_encryption_key",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:41:26.060578+00:00",
+      "last_updated_at": "2026-10-08 06:41:36.095847+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "delete_encryption_key",
+        "state": "completed",
+        "created_at": "2026-10-08 06:41:26.060578+00:00",
+        "updated_at": "2026-10-08 06:41:36.095847+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "5aacd39e-d207-4d03-9f70-65a19eb66e21",
+        "task_id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+        "sent_at": "2026-10-08 06:41:26.053104+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "f3439443-0133-4c53-98e7-5fbd7ba9ae39",
+        "task_id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+        "sent_at": "2026-10-08 06:41:32.555895+00:00",
+        "received_at": "2026-10-08 06:41:36.052151+00:00",
+        "acked_at": null
+      }
+    ]
+  },
+  "f61610ce-3d51-4d16-b193-3910c96b9832": {
+    "task": {
+      "id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+      "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+      "resource": "encryption_key",
+      "resource_id": "102ab01b-23f0-477d-8b70-178eda26795a",
+      "action": "delete_encryption_key",
+      "state": "completed",
+      "status": null,
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "created_at": "2026-10-08 06:42:03.513249+00:00",
+      "last_updated_at": "2026-10-08 06:42:08.861343+00:00",
+      "user_acknowledged_at": null,
+      "reason": null
+    },
+    "steps": [
+      {
+        "name": "delete_encryption_key",
+        "state": "completed",
+        "created_at": "2026-10-08 06:42:03.513249+00:00",
+        "updated_at": "2026-10-08 06:42:08.861343+00:00"
+      }
+    ],
+    "messages": [
+      {
+        "id": "2e6ba2dd-b349-44eb-b7c6-4da7d1aacd77",
+        "task_id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+        "sent_at": "2026-10-08 06:42:03.517482+00:00",
+        "received_at": null,
+        "acked_at": null
+      },
+      {
+        "id": "7120fa9b-508b-4cb8-a3dc-671186f6a72a",
+        "task_id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+        "sent_at": "2026-10-08 06:42:06.200316+00:00",
+        "received_at": "2026-10-08 06:42:08.846368+00:00",
+        "acked_at": null
+      }
+    ]
+  }
+}

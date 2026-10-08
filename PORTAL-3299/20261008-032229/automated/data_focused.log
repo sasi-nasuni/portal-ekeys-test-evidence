@@ -1,0 +1,23 @@
+........................................................................ [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 58%]
+........................................................................ [ 77%]
+........................................................................ [ 97%]
+..........                                                               [100%]
+=============================== warnings summary ===============================
+../../../.venv/lib/python3.14/site-packages/pgpy/constants.py:192
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_success
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_binary_key
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_uses_cached_key
+  [APPLICATION_WORKTREE]/.venv/lib/python3.14/site-packages/pgpy/constants.py:192: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+    SymmetricKeyAlgorithm.TripleDES: algorithms.TripleDES,
+
+../portal-core/portal/core/pgp.py:396
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_success
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_binary_key
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_uses_cached_key
+  [APPLICATION_WORKTREE]/backend/libs/portal-core/portal/core/pgp.py:396: UserWarning: Selected compression algorithm not in key preferences
+    ciphertext = pub_key.encrypt(msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+370 passed, 8 warnings in 2.00s

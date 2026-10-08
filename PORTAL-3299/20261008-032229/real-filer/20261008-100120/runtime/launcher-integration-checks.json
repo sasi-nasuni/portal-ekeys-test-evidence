@@ -1,0 +1,14 @@
+{
+  "scope": "Pure imports/AST and local policy rejection only; no runtime or AWS writes",
+  "launcher_syntax": true,
+  "worker_syntax": true,
+  "expired_policy_rejected": true,
+  "absent_policy_rejected": true,
+  "guard_integrated": true,
+  "worker_exit_code_propagated": true,
+  "resource_manifest_absent": true,
+  "api_process_absent": true,
+  "eventhub_process_absent": true,
+  "production_handler_async_wrapper": true,
+  "outbound_boundary_methods_exist": true
+}

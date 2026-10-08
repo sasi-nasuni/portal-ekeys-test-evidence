@@ -1,0 +1,538 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "database-and-filer/activity-audit.png",
+      "bytes": 843214,
+      "width": 2880,
+      "height": 4398,
+      "sha256": "0326194b0af97413fcb3b37bbf7c4798508c30ae89f6a441e19cc7f1912d4444"
+    },
+    {
+      "path": "database-and-filer/filer-01.png",
+      "bytes": 160106,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "17fba907daa14da7bfa327bbc680cc7e65e52d5f3e190abd38b0a360606aa7d9"
+    },
+    {
+      "path": "database-and-filer/filer-02.png",
+      "bytes": 161879,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "f390f43c471a892f7096f258f38387f11dc6b054953abffdc0f8bf4c20130903"
+    },
+    {
+      "path": "database-and-filer/filer-03.png",
+      "bytes": 160426,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "5dabf31d8712380eb4834a75191b087c2453e81c61ddca997fa05f79c91ae6b7"
+    },
+    {
+      "path": "database-and-filer/filer-04.png",
+      "bytes": 160624,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "ebc95b21dd879deb2a58b670745e3a00121c45604de3cb686029a602f3e5284f"
+    },
+    {
+      "path": "database-and-filer/filer-05.png",
+      "bytes": 160560,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "16acaf512bcf358704937f44b9f6b4ecfe20f0c73fca4200b625cd731f32c243"
+    },
+    {
+      "path": "database-and-filer/filer-06.png",
+      "bytes": 158796,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "579cebafbfc651336654fc8d38008985736fac204ff561e4ce37bc03e1f0cfde"
+    },
+    {
+      "path": "database-and-filer/filer-07.png",
+      "bytes": 160168,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "ccd732ab1f19bcce7f4c97b6252d48d7b11856ceccd994b9015436e796262c99"
+    },
+    {
+      "path": "database-and-filer/filer-08.png",
+      "bytes": 160314,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "93da6baf8e09e64757a646b14640773ab76de9788935e99206dbf8842f1b9920"
+    },
+    {
+      "path": "database-and-filer/filer-09.png",
+      "bytes": 160553,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "1c068562daca63cbb5f3178f68a78044d54aa0c470a1bcc2631d40b79c52f306"
+    },
+    {
+      "path": "database-and-filer/filer-cleanup.png",
+      "bytes": 92187,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "aefaab60dc38b82b76b66230158047115a583f7ad474362440b23dcdd9a694eb"
+    },
+    {
+      "path": "database-and-filer/local-cleanup.png",
+      "bytes": 100963,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "9543b318ac6a592519381104c8a4de485ca61fac07983358c82d71bfe0443177"
+    },
+    {
+      "path": "database-and-filer/runtime-cleanup-verification.png",
+      "bytes": 139624,
+      "width": 2880,
+      "height": 2400,
+      "sha256": "aef13fdd519a8cbf98bb6f2f82e4125dc02057dfae70aa1e9cc6911d7a3567c8"
+    },
+    {
+      "path": "database-and-filer/task-01-download_encryption_keys.png",
+      "bytes": 385939,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "d1bd3054d5aa215d918f9549a06d1360436d84725939049f08614701824f86d4"
+    },
+    {
+      "path": "database-and-filer/task-02-update_escrow_passphrase.png",
+      "bytes": 385519,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "3a2f33c4fb76ec64fd39124999ae7d3c577539b7b6cf617ac84d27df201e03b6"
+    },
+    {
+      "path": "database-and-filer/task-03-update_escrow_passphrase.png",
+      "bytes": 382731,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "aa2863f4f927a90a333520f3ad05f0dba3171702fdbfe9f870ceea914e73399a"
+    },
+    {
+      "path": "database-and-filer/task-04-escrow_encryption_key.png",
+      "bytes": 387989,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "ed065f38c3078bf67052b14ea1b2e739f25b4efefaf1d9ae6da2eae521fd652f"
+    },
+    {
+      "path": "database-and-filer/task-05-delete_encryption_key.png",
+      "bytes": 385305,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "89228e28519aef48a12999612646cd280e62e7724835d6c060653064de0faed8"
+    },
+    {
+      "path": "database-and-filer/task-06-disable_volume_encryption_keys.png",
+      "bytes": 395212,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "dc38af2aaee3197d51705cc581cb52790463574bb326be94a00bacc9c88f1e9d"
+    },
+    {
+      "path": "database-and-filer/task-07-enable_volume_encryption_keys.png",
+      "bytes": 392619,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "a5dddb259f0c55455c6933cc9ceb541eabe49d458322a4535e5045a2b0b708f3"
+    },
+    {
+      "path": "database-and-filer/task-08-delete_encryption_key.png",
+      "bytes": 384038,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "86e724a7fee42da4d5e57b8333bc8a38c85613b783f15317e17174c62209a52f"
+    },
+    {
+      "path": "database-and-filer/task-09-delete_encryption_key.png",
+      "bytes": 384054,
+      "width": 2880,
+      "height": 2510,
+      "sha256": "a10fa8d1dd023c59e55de5bc73184116148a2ab6f527777ef10db1196b5840c3"
+    },
+    {
+      "path": "download/001_download_generated_keys/download_generated_keys_parameters_01.png",
+      "bytes": 147691,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "89ec55c16d705a6032d897f3ca918d282c9bc1ea0fa1342003d90d4810ec5e07"
+    },
+    {
+      "path": "download/001_download_generated_keys/download_generated_keys_response.png",
+      "bytes": 156396,
+      "width": 1378,
+      "height": 715,
+      "sha256": "ed7b256d477b43b7abd967957707aa1359359367664f50ea30fb0a96b05ad0b4"
+    },
+    {
+      "path": "download/002_download_terminal/download_terminal_parameters_01.png",
+      "bytes": 153519,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "7fb07066e6588734fe03467b571872695028f4a1b8b19718ad78130ca5ea3f17"
+    },
+    {
+      "path": "download/002_download_terminal/download_terminal_response.png",
+      "bytes": 131562,
+      "width": 1378,
+      "height": 809,
+      "sha256": "4c589f83ae40e3026554a077db0d6df7cd0afb8b7adf1e816e88a809a76f473d"
+    },
+    {
+      "path": "escrow-delete/001_escrow_disposable_key/escrow_disposable_key_parameters_01.png",
+      "bytes": 108266,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "ef825385a4f566ee0357752d18c5155b1f8a87551b01d6e4b03df68b3798078c"
+    },
+    {
+      "path": "escrow-delete/001_escrow_disposable_key/escrow_disposable_key_response.png",
+      "bytes": 120018,
+      "width": 1378,
+      "height": 1031,
+      "sha256": "055c2bb60482ff1755de23cadc9bd8185272aa3aff9c87779e5ac563f942df74"
+    },
+    {
+      "path": "escrow-delete/002_escrow_terminal/escrow_terminal_parameters_01.png",
+      "bytes": 154634,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "6954a368d701ffcf90f0394d38bebedb144c2e80bd1161adeeec6c0de80cbda3"
+    },
+    {
+      "path": "escrow-delete/002_escrow_terminal/escrow_terminal_response.png",
+      "bytes": 133627,
+      "width": 1378,
+      "height": 809,
+      "sha256": "8ce43e81b9fbb2a3f9bcd7fcb6c4a42cd5807675f8f2f745f8a1707ec8266476"
+    },
+    {
+      "path": "escrow-delete/003_escrow_key_readback/escrow_key_readback_parameters_01.png",
+      "bytes": 139611,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "4db60872875e26d9b1fc99b31be176d56b5f8c05b46adddcb7fc80b5fb559f45"
+    },
+    {
+      "path": "escrow-delete/003_escrow_key_readback/escrow_key_readback_parameters_02.png",
+      "bytes": 133640,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "7105bf7dbf530e84efee3ba10b3ff7ea89094c46835ef6d73d9814dc448ec6ba"
+    },
+    {
+      "path": "escrow-delete/003_escrow_key_readback/escrow_key_readback_response_01.png",
+      "bytes": 132583,
+      "width": 1378,
+      "height": 909,
+      "sha256": "020c6a950a84f6e92b95b71bcf69345868650386571e362a6b882025e89b1199"
+    },
+    {
+      "path": "escrow-delete/003_escrow_key_readback/escrow_key_readback_response_02.png",
+      "bytes": 127369,
+      "width": 1378,
+      "height": 909,
+      "sha256": "ebcafc6f8bdb1ce132c36cbb4d0ed2339d10b7b183ff3d159cf7187ca3cad654"
+    },
+    {
+      "path": "escrow-delete/004_delete_disposable_key/delete_disposable_key_parameters_01.png",
+      "bytes": 111465,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "0e3cc8c9c8f25645d06205c24b29a5dab9bd781d0524834ce0b59e6ccb862d5d"
+    },
+    {
+      "path": "escrow-delete/004_delete_disposable_key/delete_disposable_key_response.png",
+      "bytes": 82876,
+      "width": 1378,
+      "height": 615,
+      "sha256": "c54a1448bee381603d8e7692d21e874bf17a20e043c21ab00f6bf8b76dec91d9"
+    },
+    {
+      "path": "escrow-delete/005_delete_terminal/delete_terminal_parameters_01.png",
+      "bytes": 153328,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "75b8ec8b2b9ceba3859acec9c072a1f415fbbbb64925aa972efe32b886d5dfb6"
+    },
+    {
+      "path": "escrow-delete/005_delete_terminal/delete_terminal_response.png",
+      "bytes": 133200,
+      "width": 1378,
+      "height": 809,
+      "sha256": "c5f13f3f89d96d293fb7dba7f534ed40a5107f5261199428d8b85e9beb686f93"
+    },
+    {
+      "path": "escrow-delete/006_deleted_key_readback/deleted_key_readback_parameters_01.png",
+      "bytes": 139659,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "9548e780a10c4f38c7422ac7ba92421bbf83661563ab400ced4043723216f587"
+    },
+    {
+      "path": "escrow-delete/006_deleted_key_readback/deleted_key_readback_parameters_02.png",
+      "bytes": 137103,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "b08c046105af529f8a283980765486d5879085e339853aa782da4b3813934a9f"
+    },
+    {
+      "path": "escrow-delete/006_deleted_key_readback/deleted_key_readback_response.png",
+      "bytes": 80730,
+      "width": 1378,
+      "height": 681,
+      "sha256": "05a414bee5b1f08a1b510b0039282793e0f6e1870cbd514685ad5a66558f63bb"
+    },
+    {
+      "path": "key-cleanup/001_delete_volume-base/delete_volume-base_parameters_01.png",
+      "bytes": 110573,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "8be143103c031cb6b437715b21a92609af32004d1fd5993b178c36fff4d7117b"
+    },
+    {
+      "path": "key-cleanup/001_delete_volume-base/delete_volume-base_response.png",
+      "bytes": 82904,
+      "width": 1378,
+      "height": 615,
+      "sha256": "73447639f4fe67baa274c4106655db32536476380818db97ea4f03ea685e2304"
+    },
+    {
+      "path": "key-cleanup/002_volume-base_terminal/volume-base_terminal_parameters_01.png",
+      "bytes": 152755,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "a082aa89459096138397bebc56e3ea1552210b0ce23586b9826f3338b0670559"
+    },
+    {
+      "path": "key-cleanup/002_volume-base_terminal/volume-base_terminal_response.png",
+      "bytes": 132970,
+      "width": 1378,
+      "height": 809,
+      "sha256": "86e5cf36daea7e4e21d0c18a07bfc52ca76a49a4b7793bc8cd8b078f17fd72b9"
+    },
+    {
+      "path": "key-cleanup/003_delete_volume-secondary/delete_volume-secondary_parameters_01.png",
+      "bytes": 111030,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "08a22d1dee2be30532ddb6f29f100da3d9655e64b9b8fd9f668fb8c2b6f01945"
+    },
+    {
+      "path": "key-cleanup/003_delete_volume-secondary/delete_volume-secondary_response.png",
+      "bytes": 83170,
+      "width": 1378,
+      "height": 615,
+      "sha256": "248614dba2c531ed16957b0d273ba60d9156db626f82b19acd5dce1def33e6de"
+    },
+    {
+      "path": "key-cleanup/004_volume-secondary_terminal/volume-secondary_terminal_parameters_01.png",
+      "bytes": 153423,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "d886a352b65051140fa0ad3c177d938a841215fcd390e14bf06ab0d04e6aa3c9"
+    },
+    {
+      "path": "key-cleanup/004_volume-secondary_terminal/volume-secondary_terminal_response.png",
+      "bytes": 133345,
+      "width": 1378,
+      "height": 809,
+      "sha256": "9d47fdd44015d79f7f9ce913a4e7623fc10d2d6293d9280009985275ebcfc111"
+    },
+    {
+      "path": "passphrase/001_set_temporary_passphrase/set_temporary_passphrase_parameters_01.png",
+      "bytes": 99405,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "aebe79a82ec79a6259c1a9f15ecc51ac846efedcae623e93a1e058c121960e37"
+    },
+    {
+      "path": "passphrase/001_set_temporary_passphrase/set_temporary_passphrase_response.png",
+      "bytes": 83369,
+      "width": 1378,
+      "height": 679,
+      "sha256": "37e70aa3941c58fcf9f7b64c321a47071c2a86ddedaecfb9de7142f8012af581"
+    },
+    {
+      "path": "passphrase/002_set_temporary_passphrase_terminal/set_temporary_passphrase_terminal_parameters_01.png",
+      "bytes": 153022,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "180629e3062f91af84c7bcb11524b4044ce6dc94f547b09aecad96023fb64241"
+    },
+    {
+      "path": "passphrase/002_set_temporary_passphrase_terminal/set_temporary_passphrase_terminal_response.png",
+      "bytes": 131864,
+      "width": 1378,
+      "height": 809,
+      "sha256": "514cd007bb1a419650ad5059e4f574dcb7c4ff2074d3f03ee16f6a9c0df2749c"
+    },
+    {
+      "path": "passphrase/003_restore_original_passphrase/restore_original_passphrase_parameters_01.png",
+      "bytes": 99428,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "42d5e214285c66846c59daa6ea02e75f6b739377c8dea1447201c9f5c5b06dda"
+    },
+    {
+      "path": "passphrase/003_restore_original_passphrase/restore_original_passphrase_response.png",
+      "bytes": 83387,
+      "width": 1378,
+      "height": 679,
+      "sha256": "1344f6f6a22d78aa3702ac1e1ae4feb238e4c8b926ba3ebfd5fee23b7b4b19d7"
+    },
+    {
+      "path": "passphrase/004_restore_original_passphrase_terminal/restore_original_passphrase_terminal_parameters_01.png",
+      "bytes": 152628,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "69d3a939c011406025596ee5bb337d7c944c85a62cbc7b3e8a2e6c6f40e403ff"
+    },
+    {
+      "path": "passphrase/004_restore_original_passphrase_terminal/restore_original_passphrase_terminal_response.png",
+      "bytes": 132176,
+      "width": 1378,
+      "height": 809,
+      "sha256": "ff9db0b5f3e6038ad66b0f04e5430125806316237578811449e479459c47b02c"
+    },
+    {
+      "path": "real-reads/001_real_fixture_key_list/real_fixture_key_list_parameters_01.png",
+      "bytes": 138897,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "e962ca272555c22a5e1d5e42c54a535437fc9d9e622af0326db0c37892f881af"
+    },
+    {
+      "path": "real-reads/001_real_fixture_key_list/real_fixture_key_list_parameters_02.png",
+      "bytes": 136938,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "4bb56026ccd98fdc6ff7e83d5ffebf2e8aa4ee0a8194c880cd319425f891404e"
+    },
+    {
+      "path": "real-reads/001_real_fixture_key_list/real_fixture_key_list_response_01.png",
+      "bytes": 141671,
+      "width": 1378,
+      "height": 909,
+      "sha256": "db4051801255fa2180c61c5b0334b2700a8e597cce2729e9cec4f16fe1262f60"
+    },
+    {
+      "path": "real-reads/001_real_fixture_key_list/real_fixture_key_list_response_02.png",
+      "bytes": 144495,
+      "width": 1378,
+      "height": 909,
+      "sha256": "dba1ace6e7a195466be1efc52436898b4ab82159e9a183287edeffac9d074f97"
+    },
+    {
+      "path": "real-reads/001_real_fixture_key_list/real_fixture_key_list_response_03.png",
+      "bytes": 116770,
+      "width": 1378,
+      "height": 909,
+      "sha256": "39f547a8461cb1bc31e7f64775c8632e27c54b89375d231020a40ff8dbc4cc16"
+    },
+    {
+      "path": "real-reads/002_real_appliance_summary/real_appliance_summary_parameters_01.png",
+      "bytes": 150934,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "f945515b879af22ddb87605426ce908ec26588942dcbda7f87dc24a41b59e126"
+    },
+    {
+      "path": "real-reads/002_real_appliance_summary/real_appliance_summary_response.png",
+      "bytes": 105590,
+      "width": 1378,
+      "height": 761,
+      "sha256": "d7351bc0fea62a19ef5b17ca80862417bfb0648d42609b5d40659d895f0b2145"
+    },
+    {
+      "path": "volume-operations/001_disable_secondary_key/disable_secondary_key_parameters_01.png",
+      "bytes": 122769,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "5340e595746a70651fda96088d8b3d7af30642385b4200320b2b349453cf9602"
+    },
+    {
+      "path": "volume-operations/001_disable_secondary_key/disable_secondary_key_response.png",
+      "bytes": 85884,
+      "width": 1378,
+      "height": 631,
+      "sha256": "264e1363b7f668caf4658b409507ea33eef0cc2cebe1f888ab772514500d5eea"
+    },
+    {
+      "path": "volume-operations/002_disable_terminal/disable_terminal_parameters_01.png",
+      "bytes": 153510,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "600188f3b7cd5af2b8a4ae00e41b7635f554fa7d056d230b4cf4bfddcd2a071f"
+    },
+    {
+      "path": "volume-operations/002_disable_terminal/disable_terminal_response.png",
+      "bytes": 136560,
+      "width": 1378,
+      "height": 809,
+      "sha256": "8473ff343d109d6933b8e37ced21cdc0857498c9b011621fc9eb413eef4c8f69"
+    },
+    {
+      "path": "volume-operations/003_disable_volume_readback/disable_volume_readback_parameters_01.png",
+      "bytes": 133080,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "8de66cd15ca8a084c242dea404637a2f9bb389ba77d72175c19053893b8c0f77"
+    },
+    {
+      "path": "volume-operations/003_disable_volume_readback/disable_volume_readback_response.png",
+      "bytes": 135448,
+      "width": 1378,
+      "height": 905,
+      "sha256": "dfb2cde0a08fdc02e8ee62adf6d72d6f00d027b27bbfa6f188bf5da800587f36"
+    },
+    {
+      "path": "volume-operations/004_enable_secondary_key/enable_secondary_key_parameters_01.png",
+      "bytes": 122131,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "cd2948d2d83d37c6ca792900ed756cad391c140f66735867a6cc68499ba1d742"
+    },
+    {
+      "path": "volume-operations/004_enable_secondary_key/enable_secondary_key_response.png",
+      "bytes": 84803,
+      "width": 1378,
+      "height": 631,
+      "sha256": "ec80928a55f4c2e5d87bf73ad00f537cb404ba8148dcf237c492f6c58d80e2b3"
+    },
+    {
+      "path": "volume-operations/005_enable_terminal/enable_terminal_parameters_01.png",
+      "bytes": 154150,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "ef05c1ad12c514536ba7c9987cfc83e9ae270b99d55e35c0cef0d7bc160834ad"
+    },
+    {
+      "path": "volume-operations/005_enable_terminal/enable_terminal_response.png",
+      "bytes": 136165,
+      "width": 1378,
+      "height": 809,
+      "sha256": "55ff172c3dd64c8ac482bf5853a8a997447b4676be4a6b426f1be37a6e006a55"
+    },
+    {
+      "path": "volume-operations/006_enable_volume_readback/enable_volume_readback_parameters_01.png",
+      "bytes": 129772,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "edc4134ed77f9396634421909a6351915d20937d66c2560da2ecffc7d986583c"
+    },
+    {
+      "path": "volume-operations/006_enable_volume_readback/enable_volume_readback_response.png",
+      "bytes": 135215,
+      "width": 1378,
+      "height": 905,
+      "sha256": "eba491470e88098e9907a1f8b07e937e5c99f90f392caf51949c118ee26ca6df"
+    }
+  ],
+  "count": 76
+}

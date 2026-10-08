@@ -1,0 +1,37 @@
+{
+  "id": 154,
+  "name": "download_invalid_public_key",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "status": 400,
+  "body": {
+    "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/cd6e90fd-0d02-467c-9c9e-fd79e6a4872a/encryption-keys/downloads?public_key=not%20a%20public%20key",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/154_download_invalid_public_key/download_invalid_public_key_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/154_download_invalid_public_key/download_invalid_public_key_response.png"
+  ],
+  "captured_at": "2026-10-07T22:25:22.286Z",
+  "parameters": {
+    "appliance_id": "cd6e90fd-0d02-467c-9c9e-fd79e6a4872a"
+  },
+  "query": {
+    "public_key": "not a public key"
+  },
+  "expected_status": 400,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

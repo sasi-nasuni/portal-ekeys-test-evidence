@@ -1,0 +1,39 @@
+{
+  "id": 20,
+  "name": "download_valid_multiline_gate_below",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; multiline query preservation (native single-line input removes line breaks); response unmodified",
+  "status": 405,
+  "body": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/cf449e7f-678f-4a1e-8aea-6d02874154df/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh%2BlDfr%2Bn1EU5GwNG47TfyAsxP42%0Ark4K%2Brw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg%0AmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd%0AOS4ywa8bjal%2FNp9MvqW7pA%2FaKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W%0A8EjvaOkPBISzYSCyie%2FLnS4P7eY38bdW5Emycaw%2FmJUcJhql%2B9205qQ3t%2FRmlnML%0AsiJPTKBywoUGMSKq9vpQKaX%2Fczc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt%0AcG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA%0AAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA%2FgBoC%0AsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs%2BbZ51Hzw5rtZ%2BbmiN7UYBf5k5UR2Bvk%0AXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G%2FZZoXFAyP7e%2BseE8uLOgEL%0AUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC%2FIVwMo6jeuRaj3N1vml2HIDo0sOUVri%0A%2FUJDW%2Br9xKfW6gEPYBmaTai5Z3PU%2FEvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf%0A5CbHFGPUXso%2BfAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS%0AEOydbPsfV4i1Bg%3D%3D%0A%3DnjkN%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/020_download_valid_multiline_gate_below/download_valid_multiline_gate_below_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/020_download_valid_multiline_gate_below/download_valid_multiline_gate_below_response.png"
+  ],
+  "captured_at": "2026-10-07T22:27:37.821Z",
+  "parameters": {
+    "appliance_id": "cf449e7f-678f-4a1e-8aea-6d02874154df"
+  },
+  "query": {
+    "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGxxgBCADitIBRUWFoRSsVyWUkGvnpEh+lDfr+n1EU5GwNG47TfyAsxP42\nrk4K+rw5MRstJwnd9yBIeY7WBS88xAf5RYCCpJsqFjGQs1xwrmT4jZ5oJoJMT0gg\nmPxI3IuiK3V15Lb9eFjaDFVQEkYBaQASR0zHqK2sRPhOWsXqRWTv7TkKfxOlgOkd\nOS4ywa8bjal/Np9MvqW7pA/aKMrXsAZ2KteerNRxvovqVrsJ69BfnPdRAanPu14W\n8EjvaOkPBISzYSCyie/LnS4P7eY38bdW5Emycaw/mJUcJhql+9205qQ3t/RmlnML\nsiJPTKBywoUGMSKq9vpQKaX/czc1ucsnMkSxABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxscYAhsMAgsJAhUIAhYA\nAh4BFiEEHqsxGBTi6oTl7OYKRyThLiZ8ZpoACgkQRyThLiZ8ZprstwgAnJA/gBoC\nsasU31d8gcNfaFbeoiP7eJIKX6fdm8BKs+bZ51Hzw5rtZ+bmiN7UYBf5k5UR2Bvk\nXWqWbKDVqdOx9TC4DSvwWczD2OYM2Uu0agxpqt334G/ZZoXFAyP7e+seE8uLOgEL\nUh2zZcd4PqNKctmbtG1jJoBjgd7HqKgUC/IVwMo6jeuRaj3N1vml2HIDo0sOUVri\n/UJDW+r9xKfW6gEPYBmaTai5Z3PU/EvlTZNNdxr9VmclacpZf6fnJLfRuRbolIwf\n5CbHFGPUXso+fAxh7sgs27VaUMujHi7FMYel3zR8wIvhj1fT4H9uAewWQ3nRudNS\nEOydbPsfV4i1Bg==\n=njkN\n-----END PGP PUBLIC KEY BLOCK-----\n"
+  },
+  "expected_status": 405,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "note": "Native Swagger Execute with explicit query interceptor to preserve valid armored public-key newlines removed by HTML single-line input; response unmodified"
+}

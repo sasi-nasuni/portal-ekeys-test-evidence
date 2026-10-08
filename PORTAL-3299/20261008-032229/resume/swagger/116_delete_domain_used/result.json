@@ -1,0 +1,35 @@
+{
+  "id": 116,
+  "name": "delete_domain_used",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 409,
+  "body": {
+    "message": "Cannot delete encryption key with ID 30fb3517-47d1-4f10-9b54-7f52e06dfaa0 as it is still in use",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/30fb3517-47d1-4f10-9b54-7f52e06dfaa0",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/116_delete_domain_used/delete_domain_used_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/116_delete_domain_used/delete_domain_used_response.png"
+  ],
+  "captured_at": "2026-10-07T22:22:46.199Z",
+  "parameters": {
+    "key_id": "30fb3517-47d1-4f10-9b54-7f52e06dfaa0"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

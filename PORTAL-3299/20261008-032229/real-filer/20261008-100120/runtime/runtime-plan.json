@@ -1,0 +1,169 @@
+{
+  "status": "prepared only; no queue mutation or runtime start performed",
+  "review_scope": "Read-only source review, host import/AWS discovery preflight, 46 pure guard checks, launcher integration checks. Mutation paths prepared but not executed. EventHub requires validated active policy absent until target approval.",
+  "repo": "[APPLICATION_WORKTREE]",
+  "evidence_directory": "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime",
+  "profile": "portal-dev",
+  "account_filter": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "owner": "portal3299-20261008-100120",
+  "queues": {
+    "region": "us-east-2",
+    "owning_aws_account": "851725431039",
+    "names": {
+      "fifo": "portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "nonfifo": "portal-dev-portal3299-20261008-100120-nbn-queue"
+    },
+    "existing": false,
+    "attributes": {
+      "VisibilityTimeout": 300,
+      "MessageRetentionPeriod": 1209600,
+      "fifo_ContentBasedDeduplication": true
+    }
+  },
+  "subscriptions": {
+    "count": 4,
+    "topics": {
+      "fifo": [
+        "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo",
+        "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo"
+      ],
+      "nonfifo": [
+        "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo",
+        "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo"
+      ]
+    },
+    "RawMessageDelivery": true,
+    "FilterPolicy": {
+      "account_guid": [
+        "f902fd2c-796c-403b-837b-89d5625319a9"
+      ]
+    },
+    "FilterPolicyScope": "MessageAttributes"
+  },
+  "api": {
+    "url": "http://127.0.0.1:18000",
+    "app": "portal.webapi.app:app",
+    "same_routes_auth_di_and_fifo_transport": true,
+    "lifespan": "off",
+    "reload": false,
+    "workers": 1,
+    "why_lifespan_off": "Stock lifespan starts outbound MQTT and writes MQTT certificate/private-key temp files. All six tested encryption commands are FIFO. No startup MQTT or secret files are required.",
+    "docs_local_host": "DEV_MODE=true but direct Uvicorn uses reload=false",
+    "existing_api_unchanged": "http://127.0.0.1:8000"
+  },
+  "local_data": {
+    "postgres": "127.0.0.1:5432",
+    "redis": "127.0.0.1:6379",
+    "db_auto_create": false,
+    "schema_migrations": false,
+    "secrets": "Read required existing container config in memory and SDK SSO in memory; no env files or token files written."
+  },
+  "eventhub": {
+    "launch_enabled": false,
+    "reason": "Guard implemented; no valid active target/task policy exists and no runtime start authorized yet.",
+    "required_guard": "Decode each received real SQS envelope without processor execution, require exact approved account + target origin/serial + a registered test task trace_id + explicit allowed response content type; forward the original unchanged SQS record to production handler. Reject/hold everything else in this dedicated test queue. Never synthesize responses.",
+    "why_not_sns_only": "The stock filter supports account_guid message attributes; task trace and target origin live inside encrypted payloads, so stock account filtering alone cannot enforce this.",
+    "remaining_decisions": [
+      "User-confirmed filer target/build",
+      "Passphrase-test scope",
+      "Create bounded current policy and register each actual returned task ID"
+    ],
+    "planned_core": "Dedicated response_worker screens real messages using production codec, then invokes unchanged production async handler. Only the synchronous wrapper bridge is omitted to keep one event loop.",
+    "decryption_secret_identifiers": [
+      "nbn/portal/dvista1/keys-active",
+      "nbn/portal/dvista1/keys-backup"
+    ],
+    "telemetry_disabled": true,
+    "event_dump_bucket_disabled": true,
+    "no_retry": false,
+    "implementation_prepared": true,
+    "active_policy_present": false,
+    "outbound_guards": [
+      "MessageClient.send_message",
+      "NbnApiClient.send_fifo_message",
+      "NbnMqttClient.send_to_target",
+      "NbnMqttClient.start"
+    ],
+    "response_policy": "response-policy.json; example is deliberately expired",
+    "race_handling": "Unregistered trace held on the private queue for up to 300 seconds while caller atomically registers returned task UUID; registered processing failures remain queued for retry.",
+    "outbound_guard_effect": "Only dedicated response-worker process is patched to forbid outbound commands. API command transport and production handler implementation remain unchanged."
+  },
+  "commands_after_coordination": {
+    "read_only_preflight": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "preflight"
+    ],
+    "create_exact_resources": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "create-queues",
+      "--execute"
+    ],
+    "start_api_foreground": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "api",
+      "--execute"
+    ],
+    "stop_only_recorded_api": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "stop-api",
+      "--execute"
+    ],
+    "stop_only_recorded_eventhub": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "stop-eventhub",
+      "--execute"
+    ],
+    "cleanup_exact_resources": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "cleanup-queues",
+      "--execute"
+    ],
+    "start_guarded_eventhub_foreground": [
+      "[APPLICATION_WORKTREE]/backend/portal-webapi/.venv/bin/python",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+      "eventhub",
+      "--execute"
+    ]
+  },
+  "cleanup": {
+    "manifest": "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/resources.json",
+    "scope": "Only created queue URL/ARN/name/tag matches and journaled subscription ARN/topic/endpoint/account filter matches. Stop own workers first; no queue purge or shared-resource changes.",
+    "partial_creation": "Manifest persists after every successful queue/subscription operation; if a network error leaves creation outcome ambiguous, reconcile exact named queue/endpoint/filter read-only before cleanup.",
+    "post_delete": "Queue deletion is asynchronous; independently verify exact queue absence and subscription absence after propagation.",
+    "db_cache": "Real-filer fixture orchestration must separately journal/clean exact local fixture account rows and cache keys."
+  },
+  "preflight_result": {
+    "imports": {
+      "portal.webapi.app": {
+        "ok": true
+      },
+      "events_hub_stack.handler": {
+        "ok": true
+      },
+      "ok": true
+    },
+    "postgres_redis_reachable": true,
+    "port18000_free": true,
+    "aws_valid": true,
+    "four_topics_resolved": true,
+    "dedicated_names_absent": true
+  },
+  "limitations": [
+    "No CreateQueue, Subscribe, DeleteQueue or Unsubscribe permission was proved by mutation. Read-only discovery succeeded.",
+    "No API request has yet proven dispatch with fresh profile; imports and read permissions alone are not E2E proof.",
+    "SNS filter creation/changes may need propagation time before response testing.",
+    "No EventHub runtime until active target policy and explicit service-start approval; all assertions here are preparation/static evidence."
+  ],
+  "repo_changes": false,
+  "existing_container_or_default_credentials_changes": false,
+  "code_sha256": {
+    "launcher.py": "d92f55f7fa710a1a2e369dbadf83e10ad99beb36248b1a41f079a4fd0c567a4f",
+    "response_worker.py": "2204e91d3a8a8b54ff3a00e1d62226e74c36a1530c08db2e4aa35c958c4e5b8e"
+  }
+}

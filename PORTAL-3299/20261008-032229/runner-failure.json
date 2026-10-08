@@ -1,0 +1,4 @@
+{
+  "type": "RuntimeError",
+  "message": "Three consecutive Swagger transport/UI failures; stopping for harness diagnosis"
+}

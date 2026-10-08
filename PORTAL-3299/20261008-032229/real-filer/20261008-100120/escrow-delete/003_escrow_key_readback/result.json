@@ -1,0 +1,59 @@
+{
+  "id": 3,
+  "name": "escrow_key_readback",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+        "name": "PORTAL3299-REAL-20261008-100120-escrow",
+        "fingerprint": "3F71ED8A2CC242F09A2308D02246E2E9960AC12F",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:18000/encryption-keys?search=3F71ED8A2CC242F09A2308D02246E2E9960AC12F&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_parameters_02.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_response_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_response_02.png"
+  ],
+  "captured_at": "2026-10-08T06:27:33.020Z",
+  "expected_status": 200,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

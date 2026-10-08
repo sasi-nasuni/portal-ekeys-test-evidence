@@ -1,0 +1,50 @@
+{
+  "id": 33,
+  "name": "invalid_query_page_0",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "greater_than_equal",
+        "loc": [
+          "query",
+          "page"
+        ],
+        "msg": "Input should be greater than or equal to 1",
+        "input": "0",
+        "ctx": {
+          "ge": 1
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=50&page=0",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/033_invalid_query_page_0/invalid_query_page_0_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/033_invalid_query_page_0/invalid_query_page_0_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/033_invalid_query_page_0/invalid_query_page_0_response.png"
+  ],
+  "captured_at": "2026-10-07T22:16:55.940Z",
+  "parameters": {},
+  "query": {
+    "page": 0
+  },
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

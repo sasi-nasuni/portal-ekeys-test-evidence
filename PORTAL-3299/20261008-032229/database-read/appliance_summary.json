@@ -1,0 +1,74 @@
+{
+  "title": "PostgreSQL query evidence: appliance summary",
+  "source": "Actual SQL query against the running local PostgreSQL database; independent evidence rendering, not pgAdmin UI",
+  "snapshot": {
+    "snapshot_time": "2026-10-07 22:03:01.531403+00:00",
+    "transaction_read_only": "on",
+    "transaction_isolation": "repeatable read"
+  },
+  "fixture_accounts": [
+    {
+      "id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    }
+  ],
+  "parameters": {
+    "account_ids": [
+      "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128"
+    ]
+  },
+  "sql": "SELECT e.account_id::text, e.id::text AS appliance_id, e.name,\n       e.is_stub AS appliance_is_stub, e.has_escrow_passphrase,\n       e.backup_key_id::text, backup.name AS backup_key_name,\n       backup.fingerprint AS backup_key_fingerprint,\n       backup.is_escrowed AS backup_key_is_escrowed,\n       count(k.id) FILTER (WHERE NOT k.is_stub) AS total,\n       count(k.id) FILTER (WHERE NOT k.is_stub AND k.origin = 'generated') AS generated_count,\n       count(k.id) FILTER (WHERE NOT k.is_stub AND k.is_escrowed) AS escrowed,\n       count(k.id) FILTER (WHERE NOT k.is_stub AND NOT k.is_escrowed) AS not_escrowed\nFROM edges_v2 AS e\nLEFT JOIN encryption_keys AS k ON k.appliance_id = e.id AND k.account_id = e.account_id\nLEFT JOIN encryption_keys AS backup ON backup.id = e.backup_key_id AND backup.account_id = e.account_id\nWHERE e.account_id = ANY(%s::uuid[])\nGROUP BY e.account_id, e.id, e.name, e.is_stub, e.has_escrow_passphrase,\n         e.backup_key_id, backup.name, backup.fingerprint, backup.is_escrowed\nORDER BY e.account_id, e.name, e.id",
+  "row_count": 3,
+  "rows": [
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+      "name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+      "appliance_is_stub": false,
+      "has_escrow_passphrase": true,
+      "backup_key_id": "c9154b06-abe0-40fa-940d-c8dbcd70ca73",
+      "backup_key_name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+      "backup_key_fingerprint": "DC21A6C019AE4FAE83EEB15A0F976F6B00000006",
+      "backup_key_is_escrowed": true,
+      "total": 3,
+      "generated_count": 3,
+      "escrowed": 2,
+      "not_escrowed": 1
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+      "name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+      "appliance_is_stub": false,
+      "has_escrow_passphrase": true,
+      "backup_key_id": "061636ac-75df-4a47-a3c3-7b1bd61fcb0d",
+      "backup_key_name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+      "backup_key_fingerprint": "1D64D9C43880486E83EFF712B4E6489300000007",
+      "backup_key_is_escrowed": false,
+      "total": 3,
+      "generated_count": 0,
+      "escrowed": 1,
+      "not_escrowed": 2
+    },
+    {
+      "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "appliance_id": "d5a3e473-e1ba-4638-8b3f-d5a481d4ee75",
+      "name": "PORTAL3299TEST-20261008-032229-B-appliance-foreign",
+      "appliance_is_stub": false,
+      "has_escrow_passphrase": true,
+      "backup_key_id": null,
+      "backup_key_name": null,
+      "backup_key_fingerprint": null,
+      "backup_key_is_escrowed": null,
+      "total": 1,
+      "generated_count": 1,
+      "escrowed": 1,
+      "not_escrowed": 0
+    }
+  ]
+}

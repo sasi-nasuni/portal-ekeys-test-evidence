@@ -1,0 +1,43 @@
+{
+  "id": 2,
+  "name": "real_appliance_summary",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 200,
+  "body": {
+    "total": 60,
+    "generated_count": 2,
+    "escrowed": 6,
+    "not_escrowed": 54,
+    "backup_key": {
+      "id": "3eb90535-298b-441a-bfe6-e6f24b333eb4",
+      "name": "E-Keys-EdgeConsole-D9C531CA",
+      "fingerprint": "94C67F945AB131418B070BB8BA740113340EB9F2",
+      "is_escrowed": false
+    },
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": []
+  },
+  "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/summary",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/002_real_appliance_summary/real_appliance_summary_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/002_real_appliance_summary/real_appliance_summary_response.png"
+  ],
+  "captured_at": "2026-10-08T06:37:54.402Z",
+  "expected_status": 200,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

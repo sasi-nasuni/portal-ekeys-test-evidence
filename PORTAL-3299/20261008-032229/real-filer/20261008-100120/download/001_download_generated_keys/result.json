@@ -1,0 +1,34 @@
+{
+  "id": 1,
+  "name": "download_generated_keys",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "transport_note": "Swagger requestInterceptor: multiline query preservation (native single-line input removes line breaks); response unmodified",
+  "status": 202,
+  "body": {
+    "id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+    "state": "in_progress",
+    "status_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/116bf1a8-f17b-4a77-855c-3c7d10096903"
+  },
+  "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrHNWcBCAC40g2o%2F3RJ5G5P67k%2FP16aQVk8SwYdGzCrPPvkDx9OorbBePzl%0Aiv0VazB8Xt%2BLdZh3CjZNUmvWxuNRI7jsKgY7uHzTHxvcMVShG%2FbPtQr5I3jg9O3t%0Ajd7g6KYp4R10u0kBxn9NKnVOj%2BF9PvNZtS%2BJpwNqmrzCxvNTNrDMiZIlSmMRq760%0AeyyzRMEeSswGInruy%2FOc7LNBlGqWzGcNSF%2FwSpS681boQWqzqtSO3eywXjSrpto6%0AxXFG9Wb7NhvGhq%2FVMNC%2FBqivis3WG48O%2B9xBpdsHpduoVVFv89IfZsuiMMRgRxAo%0Aq5b9qCUNdyBUT7NpmhUY5f%2Bt3JRLm0DRFMlNABEBAAHNH1BPUlRBTDMyOTktUkVB%0ATC0yMDI2MTAwOC0xMDAxMjDCwIIEEwEIACwFAmrHNWcCGw8CCwkCFQgCFgACHgEW%0AIQRodIlmLo1y2fIy%2BaJqroyJj3jkgwAKCRBqroyJj3jkg9MzB%2F9Npun1h%2FgjtAj0%0AVBu6rQYczbzSezLitDtg9wVsvMnhVzaPVt2HPd8qN6gLygGk9XlZ%2Be9yctQG4wGq%0AQtxPn7vuLm16yl8SWJlZgQ63y1mG0z7YFnxrfmp0DEJExTQ3MbFpE6QPuh0VbDH2%0A1UC1dK5dcAsCVIGMufGMU2biU2oZq%2BUqgTjLkUUp0uQTcWSV3X6%2F8Baz0Xu1xYs0%0AXTNviuw0dggl5t6RTIDQ6jsuNsAlewvs%2Fe4wbMBgTEyeXHUXzYnb9b7csDuRr5WN%0ASuxSpVsmMoVivzHYcjxAreRaKPvQoALzgwvUYozHh0ktmOS5m2uinxxEXkepIzJH%0A8XFK0%2BVm%0A%3DiGwk%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/download/001_download_generated_keys/download_generated_keys_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/download/001_download_generated_keys/download_generated_keys_response.png"
+  ],
+  "captured_at": "2026-10-08T06:17:39.516Z",
+  "expected_status": 202,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

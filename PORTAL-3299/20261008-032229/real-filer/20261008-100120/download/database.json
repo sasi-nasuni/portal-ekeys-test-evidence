@@ -1,0 +1,41 @@
+{
+  "task": {
+    "id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "edge",
+    "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "action": "download_encryption_keys",
+    "state": "completed",
+    "status": null,
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+    "created_at": "2026-10-08 06:17:25.736635+00:00",
+    "last_updated_at": "2026-10-08 06:18:02.107363+00:00",
+    "user_acknowledged_at": null,
+    "reason": null
+  },
+  "steps": [
+    {
+      "name": "download_encryption_keys",
+      "state": "completed",
+      "created_at": "2026-10-08 06:17:25.736635+00:00",
+      "updated_at": "2026-10-08 06:18:02.107363+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "bd4bba76-06a1-46a9-98cf-2fb4bd215c48",
+      "task_id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "sent_at": "2026-10-08 06:17:25.755616+00:00",
+      "received_at": null,
+      "acked_at": null
+    },
+    {
+      "id": "32060202-f67a-4577-8842-4117fd659f9a",
+      "task_id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "sent_at": "2026-10-08 06:17:40.786385+00:00",
+      "received_at": "2026-10-08 06:18:02.093591+00:00",
+      "acked_at": null
+    }
+  ]
+}

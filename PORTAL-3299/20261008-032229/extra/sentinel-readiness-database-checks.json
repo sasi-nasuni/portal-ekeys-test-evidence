@@ -1,0 +1,182 @@
+[
+  {
+    "build_fixture": "none",
+    "operation": "enable",
+    "seeded_task": "47aaf52e-64b7-4f1a-b108-e607221448e0",
+    "action": "enable_volume_encryption_keys",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "370457ce-5d32-4d13-91f8-35408b842e90",
+    "executor_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "none",
+    "operation": "disable",
+    "seeded_task": "5b987ab9-7dea-45c9-9cb8-445a8b7b7142",
+    "action": "disable_volume_encryption_keys",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "370457ce-5d32-4d13-91f8-35408b842e90",
+    "executor_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "none",
+    "operation": "passphrase",
+    "seeded_task": "f8f8fb18-8a76-4ea7-b4cf-fe271c026ad6",
+    "action": "update_escrow_passphrase",
+    "resource": "edge",
+    "resource_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "executor_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "none",
+    "operation": "download",
+    "seeded_task": "35b6d002-358b-4493-acb9-87b076e81a3b",
+    "action": "download_encryption_keys",
+    "resource": "edge",
+    "resource_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "executor_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "none",
+    "operation": "delete",
+    "seeded_task": "95f60389-058c-4823-88a8-6434db4cbeb1",
+    "action": "delete_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "179a62ca-2177-43d3-8bf5-b437c849a8e0",
+    "executor_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "none",
+    "operation": "escrow",
+    "seeded_task": "a8f1c017-7585-4f25-81db-f48ab1163a2d",
+    "action": "escrow_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "e4da94cd-2ca1-479f-bae3-aef6d1539905",
+    "executor_id": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "master",
+    "operation": "enable",
+    "seeded_task": "96484e84-f612-47e8-bde3-8df0a0584128",
+    "action": "enable_volume_encryption_keys",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "ecb5c867-640f-49d6-a842-c8cf8bbdf4bc",
+    "executor_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "master",
+    "operation": "disable",
+    "seeded_task": "2bab0061-998e-46ea-b09d-b7ae5a3e615b",
+    "action": "disable_volume_encryption_keys",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "ecb5c867-640f-49d6-a842-c8cf8bbdf4bc",
+    "executor_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "master",
+    "operation": "passphrase",
+    "seeded_task": "c1315089-8dcd-46eb-8a2f-e85dded13715",
+    "action": "update_escrow_passphrase",
+    "resource": "edge",
+    "resource_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "executor_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "master",
+    "operation": "download",
+    "seeded_task": "f1fb73e8-508c-413a-ab00-fb0dee9dd2f4",
+    "action": "download_encryption_keys",
+    "resource": "edge",
+    "resource_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "executor_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "master",
+    "operation": "delete",
+    "seeded_task": "09751ede-add5-4f81-99b6-d799888c45ff",
+    "action": "delete_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "76707ee5-3d27-4b3b-b2a8-485df877bce3",
+    "executor_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "master",
+    "operation": "escrow",
+    "seeded_task": "d08c5021-df75-4fbb-92a1-ce69f4066338",
+    "action": "escrow_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "fcd7c253-a6e2-4da6-a532-56e7002d9738",
+    "executor_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "unknown",
+    "operation": "enable",
+    "seeded_task": "0b3cb6fc-274c-45c1-84ed-4be178d39c88",
+    "action": "enable_volume_encryption_keys",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "133e0fe3-4096-45c9-8d05-8cc676c4eb52",
+    "executor_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "unknown",
+    "operation": "disable",
+    "seeded_task": "981508ce-e667-4cd4-acee-682923967760",
+    "action": "disable_volume_encryption_keys",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "133e0fe3-4096-45c9-8d05-8cc676c4eb52",
+    "executor_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "unknown",
+    "operation": "passphrase",
+    "seeded_task": "844bce90-3e45-46e6-9d74-939f03c85e7e",
+    "action": "update_escrow_passphrase",
+    "resource": "edge",
+    "resource_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "executor_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "unknown",
+    "operation": "download",
+    "seeded_task": "af02f996-1b5f-455b-a405-6e5bebb56a67",
+    "action": "download_encryption_keys",
+    "resource": "edge",
+    "resource_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "executor_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "unknown",
+    "operation": "delete",
+    "seeded_task": "2e065945-79e9-48dd-86a4-9b2783a9413f",
+    "action": "delete_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "f40aa416-1047-4c4c-add9-94de6ca4305d",
+    "executor_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "unchanged": true
+  },
+  {
+    "build_fixture": "unknown",
+    "operation": "escrow",
+    "seeded_task": "bba4f6a3-0030-4735-b7a3-cfb351e10f99",
+    "action": "escrow_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "926d8243-ca9c-4018-b776-8363857e7067",
+    "executor_id": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-10-08T07:06:59.130169+00:00",
+  "head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "write_flows_passed": [
+    "download",
+    "set escrow passphrase",
+    "bulk escrow",
+    "delete key",
+    "disable volume key",
+    "enable volume key"
+  ],
+  "swagger_requests_passed": 24,
+  "swagger_requests_failed": 0,
+  "completed_real_tasks": 9,
+  "mutation_audit_entries": 8,
+  "local_filer_runtime_cleanup_verified": true,
+  "minimum_version_restored": "10.6",
+  "original_passphrase_restored": true,
+  "source_worktree_preserved": true,
+  "controlled_preconditions": [
+    "Temporarily lowered source minimum from 10.6 to 10.5 for the approved POC filer; now restored",
+    "Local account/user/permissions and license/feature cache; not real IdP or entitlement validation",
+    "Readiness timestamp from a successful SSH probe; normal heartbeat ingestion not validated",
+    "Genuine filer key/volume metadata bootstrapped into local PostgreSQL; legacy routes used only for fixture setup/volume cleanup",
+    "Temporary API with lifespan disabled and guarded SQS worker invoking production response handlers; no synthetic completion events"
+  ],
+  "limitations": [
+    "Public download status/content endpoint remains unimplemented (PORTAL-3190); verified generation and Redis ciphertext metadata only",
+    "Independent NOC volume lookup returned 401; external NOC record removal was not independently confirmed",
+    "Current filer inventory/private keyrings and current escrow refresh verified; historical NOC escrow activity or retained storage versions were not erased",
+    "No production-scale query/load testing; no new CI run or evidence publication performed"
+  ],
+  "previous_results": {
+    "swagger_scenarios": 284,
+    "automated_tests": 782,
+    "postgres_tests": 201,
+    "rerun_in_this_continuation": false
+  },
+  "setup_recoveries": [
+    "Initial disposable key rejected because it lacked an encryption subkey; rejected fingerprint verified absent",
+    "Initial volume creation rejected because legacy selector expects key name rather than fingerprint; no volume created by that attempt",
+    "Runtime cleanup first check rejected expected SIGTERM exit -15; original result retained and actual absence verified"
+  ]
+}

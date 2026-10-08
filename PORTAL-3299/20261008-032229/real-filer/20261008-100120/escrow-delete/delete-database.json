@@ -1,0 +1,41 @@
+{
+  "task": {
+    "id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "encryption_key",
+    "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+    "action": "delete_encryption_key",
+    "state": "completed",
+    "status": null,
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+    "created_at": "2026-10-08 06:27:41.203257+00:00",
+    "last_updated_at": "2026-10-08 06:27:46.183695+00:00",
+    "user_acknowledged_at": null,
+    "reason": null
+  },
+  "steps": [
+    {
+      "name": "delete_encryption_key",
+      "state": "completed",
+      "created_at": "2026-10-08 06:27:41.203257+00:00",
+      "updated_at": "2026-10-08 06:27:46.183695+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "7d8b7d93-9c34-44c8-a545-15c29c49b6f4",
+      "task_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "sent_at": "2026-10-08 06:27:41.210017+00:00",
+      "received_at": null,
+      "acked_at": null
+    },
+    {
+      "id": "ca152074-558e-4a43-938a-fc7553141989",
+      "task_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "sent_at": "2026-10-08 06:27:44.296001+00:00",
+      "received_at": "2026-10-08 06:27:46.043197+00:00",
+      "acked_at": null
+    }
+  ]
+}

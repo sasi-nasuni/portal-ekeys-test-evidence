@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "rings": {
+    "secring-shared.gpg": {
+      "exit_code": 0,
+      "fixture_fingerprints_remaining": []
+    },
+    "secring-generated.gpg": {
+      "exit_code": 0,
+      "fixture_fingerprints_remaining": []
+    },
+    "secring-noescrow.gpg": {
+      "exit_code": 0,
+      "fixture_fingerprints_remaining": []
+    },
+    "secring-escrow.gpg": {
+      "exit_code": 0,
+      "fixture_fingerprints_remaining": []
+    }
+  },
+  "private_key_material_read": false
+}

@@ -1,0 +1,52 @@
+{
+  "id": 6,
+  "name": "enable_volume_readback",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 200,
+  "body": [
+    {
+      "id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+      "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+      "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+      "algorithm": "rsa",
+      "length": 2048,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "102ab01b-23f0-477d-8b70-178eda26795a",
+      "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+      "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+      "algorithm": "rsa",
+      "length": 2048,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    }
+  ],
+  "request_url": "http://127.0.0.1:18000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1/encryption-keys",
+  "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/006_enable_volume_readback/enable_volume_readback_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/006_enable_volume_readback/enable_volume_readback_response.png"
+  ],
+  "captured_at": "2026-10-08T06:36:04.591Z",
+  "expected_status": 200,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

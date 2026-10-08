@@ -1,0 +1,41 @@
+{
+  "database": {
+    "A": 1,
+    "B": 1
+  },
+  "cache": [
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "keys_deleted": 2,
+      "remaining_tenant_cache_keys": 0,
+      "feature_flag_cache_exists": false,
+      "verified": true
+    },
+    {
+      "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "keys_deleted": 2,
+      "remaining_tenant_cache_keys": 0,
+      "feature_flag_cache_exists": false,
+      "verified": true
+    }
+  ],
+  "remaining_fixture_rows": {
+    "accounts": 0,
+    "users": 0,
+    "roles": 0,
+    "role_permissions": 0,
+    "user_role": 0,
+    "edges_v2": 0,
+    "volumes_v2": 0,
+    "volume_connections": 0,
+    "encryption_keys": 0,
+    "volume_encryption_key_associations": 0,
+    "tasks": 0,
+    "task_steps": 0,
+    "messages": 0
+  },
+  "database_verified": true,
+  "browser": {
+    "error_type": "TimeoutExpired"
+  }
+}

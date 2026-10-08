@@ -1,0 +1,41 @@
+{
+  "task": {
+    "id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+    "action": "disable_volume_encryption_keys",
+    "state": "completed",
+    "status": null,
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+    "created_at": "2026-10-08 06:34:54.702342+00:00",
+    "last_updated_at": "2026-10-08 06:35:05.436819+00:00",
+    "user_acknowledged_at": null,
+    "reason": null
+  },
+  "steps": [
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "completed",
+      "created_at": "2026-10-08 06:34:54.702342+00:00",
+      "updated_at": "2026-10-08 06:35:05.436819+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "db5d54d1-27ce-45b7-a067-a31c52c8b4ce",
+      "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "sent_at": "2026-10-08 06:34:54.712648+00:00",
+      "received_at": null,
+      "acked_at": null
+    },
+    {
+      "id": "6f03fdd2-afa4-4fe9-af85-62f2dac8bcfa",
+      "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "sent_at": "2026-10-08 06:35:02.298114+00:00",
+      "received_at": "2026-10-08 06:35:05.394869+00:00",
+      "acked_at": null
+    }
+  ]
+}

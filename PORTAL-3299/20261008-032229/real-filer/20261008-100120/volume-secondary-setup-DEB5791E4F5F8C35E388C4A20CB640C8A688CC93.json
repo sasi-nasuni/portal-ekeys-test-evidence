@@ -1,0 +1,14 @@
+{
+  "matching_keys": 1,
+  "result": "success",
+  "metadata": {
+    "user_provided": true,
+    "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+    "length": "2048",
+    "backup_key": false,
+    "algo": "RSA",
+    "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+    "can_escrow": true,
+    "revoked": false
+  }
+}

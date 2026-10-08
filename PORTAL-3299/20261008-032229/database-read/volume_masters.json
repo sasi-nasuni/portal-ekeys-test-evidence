@@ -1,0 +1,95 @@
+{
+  "title": "PostgreSQL query evidence: volume masters",
+  "source": "Actual SQL query against the running local PostgreSQL database; independent evidence rendering, not pgAdmin UI",
+  "snapshot": {
+    "snapshot_time": "2026-10-07 22:03:01.531403+00:00",
+    "transaction_read_only": "on",
+    "transaction_isolation": "repeatable read"
+  },
+  "fixture_accounts": [
+    {
+      "id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    }
+  ],
+  "parameters": {
+    "account_ids": [
+      "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128"
+    ]
+  },
+  "sql": "SELECT v.account_id::text, v.id::text AS volume_row_id, v.volume_id,\n       v.name AS volume_name, v.is_stub AS volume_is_stub,\n       c.id::text AS connection_id, c.edge_id::text AS appliance_id,\n       c.is_master, e.name AS appliance_name\nFROM volumes_v2 AS v\nLEFT JOIN volume_connections AS c ON c.volume_id = v.volume_id AND c.account_id = v.account_id\nLEFT JOIN edges_v2 AS e ON e.id = c.edge_id AND e.account_id = v.account_id\nWHERE v.account_id = ANY(%s::uuid[])\nORDER BY v.account_id, v.name, c.id",
+  "row_count": 6,
+  "rows": [
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "volume_row_id": "5cd594f6-182a-4688-9900-ffa09312b9b0",
+      "volume_id": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+      "volume_is_stub": false,
+      "connection_id": "4f5aa160-1ab6-4d7a-a030-41b76a69b455",
+      "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+      "is_master": true,
+      "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east"
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "volume_row_id": "6f53ccf9-41cb-47db-b4eb-595e686e1911",
+      "volume_id": "d9181770-ed07-4cd6-af6a-705b9a79e801_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-empty",
+      "volume_is_stub": false,
+      "connection_id": null,
+      "appliance_id": null,
+      "is_master": null,
+      "appliance_name": null
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "volume_row_id": "22b39e02-54f8-4077-b77f-2325b3fc049e",
+      "volume_id": "eb6df8cb-e145-4dd5-b04b-5e385de67586_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-MiXeD 100%_Path\\Name",
+      "volume_is_stub": false,
+      "connection_id": "73f36c8b-8109-4502-b479-6bd2d6182b13",
+      "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+      "is_master": true,
+      "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east"
+    },
+    {
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "volume_row_id": "25455107-d142-4814-b683-dbf02950f274",
+      "volume_id": "4b846469-b9e9-4368-8283-fb0a938be25e_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+      "volume_is_stub": false,
+      "connection_id": "672d10af-39f3-4ab5-914e-7c93d35ceb0a",
+      "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+      "is_master": true,
+      "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west"
+    },
+    {
+      "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "volume_row_id": "a8c51375-174a-4fd1-89b5-8c48d9611714",
+      "volume_id": "662d27c6-2ea8-47f0-99ff-18c63208b4c2_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-B-empty",
+      "volume_is_stub": false,
+      "connection_id": null,
+      "appliance_id": null,
+      "is_master": null,
+      "appliance_name": null
+    },
+    {
+      "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "volume_row_id": "d190d097-d53c-4328-9d60-8c42a599a2d4",
+      "volume_id": "3dd83c89-e327-4394-8db4-5d45af23a1d2_0",
+      "volume_name": "PORTAL3299TEST-20261008-032229-B-FOREIGN-VOLUME",
+      "volume_is_stub": false,
+      "connection_id": "5b15091e-0bd7-4e00-9f1e-38383ba58c5d",
+      "appliance_id": "d5a3e473-e1ba-4638-8b3f-d5a481d4ee75",
+      "is_master": true,
+      "appliance_name": "PORTAL3299TEST-20261008-032229-B-appliance-foreign"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "matching_keys": 1,
+  "result": "success",
+  "metadata": {
+    "user_provided": true,
+    "name": "PORTAL3299-REAL-20261008-100120-escrow",
+    "length": "2048",
+    "backup_key": false,
+    "algo": "RSA",
+    "fingerprint": "3F71ED8A2CC242F09A2308D02246E2E9960AC12F",
+    "can_escrow": true,
+    "revoked": false
+  }
+}

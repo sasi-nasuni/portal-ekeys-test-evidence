@@ -1,0 +1,44 @@
+{
+  "id": 94,
+  "name": "summary_permissions_all_read_no_passphrase",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 200,
+  "body": {
+    "total": 3,
+    "generated_count": 3,
+    "escrowed": 2,
+    "not_escrowed": 1,
+    "backup_key": {
+      "id": "ccf4cf1b-ed4b-4f27-b175-cda24a065133",
+      "name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+      "fingerprint": "2D7DACC01F9A44D4BB4AB24F0272BB0800000006",
+      "is_escrowed": true
+    }
+  },
+  "request_url": "http://localhost:8000/edges/b88cb752-f850-47f2-a4bc-e75908608ef6/encryption-keys/summary",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/094_summary_permissions_all_read_no_passphrase/summary_permissions_all_read_no_passphrase_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/094_summary_permissions_all_read_no_passphrase/summary_permissions_all_read_no_passphrase_response.png"
+  ],
+  "captured_at": "2026-10-07T22:21:17.392Z",
+  "parameters": {
+    "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS"
+}

@@ -1,0 +1,647 @@
+{
+  "keys": [
+    {
+      "user_provided": false,
+      "name": "config-backup-key",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "315A2B36A084945B93772B84AC36F961A0356AFF",
+      "can_escrow": false,
+      "revoked": false
+    },
+    {
+      "user_provided": false,
+      "name": "E-Keys-Test-01",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+      "can_escrow": false,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-Upload-Test-2",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+      "can_escrow": false,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-MsgViewer",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-MsgViewer",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "6C8BFF1D491773407101E2391EE2105F11756D4F",
+      "can_escrow": false,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-E097E395",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+      "can_escrow": false,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-D9C531CA",
+      "length": "3072",
+      "backup_key": true,
+      "algo": "RSA",
+      "fingerprint": "94C67F945AB131418B070BB8BA740113340EB9F2",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-69B2917C",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "BDEA37790138FEC9E00E6D53DF49A281C7371ACC",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-9EE9B79C",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "2D54DAD4926FC85F1D4ACADC1E494F28C9DBDD38",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-A312DA13",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "F907AD264F69586C77982538C1A89BDE45227567",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-CE96162F",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "2FB298E0EE6A9EB91E787C63FB374EA346C8240B",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-A9943D18",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "53F02681AF25DA5CBB5AEB0A0AEA327BE07D8DA7",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-82797E72",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "801B2B814CD62FC979479E851033F31EC4C4DE91",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-20D120B3",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "D42F89C6D6F4F5E28E88246BC2EBD594D709FBBB",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-6217222A",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "83CC013CE960EB1383E6F5A15A1073AFED55D3FA",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-D1FAFBF4",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "0E9B810D41E9E403475FD2940892E65B2F8F067F",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-693D97C9",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "DDFDADF86A898CAD7F88909F7C37A39DD9FAD79C",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-8679694E",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "3CEB261FF87C25FF6D2F387146AF974E195B7A15",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-63E6D744",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-BE527471",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "D84A67BD382F811CD30B156C6F5DC2E99EC18D08",
+      "can_escrow": false,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-461BC8F9",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "3BB5126F86665978EC5CBFEC59A300C1D5820238",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-512DFE79",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "6DB18894303280A18F6402FA50B596C575BEC982",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-5101C732",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "C59047365B28B3D5AB478B27240AB6A0493C459E",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-47E6565F",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "03E447BE8A45B36BAE85D250C109B2B9BEE593BD",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-D7DA8B44",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "ADCE52A97E1BCC087726FA69EB651D53123ACE5E",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-3FDFC1A6",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "6B46F658BDF82A981623309BD787D2F8442A416C",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-B47C1504",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "6652B591DF7D61ED4F31234D363D9CE915877CA9",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-91F49343",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "3558A99FEEE0F8BEEDED20AD5E3156CF2BA84A7C",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-C1B04D48",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "AB9AC59694CE3BB738A7E61335BBED38C9F94041",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-A3BEDE8F",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "2F88491FE24369CD2F3F928D8F91D83E9D82BF13",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-5F527E75",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "E43B0124D99953330C22BB05554DCC356F30F7EB",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-E34BC58F",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "F469E0D5A4E14606C5EE107F2BD6570BE0269F5E",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-91DDFCD9",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "31648A41B3E7D95338C96C735C70AAA863484BD2",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-ACF6F51B",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "073C061DF9500E0C3DF91437450109652C6386BE",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-0EB16D90",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "DC0F22898D6651AA6B26B2884027C2AC98D14A1C",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-583F6A6F",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "459F2541E686BA490604AFB86E041B68B45B3F8B",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-34034624",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "E82861AC7446D24A3F5BFE3ADD2B32CCEB80C1E7",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-D632A8F1",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "705B762FEA6A4BFF40E52BD982D487EFB612C72A",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-EE786D0B",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "CDA788620FE65DA3D3F53B76F96B22FD176A6F34",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-70FF3207",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "187D5620B9D5ED2C00DF5757A2C1A83CE4472B8D",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-E87648E4",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "1EFD8EAB74F844B2B7950C89190851C072886B14",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-E391565E",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "7E28F4139FBC48BF7DB5C58B3D5B4F1C6049D590",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-6126263B",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "C0D8E927C1B9BEE65E9BE486F7789D3352DB2CA4",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-8C547658",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "8441CD0D1652824A65498018ACB39C04DD1899F9",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-0A203180",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "31DBE2FC6DFACD271766AC9AC9324A4D95C9A820",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-A2C818D6",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "8313236FDE901052CF0F566AAA28D925A85B268D",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-9DC20936",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "137FE65FBDEEE6667FCF24B970CD72458DD6AEC2",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-BB20A9AD",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "6AE7F3A06D5AE4F73920F76BA0E1A42D1F667270",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-D5FDB41B",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "1BCA54DDB743660638ACB91342F003853BFBCA69",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-6EC564F2",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "4FA7FF701BB94719204BAC024D1C1CC1A5FA4878",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-3A5AA05C",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "CC3BE76427EAE74A38AD273E9F040530C17E98E4",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-AEF51898",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "150AF149D2D70F71D115D486153A97FEF6902394",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-8BDD0F33",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "15A7C5BBE9C2FFC39F877BF76D86D8841D9B6A0D",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-390FB9AB",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "3E521DA7A562785F2D60C75E082214C5351A6145",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-D020D5F5",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "ED577505F5C161D2B6DEF9EE3888525096E1A419",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-70098E24",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "33BCFE22EA514172B0ED1FAA83BDEC60A6943CA4",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-63EFFB81",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "D28ED3DC039A5AB363417C3846706A26771C05F0",
+      "can_escrow": true,
+      "revoked": false
+    },
+    {
+      "user_provided": true,
+      "name": "E-Keys-EdgeConsole-9C8F1CBD",
+      "length": "3072",
+      "backup_key": false,
+      "algo": "RSA",
+      "fingerprint": "60C3653EDFC36A0908DB80C0103ED212090F3D8E",
+      "can_escrow": true,
+      "revoked": false
+    }
+  ],
+  "observed_at": "2026-10-08T06:16:50.072869Z",
+  "volumes": [
+    {
+      "keys": [
+        {
+          "enabled": true,
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8"
+        },
+        {
+          "enabled": false,
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500"
+        }
+      ],
+      "state": "Active",
+      "guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "local": true,
+      "name": "E-Keys-Test-01"
+    },
+    {
+      "keys": [
+        {
+          "enabled": true,
+          "fingerprint": "F1A58FCB7082B2D45A1452DAE74C6E0239260937"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "9314D71ABAC46F1815FFF7AE57D6A087F81D1F33"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "7490E5EBDB426E33DBDB99B07BB615D2398423D0"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "789DF67487B6F014B0412540D4BFF26E08E831E0"
+        },
+        {
+          "enabled": true,
+          "fingerprint": "75EB5275C22B666F10CA9021E7A3ED356FEE9DEA"
+        },
+        {
+          "enabled": false,
+          "fingerprint": "24CF3BD17A1FB1BC008903379504F441CC81E036"
+        }
+      ],
+      "state": "Active",
+      "guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+      "local": false,
+      "name": "test-aws-03"
+    }
+  ]
+}

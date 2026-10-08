@@ -1,0 +1,98 @@
+{
+  "generated_at_utc": "2026-10-07T22:30:51.597Z",
+  "method": "Playwright Chromium screenshot of local sanitized SQL/result evidence HTML; own browser closed after capture",
+  "screenshots": [
+    {
+      "html": "failure-01-bulk_escrow.html",
+      "screenshot": "failure-01-bulk_escrow.png",
+      "task_id": "25463890-e2c3-45f8-81e5-8afa08f9a542",
+      "step_id": "49b99eb8-2f8a-4a3f-896c-4297b8799147",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed",
+      "bytes": 271861,
+      "sha256": "2d6185d179d7157f7e904b631e79fe609057ca69889ab5fab3da539afc2737e5",
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "html": "failure-02-bulk_escrow.html",
+      "screenshot": "failure-02-bulk_escrow.png",
+      "task_id": "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+      "step_id": "9bec2b49-f492-4a13-acb3-221c6dd79939",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed",
+      "bytes": 271074,
+      "sha256": "acf5a7ddf6f6f760bd3a7fd5a7bd245bf02d71c82bcf86f6eb2553492c96c384",
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "html": "failure-03-delete.html",
+      "screenshot": "failure-03-delete.png",
+      "task_id": "752185cc-30e4-46d4-8d97-81c218574570",
+      "step_id": "c5461bdd-332f-44cc-983c-591c80d8083e",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed",
+      "bytes": 267816,
+      "sha256": "5c8d6129a7addd1d03bdf37690e63b553521a934702a7c59de7dbd3f5e2086ca",
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "html": "failure-04-enable.html",
+      "screenshot": "failure-04-enable.png",
+      "task_id": "ae1e8f89-9c3d-4087-b125-8341a79948a4",
+      "step_id": "8f02316d-90c2-43c3-9605-8bce5c15ce97",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed",
+      "bytes": 272918,
+      "sha256": "b1c41c0f1a83211c70e81d7ae7380c9b611daea1a5ef4f325ec7385940856be0",
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "html": "failure-05-disable.html",
+      "screenshot": "failure-05-disable.png",
+      "task_id": "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1",
+      "step_id": "b342f976-8249-4a35-a1da-a391d00a675b",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed",
+      "bytes": 274315,
+      "sha256": "78cdddfcbf9a4faa138a7e808dfb8c4d42996a8bb9056383397679c8eaa6727e",
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "html": "failure-06-download.html",
+      "screenshot": "failure-06-download.png",
+      "task_id": "aa76bada-3b8b-45e5-973d-dac161f4f997",
+      "step_id": "6947d7a8-c9d4-46ae-be6f-74353e717b69",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed",
+      "bytes": 267738,
+      "sha256": "e11966095b8420646d51048622bea05a0c9e951d071abfd4ed1b0a9741e815d2",
+      "width": 1440,
+      "height": 1371
+    },
+    {
+      "html": "exclusion-cleanup.html",
+      "screenshot": "exclusion-cleanup.png",
+      "source_json": "../active-task-exclusion.json",
+      "label": "Saved active-task exclusion and exact-fixture cleanup assertions",
+      "bytes": 144748,
+      "sha256": "1208f70d049eadcee19101ebdb290114c926f48d48460d7494595b2a6fd967dd",
+      "width": 1440,
+      "height": 1200
+    },
+    {
+      "html": "filer-negative-correlation.html",
+      "screenshot": "filer-negative-correlation.png",
+      "source_json": "../filer-negative-correlation.json",
+      "label": "Current filer log negative correlation only; not proof of successful dispatch",
+      "bytes": 310364,
+      "sha256": "4421708ada86886c03482d98bd3b803123408713e6ebc4f5208f9a054911332d",
+      "width": 1440,
+      "height": 1488
+    }
+  ]
+}

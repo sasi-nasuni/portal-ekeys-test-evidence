@@ -1,0 +1,82 @@
+{
+  "ready": {
+    "edge": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+    "key": "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+    "key2": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a",
+    "volume": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+    "association": "666fe2e9-9cbd-415e-ab14-15b005ec6a71",
+    "association2": "4ed64f9d-098c-4cf8-a569-d0a6fce72313"
+  },
+  "below": {
+    "edge": "cf449e7f-678f-4a1e-8aea-6d02874154df",
+    "key": "6c6e40ea-987e-4336-94a6-da75a3a95196",
+    "key2": "f456197b-2c6f-4130-9750-9c89cdb71b90",
+    "volume": "f4211e66-fd71-4d80-a374-90a389395551_0",
+    "association": "c32cdbf7-8998-4c53-ad96-bfa06892d5d1",
+    "association2": "5a072b44-160f-4f5a-841a-c55530c75c04"
+  },
+  "malformed": {
+    "edge": "33c771d2-96f4-4f66-88de-64354d7dba6a",
+    "key": "67bf757d-48b0-4a88-a1bb-61dc494e953f",
+    "key2": "8a61bcfd-032b-44fd-9a75-3f8ac55c2df8",
+    "volume": "ea4f7385-f1a0-42c5-b92c-c14bca6fad77_0",
+    "association": "5551c5f9-3100-4bd2-a79f-51c40c806e73",
+    "association2": "b5f349fa-9efc-40e4-a0bd-bee559149cf1"
+  },
+  "none": {
+    "edge": "1d2669a3-bf65-446e-a66d-c125354c62b1",
+    "key": "e4da94cd-2ca1-479f-bae3-aef6d1539905",
+    "key2": "c25303ee-8fed-4c03-aef5-e8903114e587",
+    "volume": "ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+    "association": "370457ce-5d32-4d13-91f8-35408b842e90",
+    "association2": "2585f16d-e766-4541-9235-b0d32762e6ba"
+  },
+  "master": {
+    "edge": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af",
+    "key": "fcd7c253-a6e2-4da6-a532-56e7002d9738",
+    "key2": "1f58b373-dddb-45ca-acc9-ce934fa331bc",
+    "volume": "604528ef-a5e5-4a1c-a189-a025933bfdbe_0",
+    "association": "ecb5c867-640f-49d6-a842-c8cf8bbdf4bc",
+    "association2": "11e96982-155c-4b6d-93e1-20b116ee200a"
+  },
+  "unknown": {
+    "edge": "3946531d-fa7c-47ae-b948-4e94b0caaf09",
+    "key": "926d8243-ca9c-4018-b776-8363857e7067",
+    "key2": "a0627e3a-9c28-405d-9aeb-2f0ca7ea0a15",
+    "volume": "208362d9-0bd0-440e-a5b2-cbf5754b2b16_0",
+    "association": "133e0fe3-4096-45c9-8d05-8cc676c4eb52",
+    "association2": "455f920b-381e-4ce3-9b27-2c746e5db905"
+  },
+  "strider": {
+    "edge": "093430a1-2aa6-407c-9522-365a7348b366",
+    "key": "035d0145-e7e2-4185-95b1-1c8696d27566",
+    "key2": "5fdee543-63cb-4c7e-8590-81e661f3078d",
+    "volume": "f8e876ca-51f4-477a-9797-c0210a823f7d_0",
+    "association": "9d28be73-c945-4b53-a5f7-0c027ac8fc7d",
+    "association2": "d148ac82-2ad1-4822-ab5b-68cda21572bb"
+  },
+  "offline": {
+    "edge": "5b8686c8-d949-4f04-b00a-ffde2e396577",
+    "key": "adaf56c8-bd4c-40e0-8940-7f37d18a99d3",
+    "key2": "a284b1a0-143b-409b-84a5-9fdf119fca9b",
+    "volume": "5d22e52c-1616-4d20-8eb8-22603c346d1d_0",
+    "association": "4301f7c7-651f-4292-9083-5d73e94c7725",
+    "association2": "51f2dddf-dd49-476d-9229-40bd3e6c09c5"
+  },
+  "stub": {
+    "edge": "7f652f88-6056-4304-8afb-2765b4681256",
+    "key": "de09dd6b-0141-4485-8e35-13b3c617d19c",
+    "key2": "57fdfcfa-a5a9-4ffc-af8d-aa1761d9c31e",
+    "volume": "f8ab9ab8-3141-4c6f-8817-95fcf90f1aa8_0",
+    "association": "b0945f09-f1b0-4fb6-aed2-c4ee0355ddee",
+    "association2": "7e821fea-e392-4fdf-93c1-01e31acc86de"
+  },
+  "no_passphrase": {
+    "edge": "0fddcb00-b8dd-4db5-80e2-25a065302bb9",
+    "key": "14ee2206-45dc-4907-92ac-ceb95dc14bf5",
+    "key2": "63accd2d-900c-410e-a00c-7035b0104308",
+    "volume": "ab121fde-3ea8-418b-8d41-d7431769a4fb_0",
+    "association": "bd0b9318-5cfa-4541-a031-f7b04ad75ea0",
+    "association2": "fc5ffda9-fe1f-4b52-b9b9-c96ed2a78920"
+  }
+}

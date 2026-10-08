@@ -1,0 +1,36 @@
+{
+  "id": 137,
+  "name": "disable_readiness_offline",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+  "status": 503,
+  "body": {
+    "message": "Master appliance for volume 5ddf9f91-00b1-43a5-b3bc-cf5e58cc61ad_0: Appliance is offline",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/5ddf9f91-00b1-43a5-b3bc-cf5e58cc61ad_0/encryption-keys/4f030954-6f28-4f69-a157-420fbe724dda/disable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/137_disable_readiness_offline/disable_readiness_offline_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/137_disable_readiness_offline/disable_readiness_offline_response.png"
+  ],
+  "captured_at": "2026-10-07T22:24:15.350Z",
+  "parameters": {
+    "volume_id": "5ddf9f91-00b1-43a5-b3bc-cf5e58cc61ad_0",
+    "key_id": "4f030954-6f28-4f69-a157-420fbe724dda"
+  },
+  "query": {},
+  "expected_status": 503,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

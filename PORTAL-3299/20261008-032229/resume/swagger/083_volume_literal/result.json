@@ -1,0 +1,53 @@
+{
+  "id": 83,
+  "name": "volume_literal",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 200,
+  "body": [
+    {
+      "id": "30fb3517-47d1-4f10-9b54-7f52e06dfaa0",
+      "name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+      "fingerprint": "D50B5EA60D35427F92CFFCBB2E99858500000002",
+      "algorithm": "rsa",
+      "length": 2048,
+      "origin": "generated",
+      "state": "enabled",
+      "status": "pending",
+      "tasks": [
+        {
+          "task_id": "85151aea-65c2-423d-86b5-cd6acc038556",
+          "action": "enable_volume_encryption_keys",
+          "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+          "state": "in_progress",
+          "error": null
+        }
+      ]
+    }
+  ],
+  "request_url": "http://localhost:8000/volumes/a7f33abf-07db-4d36-81c0-d894be7e67cd_0/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/083_volume_literal/volume_literal_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/083_volume_literal/volume_literal_response.png"
+  ],
+  "captured_at": "2026-10-07T22:20:30.120Z",
+  "parameters": {
+    "volume_id": "a7f33abf-07db-4d36-81c0-d894be7e67cd_0"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS"
+}

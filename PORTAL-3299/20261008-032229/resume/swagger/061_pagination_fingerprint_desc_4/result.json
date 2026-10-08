@@ -1,0 +1,121 @@
+{
+  "id": 61,
+  "name": "pagination_fingerprint_desc_4",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "438ff27f-27c5-42b7-a5f9-9934fbedc0a4",
+        "name": "PORTAL3299TEST-20261008-032229-A-beta",
+        "fingerprint": "3AE80B34A8774593945D44600406015200000003",
+        "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "12fe5d84-2eeb-46c7-bf0b-f4fba6a96a01",
+            "action": "delete_encryption_key",
+            "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-07T22:13:53.051880Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "98e78d4a-bf61-4cf2-b967-484e8d2132ca_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "bc7f39ba-40f2-4a23-a791-5c3935143a79",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-07T22:13:53.051880Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "ccf4cf1b-ed4b-4f27-b175-cda24a065133",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+        "fingerprint": "2D7DACC01F9A44D4BB4AB24F0272BB0800000006",
+        "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 4
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=fingerprint&sort_direction=desc&iterator_id=84aa359a-38de-4865-98ec-98ee32f8f315&limit=2",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/061_pagination_fingerprint_desc_4/pagination_fingerprint_desc_4_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/061_pagination_fingerprint_desc_4/pagination_fingerprint_desc_4_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/061_pagination_fingerprint_desc_4/pagination_fingerprint_desc_4_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/061_pagination_fingerprint_desc_4/pagination_fingerprint_desc_4_response_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/061_pagination_fingerprint_desc_4/pagination_fingerprint_desc_4_response_03.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/061_pagination_fingerprint_desc_4/pagination_fingerprint_desc_4_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:18:58.106Z",
+  "parameters": {},
+  "query": {
+    "limit": 2,
+    "sort_by": "fingerprint",
+    "sort_direction": "desc",
+    "iterator_id": "84aa359a-38de-4865-98ec-98ee32f8f315"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 1,
+      "tasks": 2
+    }
+  ],
+  "outcome": "PASS"
+}

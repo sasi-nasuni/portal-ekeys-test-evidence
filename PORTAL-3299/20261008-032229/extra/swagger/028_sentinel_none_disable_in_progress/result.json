@@ -1,0 +1,37 @@
+{
+  "id": 28,
+  "name": "sentinel_none_disable_in_progress",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+  "status": 409,
+  "body": {
+    "message": "An operation to disable encryption-key association 370457ce-5d32-4d13-91f8-35408b842e90 is already in progress on volume ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0/encryption-keys/e4da94cd-2ca1-479f-bae3-aef6d1539905/disable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/028_sentinel_none_disable_in_progress/sentinel_none_disable_in_progress_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/028_sentinel_none_disable_in_progress/sentinel_none_disable_in_progress_response.png"
+  ],
+  "captured_at": "2026-10-07T22:28:12.511Z",
+  "parameters": {
+    "volume_id": "ec52e3c5-3ff3-406e-89d1-e18d612e21d5_0",
+    "key_id": "e4da94cd-2ca1-479f-bae3-aef6d1539905"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+  ],
+  "outcome": "PASS"
+}

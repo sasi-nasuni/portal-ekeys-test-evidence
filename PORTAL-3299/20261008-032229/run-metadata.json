@@ -1,0 +1,16 @@
+{
+  "head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "branch": "sbhushan/PORTAL-3299_encryption_key_dispatch_refactor",
+  "initial_worktree": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html",
+  "ticket": "PORTAL-3299",
+  "pr": "https://github.com/nasuni/portal/pull/2838",
+  "evidence_root": "PORTAL-3299/20261008-032229",
+  "source": "Current local branch; no historical CI results counted",
+  "final_worktree": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html",
+  "worktree_unchanged": true,
+  "worktree_verification_scope": "Git status and HEAD match initial metadata; testing made no repository source edits. Separate source hashes protect reviewed dispatch code.",
+  "final_head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "independent_cleanup_manifest": "final-cleanup-verification.json",
+  "local_verification_finished_at_utc": "2026-10-07T22:35:05.991276+00:00",
+  "fixture_accounts_created_and_cleaned": 8
+}

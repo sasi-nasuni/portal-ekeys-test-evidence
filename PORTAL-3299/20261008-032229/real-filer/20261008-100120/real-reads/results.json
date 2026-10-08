@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "name": "real_fixture_key_list",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+          "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+          "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "appliance_name": "DEV-E-KEYS-POC",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+              "volume_name": "PORTAL3299-REAL-20261008-100120-volume",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "102ab01b-23f0-477d-8b70-178eda26795a",
+          "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+          "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "appliance_name": "DEV-E-KEYS-POC",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+              "volume_name": "PORTAL3299-REAL-20261008-100120-volume",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": null,
+        "page_size": 50,
+        "total_pages": 1,
+        "total_items": 2,
+        "page": 1
+      }
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys?search=PORTAL3299-REAL-20261008-100120&sort_by=name&sort_direction=asc&limit=50",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_parameters_02.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_response_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_response_02.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_response_03.png"
+    ],
+    "captured_at": "2026-10-08T06:37:50.005Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+  },
+  {
+    "id": 2,
+    "name": "real_appliance_summary",
+    "method": "GET",
+    "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+    "status": 200,
+    "body": {
+      "total": 60,
+      "generated_count": 2,
+      "escrowed": 6,
+      "not_escrowed": 54,
+      "backup_key": {
+        "id": "3eb90535-298b-441a-bfe6-e6f24b333eb4",
+        "name": "E-Keys-EdgeConsole-D9C531CA",
+        "fingerprint": "94C67F945AB131418B070BB8BA740113340EB9F2",
+        "is_escrowed": false
+      },
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/summary",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/002_real_appliance_summary/real_appliance_summary_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/002_real_appliance_summary/real_appliance_summary_response.png"
+    ],
+    "captured_at": "2026-10-08T06:37:54.402Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+  }
+]

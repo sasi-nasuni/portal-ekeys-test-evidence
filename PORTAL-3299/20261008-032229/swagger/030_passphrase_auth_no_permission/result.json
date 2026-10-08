@@ -1,0 +1,38 @@
+{
+  "id": 30,
+  "name": "passphrase_auth_no_permission",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: Manage Escrow Passphrase",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/970f3e0e-e956-4968-9a59-dc49c4ba82c5/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/030_passphrase_auth_no_permission/passphrase_auth_no_permission_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/030_passphrase_auth_no_permission/passphrase_auth_no_permission_response.png"
+  ],
+  "captured_at": "2026-10-07T22:03:25.204Z",
+  "parameters": {
+    "appliance_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+  },
+  "query": {},
+  "expected_status": 403,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "remaining_rows": {
+    "users": 0,
+    "roles": 0,
+    "user_role": 0,
+    "role_permissions": 0,
+    "edges_v2": 0,
+    "encryption_keys": 0,
+    "volumes_v2": 0,
+    "volume_connections": 0,
+    "volume_encryption_key_associations": 0,
+    "tasks": 0,
+    "task_steps": 0,
+    "messages": 0,
+    "activity_logs": 0,
+    "accounts": 0
+  },
+  "cache_entries_deleted": 5,
+  "new_account_cache_entries_remaining": 0,
+  "preexisting_cache_entries_preserved": true,
+  "audit_entries_archived": 8
+}

@@ -1,0 +1,36 @@
+{
+  "id": 31,
+  "name": "sentinel_none_delete_in_progress",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 409,
+  "body": {
+    "message": "An operation is already in progress for encryption_key 179a62ca-2177-43d3-8bf5-b437c849a8e0",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/179a62ca-2177-43d3-8bf5-b437c849a8e0",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/031_sentinel_none_delete_in_progress/sentinel_none_delete_in_progress_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/031_sentinel_none_delete_in_progress/sentinel_none_delete_in_progress_response.png"
+  ],
+  "captured_at": "2026-10-07T22:28:24.596Z",
+  "parameters": {
+    "key_id": "179a62ca-2177-43d3-8bf5-b437c849a8e0"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+  ],
+  "outcome": "PASS"
+}

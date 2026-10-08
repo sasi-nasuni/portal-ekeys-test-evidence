@@ -1,0 +1,51 @@
+{
+  "id": 152,
+  "name": "passphrase_validation_plaintext",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "passphrase"
+        ],
+        "msg": "Value error, passphrase must be an encrypted PGP message",
+        "input": "test fixture plaintext",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/edges/cd6e90fd-0d02-467c-9c9e-fd79e6a4872a/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/152_passphrase_validation_plaintext/passphrase_validation_plaintext_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/152_passphrase_validation_plaintext/passphrase_validation_plaintext_response.png"
+  ],
+  "captured_at": "2026-10-07T22:25:14.400Z",
+  "parameters": {
+    "appliance_id": "cd6e90fd-0d02-467c-9c9e-fd79e6a4872a"
+  },
+  "query": {},
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

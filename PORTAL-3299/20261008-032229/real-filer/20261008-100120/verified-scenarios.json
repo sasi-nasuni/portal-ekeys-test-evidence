@@ -1,0 +1,1103 @@
+[
+  {
+    "id": 1,
+    "name": "download_generated_keys",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+    "transport_note": "Swagger requestInterceptor: multiline query preservation (native single-line input removes line breaks); response unmodified",
+    "status": 202,
+    "body": {
+      "id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "state": "in_progress",
+      "status_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/116bf1a8-f17b-4a77-855c-3c7d10096903"
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AxsBNBGrHNWcBCAC40g2o%2F3RJ5G5P67k%2FP16aQVk8SwYdGzCrPPvkDx9OorbBePzl%0Aiv0VazB8Xt%2BLdZh3CjZNUmvWxuNRI7jsKgY7uHzTHxvcMVShG%2FbPtQr5I3jg9O3t%0Ajd7g6KYp4R10u0kBxn9NKnVOj%2BF9PvNZtS%2BJpwNqmrzCxvNTNrDMiZIlSmMRq760%0AeyyzRMEeSswGInruy%2FOc7LNBlGqWzGcNSF%2FwSpS681boQWqzqtSO3eywXjSrpto6%0AxXFG9Wb7NhvGhq%2FVMNC%2FBqivis3WG48O%2B9xBpdsHpduoVVFv89IfZsuiMMRgRxAo%0Aq5b9qCUNdyBUT7NpmhUY5f%2Bt3JRLm0DRFMlNABEBAAHNH1BPUlRBTDMyOTktUkVB%0ATC0yMDI2MTAwOC0xMDAxMjDCwIIEEwEIACwFAmrHNWcCGw8CCwkCFQgCFgACHgEW%0AIQRodIlmLo1y2fIy%2BaJqroyJj3jkgwAKCRBqroyJj3jkg9MzB%2F9Npun1h%2FgjtAj0%0AVBu6rQYczbzSezLitDtg9wVsvMnhVzaPVt2HPd8qN6gLygGk9XlZ%2Be9yctQG4wGq%0AQtxPn7vuLm16yl8SWJlZgQ63y1mG0z7YFnxrfmp0DEJExTQ3MbFpE6QPuh0VbDH2%0A1UC1dK5dcAsCVIGMufGMU2biU2oZq%2BUqgTjLkUUp0uQTcWSV3X6%2F8Baz0Xu1xYs0%0AXTNviuw0dggl5t6RTIDQ6jsuNsAlewvs%2Fe4wbMBgTEyeXHUXzYnb9b7csDuRr5WN%0ASuxSpVsmMoVivzHYcjxAreRaKPvQoALzgwvUYozHh0ktmOS5m2uinxxEXkepIzJH%0A8XFK0%2BVm%0A%3DiGwk%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/download/001_download_generated_keys/download_generated_keys_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/download/001_download_generated_keys/download_generated_keys_response.png"
+    ],
+    "captured_at": "2026-10-08T06:17:39.516Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "download"
+  },
+  {
+    "id": 2,
+    "name": "download_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "116bf1a8-f17b-4a77-855c-3c7d10096903",
+      "created_at": "2026-10-08T06:17:25.736635Z",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "stack_id": null,
+      "action": "download_encryption_keys",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:18:02.107363Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:18:02.107363Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/116bf1a8-f17b-4a77-855c-3c7d10096903",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/download/002_download_terminal/download_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/download/002_download_terminal/download_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:18:09.767Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "download"
+  },
+  {
+    "id": 1,
+    "name": "set_temporary_passphrase",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 202,
+    "body": {
+      "id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "state": "in_progress",
+      "status_url": "/tasks/f6b3f605-7175-4c72-b932-fc11ad33b70c"
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/001_set_temporary_passphrase/set_temporary_passphrase_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/001_set_temporary_passphrase/set_temporary_passphrase_response.png"
+    ],
+    "captured_at": "2026-10-08T06:20:53.273Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": "[REDACTED encrypted passphrase]",
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "passphrase"
+  },
+  {
+    "id": 2,
+    "name": "set_temporary_passphrase_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "created_at": "2026-10-08T06:20:51.346122Z",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "stack_id": null,
+      "action": "update_escrow_passphrase",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:20:56.149069Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:20:56.149069Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/f6b3f605-7175-4c72-b932-fc11ad33b70c",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/002_set_temporary_passphrase_terminal/set_temporary_passphrase_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/002_set_temporary_passphrase_terminal/set_temporary_passphrase_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:21:02.265Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "passphrase"
+  },
+  {
+    "id": 3,
+    "name": "restore_original_passphrase",
+    "method": "POST",
+    "path_template": "/edges/{appliance_id}/escrow-passphrase",
+    "status": 202,
+    "body": {
+      "id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "state": "in_progress",
+      "status_url": "/tasks/13793e81-1aed-41c6-84c1-96a7d4651672"
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/003_restore_original_passphrase/restore_original_passphrase_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/003_restore_original_passphrase/restore_original_passphrase_response.png"
+    ],
+    "captured_at": "2026-10-08T06:21:24.750Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": "[REDACTED encrypted passphrase]",
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "passphrase"
+  },
+  {
+    "id": 4,
+    "name": "restore_original_passphrase_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "created_at": "2026-10-08T06:21:23.302376Z",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "stack_id": null,
+      "action": "update_escrow_passphrase",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:22:02.631075Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:22:02.631075Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/13793e81-1aed-41c6-84c1-96a7d4651672",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/004_restore_original_passphrase_terminal/restore_original_passphrase_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/passphrase/004_restore_original_passphrase_terminal/restore_original_passphrase_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:22:11.224Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "passphrase"
+  },
+  {
+    "id": 1,
+    "name": "escrow_disposable_key",
+    "method": "POST",
+    "path_template": "/encryption-keys/escrow",
+    "status": 202,
+    "body": {
+      "items": [
+        {
+          "task": {
+            "task_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+            "action": "escrow_encryption_key",
+            "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+            "state": "in_progress",
+            "error": null
+          },
+          "rejection": null,
+          "key_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "3c209528-a9a6-4845-9d22-fa7de41b6e45"
+        }
+      ]
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys/escrow",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/001_escrow_disposable_key/escrow_disposable_key_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/001_escrow_disposable_key/escrow_disposable_key_response.png"
+    ],
+    "captured_at": "2026-10-08T06:27:07.777Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": {
+      "key_ids": [
+        "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+        "3c209528-a9a6-4845-9d22-fa7de41b6e45"
+      ]
+    },
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "escrow-delete"
+  },
+  {
+    "id": 2,
+    "name": "escrow_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "created_at": "2026-10-08T06:27:05.819403Z",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "stack_id": null,
+      "action": "escrow_encryption_key",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:27:10.316532Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:27:10.316532Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/5cb3deeb-8537-4630-bd26-800d6a642d14",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/002_escrow_terminal/escrow_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/002_escrow_terminal/escrow_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:27:15.963Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "escrow-delete"
+  },
+  {
+    "id": 3,
+    "name": "escrow_key_readback",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+          "name": "PORTAL3299-REAL-20261008-100120-escrow",
+          "fingerprint": "3F71ED8A2CC242F09A2308D02246E2E9960AC12F",
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "appliance_name": "DEV-E-KEYS-POC",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [],
+          "is_escrowed": true,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": null,
+        "page_size": 50,
+        "total_pages": 1,
+        "total_items": 1,
+        "page": 1
+      }
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys?search=3F71ED8A2CC242F09A2308D02246E2E9960AC12F&sort_by=name&sort_direction=asc&limit=50",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_parameters_02.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_response_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/003_escrow_key_readback/escrow_key_readback_response_02.png"
+    ],
+    "captured_at": "2026-10-08T06:27:33.020Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "escrow-delete"
+  },
+  {
+    "id": 4,
+    "name": "delete_disposable_key",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 202,
+    "body": {
+      "id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "state": "in_progress",
+      "status_url": "/tasks/902b2f74-a96e-485c-bd4e-88a2f0d55bd3"
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys/0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/004_delete_disposable_key/delete_disposable_key_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/004_delete_disposable_key/delete_disposable_key_response.png"
+    ],
+    "captured_at": "2026-10-08T06:27:42.931Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "escrow-delete"
+  },
+  {
+    "id": 5,
+    "name": "delete_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "created_at": "2026-10-08T06:27:41.203257Z",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "stack_id": null,
+      "action": "delete_encryption_key",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:27:46.183695Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:27:46.183695Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/005_delete_terminal/delete_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/005_delete_terminal/delete_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:27:51.105Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "escrow-delete"
+  },
+  {
+    "id": 6,
+    "name": "deleted_key_readback",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [],
+      "metadata": {
+        "iterator_id": null,
+        "page_size": 50,
+        "total_pages": 0,
+        "total_items": 0,
+        "page": 1
+      }
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys?search=3F71ED8A2CC242F09A2308D02246E2E9960AC12F&sort_by=name&sort_direction=asc&limit=50",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/006_deleted_key_readback/deleted_key_readback_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/006_deleted_key_readback/deleted_key_readback_parameters_02.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/escrow-delete/006_deleted_key_readback/deleted_key_readback_response.png"
+    ],
+    "captured_at": "2026-10-08T06:28:05.565Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "escrow-delete"
+  },
+  {
+    "id": 1,
+    "name": "disable_secondary_key",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+    "status": 202,
+    "body": {
+      "id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "state": "in_progress",
+      "status_url": "/tasks/b8205f24-e19e-4d02-878a-2a09564d2a2c"
+    },
+    "request_url": "http://127.0.0.1:18000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1/encryption-keys/102ab01b-23f0-477d-8b70-178eda26795a/disable",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/001_disable_secondary_key/disable_secondary_key_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/001_disable_secondary_key/disable_secondary_key_response.png"
+    ],
+    "captured_at": "2026-10-08T06:35:00.441Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "volume-operations"
+  },
+  {
+    "id": 2,
+    "name": "disable_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "created_at": "2026-10-08T06:34:54.702342Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+      "stack_id": null,
+      "action": "disable_volume_encryption_keys",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:35:05.436819Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:35:05.436819Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/b8205f24-e19e-4d02-878a-2a09564d2a2c",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/002_disable_terminal/disable_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/002_disable_terminal/disable_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:35:11.698Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "volume-operations"
+  },
+  {
+    "id": 3,
+    "name": "disable_volume_readback",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "body": [
+      {
+        "id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+        "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+        "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "102ab01b-23f0-477d-8b70-178eda26795a",
+        "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+        "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "request_url": "http://127.0.0.1:18000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1/encryption-keys",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/003_disable_volume_readback/disable_volume_readback_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/003_disable_volume_readback/disable_volume_readback_response.png"
+    ],
+    "captured_at": "2026-10-08T06:35:28.574Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "volume-operations"
+  },
+  {
+    "id": 4,
+    "name": "enable_secondary_key",
+    "method": "POST",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+    "status": 202,
+    "body": {
+      "id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+      "state": "in_progress",
+      "status_url": "/tasks/1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c"
+    },
+    "request_url": "http://127.0.0.1:18000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1/encryption-keys/102ab01b-23f0-477d-8b70-178eda26795a/enable",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/004_enable_secondary_key/enable_secondary_key_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/004_enable_secondary_key/enable_secondary_key_response.png"
+    ],
+    "captured_at": "2026-10-08T06:35:38.304Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "volume-operations"
+  },
+  {
+    "id": 5,
+    "name": "enable_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+      "created_at": "2026-10-08T06:35:36.888658Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "6c6c0de0-25e8-4f3c-b94e-735c029417c4",
+      "stack_id": null,
+      "action": "enable_volume_encryption_keys",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:35:42.983886Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:35:42.983886Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/005_enable_terminal/enable_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/005_enable_terminal/enable_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:35:49.460Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "volume-operations"
+  },
+  {
+    "id": 6,
+    "name": "enable_volume_readback",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "body": [
+      {
+        "id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+        "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+        "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "102ab01b-23f0-477d-8b70-178eda26795a",
+        "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+        "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "request_url": "http://127.0.0.1:18000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1/encryption-keys",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/006_enable_volume_readback/enable_volume_readback_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/volume-operations/006_enable_volume_readback/enable_volume_readback_response.png"
+    ],
+    "captured_at": "2026-10-08T06:36:04.591Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "volume-operations"
+  },
+  {
+    "id": 1,
+    "name": "real_fixture_key_list",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+          "name": "PORTAL3299-REAL-20261008-100120-volume-base",
+          "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78",
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "appliance_name": "DEV-E-KEYS-POC",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+              "volume_name": "PORTAL3299-REAL-20261008-100120-volume",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "102ab01b-23f0-477d-8b70-178eda26795a",
+          "name": "PORTAL3299-REAL-20261008-100120-volume-secondary",
+          "fingerprint": "DEB5791E4F5F8C35E388C4A20CB640C8A688CC93",
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "appliance_name": "DEV-E-KEYS-POC",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "volumes": [
+            {
+              "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+              "volume_name": "PORTAL3299-REAL-20261008-100120-volume",
+              "state": "enabled",
+              "is_stub": false,
+              "status": "synced",
+              "tasks": []
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "metadata": {
+        "iterator_id": null,
+        "page_size": 50,
+        "total_pages": 1,
+        "total_items": 2,
+        "page": 1
+      }
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys?search=PORTAL3299-REAL-20261008-100120&sort_by=name&sort_direction=asc&limit=50",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_parameters_02.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_response_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_response_02.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/001_real_fixture_key_list/real_fixture_key_list_response_03.png"
+    ],
+    "captured_at": "2026-10-08T06:37:50.005Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "real-reads"
+  },
+  {
+    "id": 2,
+    "name": "real_appliance_summary",
+    "method": "GET",
+    "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+    "status": 200,
+    "body": {
+      "total": 60,
+      "generated_count": 2,
+      "escrowed": 6,
+      "not_escrowed": 54,
+      "backup_key": {
+        "id": "3eb90535-298b-441a-bfe6-e6f24b333eb4",
+        "name": "E-Keys-EdgeConsole-D9C531CA",
+        "fingerprint": "94C67F945AB131418B070BB8BA740113340EB9F2",
+        "is_escrowed": false
+      },
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    "request_url": "http://127.0.0.1:18000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/summary",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/002_real_appliance_summary/real_appliance_summary_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/real-reads/002_real_appliance_summary/real_appliance_summary_response.png"
+    ],
+    "captured_at": "2026-10-08T06:37:54.402Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "real-reads"
+  },
+  {
+    "id": 1,
+    "name": "delete_volume-base",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 202,
+    "body": {
+      "id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+      "state": "in_progress",
+      "status_url": "/tasks/77ed5223-49de-456a-9d4e-dc024318fbee"
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys/55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/001_delete_volume-base/delete_volume-base_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/001_delete_volume-base/delete_volume-base_response.png"
+    ],
+    "captured_at": "2026-10-08T06:41:31.856Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "key-cleanup"
+  },
+  {
+    "id": 2,
+    "name": "volume-base_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+      "created_at": "2026-10-08T06:41:26.060578Z",
+      "resource": "encryption_key",
+      "resource_id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+      "stack_id": null,
+      "action": "delete_encryption_key",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:41:36.095847Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:41:36.095847Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/77ed5223-49de-456a-9d4e-dc024318fbee",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/002_volume-base_terminal/volume-base_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/002_volume-base_terminal/volume-base_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:41:40.800Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "key-cleanup"
+  },
+  {
+    "id": 3,
+    "name": "delete_volume-secondary",
+    "method": "DELETE",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 202,
+    "body": {
+      "id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+      "state": "in_progress",
+      "status_url": "/tasks/f61610ce-3d51-4d16-b193-3910c96b9832"
+    },
+    "request_url": "http://127.0.0.1:18000/encryption-keys/102ab01b-23f0-477d-8b70-178eda26795a",
+    "docs_url": "http://127.0.0.1:18000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/003_delete_volume-secondary/delete_volume-secondary_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/003_delete_volume-secondary/delete_volume-secondary_response.png"
+    ],
+    "captured_at": "2026-10-08T06:42:05.257Z",
+    "expected_status": 202,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "key-cleanup"
+  },
+  {
+    "id": 4,
+    "name": "volume-secondary_terminal",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "body": {
+      "id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+      "created_at": "2026-10-08T06:42:03.513249Z",
+      "resource": "encryption_key",
+      "resource_id": "102ab01b-23f0-477d-8b70-178eda26795a",
+      "stack_id": null,
+      "action": "delete_encryption_key",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:42:08.861343Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:42:08.861343Z"
+    },
+    "request_url": "http://127.0.0.1:18000/tasks/f61610ce-3d51-4d16-b193-3910c96b9832",
+    "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+    "source": "Served Swagger UI Try it out / Execute",
+    "network_verified": true,
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "screenshots": [
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/004_volume-secondary_terminal/volume-secondary_terminal_parameters_01.png",
+      "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/004_volume-secondary_terminal/volume-secondary_terminal_response.png"
+    ],
+    "captured_at": "2026-10-08T06:42:14.543Z",
+    "expected_status": 200,
+    "outcome": "PASS",
+    "assertions": [
+      "Native Swagger status, URL and response match actual network response"
+    ],
+    "request_body": null,
+    "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary",
+    "suite": "key-cleanup"
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "id": 70,
+  "name": "filter_type_backup",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "c9154b06-abe0-40fa-940d-c8dbcd70ca73",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-East",
+        "fingerprint": "DC21A6C019AE4FAE83EEB15A0F976F6B00000006",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      },
+      {
+        "id": "061636ac-75df-4a47-a3c3-7b1bd61fcb0d",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+        "fingerprint": "1D64D9C43880486E83EFF712B4E6489300000007",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 2,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?type=backup&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/070_filter_type_backup/filter_type_backup_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/070_filter_type_backup/filter_type_backup_response_01.png",
+    "PORTAL-3299/20261008-032229/swagger/070_filter_type_backup/filter_type_backup_response_02.png",
+    "PORTAL-3299/20261008-032229/swagger/070_filter_type_backup/filter_type_backup_response_03.png"
+  ],
+  "captured_at": "2026-10-07T22:06:33.375Z",
+  "parameters": {},
+  "query": {
+    "type": "backup"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 1,
+      "tasks": 0
+    }
+  ],
+  "outcome": "PASS"
+}

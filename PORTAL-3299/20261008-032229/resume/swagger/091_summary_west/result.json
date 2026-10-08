@@ -1,0 +1,47 @@
+{
+  "id": 91,
+  "name": "summary_west",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 200,
+  "body": {
+    "total": 3,
+    "generated_count": 0,
+    "escrowed": 1,
+    "not_escrowed": 2,
+    "backup_key": {
+      "id": "ec9e549d-e34d-4f2f-816e-20676311bfc1",
+      "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+      "fingerprint": "62D261E4663E4488AC6AF610EB640A3C00000007",
+      "is_escrowed": false
+    },
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": []
+  },
+  "request_url": "http://localhost:8000/edges/278a7eb3-ba2f-459e-a999-210197a96553/encryption-keys/summary",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/091_summary_west/summary_west_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/091_summary_west/summary_west_response.png"
+  ],
+  "captured_at": "2026-10-07T22:21:05.918Z",
+  "parameters": {
+    "appliance_id": "278a7eb3-ba2f-459e-a999-210197a96553"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS"
+}

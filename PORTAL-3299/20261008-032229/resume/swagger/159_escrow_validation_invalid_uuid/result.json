@@ -1,0 +1,52 @@
+{
+  "id": 159,
+  "name": "escrow_validation_invalid_uuid",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "body",
+          "key_ids",
+          0
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5",
+        "input": "bad-id",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 5"
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/159_escrow_validation_invalid_uuid/escrow_validation_invalid_uuid_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/159_escrow_validation_invalid_uuid/escrow_validation_invalid_uuid_response.png"
+  ],
+  "captured_at": "2026-10-07T22:25:42.317Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "bad-id"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+ M devtools/edge-console/Dockerfile
+ M devtools/edge-console/app/commands.py
+ M devtools/edge-console/app/main.py
+ M devtools/edge-console/app/senders/portal_task.py
+ M devtools/edge-console/app/templates/_command_form.html
+ M devtools/edge-console/app/templates/_command_options.html
+ M devtools/edge-console/app/templates/_message_detail.html
+ M devtools/edge-console/app/templates/_message_row.html
+ M devtools/edge-console/app/templates/index.html
+?? devtools/edge-console/app/keygen.py
+?? devtools/edge-console/app/keys/
+?? devtools/edge-console/app/templates/_decrypt_result.html

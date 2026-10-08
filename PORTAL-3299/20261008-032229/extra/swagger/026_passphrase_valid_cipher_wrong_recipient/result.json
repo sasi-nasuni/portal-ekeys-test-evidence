@@ -1,0 +1,39 @@
+{
+  "id": 26,
+  "name": "passphrase_valid_cipher_wrong_recipient",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 400,
+  "body": {
+    "message": "Passphrase must be encrypted to the appliance's escrow public key",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/0fddcb00-b8dd-4db5-80e2-25a065302bb9/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/026_passphrase_valid_cipher_wrong_recipient/passphrase_valid_cipher_wrong_recipient_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/026_passphrase_valid_cipher_wrong_recipient/passphrase_valid_cipher_wrong_recipient_response.png"
+  ],
+  "captured_at": "2026-10-07T22:28:03.412Z",
+  "parameters": {
+    "appliance_id": "0fddcb00-b8dd-4db5-80e2-25a065302bb9"
+  },
+  "query": {},
+  "expected_status": 400,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Ciphertext for ephemeral A rejected against cached ephemeral B before task creation or transport"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

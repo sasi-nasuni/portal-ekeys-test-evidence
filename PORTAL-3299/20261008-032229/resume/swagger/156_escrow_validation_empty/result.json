@@ -1,0 +1,51 @@
+{
+  "id": 156,
+  "name": "escrow_validation_empty",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "too_short",
+        "loc": [
+          "body",
+          "key_ids"
+        ],
+        "msg": "List should have at least 1 item after validation, not 0",
+        "input": [],
+        "ctx": {
+          "field_type": "List",
+          "min_length": 1,
+          "actual_length": 0
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/156_escrow_validation_empty/escrow_validation_empty_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/156_escrow_validation_empty/escrow_validation_empty_response.png"
+  ],
+  "captured_at": "2026-10-07T22:25:29.998Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": []
+  }
+}

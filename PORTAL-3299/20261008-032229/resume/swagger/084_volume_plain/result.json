@@ -1,0 +1,65 @@
+{
+  "id": 84,
+  "name": "volume_plain",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 200,
+  "body": [
+    {
+      "id": "30fb3517-47d1-4f10-9b54-7f52e06dfaa0",
+      "name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+      "fingerprint": "D50B5EA60D35427F92CFFCBB2E99858500000002",
+      "algorithm": "rsa",
+      "length": 2048,
+      "origin": "generated",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "fe677921-0d25-4baf-8c7e-e6f0d378e6a9",
+      "name": null,
+      "fingerprint": "EB7D5EA26D65427DB6DADD194023C9FE00000000",
+      "algorithm": null,
+      "length": null,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "creating",
+      "tasks": [
+        {
+          "task_id": "e279914c-3c6c-4965-8c99-b7d671834d73",
+          "action": "add_volume_encryption_keys",
+          "executor_id": "b88cb752-f850-47f2-a4bc-e75908608ef6",
+          "state": "in_progress",
+          "error": null
+        }
+      ]
+    }
+  ],
+  "request_url": "http://localhost:8000/volumes/51de7613-cf68-4164-8d50-b45b3ba2bea4_0/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/084_volume_plain/volume_plain_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/084_volume_plain/volume_plain_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/084_volume_plain/volume_plain_response_02.png"
+  ],
+  "captured_at": "2026-10-07T22:20:33.981Z",
+  "parameters": {
+    "volume_id": "51de7613-cf68-4164-8d50-b45b3ba2bea4_0"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS"
+}

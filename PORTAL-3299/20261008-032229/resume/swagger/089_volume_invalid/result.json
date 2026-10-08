@@ -1,0 +1,48 @@
+{
+  "id": 89,
+  "name": "volume_invalid",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "path",
+          "volume_id"
+        ],
+        "msg": "Value error, Value must be in format <uuid>_<suffix> or <hex>, got: not-a-volume",
+        "input": "not-a-volume",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/volumes/not-a-volume/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/089_volume_invalid/volume_invalid_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/089_volume_invalid/volume_invalid_response.png"
+  ],
+  "captured_at": "2026-10-07T22:20:57.949Z",
+  "parameters": {
+    "volume_id": "not-a-volume"
+  },
+  "query": {},
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

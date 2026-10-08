@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>PostgreSQL task evidence: download_encryption_keys</title><style>*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:#18212b;font:15px/1.5 Verdana,sans-serif;letter-spacing:0}main{max-width:1420px;margin:auto;padding:28px}h1{font-size:25px}h2{font-size:19px;margin-top:28px}p{max-width:1150px}table{border-collapse:collapse;width:100%;background:white}td,th{border:1px solid #ccd4dc;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#e6eef4}pre{padding:18px;background:#fff;border:1px solid #ccd4dc;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.45 monospace}a{color:#005da8}.note{padding:12px;border-left:4px solid #168253;background:#e8f4ed}img{max-width:100%;height:auto}code{overflow-wrap:anywhere}</style></head><body><main><h1>PostgreSQL task evidence: download_encryption_keys</h1><p class="note">Actual PostgreSQL results captured before cleanup. Independently rendered; not pgAdmin UI. No private payloads included.</p><h2>Query Scope</h2><pre>SELECT id, account_id, resource, resource_id, action, state, status, executor_id, initiator_id, created_at, last_updated_at, user_acknowledged_at, reason FROM tasks WHERE account_id = :account AND id = :task;
+SELECT name, state, created_at, updated_at FROM task_steps WHERE account_id = :account AND task_id = :task ORDER BY name;
+SELECT id, task_id, sent_at, received_at, acked_at FROM messages WHERE account_id = :account AND task_id = :task ORDER BY sent_at, id;</pre><h2>Persisted Result</h2><pre>{
+  &quot;task&quot;: {
+    &quot;id&quot;: &quot;116bf1a8-f17b-4a77-855c-3c7d10096903&quot;,
+    &quot;account_id&quot;: &quot;f902fd2c-796c-403b-837b-89d5625319a9&quot;,
+    &quot;resource&quot;: &quot;edge&quot;,
+    &quot;resource_id&quot;: &quot;31d629af-30b3-413e-a583-d5d3da651eb9&quot;,
+    &quot;action&quot;: &quot;download_encryption_keys&quot;,
+    &quot;state&quot;: &quot;completed&quot;,
+    &quot;status&quot;: null,
+    &quot;executor_id&quot;: &quot;31d629af-30b3-413e-a583-d5d3da651eb9&quot;,
+    &quot;initiator_id&quot;: &quot;b890d121-f851-43b8-951f-fffb28fc78e3&quot;,
+    &quot;created_at&quot;: &quot;2026-10-08 06:17:25.736635+00:00&quot;,
+    &quot;last_updated_at&quot;: &quot;2026-10-08 06:18:02.107363+00:00&quot;,
+    &quot;user_acknowledged_at&quot;: null,
+    &quot;reason&quot;: null
+  },
+  &quot;steps&quot;: [
+    {
+      &quot;name&quot;: &quot;download_encryption_keys&quot;,
+      &quot;state&quot;: &quot;completed&quot;,
+      &quot;created_at&quot;: &quot;2026-10-08 06:17:25.736635+00:00&quot;,
+      &quot;updated_at&quot;: &quot;2026-10-08 06:18:02.107363+00:00&quot;
+    }
+  ],
+  &quot;messages&quot;: [
+    {
+      &quot;id&quot;: &quot;bd4bba76-06a1-46a9-98cf-2fb4bd215c48&quot;,
+      &quot;task_id&quot;: &quot;116bf1a8-f17b-4a77-855c-3c7d10096903&quot;,
+      &quot;sent_at&quot;: &quot;2026-10-08 06:17:25.755616+00:00&quot;,
+      &quot;received_at&quot;: null,
+      &quot;acked_at&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;32060202-f67a-4577-8842-4117fd659f9a&quot;,
+      &quot;task_id&quot;: &quot;116bf1a8-f17b-4a77-855c-3c7d10096903&quot;,
+      &quot;sent_at&quot;: &quot;2026-10-08 06:17:40.786385+00:00&quot;,
+      &quot;received_at&quot;: &quot;2026-10-08 06:18:02.093591+00:00&quot;,
+      &quot;acked_at&quot;: null
+    }
+  ]
+}</pre></main></body></html>

@@ -1,0 +1,128 @@
+{
+  "id": 4,
+  "name": "extra_absolute_page3_without_cursor",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "b39a5d9b-555c-4746-96f8-539908dc29c5",
+        "name": "PORTAL3299TEST-20261008-032229-A-Backup-West",
+        "fingerprint": "415AD85E574745A48A9B3C5ED352F80500000007",
+        "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": null,
+        "length": null,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "052078a1-da91-4fd9-899f-d1d0a29848b6_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": true
+      },
+      {
+        "id": "5d658321-beda-4425-a8ef-27761bc680e4",
+        "name": "PORTAL3299TEST-20261008-032229-A-beta",
+        "fingerprint": "76B561437CAE407FBDDE3A1618C69D5900000003",
+        "appliance_id": "07594708-8866-47c5-977a-16c996ab00ac",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "b4ed6210-2a75-4165-a1d3-7dbb2e3a6d66",
+            "action": "delete_encryption_key",
+            "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-07T22:26:08.499851Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "0d714f03-89a7-4539-bf70-ca6a79d62be1_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "8aca74c0-2f41-4681-bd59-cc37830438a0",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "7392e6f3-f815-47cf-9073-0d5bc5bef7f7",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-07T22:26:08.499851Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "8e76ce9c-62be-4c42-bdca-3f769174a9ee",
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 8,
+      "page": 3
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?sort_by=name&sort_direction=asc&page=3&limit=2",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_parameters_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_03.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/004_extra_absolute_page3_without_cursor/extra_absolute_page3_without_cursor_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:26:32.219Z",
+  "parameters": {},
+  "query": {
+    "limit": 2,
+    "page": 3
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 2,
+      "tasks": 2
+    }
+  ],
+  "outcome": "PASS"
+}

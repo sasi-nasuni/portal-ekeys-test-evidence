@@ -1,0 +1,46 @@
+{
+  "id": 2,
+  "name": "volume-base_terminal",
+  "method": "GET",
+  "path_template": "/tasks/{task_id}",
+  "status": 200,
+  "body": {
+    "id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+    "created_at": "2026-10-08T06:41:26.060578Z",
+    "resource": "encryption_key",
+    "resource_id": "55bafd5b-b7ff-4c8e-a178-c134c60f95ae",
+    "stack_id": null,
+    "action": "delete_encryption_key",
+    "executor": "edge",
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiated_by": "portal",
+    "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+    "activity_log_id": null,
+    "reason": null,
+    "state": "completed",
+    "last_updated_at": "2026-10-08T06:41:36.095847Z",
+    "user_acknowledged_at": null,
+    "deletion_time": "2026-10-15T06:41:36.095847Z"
+  },
+  "request_url": "http://127.0.0.1:18000/tasks/77ed5223-49de-456a-9d4e-dc024318fbee",
+  "docs_url": "http://127.0.0.1:18000/docs#/Tasks/get_task_tasks__task_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/002_volume-base_terminal/volume-base_terminal_parameters_01.png",
+    "PORTAL-3299/20261008-032229/real-filer/20261008-100120/key-cleanup/002_volume-base_terminal/volume-base_terminal_response.png"
+  ],
+  "captured_at": "2026-10-08T06:41:40.800Z",
+  "expected_status": 200,
+  "outcome": "PASS",
+  "assertions": [
+    "Native Swagger status, URL and response match actual network response"
+  ],
+  "request_body": null,
+  "source_version_override": "10.6 -> 10.5, explicitly user-authorized and temporary"
+}

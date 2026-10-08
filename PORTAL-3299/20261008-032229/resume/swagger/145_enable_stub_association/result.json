@@ -1,0 +1,36 @@
+{
+  "id": 145,
+  "name": "enable_stub_association",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 409,
+  "body": {
+    "message": "Association between volume 59662e78-8570-4282-ae9d-be15b840d13d_0 and key 1879f201-d174-4806-9465-93a1ea0e99be is still being provisioned",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/59662e78-8570-4282-ae9d-be15b840d13d_0/encryption-keys/1879f201-d174-4806-9465-93a1ea0e99be/enable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/145_enable_stub_association/enable_stub_association_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/145_enable_stub_association/enable_stub_association_response.png"
+  ],
+  "captured_at": "2026-10-07T22:24:46.894Z",
+  "parameters": {
+    "volume_id": "59662e78-8570-4282-ae9d-be15b840d13d_0",
+    "key_id": "1879f201-d174-4806-9465-93a1ea0e99be"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

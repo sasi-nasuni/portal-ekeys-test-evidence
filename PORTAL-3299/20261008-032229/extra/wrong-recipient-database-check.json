@@ -1,0 +1,18 @@
+{
+  "fake_edge_id": "0fddcb00-b8dd-4db5-80e2-25a065302bb9",
+  "cache_before": {
+    "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:61326f93-5d68-4e4d-ad32-d7402773b71f",
+    "fixture_value_verified": true,
+    "ttl_seconds": 1800
+  },
+  "cache_after": {
+    "key": "807e17b2-c71c-4bb8-a661-137ba4607836_encryption_key:61326f93-5d68-4e4d-ad32-d7402773b71f",
+    "fixture_value_verified": true,
+    "ttl_seconds": 1795
+  },
+  "cipher_recipient_a_verified": true,
+  "cipher_not_recipient_b_verified": true,
+  "cached_public_key_sha256": "ee3836435d2fd9849e1d3472b3850f04902f38555a934018c52e3fd1d193a2dc",
+  "rows_unchanged": true,
+  "limitation": "No registered public key400 case not exercised because cache-miss NOC response is not deterministic locally"
+}

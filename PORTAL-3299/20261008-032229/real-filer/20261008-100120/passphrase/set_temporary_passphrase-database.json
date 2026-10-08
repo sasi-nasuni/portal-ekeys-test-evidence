@@ -1,0 +1,41 @@
+{
+  "task": {
+    "id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "edge",
+    "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "action": "update_escrow_passphrase",
+    "state": "completed",
+    "status": null,
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+    "created_at": "2026-10-08 06:20:51.346122+00:00",
+    "last_updated_at": "2026-10-08 06:20:56.149069+00:00",
+    "user_acknowledged_at": null,
+    "reason": null
+  },
+  "steps": [
+    {
+      "name": "update_escrow_passphrase",
+      "state": "completed",
+      "created_at": "2026-10-08 06:20:51.346122+00:00",
+      "updated_at": "2026-10-08 06:20:56.149069+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "a4d72a1f-d659-4cff-b216-886d1a3ec037",
+      "task_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "sent_at": "2026-10-08 06:20:51.353085+00:00",
+      "received_at": null,
+      "acked_at": null
+    },
+    {
+      "id": "7684a79d-216f-4c34-8949-690efaaa304c",
+      "task_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "sent_at": "2026-10-08 06:20:54.918031+00:00",
+      "received_at": "2026-10-08 06:20:56.129526+00:00",
+      "acked_at": null
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "operation": "summary",
+    "raw_path_params": {
+      "appliance_id": "bad-id"
+    },
+    "actual_status": 422,
+    "outcome": "PASS",
+    "original_case_name": "summary_invalid",
+    "original_attempts": [
+      {
+        "name": "summary_invalid",
+        "status": null,
+        "outcome": "FAIL",
+        "client_validation": true,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true
+  },
+  {
+    "operation": "delete",
+    "raw_path_params": {
+      "key_id": "bad-id"
+    },
+    "actual_status": 422,
+    "outcome": "PASS",
+    "original_case_name": "delete_invalid_path",
+    "original_attempts": [
+      {
+        "name": "delete_invalid_path",
+        "status": null,
+        "outcome": "FAIL",
+        "client_validation": true,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true
+  },
+  {
+    "operation": "enable",
+    "raw_path_params": {
+      "volume_id": "bad-id",
+      "key_id": "bad-id"
+    },
+    "actual_status": 422,
+    "outcome": "PASS",
+    "original_case_name": "enable_invalid_path",
+    "original_attempts": [
+      {
+        "name": "enable_invalid_path",
+        "status": null,
+        "outcome": "FAIL",
+        "client_validation": true,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true
+  },
+  {
+    "operation": "disable",
+    "raw_path_params": {
+      "volume_id": "bad-id",
+      "key_id": "bad-id"
+    },
+    "actual_status": 422,
+    "outcome": "PASS",
+    "original_case_name": "disable_invalid_path",
+    "original_attempts": [
+      {
+        "name": "disable_invalid_path",
+        "status": null,
+        "outcome": "FAIL",
+        "client_validation": true,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true
+  },
+  {
+    "operation": "passphrase",
+    "raw_path_params": {
+      "appliance_id": "bad-id"
+    },
+    "actual_status": 422,
+    "outcome": "PASS",
+    "original_case_name": "passphrase_invalid_path",
+    "original_attempts": [
+      {
+        "name": "passphrase_invalid_path",
+        "status": null,
+        "outcome": "FAIL",
+        "client_validation": true,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true
+  },
+  {
+    "operation": "download",
+    "raw_path_params": {
+      "appliance_id": "bad-id"
+    },
+    "actual_status": 422,
+    "outcome": "PASS",
+    "original_case_name": "download_invalid_path",
+    "original_attempts": [
+      {
+        "name": "download_invalid_path",
+        "status": null,
+        "outcome": "FAIL",
+        "client_validation": true,
+        "artifact": "PORTAL-3299/20261008-032229/resume/results.json"
+      }
+    ],
+    "replacement_artifact": "PORTAL-3299/20261008-032229/extra/results.json",
+    "rows_unchanged": true
+  }
+]

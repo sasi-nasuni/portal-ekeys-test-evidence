@@ -1,0 +1,8 @@
+{
+  "source": "/var/log/nasuni/broadcast_network.log",
+  "lines": [
+    "2026-10-08 02:35:01.476 DEV-E-KEYS-POC nbn-service.py[23239]: INFO: CommandAckEvent published task_id=b8205f24-e19e-4d02-878a-2a09564d2a2c status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/b890d121-f851-43b8-951f-fffb28fc78e3/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack"
+  ],
+  "exit_code": 0,
+  "task_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c"
+}

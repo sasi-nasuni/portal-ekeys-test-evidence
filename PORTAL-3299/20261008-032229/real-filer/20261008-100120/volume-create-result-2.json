@@ -1,0 +1,16 @@
+{
+  "matches": [
+    {
+      "keys": [
+        {
+          "enabled": true,
+          "fingerprint": "27A70ADC40EB63C56304BBD9053C161851B40D78"
+        }
+      ],
+      "state": "Active",
+      "guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_1",
+      "name": "PORTAL3299-REAL-20261008-100120-volume"
+    }
+  ],
+  "result": "success"
+}

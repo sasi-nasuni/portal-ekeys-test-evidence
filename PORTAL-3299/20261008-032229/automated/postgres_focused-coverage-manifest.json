@@ -1,0 +1,11 @@
+{
+  "tests.integration.encryption_keys.test_appliance_keys_summary": 4,
+  "tests.integration.encryption_keys.test_escrow_candidates": 1,
+  "tests.integration.encryption_keys.test_list_queries": 60,
+  "tests.integration.encryption_keys.test_list_repo": 1,
+  "tests.integration.encryption_keys.test_repo": 4,
+  "tests.integration.encryption_keys.test_volume_key_states": 9,
+  "tests.integration.encryption_keys.test_volume_keys_list": 6,
+  "tests.integration.tasks.test_dispatch_repo": 24,
+  "tests.integration.tasks.test_repo": 92
+}

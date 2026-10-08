@@ -1,0 +1,35 @@
+{
+  "status": "PREPARED_NOT_STARTED",
+  "entrypoint": "response_worker.main(policy_path=ROOT / 'response-policy.json')",
+  "pre_start_validation": "response_worker.load_policy(path); pure file validation, no network or database",
+  "active_policy_created": false,
+  "policy_update": "Harness atomically replaces the active policy after each real API response returns its task UUID; never fabricate a task. Entries require action, resource, resource_id and, for key/association resources, one fingerprint; association entries also require volume_id. Policy owner/account/serial are fixed to this attempt. Expiry is at most two hours after run_started_at.",
+  "queues": "Only launcher-owned dedicated queues from resources.json; live URL, ARN and exact ownership tags must match before receiving",
+  "guard": [
+    "Require SQS account_guid, validated envelope account_id and origin_id to match the real account and serial",
+    "Only six encryption response event types plus command_ack/error can reach a production handler; heartbeat, full_dump, registration and background list events are ignored on the private queue",
+    "Require recorded trace UUID, expected action-specific event, key fingerprint/volume, matching same-tenant task action/resource/executor/creation time",
+    "Require command_ack content.task_id == metadata.trace_id; when present its command_message_id must match the actual outbound task message",
+    "Use get_task_for_acknowledgement for the pre-authorization read, avoiding get_task's retention-delete side effect",
+    "Block MessageClient sends, raw FIFO publication, MQTT publication and MQTT startup in this response-only process"
+  ],
+  "race_handling": "Matching response categories with an unregistered trace receive 15-second visibility deferrals for up to five minutes, allowing Swagger to return and the harness to record the task. No processor runs while unregistered. Registered-task processing failures remain retryable; they are not discarded on grace expiry.",
+  "production_path": "Screen using production InboundCodec with production decryption provider and large-payload reader, without pre-authorization payload cache. Pass the original SQS envelope into the production EventHub async wrapper on the same event loop. Only its synchronous event-loop bridge is skipped; response fields and processor outcomes are not rewritten.",
+  "limits": {
+    "maximum_runtime_seconds": 3600,
+    "maximum_tasks": 40,
+    "receive_batch_size": 1,
+    "long_poll_seconds": 5,
+    "processing_visibility_seconds": 120,
+    "handler_timeout_seconds": 90
+  },
+  "evidence": "Only fixed classifications, validated IDs, counts, policy/envelope hashes and exception class names are recorded. Production logs are disabled within the isolated worker; no decrypted body, bearer token, private key or bundle is exported.",
+  "success_claim": "handler_returned_no_retry is only ingestion evidence. Task completion, SQL domain changes, actual filer state and the originating Swagger response must be independently reconciled.",
+  "validation": "46 pure policy/filter/transport-preservation/syntax checks passed; no application handler, worker, queue, database or AWS action executed by these checks",
+  "pending": [
+    "Root's target/version and passphrase scope decisions",
+    "Root's authorization to start isolated runtime and create its owned queues",
+    "Launcher integration and final import-only seam check by environment agent",
+    "Real identity bootstrap and genuine state ingestion remain separate from this response-only worker; it deliberately cannot process a background full dump"
+  ]
+}

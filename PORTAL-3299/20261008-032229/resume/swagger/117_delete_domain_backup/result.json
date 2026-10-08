@@ -1,0 +1,35 @@
+{
+  "id": 117,
+  "name": "delete_domain_backup",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 409,
+  "body": {
+    "message": "Cannot delete encryption key with ID ccf4cf1b-ed4b-4f27-b175-cda24a065133 as it is the backup key for the owning edge",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/ccf4cf1b-ed4b-4f27-b175-cda24a065133",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/117_delete_domain_backup/delete_domain_backup_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/117_delete_domain_backup/delete_domain_backup_response.png"
+  ],
+  "captured_at": "2026-10-07T22:22:50.065Z",
+  "parameters": {
+    "key_id": "ccf4cf1b-ed4b-4f27-b175-cda24a065133"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

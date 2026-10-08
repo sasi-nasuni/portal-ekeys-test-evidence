@@ -1,0 +1,121 @@
+{
+  "id": 50,
+  "name": "list_excludes_acknowledged_dispatch_failures",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "dcc9d58d-36c0-422c-ad2c-cc6ac9dcea12",
+        "name": "PORTAL3299TEST-20261008-032229-A-extra-dispatch-delete",
+        "fingerprint": "ABD071E516E54526A1B25DB219BF8BDF01234567",
+        "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-command-ready",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "1b336dfc-5c42-40fb-b1f0-3fec5a740c3a",
+        "name": "PORTAL3299TEST-20261008-032229-A-ready-1b336dfc",
+        "fingerprint": "5722A05FBBCA4A62B3963A0B8E1122ED01234567",
+        "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-command-ready",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-ready",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "bb9eeae2-a526-400c-a1c5-4458d69dce72",
+        "name": "PORTAL3299TEST-20261008-032229-A-ready-bb9eeae2",
+        "fingerprint": "7543D0E118374026A24BE44DA446A0EE01234567",
+        "appliance_id": "c7ba979d-8190-4e1d-a09e-9056b0a05f2b",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-command-ready",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "d06287cd-cc1b-481f-a89f-a4d338f0a38f_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-ready",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 3,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?appliance_ids=c7ba979d-8190-4e1d-a09e-9056b0a05f2b&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_parameters_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_02.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_03.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/050_list_excludes_acknowledged_dispatch_failures/list_excludes_acknowledged_dispatch_failures_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:29:53.728Z",
+  "parameters": {},
+  "query": {
+    "appliance_ids": [
+      "c7ba979d-8190-4e1d-a09e-9056b0a05f2b"
+    ]
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Acknowledged dispatch failures absent; resource status remains synced"
+  ],
+  "outcome": "PASS"
+}

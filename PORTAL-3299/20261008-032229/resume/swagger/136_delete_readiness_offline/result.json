@@ -1,0 +1,35 @@
+{
+  "id": 136,
+  "name": "delete_readiness_offline",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 503,
+  "body": {
+    "message": "Cannot delete encryption key with ID 3276568b-2c15-44d3-b08d-0fa7f8bcf2d5: Appliance is offline",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/3276568b-2c15-44d3-b08d-0fa7f8bcf2d5",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/136_delete_readiness_offline/delete_readiness_offline_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/136_delete_readiness_offline/delete_readiness_offline_response.png"
+  ],
+  "captured_at": "2026-10-07T22:24:11.392Z",
+  "parameters": {
+    "key_id": "3276568b-2c15-44d3-b08d-0fa7f8bcf2d5"
+  },
+  "query": {},
+  "expected_status": 503,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

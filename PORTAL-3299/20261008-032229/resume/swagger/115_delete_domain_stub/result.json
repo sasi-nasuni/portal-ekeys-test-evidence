@@ -1,0 +1,35 @@
+{
+  "id": 115,
+  "name": "delete_domain_stub",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 409,
+  "body": {
+    "message": "Cannot delete stub encryption key with ID fe677921-0d25-4baf-8c7e-e6f0d378e6a9",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/fe677921-0d25-4baf-8c7e-e6f0d378e6a9",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/115_delete_domain_stub/delete_domain_stub_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/115_delete_domain_stub/delete_domain_stub_response.png"
+  ],
+  "captured_at": "2026-10-07T22:22:42.381Z",
+  "parameters": {
+    "key_id": "fe677921-0d25-4baf-8c7e-e6f0d378e6a9"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

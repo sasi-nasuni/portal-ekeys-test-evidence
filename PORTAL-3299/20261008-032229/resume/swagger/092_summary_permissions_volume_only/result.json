@@ -1,0 +1,36 @@
+{
+  "id": 92,
+  "name": "summary_permissions_volume_only",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 200,
+  "body": {
+    "total": 3,
+    "generated_count": 3
+  },
+  "request_url": "http://localhost:8000/edges/b88cb752-f850-47f2-a4bc-e75908608ef6/encryption-keys/summary",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/092_summary_permissions_volume_only/summary_permissions_volume_only_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/092_summary_permissions_volume_only/summary_permissions_volume_only_response.png"
+  ],
+  "captured_at": "2026-10-07T22:21:09.722Z",
+  "parameters": {
+    "appliance_id": "b88cb752-f850-47f2-a4bc-e75908608ef6"
+  },
+  "query": {},
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Complete response matches independent SQL fixture oracle"
+  ],
+  "outcome": "PASS"
+}

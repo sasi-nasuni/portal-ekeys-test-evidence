@@ -1,0 +1,47 @@
+{
+  "id": 12,
+  "name": "literal_search_8",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?search=not-present&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/012_literal_search_8/literal_search_8_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/012_literal_search_8/literal_search_8_parameters_02.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/012_literal_search_8/literal_search_8_response.png"
+  ],
+  "captured_at": "2026-10-07T22:15:25.231Z",
+  "parameters": {},
+  "query": {
+    "search": "not-present"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 0,
+      "associations": 0,
+      "tasks": 0
+    }
+  ],
+  "outcome": "PASS"
+}

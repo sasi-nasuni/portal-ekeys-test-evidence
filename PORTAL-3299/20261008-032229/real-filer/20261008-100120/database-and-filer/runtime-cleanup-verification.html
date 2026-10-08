@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Runtime Cleanup Verification</title><style>*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:#18212b;font:15px/1.5 Verdana,sans-serif;letter-spacing:0}main{max-width:1420px;margin:auto;padding:28px}h1{font-size:25px}h2{font-size:19px;margin-top:28px}p{max-width:1150px}table{border-collapse:collapse;width:100%;background:white}td,th{border:1px solid #ccd4dc;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#e6eef4}pre{padding:18px;background:#fff;border:1px solid #ccd4dc;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.45 monospace}a{color:#005da8}.note{padding:12px;border-left:4px solid #168253;background:#e8f4ed}img{max-width:100%;height:auto}code{overflow-wrap:anywhere}</style></head><body><main><h1>Runtime Cleanup Verification</h1><p class="note">Saved verification results; independently rendered evidence.</p><pre>{
+  &quot;checked_at&quot;: &quot;2026-10-08T06:50:58.656853+00:00&quot;,
+  &quot;queues_absent&quot;: {
+    &quot;portal-dev-portal3299-20261008-100120-nbn-queue.fifo&quot;: true,
+    &quot;portal-dev-portal3299-20261008-100120-nbn-queue&quot;: true
+  },
+  &quot;subscriptions_absent&quot;: {
+    &quot;arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo:69dedf07-0b02-46fd-9e2e-59bfdbab0f0b&quot;: true,
+    &quot;arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo:abb990c8-9541-4c1f-91cd-f641579fc8ae&quot;: true,
+    &quot;arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo:c991f99c-fac2-477b-9315-15c64d4f0404&quot;: true,
+    &quot;arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo:743cb374-1cc0-44c0-9314-83a177671258&quot;: true
+  },
+  &quot;processes&quot;: {
+    &quot;api&quot;: {
+      &quot;absent&quot;: true,
+      &quot;exit_code&quot;: -15
+    },
+    &quot;eventhub&quot;: {
+      &quot;absent&quot;: true,
+      &quot;exit_code&quot;: 0
+    }
+  },
+  &quot;port_18000_released&quot;: true,
+  &quot;swagger_driver_absent&quot;: true,
+  &quot;verified&quot;: true,
+  &quot;shutdown_note&quot;: &quot;API terminated by the explicitly requested SIGTERM (-15); worker exited 0. Both are absent and the port is free.&quot;,
+  &quot;verification_updated_at&quot;: &quot;2026-10-08T07:00:41.961687+00:00&quot;
+}</pre></main></body></html>

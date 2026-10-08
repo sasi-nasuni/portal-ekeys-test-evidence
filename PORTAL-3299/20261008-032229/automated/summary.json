@@ -1,0 +1,119 @@
+{
+  "generated_at_utc": "2026-10-07T21:56:17.894292+00:00",
+  "checkout": "[APPLICATION_WORKTREE]",
+  "head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "suites": [
+    {
+      "suite": "api_dtos",
+      "tests": 74,
+      "passed": 74,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_seconds": 0.271,
+      "exit_code": 0,
+      "command_manifest": "api_dtos-command.json",
+      "result": "api_dtos-result.json",
+      "log": "api_dtos.log",
+      "junit_xml": "api_dtos.xml"
+    },
+    {
+      "suite": "data_focused",
+      "tests": 370,
+      "passed": 370,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_seconds": 2.0,
+      "exit_code": 0,
+      "command_manifest": "data_focused-command.json",
+      "result": "data_focused-result.json",
+      "log": "data_focused.log",
+      "junit_xml": "data_focused.xml"
+    },
+    {
+      "suite": "webapi_focused",
+      "tests": 137,
+      "passed": 137,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_seconds": 11.035,
+      "exit_code": 0,
+      "command_manifest": "webapi_focused-command.json",
+      "result": "webapi_focused-result.json",
+      "log": "webapi_focused.log",
+      "junit_xml": "webapi_focused.xml"
+    },
+    {
+      "suite": "postgres_focused",
+      "tests": 201,
+      "passed": 201,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "pytest_seconds": 23.751,
+      "exit_code": 0,
+      "command_manifest": "postgres_focused-command.json",
+      "result": "postgres_focused-result.json",
+      "log": "postgres_focused.log",
+      "junit_xml": "postgres_focused.xml"
+    }
+  ],
+  "total_passed": 782,
+  "total_failed": 0,
+  "total_errors": 0,
+  "total_skipped": 0,
+  "postgres_breakdown": {
+    "tasks_dispatch": 24,
+    "tasks_repository": 92,
+    "encryption_reads_candidates_summary_volume_states": 85
+  },
+  "initial_attempts": {
+    "webapi_focused": {
+      "passed": 136,
+      "failed": 1
+    },
+    "postgres_focused": {
+      "passed": 199,
+      "failed": 2
+    },
+    "cause": "Harness log_level=ERROR suppressed WARNING logs asserted by caplog tests. Changed capture level to WARNING; full affected suites rerun and passed. Source unchanged. Initial logs/manifests retained with -attempt1 suffix."
+  },
+  "cleanup": [
+    {
+      "checked_at_utc": "2026-10-07T21:55:27.733307+00:00",
+      "fixture": {
+        "database": "test_ichgqg",
+        "role": "dhymlu"
+      },
+      "database_remaining": false,
+      "generated_role_existed_after_pytest": true,
+      "generated_role_remaining": false,
+      "cleanup_scope": "Only exact generated role tracked from the database pytest fixture; database already removed by fixture finalizer"
+    },
+    {
+      "checked_at_utc": "2026-10-07T21:56:17.679158+00:00",
+      "fixture": {
+        "database": "test_ifvrcw",
+        "role": "cvqnco"
+      },
+      "database_remaining": false,
+      "generated_role_existed_after_pytest": true,
+      "generated_role_remaining": false,
+      "cleanup_scope": "Only exact generated role tracked from the database pytest fixture; database already removed by fixture finalizer"
+    }
+  ],
+  "limitations": [
+    "Focused automated tests; full repository suite and full end-to-end appliance delivery were not run.",
+    "Unit dependencies mocked as defined by repository tests; PostgreSQL integration used real migrated temporary databases and application-role tenant sessions, with in-memory cursor cache where defined.",
+    "No SQLite, live HTTP endpoint requests, dependency installation, Docker service lifecycle changes, or source edits."
+  ],
+  "warnings": {
+    "api_dtos": 0,
+    "data_focused": 8,
+    "webapi_focused": 11,
+    "postgres_focused": 1
+  },
+  "worktree": "Pre-existing devtools/edge-console modifications preserved; git-status-after.txt matches observed initial paths."
+}

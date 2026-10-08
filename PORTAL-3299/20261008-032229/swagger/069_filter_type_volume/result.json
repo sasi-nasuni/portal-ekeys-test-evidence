@@ -1,0 +1,274 @@
+{
+  "id": 69,
+  "name": "filter_type_volume",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "4b2612de-a496-49c8-91a2-7caa6aa5d44a",
+        "name": "PORTAL3299TEST-20261008-032229-A-Zeta-stub",
+        "fingerprint": "1831BC84321E4DFF9BAE012EA35DFA9500000001",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "7e0e1d98-d1e5-4279-99d9-8569f805a002",
+            "action": "upload_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "failed",
+            "error": {
+              "message": "Test upload failed",
+              "detected_at": "2026-10-07T22:00:56.378214Z"
+            }
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "9a787b47-022e-496e-808e-ff47f739e4a1",
+        "name": null,
+        "fingerprint": "273AC219ECA04A0EB876CB0B671D1B3100000000",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": true,
+        "status": "creating",
+        "tasks": [
+          {
+            "task_id": "3764b0d3-9227-4f31-90e5-c8be1cfe6491",
+            "action": "upload_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "in_progress",
+            "error": null
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "enabled",
+            "is_stub": true,
+            "status": "creating",
+            "tasks": [
+              {
+                "task_id": "24dc2011-8fa1-4a07-937c-5c779de2c27b",
+                "action": "add_volume_encryption_keys",
+                "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "fdee3c7b-8787-40f8-a565-c2f241d224fa",
+        "name": "PORTAL3299TEST-20261008-032229-A-Alpha",
+        "fingerprint": "64BDE87BB850406881E624231A6A27D900000002",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "pending",
+        "tasks": [
+          {
+            "task_id": "6db79a34-bca2-47c6-9aca-be68c67e2a4c",
+            "action": "escrow_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "in_progress",
+            "error": null
+          },
+          {
+            "task_id": "384830ad-9dfb-440f-b4f6-1445b126e9a0",
+            "action": "delete_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "failed",
+            "error": {
+              "message": "Test deletion failed",
+              "detected_at": "2026-10-07T22:00:56.378214Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "2dbef716-e4e1-4946-9cb4-070f49e3dd76_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-Archive",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "volume_guid": "eb6df8cb-e145-4dd5-b04b-5e385de67586_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-MiXeD 100%_Path\\Name",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "f78d8737-2f80-4c6d-9e9a-02805448b6f4",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+                "state": "in_progress",
+                "error": null
+              }
+            ]
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "6bc0f483-bffc-4e68-b550-827bbf08ef96",
+        "name": "PORTAL3299TEST-20261008-032229-A-beta",
+        "fingerprint": "E5C849463E44470088C889CAB05C97C200000003",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "0ab91c99-1cb9-4127-9720-0120c6f1c56f",
+            "action": "delete_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-07T22:00:56.378214Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "4b846469-b9e9-4368-8283-fb0a938be25e_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "babbd50b-f5a8-4fbb-80a5-3450563a1cf1",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-07T22:00:56.378214Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "c8eb87b4-9ae8-49d0-870c-2b9ff58d2854",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "01212607A73540F28DFFE3E65EACDD3800000005",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "f5929b6a-8270-4503-947a-40837ae159eb",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "D6B095CE5C0A438F8FD4FF192699644B00000004",
+        "appliance_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-east",
+        "algorithm": "rsa",
+        "length": 2048,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 6,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?type=volume&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_01.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_02.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_03.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_04.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_05.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_06.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_07.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_08.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_09.png",
+    "PORTAL-3299/20261008-032229/swagger/069_filter_type_volume/filter_type_volume_response_10.png"
+  ],
+  "captured_at": "2026-10-07T22:06:29.130Z",
+  "parameters": {},
+  "query": {
+    "type": "volume"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 6,
+      "associations": 4,
+      "tasks": 8
+    }
+  ],
+  "outcome": "PASS"
+}

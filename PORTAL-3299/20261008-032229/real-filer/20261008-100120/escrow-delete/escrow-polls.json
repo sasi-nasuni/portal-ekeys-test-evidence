@@ -1,0 +1,46 @@
+[
+  {
+    "at": "2026-10-08T06:27:08.643658+00:00",
+    "status": 200,
+    "body": {
+      "id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "created_at": "2026-10-08T06:27:05.819403Z",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "stack_id": null,
+      "action": "escrow_encryption_key",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "in_progress",
+      "last_updated_at": "2026-10-08T06:27:05.819403Z",
+      "user_acknowledged_at": null,
+      "deletion_time": null
+    }
+  },
+  {
+    "at": "2026-10-08T06:27:11.658788+00:00",
+    "status": 200,
+    "body": {
+      "id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "created_at": "2026-10-08T06:27:05.819403Z",
+      "resource": "encryption_key",
+      "resource_id": "0a89f4d8-0f3d-4821-bea7-9032c1f95096",
+      "stack_id": null,
+      "action": "escrow_encryption_key",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-10-08T06:27:10.316532Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-10-15T06:27:10.316532Z"
+    }
+  }
+]

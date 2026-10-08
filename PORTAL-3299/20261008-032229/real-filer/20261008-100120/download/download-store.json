@@ -1,0 +1,16 @@
+{
+  "handle": {
+    "download_id": "e672ebf4-d6f8-4885-857e-e68cf1f80589",
+    "expires_at": "2026-10-08T06:23:02.105481Z",
+    "included_fingerprints": [
+      "315A2B36A084945B93772B84AC36F961A0356AFF",
+      "29470C5AA8EB787948BD1CD60413FA75D609C500"
+    ]
+  },
+  "bundle_exists": true,
+  "encrypted_stored_bytes": 10028,
+  "bundle_ttl_seconds": 290,
+  "manifest_matches_generated_keys": true,
+  "private_material_saved": false,
+  "public_artifact_endpoint_tested": false
+}

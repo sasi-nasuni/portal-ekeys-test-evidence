@@ -1,0 +1,185 @@
+{
+  "checked_at_utc": "2026-10-07T22:30:10.726992+00:00",
+  "scope": "Independent read-only checks after extra cleanup; no cleanup mutation performed",
+  "account_sources": [
+    {
+      "metadata": "PORTAL-3299/20261008-032229/fixture-metadata.json",
+      "label": "A",
+      "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "metadata": "PORTAL-3299/20261008-032229/fixture-metadata.json",
+      "label": "B",
+      "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    },
+    {
+      "metadata": "PORTAL-3299/20261008-032229/resume/fixture-metadata.json",
+      "label": "A",
+      "account_id": "2f54719a-8b86-4813-b85d-7157d3bed2eb",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "metadata": "PORTAL-3299/20261008-032229/resume/fixture-metadata.json",
+      "label": "B",
+      "account_id": "9f433bba-1191-4012-b26d-f9ff21658089",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    },
+    {
+      "metadata": "PORTAL-3299/20261008-032229/extra/fixture-metadata.json",
+      "label": "A",
+      "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+      "name": "PORTAL3299TEST-20261008-032229-A"
+    },
+    {
+      "metadata": "PORTAL-3299/20261008-032229/extra/fixture-metadata.json",
+      "label": "B",
+      "account_id": "d8c30814-7e60-4584-9743-ca6372b92dc6",
+      "name": "PORTAL3299TEST-20261008-032229-B"
+    }
+  ],
+  "database": {
+    "read_only": true,
+    "isolation": "REPEATABLE READ",
+    "remaining_rows_by_table": {
+      "accounts": 0,
+      "activity_logs": 0,
+      "appliance_support": 0,
+      "cloud_credential_edge_links": 0,
+      "cloud_credentials": 0,
+      "edges": 0,
+      "edges_v2": 0,
+      "encryption_keys": 0,
+      "messages": 0,
+      "notifications": 0,
+      "notifications_2026_10_07": 0,
+      "notifications_2026_10_07_info": 0,
+      "notifications_2026_10_07_warning_alert_error_admin": 0,
+      "notifications_2026_10_08": 0,
+      "notifications_2026_10_08_info": 0,
+      "notifications_2026_10_08_warning_alert_error_admin": 0,
+      "notifications_2026_10_09": 0,
+      "notifications_2026_10_09_info": 0,
+      "notifications_2026_10_09_warning_alert_error_admin": 0,
+      "notifications_2026_10_10": 0,
+      "notifications_2026_10_10_info": 0,
+      "notifications_2026_10_10_warning_alert_error_admin": 0,
+      "notifications_2026_10_11": 0,
+      "notifications_2026_10_11_info": 0,
+      "notifications_2026_10_11_warning_alert_error_admin": 0,
+      "notifications_2026_10_12": 0,
+      "notifications_2026_10_12_info": 0,
+      "notifications_2026_10_12_warning_alert_error_admin": 0,
+      "notifications_2026_10_13": 0,
+      "notifications_2026_10_13_info": 0,
+      "notifications_2026_10_13_warning_alert_error_admin": 0,
+      "portal_support": 0,
+      "role_permissions": 0,
+      "role_servicekey": 0,
+      "roles": 0,
+      "servicekeys": 0,
+      "task_steps": 0,
+      "tasks": 0,
+      "user_role": 0,
+      "userkeys": 0,
+      "users": 0,
+      "volume_capacity_history": 0,
+      "volume_cloud_credential_associations": 0,
+      "volume_connections": 0,
+      "volume_edge_states": 0,
+      "volume_encryption_key_associations": 0,
+      "volume_shares": 0,
+      "volumes": 0,
+      "volumes_v2": 0
+    },
+    "integration_fixtures": [
+      {
+        "source": "PORTAL-3299/20261008-032229/automated/postgres-fixture-attempt1.json",
+        "database": "test_ichgqg",
+        "role": "dhymlu",
+        "database_exists": false,
+        "role_exists": false,
+        "absent": true
+      },
+      {
+        "source": "PORTAL-3299/20261008-032229/automated/postgres-fixture.json",
+        "database": "test_ifvrcw",
+        "role": "cvqnco",
+        "database_exists": false,
+        "role_exists": false,
+        "absent": true
+      }
+    ],
+    "remaining_exact_fixture_account_names": 0,
+    "alembic_revision": "b7e2c4a9d1f3"
+  },
+  "redis": {
+    "commands": [
+      "SCAN account_uuid_*",
+      "EXISTS ff:account_uuid"
+    ],
+    "accounts": [
+      {
+        "account_id": "7b0adb5e-b03a-489c-80c3-37ff8860a9fc",
+        "remaining_tenant_prefix_keys": 0,
+        "feature_flag_exists": false,
+        "absent": true
+      },
+      {
+        "account_id": "ebee9bd5-b8a0-4807-b87c-f4c95f2a2128",
+        "remaining_tenant_prefix_keys": 0,
+        "feature_flag_exists": false,
+        "absent": true
+      },
+      {
+        "account_id": "2f54719a-8b86-4813-b85d-7157d3bed2eb",
+        "remaining_tenant_prefix_keys": 0,
+        "feature_flag_exists": false,
+        "absent": true
+      },
+      {
+        "account_id": "9f433bba-1191-4012-b26d-f9ff21658089",
+        "remaining_tenant_prefix_keys": 0,
+        "feature_flag_exists": false,
+        "absent": true
+      },
+      {
+        "account_id": "807e17b2-c71c-4bb8-a661-137ba4607836",
+        "remaining_tenant_prefix_keys": 0,
+        "feature_flag_exists": false,
+        "absent": true
+      },
+      {
+        "account_id": "d8c30814-7e60-4584-9743-ca6372b92dc6",
+        "remaining_tenant_prefix_keys": 0,
+        "feature_flag_exists": false,
+        "absent": true
+      }
+    ]
+  },
+  "browser_processes": {
+    "inspection": "ps output parsed in memory; only exact evidence .cjs scripts run by node reported",
+    "scoped_driver_paths": [
+      "PORTAL-3299/20261008-032229/database-read/screenshot_evidence.cjs",
+      "PORTAL-3299/20261008-032229/extra/database-failures/screenshot_evidence.cjs",
+      "PORTAL-3299/20261008-032229/extra/swagger_rpc.cjs",
+      "PORTAL-3299/20261008-032229/resume/swagger_rpc.cjs",
+      "PORTAL-3299/20261008-032229/swagger_rpc.cjs"
+    ],
+    "matching_evidence_node_processes": [],
+    "swagger_drivers_absent": true,
+    "all_evidence_node_processes_absent": true,
+    "original_main_browser_exit_status": "unknown; preserve browser-process-verification.json independent absence evidence"
+  },
+  "git": {
+    "initial_head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+    "current_head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+    "head_unchanged": true,
+    "initial_status": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html",
+    "current_status": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html",
+    "status_unchanged": true,
+    "scope": "HEAD and git-status comparison; no initial file-content hashes were recorded"
+  },
+  "verified": true
+}

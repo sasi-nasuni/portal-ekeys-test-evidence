@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-08T07:09:53.654673+00:00",
+  "swagger_requests": 24,
+  "tasks": 9,
+  "screenshots": 76,
+  "secret_scan_passed": true,
+  "gallery_links_valid": true,
+  "local_filer_runtime_cleanup_verified": true,
+  "worktree_preserved": true,
+  "source_minimum_restored": true,
+  "noc_record_absence_independently_verified": false
+}

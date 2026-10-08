@@ -1,0 +1,37 @@
+{
+  "id": 41,
+  "name": "download_auth_missing",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "status": 401,
+  "body": {
+    "message": "No credentials provided",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/970f3e0e-e956-4968-9a59-dc49c4ba82c5/encryption-keys/downloads?public_key=-----BEGIN%20PGP%20PUBLIC%20KEY%20BLOCK-----%20%20xsBNBGrGwTEBCACdJJs1nqrVMuxZd3vz%2BDjqu5SO1K44I6cLy9OOoXYs%2FWNCDfdG%20A5XMjeKILZS5D75JbTuPh%2B3t9fUvynTRgo%2FDaXclzLbDy1o9HycMRQs7Aaus0Yme%20AqdbTPW8R9fP79nv9Hm68dBcUhnDPj15vqYdqRWgma1SklSUzFeGxPvFog4kgh%2Bb%20t2PuCw3koGb7gA8Rv%2BxFBwwEz4E8KUc1p%2Bg%2BQKU0ZXneStbdU%2FUswyTYQaai1sCt%200dOsv1j4YCAWYnK5zVJE3oI13TL2eb4Ba3NjnDwBOlUqfip8mn8%2BgaYzjZ3EnbTu%2050Q4r%2F5O2fCTNLm%2BdKBti4Uvx%2B%2B62zRp3FMdABEBAAHNI1BPUlRBTDMyOTkgdGVt%20cG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxsExAhsMAgsJAhUIAhYA%20Ah4BFiEEroEcEsnMi5xy29K3KmfOp02EUsgACgkQKmfOp02EUsiSHwf%2FQnp2Ih6f%20fNF2o8OS9%2BC2pHoIMZZomSGrbjE1XeRYnKEODF6CIdZK3IC5Yifbq4kNdapnO7a7%20Vld4IbXDKIjRQ6qEBo4UkuzZSY2zhc6mkZkC%2FSmL1GD72eJajKI6Ru8O5P1qrkLc%20JtoWrut5qR1jJnUsU3X4dfAgIYuQ2hdaKmIo3QBk602ydMzvx1FuV51iWsp7yOTa%20QiV%2F8b6%2FSwR%2BwSwUj8UWczTGpXzFGPTgejkiyIpxEicLZJz5Rneg%2B4VMGUU1E1dp%207er7jl2VlixGe1eIlXKdUKahN6W53P8F1iqnMto6bdOaoj%2B20j4vC%2Bu2phusk947%20qv37vV4wzoOuyQ%3D%3D%20%3Dli%2Fl%20-----END%20PGP%20PUBLIC%20KEY%20BLOCK-----",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/trigger_download_edges__appliance_id__encryption_keys_downloads_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/041_download_auth_missing/download_auth_missing_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/041_download_auth_missing/download_auth_missing_response.png"
+  ],
+  "captured_at": "2026-10-07T22:04:10.084Z",
+  "parameters": {
+    "appliance_id": "970f3e0e-e956-4968-9a59-dc49c4ba82c5"
+  },
+  "query": {
+    "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nxsBNBGrGwTEBCACdJJs1nqrVMuxZd3vz+Djqu5SO1K44I6cLy9OOoXYs/WNCDfdG\nA5XMjeKILZS5D75JbTuPh+3t9fUvynTRgo/DaXclzLbDy1o9HycMRQs7Aaus0Yme\nAqdbTPW8R9fP79nv9Hm68dBcUhnDPj15vqYdqRWgma1SklSUzFeGxPvFog4kgh+b\nt2PuCw3koGb7gA8Rv+xFBwwEz4E8KUc1p+g+QKU0ZXneStbdU/UswyTYQaai1sCt\n0dOsv1j4YCAWYnK5zVJE3oI13TL2eb4Ba3NjnDwBOlUqfip8mn8+gaYzjZ3EnbTu\n50Q4r/5O2fCTNLm+dKBti4Uvx++62zRp3FMdABEBAAHNI1BPUlRBTDMyOTkgdGVt\ncG9yYXJ5IHRlc3QgcmVjaXBpZW50wsCCBBMBCAAsBQJqxsExAhsMAgsJAhUIAhYA\nAh4BFiEEroEcEsnMi5xy29K3KmfOp02EUsgACgkQKmfOp02EUsiSHwf/Qnp2Ih6f\nfNF2o8OS9+C2pHoIMZZomSGrbjE1XeRYnKEODF6CIdZK3IC5Yifbq4kNdapnO7a7\nVld4IbXDKIjRQ6qEBo4UkuzZSY2zhc6mkZkC/SmL1GD72eJajKI6Ru8O5P1qrkLc\nJtoWrut5qR1jJnUsU3X4dfAgIYuQ2hdaKmIo3QBk602ydMzvx1FuV51iWsp7yOTa\nQiV/8b6/SwR+wSwUj8UWczTGpXzFGPTgejkiyIpxEicLZJz5Rneg+4VMGUU1E1dp\n7er7jl2VlixGe1eIlXKdUKahN6W53P8F1iqnMto6bdOaoj+20j4vC+u2phusk947\nqv37vV4wzoOuyQ==\n=li/l\n-----END PGP PUBLIC KEY BLOCK-----\n"
+  },
+  "expected_status": 401,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

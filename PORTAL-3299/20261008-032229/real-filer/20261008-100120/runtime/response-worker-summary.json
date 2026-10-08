@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-10-08T06:11:42.657595+00:00",
+  "stopped_at": "2026-10-08T06:45:34.794912+00:00",
+  "counts": {
+    "worker_started": 1,
+    "ignore_background_event": 386,
+    "defer_unregistered_trace": 780,
+    "ignore_identity": 266,
+    "ignore_after_grace_unregistered_trace": 80,
+    "production_handler_enter": 9,
+    "handler_returned_no_retry": 9
+  },
+  "scope": "Dedicated queues only; guarded real response ingestion",
+  "outbound_commands_blocked": true,
+  "response_payloads_rewritten": false,
+  "success_limit": "handler_returned_no_retry means handler invocation, not task or domain success"
+}

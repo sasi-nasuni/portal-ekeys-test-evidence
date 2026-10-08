@@ -1,0 +1,35 @@
+{
+  "id": 88,
+  "name": "volume_foreign",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 404,
+  "body": {
+    "message": "Volume 300c5594-4aac-40f9-bd51-7968d256a44d_0 not found",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/300c5594-4aac-40f9-bd51-7968d256a44d_0/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/088_volume_foreign/volume_foreign_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/088_volume_foreign/volume_foreign_response.png"
+  ],
+  "captured_at": "2026-10-07T22:20:54.119Z",
+  "parameters": {
+    "volume_id": "300c5594-4aac-40f9-bd51-7968d256a44d_0"
+  },
+  "query": {},
+  "expected_status": 404,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

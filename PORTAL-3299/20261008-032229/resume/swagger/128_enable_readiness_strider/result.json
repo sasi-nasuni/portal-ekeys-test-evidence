@@ -1,0 +1,36 @@
+{
+  "id": 128,
+  "name": "enable_readiness_strider",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 405,
+  "body": {
+    "message": "Master appliance for volume a4b39acf-b1b7-472f-a7e7-6a661cc64ef1_0: This operation is not supported on this appliance",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/volumes/a4b39acf-b1b7-472f-a7e7-6a661cc64ef1_0/encryption-keys/326e48e9-6a36-487e-be2c-e2b9bb38232d/enable",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/128_enable_readiness_strider/enable_readiness_strider_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/128_enable_readiness_strider/enable_readiness_strider_response.png"
+  ],
+  "captured_at": "2026-10-07T22:23:34.274Z",
+  "parameters": {
+    "volume_id": "a4b39acf-b1b7-472f-a7e7-6a661cc64ef1_0",
+    "key_id": "326e48e9-6a36-487e-be2c-e2b9bb38232d"
+  },
+  "query": {},
+  "expected_status": 405,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS"
+}

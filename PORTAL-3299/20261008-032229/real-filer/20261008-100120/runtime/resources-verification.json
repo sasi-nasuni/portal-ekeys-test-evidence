@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-10-08T04:56:51.191062+00:00",
+  "queues": [
+    {
+      "name": "portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "arn": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue.fifo",
+      "checks": {
+        "arn_matches": true,
+        "tags_match": true,
+        "policy_sns_principal": true,
+        "policy_exact_source_topics": true,
+        "policy_exact_resource": true,
+        "visibility300": true,
+        "retention14days": true
+      }
+    },
+    {
+      "name": "portal-dev-portal3299-20261008-100120-nbn-queue",
+      "arn": "arn:aws:sqs:us-east-2:851725431039:portal-dev-portal3299-20261008-100120-nbn-queue",
+      "checks": {
+        "arn_matches": true,
+        "tags_match": true,
+        "policy_sns_principal": true,
+        "policy_exact_source_topics": true,
+        "policy_exact_resource": true,
+        "visibility300": true,
+        "retention14days": true
+      }
+    }
+  ],
+  "subscriptions": [
+    {
+      "arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo:69dedf07-0b02-46fd-9e2e-59bfdbab0f0b",
+      "topic_arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo",
+      "checks": {
+        "endpoint_matches": true,
+        "topic_matches": true,
+        "filter_matches": true,
+        "filter_scope_attributes": true,
+        "raw_delivery": true,
+        "confirmed": true
+      }
+    },
+    {
+      "arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo:abb990c8-9541-4c1f-91cd-f641579fc8ae",
+      "topic_arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-pipeline.fifo",
+      "checks": {
+        "endpoint_matches": true,
+        "topic_matches": true,
+        "filter_matches": true,
+        "filter_scope_attributes": true,
+        "raw_delivery": true,
+        "confirmed": true
+      }
+    },
+    {
+      "arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo:c991f99c-fac2-477b-9315-15c64d4f0404",
+      "topic_arn": "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo",
+      "checks": {
+        "endpoint_matches": true,
+        "topic_matches": true,
+        "filter_matches": true,
+        "filter_scope_attributes": true,
+        "raw_delivery": true,
+        "confirmed": true
+      }
+    },
+    {
+      "arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo:743cb374-1cc0-44c0-9314-83a177671258",
+      "topic_arn": "arn:aws:sns:us-west-2:861199565355:dvista-1-2-sns-non-fifo",
+      "checks": {
+        "endpoint_matches": true,
+        "topic_matches": true,
+        "filter_matches": true,
+        "filter_scope_attributes": true,
+        "raw_delivery": true,
+        "confirmed": true
+      }
+    }
+  ],
+  "account_filter": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "poller_started": false,
+  "passed": true
+}

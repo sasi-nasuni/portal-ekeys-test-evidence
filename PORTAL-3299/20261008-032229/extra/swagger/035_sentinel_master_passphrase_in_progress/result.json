@@ -1,0 +1,39 @@
+{
+  "id": 35,
+  "name": "sentinel_master_passphrase_in_progress",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "status": 409,
+  "body": {
+    "message": "An operation is already in progress",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/edges/e81c9ae7-17b2-4ad9-ba93-73bb7efb70af/escrow-passphrase",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/set_escrow_passphrase_edges__appliance_id__escrow_passphrase_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/extra/swagger/035_sentinel_master_passphrase_in_progress/sentinel_master_passphrase_in_progress_parameters_01.png",
+    "PORTAL-3299/20261008-032229/extra/swagger/035_sentinel_master_passphrase_in_progress/sentinel_master_passphrase_in_progress_response.png"
+  ],
+  "captured_at": "2026-10-07T22:28:40.949Z",
+  "parameters": {
+    "appliance_id": "e81c9ae7-17b2-4ad9-ba93-73bb7efb70af"
+  },
+  "query": {},
+  "expected_status": 409,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    "Sentinel build accepted by readiness; exact seeded task caused in_progress with no dispatch"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "passphrase": "[REDACTED encrypted test passphrase]"
+  }
+}

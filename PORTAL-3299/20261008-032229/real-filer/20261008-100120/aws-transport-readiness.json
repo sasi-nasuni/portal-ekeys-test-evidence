@@ -1,0 +1,168 @@
+{
+  "checked_at_utc": "2026-10-08T04:35:49.597906+00:00",
+  "scope": "Read-only current runtime and AWS authorization audit. Standard SDK noninteractive SSO renewal allowed by coordinating agent. No interactive login, credential/defaultconfig edits, queue mutations, fixture writes, transport sends, or service starts/restarts.",
+  "credentials": {
+    "running_webapi_selection": {
+      "aws_profile_env_present": false,
+      "env_credential_pair_present": false,
+      "host_aws_directory_mounted": true,
+      "default_provider": "shared-credentials-file",
+      "sts_validity": "invalid",
+      "error_code": "InvalidClientTokenId"
+    },
+    "profile_probes": [
+      {
+        "profile": "portal-dev",
+        "provider": "sso",
+        "validity": "valid",
+        "scope": "dev"
+      },
+      {
+        "profile": "default",
+        "provider": "shared-credentials-file",
+        "validity": "invalid",
+        "scope": "not_selected_for_dev_test"
+      },
+      {
+        "profile": "vista-dev",
+        "provider": "sso",
+        "validity": "valid",
+        "scope": "dev"
+      },
+      {
+        "profile": "portal-prod",
+        "provider": "sso",
+        "validity": "valid",
+        "scope": "not_selected_for_dev_test"
+      },
+      {
+        "profile": "portal-test",
+        "provider": "sso",
+        "validity": "valid",
+        "scope": "not_selected_for_dev_test"
+      },
+      {
+        "profile": "vista-prod",
+        "provider": "sso",
+        "validity": "valid",
+        "scope": "not_selected_for_dev_test"
+      }
+    ],
+    "selected_probe_profile": "portal-dev",
+    "default_config_and_credentials_files_unchanged": true,
+    "cached_session_metadata_before_noninteractive_probe": {
+      "sso_unexpired_entries": 2,
+      "cli_unexpired_entries": 1
+    }
+  },
+  "portal_dev_authorization_checks": {
+    "nbn_fifo_assume_role": "allowed",
+    "nbn_client_id_ssm_read": "allowed/nonempty",
+    "nbn_api_key_secret_read": "allowed/valid_key_field",
+    "noc_keyserver_assume_role": "allowed",
+    "inbound_keys_active_secret_read": "allowed/private_key_field_present",
+    "inbound_keys_backup_secret_read": "allowed/private_key_field_present",
+    "secret_values_never_printed": true
+  },
+  "outbound": {
+    "commands": {
+      "escrow_encryption_key": "fifo",
+      "delete_encryption_key": "fifo",
+      "enable_volume_encryption_keys": "fifo",
+      "disable_volume_encryption_keys": "fifo",
+      "download_encryption_keys": "fifo",
+      "update_escrow_passphrase": "fifo"
+    },
+    "flow": [
+      "Signed API JWT establishes real account tenant context",
+      "Encryption key/association resolves appliance serial and NOC instance GUID from local edge",
+      "OutboundEncryptionService fetches public account key by filer GUID with assumed NOC role",
+      "EdgeTransport encrypts envelope then calls NBN FIFO REST API using configured NBN authrole/SSM/APIkey",
+      "Task id travels as envelope metadata.trace_id; outbound message persisted after transport succeeds"
+    ],
+    "api_host": "api.dbn1.nbn.dev.api.nasuni.com",
+    "nbn_identity": "dvista1",
+    "transport_endpoint_not_invoked": true
+  },
+  "inbound": {
+    "flow": [
+      "Filer response -> NBN FIFO SNS topics -> personal account-filtered SQS FIFO queue",
+      "local_sqs_combined_poller invokes events_hub_stack.handler with SQS records",
+      "PortalEncryptionKeyProvider loads nbn/portal/dvista1/keys-active and keys-backup from SecretsManager",
+      "Handler resolves real account tenant and processes correlated task/step, persists messages/domain data, broadcasts through Redis/SSE"
+    ],
+    "poller_container": "portal-encr-keys-5-eventhub-poller-1",
+    "container_running": false,
+    "container_exit_code": 1,
+    "stopped_at": "2026-10-07T21:50:38.693559263Z",
+    "confirmed_exit_reason": "Error: no queues configured. Set SQS_QUEUE_URL and/or SQS_NONFIFO_QUEUE_URL.",
+    "host_poller_processes": 0,
+    "queue_url_env_configured": false,
+    "nonfifo_queue_url_env_configured": false,
+    "inbound_key_secret_env_configured": false,
+    "scripts_dotenv_exists": false,
+    "entrypoint": [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "scripts/local_sqs_combined_poller.py"
+    ],
+    "working_directory": "/app/stacks/portal-eventhub",
+    "local_db_host": "db",
+    "local_redis_host": "redis"
+  },
+  "local_domain_baseline": {
+    "accounts": 0,
+    "edges_v2": 0,
+    "meaning": "Real tenant and real edge GUID/serial have not been registered in local DB"
+  },
+  "repo_credential_workflow": {
+    "documented_command": "make aws-login",
+    "steps": [
+      "aws sso login --sso-session portal-dev (interactive; NOT run)",
+      "aws configure export-credentials --profile portal-dev (credential output must be captured privately; NOT run)",
+      "Writes profile portal-dev static credentials and root .env.local AWS_PROFILE=portal-dev plus CodeArtifact URL (NOT run)"
+    ],
+    "current_existing_sso_session_sufficient_for_noninteractive_profile_use": true
+  },
+  "cached_client_behavior": {
+    "source": "backend/libs/portal-core/portal/core/aws/base.py AWSBase.client caches _client; boto3.client uses default session cached credentials; NbnApiKeyProvider caches key and client ID",
+    "assessment": "Updating shared credential file alone does not reliably switch an already initialized API worker to portal-dev. Existing default session has previously loaded invalid default credentials. A fresh API process configured explicitly with AWS_PROFILE=portal-dev is the reliable boundary; no worker restart or replacement performed.",
+    "independent_fresh_child_probe_is_not_a_claim_current_api_worker_credentials_changed": true
+  },
+  "next_coordinated_steps": [
+    "Choose a fresh authorized test runtime explicitly using portal-dev without altering unrelated profiles",
+    "Establish an isolated personal response queue/subscription filtered to real test account; configure inbound secret names and start its local handler after root coordinates",
+    "Load real tenant/edge identity before dispatch; preserve existing filer resources and use dedicated test keys/volume",
+    "Verify inbound handler correlation before treating HTTP202 as completed operation"
+  ],
+  "source_references": [
+    "Makefile:399",
+    "docs/getting_started/setup/local_nbn_setup_guide.md",
+    "docker-compose.yml:151",
+    "backend/stacks/portal-eventhub/Dockerfile.poller",
+    "backend/stacks/portal-eventhub/scripts/create_dev_queues.py:206",
+    "backend/stacks/portal-eventhub/scripts/local_sqs_combined_poller.py",
+    "backend/stacks/portal-eventhub/src/events_hub_stack/handler.py",
+    "backend/stacks/portal-eventhub/src/events_hub_stack/decryption/service.py",
+    "backend/libs/portal-core/portal/core/aws/base.py",
+    "backend/libs/nbn-api/nbn_api/auth/fifo.py",
+    "backend/libs/portal-data/portal/data/messages/client.py",
+    "backend/libs/portal-data/portal/data/messages/encryption.py",
+    "backend/libs/edge-sdk/edge_sdk/transport.py"
+  ],
+  "conclusion": "Authorized portal-dev SSO session and required FIFO/NOC-role/inbound-secret reads are usable. Current default-profile webapi process and absent local response queue/poller are not yet ready for real-filer E2E.",
+  "running_containers": [
+    "portal-encr-keys-5-mcp-1",
+    "portal-encr-keys-5-webbff-1",
+    "portal-encr-keys-5-webapi-1",
+    "portal-encr-keys-5-webbffsse-1",
+    "portal-encr-keys-5-db-1",
+    "portal-encr-keys-5-redis-1",
+    "portal-encr-keys-5-pgadmin-1",
+    "portal-encr-keys-5-frontend-1"
+  ],
+  "current_head": "3fdd4f6e1c72ab85ab53feaff159e10b9bd44640",
+  "git_status": "M devtools/edge-console/Dockerfile\n M devtools/edge-console/app/commands.py\n M devtools/edge-console/app/main.py\n M devtools/edge-console/app/senders/portal_task.py\n M devtools/edge-console/app/templates/_command_form.html\n M devtools/edge-console/app/templates/_command_options.html\n M devtools/edge-console/app/templates/_message_detail.html\n M devtools/edge-console/app/templates/_message_row.html\n M devtools/edge-console/app/templates/index.html\n?? devtools/edge-console/app/keygen.py\n?? devtools/edge-console/app/keys/\n?? devtools/edge-console/app/templates/_decrypt_result.html"
+}

@@ -1,0 +1,117 @@
+{
+  "id": 76,
+  "name": "filter_algorithm_elgamal",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "6bc0f483-bffc-4e68-b550-827bbf08ef96",
+        "name": "PORTAL3299TEST-20261008-032229-A-beta",
+        "fingerprint": "E5C849463E44470088C889CAB05C97C200000003",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "0ab91c99-1cb9-4127-9720-0120c6f1c56f",
+            "action": "delete_encryption_key",
+            "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+            "state": "failed",
+            "error": {
+              "message": null,
+              "detected_at": "2026-10-07T22:00:56.378214Z"
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "volume_guid": "4b846469-b9e9-4368-8283-fb0a938be25e_0",
+            "volume_name": "PORTAL3299TEST-20261008-032229-A-zeta",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "babbd50b-f5a8-4fbb-80a5-3450563a1cf1",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "4b28c084-6759-4bf8-b282-b8670aed27da",
+                "state": "failed",
+                "error": {
+                  "message": "Test disable failed",
+                  "detected_at": "2026-10-07T22:00:56.378214Z"
+                }
+              }
+            ]
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "c8eb87b4-9ae8-49d0-870c-2b9ff58d2854",
+        "name": "PORTAL3299TEST-20261008-032229-A-Duplicate",
+        "fingerprint": "01212607A73540F28DFFE3E65EACDD3800000005",
+        "appliance_id": "78f70b75-04bc-4c4c-b551-2bbed9839354",
+        "appliance_name": "PORTAL3299TEST-20261008-032229-A-appliance-west",
+        "algorithm": "elgamal",
+        "length": 2048,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 50,
+      "total_pages": 1,
+      "total_items": 2,
+      "page": 1
+    }
+  },
+  "request_url": "http://localhost:8000/encryption-keys?algorithm=elgamal&sort_by=name&sort_direction=asc&limit=50",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/list_encryption_keys_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/swagger/076_filter_algorithm_elgamal/filter_algorithm_elgamal_parameters.png",
+    "PORTAL-3299/20261008-032229/swagger/076_filter_algorithm_elgamal/filter_algorithm_elgamal_response_01.png",
+    "PORTAL-3299/20261008-032229/swagger/076_filter_algorithm_elgamal/filter_algorithm_elgamal_response_02.png",
+    "PORTAL-3299/20261008-032229/swagger/076_filter_algorithm_elgamal/filter_algorithm_elgamal_response_03.png",
+    "PORTAL-3299/20261008-032229/swagger/076_filter_algorithm_elgamal/filter_algorithm_elgamal_response_04.png"
+  ],
+  "captured_at": "2026-10-07T22:07:01.317Z",
+  "parameters": {},
+  "query": {
+    "algorithm": "elgamal"
+  },
+  "expected_status": 200,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response",
+    {
+      "keys": 2,
+      "associations": 1,
+      "tasks": 2
+    }
+  ],
+  "outcome": "PASS"
+}

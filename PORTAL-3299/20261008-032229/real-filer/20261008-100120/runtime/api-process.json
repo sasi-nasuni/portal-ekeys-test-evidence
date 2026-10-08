@@ -1,0 +1,14 @@
+{
+  "kind": "api",
+  "pid": 11981,
+  "wrapper_pid": 11548,
+  "started_at": "2026-10-08T04:57:02.851317+00:00",
+  "script": "PORTAL-3299/20261008-032229/real-filer/20261008-100120/runtime/launcher.py",
+  "profile": "portal-dev",
+  "output_policy": "fixed classifications only",
+  "stopped_at": "2026-10-08T06:45:32.363360+00:00",
+  "exit_code": -15,
+  "log_categories": {
+    "withheld_runtime_line": 9
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "Nine directly affected encryption-key endpoints; shared task service behavior also exercised by focused automated tests. Other feature write endpoints were not dispatched through Swagger.",
+  "controlled_dependencies": [
+    "Synthetic local PostgreSQL accounts/users/roles/resources/tasks with actual stored permission strings",
+    "JWTs signed using running local API settings; tokens retained only in memory",
+    "Per-test-account Redis feature flag and account-license values; this does not validate PostHog or NOC licensing",
+    "Supplemental dispatch failures use a deliberately invalid cached public key on fresh fake appliance GUIDs, before transport publication"
+  ],
+  "pending_real_filer": [],
+  "automated_only": [
+    "Escrow-passphrase dispatch-failure handling: live tests cover readiness and recipient validation only; a failure after recipient validation could not be forced safely without risking real transport",
+    "Task failure-persistence exception fallback and cancellation handling",
+    "Serialization/transmission/message-storage error variants beyond the controlled live PGP failure",
+    "PostgreSQL concurrent terminal writers, rollback, and row-lock contention using temporary integration databases"
+  ],
+  "not_exercised": [
+    "Real IdP login/token issuance and production licensing services",
+    "Production-size query plan/load/performance validation",
+    "Download artifact retrieval at the advertised status URL: implementation remains deferred by PORTAL-3190"
+  ],
+  "filer_evidence": "Baseline log tail and any later negative dispatch correlation must not be presented as successful command delivery.",
+  "original_pending_real_filer": [
+    "Successful delivery and completion of write commands on 10.84.2.115",
+    "Permission for real filer writes/passphrase changes remains unanswered",
+    "Current container AWS session is invalid for NOC lookup/dispatch; development credentials need refresh"
+  ],
+  "real_filer_follow_up": {
+    "report": "real-filer/20261008-100120/report.md",
+    "summary": "real-filer/20261008-100120/completion-summary.json",
+    "verification": "real-filer/20261008-100120/final-verification.json",
+    "controlled_preconditions": [
+      "Temporarily lowered source minimum from 10.6 to 10.5 for the approved POC filer; now restored",
+      "Local account/user/permissions and license/feature cache; not real IdP or entitlement validation",
+      "Readiness timestamp from a successful SSH probe; normal heartbeat ingestion not validated",
+      "Genuine filer key/volume metadata bootstrapped into local PostgreSQL; legacy routes used only for fixture setup/volume cleanup",
+      "Temporary API with lifespan disabled and guarded SQS worker invoking production response handlers; no synthetic completion events"
+    ],
+    "limitations": [
+      "Public download status/content endpoint remains unimplemented (PORTAL-3190); verified generation and Redis ciphertext metadata only",
+      "Independent NOC volume lookup returned 401; external NOC record removal was not independently confirmed",
+      "Current filer inventory/private keyrings and current escrow refresh verified; historical NOC escrow activity or retained storage versions were not erased",
+      "No production-scale query/load testing; no new CI run or evidence publication performed"
+    ]
+  }
+}

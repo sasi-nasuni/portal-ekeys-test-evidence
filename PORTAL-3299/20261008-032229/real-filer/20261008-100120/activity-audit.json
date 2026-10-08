@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "id": "c928008d-7bf7-53c5-8c62-964f68656ddb",
+      "action": "Escrow Passphrase Updated",
+      "summary": "Escrow passphrase updated for DEV-E-KEYS-POC by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:20:56.155334+00:00",
+      "transaction_id": "f6b3f605-7175-4c72-b932-fc11ad33b70c",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "594185c5-ab1b-50f1-b201-bce4d9dc79d9",
+      "action": "Escrow Passphrase Updated",
+      "summary": "Escrow passphrase updated for DEV-E-KEYS-POC by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:22:02.637477+00:00",
+      "transaction_id": "13793e81-1aed-41c6-84c1-96a7d4651672",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "c2464bd3-10bf-55c8-ac6b-2bb1dc3fb331",
+      "action": "Encryption Key Escrowed",
+      "summary": "Encryption key PORTAL3299-REAL-20261008-100120-escrow escrowed by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:27:10.323437+00:00",
+      "transaction_id": "5cb3deeb-8537-4630-bd26-800d6a642d14",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "bd707f53-7ac6-5297-aaf6-033728e2db48",
+      "action": "Encryption Key Deleted",
+      "summary": "Encryption key PORTAL3299-REAL-20261008-100120-escrow deleted by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:27:46.212569+00:00",
+      "transaction_id": "902b2f74-a96e-485c-bd4e-88a2f0d55bd3",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "95713134-6496-56c5-aec3-e700d170473a",
+      "action": "Encryption Key Disabled On Volume",
+      "summary": "Encryption key PORTAL3299-REAL-20261008-100120-volume-secondary disabled on volume PORTAL3299-REAL-20261008-100120-volume by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:35:05.423280+00:00",
+      "transaction_id": "b8205f24-e19e-4d02-878a-2a09564d2a2c",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "eaa9e207-752d-5da2-977a-7fcdf6ab1412",
+      "action": "Encryption Key Enabled On Volume",
+      "summary": "Encryption key PORTAL3299-REAL-20261008-100120-volume-secondary enabled on volume PORTAL3299-REAL-20261008-100120-volume by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:35:42.979658+00:00",
+      "transaction_id": "1c4b73d3-4e97-4e3c-bbdc-5741fe82ed8c",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "2f492301-3edb-535f-9ebe-ff928b16bf58",
+      "action": "Encryption Key Deleted",
+      "summary": "Encryption key PORTAL3299-REAL-20261008-100120-volume-base deleted by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:41:36.109048+00:00",
+      "transaction_id": "77ed5223-49de-456a-9d4e-dc024318fbee",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    },
+    {
+      "id": "cec6c155-0146-5cf0-8e43-054b6a51ff75",
+      "action": "Encryption Key Deleted",
+      "summary": "Encryption key PORTAL3299-REAL-20261008-100120-volume-secondary deleted by PORTAL3299-REAL-20261008-100120-operator",
+      "timestamp": "2026-10-08 06:42:08.869730+00:00",
+      "transaction_id": "f61610ce-3d51-4d16-b193-3910c96b9832",
+      "target": "Edge",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "user_id": "b890d121-f851-43b8-951f-fffb28fc78e3",
+      "username": "PORTAL3299-REAL-20261008-100120-operator",
+      "source_event_id": null
+    }
+  ],
+  "verified": true,
+  "test_actor_matches": true
+}

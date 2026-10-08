@@ -1,0 +1,22 @@
+{
+  "id": 105,
+  "name": "enable_invalid_path",
+  "client_validation": true,
+  "reason": "Swagger UI rejected these inputs before issuing an HTTP request",
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/105_enable_invalid_path/enable_invalid_path_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/105_enable_invalid_path/enable_invalid_path_validation_01.png"
+  ],
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "parameters": {
+    "volume_id": "bad-id",
+    "key_id": "bad-id"
+  },
+  "query": {},
+  "expected_status": 422,
+  "assertions": [],
+  "outcome": "FAIL",
+  "failure": "Expected HTTP 422, got None; Swagger UI rejected these inputs before issuing an HTTP request"
+}

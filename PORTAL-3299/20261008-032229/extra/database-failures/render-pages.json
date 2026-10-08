@@ -1,0 +1,65 @@
+{
+  "generated_at_utc": "2026-10-07T22:30:50.330597+00:00",
+  "pages": [
+    {
+      "html": "failure-01-bulk_escrow.html",
+      "screenshot": "failure-01-bulk_escrow.png",
+      "task_id": "25463890-e2c3-45f8-81e5-8afa08f9a542",
+      "step_id": "49b99eb8-2f8a-4a3f-896c-4297b8799147",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed"
+    },
+    {
+      "html": "failure-02-bulk_escrow.html",
+      "screenshot": "failure-02-bulk_escrow.png",
+      "task_id": "7e2ce59f-1ed5-42fe-8f8c-7b513ac7a37f",
+      "step_id": "9bec2b49-f492-4a13-acb3-221c6dd79939",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed"
+    },
+    {
+      "html": "failure-03-delete.html",
+      "screenshot": "failure-03-delete.png",
+      "task_id": "752185cc-30e4-46d4-8d97-81c218574570",
+      "step_id": "c5461bdd-332f-44cc-983c-591c80d8083e",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed"
+    },
+    {
+      "html": "failure-04-enable.html",
+      "screenshot": "failure-04-enable.png",
+      "task_id": "ae1e8f89-9c3d-4087-b125-8341a79948a4",
+      "step_id": "8f02316d-90c2-43c3-9605-8bce5c15ce97",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed"
+    },
+    {
+      "html": "failure-05-disable.html",
+      "screenshot": "failure-05-disable.png",
+      "task_id": "aaeb3836-38c7-40b5-9c5e-f7659f5b2af1",
+      "step_id": "b342f976-8249-4a35-a1da-a391d00a675b",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed"
+    },
+    {
+      "html": "failure-06-download.html",
+      "screenshot": "failure-06-download.png",
+      "task_id": "aa76bada-3b8b-45e5-973d-dac161f4f997",
+      "step_id": "6947d7a8-c9d4-46ae-be6f-74353e717b69",
+      "source_json": "../controlled-dispatch-database-checks.json",
+      "label": "Saved PostgreSQL parent/step failure evidence, not pgAdmin UI; no real filer dispatch claimed"
+    },
+    {
+      "html": "exclusion-cleanup.html",
+      "screenshot": "exclusion-cleanup.png",
+      "source_json": "../active-task-exclusion.json",
+      "label": "Saved active-task exclusion and exact-fixture cleanup assertions"
+    },
+    {
+      "html": "filer-negative-correlation.html",
+      "screenshot": "filer-negative-correlation.png",
+      "source_json": "../filer-negative-correlation.json",
+      "label": "Current filer log negative correlation only; not proof of successful dispatch"
+    }
+  ]
+}

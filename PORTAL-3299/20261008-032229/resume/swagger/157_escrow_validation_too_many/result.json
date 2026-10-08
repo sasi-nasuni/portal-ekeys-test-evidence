@@ -1,0 +1,106 @@
+{
+  "id": 157,
+  "name": "escrow_validation_too_many",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "too_long",
+        "loc": [
+          "body",
+          "key_ids"
+        ],
+        "msg": "List should have at most 25 items after validation, not 26",
+        "input": [
+          "26694f1d-7ece-4673-9192-980307be351d",
+          "b99d3ce2-bdc3-4439-9a99-e0f7fd3d3bae",
+          "4ef4b10b-2c42-4732-a82e-f32f3eb73384",
+          "ae593e9f-3707-4964-96dd-39c56d22b377",
+          "e0219591-7ea0-4163-aaa4-955f96abf642",
+          "05c81b2e-80ca-48e8-932c-6000aa20a036",
+          "fae7f055-d7f4-412f-bfbe-1bd42634d0e8",
+          "c550d1d9-5d5d-4288-a2e4-798d21b4917a",
+          "ff31d2c7-28a5-4952-84c6-378115e19474",
+          "34616844-32ad-4e2d-b6bc-d332280f6624",
+          "4144e322-a224-49fb-89c1-e39af7f86634",
+          "8c59900a-96d2-4c6b-8ce1-ce47ef2cdc2a",
+          "61ad72c9-20e9-4c95-a0be-721acd536edf",
+          "c9b0a975-0505-4335-9c6b-81d68ff29496",
+          "56e0afd1-698e-4770-be91-bae8ea627dbc",
+          "ac86d985-166c-40c5-bd47-7ef0a05682a8",
+          "3af46bce-1bb4-476c-939c-7b23d358bb41",
+          "393e40ef-491f-4c86-8eb8-56cfe6ea5df5",
+          "ee07e061-a445-4239-bde4-8cf1ad47968f",
+          "cee38d7f-df40-4784-9c84-c2ac2b2c2bc1",
+          "3028f9be-d55f-4962-bf9e-d42a4d828f58",
+          "5d6d2698-94de-4ede-a2d6-884def614d83",
+          "b4cc57b9-6837-4724-a0d9-9327f3359fe9",
+          "6d58a09a-922e-4f4f-b11a-17d08ae90a48",
+          "1e678c81-762e-4f37-b61f-886ebb9f0bd8",
+          "ca708dce-a464-458d-9c1a-bfa22852da52"
+        ],
+        "ctx": {
+          "field_type": "List",
+          "max_length": 25,
+          "actual_length": 26
+        }
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/encryption-keys/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_keys_encryption_keys_escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "PORTAL-3299/20261008-032229/resume/swagger/157_escrow_validation_too_many/escrow_validation_too_many_parameters_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/157_escrow_validation_too_many/escrow_validation_too_many_response_01.png",
+    "PORTAL-3299/20261008-032229/resume/swagger/157_escrow_validation_too_many/escrow_validation_too_many_response_02.png"
+  ],
+  "captured_at": "2026-10-07T22:25:34.307Z",
+  "parameters": {},
+  "query": {},
+  "expected_status": 422,
+  "assertions": [
+    "HTTP status matches contract",
+    "Live Swagger response equals network response"
+  ],
+  "outcome": "PASS",
+  "request_body": {
+    "key_ids": [
+      "26694f1d-7ece-4673-9192-980307be351d",
+      "b99d3ce2-bdc3-4439-9a99-e0f7fd3d3bae",
+      "4ef4b10b-2c42-4732-a82e-f32f3eb73384",
+      "ae593e9f-3707-4964-96dd-39c56d22b377",
+      "e0219591-7ea0-4163-aaa4-955f96abf642",
+      "05c81b2e-80ca-48e8-932c-6000aa20a036",
+      "fae7f055-d7f4-412f-bfbe-1bd42634d0e8",
+      "c550d1d9-5d5d-4288-a2e4-798d21b4917a",
+      "ff31d2c7-28a5-4952-84c6-378115e19474",
+      "34616844-32ad-4e2d-b6bc-d332280f6624",
+      "4144e322-a224-49fb-89c1-e39af7f86634",
+      "8c59900a-96d2-4c6b-8ce1-ce47ef2cdc2a",
+      "61ad72c9-20e9-4c95-a0be-721acd536edf",
+      "c9b0a975-0505-4335-9c6b-81d68ff29496",
+      "56e0afd1-698e-4770-be91-bae8ea627dbc",
+      "ac86d985-166c-40c5-bd47-7ef0a05682a8",
+      "3af46bce-1bb4-476c-939c-7b23d358bb41",
+      "393e40ef-491f-4c86-8eb8-56cfe6ea5df5",
+      "ee07e061-a445-4239-bde4-8cf1ad47968f",
+      "cee38d7f-df40-4784-9c84-c2ac2b2c2bc1",
+      "3028f9be-d55f-4962-bf9e-d42a4d828f58",
+      "5d6d2698-94de-4ede-a2d6-884def614d83",
+      "b4cc57b9-6837-4724-a0d9-9327f3359fe9",
+      "6d58a09a-922e-4f4f-b11a-17d08ae90a48",
+      "1e678c81-762e-4f37-b61f-886ebb9f0bd8",
+      "ca708dce-a464-458d-9c1a-bfa22852da52"
+    ]
+  }
+}
