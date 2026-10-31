@@ -1,0 +1,708 @@
+{
+  "id": 20,
+  "name": "complete_default_parent_page",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "volume_name": "Alpha Finance",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "617c151c-3c49-4333-b895-c3e3eaea81bb",
+            "name": "Generated disabled",
+            "fingerprint": "1AC33616B5C647B08FC039AA55C4B2D900000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+            "name": "Needle%_\\Key",
+            "fingerprint": "33A01B34119149B498CFAB62E60ED61700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "65894630-57f5-4ea2-835c-02dc73d850ac",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+                "state": "in_progress",
+                "error": null,
+                "can_acknowledge": false
+              }
+            ]
+          },
+          {
+            "id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+            "name": "Uploaded disabled",
+            "fingerprint": "92F3EEFB8DD74DD9896C0506AC30D20F00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "8722467e-d88b-4cd8-84ab-124bc88801bb",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+                "state": "failed",
+                "error": {
+                  "message": "Synthetic disable failure",
+                  "detected_at": "2026-10-31T20:57:15.674699Z"
+                },
+                "can_acknowledge": false
+              }
+            ]
+          },
+          {
+            "id": "0a330075-1092-4b9c-b46c-10ec8f5af9b9",
+            "name": "Uploaded enabled",
+            "fingerprint": "8B2AD0135794441FB2DDC3CD49ECD3D800000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "fd99f1d3-cb37-4cb8-a52d-a216ff1163d5",
+            "name": null,
+            "fingerprint": "4255BFC9D51B4DCFB91DF5A2E9E7F8AF00000001",
+            "algorithm": null,
+            "length": null,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "creating",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      },
+      {
+        "volume_id": "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "volume_name": "Bravo Empty",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [],
+        "tasks": [
+          {
+            "task_id": "973988a7-653f-4c90-a557-18d6ca80cd29",
+            "action": "add_volume_encryption_keys",
+            "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+            "state": "in_progress",
+            "error": null,
+            "can_acknowledge": false
+          }
+        ]
+      },
+      {
+        "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+        "volume_name": "charlie Archive",
+        "owner_appliance": {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance"
+        },
+        "keys": [
+          {
+            "id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+            "name": "West only",
+            "fingerprint": "E916E31F62F84E2B83D863BF14EF6D8E00000001",
+            "algorithm": "elgamal",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      },
+      {
+        "volume_id": "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+        "volume_name": "Duplicate",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+            "name": "Needle%_\\Key",
+            "fingerprint": "33A01B34119149B498CFAB62E60ED61700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      },
+      {
+        "volume_id": "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+        "volume_name": "DUPLICATE",
+        "owner_appliance": {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance"
+        },
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+        "volume_name": "Echo Bulk",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "21404f5b-756c-41c3-9e72-71a6395270c3",
+            "name": "Bulk key 00",
+            "fingerprint": "C63082202D654D519CDC62C18956210500000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "b45d33b8-fe27-4371-8aa3-8312f95c1fb5",
+            "name": "Bulk key 01",
+            "fingerprint": "303E7661B3824477AB34C7AB919A4E8300000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "8b27f15a-42d2-44dc-842d-3a8d04f19a49",
+            "name": "Bulk key 02",
+            "fingerprint": "9E4ABA49DEA34DD2A617F4F0FC78B54A00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "441efd2d-5ea6-4571-b5ad-7c9373d133d8",
+            "name": "Bulk key 03",
+            "fingerprint": "D3B5A385063A4FBF929DD095E67831FA00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "14d486d0-1248-46d9-a730-df1f95a8a931",
+            "name": "Bulk key 04",
+            "fingerprint": "EC965690ADF1411398D861EE99835B9A00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "d2ba25ee-59a9-446a-bcd3-dfe304339f52",
+            "name": "Bulk key 05",
+            "fingerprint": "01913696A68641F08C684E7D6A7BC20500000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "4c912781-01dd-47eb-ae6e-4a9f971edb01",
+            "name": "Bulk key 06",
+            "fingerprint": "37D225C6D26448BFBDABED2AC24B7BF400000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "bf800784-770d-488f-a9a8-247b4306ed77",
+            "name": "Bulk key 07",
+            "fingerprint": "F918172500D346C1BCCD9532956AFE5A00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "910902b3-659a-485b-b2b9-4813ecb33142",
+            "name": "Bulk key 08",
+            "fingerprint": "EDEE00BE08384BBE91B34567C269D39B00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "b14a0c22-d7d8-48b4-ba46-c0003fa4877a",
+            "name": "Bulk key 09",
+            "fingerprint": "B8F2957AC4AA41E3AED7032921D6EE5400000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "5259d9ea-33ba-4f98-b896-5c848419451c",
+            "name": "Bulk key 10",
+            "fingerprint": "8FC8F35FDBE5440F90A646A4D775B6BA00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "e9cb1206-896f-4db8-840b-4c5488140aa6",
+            "name": "Bulk key 11",
+            "fingerprint": "3573BE420F7547EF85D2BBC35FE1C7D100000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "78c2ec6b-a662-4f46-ad64-510dd0e7c880",
+            "name": "Bulk key 12",
+            "fingerprint": "F8EE25914BA744B99E2536ACD01BC5DC00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "1bc57348-316a-43be-9aab-68138683d62f",
+            "name": "Bulk key 13",
+            "fingerprint": "CF74C43CA3714B979C84D597B76B84F800000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "dadf081a-0240-4e06-98d8-f9c92ac2c543",
+            "name": "Bulk key 14",
+            "fingerprint": "59C4A7308AF24B7883409429DCEBDB6700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "9a15db49-e678-4ae1-8774-d86890475b00",
+            "name": "Bulk key 15",
+            "fingerprint": "029E25A7E4E74EBAAA3B5F33A0742EFE00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "cbdeb4d2-30a4-4832-bc7a-1adc61822a5a",
+            "name": "Bulk key 16",
+            "fingerprint": "3D14BE3959E0464F90DFCDB7E55DE76E00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "a8c38118-deaa-40a4-a30f-df543fcfad18",
+            "name": "Bulk key 17",
+            "fingerprint": "E56F8D8B67E041E4B4745E8C63BC7CE100000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "3246646d-9adc-4028-b39d-e12e09ddcd38",
+            "name": "Bulk key 18",
+            "fingerprint": "A3D48FEDA7974797897C7336053C0FEC00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "fe1340d9-8ece-419e-952a-425376afe9d3",
+            "name": "Bulk key 19",
+            "fingerprint": "409AF6A19B654176A0BBCC81B002A7BC00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "955a6741-cc31-4149-9c32-c4376bfa2d7e",
+            "name": "Bulk key 20",
+            "fingerprint": "90F06B99102A428E9E57B44550A5CA7700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "d13632c5-5f37-412e-9af0-31ac7035f3e1",
+            "name": "Bulk key 21",
+            "fingerprint": "416075F0B466487998B8CA115012736600000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "e7879ced-1e95-4afa-8b5d-779828cb9486",
+            "name": "Bulk key 22",
+            "fingerprint": "7A135F34FE1C40ED88AECBD64F5580A600000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "d4e5d92e-ddd1-48ef-b19a-21c040ac04b8",
+            "name": "Bulk key 23",
+            "fingerprint": "5CB6D0EB47104E6E8CCE3BD893A8B92F00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "7144ffbc-57be-43d5-99a4-010895d8319a",
+            "name": "Bulk key 24",
+            "fingerprint": "4E1018C2420E46F5B8C2D64DF4B0799300000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "4d86e479-a97e-43e4-a286-233a176825dd",
+            "name": "Bulk key 25",
+            "fingerprint": "9F8447B4D8B64BBCBEDDB5C0C8308A0000000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "8688682e-6471-4441-8250-3fb1ddf3ff3d",
+            "name": "Bulk key 26",
+            "fingerprint": "BA2D9EA5D1E14DE0B488C765AB78D2BA00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "b0c58e04-7730-4562-bcf1-3c500de8066c",
+            "name": "Bulk key 27",
+            "fingerprint": "840181FC7518481FAA1F83F9147B54FD00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "6c7c43f0-4d28-43b9-aa6d-3131992995c7",
+            "name": "Bulk key 28",
+            "fingerprint": "CCC6167DB2B34DDE9A4C946F5C309DF100000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "756b6435-5a5f-412f-ba83-2636e5dba59c",
+            "name": "Bulk key 29",
+            "fingerprint": "0BB1B190DEA24A9AA0039BD1BEB0F2C400000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      },
+      {
+        "volume_id": "687eef2c-e881-42f5-b842-f3a17e065649_0",
+        "volume_name": "Page 00",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "fe81502b-768f-4ff3-8334-59e306346935_0",
+        "volume_name": "Page 01",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "2d7f9263-94cf-40a9-a2c6-a7e1ebcd7deb_0",
+        "volume_name": "Page 02",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "49f1b08b-f179-45b9-bbd8-968eeb1a20b7_0",
+        "volume_name": "Page 03",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "40096b58-a806-4c9d-9946-be90b48e3720_0",
+        "volume_name": "Page 04",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "4ddb57f0-00cc-4ab2-9730-2f4b172e82cd_0",
+        "volume_name": "Page 05",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "e088af23-d37a-44f3-b7f6-b54cb2885abb_0",
+        "volume_name": "Page 06",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "e991cd77-ae1c-44dc-86c2-be324323473e_0",
+        "volume_name": "Page 07",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "a7d8a868-30bc-40c5-9996-fdad941194a6_0",
+        "volume_name": "Page 08",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "fe0405cb-4df4-4201-b838-8b892889d9c8_0",
+        "volume_name": "Page 09",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "3e527ec4-76a7-4fd5-ac8d-7eecd61d58a3_0",
+        "volume_name": "Page 10",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "c7bb1442-8c6b-4e66-afa9-36c43af4fb95_0",
+        "volume_name": "Page 11",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "e5c97eba-0a62-4a90-b33c-703bfa218d7e_0",
+        "volume_name": "Page 12",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "737bdc36-da6e-4a70-acb1-1582834caaf9_0",
+        "volume_name": "Page 13",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "e5387a0d-57d0-4c1b-b327-adb79e204900_0",
+        "volume_name": "Page 14",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "6436f142-29f6-4027-8d91-66c8d94e1a81_0",
+        "volume_name": "Page 15",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "f3b8e959-b6ea-4d76-99c3-c3f31d640e84_0",
+        "volume_name": "Page 16",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "1be967ad-7a1d-427b-8bab-870619b81feb_0",
+        "volume_name": "Page 17",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "a32d54d9-ca1e-4bba-a7aa-a4b78aca7179_0",
+        "volume_name": "Page 18",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "b9cd7369-cd5f-4778-a783-83810ae60445",
+      "page_size": 25,
+      "total_pages": 2,
+      "total_items": 29,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?sort_by=volume_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_parameters_01.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_parameters_02.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_01.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_02.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_03.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_04.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_05.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_06.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_07.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_08.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_09.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_10.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_11.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_12.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_13.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_14.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_15.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_16.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_17.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_18.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_19.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_20.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_21.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_22.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_23.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_24.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_25.png",
+    "swagger/020_complete_default_parent_page/complete_default_parent_page_response_26.png"
+  ],
+  "captured_at": "2026-10-31T20:59:52.910Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {},
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": 36,
+  "name": "repeated_origin_and_state_values",
+  "unsupported": true,
+  "reason": "Swagger has one dropdown for origin",
+  "screenshots": [
+    "swagger/036_repeated_origin_and_state_values/repeated_origin_and_state_values_parameters_01.png",
+    "swagger/036_repeated_origin_and_state_values/repeated_origin_and_state_values_parameters_02.png"
+  ],
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "origin": [
+        "generated",
+        "uploaded"
+      ],
+      "key_state": [
+        "enabled",
+        "disabled"
+      ],
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0"
+      ],
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "FAIL",
+  "assertion_failure": "HTTP status: expected 200, got None; Swagger has one dropdown for origin",
+  "assertions": []
+}

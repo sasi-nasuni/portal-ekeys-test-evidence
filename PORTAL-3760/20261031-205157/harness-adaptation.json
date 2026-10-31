@@ -1,0 +1,8 @@
+{
+  "source": ".local/portal-encr-keys-api/testing/scripts/swagger_rpc.cjs",
+  "change": "Support native multi-select controls for repeated origin/key_state values; single-select controls retain single-value behavior. No response modification.",
+  "source_sha256": "0a6cf3ff53dbfbc3723df032acdcd07193e3893292dabfac00d8a39f30e280af",
+  "adapted_sha256": "ee2794cfe316ab71a59ceafae4f0b31b8d8243e6924498871a6112318f957ae7",
+  "retained_failure": "swagger/036_repeated_origin_and_state_values/result.json",
+  "successful_retry": "swagger/037_repeated_origin_and_state_values/result.json"
+}

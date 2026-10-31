@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 1,
+    "name": "missing_authentication",
+    "outcome": "PASS",
+    "status": 401,
+    "expected_status": 401,
+    "result": "swagger/001_missing_authentication/result.json",
+    "screenshots": [
+      "swagger/001_missing_authentication/missing_authentication_parameters_01.png",
+      "swagger/001_missing_authentication/missing_authentication_parameters_02.png",
+      "swagger/001_missing_authentication/missing_authentication_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 2,
+    "name": "malformed_token",
+    "outcome": "PASS",
+    "status": 401,
+    "expected_status": 401,
+    "result": "swagger/002_malformed_token/result.json",
+    "screenshots": [
+      "swagger/002_malformed_token/malformed_token_parameters_01.png",
+      "swagger/002_malformed_token/malformed_token_parameters_02.png",
+      "swagger/002_malformed_token/malformed_token_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 3,
+    "name": "expired_token",
+    "outcome": "PASS",
+    "status": 401,
+    "expected_status": 401,
+    "result": "swagger/003_expired_token/result.json",
+    "screenshots": [
+      "swagger/003_expired_token/expired_token_parameters_01.png",
+      "swagger/003_expired_token/expired_token_parameters_02.png",
+      "swagger/003_expired_token/expired_token_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 4,
+    "name": "wrong_audience",
+    "outcome": "PASS",
+    "status": 401,
+    "expected_status": 401,
+    "result": "swagger/004_wrong_audience/result.json",
+    "screenshots": [
+      "swagger/004_wrong_audience/wrong_audience_parameters_01.png",
+      "swagger/004_wrong_audience/wrong_audience_parameters_02.png",
+      "swagger/004_wrong_audience/wrong_audience_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 5,
+    "name": "missing_permission",
+    "outcome": "PASS",
+    "status": 403,
+    "expected_status": 403,
+    "result": "swagger/005_missing_permission/result.json",
+    "screenshots": [
+      "swagger/005_missing_permission/missing_permission_parameters_01.png",
+      "swagger/005_missing_permission/missing_permission_parameters_02.png",
+      "swagger/005_missing_permission/missing_permission_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 6,
+    "name": "backup_permission_does_not_grant_volume_read",
+    "outcome": "PASS",
+    "status": 403,
+    "expected_status": 403,
+    "result": "swagger/006_backup_permission_does_not_grant_volume_read/result.json",
+    "screenshots": [
+      "swagger/006_backup_permission_does_not_grant_volume_read/backup_permission_does_not_grant_volume_read_parameters_01.png",
+      "swagger/006_backup_permission_does_not_grant_volume_read/backup_permission_does_not_grant_volume_read_parameters_02.png",
+      "swagger/006_backup_permission_does_not_grant_volume_read/backup_permission_does_not_grant_volume_read_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 7,
+    "name": "feature_unavailable",
+    "outcome": "PASS",
+    "status": 403,
+    "expected_status": 403,
+    "result": "swagger/007_feature_unavailable/result.json",
+    "screenshots": [
+      "swagger/007_feature_unavailable/feature_unavailable_parameters_01.png",
+      "swagger/007_feature_unavailable/feature_unavailable_parameters_02.png",
+      "swagger/007_feature_unavailable/feature_unavailable_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 8,
+    "name": "validation_limit_zero",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/008_validation_limit_zero/result.json",
+    "screenshots": [
+      "swagger/008_validation_limit_zero/validation_limit_zero_parameters_01.png",
+      "swagger/008_validation_limit_zero/validation_limit_zero_parameters_02.png",
+      "swagger/008_validation_limit_zero/validation_limit_zero_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 9,
+    "name": "validation_limit_above_max",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/009_validation_limit_above_max/result.json",
+    "screenshots": [
+      "swagger/009_validation_limit_above_max/validation_limit_above_max_parameters_01.png",
+      "swagger/009_validation_limit_above_max/validation_limit_above_max_parameters_02.png",
+      "swagger/009_validation_limit_above_max/validation_limit_above_max_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 10,
+    "name": "validation_page_zero",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/010_validation_page_zero/result.json",
+    "screenshots": [
+      "swagger/010_validation_page_zero/validation_page_zero_parameters_01.png",
+      "swagger/010_validation_page_zero/validation_page_zero_parameters_02.png",
+      "swagger/010_validation_page_zero/validation_page_zero_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 11,
+    "name": "validation_bad_cursor",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/011_validation_bad_cursor/result.json",
+    "screenshots": [
+      "swagger/011_validation_bad_cursor/validation_bad_cursor_parameters_01.png",
+      "swagger/011_validation_bad_cursor/validation_bad_cursor_parameters_02.png",
+      "swagger/011_validation_bad_cursor/validation_bad_cursor_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 12,
+    "name": "validation_bad_volume_id",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/012_validation_bad_volume_id/result.json",
+    "screenshots": [
+      "swagger/012_validation_bad_volume_id/validation_bad_volume_id_parameters_01.png",
+      "swagger/012_validation_bad_volume_id/validation_bad_volume_id_parameters_02.png",
+      "swagger/012_validation_bad_volume_id/validation_bad_volume_id_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 13,
+    "name": "validation_bad_appliance_id",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/013_validation_bad_appliance_id/result.json",
+    "screenshots": [
+      "swagger/013_validation_bad_appliance_id/validation_bad_appliance_id_parameters_01.png",
+      "swagger/013_validation_bad_appliance_id/validation_bad_appliance_id_parameters_02.png",
+      "swagger/013_validation_bad_appliance_id/validation_bad_appliance_id_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 14,
+    "name": "validation_bad_origin",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/014_validation_bad_origin/result.json",
+    "screenshots": [
+      "swagger/014_validation_bad_origin/validation_bad_origin_parameters_01.png",
+      "swagger/014_validation_bad_origin/validation_bad_origin_parameters_02.png",
+      "swagger/014_validation_bad_origin/validation_bad_origin_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 15,
+    "name": "validation_bad_key_state",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/015_validation_bad_key_state/result.json",
+    "screenshots": [
+      "swagger/015_validation_bad_key_state/validation_bad_key_state_parameters_01.png",
+      "swagger/015_validation_bad_key_state/validation_bad_key_state_parameters_02.png",
+      "swagger/015_validation_bad_key_state/validation_bad_key_state_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 16,
+    "name": "validation_bad_sort",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/016_validation_bad_sort/result.json",
+    "screenshots": [
+      "swagger/016_validation_bad_sort/validation_bad_sort_parameters_01.png",
+      "swagger/016_validation_bad_sort/validation_bad_sort_parameters_02.png",
+      "swagger/016_validation_bad_sort/validation_bad_sort_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 17,
+    "name": "validation_bad_direction",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/017_validation_bad_direction/result.json",
+    "screenshots": [
+      "swagger/017_validation_bad_direction/validation_bad_direction_parameters_01.png",
+      "swagger/017_validation_bad_direction/validation_bad_direction_parameters_02.png",
+      "swagger/017_validation_bad_direction/validation_bad_direction_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 18,
+    "name": "validation_unknown_parameter",
+    "outcome": "PASS",
+    "status": 422,
+    "expected_status": 422,
+    "result": "swagger/018_validation_unknown_parameter/result.json",
+    "screenshots": [
+      "swagger/018_validation_unknown_parameter/validation_unknown_parameter_parameters_01.png",
+      "swagger/018_validation_unknown_parameter/validation_unknown_parameter_parameters_02.png",
+      "swagger/018_validation_unknown_parameter/validation_unknown_parameter_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 19,
+    "name": "volume_only_permission",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/019_volume_only_permission/result.json",
+    "screenshots": [
+      "swagger/019_volume_only_permission/volume_only_permission_parameters_01.png",
+      "swagger/019_volume_only_permission/volume_only_permission_parameters_02.png",
+      "swagger/019_volume_only_permission/volume_only_permission_response_01.png",
+      "swagger/019_volume_only_permission/volume_only_permission_response_02.png",
+      "swagger/019_volume_only_permission/volume_only_permission_response_03.png",
+      "swagger/019_volume_only_permission/volume_only_permission_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 20,
+    "name": "complete_default_parent_page",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/020_complete_default_parent_page/result.json",
+    "screenshots": [
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_parameters_01.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_parameters_02.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_01.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_02.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_03.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_04.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_05.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_06.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_07.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_08.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_09.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_10.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_11.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_12.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_13.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_14.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_15.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_16.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_17.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_18.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_19.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_20.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_21.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_22.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_23.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_24.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_25.png",
+      "swagger/020_complete_default_parent_page/complete_default_parent_page_response_26.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 21,
+    "name": "bulk_child_array_is_not_capped",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/021_bulk_child_array_is_not_capped/result.json",
+    "screenshots": [
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_parameters_01.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_parameters_02.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_01.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_02.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_03.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_04.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_05.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_06.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_07.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_08.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_09.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_10.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_11.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_12.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_13.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_14.png",
+      "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_15.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 22,
+    "name": "empty_parent_preserves_add_task",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/022_empty_parent_preserves_add_task/result.json",
+    "screenshots": [
+      "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_parameters_01.png",
+      "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_parameters_02.png",
+      "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_response_01.png",
+      "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 23,
+    "name": "unresolved_parent_has_no_keys",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/023_unresolved_parent_has_no_keys/result.json",
+    "screenshots": [
+      "swagger/023_unresolved_parent_has_no_keys/unresolved_parent_has_no_keys_parameters_01.png",
+      "swagger/023_unresolved_parent_has_no_keys/unresolved_parent_has_no_keys_parameters_02.png",
+      "swagger/023_unresolved_parent_has_no_keys/unresolved_parent_has_no_keys_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 24,
+    "name": "stub_volumes_excluded",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/024_stub_volumes_excluded/result.json",
+    "screenshots": [
+      "swagger/024_stub_volumes_excluded/stub_volumes_excluded_parameters_01.png",
+      "swagger/024_stub_volumes_excluded/stub_volumes_excluded_parameters_02.png",
+      "swagger/024_stub_volumes_excluded/stub_volumes_excluded_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 25,
+    "name": "missing_volume_is_empty",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/025_missing_volume_is_empty/result.json",
+    "screenshots": [
+      "swagger/025_missing_volume_is_empty/missing_volume_is_empty_parameters_01.png",
+      "swagger/025_missing_volume_is_empty/missing_volume_is_empty_parameters_02.png",
+      "swagger/025_missing_volume_is_empty/missing_volume_is_empty_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 26,
+    "name": "missing_appliance_is_empty",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/026_missing_appliance_is_empty/result.json",
+    "screenshots": [
+      "swagger/026_missing_appliance_is_empty/missing_appliance_is_empty_parameters_01.png",
+      "swagger/026_missing_appliance_is_empty/missing_appliance_is_empty_parameters_02.png",
+      "swagger/026_missing_appliance_is_empty/missing_appliance_is_empty_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 27,
+    "name": "tenant_a_cannot_read_tenant_b",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/027_tenant_a_cannot_read_tenant_b/result.json",
+    "screenshots": [
+      "swagger/027_tenant_a_cannot_read_tenant_b/tenant_a_cannot_read_tenant_b_parameters_01.png",
+      "swagger/027_tenant_a_cannot_read_tenant_b/tenant_a_cannot_read_tenant_b_parameters_02.png",
+      "swagger/027_tenant_a_cannot_read_tenant_b/tenant_a_cannot_read_tenant_b_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 28,
+    "name": "tenant_b_reads_own_volume",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/028_tenant_b_reads_own_volume/result.json",
+    "screenshots": [
+      "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_parameters_01.png",
+      "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_parameters_02.png",
+      "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_response_01.png",
+      "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 29,
+    "name": "repeated_volume_ids",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/029_repeated_volume_ids/result.json",
+    "screenshots": [
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_parameters_01.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_parameters_02.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_response_01.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_response_02.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_response_03.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_response_04.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_response_05.png",
+      "swagger/029_repeated_volume_ids/repeated_volume_ids_response_06.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 30,
+    "name": "repeated_appliance_ids",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/030_repeated_appliance_ids/result.json",
+    "screenshots": [
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_parameters_01.png",
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_parameters_02.png",
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_response_01.png",
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_response_02.png",
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_response_03.png",
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_response_04.png",
+      "swagger/030_repeated_appliance_ids/repeated_appliance_ids_response_05.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 31,
+    "name": "volume_and_appliance_intersection",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/031_volume_and_appliance_intersection/result.json",
+    "screenshots": [
+      "swagger/031_volume_and_appliance_intersection/volume_and_appliance_intersection_parameters_01.png",
+      "swagger/031_volume_and_appliance_intersection/volume_and_appliance_intersection_parameters_02.png",
+      "swagger/031_volume_and_appliance_intersection/volume_and_appliance_intersection_response_01.png",
+      "swagger/031_volume_and_appliance_intersection/volume_and_appliance_intersection_response_02.png",
+      "swagger/031_volume_and_appliance_intersection/volume_and_appliance_intersection_response_03.png",
+      "swagger/031_volume_and_appliance_intersection/volume_and_appliance_intersection_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 32,
+    "name": "origin_uploaded",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/032_origin_uploaded/result.json",
+    "screenshots": [
+      "swagger/032_origin_uploaded/origin_uploaded_parameters_01.png",
+      "swagger/032_origin_uploaded/origin_uploaded_parameters_02.png",
+      "swagger/032_origin_uploaded/origin_uploaded_response_01.png",
+      "swagger/032_origin_uploaded/origin_uploaded_response_02.png",
+      "swagger/032_origin_uploaded/origin_uploaded_response_03.png",
+      "swagger/032_origin_uploaded/origin_uploaded_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 33,
+    "name": "key_state_disabled",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/033_key_state_disabled/result.json",
+    "screenshots": [
+      "swagger/033_key_state_disabled/key_state_disabled_parameters_01.png",
+      "swagger/033_key_state_disabled/key_state_disabled_parameters_02.png",
+      "swagger/033_key_state_disabled/key_state_disabled_response_01.png",
+      "swagger/033_key_state_disabled/key_state_disabled_response_02.png",
+      "swagger/033_key_state_disabled/key_state_disabled_response_03.png",
+      "swagger/033_key_state_disabled/key_state_disabled_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 34,
+    "name": "origin_and_state_same_key",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/034_origin_and_state_same_key/result.json",
+    "screenshots": [
+      "swagger/034_origin_and_state_same_key/origin_and_state_same_key_parameters_01.png",
+      "swagger/034_origin_and_state_same_key/origin_and_state_same_key_parameters_02.png",
+      "swagger/034_origin_and_state_same_key/origin_and_state_same_key_response_01.png",
+      "swagger/034_origin_and_state_same_key/origin_and_state_same_key_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 35,
+    "name": "different_keys_cannot_satisfy_and",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/035_different_keys_cannot_satisfy_and/result.json",
+    "screenshots": [
+      "swagger/035_different_keys_cannot_satisfy_and/different_keys_cannot_satisfy_and_parameters_01.png",
+      "swagger/035_different_keys_cannot_satisfy_and/different_keys_cannot_satisfy_and_parameters_02.png",
+      "swagger/035_different_keys_cannot_satisfy_and/different_keys_cannot_satisfy_and_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 36,
+    "name": "repeated_origin_and_state_values",
+    "outcome": "FAIL",
+    "status": null,
+    "expected_status": 200,
+    "result": "swagger/036_repeated_origin_and_state_values/result.json",
+    "screenshots": [
+      "swagger/036_repeated_origin_and_state_values/repeated_origin_and_state_values_parameters_01.png",
+      "swagger/036_repeated_origin_and_state_values/repeated_origin_and_state_values_parameters_02.png"
+    ],
+    "assertion_failure": "HTTP status: expected 200, got None; Swagger has one dropdown for origin"
+  },
+  {
+    "id": 37,
+    "name": "repeated_origin_and_state_values",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/037_repeated_origin_and_state_values/result.json",
+    "screenshots": [
+      "swagger/037_repeated_origin_and_state_values/repeated_origin_and_state_values_parameters_01.png",
+      "swagger/037_repeated_origin_and_state_values/repeated_origin_and_state_values_parameters_02.png",
+      "swagger/037_repeated_origin_and_state_values/repeated_origin_and_state_values_response_01.png",
+      "swagger/037_repeated_origin_and_state_values/repeated_origin_and_state_values_response_02.png",
+      "swagger/037_repeated_origin_and_state_values/repeated_origin_and_state_values_response_03.png",
+      "swagger/037_repeated_origin_and_state_values/repeated_origin_and_state_values_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 38,
+    "name": "search_volume_case_insensitive",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/038_search_volume_case_insensitive/result.json",
+    "screenshots": [
+      "swagger/038_search_volume_case_insensitive/search_volume_case_insensitive_parameters_01.png",
+      "swagger/038_search_volume_case_insensitive/search_volume_case_insensitive_parameters_02.png",
+      "swagger/038_search_volume_case_insensitive/search_volume_case_insensitive_response_01.png",
+      "swagger/038_search_volume_case_insensitive/search_volume_case_insensitive_response_02.png",
+      "swagger/038_search_volume_case_insensitive/search_volume_case_insensitive_response_03.png",
+      "swagger/038_search_volume_case_insensitive/search_volume_case_insensitive_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 39,
+    "name": "search_owner_case_insensitive",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/039_search_owner_case_insensitive/result.json",
+    "screenshots": [
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_parameters_01.png",
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_parameters_02.png",
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_response_01.png",
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_response_02.png",
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_response_03.png",
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_response_04.png",
+      "swagger/039_search_owner_case_insensitive/search_owner_case_insensitive_response_05.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 40,
+    "name": "search_key_literal_wildcards",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/040_search_key_literal_wildcards/result.json",
+    "screenshots": [
+      "swagger/040_search_key_literal_wildcards/search_key_literal_wildcards_parameters_01.png",
+      "swagger/040_search_key_literal_wildcards/search_key_literal_wildcards_parameters_02.png",
+      "swagger/040_search_key_literal_wildcards/search_key_literal_wildcards_response_01.png",
+      "swagger/040_search_key_literal_wildcards/search_key_literal_wildcards_response_02.png",
+      "swagger/040_search_key_literal_wildcards/search_key_literal_wildcards_response_03.png",
+      "swagger/040_search_key_literal_wildcards/search_key_literal_wildcards_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 41,
+    "name": "search_fingerprint_keeps_all_keys",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/041_search_fingerprint_keeps_all_keys/result.json",
+    "screenshots": [
+      "swagger/041_search_fingerprint_keeps_all_keys/search_fingerprint_keeps_all_keys_parameters_01.png",
+      "swagger/041_search_fingerprint_keeps_all_keys/search_fingerprint_keeps_all_keys_parameters_02.png",
+      "swagger/041_search_fingerprint_keeps_all_keys/search_fingerprint_keeps_all_keys_response_01.png",
+      "swagger/041_search_fingerprint_keeps_all_keys/search_fingerprint_keeps_all_keys_response_02.png",
+      "swagger/041_search_fingerprint_keeps_all_keys/search_fingerprint_keeps_all_keys_response_03.png",
+      "swagger/041_search_fingerprint_keeps_all_keys/search_fingerprint_keeps_all_keys_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 42,
+    "name": "search_and_child_filters_independent",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/042_search_and_child_filters_independent/result.json",
+    "screenshots": [
+      "swagger/042_search_and_child_filters_independent/search_and_child_filters_independent_parameters_01.png",
+      "swagger/042_search_and_child_filters_independent/search_and_child_filters_independent_parameters_02.png",
+      "swagger/042_search_and_child_filters_independent/search_and_child_filters_independent_response_01.png",
+      "swagger/042_search_and_child_filters_independent/search_and_child_filters_independent_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 43,
+    "name": "remote_key_not_searchable",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/043_remote_key_not_searchable/result.json",
+    "screenshots": [
+      "swagger/043_remote_key_not_searchable/remote_key_not_searchable_parameters_01.png",
+      "swagger/043_remote_key_not_searchable/remote_key_not_searchable_parameters_02.png",
+      "swagger/043_remote_key_not_searchable/remote_key_not_searchable_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 44,
+    "name": "backup_key_not_searchable",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/044_backup_key_not_searchable/result.json",
+    "screenshots": [
+      "swagger/044_backup_key_not_searchable/backup_key_not_searchable_parameters_01.png",
+      "swagger/044_backup_key_not_searchable/backup_key_not_searchable_parameters_02.png",
+      "swagger/044_backup_key_not_searchable/backup_key_not_searchable_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 45,
+    "name": "unknown_search_is_empty",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/045_unknown_search_is_empty/result.json",
+    "screenshots": [
+      "swagger/045_unknown_search_is_empty/unknown_search_is_empty_parameters_01.png",
+      "swagger/045_unknown_search_is_empty/unknown_search_is_empty_parameters_02.png",
+      "swagger/045_unknown_search_is_empty/unknown_search_is_empty_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 46,
+    "name": "volume_name_asc_page_1",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/046_volume_name_asc_page_1/result.json",
+    "screenshots": [
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_parameters_01.png",
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_parameters_02.png",
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_response_01.png",
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_response_02.png",
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_response_03.png",
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_response_04.png",
+      "swagger/046_volume_name_asc_page_1/volume_name_asc_page_1_response_05.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 47,
+    "name": "volume_name_asc_page_2",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/047_volume_name_asc_page_2/result.json",
+    "screenshots": [
+      "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_parameters_01.png",
+      "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_parameters_02.png",
+      "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_response_01.png",
+      "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 48,
+    "name": "volume_name_asc_page_3",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/048_volume_name_asc_page_3/result.json",
+    "screenshots": [
+      "swagger/048_volume_name_asc_page_3/volume_name_asc_page_3_parameters_01.png",
+      "swagger/048_volume_name_asc_page_3/volume_name_asc_page_3_parameters_02.png",
+      "swagger/048_volume_name_asc_page_3/volume_name_asc_page_3_response_01.png",
+      "swagger/048_volume_name_asc_page_3/volume_name_asc_page_3_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 49,
+    "name": "volume_name_desc_page_1",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/049_volume_name_desc_page_1/result.json",
+    "screenshots": [
+      "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_parameters_01.png",
+      "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_parameters_02.png",
+      "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_response_01.png",
+      "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 50,
+    "name": "volume_name_desc_page_2",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/050_volume_name_desc_page_2/result.json",
+    "screenshots": [
+      "swagger/050_volume_name_desc_page_2/volume_name_desc_page_2_parameters_01.png",
+      "swagger/050_volume_name_desc_page_2/volume_name_desc_page_2_parameters_02.png",
+      "swagger/050_volume_name_desc_page_2/volume_name_desc_page_2_response_01.png",
+      "swagger/050_volume_name_desc_page_2/volume_name_desc_page_2_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 51,
+    "name": "volume_name_desc_page_3",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/051_volume_name_desc_page_3/result.json",
+    "screenshots": [
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_parameters_01.png",
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_parameters_02.png",
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_01.png",
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_02.png",
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_03.png",
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_04.png",
+      "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_05.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 52,
+    "name": "appliance_name_asc_page_1",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/052_appliance_name_asc_page_1/result.json",
+    "screenshots": [
+      "swagger/052_appliance_name_asc_page_1/appliance_name_asc_page_1_parameters_01.png",
+      "swagger/052_appliance_name_asc_page_1/appliance_name_asc_page_1_parameters_02.png",
+      "swagger/052_appliance_name_asc_page_1/appliance_name_asc_page_1_response_01.png",
+      "swagger/052_appliance_name_asc_page_1/appliance_name_asc_page_1_response_02.png",
+      "swagger/052_appliance_name_asc_page_1/appliance_name_asc_page_1_response_03.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 53,
+    "name": "appliance_name_asc_page_2",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/053_appliance_name_asc_page_2/result.json",
+    "screenshots": [
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_parameters_01.png",
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_parameters_02.png",
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_response_01.png",
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_response_02.png",
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_response_03.png",
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_response_04.png",
+      "swagger/053_appliance_name_asc_page_2/appliance_name_asc_page_2_response_05.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 54,
+    "name": "appliance_name_asc_page_3",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/054_appliance_name_asc_page_3/result.json",
+    "screenshots": [
+      "swagger/054_appliance_name_asc_page_3/appliance_name_asc_page_3_parameters_01.png",
+      "swagger/054_appliance_name_asc_page_3/appliance_name_asc_page_3_parameters_02.png",
+      "swagger/054_appliance_name_asc_page_3/appliance_name_asc_page_3_response_01.png",
+      "swagger/054_appliance_name_asc_page_3/appliance_name_asc_page_3_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 55,
+    "name": "appliance_name_desc_page_1",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/055_appliance_name_desc_page_1/result.json",
+    "screenshots": [
+      "swagger/055_appliance_name_desc_page_1/appliance_name_desc_page_1_parameters_01.png",
+      "swagger/055_appliance_name_desc_page_1/appliance_name_desc_page_1_parameters_02.png",
+      "swagger/055_appliance_name_desc_page_1/appliance_name_desc_page_1_response_01.png",
+      "swagger/055_appliance_name_desc_page_1/appliance_name_desc_page_1_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 56,
+    "name": "appliance_name_desc_page_2",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/056_appliance_name_desc_page_2/result.json",
+    "screenshots": [
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_parameters_01.png",
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_parameters_02.png",
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_response_01.png",
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_response_02.png",
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_response_03.png",
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_response_04.png",
+      "swagger/056_appliance_name_desc_page_2/appliance_name_desc_page_2_response_05.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 57,
+    "name": "appliance_name_desc_page_3",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/057_appliance_name_desc_page_3/result.json",
+    "screenshots": [
+      "swagger/057_appliance_name_desc_page_3/appliance_name_desc_page_3_parameters_01.png",
+      "swagger/057_appliance_name_desc_page_3/appliance_name_desc_page_3_parameters_02.png",
+      "swagger/057_appliance_name_desc_page_3/appliance_name_desc_page_3_response_01.png",
+      "swagger/057_appliance_name_desc_page_3/appliance_name_desc_page_3_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 58,
+    "name": "cursor_navigation_start",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/058_cursor_navigation_start/result.json",
+    "screenshots": [
+      "swagger/058_cursor_navigation_start/cursor_navigation_start_parameters_01.png",
+      "swagger/058_cursor_navigation_start/cursor_navigation_start_parameters_02.png",
+      "swagger/058_cursor_navigation_start/cursor_navigation_start_response_01.png",
+      "swagger/058_cursor_navigation_start/cursor_navigation_start_response_02.png",
+      "swagger/058_cursor_navigation_start/cursor_navigation_start_response_03.png",
+      "swagger/058_cursor_navigation_start/cursor_navigation_start_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 59,
+    "name": "cursor_mismatch_limit",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/059_cursor_mismatch_limit/result.json",
+    "screenshots": [
+      "swagger/059_cursor_mismatch_limit/cursor_mismatch_limit_parameters_01.png",
+      "swagger/059_cursor_mismatch_limit/cursor_mismatch_limit_parameters_02.png",
+      "swagger/059_cursor_mismatch_limit/cursor_mismatch_limit_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 60,
+    "name": "cursor_mismatch_sort",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/060_cursor_mismatch_sort/result.json",
+    "screenshots": [
+      "swagger/060_cursor_mismatch_sort/cursor_mismatch_sort_parameters_01.png",
+      "swagger/060_cursor_mismatch_sort/cursor_mismatch_sort_parameters_02.png",
+      "swagger/060_cursor_mismatch_sort/cursor_mismatch_sort_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 61,
+    "name": "cursor_mismatch_filter",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/061_cursor_mismatch_filter/result.json",
+    "screenshots": [
+      "swagger/061_cursor_mismatch_filter/cursor_mismatch_filter_parameters_01.png",
+      "swagger/061_cursor_mismatch_filter/cursor_mismatch_filter_parameters_02.png",
+      "swagger/061_cursor_mismatch_filter/cursor_mismatch_filter_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 62,
+    "name": "cursor_mismatch_search",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/062_cursor_mismatch_search/result.json",
+    "screenshots": [
+      "swagger/062_cursor_mismatch_search/cursor_mismatch_search_parameters_01.png",
+      "swagger/062_cursor_mismatch_search/cursor_mismatch_search_parameters_02.png",
+      "swagger/062_cursor_mismatch_search/cursor_mismatch_search_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 63,
+    "name": "cursor_other_tenant",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/063_cursor_other_tenant/result.json",
+    "screenshots": [
+      "swagger/063_cursor_other_tenant/cursor_other_tenant_parameters_01.png",
+      "swagger/063_cursor_other_tenant/cursor_other_tenant_parameters_02.png",
+      "swagger/063_cursor_other_tenant/cursor_other_tenant_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 64,
+    "name": "cursor_forward_jump_to_page_5",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/064_cursor_forward_jump_to_page_5/result.json",
+    "screenshots": [
+      "swagger/064_cursor_forward_jump_to_page_5/cursor_forward_jump_to_page_5_parameters_01.png",
+      "swagger/064_cursor_forward_jump_to_page_5/cursor_forward_jump_to_page_5_parameters_02.png",
+      "swagger/064_cursor_forward_jump_to_page_5/cursor_forward_jump_to_page_5_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 65,
+    "name": "consumed_cursor_is_rejected",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/065_consumed_cursor_is_rejected/result.json",
+    "screenshots": [
+      "swagger/065_consumed_cursor_is_rejected/consumed_cursor_is_rejected_parameters_01.png",
+      "swagger/065_consumed_cursor_is_rejected/consumed_cursor_is_rejected_parameters_02.png",
+      "swagger/065_consumed_cursor_is_rejected/consumed_cursor_is_rejected_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 66,
+    "name": "cursor_backward_jump_to_page_2",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/066_cursor_backward_jump_to_page_2/result.json",
+    "screenshots": [
+      "swagger/066_cursor_backward_jump_to_page_2/cursor_backward_jump_to_page_2_parameters_01.png",
+      "swagger/066_cursor_backward_jump_to_page_2/cursor_backward_jump_to_page_2_parameters_02.png",
+      "swagger/066_cursor_backward_jump_to_page_2/cursor_backward_jump_to_page_2_response_01.png",
+      "swagger/066_cursor_backward_jump_to_page_2/cursor_backward_jump_to_page_2_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 67,
+    "name": "absolute_page_without_cursor",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/067_absolute_page_without_cursor/result.json",
+    "screenshots": [
+      "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_parameters_01.png",
+      "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_parameters_02.png",
+      "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_response_01.png",
+      "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_response_02.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 68,
+    "name": "unknown_cursor_is_rejected",
+    "outcome": "PASS",
+    "status": 400,
+    "expected_status": 400,
+    "result": "swagger/068_unknown_cursor_is_rejected/result.json",
+    "screenshots": [
+      "swagger/068_unknown_cursor_is_rejected/unknown_cursor_is_rejected_parameters_01.png",
+      "swagger/068_unknown_cursor_is_rejected/unknown_cursor_is_rejected_parameters_02.png",
+      "swagger/068_unknown_cursor_is_rejected/unknown_cursor_is_rejected_response.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 69,
+    "name": "normalized_filters_start",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/069_normalized_filters_start/result.json",
+    "screenshots": [
+      "swagger/069_normalized_filters_start/normalized_filters_start_parameters_01.png",
+      "swagger/069_normalized_filters_start/normalized_filters_start_parameters_02.png",
+      "swagger/069_normalized_filters_start/normalized_filters_start_response_01.png",
+      "swagger/069_normalized_filters_start/normalized_filters_start_response_02.png",
+      "swagger/069_normalized_filters_start/normalized_filters_start_response_03.png",
+      "swagger/069_normalized_filters_start/normalized_filters_start_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 70,
+    "name": "normalized_filters_accept_reordered_values",
+    "outcome": "FAIL",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/070_normalized_filters_accept_reordered_values/result.json",
+    "screenshots": [
+      "swagger/070_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_parameters_01.png",
+      "swagger/070_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_parameters_02.png",
+      "swagger/070_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_response_01.png",
+      "swagger/070_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_response_02.png"
+    ],
+    "assertion_failure": "Actual request differs for origin"
+  },
+  {
+    "id": 71,
+    "name": "normalized_filters_start",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/071_normalized_filters_start/result.json",
+    "screenshots": [
+      "swagger/071_normalized_filters_start/normalized_filters_start_parameters_01.png",
+      "swagger/071_normalized_filters_start/normalized_filters_start_parameters_02.png",
+      "swagger/071_normalized_filters_start/normalized_filters_start_response_01.png",
+      "swagger/071_normalized_filters_start/normalized_filters_start_response_02.png",
+      "swagger/071_normalized_filters_start/normalized_filters_start_response_03.png",
+      "swagger/071_normalized_filters_start/normalized_filters_start_response_04.png"
+    ],
+    "assertion_failure": null
+  },
+  {
+    "id": 72,
+    "name": "normalized_filters_accept_reordered_values",
+    "outcome": "PASS",
+    "status": 200,
+    "expected_status": 200,
+    "result": "swagger/072_normalized_filters_accept_reordered_values/result.json",
+    "screenshots": [
+      "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_parameters_01.png",
+      "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_parameters_02.png",
+      "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_response_01.png",
+      "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_response_02.png"
+    ],
+    "assertion_failure": null
+  }
+]

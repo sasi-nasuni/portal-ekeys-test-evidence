@@ -1,0 +1,18 @@
+{
+  "tables_unchanged": {
+    "accounts": true,
+    "users": true,
+    "roles": true,
+    "user_role": true,
+    "role_permissions": true,
+    "edges_v2": true,
+    "volumes_v2": true,
+    "volume_connections": true,
+    "encryption_keys": true,
+    "volume_encryption_key_associations": true,
+    "tasks": true,
+    "messages": true
+  },
+  "verified": true,
+  "note": "Cursor and permission caches are expected to change; fixture resource rows and task/message rows are compared separately."
+}

@@ -1,0 +1,59 @@
+{
+  "id": 35,
+  "name": "different_keys_cannot_satisfy_and",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=58790522-3a0f-4522-b455-83561f886429_0&origin=generated&key_state=enabled&sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/035_different_keys_cannot_satisfy_and/different_keys_cannot_satisfy_and_parameters_01.png",
+    "swagger/035_different_keys_cannot_satisfy_and/different_keys_cannot_satisfy_and_parameters_02.png",
+    "swagger/035_different_keys_cannot_satisfy_and/different_keys_cannot_satisfy_and_response.png"
+  ],
+  "captured_at": "2026-10-31T21:01:27.534Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "origin": [
+        "generated"
+      ],
+      "key_state": [
+        "enabled"
+      ],
+      "volume_ids": [
+        "58790522-3a0f-4522-b455-83561f886429_0"
+      ],
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

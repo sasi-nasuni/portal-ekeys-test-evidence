@@ -1,0 +1,140 @@
+{
+  "id": 32,
+  "name": "origin_uploaded",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "volume_name": "Alpha Finance",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+            "name": "Uploaded disabled",
+            "fingerprint": "92F3EEFB8DD74DD9896C0506AC30D20F00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "8722467e-d88b-4cd8-84ab-124bc88801bb",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+                "state": "failed",
+                "error": {
+                  "message": "Synthetic disable failure",
+                  "detected_at": "2026-10-31T20:57:15.674699Z"
+                },
+                "can_acknowledge": false
+              }
+            ]
+          },
+          {
+            "id": "0a330075-1092-4b9c-b46c-10ec8f5af9b9",
+            "name": "Uploaded enabled",
+            "fingerprint": "8B2AD0135794441FB2DDC3CD49ECD3D800000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "fd99f1d3-cb37-4cb8-a52d-a216ff1163d5",
+            "name": null,
+            "fingerprint": "4255BFC9D51B4DCFB91DF5A2E9E7F8AF00000001",
+            "algorithm": null,
+            "length": null,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "creating",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      },
+      {
+        "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+        "volume_name": "charlie Archive",
+        "owner_appliance": {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance"
+        },
+        "keys": [
+          {
+            "id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+            "name": "West only",
+            "fingerprint": "E916E31F62F84E2B83D863BF14EF6D8E00000001",
+            "algorithm": "elgamal",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 3,
+      "total_pages": 1,
+      "total_items": 2,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=8292379c-0ef2-4473-a08f-fdca86ed4b49_0&volume_ids=58790522-3a0f-4522-b455-83561f886429_0&volume_ids=2e01aa4a-dc31-4031-9881-e53b060955a0_0&origin=uploaded&sort_by=volume_name&sort_direction=asc&limit=3",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/032_origin_uploaded/origin_uploaded_parameters_01.png",
+    "swagger/032_origin_uploaded/origin_uploaded_parameters_02.png",
+    "swagger/032_origin_uploaded/origin_uploaded_response_01.png",
+    "swagger/032_origin_uploaded/origin_uploaded_response_02.png",
+    "swagger/032_origin_uploaded/origin_uploaded_response_03.png",
+    "swagger/032_origin_uploaded/origin_uploaded_response_04.png"
+  ],
+  "captured_at": "2026-10-31T21:01:09.372Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "origin": [
+        "uploaded"
+      ],
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "58790522-3a0f-4522-b455-83561f886429_0",
+        "2e01aa4a-dc31-4031-9881-e53b060955a0_0"
+      ],
+      "limit": 3
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

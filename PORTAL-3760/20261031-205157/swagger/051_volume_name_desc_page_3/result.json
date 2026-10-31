@@ -1,0 +1,172 @@
+{
+  "id": 51,
+  "name": "volume_name_desc_page_3",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "volume_name": "Bravo Empty",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [],
+        "tasks": [
+          {
+            "task_id": "973988a7-653f-4c90-a557-18d6ca80cd29",
+            "action": "add_volume_encryption_keys",
+            "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+            "state": "in_progress",
+            "error": null,
+            "can_acknowledge": false
+          }
+        ]
+      },
+      {
+        "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "volume_name": "Alpha Finance",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "617c151c-3c49-4333-b895-c3e3eaea81bb",
+            "name": "Generated disabled",
+            "fingerprint": "1AC33616B5C647B08FC039AA55C4B2D900000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+            "name": "Needle%_\\Key",
+            "fingerprint": "33A01B34119149B498CFAB62E60ED61700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "pending",
+            "tasks": [
+              {
+                "task_id": "65894630-57f5-4ea2-835c-02dc73d850ac",
+                "action": "enable_volume_encryption_keys",
+                "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+                "state": "in_progress",
+                "error": null,
+                "can_acknowledge": false
+              }
+            ]
+          },
+          {
+            "id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+            "name": "Uploaded disabled",
+            "fingerprint": "92F3EEFB8DD74DD9896C0506AC30D20F00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "8722467e-d88b-4cd8-84ab-124bc88801bb",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+                "state": "failed",
+                "error": {
+                  "message": "Synthetic disable failure",
+                  "detected_at": "2026-10-31T20:57:15.674699Z"
+                },
+                "can_acknowledge": false
+              }
+            ]
+          },
+          {
+            "id": "0a330075-1092-4b9c-b46c-10ec8f5af9b9",
+            "name": "Uploaded enabled",
+            "fingerprint": "8B2AD0135794441FB2DDC3CD49ECD3D800000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "fd99f1d3-cb37-4cb8-a52d-a216ff1163d5",
+            "name": null,
+            "fingerprint": "4255BFC9D51B4DCFB91DF5A2E9E7F8AF00000001",
+            "algorithm": null,
+            "length": null,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "creating",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 2,
+      "total_pages": 3,
+      "total_items": 6,
+      "page": 3
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=8292379c-0ef2-4473-a08f-fdca86ed4b49_0&volume_ids=2e01aa4a-dc31-4031-9881-e53b060955a0_0&volume_ids=7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0&volume_ids=f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0&volume_ids=dfd27afe-9c79-4333-86b6-270ca736b9bc_0&volume_ids=687eef2c-e881-42f5-b842-f3a17e065649_0&sort_by=volume_name&sort_direction=desc&iterator_id=bacf3c5b-3558-4a93-b0df-f3d89b0d8a37&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_parameters_01.png",
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_parameters_02.png",
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_01.png",
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_02.png",
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_03.png",
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_04.png",
+    "swagger/051_volume_name_desc_page_3/volume_name_desc_page_3_response_05.png"
+  ],
+  "captured_at": "2026-10-31T21:04:04.128Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "sort_by": "volume_name",
+      "sort_direction": "desc",
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+        "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+        "dfd27afe-9c79-4333-86b6-270ca736b9bc_0",
+        "687eef2c-e881-42f5-b842-f3a17e065649_0"
+      ],
+      "limit": 2,
+      "iterator_id": "bacf3c5b-3558-4a93-b0df-f3d89b0d8a37"
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

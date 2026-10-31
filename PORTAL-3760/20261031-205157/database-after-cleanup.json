@@ -1,0 +1,53 @@
+{
+  "captured_at": "2026-10-31T21:07:25.068898+00:00",
+  "tables": {
+    "accounts": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "users": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "roles": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "user_role": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "role_permissions": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "edges_v2": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "volumes_v2": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "volume_connections": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "encryption_keys": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "volume_encryption_key_associations": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "tasks": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "messages": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  }
+}

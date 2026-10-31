@@ -1,0 +1,59 @@
+{
+  "id": 8,
+  "name": "validation_limit_zero",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "greater_than_equal",
+        "loc": [
+          "query",
+          "limit"
+        ],
+        "msg": "Input should be greater than or equal to 1",
+        "input": "0",
+        "ctx": {
+          "ge": 1
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?sort_by=volume_name&sort_direction=asc&limit=0",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/008_validation_limit_zero/validation_limit_zero_parameters_01.png",
+    "swagger/008_validation_limit_zero/validation_limit_zero_parameters_02.png",
+    "swagger/008_validation_limit_zero/validation_limit_zero_response.png"
+  ],
+  "captured_at": "2026-10-31T20:58:38.701Z",
+  "expected_status": 422,
+  "scenario_request": {
+    "params": {
+      "limit": 1
+    },
+    "raw_query_params": {
+      "limit": 0
+    },
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Structured error response"
+  ]
+}

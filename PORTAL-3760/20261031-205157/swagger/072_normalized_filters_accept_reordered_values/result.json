@@ -1,0 +1,96 @@
+{
+  "id": 72,
+  "name": "normalized_filters_accept_reordered_values",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+        "volume_name": "charlie Archive",
+        "owner_appliance": {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance"
+        },
+        "keys": [
+          {
+            "id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+            "name": "West only",
+            "fingerprint": "E916E31F62F84E2B83D863BF14EF6D8E00000001",
+            "algorithm": "elgamal",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "7eda7aac-5ba7-4a00-857d-36553dc6e276",
+      "page_size": 1,
+      "total_pages": 4,
+      "total_items": 4,
+      "page": 2
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?appliance_ids=db3ef0bd-58dc-4946-8c49-47f55c5b8fe7&appliance_ids=ea665b35-34d0-49ad-80c2-2f1650326b29&origin=generated&origin=uploaded&sort_by=volume_name&sort_direction=asc&iterator_id=da8eab3e-ecc0-48e0-8063-2a5b93be2b85&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_parameters_01.png",
+    "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_parameters_02.png",
+    "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_response_01.png",
+    "swagger/072_normalized_filters_accept_reordered_values/normalized_filters_accept_reordered_values_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:07:00.648Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "appliance_ids": [
+        "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+        "ea665b35-34d0-49ad-80c2-2f1650326b29"
+      ],
+      "origin": [
+        "uploaded",
+        "generated"
+      ],
+      "limit": 1,
+      "iterator_id": "da8eab3e-ecc0-48e0-8063-2a5b93be2b85"
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "native_multiselect_serialization": {
+    "origin": {
+      "requested_order": [
+        "uploaded",
+        "generated"
+      ],
+      "sent_order": [
+        "generated",
+        "uploaded"
+      ],
+      "note": "Native multi-select uses DOM option order; enum filter set is unchanged. Appliance-ID input order is verified exactly."
+    }
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

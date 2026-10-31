@@ -1,0 +1,95 @@
+{
+  "id": 47,
+  "name": "volume_name_asc_page_2",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+        "volume_name": "Duplicate",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+            "name": "Needle%_\\Key",
+            "fingerprint": "33A01B34119149B498CFAB62E60ED61700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      },
+      {
+        "volume_id": "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+        "volume_name": "DUPLICATE",
+        "owner_appliance": {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance"
+        },
+        "keys": [],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "0313f8d3-a3c6-422b-92cd-5d52e82897f5",
+      "page_size": 2,
+      "total_pages": 3,
+      "total_items": 6,
+      "page": 2
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=8292379c-0ef2-4473-a08f-fdca86ed4b49_0&volume_ids=2e01aa4a-dc31-4031-9881-e53b060955a0_0&volume_ids=7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0&volume_ids=f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0&volume_ids=dfd27afe-9c79-4333-86b6-270ca736b9bc_0&volume_ids=687eef2c-e881-42f5-b842-f3a17e065649_0&sort_by=volume_name&sort_direction=asc&iterator_id=f9547ba4-374b-4dab-a922-d3b11560dc5f&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_parameters_01.png",
+    "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_parameters_02.png",
+    "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_response_01.png",
+    "swagger/047_volume_name_asc_page_2/volume_name_asc_page_2_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:03:38.973Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "sort_by": "volume_name",
+      "sort_direction": "asc",
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+        "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+        "dfd27afe-9c79-4333-86b6-270ca736b9bc_0",
+        "687eef2c-e881-42f5-b842-f3a17e065649_0"
+      ],
+      "limit": 2,
+      "iterator_id": "f9547ba4-374b-4dab-a922-d3b11560dc5f"
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

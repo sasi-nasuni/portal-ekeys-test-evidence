@@ -1,0 +1,17 @@
+BEGIN
+SET
+DO
+ALTER TABLE
+ALTER TABLE
+UPDATE 1
+COMMIT
+ version_num
+--------------
+ b7e2c4a9d1f3
+(1 row)
+
+             conname              |                                         pg_get_constraintdef
+----------------------------------+------------------------------------------------------------------------------------------------------
+ uq_enc_keys_account_appliance_id | UNIQUE (account_id, appliance_id, id)
+ fk_edges_v2_backup_key           | FOREIGN KEY (account_id, id, backup_key_id) REFERENCES encryption_keys(account_id, appliance_id, id)
+(2 rows)

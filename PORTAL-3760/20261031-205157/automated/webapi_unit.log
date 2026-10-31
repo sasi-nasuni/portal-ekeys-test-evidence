@@ -1,0 +1,17 @@
+........................................................................ [ 52%]
+................................................................         [100%]
+=============================== warnings summary ===============================
+tests/unit/encryption_key_routes/test_appliance_keys_configuration.py:23
+  <application-checkout>/backend/portal-webapi/tests/unit/encryption_key_routes/test_appliance_keys_configuration.py:23: DeprecationWarning: 'HTTP_413_REQUEST_ENTITY_TOO_LARGE' is deprecated. Use 'HTTP_413_CONTENT_TOO_LARGE' instead.
+    from portal.web.app import build_web_app
+
+tests/unit/encryption_key_routes/test_common.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/volumes/{volume_id}/encryption-keys-get-extra_error_codes0-200-VolumeEncryptionKeysResponseDto]
+tests/unit/encryption_key_routes/test_common.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/volumes/{volume_id}/encryption-keys/{key_id}/enable-post-extra_error_codes1-202-TaskCreatedDto]
+tests/unit/encryption_key_routes/test_common.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/volumes/{volume_id}/encryption-keys/{key_id}/disable-post-extra_error_codes2-202-TaskCreatedDto]
+tests/unit/encryption_key_routes/test_common.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/encryption-keys/escrow-post-extra_error_codes3-202-EscrowKeysResponseDto]
+tests/unit/encryption_key_routes/test_common.py::test_openapi_preserves_success_and_documents_shared_and_operation_errors[/edges/{appliance_id}/escrow-passphrase-post-extra_error_codes4-202-TaskCreatedDto]
+  <application-checkout>/backend/portal-webapi/.venv/lib/python3.14/site-packages/pydantic/json_schema.py:2448: PydanticJsonSchemaWarning: Default value UNSET is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+    warnings.warn(message, PydanticJsonSchemaWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+136 passed, 6 warnings in 5.02s

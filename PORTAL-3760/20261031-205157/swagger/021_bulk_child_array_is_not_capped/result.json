@@ -1,0 +1,409 @@
+{
+  "id": 21,
+  "name": "bulk_child_array_is_not_capped",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+        "volume_name": "Echo Bulk",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "21404f5b-756c-41c3-9e72-71a6395270c3",
+            "name": "Bulk key 00",
+            "fingerprint": "C63082202D654D519CDC62C18956210500000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "b45d33b8-fe27-4371-8aa3-8312f95c1fb5",
+            "name": "Bulk key 01",
+            "fingerprint": "303E7661B3824477AB34C7AB919A4E8300000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "8b27f15a-42d2-44dc-842d-3a8d04f19a49",
+            "name": "Bulk key 02",
+            "fingerprint": "9E4ABA49DEA34DD2A617F4F0FC78B54A00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "441efd2d-5ea6-4571-b5ad-7c9373d133d8",
+            "name": "Bulk key 03",
+            "fingerprint": "D3B5A385063A4FBF929DD095E67831FA00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "14d486d0-1248-46d9-a730-df1f95a8a931",
+            "name": "Bulk key 04",
+            "fingerprint": "EC965690ADF1411398D861EE99835B9A00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "d2ba25ee-59a9-446a-bcd3-dfe304339f52",
+            "name": "Bulk key 05",
+            "fingerprint": "01913696A68641F08C684E7D6A7BC20500000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "4c912781-01dd-47eb-ae6e-4a9f971edb01",
+            "name": "Bulk key 06",
+            "fingerprint": "37D225C6D26448BFBDABED2AC24B7BF400000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "bf800784-770d-488f-a9a8-247b4306ed77",
+            "name": "Bulk key 07",
+            "fingerprint": "F918172500D346C1BCCD9532956AFE5A00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "910902b3-659a-485b-b2b9-4813ecb33142",
+            "name": "Bulk key 08",
+            "fingerprint": "EDEE00BE08384BBE91B34567C269D39B00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "b14a0c22-d7d8-48b4-ba46-c0003fa4877a",
+            "name": "Bulk key 09",
+            "fingerprint": "B8F2957AC4AA41E3AED7032921D6EE5400000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "5259d9ea-33ba-4f98-b896-5c848419451c",
+            "name": "Bulk key 10",
+            "fingerprint": "8FC8F35FDBE5440F90A646A4D775B6BA00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "e9cb1206-896f-4db8-840b-4c5488140aa6",
+            "name": "Bulk key 11",
+            "fingerprint": "3573BE420F7547EF85D2BBC35FE1C7D100000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "78c2ec6b-a662-4f46-ad64-510dd0e7c880",
+            "name": "Bulk key 12",
+            "fingerprint": "F8EE25914BA744B99E2536ACD01BC5DC00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "1bc57348-316a-43be-9aab-68138683d62f",
+            "name": "Bulk key 13",
+            "fingerprint": "CF74C43CA3714B979C84D597B76B84F800000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "dadf081a-0240-4e06-98d8-f9c92ac2c543",
+            "name": "Bulk key 14",
+            "fingerprint": "59C4A7308AF24B7883409429DCEBDB6700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "9a15db49-e678-4ae1-8774-d86890475b00",
+            "name": "Bulk key 15",
+            "fingerprint": "029E25A7E4E74EBAAA3B5F33A0742EFE00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "cbdeb4d2-30a4-4832-bc7a-1adc61822a5a",
+            "name": "Bulk key 16",
+            "fingerprint": "3D14BE3959E0464F90DFCDB7E55DE76E00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "a8c38118-deaa-40a4-a30f-df543fcfad18",
+            "name": "Bulk key 17",
+            "fingerprint": "E56F8D8B67E041E4B4745E8C63BC7CE100000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "3246646d-9adc-4028-b39d-e12e09ddcd38",
+            "name": "Bulk key 18",
+            "fingerprint": "A3D48FEDA7974797897C7336053C0FEC00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "fe1340d9-8ece-419e-952a-425376afe9d3",
+            "name": "Bulk key 19",
+            "fingerprint": "409AF6A19B654176A0BBCC81B002A7BC00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "955a6741-cc31-4149-9c32-c4376bfa2d7e",
+            "name": "Bulk key 20",
+            "fingerprint": "90F06B99102A428E9E57B44550A5CA7700000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "d13632c5-5f37-412e-9af0-31ac7035f3e1",
+            "name": "Bulk key 21",
+            "fingerprint": "416075F0B466487998B8CA115012736600000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "e7879ced-1e95-4afa-8b5d-779828cb9486",
+            "name": "Bulk key 22",
+            "fingerprint": "7A135F34FE1C40ED88AECBD64F5580A600000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "d4e5d92e-ddd1-48ef-b19a-21c040ac04b8",
+            "name": "Bulk key 23",
+            "fingerprint": "5CB6D0EB47104E6E8CCE3BD893A8B92F00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "7144ffbc-57be-43d5-99a4-010895d8319a",
+            "name": "Bulk key 24",
+            "fingerprint": "4E1018C2420E46F5B8C2D64DF4B0799300000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "4d86e479-a97e-43e4-a286-233a176825dd",
+            "name": "Bulk key 25",
+            "fingerprint": "9F8447B4D8B64BBCBEDDB5C0C8308A0000000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "8688682e-6471-4441-8250-3fb1ddf3ff3d",
+            "name": "Bulk key 26",
+            "fingerprint": "BA2D9EA5D1E14DE0B488C765AB78D2BA00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "b0c58e04-7730-4562-bcf1-3c500de8066c",
+            "name": "Bulk key 27",
+            "fingerprint": "840181FC7518481FAA1F83F9147B54FD00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "6c7c43f0-4d28-43b9-aa6d-3131992995c7",
+            "name": "Bulk key 28",
+            "fingerprint": "CCC6167DB2B34DDE9A4C946F5C309DF100000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "id": "756b6435-5a5f-412f-ba83-2636e5dba59c",
+            "name": "Bulk key 29",
+            "fingerprint": "0BB1B190DEA24A9AA0039BD1BEB0F2C400000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=56396687-4055-4933-b004-5f7b58cfb4d1_0&sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_parameters_01.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_parameters_02.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_01.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_02.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_03.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_04.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_05.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_06.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_07.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_08.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_09.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_10.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_11.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_12.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_13.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_14.png",
+    "swagger/021_bulk_child_array_is_not_capped/bulk_child_array_is_not_capped_response_15.png"
+  ],
+  "captured_at": "2026-10-31T20:59:59.680Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "volume_ids": [
+        "56396687-4055-4933-b004-5f7b58cfb4d1_0"
+      ],
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

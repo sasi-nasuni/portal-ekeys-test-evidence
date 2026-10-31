@@ -1,0 +1,13 @@
+{
+  "revision": "f3c9a1e7b2d4",
+  "backup_fk": "FOREIGN KEY (account_id, id, backup_key_id) REFERENCES encryption_keys(account_id, appliance_id, id)",
+  "task_failure_column": true,
+  "message_processing_columns": true,
+  "obsolete_message_unique_absent": true,
+  "temporary_pytest_databases": null,
+  "captured_at": "2026-10-31T20:58:41.271686+00:00",
+  "initial_revision": "e1a7c3f9b2d6",
+  "initial_startup_failure": "DuplicateColumn: edges_v2.backup_key_id already exists",
+  "initial_schema_difference": "Backup-key FK used ON DELETE SET NULL (backup_key_id), rather than the checked-in ON DELETE NO ACTION contract.",
+  "repair": "Applied additive migrations to c2d4e6f8a0b1, verified existing b7e2c4a9d1f3 effects, replaced the FK with user approval, aligned its revision, and resumed existing migrations. No resource rows were deleted and no application source or migration files were changed."
+}

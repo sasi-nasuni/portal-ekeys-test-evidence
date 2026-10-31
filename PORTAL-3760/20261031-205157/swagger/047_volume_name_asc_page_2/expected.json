@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "volume_id": "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+      "volume_name": "Duplicate",
+      "owner_appliance": {
+        "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+        "name": "Alpha appliance"
+      },
+      "keys": [
+        {
+          "id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "name": "Needle%_\\Key",
+          "fingerprint": "33A01B34119149B498CFAB62E60ED61700000001",
+          "algorithm": "rsa",
+          "length": 4096,
+          "origin": "generated",
+          "state": "disabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ],
+      "tasks": []
+    },
+    {
+      "volume_id": "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+      "volume_name": "DUPLICATE",
+      "owner_appliance": {
+        "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+        "name": "beta appliance"
+      },
+      "keys": [],
+      "tasks": []
+    }
+  ],
+  "total_items": 6,
+  "page": 2
+}

@@ -1,0 +1,20 @@
+{
+  "suite": "postgres",
+  "cwd": "backend/libs/portal-data",
+  "command": [
+    ".venv/bin/pytest",
+    "tests/integration/encryption_keys/test_volume_keys_list.py",
+    "-q",
+    "--tb=short",
+    "--show-capture=no",
+    "-o",
+    "addopts=",
+    "-o",
+    "log_cli=false",
+    "--junitxml=./automated/postgres.xml"
+  ],
+  "started_at": "2026-10-31T20:57:57.276223+00:00",
+  "finished_at": "2026-10-31T20:58:04.271152+00:00",
+  "exit_code": 0,
+  "database": "Isolated pytest-created test database and role on local PostgreSQL 16; fixture cleanup drops only the isolated test database."
+}

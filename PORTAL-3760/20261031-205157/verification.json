@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-10-31T21:07:57.152814+00:00",
+  "unique_passing_scenarios": 69,
+  "retained_failed_attempts": 2,
+  "http_status_counts": {
+    "401": 4,
+    "403": 3,
+    "422": 11,
+    "200": 44,
+    "400": 7
+  },
+  "verified_png_count": 333,
+  "png_integrity": "All PNG signatures, chunk CRCs, final IEND chunks, dimensions and SHA-256 digests verified.",
+  "native_swagger_network_equality": true,
+  "fixture_resource_rows_unchanged": true,
+  "fixture_and_cache_cleanup_verified": true,
+  "browser_cleanup_verified": true,
+  "automated_passed": 175,
+  "scope": "Local served Swagger and migrated PostgreSQL with synthetic fixture accounts; no filer writes or external identity/entitlement verification."
+}

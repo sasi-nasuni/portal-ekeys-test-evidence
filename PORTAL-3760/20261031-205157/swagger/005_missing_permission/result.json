@@ -1,0 +1,43 @@
+{
+  "id": 5,
+  "name": "missing_permission",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: View Volume Encryption Keys",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/005_missing_permission/missing_permission_parameters_01.png",
+    "swagger/005_missing_permission/missing_permission_parameters_02.png",
+    "swagger/005_missing_permission/missing_permission_response.png"
+  ],
+  "captured_at": "2026-10-31T20:58:13.035Z",
+  "expected_status": 403,
+  "scenario_request": {
+    "params": {
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "no_permission",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Structured error response"
+  ]
+}

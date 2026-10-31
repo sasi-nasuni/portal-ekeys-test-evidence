@@ -1,0 +1,21 @@
+{
+  "suite": "data_unit",
+  "cwd": "backend/libs/portal-data",
+  "command": [
+    ".venv/bin/pytest",
+    "tests/unit/test_grouped_volume_keys.py",
+    "tests/unit/test_encryption_key_repo.py",
+    "tests/unit/test_encryption_key_converters.py",
+    "-q",
+    "--tb=short",
+    "--show-capture=no",
+    "-o",
+    "addopts=",
+    "-o",
+    "log_cli=false",
+    "--junitxml=./automated/data_unit.xml"
+  ],
+  "started_at": "2026-10-31T20:57:57.276572+00:00",
+  "finished_at": "2026-10-31T20:57:59.394011+00:00",
+  "exit_code": 0
+}

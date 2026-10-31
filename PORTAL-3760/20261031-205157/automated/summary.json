@@ -1,0 +1,29 @@
+{
+  "suites": [
+    {
+      "suite": "data_unit",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit": "automated/data_unit.xml"
+    },
+    {
+      "suite": "postgres",
+      "tests": 23,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit": "automated/postgres.xml"
+    },
+    {
+      "suite": "webapi_unit",
+      "tests": 136,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit": "automated/webapi_unit.xml"
+    }
+  ],
+  "total_passed": 175
+}

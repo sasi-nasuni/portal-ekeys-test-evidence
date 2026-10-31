@@ -1,0 +1,76 @@
+{
+  "id": 49,
+  "name": "volume_name_desc_page_1",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "dfd27afe-9c79-4333-86b6-270ca736b9bc_0",
+        "volume_name": "Zulu Unresolved",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      },
+      {
+        "volume_id": "687eef2c-e881-42f5-b842-f3a17e065649_0",
+        "volume_name": "Page 00",
+        "owner_appliance": null,
+        "keys": [],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "9b452e1e-ef28-45e1-a81c-bcbdb12ef8f7",
+      "page_size": 2,
+      "total_pages": 3,
+      "total_items": 6,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=8292379c-0ef2-4473-a08f-fdca86ed4b49_0&volume_ids=2e01aa4a-dc31-4031-9881-e53b060955a0_0&volume_ids=7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0&volume_ids=f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0&volume_ids=dfd27afe-9c79-4333-86b6-270ca736b9bc_0&volume_ids=687eef2c-e881-42f5-b842-f3a17e065649_0&sort_by=volume_name&sort_direction=desc&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_parameters_01.png",
+    "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_parameters_02.png",
+    "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_response_01.png",
+    "swagger/049_volume_name_desc_page_1/volume_name_desc_page_1_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:03:51.410Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "sort_by": "volume_name",
+      "sort_direction": "desc",
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+        "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+        "dfd27afe-9c79-4333-86b6-270ca736b9bc_0",
+        "687eef2c-e881-42f5-b842-f3a17e065649_0"
+      ],
+      "limit": 2
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

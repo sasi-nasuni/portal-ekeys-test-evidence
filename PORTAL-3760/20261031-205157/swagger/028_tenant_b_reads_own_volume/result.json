@@ -1,0 +1,74 @@
+{
+  "id": 28,
+  "name": "tenant_b_reads_own_volume",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "48087f5e-579d-4135-9cb6-e6d85b99f606_0",
+        "volume_name": "FOREIGN-VOLUME",
+        "owner_appliance": {
+          "id": "e261a9cc-c5e3-4d2d-8bb5-7c19fe71379a",
+          "name": "FOREIGN appliance"
+        },
+        "keys": [
+          {
+            "id": "702fc61d-ed66-4f93-8b53-63fd42e1b606",
+            "name": "FOREIGN-KEY",
+            "fingerprint": "BFB94A805033449A987C173B8068A36D00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "generated",
+            "state": "enabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_parameters_01.png",
+    "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_parameters_02.png",
+    "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_response_01.png",
+    "swagger/028_tenant_b_reads_own_volume/tenant_b_reads_own_volume_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:00:44.188Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "B",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

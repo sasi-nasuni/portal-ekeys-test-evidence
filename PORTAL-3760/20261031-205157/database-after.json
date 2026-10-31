@@ -1,0 +1,1058 @@
+{
+  "captured_at": "2026-10-31T21:07:01.401538+00:00",
+  "tables": {
+    "accounts": {
+      "count": 2,
+      "row_digest": "c7cc2433b16f85ae96ba6ee0e1ea1ef3"
+    },
+    "users": {
+      "count": 5,
+      "row_digest": "27aa0dc1d032e9dbc290829964563ea6"
+    },
+    "roles": {
+      "count": 5,
+      "row_digest": "2657f00854f461fa9a0feed7e7c4ec1d"
+    },
+    "user_role": {
+      "count": 5,
+      "row_digest": "af94cb2267e71eab8a53031bb31e3375"
+    },
+    "role_permissions": {
+      "count": 8,
+      "row_digest": "c67e27302263dd6394c47fe16931b492"
+    },
+    "edges_v2": {
+      "count": 3,
+      "row_digest": "19e26bd0da4950a47b05b4ce766fed0d",
+      "rows": [
+        {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance",
+          "backup_key_id": null,
+          "is_stub": false
+        },
+        {
+          "id": "e261a9cc-c5e3-4d2d-8bb5-7c19fe71379a",
+          "name": "FOREIGN appliance",
+          "backup_key_id": null,
+          "is_stub": false
+        },
+        {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance",
+          "backup_key_id": "6920f580-af65-45e1-9687-e23e15c14316",
+          "is_stub": false
+        }
+      ]
+    },
+    "volumes_v2": {
+      "count": 32,
+      "row_digest": "427832cbe8b41033121f40d52bc7d3e3",
+      "rows": [
+        {
+          "id": "008de75d-a7fe-4df2-b955-a42ef200845f",
+          "volume_id": "40096b58-a806-4c9d-9946-be90b48e3720_0",
+          "name": "Page 04",
+          "is_stub": false
+        },
+        {
+          "id": "0e7890d2-2a76-4b34-8306-cb4e9ff79c7f",
+          "volume_id": "48087f5e-579d-4135-9cb6-e6d85b99f606_0",
+          "name": "FOREIGN-VOLUME",
+          "is_stub": false
+        },
+        {
+          "id": "306d91e6-1de1-4501-bec6-2620b57cf05d",
+          "volume_id": "e5387a0d-57d0-4c1b-b327-adb79e204900_0",
+          "name": "Page 14",
+          "is_stub": false
+        },
+        {
+          "id": "518b784c-dbc6-4ac2-ae09-83799d683625",
+          "volume_id": "fe81502b-768f-4ff3-8334-59e306346935_0",
+          "name": "Page 01",
+          "is_stub": false
+        },
+        {
+          "id": "5d9c0d58-5392-483e-a6b7-dd6deb530279",
+          "volume_id": "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+          "name": "DUPLICATE",
+          "is_stub": false
+        },
+        {
+          "id": "706809d7-76fe-4596-91bd-be831466c20d",
+          "volume_id": "c7bb1442-8c6b-4e66-afa9-36c43af4fb95_0",
+          "name": "Page 11",
+          "is_stub": false
+        },
+        {
+          "id": "7099f376-f3b4-48f6-b4ac-8bbf6e2d3528",
+          "volume_id": "84a3aa86-d92d-469f-b991-64912cc3a35d_0",
+          "name": "Page 19",
+          "is_stub": false
+        },
+        {
+          "id": "77446fd2-baf4-4ad7-9031-568217ee43ab",
+          "volume_id": "dfd27afe-9c79-4333-86b6-270ca736b9bc_0",
+          "name": "Zulu Unresolved",
+          "is_stub": false
+        },
+        {
+          "id": "82391b45-20e9-4e09-85e9-3a4ae16ccbca",
+          "volume_id": "d9320e4a-4714-459a-80d6-a474ec575fde_0",
+          "name": "001 Discovery",
+          "is_stub": true
+        },
+        {
+          "id": "8983951d-b632-4629-b188-19f2f137243c",
+          "volume_id": "ed8fb356-f707-4f36-b0a7-4d44f2ae0506_0",
+          "name": "Page 20",
+          "is_stub": false
+        },
+        {
+          "id": "89d6eff6-62aa-4a9a-a180-96e22418deb0",
+          "volume_id": "2d7f9263-94cf-40a9-a2c6-a7e1ebcd7deb_0",
+          "name": "Page 02",
+          "is_stub": false
+        },
+        {
+          "id": "902f49ce-7765-4a4d-82ed-92969360050e",
+          "volume_id": "6436f142-29f6-4027-8d91-66c8d94e1a81_0",
+          "name": "Page 15",
+          "is_stub": false
+        },
+        {
+          "id": "91e2d4cb-80a9-4415-a04e-280b5ec0815b",
+          "volume_id": "f3b8e959-b6ea-4d76-99c3-c3f31d640e84_0",
+          "name": "Page 16",
+          "is_stub": false
+        },
+        {
+          "id": "a1aeb6a1-84d2-49b2-b20f-818a256e86fb",
+          "volume_id": "1be967ad-7a1d-427b-8bab-870619b81feb_0",
+          "name": "Page 17",
+          "is_stub": false
+        },
+        {
+          "id": "a26a3b6b-0cea-4bc0-8ad4-e982fc2eb933",
+          "volume_id": "f9d82c28-ae9b-4b7f-90f4-ad693945f5c2_0",
+          "name": "Page 21",
+          "is_stub": false
+        },
+        {
+          "id": "a33126ab-4ccb-4297-8a3c-6c0553568f77",
+          "volume_id": "fe0405cb-4df4-4201-b838-8b892889d9c8_0",
+          "name": "Page 09",
+          "is_stub": false
+        },
+        {
+          "id": "b10128fd-7220-4118-b837-a3da2101d4cb",
+          "volume_id": "4ddb57f0-00cc-4ab2-9730-2f4b172e82cd_0",
+          "name": "Page 05",
+          "is_stub": false
+        },
+        {
+          "id": "b3306b53-08f6-470a-a040-242705a7f70a",
+          "volume_id": "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+          "name": "Duplicate",
+          "is_stub": false
+        },
+        {
+          "id": "b7d1a047-abb3-4685-87b5-efaab889d175",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "name": "Echo Bulk",
+          "is_stub": false
+        },
+        {
+          "id": "ba715a56-ebcb-4c41-997c-5d7b8257a532",
+          "volume_id": "74ecd590-95e0-4c85-8ac0-881f41408cd7_pending",
+          "name": "000 Pending",
+          "is_stub": true
+        },
+        {
+          "id": "baf94bc4-6edb-49bf-ab2c-7431cffba507",
+          "volume_id": "687eef2c-e881-42f5-b842-f3a17e065649_0",
+          "name": "Page 00",
+          "is_stub": false
+        },
+        {
+          "id": "cfb89960-ce9c-4abb-9764-a15a2647d472",
+          "volume_id": "e088af23-d37a-44f3-b7f6-b54cb2885abb_0",
+          "name": "Page 06",
+          "is_stub": false
+        },
+        {
+          "id": "d66d0728-0e7e-4543-8312-dc0a1cdd9a2d",
+          "volume_id": "a7d8a868-30bc-40c5-9996-fdad941194a6_0",
+          "name": "Page 08",
+          "is_stub": false
+        },
+        {
+          "id": "df0b9af4-b9b6-4a4d-ba4c-ec719bb3e2fb",
+          "volume_id": "a32d54d9-ca1e-4bba-a7aa-a4b78aca7179_0",
+          "name": "Page 18",
+          "is_stub": false
+        },
+        {
+          "id": "e8faf3b3-819f-43af-99e0-e2e98480898e",
+          "volume_id": "3e527ec4-76a7-4fd5-ac8d-7eecd61d58a3_0",
+          "name": "Page 10",
+          "is_stub": false
+        },
+        {
+          "id": "ea085ca8-5e53-49f4-b806-8e44aac9a19c",
+          "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+          "name": "charlie Archive",
+          "is_stub": false
+        },
+        {
+          "id": "edf7e4ba-4770-4177-996b-0df4ad22cd1d",
+          "volume_id": "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+          "name": "Bravo Empty",
+          "is_stub": false
+        },
+        {
+          "id": "eed66486-ad65-4664-a876-9856d7a272b4",
+          "volume_id": "737bdc36-da6e-4a70-acb1-1582834caaf9_0",
+          "name": "Page 13",
+          "is_stub": false
+        },
+        {
+          "id": "f4ba6a7a-a6c0-4d2e-a652-e92a0d9541af",
+          "volume_id": "e5c97eba-0a62-4a90-b33c-703bfa218d7e_0",
+          "name": "Page 12",
+          "is_stub": false
+        },
+        {
+          "id": "f6a7fe8e-7ef0-4fbe-b4dd-04eabd4b2e02",
+          "volume_id": "e991cd77-ae1c-44dc-86c2-be324323473e_0",
+          "name": "Page 07",
+          "is_stub": false
+        },
+        {
+          "id": "f85acc87-ad29-475f-9fa9-6d2c6d1ed670",
+          "volume_id": "49f1b08b-f179-45b9-bbd8-968eeb1a20b7_0",
+          "name": "Page 03",
+          "is_stub": false
+        },
+        {
+          "id": "fe88a4f4-b4f8-424d-a34c-4b25bb351acb",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "name": "Alpha Finance",
+          "is_stub": false
+        }
+      ]
+    },
+    "volume_connections": {
+      "count": 10,
+      "row_digest": "4eb3b3cfad3fe77e664fba7ff5851088",
+      "rows": [
+        {
+          "volume_id": "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+          "edge_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "is_master": true
+        },
+        {
+          "volume_id": "48087f5e-579d-4135-9cb6-e6d85b99f606_0",
+          "edge_id": "e261a9cc-c5e3-4d2d-8bb5-7c19fe71379a",
+          "is_master": true
+        },
+        {
+          "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+          "edge_id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "is_master": true
+        },
+        {
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "edge_id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "is_master": false
+        },
+        {
+          "volume_id": "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+          "edge_id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "is_master": true
+        },
+        {
+          "volume_id": "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+          "edge_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "is_master": true
+        },
+        {
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "edge_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "is_master": true
+        },
+        {
+          "volume_id": "74ecd590-95e0-4c85-8ac0-881f41408cd7_pending",
+          "edge_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "is_master": true
+        },
+        {
+          "volume_id": "d9320e4a-4714-459a-80d6-a474ec575fde_0",
+          "edge_id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "is_master": true
+        },
+        {
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "edge_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "is_master": true
+        }
+      ]
+    },
+    "encryption_keys": {
+      "count": 39,
+      "row_digest": "e84dddb01a4bc32e767996e31b013bdd",
+      "rows": [
+        {
+          "id": "0a330075-1092-4b9c-b46c-10ec8f5af9b9",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Uploaded enabled",
+          "fingerprint": "8B2AD0135794441FB2DDC3CD49ECD3D800000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "14d486d0-1248-46d9-a730-df1f95a8a931",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 04",
+          "fingerprint": "EC965690ADF1411398D861EE99835B9A00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "1bc57348-316a-43be-9aab-68138683d62f",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 13",
+          "fingerprint": "CF74C43CA3714B979C84D597B76B84F800000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "21404f5b-756c-41c3-9e72-71a6395270c3",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 00",
+          "fingerprint": "C63082202D654D519CDC62C18956210500000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "3246646d-9adc-4028-b39d-e12e09ddcd38",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 18",
+          "fingerprint": "A3D48FEDA7974797897C7336053C0FEC00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Needle%_\\Key",
+          "fingerprint": "33A01B34119149B498CFAB62E60ED61700000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+          "appliance_id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "West only",
+          "fingerprint": "E916E31F62F84E2B83D863BF14EF6D8E00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "441efd2d-5ea6-4571-b5ad-7c9373d133d8",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 03",
+          "fingerprint": "D3B5A385063A4FBF929DD095E67831FA00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "4c912781-01dd-47eb-ae6e-4a9f971edb01",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 06",
+          "fingerprint": "37D225C6D26448BFBDABED2AC24B7BF400000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "4d86e479-a97e-43e4-a286-233a176825dd",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 25",
+          "fingerprint": "9F8447B4D8B64BBCBEDDB5C0C8308A0000000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "5083e980-1ee3-4627-9f2d-a1d008131151",
+          "appliance_id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "REMOTE-SENTINEL",
+          "fingerprint": "406B05F22A9A495DADDCEEC57940E33B00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "5259d9ea-33ba-4f98-b896-5c848419451c",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 10",
+          "fingerprint": "8FC8F35FDBE5440F90A646A4D775B6BA00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "617c151c-3c49-4333-b895-c3e3eaea81bb",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Generated disabled",
+          "fingerprint": "1AC33616B5C647B08FC039AA55C4B2D900000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "6920f580-af65-45e1-9687-e23e15c14316",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "BACKUP-SENTINEL",
+          "fingerprint": "C90179C262B44E11A1DFC07E62DFAB7B00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "6c7c43f0-4d28-43b9-aa6d-3131992995c7",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 28",
+          "fingerprint": "CCC6167DB2B34DDE9A4C946F5C309DF100000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "702fc61d-ed66-4f93-8b53-63fd42e1b606",
+          "appliance_id": "e261a9cc-c5e3-4d2d-8bb5-7c19fe71379a",
+          "name": "FOREIGN-KEY",
+          "fingerprint": "BFB94A805033449A987C173B8068A36D00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "7144ffbc-57be-43d5-99a4-010895d8319a",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 24",
+          "fingerprint": "4E1018C2420E46F5B8C2D64DF4B0799300000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "756b6435-5a5f-412f-ba83-2636e5dba59c",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 29",
+          "fingerprint": "0BB1B190DEA24A9AA0039BD1BEB0F2C400000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "78c2ec6b-a662-4f46-ad64-510dd0e7c880",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 12",
+          "fingerprint": "F8EE25914BA744B99E2536ACD01BC5DC00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "8688682e-6471-4441-8250-3fb1ddf3ff3d",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 26",
+          "fingerprint": "BA2D9EA5D1E14DE0B488C765AB78D2BA00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "8b27f15a-42d2-44dc-842d-3a8d04f19a49",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 02",
+          "fingerprint": "9E4ABA49DEA34DD2A617F4F0FC78B54A00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "910902b3-659a-485b-b2b9-4813ecb33142",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 08",
+          "fingerprint": "EDEE00BE08384BBE91B34567C269D39B00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "955a6741-cc31-4149-9c32-c4376bfa2d7e",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 20",
+          "fingerprint": "90F06B99102A428E9E57B44550A5CA7700000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "9a15db49-e678-4ae1-8774-d86890475b00",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 15",
+          "fingerprint": "029E25A7E4E74EBAAA3B5F33A0742EFE00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "a8c38118-deaa-40a4-a30f-df543fcfad18",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 17",
+          "fingerprint": "E56F8D8B67E041E4B4745E8C63BC7CE100000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "b0c58e04-7730-4562-bcf1-3c500de8066c",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 27",
+          "fingerprint": "840181FC7518481FAA1F83F9147B54FD00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "b14a0c22-d7d8-48b4-ba46-c0003fa4877a",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 09",
+          "fingerprint": "B8F2957AC4AA41E3AED7032921D6EE5400000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "b45d33b8-fe27-4371-8aa3-8312f95c1fb5",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 01",
+          "fingerprint": "303E7661B3824477AB34C7AB919A4E8300000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "bf800784-770d-488f-a9a8-247b4306ed77",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 07",
+          "fingerprint": "F918172500D346C1BCCD9532956AFE5A00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "cbdeb4d2-30a4-4832-bc7a-1adc61822a5a",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 16",
+          "fingerprint": "3D14BE3959E0464F90DFCDB7E55DE76E00000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "d13632c5-5f37-412e-9af0-31ac7035f3e1",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 21",
+          "fingerprint": "416075F0B466487998B8CA115012736600000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "d2ba25ee-59a9-446a-bcd3-dfe304339f52",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 05",
+          "fingerprint": "01913696A68641F08C684E7D6A7BC20500000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "d4e5d92e-ddd1-48ef-b19a-21c040ac04b8",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 23",
+          "fingerprint": "5CB6D0EB47104E6E8CCE3BD893A8B92F00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "dadf081a-0240-4e06-98d8-f9c92ac2c543",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 14",
+          "fingerprint": "59C4A7308AF24B7883409429DCEBDB6700000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "e7879ced-1e95-4afa-8b5d-779828cb9486",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 22",
+          "fingerprint": "7A135F34FE1C40ED88AECBD64F5580A600000001",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "e9cb1206-896f-4db8-840b-4c5488140aa6",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 11",
+          "fingerprint": "3573BE420F7547EF85D2BBC35FE1C7D100000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Uploaded disabled",
+          "fingerprint": "92F3EEFB8DD74DD9896C0506AC30D20F00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "id": "fd99f1d3-cb37-4cb8-a52d-a216ff1163d5",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": null,
+          "fingerprint": "4255BFC9D51B4DCFB91DF5A2E9E7F8AF00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": true
+        },
+        {
+          "id": "fe1340d9-8ece-419e-952a-425376afe9d3",
+          "appliance_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Bulk key 19",
+          "fingerprint": "409AF6A19B654176A0BBCC81B002A7BC00000001",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        }
+      ]
+    },
+    "volume_encryption_key_associations": {
+      "count": 43,
+      "row_digest": "aff4a662609f89e58321bf5b029acb9c",
+      "rows": [
+        {
+          "id": "023db0c5-ba7d-4fe7-b397-16467ecee034",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "8b27f15a-42d2-44dc-842d-3a8d04f19a49",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "1cb06577-8b1a-4475-b3ad-f033d42618f4",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "e9cb1206-896f-4db8-840b-4c5488140aa6",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "22e2e482-7585-449d-8049-4e37d4b45e3d",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "21404f5b-756c-41c3-9e72-71a6395270c3",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "2b33df17-5d01-4d85-b72e-78d102780da9",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "1bc57348-316a-43be-9aab-68138683d62f",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "3d672d1f-64f9-4699-9448-041667f37d10",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "3246646d-9adc-4028-b39d-e12e09ddcd38",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "46137833-6a0b-46e8-850a-f9d682908229",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "955a6741-cc31-4149-9c32-c4376bfa2d7e",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "4f8d9cf1-2bdf-4cb8-9ba9-fc36f02f1ad0",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "dadf081a-0240-4e06-98d8-f9c92ac2c543",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "4fa794b1-4d82-4cb8-ad44-748477ddc263",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "fd99f1d3-cb37-4cb8-a52d-a216ff1163d5",
+          "state": "enabled",
+          "is_stub": true
+        },
+        {
+          "id": "50a7cd9b-fc3c-43ed-8523-99fdbdefb551",
+          "volume_id": "74ecd590-95e0-4c85-8ac0-881f41408cd7_pending",
+          "key_id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "57948ba7-9492-4226-a64a-cad0b529e088",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "441efd2d-5ea6-4571-b5ad-7c9373d133d8",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "5faa4985-e197-4f8a-86d4-28c8b12f1797",
+          "volume_id": "48087f5e-579d-4135-9cb6-e6d85b99f606_0",
+          "key_id": "702fc61d-ed66-4f93-8b53-63fd42e1b606",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "608d7daf-4287-4d3d-84ae-0f2ba5fdd5e1",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "14d486d0-1248-46d9-a730-df1f95a8a931",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "62008998-166d-4a8c-9dc8-5f5ef269639f",
+          "volume_id": "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+          "key_id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "645c4a69-a5df-4529-9397-9781a65a71b8",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "78c2ec6b-a662-4f46-ad64-510dd0e7c880",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "70d55657-1f65-4a00-a4d5-a009193b72ae",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "b14a0c22-d7d8-48b4-ba46-c0003fa4877a",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "737bfd14-df82-46ab-ac06-85601e60b09b",
+          "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+          "key_id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "75182f88-ccc6-434f-bb26-cad9b4aac34d",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "9a15db49-e678-4ae1-8774-d86890475b00",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "76bc00b2-df17-4d97-82ac-ecd679ceb123",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "4c912781-01dd-47eb-ae6e-4a9f971edb01",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "7986a6cf-3de4-49e9-b393-25a401229e2d",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "a8c38118-deaa-40a4-a30f-df543fcfad18",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "852ac051-c8a9-4119-bfca-7b2d1af8951d",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "d2ba25ee-59a9-446a-bcd3-dfe304339f52",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "85aec7dc-91c5-4720-bf91-b4a0a6da18b6",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "bf800784-770d-488f-a9a8-247b4306ed77",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "85b79c12-ef1e-46d1-9017-7155295607a8",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "7144ffbc-57be-43d5-99a4-010895d8319a",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "88290418-76d8-4db7-b64f-f862b12688ff",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "617c151c-3c49-4333-b895-c3e3eaea81bb",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "8dc55932-6079-4f5f-8ee3-a773a3f08ccf",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "6920f580-af65-45e1-9687-e23e15c14316",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "8e1d72a4-8558-4761-96a2-558e8f98e8cd",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "d13632c5-5f37-412e-9af0-31ac7035f3e1",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "98d1bbbe-0c6c-412d-b69d-b02fb28082ba",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "0a330075-1092-4b9c-b46c-10ec8f5af9b9",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "a4e1795c-1693-42f3-bd3d-131cbff6dcd6",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "910902b3-659a-485b-b2b9-4813ecb33142",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "a80e30b5-7ce0-451f-85bd-824de074547e",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "cbdeb4d2-30a4-4832-bc7a-1adc61822a5a",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "acebe352-4074-4f0f-8a14-5869977849ef",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "8688682e-6471-4441-8250-3fb1ddf3ff3d",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "ae0eaf8d-bc0c-490a-982b-0d909e904133",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "4d86e479-a97e-43e4-a286-233a176825dd",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "b21318b4-8bf2-4076-83e5-12296c6b44b8",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "fe1340d9-8ece-419e-952a-425376afe9d3",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "b4687918-199e-457f-9122-85b26243de30",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "b875a9aa-b584-44a3-a1cb-4ed31dfd5d82",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "e7879ced-1e95-4afa-8b5d-779828cb9486",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "bc68c8cf-fcc8-4aa6-8e59-2aef0932fbd6",
+          "volume_id": "dfd27afe-9c79-4333-86b6-270ca736b9bc_0",
+          "key_id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "c10c06b0-a363-4479-ae65-4a6bfcf22aec",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "b45d33b8-fe27-4371-8aa3-8312f95c1fb5",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "ce49418d-0b36-4a02-a1bf-e5737e24dc8b",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "6c7c43f0-4d28-43b9-aa6d-3131992995c7",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "d501159e-ca47-44f6-a480-c6c665ccb847",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "b0c58e04-7730-4562-bcf1-3c500de8066c",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "d736bd87-5e8a-4c4e-a33c-01b70539d8b4",
+          "volume_id": "d9320e4a-4714-459a-80d6-a474ec575fde_0",
+          "key_id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "id": "dc7f54ff-9e6a-4f01-bf4f-57465e59e842",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "5259d9ea-33ba-4f98-b896-5c848419451c",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "e32d4d4c-1b18-4f2b-bca1-b2b179783787",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "e596b2d1-f0ea-4d12-830d-3b505104286c",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "d4e5d92e-ddd1-48ef-b19a-21c040ac04b8",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "e73ca892-7215-48dd-b83c-618333ca4bfa",
+          "volume_id": "56396687-4055-4933-b004-5f7b58cfb4d1_0",
+          "key_id": "756b6435-5a5f-412f-ba83-2636e5dba59c",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "id": "ed3bca98-9b23-46db-8989-de427bea8a76",
+          "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+          "key_id": "5083e980-1ee3-4627-9f2d-a1d008131151",
+          "state": "enabled",
+          "is_stub": false
+        }
+      ]
+    },
+    "tasks": {
+      "count": 9,
+      "row_digest": "f1fd2472c2e5a684d30176e8f8cdb7a7",
+      "rows": [
+        {
+          "id": "21ab98c7-4e2d-4b20-a2d9-b2e5ca78a050",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "88290418-76d8-4db7-b64f-f862b12688ff",
+          "action": "enable_volume_encryption_keys",
+          "state": "failed",
+          "user_acknowledged_at": "2026-10-31T20:57:15.674699+00:00",
+          "reason": null
+        },
+        {
+          "id": "65894630-57f5-4ea2-835c-02dc73d850ac",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "b4687918-199e-457f-9122-85b26243de30",
+          "action": "enable_volume_encryption_keys",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "reason": null
+        },
+        {
+          "id": "8722467e-d88b-4cd8-84ab-124bc88801bb",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "e32d4d4c-1b18-4f2b-bca1-b2b179783787",
+          "action": "disable_volume_encryption_keys",
+          "state": "failed",
+          "user_acknowledged_at": null,
+          "reason": "Synthetic disable failure"
+        },
+        {
+          "id": "973988a7-653f-4c90-a557-18d6ca80cd29",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+          "action": "add_volume_encryption_keys",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "reason": null
+        },
+        {
+          "id": "97f1378a-e8b2-4183-b2e6-284b0ca0a7db",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "98d1bbbe-0c6c-412d-b69d-b02fb28082ba",
+          "action": "delete_encryption_key",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "reason": null
+        },
+        {
+          "id": "9834d157-0c65-47d5-934e-aa34568fd14a",
+          "resource": "encryption_key",
+          "resource_id": "98d1bbbe-0c6c-412d-b69d-b02fb28082ba",
+          "action": "disable_volume_encryption_keys",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "reason": null
+        },
+        {
+          "id": "bc3ae22a-810e-4064-9c84-aea87aae67e0",
+          "resource": "encryption_key",
+          "resource_id": "35b2fe27-f4cc-472f-9904-7cd4bacb5909",
+          "action": "escrow_encryption_key",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "reason": null
+        },
+        {
+          "id": "c46d7a0f-d3db-448d-b074-bb093ca5558d",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "88290418-76d8-4db7-b64f-f862b12688ff",
+          "action": "disable_volume_encryption_keys",
+          "state": "completed",
+          "user_acknowledged_at": null,
+          "reason": null
+        },
+        {
+          "id": "c95ac7f4-387a-46e0-9eb3-bb8afdc30152",
+          "resource": "volume_encryption_key_association",
+          "resource_id": "b4687918-199e-457f-9122-85b26243de30",
+          "action": "enable_volume_encryption_keys",
+          "state": "failed",
+          "user_acknowledged_at": null,
+          "reason": "FOREIGN task must not leak"
+        }
+      ]
+    },
+    "messages": {
+      "count": 0,
+      "row_digest": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  }
+}

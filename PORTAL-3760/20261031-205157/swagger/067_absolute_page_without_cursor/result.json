@@ -1,0 +1,83 @@
+{
+  "id": 67,
+  "name": "absolute_page_without_cursor",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "58790522-3a0f-4522-b455-83561f886429_0",
+        "volume_name": "charlie Archive",
+        "owner_appliance": {
+          "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+          "name": "beta appliance"
+        },
+        "keys": [
+          {
+            "id": "3c864a6d-48bb-4082-80aa-a42aa5e1cb26",
+            "name": "West only",
+            "fingerprint": "E916E31F62F84E2B83D863BF14EF6D8E00000001",
+            "algorithm": "elgamal",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "c01a1737-41b3-4822-9ad0-c610c025b1bd",
+      "page_size": 1,
+      "total_pages": 6,
+      "total_items": 6,
+      "page": 3
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=8292379c-0ef2-4473-a08f-fdca86ed4b49_0&volume_ids=2e01aa4a-dc31-4031-9881-e53b060955a0_0&volume_ids=58790522-3a0f-4522-b455-83561f886429_0&volume_ids=7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0&volume_ids=f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0&volume_ids=dfd27afe-9c79-4333-86b6-270ca736b9bc_0&sort_by=volume_name&sort_direction=asc&page=3&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_parameters_01.png",
+    "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_parameters_02.png",
+    "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_response_01.png",
+    "swagger/067_absolute_page_without_cursor/absolute_page_without_cursor_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:05:46.960Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "58790522-3a0f-4522-b455-83561f886429_0",
+        "7ad486fc-03e2-4cfb-b62c-5d2a2b10e9ca_0",
+        "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+        "dfd27afe-9c79-4333-86b6-270ca736b9bc_0"
+      ],
+      "limit": 1,
+      "page": 3
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

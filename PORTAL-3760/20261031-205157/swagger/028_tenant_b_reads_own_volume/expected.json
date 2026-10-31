@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "volume_id": "48087f5e-579d-4135-9cb6-e6d85b99f606_0",
+      "volume_name": "FOREIGN-VOLUME",
+      "owner_appliance": {
+        "id": "e261a9cc-c5e3-4d2d-8bb5-7c19fe71379a",
+        "name": "FOREIGN appliance"
+      },
+      "keys": [
+        {
+          "id": "702fc61d-ed66-4f93-8b53-63fd42e1b606",
+          "name": "FOREIGN-KEY",
+          "fingerprint": "BFB94A805033449A987C173B8068A36D00000001",
+          "algorithm": "rsa",
+          "length": 4096,
+          "origin": "generated",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ],
+      "tasks": []
+    }
+  ],
+  "total_items": 1,
+  "page": 1
+}

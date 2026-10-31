@@ -1,0 +1,74 @@
+{
+  "id": 22,
+  "name": "empty_parent_preserves_add_task",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "2e01aa4a-dc31-4031-9881-e53b060955a0_0",
+        "volume_name": "Bravo Empty",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [],
+        "tasks": [
+          {
+            "task_id": "973988a7-653f-4c90-a557-18d6ca80cd29",
+            "action": "add_volume_encryption_keys",
+            "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+            "state": "in_progress",
+            "error": null,
+            "can_acknowledge": false
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=2e01aa4a-dc31-4031-9881-e53b060955a0_0&sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_parameters_01.png",
+    "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_parameters_02.png",
+    "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_response_01.png",
+    "swagger/022_empty_parent_preserves_add_task/empty_parent_preserves_add_task_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:00:06.510Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "volume_ids": [
+        "2e01aa4a-dc31-4031-9881-e53b060955a0_0"
+      ],
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

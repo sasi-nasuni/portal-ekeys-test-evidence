@@ -1,0 +1,25 @@
+{
+  "source_run": "PORTAL-3760/20261031-205157",
+  "copied_files": 483,
+  "normalized_text_paths": [
+    "automated/data_unit-result.json",
+    "automated/webapi_unit.log",
+    "automated/postgres.log",
+    "automated/postgres-result.json",
+    "automated/webapi_unit-result.json"
+  ],
+  "omitted": [
+    "Harness source programs",
+    "Fixture identity ledger",
+    "Python bytecode",
+    "SQL repair scripts"
+  ],
+  "screenshot_bytes_preserved": true,
+  "whitespace_normalized_files": [
+    "startup-resume.log",
+    "schema-repair-additive.log",
+    "README.md",
+    "schema-repair-constraints.log"
+  ],
+  "whitespace_normalization": "Markdown screenshot links use list items instead of trailing-space hard breaks; trailing whitespace and extra EOF blank lines removed from publication text only. Original local evidence and screenshot bytes are preserved."
+}

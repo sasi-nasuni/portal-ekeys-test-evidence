@@ -1,0 +1,9 @@
+{
+  "verified_png_count": 333,
+  "text_files_scanned": 150,
+  "secret_pattern_findings": [],
+  "missing_markdown_links": [],
+  "unique_passing_scenarios": 69,
+  "verified": true,
+  "visual_review": "Representative authenticated parameter and response screenshots inspected; curl/auth controls masked. Text scans do not OCR all images."
+}

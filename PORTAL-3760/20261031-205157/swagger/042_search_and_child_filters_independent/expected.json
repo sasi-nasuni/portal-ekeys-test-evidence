@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+      "volume_name": "Alpha Finance",
+      "owner_appliance": {
+        "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+        "name": "Alpha appliance"
+      },
+      "keys": [
+        {
+          "id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+          "name": "Uploaded disabled",
+          "fingerprint": "92F3EEFB8DD74DD9896C0506AC30D20F00000001",
+          "algorithm": "rsa",
+          "length": 4096,
+          "origin": "uploaded",
+          "state": "disabled",
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "8722467e-d88b-4cd8-84ab-124bc88801bb",
+              "action": "disable_volume_encryption_keys",
+              "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+              "state": "failed",
+              "error": {
+                "message": "Synthetic disable failure",
+                "detected_at": "2026-10-31T20:57:15.674699+00:00"
+              },
+              "can_acknowledge": false
+            }
+          ]
+        }
+      ],
+      "tasks": []
+    }
+  ],
+  "total_items": 1,
+  "page": 1
+}

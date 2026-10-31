@@ -1,0 +1,54 @@
+{
+  "id": 24,
+  "name": "stub_volumes_excluded",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 2,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=74ecd590-95e0-4c85-8ac0-881f41408cd7_pending&volume_ids=d9320e4a-4714-459a-80d6-a474ec575fde_0&sort_by=volume_name&sort_direction=asc&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/024_stub_volumes_excluded/stub_volumes_excluded_parameters_01.png",
+    "swagger/024_stub_volumes_excluded/stub_volumes_excluded_parameters_02.png",
+    "swagger/024_stub_volumes_excluded/stub_volumes_excluded_response.png"
+  ],
+  "captured_at": "2026-10-31T21:00:18.229Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "volume_ids": [
+        "74ecd590-95e0-4c85-8ac0-881f41408cd7_pending",
+        "d9320e4a-4714-459a-80d6-a474ec575fde_0"
+      ],
+      "limit": 2
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

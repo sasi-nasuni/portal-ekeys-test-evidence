@@ -1,0 +1,60 @@
+{
+  "id": 15,
+  "name": "validation_bad_key_state",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "enum",
+        "loc": [
+          "query",
+          "key_state",
+          0
+        ],
+        "msg": "Input should be 'enabled' or 'disabled'",
+        "input": "bad",
+        "ctx": {
+          "expected": "'enabled' or 'disabled'"
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?sort_by=volume_name&sort_direction=asc&limit=1&key_state=bad",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/015_validation_bad_key_state/validation_bad_key_state_parameters_01.png",
+    "swagger/015_validation_bad_key_state/validation_bad_key_state_parameters_02.png",
+    "swagger/015_validation_bad_key_state/validation_bad_key_state_response.png"
+  ],
+  "captured_at": "2026-10-31T20:59:19.612Z",
+  "expected_status": 422,
+  "scenario_request": {
+    "params": {
+      "limit": 1
+    },
+    "raw_query_params": {
+      "key_state": "bad"
+    },
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Structured error response"
+  ]
+}

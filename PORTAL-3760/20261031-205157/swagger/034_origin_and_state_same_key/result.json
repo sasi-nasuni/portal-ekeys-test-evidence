@@ -1,0 +1,95 @@
+{
+  "id": 34,
+  "name": "origin_and_state_same_key",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "volume_id": "8292379c-0ef2-4473-a08f-fdca86ed4b49_0",
+        "volume_name": "Alpha Finance",
+        "owner_appliance": {
+          "id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+          "name": "Alpha appliance"
+        },
+        "keys": [
+          {
+            "id": "faca9fb1-cb48-4a00-a137-468d2ae95a71",
+            "name": "Uploaded disabled",
+            "fingerprint": "92F3EEFB8DD74DD9896C0506AC30D20F00000001",
+            "algorithm": "rsa",
+            "length": 4096,
+            "origin": "uploaded",
+            "state": "disabled",
+            "status": "failed",
+            "tasks": [
+              {
+                "task_id": "8722467e-d88b-4cd8-84ab-124bc88801bb",
+                "action": "disable_volume_encryption_keys",
+                "executor_id": "ea665b35-34d0-49ad-80c2-2f1650326b29",
+                "state": "failed",
+                "error": {
+                  "message": "Synthetic disable failure",
+                  "detected_at": "2026-10-31T20:57:15.674699Z"
+                },
+                "can_acknowledge": false
+              }
+            ]
+          }
+        ],
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?volume_ids=8292379c-0ef2-4473-a08f-fdca86ed4b49_0&origin=uploaded&key_state=disabled&sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/034_origin_and_state_same_key/origin_and_state_same_key_parameters_01.png",
+    "swagger/034_origin_and_state_same_key/origin_and_state_same_key_parameters_02.png",
+    "swagger/034_origin_and_state_same_key/origin_and_state_same_key_response_01.png",
+    "swagger/034_origin_and_state_same_key/origin_and_state_same_key_response_02.png"
+  ],
+  "captured_at": "2026-10-31T21:01:21.709Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "origin": [
+        "uploaded"
+      ],
+      "key_state": [
+        "disabled"
+      ],
+      "volume_ids": [
+        "8292379c-0ef2-4473-a08f-fdca86ed4b49_0"
+      ],
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

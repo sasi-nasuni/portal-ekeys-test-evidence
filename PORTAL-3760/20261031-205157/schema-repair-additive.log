@@ -1,0 +1,164 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.46kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 7.53kB done
+#2 DONE 0.0s
+
+#3 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#3 DONE 2.3s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e done
+#4 CACHED
+
+#5 [internal] load metadata for docker.io/library/python:3.14-slim-bookworm@sha256:f0540d0436a220db0a576ccfe75631ab072391e43a24b88972ef9833f699095f
+#5 DONE 0.0s
+
+#6 [internal] load metadata for ghcr.io/astral-sh/uv:0.10.2@sha256:94a23af2d50e97b87b522d3cea24aaf8a1faedec1344c952767434f69585cbf9
+#6 DONE 3.6s
+
+#7 [internal] load .dockerignore
+#7 transferring context: 1.44kB done
+#7 DONE 0.0s
+
+#8 FROM ghcr.io/astral-sh/uv:0.10.2@sha256:94a23af2d50e97b87b522d3cea24aaf8a1faedec1344c952767434f69585cbf9
+#8 resolve ghcr.io/astral-sh/uv:0.10.2@sha256:94a23af2d50e97b87b522d3cea24aaf8a1faedec1344c952767434f69585cbf9 done
+#8 DONE 0.0s
+
+#9 [base  1/36] FROM docker.io/library/python:3.14-slim-bookworm@sha256:f0540d0436a220db0a576ccfe75631ab072391e43a24b88972ef9833f699095f
+#9 resolve docker.io/library/python:3.14-slim-bookworm@sha256:f0540d0436a220db0a576ccfe75631ab072391e43a24b88972ef9833f699095f done
+#9 DONE 0.0s
+
+#10 [internal] load build context
+#10 transferring context: 1.99kB done
+#10 DONE 0.0s
+
+#11 [base 15/36] COPY libs/salesforce-api/pyproject.toml libs/salesforce-api/uv.lock ./libs/salesforce-api/
+#11 CACHED
+
+#12 [base 33/36] RUN mkdir -p ./libs/nbn-api/nbn_api && touch ./libs/nbn-api/nbn_api/__init__.py
+#12 CACHED
+
+#13 [base 22/36] RUN mkdir -p ./libs/portal-api/portal && touch ./libs/portal-api/portal/__init__.py
+#13 CACHED
+
+#14 [base 21/36] COPY libs/hyrule-api/pyproject.toml libs/hyrule-api/uv.lock ./libs/hyrule-api/
+#14 CACHED
+
+#15 [base 13/36] COPY libs/noc-api/pyproject.toml libs/noc-api/uv.lock ./libs/noc-api/
+#15 CACHED
+
+#16 [base  6/36] COPY common.mk ./common.mk
+#16 CACHED
+
+#17 [base 27/36] RUN mkdir -p ./libs/portal-db/portal && touch ./libs/portal-db/portal/__init__.py
+#17 CACHED
+
+#18 [base 29/36] RUN mkdir -p ./libs/portal-posthog/portal
+#18 CACHED
+
+#19 [base 18/36] COPY libs/nbn-api/pyproject.toml libs/nbn-api/uv.lock ./libs/nbn-api/
+#19 CACHED
+
+#20 [base 12/36] COPY libs/portal-db/pyproject.toml libs/portal-db/uv.lock ./libs/portal-db/
+#20 CACHED
+
+#21 [base 14/36] COPY libs/portal-posthog/pyproject.toml libs/portal-posthog/uv.lock ./libs/portal-posthog/
+#21 CACHED
+
+#22 [base 17/36] COPY libs/portal-events/pyproject.toml libs/portal-events/uv.lock ./libs/portal-events/
+#22 CACHED
+
+#23 [base 28/36] RUN mkdir -p ./libs/noc-api/noc && touch ./libs/noc-api/noc/__init__.py
+#23 CACHED
+
+#24 [base 25/36] RUN mkdir -p ./libs/portal-runtime/portal && touch ./libs/portal-runtime/portal/__init__.py
+#24 CACHED
+
+#25 [base 16/36] COPY libs/telemetry-api/pyproject.toml libs/telemetry-api/uv.lock ./libs/telemetry-api/
+#25 CACHED
+
+#26 [base 32/36] RUN mkdir -p ./libs/portal-events/portal && touch ./libs/portal-events/portal/__init__.py
+#26 CACHED
+
+#27 [base 26/36] RUN mkdir -p ./libs/portal-data/portal && touch ./libs/portal-data/portal/__init__.py
+#27 CACHED
+
+#28 [base 11/36] COPY libs/portal-data/pyproject.toml libs/portal-data/uv.lock ./libs/portal-data/
+#28 CACHED
+
+#29 [base  5/36] WORKDIR /app
+#29 CACHED
+
+#30 [base  9/36] COPY libs/portal-web/pyproject.toml libs/portal-web/uv.lock ./libs/portal-web/
+#30 CACHED
+
+#31 [base 20/36] COPY libs/mangum-patched/pyproject.toml ./libs/mangum-patched/
+#31 CACHED
+
+#32 [base 31/36] RUN mkdir -p ./libs/telemetry-api/telemetry && touch ./libs/telemetry-api/telemetry/__init__.py
+#32 CACHED
+
+#33 [base 30/36] RUN mkdir -p ./libs/salesforce-api/salesforce && touch ./libs/salesforce-api/salesforce/__init__.py
+#33 CACHED
+
+#34 [base  3/36] COPY --from=ghcr.io/astral-sh/uv:0.10.2@sha256:94a23af2d50e97b87b522d3cea24aaf8a1faedec1344c952767434f69585cbf9 /uv /bin/uv
+#34 CACHED
+
+#35 [base  8/36] COPY libs/portal-core/pyproject.toml libs/portal-core/uv.lock ./libs/portal-core/
+#35 CACHED
+
+#36 [base  7/36] COPY libs/portal-api/pyproject.toml libs/portal-api/uv.lock ./libs/portal-api/
+#36 CACHED
+
+#37 [base 24/36] RUN mkdir -p ./libs/portal-web/portal && touch ./libs/portal-web/portal/__init__.py
+#37 CACHED
+
+#38 [base  4/36] RUN mkdir /app
+#38 CACHED
+
+#39 [base 19/36] COPY libs/edge-sdk/pyproject.toml libs/edge-sdk/uv.lock ./libs/edge-sdk/
+#39 CACHED
+
+#40 [base 10/36] COPY libs/portal-runtime/pyproject.toml libs/portal-runtime/uv.lock ./libs/portal-runtime/
+#40 CACHED
+
+#41 [base 35/36] RUN mkdir -p ./libs/mangum-patched/mangum && touch ./libs/mangum-patched/mangum/__init__.py
+#41 CACHED
+
+#42 [base 34/36] RUN mkdir -p ./libs/edge-sdk/edge_sdk && touch ./libs/edge-sdk/edge_sdk/__init__.py
+#42 CACHED
+
+#43 [base  2/36] RUN apt-get update --fix-missing &&   apt-get -y install   make   git   libpq-dev   build-essential
+#43 CACHED
+
+#44 [base 23/36] RUN mkdir -p ./libs/portal-core/portal && touch ./libs/portal-core/portal/__init__.py
+#44 CACHED
+
+#45 [base 36/36] RUN mkdir -p ./libs/hyrule-api/hyrule && touch ./libs/hyrule-api/hyrule/__init__.py
+#45 CACHED
+
+#46 exporting to image
+#46 exporting layers done
+#46 exporting manifest sha256:76b0ef68d1ca678e6c1154d979184a58d383e252e654786751085db13bd6be81 done
+#46 exporting config sha256:13b2bcce2d48df5fca95891a19860b4b9fc8cc0d9d714eeb30074705440b71dc done
+#46 exporting attestation manifest sha256:bab7c71ba769f31c2b931432e2e0d3e8c31a185504877baaefc9156ade8e99da done
+#46 exporting manifest list sha256:8494f950ee75311a2ef094cc0b0e8b6f450a71824958e3cccfdd3ee204d67722 done
+#46 naming to docker.io/library/base:latest
+#46 naming to docker.io/library/base:latest done
+#46 DONE 0.1s
+
+#47 resolving provenance for metadata file
+#47 DONE 0.0s
+2026-10-31 20:53:06,762 - [INFO] [pid=1] [transaction_id=None] [module=portal.db.migrate] Database portal already exists
+2026-10-31 20:53:06,801 - [INFO] [pid=1] [transaction_id=None] [module=alembic.runtime.migration] Context impl PostgresqlImpl.
+2026-10-31 20:53:06,802 - [INFO] [pid=1] [transaction_id=None] [module=alembic.runtime.migration] Will assume transactional DDL.
+2026-10-31 20:53:06,972 - [INFO] [pid=1] [transaction_id=None] [module=alembic.runtime.migration] Running upgrade e1a7c3f9b2d6 -> f3a7c1d9e5b2, cloud credential canonical values
+2026-10-31 20:53:07,002 - [INFO] [pid=1] [transaction_id=None] [module=alembic.runtime.migration] Running upgrade f3a7c1d9e5b2 -> c2d4e6f8a0b1, add message processing status columns
+ Image base:latest Building
+ Image base:latest Built
+ Container portal-encr-keys-4-db-migrate-run-5218f236cd9e Creating
+ db-migrate The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+ Container portal-encr-keys-4-db-migrate-run-5218f236cd9e Created

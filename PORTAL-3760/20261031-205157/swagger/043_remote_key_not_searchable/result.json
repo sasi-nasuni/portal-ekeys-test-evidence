@@ -1,0 +1,51 @@
+{
+  "id": 43,
+  "name": "remote_key_not_searchable",
+  "method": "GET",
+  "path_template": "/volumes/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 1,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/encryption-keys?search=REMOTE-SENTINEL&sort_by=volume_name&sort_direction=asc&limit=1",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_volume_encryption_keys_volumes_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/043_remote_key_not_searchable/remote_key_not_searchable_parameters_01.png",
+    "swagger/043_remote_key_not_searchable/remote_key_not_searchable_parameters_02.png",
+    "swagger/043_remote_key_not_searchable/remote_key_not_searchable_response.png"
+  ],
+  "captured_at": "2026-10-31T21:03:14.342Z",
+  "expected_status": 200,
+  "scenario_request": {
+    "params": {
+      "search": "REMOTE-SENTINEL",
+      "limit": 1
+    },
+    "raw_query_params": null,
+    "account": "A",
+    "permission_profile": "full",
+    "auth_variant": "valid"
+  },
+  "outcome": "PASS",
+  "assertions": [
+    "Expected HTTP status",
+    "Native Swagger displayed status, URL, and complete JSON match network response",
+    "Actual request URL contains every intended parameter value",
+    "Complete ordered volume identities, owner identities, key identities/metadata/state/status and task snapshots match fixtures",
+    "Parent-only pagination metadata, total count, page size and continuation presence"
+  ]
+}

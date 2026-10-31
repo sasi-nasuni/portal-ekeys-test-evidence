@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "volume_id": "f053ef9d-150f-4fd1-b997-f40ecc71bb4a_0",
+      "volume_name": "DUPLICATE",
+      "owner_appliance": {
+        "id": "db3ef0bd-58dc-4946-8c49-47f55c5b8fe7",
+        "name": "beta appliance"
+      },
+      "keys": [],
+      "tasks": []
+    }
+  ],
+  "total_items": 6,
+  "page": 5
+}
