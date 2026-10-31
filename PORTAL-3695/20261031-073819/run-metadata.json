@@ -1,0 +1,22 @@
+{
+  "run_started_utc": "2026-10-31T02:08:19.304649+00:00",
+  "branch": "sbhushan/PORTAL-3695_mvi-3_refactor",
+  "head": "ec55af9a2ba6e6c16422d77b64d5afa95dd8c239",
+  "base_feature_branch": "origin/feature/PM-1957-EKEYS_MVI_3",
+  "base_feature_sha": "9a28ebd7175f5799a851b965e3dc50ba01927b14",
+  "commits_ahead_of_base": "1",
+  "worktree_dirty": true,
+  "webapi_container_mounts": "<portal-repo>/backend/libs -> /app/libs;<portal-repo>/backend/portal-webapi -> /app/portal-webapi;~/.aws -> /root/.aws;",
+  "alembic_revision": "f3c9a1e7b2d4",
+  "containers": [
+    "portal-encr-keys-6-mcp-1 Up 26 minutes",
+    "portal-encr-keys-6-webbff-1 Up 26 minutes",
+    "portal-encr-keys-6-webapi-1 Up 26 minutes",
+    "portal-encr-keys-6-webbffsse-1 Up 27 minutes",
+    "portal-encr-keys-6-frontend-1 Up 27 minutes",
+    "portal-encr-keys-6-pgadmin-1 Up 27 minutes",
+    "portal-encr-keys-6-eventhub-poller-1 Up 26 minutes",
+    "portal-encr-keys-6-db-1 Up 39 minutes (healthy)",
+    "portal-encr-keys-6-redis-1 Up 39 minutes"
+  ]
+}

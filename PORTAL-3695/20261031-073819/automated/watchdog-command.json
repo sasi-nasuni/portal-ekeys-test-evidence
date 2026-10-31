@@ -1,0 +1,1 @@
+{"suite":"watchdog","cwd":"<portal-repo>/backend/stacks/portal-db-forge","command":"uv run --no-sync pytest -q tests/integration/test_task_watchdog.py tests/test_task_watchdog.py","started_at_utc":"2026-10-31T02:15:06Z"}

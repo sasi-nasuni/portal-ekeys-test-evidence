@@ -1,0 +1,42 @@
+{
+  "seq": 25,
+  "phase": "A",
+  "name": "volume_keys_unknown_404",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "path_params": {
+    "volume_id": "00000000-0000-0000-0000-000000000000_9"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 404,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": true,
+      "observed": 404
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/00000000-0000-0000-0000-000000000000_9/encryption-keys",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/025_volume_keys_unknown_404/volume_keys_unknown_404_parameters_01.png",
+    "swagger/025_volume_keys_unknown_404/volume_keys_unknown_404_response.png"
+  ],
+  "body": {
+    "message": "Volume 00000000-0000-0000-0000-000000000000_9 not found",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:17:56.585Z"
+}

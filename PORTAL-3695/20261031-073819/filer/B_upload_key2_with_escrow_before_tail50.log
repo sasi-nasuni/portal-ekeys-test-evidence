@@ -1,0 +1,51 @@
+# filer 10.84.2.115 `cat /var/log/nasuni/broadcast_network.log | tail -50` captured 2026-10-31T02:34:38.437667+00:00 (sanitized)
+2026-10-30 22:30:41.593 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=95a15b73-f29e-4184-8635-881df254fba7 status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:30:41.593 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing EscrowEncryptionKeyCommand -> configuration.encryption_keys.escrow
+2026-10-30 22:30:41.632 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=b29ac05e-c12e-433a-bbd3-1f390ce8bab5 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:41.632 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListVolumesCommand -> volumes.list
+2026-10-30 22:30:42.506 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/portal/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/nea/fifo/response'
+2026-10-30 22:30:43.288 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:30:44.212 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:30:44.257 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=6f172f3e-6b9c-4ae9-bbc2-22326f122ccd status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:44.257 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListEncryptionKeysCommand -> configuration.encryption_keys
+2026-10-30 22:30:45.085 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:30:45.982 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:30:46.025 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=5c33c06b-36c5-4c89-9643-9f4ea46591f9 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:46.025 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListVolumesCommand -> volumes.list
+2026-10-30 22:30:47.821 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:30:48.904 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:30:48.948 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=b29ac05e-c12e-433a-bbd3-1f390ce8bab5 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:48.948 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListReplicatedVolumesCommand -> replicated_volumes.list
+2026-10-30 22:30:49.654 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:30:50.676 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:30:50.722 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=cbacb59d-8bc2-452b-ae6e-93a87fed7cc7 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:50.722 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListReplicatedVolumesCommand -> replicated_volumes.list
+2026-10-30 22:30:51.398 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:30:52.283 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:30:52.327 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=5c33c06b-36c5-4c89-9643-9f4ea46591f9 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:52.328 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListReplicatedVolumesCommand -> replicated_volumes.list
+2026-10-30 22:30:52.996 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:30:53.870 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:30:53.915 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=6a9a0af2-933d-429c-9d63-adce27ce282b status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:30:53.915 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing ListEncryptionKeysCommand -> configuration.encryption_keys
+2026-10-30 22:30:54.711 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/portal'
+2026-10-30 22:31:12.937 dev-e-keys-poc nbn-service.py[23239]: INFO: received message message.topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/31d629af-30b3-413e-a583-d5d3da651eb9/dvista1/nea/fifo/inbox' message.message_id='5d33e36e-63f2-479f-9a06-f8d0e2f28f58' payload_length=1975 message.object_path=None
+2026-10-30 22:31:13.734 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='[LONG ENCODED VALUE WITHHELD]'
+2026-10-30 22:31:13.770 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=f223a61f-2966-4819-9b40-bd5472913728 status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:31:13.963 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing UpdateEscrowPassphraseCommand -> configuration.encryption_keys.escrow_passphrase.update
+2026-10-30 22:31:44.467 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/portal/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/nea/fifo/response'
+2026-10-30 22:32:22.730 dev-e-keys-poc nbn-service.py[23239]: INFO: received message message.topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/31d629af-30b3-413e-a583-d5d3da651eb9/dvista1/nea/fifo/inbox' message.message_id='2b3b1073-5207-434d-9aff-fc292757c105' payload_length=1231 message.object_path=None
+2026-10-30 22:32:23.702 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack'
+2026-10-30 22:32:23.742 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=122107bc-4baf-4cbd-b978-701f658154ab status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:32:23.742 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing AddVolumeEncryptionKeysCommand -> volumes.encryption_keys.add
+2026-10-30 22:32:25.078 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/portal/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/nea/fifo/response'
+2026-10-30 22:33:10.858 dev-e-keys-poc nbn-service.py[23239]: INFO: received message message.topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/31d629af-30b3-413e-a583-d5d3da651eb9/dvista1/nea/fifo/inbox' message.message_id='5bc6d1f8-2448-4095-87af-edc3fad0c70f' payload_length=1268 message.object_path=None
+2026-10-30 22:33:11.831 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='[LONG ENCODED VALUE WITHHELD]'
+2026-10-30 22:33:11.879 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=9715fdae-040a-4c2b-8384-c3cc0a0505a9 status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:33:11.879 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing DisableVolumeEncryptionKeysCommand -> volumes.encryption_keys.disable
+2026-10-30 22:33:13.057 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/portal/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/nea/fifo/response'
+2026-10-30 22:33:55.930 dev-e-keys-poc nbn-service.py[23239]: INFO: received message message.topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/31d629af-30b3-413e-a583-d5d3da651eb9/dvista1/nea/fifo/inbox' message.message_id='ceb6c039-0e4b-48b8-b45e-c232dd5f1256' payload_length=1268 message.object_path=None
+2026-10-30 22:33:57.031 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='[LONG ENCODED VALUE WITHHELD]'
+2026-10-30 22:33:57.071 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=731e4482-e550-427b-84bb-404ac85e13b8 status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:33:57.071 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing EnableVolumeEncryptionKeysCommand -> volumes.encryption_keys.enable
+2026-10-30 22:33:58.324 dev-e-keys-poc nbn-service.py[23239]: INFO: sending message to topic='dbn1/f902fd2c-796c-403b-837b-89d5625319a9/portal/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/nea/fifo/response'

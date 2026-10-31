@@ -1,0 +1,38 @@
+{
+  "captured_at": "2026-10-31T02:40:14.188262+00:00",
+  "query": "select id, origin, target, processing_status, sent_at, received_at, processed_at,\n        content->>'command_type' command_type, content->>'event_type' event_type,\n        (select array_agg(k) from json_object_keys(content) k) content_keys from messages where task_id='95a15b73-f29e-4184-8635-881df254fba7' order by coalesce(sent_at, received_at)",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "id": "bc8901ea-ccc9-4bf1-8477-3fd850a79a99",
+      "origin": "dvista1",
+      "target": "edge",
+      "processing_status": "COMPLETED",
+      "sent_at": "2026-10-31T02:30:37.969191+00:00",
+      "received_at": null,
+      "processed_at": null,
+      "command_type": null,
+      "event_type": null,
+      "content_keys": [
+        "command",
+        "fingerprint"
+      ]
+    },
+    {
+      "id": "f7d01bd6-498b-4cf6-a52c-c91f6ce1e15b",
+      "origin": "edge",
+      "target": "dvista1",
+      "processing_status": "COMPLETED",
+      "sent_at": "2026-10-31T02:30:41.847817+00:00",
+      "received_at": "2026-10-31T02:30:42.749307+00:00",
+      "processed_at": "2026-10-31T02:30:42.788345+00:00",
+      "command_type": null,
+      "event_type": null,
+      "content_keys": [
+        "event",
+        "data"
+      ]
+    }
+  ]
+}

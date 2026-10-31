@@ -1,0 +1,42 @@
+{
+  "seq": 74,
+  "phase": "A",
+  "name": "passphrase_status_volview_403_rerun",
+  "profile": "volview",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/074_passphrase_status_volview_403_rerun/passphrase_status_volview_403_rerun_parameters_01.png",
+    "swagger/074_passphrase_status_volview_403_rerun/passphrase_status_volview_403_rerun_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permissions: View Escrow Passphrase",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:22:47.585Z"
+}

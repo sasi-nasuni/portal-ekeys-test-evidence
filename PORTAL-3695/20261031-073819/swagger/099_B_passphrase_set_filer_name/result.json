@@ -1,0 +1,44 @@
+{
+  "seq": 99,
+  "phase": "B",
+  "name": "B_passphrase_set_filer_name",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    }
+  ],
+  "note": "Passphrase set to the filer name DEV-E-KEYS-POC (user instruction).",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/099_B_passphrase_set_filer_name/B_passphrase_set_filer_name_parameters_01.png",
+    "swagger/099_B_passphrase_set_filer_name/B_passphrase_set_filer_name_response.png"
+  ],
+  "body": {
+    "id": "f223a61f-2966-4819-9b40-bd5472913728",
+    "state": "in_progress",
+    "status_url": "/tasks/f223a61f-2966-4819-9b40-bd5472913728",
+    "can_acknowledge": false
+  },
+  "captured_at": "2026-10-31T02:31:12.918Z"
+}

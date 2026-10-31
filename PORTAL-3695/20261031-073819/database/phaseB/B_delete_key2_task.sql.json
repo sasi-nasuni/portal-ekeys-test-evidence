@@ -1,0 +1,21 @@
+{
+  "captured_at": "2026-10-31T02:35:45.214555+00:00",
+  "query": "select id, action, resource, resource_id, executor_id, state, reason, created_at, last_updated_at, failed_at, user_acknowledged_at from tasks where id='6b801b5a-b657-40a0-ae15-90c900f3422d'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "id": "6b801b5a-b657-40a0-ae15-90c900f3422d",
+      "action": "delete_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "61a9aee1-e1db-40c5-84eb-c3dfa7772b46",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:35:33.478894+00:00",
+      "last_updated_at": "2026-10-31T02:35:37.542417+00:00",
+      "failed_at": null,
+      "user_acknowledged_at": null
+    }
+  ]
+}

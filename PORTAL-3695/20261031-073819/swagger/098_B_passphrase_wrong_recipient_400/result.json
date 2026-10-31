@@ -1,0 +1,50 @@
+{
+  "seq": 98,
+  "phase": "B",
+  "name": "B_passphrase_wrong_recipient_400",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 400,
+  "status": 400,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 400",
+      "ok": true,
+      "observed": 400
+    },
+    {
+      "check": "not encrypted to appliance key",
+      "ok": true,
+      "observed": {
+        "message": "Passphrase must be encrypted to the appliance's escrow public key",
+        "detail": null
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/098_B_passphrase_wrong_recipient_400/B_passphrase_wrong_recipient_400_parameters_01.png",
+    "swagger/098_B_passphrase_wrong_recipient_400/B_passphrase_wrong_recipient_400_response.png"
+  ],
+  "body": {
+    "message": "Passphrase must be encrypted to the appliance's escrow public key",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:30:58.943Z"
+}

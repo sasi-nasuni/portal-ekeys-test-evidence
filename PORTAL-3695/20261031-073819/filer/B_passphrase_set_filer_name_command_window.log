@@ -1,0 +1,3 @@
+# filer 10.84.2.115 broadcast_network.log window 2026-10-30 22:31:06 .. 2026-10-30 22:31:49 (filer local, UTC-4) for task f223a61f-2966-4819-9b40-bd5472913728 (update_escrow_passphrase -> completed); periodic List* routing omitted; sanitized
+2026-10-30 22:31:13.770 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=f223a61f-2966-4819-9b40-bd5472913728 status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:31:13.963 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing UpdateEscrowPassphraseCommand -> configuration.encryption_keys.escrow_passphrase.update

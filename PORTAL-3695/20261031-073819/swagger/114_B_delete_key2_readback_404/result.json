@@ -1,0 +1,42 @@
+{
+  "seq": 114,
+  "phase": "B",
+  "name": "B_delete_key2_readback_404",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "61a9aee1-e1db-40c5-84eb-c3dfa7772b46"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 404,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": true,
+      "observed": 404
+    }
+  ],
+  "note": "delete task final state: completed",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/61a9aee1-e1db-40c5-84eb-c3dfa7772b46",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/114_B_delete_key2_readback_404/B_delete_key2_readback_404_parameters_01.png",
+    "swagger/114_B_delete_key2_readback_404/B_delete_key2_readback_404_response.png"
+  ],
+  "body": {
+    "message": "Encryption key not found",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:36:03.168Z"
+}

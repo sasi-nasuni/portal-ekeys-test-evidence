@@ -1,0 +1,80 @@
+{
+  "seq": 19,
+  "phase": "A",
+  "name": "detail_in_use_volumes",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "21def027-f241-46a4-be67-b69b8e2c9889"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "used == true and lists E-Keys-Test-01",
+      "ok": true,
+      "observed": [
+        {
+          "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+          "volume_name": "E-Keys-Test-01",
+          "state": "disabled",
+          "is_stub": false,
+          "status": "synced",
+          "tasks": []
+        }
+      ]
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/21def027-f241-46a4-be67-b69b8e2c9889",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/019_detail_in_use_volumes/detail_in_use_volumes_parameters_01.png",
+    "swagger/019_detail_in_use_volumes/detail_in_use_volumes_response_01.png",
+    "swagger/019_detail_in_use_volumes/detail_in_use_volumes_response_02.png"
+  ],
+  "body": {
+    "id": "21def027-f241-46a4-be67-b69b8e2c9889",
+    "name": "E-Keys-Test-01",
+    "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "appliance_name": "DEV-E-KEYS-POC",
+    "algorithm": "rsa",
+    "length": 3072,
+    "type": "volume",
+    "origin": "generated",
+    "used": true,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [
+      {
+        "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "volume_name": "E-Keys-Test-01",
+        "state": "disabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "is_escrowed": true,
+    "is_backup_key": false
+  },
+  "captured_at": "2026-10-31T02:17:30.160Z"
+}

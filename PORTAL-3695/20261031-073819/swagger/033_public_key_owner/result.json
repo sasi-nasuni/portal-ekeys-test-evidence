@@ -1,0 +1,47 @@
+{
+  "seq": 33,
+  "phase": "A",
+  "name": "public_key_owner",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/public-key",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "armored PGP public key",
+      "ok": true,
+      "observed": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nmQ"
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/public-key",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/033_public_key_owner/public_key_owner_parameters_01.png",
+    "swagger/033_public_key_owner/public_key_owner_response.png"
+  ],
+  "body": {
+    "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\n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\nHWdKCsy9D39LSBmb/wUg4jX+zkNF2HX2SKfX\n=uolG\n-----END PGP PUBLIC KEY BLOCK-----\n",
+    "fingerprint": "281A5859FE737227F8540F9B3243B91A5614961F"
+  },
+  "captured_at": "2026-10-31T02:18:29.764Z"
+}

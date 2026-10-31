@@ -1,0 +1,46 @@
+{
+  "seq": 115,
+  "phase": "B",
+  "name": "B_download_trigger",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": {
+    "public_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nmQGNBGrlVBMBDADH9e6G6/kjxrKg84iky8wdsNjZRrQqEJvcV1x8N5caSajBTVRU\ndotlbsiUcx0Ej6Yv6Msnz2bjdHpGwfCBcm10mQOm2Do26h833rNVl+v1AhlwgaTw\nd/R3HPrv8TgaFrcKW+oESRC6rgAXqlE07n+21La9H366gkpMvUc4XoC2BJq0wbzA\nZ27bPOm0Ywlf1HdiIxW+RyqEegMSOqfZ6RhGQ3S5/0MK13iT0iX671VXcQQF/+sC\nlyVgcIpl7UEXi+U7aFizEWsm+YmBa3WnNqlcvBDSFU1cyB+DjozRb3Q76mkrgVk/\n8bO1vZBeUS3hAuUQj8lkRYCE2E7/YAVNrceqRNI+rg2TfBuiHUa5o58/YEUP8RLV\nCpDlZq81/6og9Ye3zxtUjZBeh6UfImVfIwXa9xJWfXx5JCxBPkdESA+NlZGd6aAn\n4o2JTUx/e6CJnB+9ngdJ0jRlcvVsjpG38PZkFimpElBp+BnF4zhdbjVjkm5au0LR\n4Kljs1Yc3IgE+Z8AEQEAAbQZZWszNjk1LWRvd25sb2FkLXJlY2lwaWVudIkB7QQT\nAQgAVxYhBHHash8X9E9CbE8igCHylVnaMudcBQJq5VQTGxSAAAAAAAQADm1hbnUy\nLDIuNSsxLjEyLDAsMwIbDQULCQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRAh\n8pVZ2jLnXPq6C/0ThVpKCI0G8i5LTgE0fD9+PcrivkbqEN6vRlaZvtpssNA+dYdc\nZpHJ+eqUEsabvuNhvlseJlXGaJD7VZqoAJDXwQGmbOO8/kOLEvav5DA+EYovAvDC\n4dh7IiNHNiId5io+SNbyss3LaiKaW+NjwbUoQIvQWYljjcWbIYss/8Ynnd282C9N\nE8Dos+LbsV8H+B4iLQ6JF2BgvNcP51M1YPNHaB8A8cNAucLfzzrYuUD7P8u7/y2J\nL5/lwIfy9cJDm7sk6ATfk6qnLfNtNFKwVQitcwD9hpgPxzyF8jiqZSuzLTlMZWO1\n3O9jxocD8RQ/1FsHoIQl02/nfTlpEsr2Y9S1+Tnl/nGe6F027XkqWAxOJ5GDgPzt\nWexadNCZho3PXH0cAbwgtXumgARKshck0EdNIMEN1+/UjWqeECwXzB50/eF4NQkm\n+eImIvfUygMq1gj78DhxsdMz+M5UrLgmpIpOW74Qb9UoEiAXAyv1s0PynS8W6kbk\nj38POIb7UBfzKEw=\n=3J7F\n-----END PGP PUBLIC KEY BLOCK-----\n"
+  },
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads?public_key=-----BEGIN+PGP+PUBLIC+KEY+BLOCK-----%0A%0AmQGNBGrlVBMBDADH9e6G6%2FkjxrKg84iky8wdsNjZRrQqEJvcV1x8N5caSajBTVRU%0AdotlbsiUcx0Ej6Yv6Msnz2bjdHpGwfCBcm10mQOm2Do26h833rNVl%2Bv1AhlwgaTw%0Ad%2FR3HPrv8TgaFrcKW%2BoESRC6rgAXqlE07n%2B21La9H366gkpMvUc4XoC2BJq0wbzA%0AZ27bPOm0Ywlf1HdiIxW%2BRyqEegMSOqfZ6RhGQ3S5%2F0MK13iT0iX671VXcQQF%2F%2BsC%0AlyVgcIpl7UEXi%2BU7aFizEWsm%2BYmBa3WnNqlcvBDSFU1cyB%2BDjozRb3Q76mkrgVk%2F%0A8bO1vZBeUS3hAuUQj8lkRYCE2E7%2FYAVNrceqRNI%2Brg2TfBuiHUa5o58%2FYEUP8RLV%0ACpDlZq81%2F6og9Ye3zxtUjZBeh6UfImVfIwXa9xJWfXx5JCxBPkdESA%2BNlZGd6aAn%0A4o2JTUx%2Fe6CJnB%2B9ngdJ0jRlcvVsjpG38PZkFimpElBp%2BBnF4zhdbjVjkm5au0LR%0A4Kljs1Yc3IgE%2BZ8AEQEAAbQZZWszNjk1LWRvd25sb2FkLXJlY2lwaWVudIkB7QQT%0AAQgAVxYhBHHash8X9E9CbE8igCHylVnaMudcBQJq5VQTGxSAAAAAAAQADm1hbnUy%0ALDIuNSsxLjEyLDAsMwIbDQULCQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRAh%0A8pVZ2jLnXPq6C%2F0ThVpKCI0G8i5LTgE0fD9%2BPcrivkbqEN6vRlaZvtpssNA%2BdYdc%0AZpHJ%2BeqUEsabvuNhvlseJlXGaJD7VZqoAJDXwQGmbOO8%2FkOLEvav5DA%2BEYovAvDC%0A4dh7IiNHNiId5io%2BSNbyss3LaiKaW%2BNjwbUoQIvQWYljjcWbIYss%2F8Ynnd282C9N%0AE8Dos%2BLbsV8H%2BB4iLQ6JF2BgvNcP51M1YPNHaB8A8cNAucLfzzrYuUD7P8u7%2Fy2J%0AL5%2FlwIfy9cJDm7sk6ATfk6qnLfNtNFKwVQitcwD9hpgPxzyF8jiqZSuzLTlMZWO1%0A3O9jxocD8RQ%2F1FsHoIQl02%2FnfTlpEsr2Y9S1%2BTnl%2FnGe6F027XkqWAxOJ5GDgPzt%0AWexadNCZho3PXH0cAbwgtXumgARKshck0EdNIMEN1%2B%2FUjWqeECwXzB50%2FeF4NQkm%0A%2BeImIvfUygMq1gj78DhxsdMz%2BM5UrLgmpIpOW74Qb9UoEiAXAyv1s0PynS8W6kbk%0Aj38POIb7UBfzKEw%3D%0A%3D3J7F%0A-----END+PGP+PUBLIC+KEY+BLOCK-----%0A",
+  "transport_note": "Swagger requestInterceptor: multiline query preservation (native single-line input removes line breaks); response unmodified",
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/115_B_download_trigger/B_download_trigger_parameters_01.png",
+    "swagger/115_B_download_trigger/B_download_trigger_response.png"
+  ],
+  "body": {
+    "id": "1d5e9e78-048b-4320-853a-cd3a95836c7f",
+    "state": "in_progress",
+    "status_url": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/1d5e9e78-048b-4320-853a-cd3a95836c7f",
+    "can_acknowledge": false
+  },
+  "captured_at": "2026-10-31T02:36:16.302Z"
+}

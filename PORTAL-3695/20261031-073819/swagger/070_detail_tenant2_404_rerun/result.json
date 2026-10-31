@@ -1,0 +1,42 @@
+{
+  "seq": 70,
+  "phase": "A",
+  "name": "detail_tenant2_404_rerun",
+  "profile": "tenant2",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "e8abf303-120b-4362-991c-08e2a691b543"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 404,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": true,
+      "observed": 404
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/e8abf303-120b-4362-991c-08e2a691b543",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/070_detail_tenant2_404_rerun/detail_tenant2_404_rerun_parameters_01.png",
+    "swagger/070_detail_tenant2_404_rerun/detail_tenant2_404_rerun_response.png"
+  ],
+  "body": {
+    "message": "Encryption key not found",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:22:31.437Z"
+}

@@ -1,0 +1,42 @@
+{
+  "seq": 26,
+  "phase": "A",
+  "name": "volume_keys_tenant2_404",
+  "profile": "tenant2",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "path_params": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 500,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": false,
+      "observed": 500
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/026_volume_keys_tenant2_404/volume_keys_tenant2_404_parameters_01.png",
+    "swagger/026_volume_keys_tenant2_404/volume_keys_tenant2_404_response.png"
+  ],
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:18:00.864Z"
+}

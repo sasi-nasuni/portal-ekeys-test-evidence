@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-10-31T02:15:36.203534+00:00",
+  "query": "select count(distinct k.id) n from encryption_keys k join volume_encryption_key_associations a on a.key_id=k.id and a.account_id=k.account_id where k.account_id='f902fd2c-796c-403b-837b-89d5625319a9'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "n": 15
+    }
+  ]
+}

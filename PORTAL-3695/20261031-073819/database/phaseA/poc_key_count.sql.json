@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-10-31T02:15:35.839184+00:00",
+  "query": "select count(*) n from encryption_keys where account_id='f902fd2c-796c-403b-837b-89d5625319a9' and appliance_id='31d629af-30b3-413e-a583-d5d3da651eb9'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "n": 60
+    }
+  ]
+}

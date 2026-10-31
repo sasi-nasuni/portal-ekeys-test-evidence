@@ -1,0 +1,43 @@
+{
+  "seq": 119,
+  "phase": "B",
+  "name": "B_download_content_second_time_404",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads/{download_id}/content",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "download_id": "eb726b1c-daa3-42b2-b33b-8fdcde1ead0e"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 404,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": true,
+      "observed": 404
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/eb726b1c-daa3-42b2-b33b-8fdcde1ead0e/content",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/119_B_download_content_second_time_404/B_download_content_second_time_404_parameters_01.png",
+    "swagger/119_B_download_content_second_time_404/B_download_content_second_time_404_response.png"
+  ],
+  "body": {
+    "message": "Encryption-key download is unknown, expired, or already retrieved",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:36:58.543Z"
+}

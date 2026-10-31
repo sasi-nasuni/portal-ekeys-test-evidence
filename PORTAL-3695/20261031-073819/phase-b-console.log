@@ -1,0 +1,80 @@
+[FAIL] 086 B_public_key_poc: GET /edges/{appliance_id}/encryption-keys/public-key as owner -> None (expected 200) | [{'check': 'HTTP status == 200', 'ok': False, 'observed': None}]
+Traceback (most recent call last):
+  File "./harness/phase_b.py", line 82, in <module>
+    public_key = pk["body"]["public_key"]
+                 ~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[RETRY] 087 B_public_key_poc: driver error (Verify native response against network); retrying read-only GET once
+[FAIL] 088 B_public_key_poc_retry: GET /edges/{appliance_id}/encryption-keys/public-key as owner -> None (expected 200) | [{'check': 'HTTP status == 200', 'ok': False, 'observed': None}]
+Traceback (most recent call last):
+  File "./harness/phase_b.py", line 82, in <module>
+    public_key = pk["body"]["public_key"]
+                 ~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[PASS] 089 B_public_key_poc: GET /edges/{appliance_id}/encryption-keys/public-key as owner -> 200 (expected 200)
+[PASS] 090 B_upload_key1: POST /edges/{appliance_id}/encryption-keys/upload as owner -> 202 (expected 202)
+Traceback (most recent call last):
+  File "./harness/phase_b.py", line 87, in <module>
+    rec, t, fin = write(r, "B_upload_key1", method="POST", path=UP, path_params={"appliance_id": POC}, expect=202,
+                  ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        form={"key_file": {"file": k1["path"]}, "fingerprint": k1["fingerprint"], "passphrase": k1["passphrase"],
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              "escrow": "false", "backup_key": "false", "name": k1["name"]},
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        checks=lambda b: [("task accepted in_progress", b["state"] == "in_progress", b)])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./harness/phase_b.py", line 54, in write
+    final = h.wait_task(task_id, timeout=900, poll=10)
+  File "./harness/harness_lib.py", line 199, in wait_task
+    rows = sql(f"select id, state, action, resource, resource_id, updated_at from tasks where id = '{task_id}'")
+  File "./harness/harness_lib.py", line 79, in sql
+    raise RuntimeError(f"SQL failed: {result.stderr.strip()[:800]}")
+RuntimeError: SQL failed: ERROR:  column "updated_at" does not exist
+LINE 1: ...(select id, state, action, resource, resource_id, updated_at...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "tasks.created_at".
+[PASS] 091 B_public_key_poc: GET /edges/{appliance_id}/encryption-keys/public-key as owner -> 200 (expected 200)
+[RESUME] B_upload_key1: reusing accepted request seq 90 (no resend)
+      task=635c0788-2a6a-4bd3-9d6d-184550e1795e final=completed
+[PASS] 092 B_upload_key1_readback: GET /encryption-keys/{key_id} as owner -> 200 (expected 200)
+[PASS] 093 B_upload_duplicate_400: POST /edges/{appliance_id}/encryption-keys/upload as owner -> 400 (expected 400)
+[PASS] 094 B_upload_escrow_without_perm_403: POST /edges/{appliance_id}/encryption-keys/upload as manager_noescrow -> 403 (expected 403)
+[PASS] 095 B_escrow_key1: POST /encryption-keys/escrow as owner -> 202 (expected 202)
+      task=None final=None
+[FAIL] 096 B_escrow_key1_readback: GET /encryption-keys/{key_id} as owner -> 200 (expected 200) | [{'check': 'escrow task completed', 'ok': False, 'observed': None}]
+[PASS] 097 B_escrow_key1_again_already_escrowed: POST /encryption-keys/escrow as owner -> 202 (expected 202)
+[PASS] 098 B_passphrase_wrong_recipient_400: POST /edges/{appliance_id}/escrow-passphrase as owner -> 400 (expected 400)
+[PASS] 099 B_passphrase_set_filer_name: POST /edges/{appliance_id}/escrow-passphrase as owner -> 202 (expected 202)
+      task=f223a61f-2966-4819-9b40-bd5472913728 final=completed
+[PASS] 100 B_passphrase_readback: GET /edges/{appliance_id}/escrow-passphrase as owner -> 200 (expected 200)
+[PASS] 101 B_volume_add_key1: POST /volumes/{volume_id}/encryption-keys as owner -> 202 (expected 202)
+      task=122107bc-4baf-4cbd-b978-701f658154ab final=completed
+[PASS] 102 B_volume_add_readback: GET /volumes/{volume_id}/encryption-keys as owner -> 200 (expected 200)
+[PASS] 103 B_volume_add_key1_again_conflict: POST /volumes/{volume_id}/encryption-keys as owner -> 409 (expected 409)
+[PASS] 104 B_delete_key1_in_use_409: DELETE /encryption-keys/{key_id} as owner -> 409 (expected 409)
+[PASS] 105 B_disable_key1: POST /volumes/{volume_id}/encryption-keys/{key_id}/disable as owner -> 202 (expected 202)
+      task=9715fdae-040a-4c2b-8384-c3cc0a0505a9 final=completed
+[PASS] 106 B_disable_readback: GET /volumes/{volume_id}/encryption-keys as owner -> 200 (expected 200)
+[PASS] 107 B_disable_key1_again_409: POST /volumes/{volume_id}/encryption-keys/{key_id}/disable as owner -> 409 (expected 409)
+[PASS] 108 B_enable_key1: POST /volumes/{volume_id}/encryption-keys/{key_id}/enable as owner -> 202 (expected 202)
+      task=731e4482-e550-427b-84bb-404ac85e13b8 final=completed
+[PASS] 109 B_enable_readback: GET /volumes/{volume_id}/encryption-keys as owner -> 200 (expected 200)
+[PASS] 110 B_enable_key1_again_409: POST /volumes/{volume_id}/encryption-keys/{key_id}/enable as owner -> 409 (expected 409)
+[PASS] 111 B_upload_key2_with_escrow: POST /edges/{appliance_id}/encryption-keys/upload as owner -> 202 (expected 202)
+      task=dd07edeb-0e91-46bb-865b-ea2560e1765f final=completed
+[PASS] 112 B_upload_key2_readback: GET /encryption-keys/{key_id} as owner -> 200 (expected 200)
+[PASS] 113 B_delete_key2: DELETE /encryption-keys/{key_id} as owner -> 202 (expected 202)
+      task=6b801b5a-b657-40a0-ae15-90c900f3422d final=completed
+[PASS] 114 B_delete_key2_readback_404: GET /encryption-keys/{key_id} as owner -> 404 (expected 404)
+[PASS] 115 B_download_trigger: POST /edges/{appliance_id}/encryption-keys/downloads as owner -> 202 (expected 202)
+      task=1d5e9e78-048b-4320-853a-cd3a95836c7f final=None
+[FAIL] 116 B_download_trigger_in_progress_409: POST /edges/{appliance_id}/encryption-keys/downloads as owner -> 202 (expected 409) | [{'check': 'HTTP status == 409', 'ok': False, 'observed': 202}]
+[PASS] 117 B_download_status_completed: GET /edges/{appliance_id}/encryption-keys/downloads/{task_id} as owner -> 200 (expected 200)
+[PASS] 118 B_download_content_once: GET /edges/{appliance_id}/encryption-keys/downloads/{download_id}/content as owner -> 200 (expected 200)
+[PASS] 119 B_download_content_second_time_404: GET /edges/{appliance_id}/encryption-keys/downloads/{download_id}/content as owner -> 404 (expected 404)
+[PASS] 120 B_download_status_after_retrieval: GET /edges/{appliance_id}/encryption-keys/downloads/{task_id} as owner -> 200 (expected 200)
+[PASS] 121 B_ack_failed_upload_task: POST /tasks/{task_id}/acknowledge as owner -> 204 (expected 204)
+[PASS] 122 B_ack_stub_removed_404: GET /encryption-keys/{key_id} as owner -> 404 (expected 404)
+[FAIL] 123 B_ack_failed_upload_task_again: POST /tasks/{task_id}/acknowledge as owner -> 204 (expected 404) | [{'check': 'HTTP status == 404', 'ok': False, 'observed': 204}]
+[PASS] 124 B_final_summary_poc: GET /edges/{appliance_id}/encryption-keys/summary as owner -> 200 (expected 200)
+[PASS] 125 B_final_volume_keys: GET /volumes/{volume_id}/encryption-keys as owner -> 200 (expected 200)

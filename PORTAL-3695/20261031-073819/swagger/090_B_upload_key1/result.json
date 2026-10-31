@@ -1,0 +1,54 @@
+{
+  "seq": 90,
+  "phase": "B",
+  "name": "B_upload_key1",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/upload",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    },
+    {
+      "check": "task accepted in_progress",
+      "ok": true,
+      "observed": {
+        "id": "635c0788-2a6a-4bd3-9d6d-184550e1795e",
+        "state": "in_progress",
+        "status_url": "/tasks/635c0788-2a6a-4bd3-9d6d-184550e1795e",
+        "can_acknowledge": false
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/upload",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/090_B_upload_key1/B_upload_key1_parameters_01.png",
+    "swagger/090_B_upload_key1/B_upload_key1_response.png"
+  ],
+  "body": {
+    "id": "635c0788-2a6a-4bd3-9d6d-184550e1795e",
+    "state": "in_progress",
+    "status_url": "/tasks/635c0788-2a6a-4bd3-9d6d-184550e1795e",
+    "can_acknowledge": false
+  },
+  "captured_at": "2026-10-31T02:29:18.136Z"
+}

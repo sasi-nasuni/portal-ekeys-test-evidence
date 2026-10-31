@@ -1,0 +1,29 @@
+{
+  "captured_at": "2026-10-31T02:35:04.933048+00:00",
+  "query": "select name, state, reason, created_at, updated_at from task_steps where task_id='dd07edeb-0e91-46bb-865b-ea2560e1765f' order by created_at",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "name": "upload_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:34:42.470607+00:00",
+      "updated_at": "2026-10-31T02:34:50.302049+00:00"
+    },
+    {
+      "name": "escrow_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:34:42.470607+00:00",
+      "updated_at": "2026-10-31T02:34:57.05623+00:00"
+    },
+    {
+      "name": "set_backup_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:34:42.470607+00:00",
+      "updated_at": "2026-10-31T02:34:57.072332+00:00"
+    }
+  ]
+}

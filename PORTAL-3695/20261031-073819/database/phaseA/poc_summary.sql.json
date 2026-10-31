@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-31T02:15:36.068206+00:00",
+  "query": "select count(*) total, sum(case when origin='generated' then 1 else 0 end) generated,\n    sum(case when is_escrowed then 1 else 0 end) escrowed from encryption_keys where account_id='f902fd2c-796c-403b-837b-89d5625319a9' and appliance_id='31d629af-30b3-413e-a583-d5d3da651eb9' and not is_stub",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "total": 59,
+      "generated": 2,
+      "escrowed": 7
+    }
+  ]
+}

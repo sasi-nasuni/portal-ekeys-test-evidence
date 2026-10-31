@@ -1,0 +1,43 @@
+{
+  "seq": 54,
+  "phase": "A",
+  "name": "disable_unknown_association_404",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+  "path_params": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "key_id": "e8abf303-120b-4362-991c-08e2a691b543"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 404,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": true,
+      "observed": 404
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/e8abf303-120b-4362-991c-08e2a691b543/disable",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/054_disable_unknown_association_404/disable_unknown_association_404_parameters_01.png",
+    "swagger/054_disable_unknown_association_404/disable_unknown_association_404_response.png"
+  ],
+  "body": {
+    "message": "Encryption key e8abf303-120b-4362-991c-08e2a691b543 is not associated with volume 0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:20:13.827Z"
+}

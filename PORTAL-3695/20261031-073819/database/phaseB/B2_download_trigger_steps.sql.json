@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-10-31T02:40:48.023729+00:00",
+  "query": "select name, state, reason, created_at, updated_at from task_steps where task_id='4d26bc5e-5177-41c4-865a-9caac7cc3f02' order by created_at",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "name": "download_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:40:38.418074+00:00",
+      "updated_at": "2026-10-31T02:40:45.820445+00:00"
+    }
+  ]
+}

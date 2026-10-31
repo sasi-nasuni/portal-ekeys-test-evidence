@@ -1,0 +1,55 @@
+{
+  "seq": 83,
+  "phase": "A",
+  "name": "passphrase_set_wrong_recipient_400_rfc4880",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 400,
+  "status": 422,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 400",
+      "ok": false,
+      "observed": 422
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/083_passphrase_set_wrong_recipient_400_rfc4880/passphrase_set_wrong_recipient_400_rfc4880_parameters_01.png",
+    "swagger/083_passphrase_set_wrong_recipient_400_rfc4880/passphrase_set_wrong_recipient_400_rfc4880_response.png"
+  ],
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "passphrase"
+        ],
+        "msg": "Value error, passphrase must be an encrypted PGP message",
+        "input": "-----BEGIN PGP MESSAGE-----\n\nhQEMA43O4nvTCdIBAQgAkO7XB8OqVapUFIGji/nQihmoZLAOi0jHcqJM/ntoVu6I\nnHMDy1xQptnSm3bLY4Ioqa76U3ymRhpITGHCohhXFEt4+FRbm7G6SJ57hvQkQ1XT\n2zwhABjJ52LFko3y0UtR7t8p3OgBqcWPyGOJEDvXupoIilp7FM808LpVKDkIF6ki\n5g3wLy0StAer09e6EQNv0Y9I5y+zxv1WOQm4spoUnr4jmQuGU9qRwF7Auuae9AkU\ngzCZ4CaDiDiPn3ha8kXdUsENCjlos/QWJ1IiHElsbRprARVuLUwzn1i6t+SPHwIp\n3RQWDemCJLjPhTxdPVymZc9f47FuJyyi+TpodocwhtRTAQkCEED/CdheMcW/FCia\nerqj64PXv8T3so0ZKPNp6qs26bT5qHDqNYpU6ePUWNpwPNTAQ5ojVxbfiYG9s7I0\n8RqQkMkjfR3qsA7D2OA0TLyAlf4=\n=OpYb\n-----END PGP MESSAGE-----\n",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:24:07.196Z"
+}

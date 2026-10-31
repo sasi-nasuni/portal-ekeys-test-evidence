@@ -1,0 +1,102 @@
+{
+  "seq": 95,
+  "phase": "B",
+  "name": "B_escrow_key1",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "path_params": null,
+  "params": null,
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    },
+    {
+      "check": "ordered results",
+      "ok": true,
+      "observed": [
+        {
+          "task": {
+            "task_id": "95a15b73-f29e-4184-8635-881df254fba7",
+            "action": "escrow_encryption_key",
+            "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+            "state": "in_progress",
+            "error": null,
+            "can_acknowledge": false
+          },
+          "rejection": null,
+          "key_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "00000000-0000-4000-8000-000000003695"
+        }
+      ]
+    },
+    {
+      "check": "unknown key rejected not_found",
+      "ok": true,
+      "observed": {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "00000000-0000-4000-8000-000000003695"
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/escrow",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/095_B_escrow_key1/B_escrow_key1_parameters_01.png",
+    "swagger/095_B_escrow_key1/B_escrow_key1_response_01.png",
+    "swagger/095_B_escrow_key1/B_escrow_key1_response_02.png"
+  ],
+  "body": {
+    "items": [
+      {
+        "task": {
+          "task_id": "95a15b73-f29e-4184-8635-881df254fba7",
+          "action": "escrow_encryption_key",
+          "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "state": "in_progress",
+          "error": null,
+          "can_acknowledge": false
+        },
+        "rejection": null,
+        "key_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "00000000-0000-4000-8000-000000003695"
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:30:39.538Z"
+}

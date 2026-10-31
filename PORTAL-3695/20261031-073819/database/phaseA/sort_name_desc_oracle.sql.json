@@ -1,0 +1,108 @@
+{
+  "captured_at": "2026-10-31T02:23:47.933064+00:00",
+  "query": "select id, name, is_stub from encryption_keys where account_id='f902fd2c-796c-403b-837b-89d5625319a9' order by is_stub desc, name desc nulls last, id limit 20",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "id": "f91e9f1e-5fc0-4357-bdac-6e423301bc09",
+      "name": "Portal-Upload-Happy-8306D92B",
+      "is_stub": true
+    },
+    {
+      "id": "266b6912-2ee9-44ba-8d57-58c2de085399",
+      "name": "test-vol-tc-79",
+      "is_stub": false
+    },
+    {
+      "id": "0e036d25-9b91-4f16-819f-b5083363471a",
+      "name": "test-vol-demo-check",
+      "is_stub": false
+    },
+    {
+      "id": "5ea5748c-2f1d-479c-a9a5-fe318bb87844",
+      "name": "test-vol-1-aws",
+      "is_stub": false
+    },
+    {
+      "id": "13b345be-ed7d-46d2-b27d-3d556790cb79",
+      "name": "test-vol1",
+      "is_stub": false
+    },
+    {
+      "id": "a9f2057f-cb7c-4dc5-b820-6ad7681aae1e",
+      "name": "test-aws-06",
+      "is_stub": false
+    },
+    {
+      "id": "b1ff82c9-3748-4be4-9d88-a23597bffc45",
+      "name": "test-aws-05",
+      "is_stub": false
+    },
+    {
+      "id": "f327894e-459e-4a1d-a39d-918da29b710c",
+      "name": "test-aws-04",
+      "is_stub": false
+    },
+    {
+      "id": "e178b899-cdce-4042-9dd5-df7fb9592639",
+      "name": "test-aws-03",
+      "is_stub": false
+    },
+    {
+      "id": "8f854028-6c96-4ff9-928c-e5516ef52c91",
+      "name": "test-aws-02",
+      "is_stub": false
+    },
+    {
+      "id": "5822e98d-e552-4bed-88bd-26d3d4b04e9c",
+      "name": "Portal-Manual-Upload-D79C7E8B",
+      "is_stub": false
+    },
+    {
+      "id": "fd25955f-c95d-4034-ab70-381a69c01d01",
+      "name": "NEA Test Key (valid upload test key) <nea-test@example.com>",
+      "is_stub": false
+    },
+    {
+      "id": "dd162a3c-02d0-492e-aa46-d6a755c93517",
+      "name": "E-Keys-Upload-Test-2",
+      "is_stub": false
+    },
+    {
+      "id": "a520e45b-84d6-4b0e-b814-18c209e6d785",
+      "name": "EKEYS-Test-VOL",
+      "is_stub": false
+    },
+    {
+      "id": "21def027-f241-46a4-be67-b69b8e2c9889",
+      "name": "E-Keys-Test-01",
+      "is_stub": false
+    },
+    {
+      "id": "5ac4e010-4f50-47e4-baa6-c078937d38f1",
+      "name": "E-Keys-MsgViewer",
+      "is_stub": false
+    },
+    {
+      "id": "cc2ea9ad-56cb-4cd0-b0a9-94f2d9fb7e3d",
+      "name": "E-Keys-MsgViewer",
+      "is_stub": false
+    },
+    {
+      "id": "f2e1f1e3-c405-4554-b029-db45b944aede",
+      "name": "E-Keys-MsgViewer",
+      "is_stub": false
+    },
+    {
+      "id": "f34e0e70-d139-4472-8878-3bd8cd4b75c0",
+      "name": "E-Keys-MsgViewer",
+      "is_stub": false
+    },
+    {
+      "id": "9d77eb5e-cdd9-4c3d-afb5-af04d213b0b3",
+      "name": "E-Keys-EdgeConsole-EE786D0B",
+      "is_stub": false
+    }
+  ]
+}

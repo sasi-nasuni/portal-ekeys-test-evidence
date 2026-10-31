@@ -1,0 +1,55 @@
+{
+  "seq": 21,
+  "phase": "A",
+  "name": "detail_malformed_422",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "00000000-0000-4000-8000-000000003695"
+  },
+  "params": null,
+  "expected_status": 422,
+  "status": 422,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 422",
+      "ok": true,
+      "observed": 422
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/not-a-uuid",
+  "transport_note": "Swagger requestInterceptor: explicit malformed path (valid native UI placeholders; actual malformed URL verified); response unmodified",
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/021_detail_malformed_422/detail_malformed_422_parameters_01.png",
+    "swagger/021_detail_malformed_422/detail_malformed_422_response.png"
+  ],
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "path",
+          "key_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1",
+        "input": "not-a-uuid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `n` at 1"
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:17:39.108Z"
+}

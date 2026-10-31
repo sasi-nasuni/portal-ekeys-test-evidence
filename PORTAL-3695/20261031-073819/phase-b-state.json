@@ -1,0 +1,169 @@
+{
+  "key1": {
+    "name": "E-Keys-PORTAL3695-81FB50D9",
+    "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+    "id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc"
+  },
+  "B_upload_key1": {
+    "status": 202,
+    "passed": true,
+    "task_id": "635c0788-2a6a-4bd3-9d6d-184550e1795e",
+    "final_task": {
+      "id": "635c0788-2a6a-4bd3-9d6d-184550e1795e",
+      "state": "completed",
+      "action": "upload_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc",
+      "params": {
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+        "escrow": false,
+        "backup_key": false
+      },
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:29:26.189642+00:00"
+    }
+  },
+  "B_escrow_key1": {
+    "status": 202,
+    "passed": true,
+    "task_id": null,
+    "final_task": null
+  },
+  "B_passphrase_set_filer_name": {
+    "status": 202,
+    "passed": true,
+    "task_id": "f223a61f-2966-4819-9b40-bd5472913728",
+    "final_task": {
+      "id": "f223a61f-2966-4819-9b40-bd5472913728",
+      "state": "completed",
+      "action": "update_escrow_passphrase",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "params": null,
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:31:44.808129+00:00"
+    }
+  },
+  "B_volume_add_key1": {
+    "status": 202,
+    "passed": true,
+    "task_id": "122107bc-4baf-4cbd-b978-701f658154ab",
+    "final_task": {
+      "id": "122107bc-4baf-4cbd-b978-701f658154ab",
+      "state": "completed",
+      "action": "add_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "params": {
+        "keys_to_add": [
+          {
+            "key_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc",
+            "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634"
+          }
+        ],
+        "keys_to_disable": [],
+        "disable_existing": false,
+        "edge_serial": "31d629af-30b3-413e-a583-d5d3da651eb9"
+      },
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:32:26.523749+00:00"
+    }
+  },
+  "B_disable_key1": {
+    "status": 202,
+    "passed": true,
+    "task_id": "9715fdae-040a-4c2b-8384-c3cc0a0505a9",
+    "final_task": {
+      "id": "9715fdae-040a-4c2b-8384-c3cc0a0505a9",
+      "state": "completed",
+      "action": "disable_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "d2a3d18d-e3f4-45a2-ade2-f1454a7913c2",
+      "params": null,
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:33:13.555651+00:00"
+    }
+  },
+  "B_enable_key1": {
+    "status": 202,
+    "passed": true,
+    "task_id": "731e4482-e550-427b-84bb-404ac85e13b8",
+    "final_task": {
+      "id": "731e4482-e550-427b-84bb-404ac85e13b8",
+      "state": "completed",
+      "action": "enable_volume_encryption_keys",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "d2a3d18d-e3f4-45a2-ade2-f1454a7913c2",
+      "params": null,
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:33:59.816652+00:00"
+    }
+  },
+  "key2": {
+    "name": "E-Keys-PORTAL3695-487EDD6A",
+    "fingerprint": "FD26CCE8517BC4E6CCE4D621FF23A4A6D963FA79",
+    "id": "61a9aee1-e1db-40c5-84eb-c3dfa7772b46",
+    "db_after_delete": []
+  },
+  "B_upload_key2_with_escrow": {
+    "status": 202,
+    "passed": true,
+    "task_id": "dd07edeb-0e91-46bb-865b-ea2560e1765f",
+    "final_task": {
+      "id": "dd07edeb-0e91-46bb-865b-ea2560e1765f",
+      "state": "completed",
+      "action": "upload_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "61a9aee1-e1db-40c5-84eb-c3dfa7772b46",
+      "params": {
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "fingerprint": "FD26CCE8517BC4E6CCE4D621FF23A4A6D963FA79",
+        "escrow": true,
+        "backup_key": false
+      },
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:34:57.072332+00:00"
+    }
+  },
+  "B_delete_key2": {
+    "status": 202,
+    "passed": true,
+    "task_id": "6b801b5a-b657-40a0-ae15-90c900f3422d",
+    "final_task": {
+      "id": "6b801b5a-b657-40a0-ae15-90c900f3422d",
+      "state": "completed",
+      "action": "delete_encryption_key",
+      "resource": "encryption_key",
+      "resource_id": "61a9aee1-e1db-40c5-84eb-c3dfa7772b46",
+      "params": null,
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:35:37.542417+00:00"
+    }
+  },
+  "B_download_trigger": {
+    "status": 202,
+    "passed": true,
+    "task_id": "1d5e9e78-048b-4320-853a-cd3a95836c7f",
+    "final_task": {
+      "id": "1d5e9e78-048b-4320-853a-cd3a95836c7f",
+      "state": "completed",
+      "action": "download_encryption_keys",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "params": null,
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:36:18.975913+00:00"
+    }
+  },
+  "download_bundle": {
+    "decrypt_rc": 2,
+    "bundle_size": 0,
+    "fingerprints_in_bundle": [],
+    "db_generated_fingerprints": [
+      "29470C5AA8EB787948BD1CD60413FA75D609C500",
+      "315A2B36A084945B93772B84AC36F961A0356AFF"
+    ],
+    "included_count": 2
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "seq": 13,
+  "phase": "A",
+  "name": "list_invalid_limit_101",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": null,
+  "expected_status": 422,
+  "status": 422,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 422",
+      "ok": true,
+      "observed": 422
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=101",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/013_list_invalid_limit_101/list_invalid_limit_101_parameters_01.png",
+    "swagger/013_list_invalid_limit_101/list_invalid_limit_101_parameters_02.png",
+    "swagger/013_list_invalid_limit_101/list_invalid_limit_101_response.png"
+  ],
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "less_than_equal",
+        "loc": [
+          "query",
+          "limit"
+        ],
+        "msg": "Input should be less than or equal to 100",
+        "input": "101",
+        "ctx": {
+          "le": 100
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:16:55.828Z"
+}

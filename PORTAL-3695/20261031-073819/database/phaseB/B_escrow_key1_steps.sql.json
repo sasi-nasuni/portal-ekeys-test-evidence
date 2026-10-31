@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-10-31T02:40:14.077057+00:00",
+  "query": "select name, state, reason, created_at, updated_at from task_steps where task_id='95a15b73-f29e-4184-8635-881df254fba7' order by created_at",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "name": "escrow_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:30:37.959272+00:00",
+      "updated_at": "2026-10-31T02:30:42.769157+00:00"
+    }
+  ]
+}

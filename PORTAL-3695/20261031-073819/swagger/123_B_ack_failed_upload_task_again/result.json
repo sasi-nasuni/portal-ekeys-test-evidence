@@ -1,0 +1,39 @@
+{
+  "seq": 123,
+  "phase": "B",
+  "name": "B_ack_failed_upload_task_again",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/tasks/{task_id}/acknowledge",
+  "path_params": {
+    "task_id": "8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 204,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": false,
+      "observed": 204
+    }
+  ],
+  "note": "Expectation: already-acknowledged task is no longer acknowledgeable (404 or 409); see result if different.",
+  "request_url": "http://127.0.0.1:8000/tasks/8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f/acknowledge",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/123_B_ack_failed_upload_task_again/B_ack_failed_upload_task_again_parameters_01.png",
+    "swagger/123_B_ack_failed_upload_task_again/B_ack_failed_upload_task_again_response.png"
+  ],
+  "body": "",
+  "captured_at": "2026-10-31T02:37:15.462Z"
+}

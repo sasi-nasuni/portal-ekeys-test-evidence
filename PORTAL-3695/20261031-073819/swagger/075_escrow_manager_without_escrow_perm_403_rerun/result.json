@@ -1,0 +1,40 @@
+{
+  "seq": 75,
+  "phase": "A",
+  "name": "escrow_manager_without_escrow_perm_403_rerun",
+  "profile": "manager_noescrow",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "path_params": null,
+  "params": null,
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/escrow",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/075_escrow_manager_without_escrow_perm_403_rerun/escrow_manager_without_escrow_perm_403_rerun_parameters_01.png",
+    "swagger/075_escrow_manager_without_escrow_perm_403_rerun/escrow_manager_without_escrow_perm_403_rerun_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permissions: Escrow Keys",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:22:54.627Z"
+}

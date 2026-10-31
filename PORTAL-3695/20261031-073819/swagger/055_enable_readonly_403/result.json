@@ -1,0 +1,43 @@
+{
+  "seq": 55,
+  "phase": "A",
+  "name": "enable_readonly_403",
+  "profile": "readonly",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "path_params": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "key_id": "21def027-f241-46a4-be67-b69b8e2c9889"
+  },
+  "params": null,
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/21def027-f241-46a4-be67-b69b8e2c9889/enable",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/055_enable_readonly_403/enable_readonly_403_parameters_01.png",
+    "swagger/055_enable_readonly_403/enable_readonly_403_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permissions: Manage Volume Encryption Keys",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:20:18.027Z"
+}

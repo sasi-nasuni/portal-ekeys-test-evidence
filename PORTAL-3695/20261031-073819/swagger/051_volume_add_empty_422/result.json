@@ -1,0 +1,57 @@
+{
+  "seq": 51,
+  "phase": "A",
+  "name": "volume_add_empty_422",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "path_params": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+  },
+  "params": null,
+  "expected_status": 422,
+  "status": 422,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 422",
+      "ok": true,
+      "observed": 422
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/051_volume_add_empty_422/volume_add_empty_422_parameters_01.png",
+    "swagger/051_volume_add_empty_422/volume_add_empty_422_response.png"
+  ],
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "too_short",
+        "loc": [
+          "body",
+          "key_ids"
+        ],
+        "msg": "List should have at least 1 item after validation, not 0",
+        "input": [],
+        "ctx": {
+          "field_type": "List",
+          "min_length": 1,
+          "actual_length": 0
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:20:01.050Z"
+}

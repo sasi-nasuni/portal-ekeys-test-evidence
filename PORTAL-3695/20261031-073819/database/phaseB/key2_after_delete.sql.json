@@ -1,0 +1,7 @@
+{
+  "captured_at": "2026-10-31T02:36:03.267282+00:00",
+  "query": "select id from encryption_keys where account_id='f902fd2c-796c-403b-837b-89d5625319a9' and fingerprint='FD26CCE8517BC4E6CCE4D621FF23A4A6D963FA79'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": []
+}

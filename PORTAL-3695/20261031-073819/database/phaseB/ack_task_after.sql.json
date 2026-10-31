@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-31T02:37:07.204167+00:00",
+  "query": "select id, state, user_acknowledged_at from tasks where id='8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "id": "8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f",
+      "state": "failed",
+      "user_acknowledged_at": "2026-10-31T02:37:06.733447+00:00"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "seq": 93,
+  "phase": "B",
+  "name": "B_upload_duplicate_400",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/upload",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 400,
+  "status": 400,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 400",
+      "ok": true,
+      "observed": 400
+    },
+    {
+      "check": "already exists",
+      "ok": true,
+      "observed": {
+        "message": "This encryption key already exists on the appliance",
+        "detail": null
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/upload",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/093_B_upload_duplicate_400/B_upload_duplicate_400_parameters_01.png",
+    "swagger/093_B_upload_duplicate_400/B_upload_duplicate_400_response.png"
+  ],
+  "body": {
+    "message": "This encryption key already exists on the appliance",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:30:20.170Z"
+}

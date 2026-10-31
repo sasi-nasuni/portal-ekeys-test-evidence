@@ -1,0 +1,42 @@
+{
+  "seq": 50,
+  "phase": "A",
+  "name": "delete_readonly_403",
+  "profile": "readonly",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "e8abf303-120b-4362-991c-08e2a691b543"
+  },
+  "params": null,
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/e8abf303-120b-4362-991c-08e2a691b543",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/050_delete_readonly_403/delete_readonly_403_parameters_01.png",
+    "swagger/050_delete_readonly_403/delete_readonly_403_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permissions: Delete Unused Keys",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:19:56.889Z"
+}

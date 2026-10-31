@@ -1,0 +1,34 @@
+{
+  "seq": 87,
+  "phase": "B",
+  "name": "B_public_key_poc",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/public-key",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": null,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": false,
+      "observed": null
+    }
+  ],
+  "note": "",
+  "request_url": null,
+  "transport_note": null,
+  "error": "Swagger response verification mismatch: {\"expected_status\":200,\"expected_url\":\"http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/public-key\",\"observed\":{\"status\":\"200\",\"url\":\"http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/public-key\",\"body\":\"{\\n  \\\"public_key\\\": \\\"-----BEGIN PGP PUBLIC KEY BLOCK-----\\\\n\\\\nmQGNBGpUtN0BDADOX8qhCxsHyn4+tRLSCmWlrwn/KjyyljAI0l5k7tc0sKvho/eK\\\\nuAtrxE6K443coiTw1xfbl+BujXCpXK2l4q1aAK1bHxa2xZPy+UHWWGzqMHrXWMPG\\\\ncjKMCQG3zgoOL2yHw3wps7obWUJPFQjZzjiGgOGIyEbhhxwI/5mX7Bvz9PGYFRWG\\\\nTQ7HwTWzHtd/yaJzPwc9hWq7eA8BUpFPe6IkB0oXFSjM7yeO0FS1+gIWUogMYBIg\\\\nyYmCu0uDDSUKMSK/IImF8MlfZn4iL7ItxdPqhuQAFgDSo53DBrYz433jd4Xiwjnn\\\\nrTtVLibv4U53DwbOgwtUIVBRRDGj2bsgCNTBCg0MLxWkHlpl+WyHbpevvSXeyt/P\\\\n21CUhG0PF6Mpv/VaanJcbADsY/jwI18exFgavB2CNuLL34GwxNVVJwsfMis9kyhw\\\\ntNwo5GvD4Kjm7cLz5jYyssqAkiTYPLWrfnoy+8nYTh+g5Sb2PP7McDLxlSfNrLdQ\\\\nWGKWA+p4xa1CiwEAEQEAAbQsQWNjb3VudCBmOTAyZmQyYy03OTZjLTQwM2ItODM3\\\\nYi04OWQ1NjI1MzE5YTmJAbgEEwECACIFAmpUtN0CGwMGCwkIBwMCBhUIAgkKCwQW\\\\nAgMBAh4BAheAAAoJEDJDuRpWFJYfvIYL/AvJtQ2nDr3Q4ZE4QNZ05gP1EctMVSwh\\\\nhWJ2HYoYroe7SCVkvnMHSmClOIL7ZCCSWrCZmXt/GMiGIjIbkRUIl7j0um7yqlcI\\\\nsiNMsWEeS4FQBUsfvRfrIhc0",
+  "error_stage": "Verify native response against network",
+  "unsupported": null,
+  "verification": null,
+  "screenshots": [
+    "swagger/087_B_public_key_poc/B_public_key_poc_parameters_01.png"
+  ],
+  "body": null,
+  "captured_at": "2026-10-31T02:28:16.979990+00:00"
+}

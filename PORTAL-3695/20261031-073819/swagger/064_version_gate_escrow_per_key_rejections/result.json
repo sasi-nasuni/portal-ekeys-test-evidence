@@ -1,0 +1,108 @@
+{
+  "seq": 64,
+  "phase": "A",
+  "name": "version_gate_escrow_per_key_rejections",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "path_params": null,
+  "params": null,
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    },
+    {
+      "check": "ordered per-key results",
+      "ok": true,
+      "observed": [
+        "e8abf303-120b-4362-991c-08e2a691b543",
+        "00000000-0000-4000-8000-000000003695"
+      ]
+    },
+    {
+      "check": "no task returned for any key",
+      "ok": true,
+      "observed": [
+        {
+          "task": null,
+          "rejection": {
+            "reason": "below_min_version",
+            "message": "Appliance is below the minimum supported version",
+            "metadata": null
+          },
+          "key_id": "e8abf303-120b-4362-991c-08e2a691b543"
+        },
+        {
+          "task": null,
+          "rejection": {
+            "reason": "not_found",
+            "message": "Not found",
+            "metadata": null
+          },
+          "key_id": "00000000-0000-4000-8000-000000003695"
+        }
+      ]
+    },
+    {
+      "check": "unknown key rejected not_found",
+      "ok": true,
+      "observed": {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "00000000-0000-4000-8000-000000003695"
+      }
+    },
+    {
+      "check": "no encryption_key tasks created",
+      "ok": true,
+      "observed": null
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/escrow",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/064_version_gate_escrow_per_key_rejections/version_gate_escrow_per_key_rejections_parameters_01.png",
+    "swagger/064_version_gate_escrow_per_key_rejections/version_gate_escrow_per_key_rejections_response.png"
+  ],
+  "body": {
+    "items": [
+      {
+        "task": null,
+        "rejection": {
+          "reason": "below_min_version",
+          "message": "Appliance is below the minimum supported version",
+          "metadata": null
+        },
+        "key_id": "e8abf303-120b-4362-991c-08e2a691b543"
+      },
+      {
+        "task": null,
+        "rejection": {
+          "reason": "not_found",
+          "message": "Not found",
+          "metadata": null
+        },
+        "key_id": "00000000-0000-4000-8000-000000003695"
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:20:57.779Z"
+}

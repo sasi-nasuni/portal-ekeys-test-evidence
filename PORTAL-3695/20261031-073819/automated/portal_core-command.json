@@ -1,0 +1,1 @@
+{"suite":"portal_core","cwd":"<portal-repo>/backend/libs/portal-core","command":"uv run --no-sync pytest -q tests/unit/custom_types/test_version.py tests/unit/test_appliance_version.py","started_at_utc":"2026-10-31T02:12:54Z"}

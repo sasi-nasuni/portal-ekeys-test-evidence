@@ -1,0 +1,43 @@
+{
+  "seq": 17,
+  "phase": "A",
+  "name": "list_tenant2_isolated",
+  "profile": "tenant2",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "limit": 50
+  },
+  "expected_status": 200,
+  "status": 500,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": false,
+      "observed": 500
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=50",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/017_list_tenant2_isolated/list_tenant2_isolated_parameters_01.png",
+    "swagger/017_list_tenant2_isolated/list_tenant2_isolated_parameters_02.png",
+    "swagger/017_list_tenant2_isolated/list_tenant2_isolated_response.png"
+  ],
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:17:21.513Z"
+}

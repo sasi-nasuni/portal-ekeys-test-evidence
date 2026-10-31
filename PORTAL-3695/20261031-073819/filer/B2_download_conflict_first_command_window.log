@@ -1,0 +1,3 @@
+# filer 10.84.2.115 broadcast_network.log window 2026-10-30 22:41:07 .. 2026-10-30 22:41:20 (filer local, UTC-4) for task 75be7ed3-eb6d-4c18-be93-0e344f301b2f (download_encryption_keys -> completed); periodic List* routing omitted; sanitized
+2026-10-30 22:41:14.783 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=75be7ed3-eb6d-4c18-be93-0e344f301b2f status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:41:14.783 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing DownloadEncryptionKeysCommand -> configuration.encryption_keys.download

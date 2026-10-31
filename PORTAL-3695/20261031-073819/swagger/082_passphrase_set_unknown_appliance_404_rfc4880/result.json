@@ -1,0 +1,55 @@
+{
+  "seq": 82,
+  "phase": "A",
+  "name": "passphrase_set_unknown_appliance_404_rfc4880",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "00000000-0000-4000-8000-000000003695"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 422,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": false,
+      "observed": 422
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/00000000-0000-4000-8000-000000003695/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/082_passphrase_set_unknown_appliance_404_rfc4880/passphrase_set_unknown_appliance_404_rfc4880_parameters_01.png",
+    "swagger/082_passphrase_set_unknown_appliance_404_rfc4880/passphrase_set_unknown_appliance_404_rfc4880_response.png"
+  ],
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "passphrase"
+        ],
+        "msg": "Value error, passphrase must be an encrypted PGP message",
+        "input": "-----BEGIN PGP MESSAGE-----\n\nhQEMA43O4nvTCdIBAQgAkO7XB8OqVapUFIGji/nQihmoZLAOi0jHcqJM/ntoVu6I\nnHMDy1xQptnSm3bLY4Ioqa76U3ymRhpITGHCohhXFEt4+FRbm7G6SJ57hvQkQ1XT\n2zwhABjJ52LFko3y0UtR7t8p3OgBqcWPyGOJEDvXupoIilp7FM808LpVKDkIF6ki\n5g3wLy0StAer09e6EQNv0Y9I5y+zxv1WOQm4spoUnr4jmQuGU9qRwF7Auuae9AkU\ngzCZ4CaDiDiPn3ha8kXdUsENCjlos/QWJ1IiHElsbRprARVuLUwzn1i6t+SPHwIp\n3RQWDemCJLjPhTxdPVymZc9f47FuJyyi+TpodocwhtRTAQkCEED/CdheMcW/FCia\nerqj64PXv8T3so0ZKPNp6qs26bT5qHDqNYpU6ePUWNpwPNTAQ5ojVxbfiYG9s7I0\n8RqQkMkjfR3qsA7D2OA0TLyAlf4=\n=OpYb\n-----END PGP MESSAGE-----\n",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:24:03.175Z"
+}

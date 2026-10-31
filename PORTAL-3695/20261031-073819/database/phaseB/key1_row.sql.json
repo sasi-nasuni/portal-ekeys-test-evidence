@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-31T02:30:11.531979+00:00",
+  "query": "select id, name, fingerprint, is_stub, is_escrowed, origin, algorithm, length from encryption_keys where account_id='f902fd2c-796c-403b-837b-89d5625319a9' and fingerprint='A867796F8008315E8FC3592A15B8DD547B10A634'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc",
+      "name": "E-Keys-PORTAL3695-81FB50D9",
+      "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+      "is_stub": false,
+      "is_escrowed": false,
+      "origin": "uploaded",
+      "algorithm": "rsa",
+      "length": 3072
+    }
+  ]
+}

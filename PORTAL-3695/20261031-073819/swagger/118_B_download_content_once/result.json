@@ -1,0 +1,59 @@
+{
+  "seq": 118,
+  "phase": "B",
+  "name": "B_download_content_once",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads/{download_id}/content",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "download_id": "eb726b1c-daa3-42b2-b33b-8fdcde1ead0e"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "binary attachment, no-store",
+      "ok": true,
+      "observed": {
+        "binary": true,
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "content_type": "application/octet-stream",
+        "content_disposition": "attachment; filename=\"encryption-keys-eb726b1c-daa3-42b2-b33b-8fdcde1ead0e.gpg\"",
+        "cache_control": "no-store"
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/eb726b1c-daa3-42b2-b33b-8fdcde1ead0e/content",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": "binary attachment (bytes saved from network response)"
+  },
+  "screenshots": [
+    "swagger/118_B_download_content_once/B_download_content_once_parameters_01.png",
+    "swagger/118_B_download_content_once/B_download_content_once_response.png"
+  ],
+  "body": {
+    "binary": true,
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "content_type": "application/octet-stream",
+    "content_disposition": "attachment; filename=\"encryption-keys-eb726b1c-daa3-42b2-b33b-8fdcde1ead0e.gpg\"",
+    "cache_control": "no-store"
+  },
+  "captured_at": "2026-10-31T02:36:54.174Z"
+}

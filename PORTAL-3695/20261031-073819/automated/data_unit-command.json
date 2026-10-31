@@ -1,0 +1,1 @@
+{"suite":"data_unit","cwd":"<portal-repo>/backend/libs/portal-data","command":"uv run --no-sync pytest -q tests/unit/encryption_keys tests/unit/tasks tests/unit/messages tests/unit/test_volume_create_service.py","started_at_utc":"2026-10-31T02:12:54Z"}

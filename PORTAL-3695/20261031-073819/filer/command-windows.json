@@ -1,0 +1,135 @@
+{
+  "B_upload_key1": {
+    "task_id": "635c0788-2a6a-4bd3-9d6d-184550e1795e",
+    "action": "upload_encryption_key",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:29:02",
+      "2026-10-30 22:29:31"
+    ],
+    "routing_lines": [
+      "Routing UploadEncryptionKeyCommand -> configuration.encryption_keys.upload"
+    ]
+  },
+  "B_passphrase_set_filer_name": {
+    "task_id": "f223a61f-2966-4819-9b40-bd5472913728",
+    "action": "update_escrow_passphrase",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:31:06",
+      "2026-10-30 22:31:49"
+    ],
+    "routing_lines": [
+      "Routing UpdateEscrowPassphraseCommand -> configuration.encryption_keys.escrow_passphrase.update"
+    ]
+  },
+  "B_volume_add_key1": {
+    "task_id": "122107bc-4baf-4cbd-b978-701f658154ab",
+    "action": "add_volume_encryption_keys",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:32:16",
+      "2026-10-30 22:32:31"
+    ],
+    "routing_lines": [
+      "Routing AddVolumeEncryptionKeysCommand -> volumes.encryption_keys.add"
+    ]
+  },
+  "B_disable_key1": {
+    "task_id": "9715fdae-040a-4c2b-8384-c3cc0a0505a9",
+    "action": "disable_volume_encryption_keys",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:33:04",
+      "2026-10-30 22:33:18"
+    ],
+    "routing_lines": [
+      "Routing DisableVolumeEncryptionKeysCommand -> volumes.encryption_keys.disable"
+    ]
+  },
+  "B_enable_key1": {
+    "task_id": "731e4482-e550-427b-84bb-404ac85e13b8",
+    "action": "enable_volume_encryption_keys",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:33:49",
+      "2026-10-30 22:34:04"
+    ],
+    "routing_lines": [
+      "Routing EnableVolumeEncryptionKeysCommand -> volumes.encryption_keys.enable"
+    ]
+  },
+  "B_upload_key2_with_escrow": {
+    "task_id": "dd07edeb-0e91-46bb-865b-ea2560e1765f",
+    "action": "upload_encryption_key",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:34:37",
+      "2026-10-30 22:35:02"
+    ],
+    "routing_lines": [
+      "Routing UploadEncryptionKeyCommand -> configuration.encryption_keys.upload",
+      "Routing EscrowEncryptionKeyCommand -> configuration.encryption_keys.escrow"
+    ]
+  },
+  "B_delete_key2": {
+    "task_id": "6b801b5a-b657-40a0-ae15-90c900f3422d",
+    "action": "delete_encryption_key",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:35:28",
+      "2026-10-30 22:35:42"
+    ],
+    "routing_lines": [
+      "Routing DeleteEncryptionKeyCommand -> configuration.encryption_keys.delete"
+    ]
+  },
+  "B_download_trigger": {
+    "task_id": "1d5e9e78-048b-4320-853a-cd3a95836c7f",
+    "action": "download_encryption_keys",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:36:09",
+      "2026-10-30 22:36:23"
+    ],
+    "routing_lines": [
+      "Routing DownloadEncryptionKeysCommand -> configuration.encryption_keys.download"
+    ]
+  },
+  "B_escrow_key1": {
+    "task_id": "95a15b73-f29e-4184-8635-881df254fba7",
+    "action": "escrow_encryption_key",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:30:32",
+      "2026-10-30 22:30:47"
+    ],
+    "routing_lines": [
+      "Routing EscrowEncryptionKeyCommand -> configuration.encryption_keys.escrow"
+    ]
+  },
+  "B2_download_trigger": {
+    "task_id": "4d26bc5e-5177-41c4-865a-9caac7cc3f02",
+    "action": "download_encryption_keys",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:40:33",
+      "2026-10-30 22:40:50"
+    ],
+    "routing_lines": [
+      "Routing DownloadEncryptionKeysCommand -> configuration.encryption_keys.download"
+    ]
+  },
+  "B2_download_conflict_first": {
+    "task_id": "75be7ed3-eb6d-4c18-be93-0e344f301b2f",
+    "action": "download_encryption_keys",
+    "state": "completed",
+    "window_local": [
+      "2026-10-30 22:41:07",
+      "2026-10-30 22:41:20"
+    ],
+    "routing_lines": [
+      "Routing DownloadEncryptionKeysCommand -> configuration.encryption_keys.download"
+    ]
+  }
+}

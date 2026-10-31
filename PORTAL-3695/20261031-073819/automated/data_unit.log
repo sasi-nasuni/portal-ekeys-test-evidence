@@ -1,0 +1,2291 @@
+
+tests/unit/encryption_keys/test_converters.py::test_maps_identity_and_state_fields PASSED [  0%]
+tests/unit/encryption_keys/test_converters.py::test_status_synced_when_no_active_tasks PASSED [  0%]
+tests/unit/encryption_keys/test_converters.py::test_status_pending_when_task_in_progress PASSED [  0%]
+tests/unit/encryption_keys/test_converters.py::test_status_failed_when_task_unacknowledged_failed PASSED [  0%]
+tests/unit/encryption_keys/test_converters.py::test_status_creating_for_stub_with_no_failure PASSED [  0%]
+tests/unit/encryption_keys/test_converters.py::test_empty_rows_yield_empty_list PASSED [  1%]
+tests/unit/encryption_keys/test_converters.py::test_tasks_are_scoped_by_association_id_not_key_id PASSED [  1%]
+tests/unit/encryption_keys/test_converters.py::test_response_separates_collection_tasks_from_association_tasks PASSED [  1%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_round_trip_preserves_flags[False-False] PASSED [  1%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_round_trip_preserves_flags[True-False] PASSED [  1%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_round_trip_preserves_flags[False-True] PASSED [  1%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_round_trip_preserves_flags[True-True] PASSED [  2%]
+tests/unit/encryption_keys/test_dtos.py::test_required_upload_acknowledgement_permissions_follow_requested_steps[False-False] PASSED [  2%]
+tests/unit/encryption_keys/test_dtos.py::test_required_upload_acknowledgement_permissions_follow_requested_steps[True-False] PASSED [  2%]
+tests/unit/encryption_keys/test_dtos.py::test_required_upload_acknowledgement_permissions_follow_requested_steps[False-True] PASSED [  2%]
+tests/unit/encryption_keys/test_dtos.py::test_required_upload_acknowledgement_permissions_follow_requested_steps[True-True] PASSED [  2%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_reject_secret_fields[filedata] PASSED [  3%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_reject_secret_fields[password] PASSED [  3%]
+tests/unit/encryption_keys/test_dtos.py::test_upload_task_params_reject_secret_fields[passphrase] PASSED [  3%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_round_trips_through_dump_and_validate PASSED [  3%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_rejects_unknown_algorithm_and_origin PASSED [  3%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_wraps_non_string_fingerprint_validation_error PASSED [  3%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_rejects_invalid_fingerprint_strings PASSED [  4%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_accepts_supported_fingerprint_lengths PASSED [  4%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_normalizes_fingerprint_separators PASSED [  4%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_delete_result_allows_no_removed_key_name PASSED [  4%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_delete_candidate_round_trips_candidate_fields PASSED [  4%]
+tests/unit/encryption_keys/test_dtos.py::test_volume_key_state_entry_is_immutable PASSED [  5%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_data_round_trips_missing_algorithm_and_length PASSED [  5%]
+tests/unit/encryption_keys/test_dtos.py::test_encryption_key_task_resource_id_round_trips_as_uuid PASSED [  5%]
+tests/unit/encryption_keys/test_dtos.py::test_volume_encryption_key_association_id_round_trips_as_uuid PASSED [  5%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_preserves_query_and_pagination_without_mutating_the_request PASSED [  5%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[True-volume] PASSED [  5%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[True-backup] PASSED [  6%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[True-None] PASSED [  6%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[False-volume] PASSED [  6%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[False-backup] PASSED [  6%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[False-None] PASSED [  6%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[None-volume] PASSED [  6%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[None-backup] PASSED [  7%]
+tests/unit/encryption_keys/test_filter_converter.py::test_filter_normalization_applies_explicit_type_and_escrow_values[None-None] PASSED [  7%]
+tests/unit/encryption_keys/test_filter_converter.py::test_cursor_normalization_preserves_new_filters_for_comparison_without_mutating_the_request PASSED [  7%]
+tests/unit/encryption_keys/test_repo.py::test_key_cleanup_uses_conditional_delete PASSED [  7%]
+tests/unit/encryption_keys/test_repo.py::test_association_cleanup_only_deletes_unprotected_stubs PASSED [  7%]
+tests/unit/encryption_keys/test_repo.py::test_empty_cleanup_skips_database PASSED [  8%]
+tests/unit/encryption_keys/test_repo.py::test_upload_stub_is_a_single_insert_without_validation PASSED [  8%]
+tests/unit/encryption_keys/test_repo.py::test_list_count_query_preserves_id_only_projection PASSED [  8%]
+tests/unit/encryption_keys/test_repo.py::test_empty_entries_skip_database_access PASSED [  8%]
+tests/unit/encryption_keys/test_repo.py::test_uningested_appliance_returns_none PASSED [  8%]
+tests/unit/encryption_keys/test_repo.py::test_unmounted_volume_returns_edge_context PASSED [  8%]
+tests/unit/encryption_keys/test_repo.py::test_known_changes_are_mapped_to_typed_results PASSED [  9%]
+tests/unit/encryption_keys/test_repo.py::test_unowned_key_returns_resolved_context_with_no_keys PASSED [  9%]
+tests/unit/encryption_keys/test_repo.py::test_get_delete_candidate_returns_none_for_missing_key PASSED [  9%]
+tests/unit/encryption_keys/test_repo.py::test_get_delete_candidate_maps_joined_key_and_edge_projection PASSED [  9%]
+tests/unit/encryption_keys/test_repo.py::test_volume_exists_true_when_row_found PASSED [  9%]
+tests/unit/encryption_keys/test_repo.py::test_volume_exists_false_when_no_row PASSED [ 10%]
+tests/unit/encryption_keys/test_repo.py::test_get_volume_association_returns_none_when_unresolved PASSED [ 10%]
+tests/unit/encryption_keys/test_repo.py::test_get_volume_association_maps_row_to_lookup PASSED [ 10%]
+tests/unit/encryption_keys/test_repo.py::test_count_enabled_associations_returns_zero_when_none PASSED [ 10%]
+tests/unit/encryption_keys/test_repo.py::test_get_volume_master_edge_returns_none_when_unresolved PASSED [ 10%]
+tests/unit/encryption_keys/test_repo.py::test_get_volume_master_edge_maps_row PASSED [ 10%]
+tests/unit/encryption_keys/test_repo.py::test_volume_keys_returns_empty_list_when_no_associations PASSED [ 11%]
+tests/unit/encryption_keys/test_repo.py::test_volume_keys_loads_association_and_key_facts_in_one_query PASSED [ 11%]
+tests/unit/encryption_keys/test_repo.py::test_volume_keys_preserves_stub_and_missing_key_metadata PASSED [ 11%]
+tests/unit/encryption_keys/test_response_converter.py::test_read_converter_snapshots_loaded_models_without_tasks_or_response_projection[this_key] PASSED [ 11%]
+tests/unit/encryption_keys/test_response_converter.py::test_read_converter_snapshots_loaded_models_without_tasks_or_response_projection[another_key] PASSED [ 11%]
+tests/unit/encryption_keys/test_response_converter.py::test_read_converter_snapshots_loaded_models_without_tasks_or_response_projection[no_key] PASSED [ 12%]
+tests/unit/encryption_keys/test_response_converter.py::test_tasks_follow_association_ids_after_sorting PASSED [ 12%]
+tests/unit/encryption_keys/test_response_converter.py::test_sensitive_fields_are_omitted_independently_without_dropping_legitimate_nulls[False-False] PASSED [ 12%]
+tests/unit/encryption_keys/test_response_converter.py::test_sensitive_fields_are_omitted_independently_without_dropping_legitimate_nulls[False-True] PASSED [ 12%]
+tests/unit/encryption_keys/test_response_converter.py::test_sensitive_fields_are_omitted_independently_without_dropping_legitimate_nulls[True-False] PASSED [ 12%]
+tests/unit/encryption_keys/test_response_converter.py::test_sensitive_fields_are_omitted_independently_without_dropping_legitimate_nulls[True-True] PASSED [ 12%]
+tests/unit/encryption_keys/test_response_converter.py::test_backup_used_depends_on_volume_associations[None] PASSED [ 13%]
+tests/unit/encryption_keys/test_response_converter.py::test_backup_used_depends_on_volume_associations[enabled] PASSED [ 13%]
+tests/unit/encryption_keys/test_response_converter.py::test_backup_used_depends_on_volume_associations[disabled] PASSED [ 13%]
+tests/unit/encryption_keys/test_response_converter.py::test_visibility_projection_preserves_the_reusable_internal_snapshot PASSED [ 13%]
+tests/unit/encryption_keys/test_response_converter.py::test_volume_key_without_associations_is_unused PASSED [ 13%]
+tests/unit/encryption_keys/test_response_converter.py::test_disabled_association_is_still_used_and_associations_are_sorted PASSED [ 13%]
+tests/unit/encryption_keys/test_response_converter.py::test_key_and_association_statuses_and_failures_are_independent PASSED [ 14%]
+tests/unit/encryption_keys/test_response_converter.py::test_key_and_association_rollups_respect_their_own_stub_state[False-task_states0-failed] PASSED [ 14%]
+tests/unit/encryption_keys/test_response_converter.py::test_key_and_association_rollups_respect_their_own_stub_state[False-task_states1-pending] PASSED [ 14%]
+tests/unit/encryption_keys/test_response_converter.py::test_key_and_association_rollups_respect_their_own_stub_state[True-task_states2-creating] PASSED [ 14%]
+tests/unit/encryption_keys/test_response_converter.py::test_key_and_association_rollups_respect_their_own_stub_state[True-task_states3-failed] PASSED [ 14%]
+tests/unit/encryption_keys/test_response_converter.py::test_key_and_association_rollups_respect_their_own_stub_state[True-task_states4-creating] PASSED [ 15%]
+tests/unit/encryption_keys/test_response_converter.py::test_association_without_tasks_is_synced_despite_key_failure PASSED [ 15%]
+tests/unit/encryption_keys/test_scaffolding.py::test_encryption_key_scaffolding_imports PASSED [ 15%]
+tests/unit/encryption_keys/test_service.py::test_authorized_bulk_failure_acknowledgement_matches_polling[False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 12ba4322-210b-41cb-b5f8-f2f56c107692
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: Message storage failed
+PASSED                                                                   [ 15%]
+tests/unit/encryption_keys/test_service.py::test_authorized_bulk_failure_acknowledgement_matches_polling[True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 5f34e6d6-231d-42e8-8d87-62f4916e9b4b
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: Message storage failed
+PASSED                                                                   [ 15%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_returns_one_ordered_result_per_key PASSED [ 15%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_maps_atomic_in_progress_conflict_to_rejection PASSED [ 16%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_continues_with_last_known_task_when_failure_persistence_fails[error0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 1d07ecd0-9440-483d-8885-5f1c2e2fece0
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2335, in _execute_mock_call
+    raise result
+portal.core.exceptions.InternalConnectionFailure: dispatch failed
+2026-10-31 07:42:56 [   ERROR] (service.py:426) Could not persist dispatch failure for task 1d07ecd0-9440-483d-8885-5f1c2e2fece0; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.db.tenant_session.DBUnavailableError: database unavailable
+PASSED                                                                   [ 16%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_continues_with_last_known_task_when_failure_persistence_fails[error1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 07a5adad-2fb9-49ae-9a44-dcb62309b3a5
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2335, in _execute_mock_call
+    raise result
+portal.core.exceptions.InternalConnectionFailure: dispatch failed
+2026-10-31 07:42:56 [   ERROR] (service.py:426) Could not persist dispatch failure for task 07a5adad-2fb9-49ae-9a44-dcb62309b3a5; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+sqlalchemy.exc.OperationalError: (builtins.RuntimeError) database unavailable
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+PASSED                                                                   [ 16%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_continues_with_last_known_task_when_failure_persistence_fails[error2] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 7f004413-8645-48d1-a574-19e7a9249f60
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2335, in _execute_mock_call
+    raise result
+portal.core.exceptions.InternalConnectionFailure: dispatch failed
+2026-10-31 07:42:56 [   ERROR] (service.py:426) Could not persist dispatch failure for task 7f004413-8645-48d1-a574-19e7a9249f60; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ResourceNotFound: Task not found
+PASSED                                                                   [ 16%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_continues_with_last_known_task_when_failure_persistence_fails[error3] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 36b6bb76-3183-42ac-aa15-17f8e9a24ba7
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2335, in _execute_mock_call
+    raise result
+portal.core.exceptions.InternalConnectionFailure: dispatch failed
+2026-10-31 07:42:56 [   ERROR] (service.py:426) Could not persist dispatch failure for task 36b6bb76-3183-42ac-aa15-17f8e9a24ba7; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ResourceConflict: failure persistence conflict
+PASSED                                                                   [ 16%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_continues_with_last_known_task_when_failure_persistence_fails[error4] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (service.py:396) Failed to send or store message for task 07e89d87-e2b5-440c-82da-95d6458c0a2c
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2335, in _execute_mock_call
+    raise result
+portal.core.exceptions.InternalConnectionFailure: dispatch failed
+2026-10-31 07:42:56 [   ERROR] (service.py:426) Could not persist dispatch failure for task 07e89d87-e2b5-440c-82da-95d6458c0a2c; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: failure persistence error
+PASSED                                                                   [ 17%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_propagates_task_creation_database_errors PASSED [ 17%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_records_requesting_user_as_initiator PASSED [ 17%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_returns_failed_task_and_continues_after_dispatch_failure[The operation could not be completed. Please try again.] PASSED [ 17%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_returns_failed_task_and_continues_after_dispatch_failure[None] PASSED [ 17%]
+tests/unit/encryption_keys/test_service.py::test_escrow_keys_bulk_propagates_task_step_failures PASSED [ 17%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_uses_common_write_version_policy[None] PASSED [ 18%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_uses_common_write_version_policy[master] PASSED [ 18%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_uses_common_write_version_policy[N/A] PASSED [ 18%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_rejects_wrong_family_before_creating_task_and_continues PASSED [ 18%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_rejects_old_or_malformed_version_without_creating_task[10.5] PASSED [ 18%]
+tests/unit/encryption_keys/test_service.py::test_bulk_escrow_rejects_old_or_malformed_version_without_creating_task[not-a-version] PASSED [ 18%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[None-10.6] PASSED [ 19%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[None-None] PASSED [ 19%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[None-master] PASSED [ 19%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[None-N/A] PASSED [ 19%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[Edge-10.6] PASSED [ 19%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[Edge-None] PASSED [ 20%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[Edge-master] PASSED [ 20%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_creates_task_and_dispatches_fingerprint_command[Edge-N/A] PASSED [ 20%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[missing-ResourceNotFound] PASSED [ 20%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[stub-key-ResourceConflict] PASSED [ 20%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[associated-ResourceConflict] PASSED [ 20%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[backup-ResourceConflict] PASSED [ 21%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[old-build-ActionNotSupported] PASSED [ 21%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[malformed-build-ActionNotSupported] PASSED [ 21%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[strider-ActionNotSupported] PASSED [ 21%]
+tests/unit/encryption_keys/test_service.py::test_delete_key_rejects_ineligible_keys[unreachable-ApplianceUnreachable] PASSED [ 21%]
+tests/unit/encryption_keys/test_service.py::test_upload_dispatches_only_upload_and_persists_non_secret_options[False-False] PASSED [ 22%]
+tests/unit/encryption_keys/test_service.py::test_upload_dispatches_only_upload_and_persists_non_secret_options[True-False] PASSED [ 22%]
+tests/unit/encryption_keys/test_service.py::test_upload_dispatches_only_upload_and_persists_non_secret_options[False-True] PASSED [ 22%]
+tests/unit/encryption_keys/test_service.py::test_upload_dispatches_only_upload_and_persists_non_secret_options[True-True] PASSED [ 22%]
+tests/unit/encryption_keys/test_service.py::test_upload_creates_task_through_real_task_service[False-False] PASSED [ 22%]
+tests/unit/encryption_keys/test_service.py::test_upload_creates_task_through_real_task_service[True-False] PASSED [ 22%]
+tests/unit/encryption_keys/test_service.py::test_upload_creates_task_through_real_task_service[False-True] PASSED [ 23%]
+tests/unit/encryption_keys/test_service.py::test_upload_creates_task_through_real_task_service[True-True] PASSED [ 23%]
+tests/unit/encryption_keys/test_service.py::test_plain_upload_is_not_license_gated PASSED [ 23%]
+tests/unit/encryption_keys/test_service.py::test_upload_runs_readiness_gate_before_stub_creation PASSED [ 23%]
+tests/unit/encryption_keys/test_service.py::test_upload_translates_only_fingerprint_uniqueness_errors[23505-uq_enc_keys_account_appliance_fp-BadRequest] PASSED [ 23%]
+tests/unit/encryption_keys/test_service.py::test_upload_translates_only_fingerprint_uniqueness_errors[23505-uq_enc_keys_account_appliance_id-IntegrityError] PASSED [ 24%]
+tests/unit/encryption_keys/test_service.py::test_upload_translates_only_fingerprint_uniqueness_errors[23503-uq_enc_keys_account_appliance_fp-IntegrityError] PASSED [ 24%]
+tests/unit/encryption_keys/test_service.py::test_upload_translates_only_fingerprint_uniqueness_errors[None-None-IntegrityError] PASSED [ 24%]
+tests/unit/encryption_keys/test_service.py::test_upload_task_creation_failure_requests_stub_cleanup PASSED [ 24%]
+tests/unit/encryption_keys/test_service.py::test_upload_preparation_error_is_not_hidden_by_cleanup_failure[gate] PASSED [ 24%]
+tests/unit/encryption_keys/test_service.py::test_upload_preparation_error_is_not_hidden_by_cleanup_failure[task_creation] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (upload.py:164) Could not clean up an untracked upload stub
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/upload.py", line 150, in upload_key
+    task = await self.task_service.create_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: upload preparation failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/upload.py", line 162, in upload_key
+    await self.encryption_key_repo.discard_untracked_upload_stub(key_id)
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: cleanup failed
+PASSED                                                                   [ 24%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[backup_permission-ActionNotAllowed] PASSED [ 25%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[escrow_permission-ActionNotAllowed] PASSED [ 25%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[license-ActionNotAllowed] PASSED [ 25%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[plaintext-BadRequest] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [ WARNING] (pgp.py:71) PGPy parsing failed: operation=ascii_unarmor exception_type=ValueError frames=['<portal-repo>/backend/libs/portal-core/portal/core/pgp.py:112 in _packet_bytes', '<portal-repo>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/types.py:124 in ascii_unarmor'] cause_type=None cause_frames=[]
+PASSED                                                                   [ 25%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[public_key-BadRequest] PASSED [ 25%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[binary_ciphertext-BadRequest] PASSED [ 25%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[wrong_recipient-MalformedData] PASSED [ 26%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[too_large-PayloadTooLarge] PASSED [ 26%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[existing_key-BadRequest] PASSED [ 26%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[existing_backup-BadRequest] PASSED [ 26%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[backup_in_progress-ResourceConflict] PASSED [ 26%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[no_passphrase-ResourceConflict] PASSED [ 27%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[unknown-ResourceNotFound] PASSED [ 27%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[offline-ApplianceUnreachable] PASSED [ 27%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[old_version-ActionNotSupported] PASSED [ 27%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_before_task_creation[wrong_family-ActionNotSupported] PASSED [ 27%]
+tests/unit/encryption_keys/test_service.py::test_upload_rejects_hidden_recipients PASSED [ 27%]
+tests/unit/encryption_keys/test_service.py::test_upload_dispatch_error_is_not_returned_as_accepted PASSED [ 28%]
+tests/unit/encryption_keys/test_service.py::test_upload_uncertain_delivery_remains_in_progress[error0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [ WARNING] (upload.py:183) Upload dispatch is unconfirmed for task 1a0d2efe-6af9-4650-8263-9dc7e1bf257d; awaiting appliance confirmation
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/upload.py", line 174, in upload_key
+    await self.task_service.send_command(
+    ...<5 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessageDispatchError: Message dispatch failed.
+PASSED                                                                   [ 28%]
+tests/unit/encryption_keys/test_service.py::test_upload_uncertain_delivery_remains_in_progress[error1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [ WARNING] (upload.py:183) Upload dispatch is unconfirmed for task 03791f3e-e03f-479f-93bd-2bc1cbbfe7fd; awaiting appliance confirmation
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/upload.py", line 174, in upload_key
+    await self.task_service.send_command(
+    ...<5 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 28%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_returns_key_and_fingerprint_for_resolved_appliance PASSED [ 28%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_rejects_valid_signing_only_key_as_bad_gateway PASSED [ 28%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_unexpected_validator_value_error_is_not_mapped PASSED [ 29%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_missing_appliance_is_not_found_without_fetching_key PASSED [ 29%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_missing_registered_key_is_not_found PASSED [ 29%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_key_server_failures_to_http_domain_errors[failure0-ServiceUnavailable] PASSED [ 29%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_key_server_failures_to_http_domain_errors[failure1-BadGateway] PASSED [ 29%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_appliance_lookup_failures[failure0-ServiceUnavailable] PASSED [ 29%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_appliance_lookup_failures[failure1-ServiceUnavailable] PASSED [ 30%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_appliance_lookup_failures[failure2-ServiceUnavailable] PASSED [ 30%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_http_status_from_appliance_lookup[404-BadGateway] PASSED [ 30%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_http_status_from_appliance_lookup[408-ServiceUnavailable] PASSED [ 30%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_http_status_from_appliance_lookup[503-ServiceUnavailable] PASSED [ 30%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_http_status_from_appliance_lookup[504-ServiceUnavailable] PASSED [ 31%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_http_status_from_appliance_lookup[500-BadGateway] PASSED [ 31%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_invalid_appliance_lookup_payload_to_bad_gateway PASSED [ 31%]
+tests/unit/encryption_keys/test_service.py::TestGetAppliancePublicKey::test_maps_malformed_json_from_appliance_lookup_to_bad_gateway PASSED [ 31%]
+tests/unit/encryption_keys/test_service.py::test_eligible_returns_created_task PASSED [ 31%]
+tests/unit/encryption_keys/test_service.py::test_gate_requires_classic_appliance_family PASSED [ 31%]
+tests/unit/encryption_keys/test_service.py::test_passphrase_forwarded_verbatim_never_decrypted PASSED [ 32%]
+tests/unit/encryption_keys/test_service.py::test_unknown_appliance_raises_not_found PASSED [ 32%]
+tests/unit/encryption_keys/test_service.py::test_below_min_version_raises_action_not_supported PASSED [ 32%]
+tests/unit/encryption_keys/test_service.py::test_offline_raises_appliance_unreachable PASSED [ 32%]
+tests/unit/encryption_keys/test_service.py::test_in_progress_raises_conflict PASSED [ 32%]
+tests/unit/encryption_keys/test_service.py::test_concurrent_create_conflict_propagates PASSED [ 32%]
+tests/unit/encryption_keys/test_service.py::test_rejects_when_no_appliance_key_registered PASSED [ 33%]
+tests/unit/encryption_keys/test_service.py::test_rejects_passphrase_encrypted_to_wrong_key PASSED [ 33%]
+tests/unit/encryption_keys/test_service.py::test_add_keys_persists_unacknowledged_failure[False-before_dispatch] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (volume_keys.py:142) Failed to dispatch add-keys task 498e02e6-2a17-4761-baf7-1bc6e110fa80
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/volume_keys.py", line 129, in add_volume_encryption_keys
+    await self._task_repo.mark_step(task.id, TaskStepName.add_volume_encryption_keys, TaskStepState.in_progress)
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: transient dispatch failure
+PASSED                                                                   [ 33%]
+tests/unit/encryption_keys/test_service.py::test_add_keys_persists_unacknowledged_failure[False-send] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (volume_keys.py:142) Failed to dispatch add-keys task e1c5eba9-75c9-4544-a2b3-be68072c0a1e
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/volume_keys.py", line 130, in add_volume_encryption_keys
+    await self.task_service.send_command(
+        task.id, command, master_edge.edge_serial, initiator_id=user_id, classify_outbound_errors=True
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 459, in send_command
+    await self.message_service.send_message(
+    ...<5 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: transient dispatch failure
+PASSED                                                                   [ 33%]
+tests/unit/encryption_keys/test_service.py::test_add_keys_persists_unacknowledged_failure[True-before_dispatch] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (volume_keys.py:142) Failed to dispatch add-keys task 9bf50a20-78d6-4880-95fd-11d4525cdd61
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/volume_keys.py", line 129, in add_volume_encryption_keys
+    await self._task_repo.mark_step(task.id, TaskStepName.add_volume_encryption_keys, TaskStepState.in_progress)
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: transient dispatch failure
+PASSED                                                                   [ 33%]
+tests/unit/encryption_keys/test_service.py::test_add_keys_persists_unacknowledged_failure[True-send] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:56 [   ERROR] (volume_keys.py:142) Failed to dispatch add-keys task b242224b-3ee9-46d1-b92a-9a69b3ea28ae
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/encryption_keys/service/volume_keys.py", line 130, in add_volume_encryption_keys
+    await self.task_service.send_command(
+        task.id, command, master_edge.edge_serial, initiator_id=user_id, classify_outbound_errors=True
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 459, in send_command
+    await self.message_service.send_message(
+    ...<5 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: transient dispatch failure
+PASSED                                                                   [ 34%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness0-ActionNotSupported-enable_volume_encryption_key] PASSED [ 34%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness0-ActionNotSupported-disable_volume_encryption_key] PASSED [ 34%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness1-ResourceNotFound-enable_volume_encryption_key] PASSED [ 34%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness1-ResourceNotFound-disable_volume_encryption_key] PASSED [ 34%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness2-ActionNotSupported-enable_volume_encryption_key] PASSED [ 34%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness2-ActionNotSupported-disable_volume_encryption_key] PASSED [ 35%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness3-ApplianceUnreachable-enable_volume_encryption_key] PASSED [ 35%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_classifies_readiness_before_task_creation[readiness3-ApplianceUnreachable-disable_volume_encryption_key] PASSED [ 35%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_uses_common_write_version_policy[enable_volume_encryption_key-None] PASSED [ 35%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_uses_common_write_version_policy[enable_volume_encryption_key-master] PASSED [ 35%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_uses_common_write_version_policy[enable_volume_encryption_key-N/A] PASSED [ 36%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_uses_common_write_version_policy[disable_volume_encryption_key-None] PASSED [ 36%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_uses_common_write_version_policy[disable_volume_encryption_key-master] PASSED [ 36%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_uses_common_write_version_policy[disable_volume_encryption_key-N/A] PASSED [ 36%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_rejects_matching_association_task_before_creation[enable_volume_encryption_key-enable_volume_encryption_keys-disabled] PASSED [ 36%]
+tests/unit/encryption_keys/test_service.py::test_volume_write_rejects_matching_association_task_before_creation[disable_volume_encryption_key-disable_volume_encryption_keys-enabled] PASSED [ 36%]
+tests/unit/encryption_keys/test_service.py::test_standalone_disable_rejects_an_in_progress_volume_disable PASSED [ 37%]
+tests/unit/encryption_keys/test_service.py::test_standalone_disable_rejects_concurrent_disable_preparation PASSED [ 37%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_unknown_volume_raises_not_found PASSED [ 37%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_unknown_association_raises_not_found PASSED [ 37%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_stub_association_raises_conflict PASSED [ 37%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_already_enabled_raises_conflict PASSED [ 37%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_no_master_edge_raises_resource_not_found PASSED [ 38%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_below_minimum_version_raises_action_not_supported PASSED [ 38%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_unreachable_master_edge_raises_appliance_unreachable PASSED [ 38%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_in_flight_task_propagates_conflict PASSED [ 38%]
+tests/unit/encryption_keys/test_service.py::TestEnableVolumeEncryptionKey::test_happy_path_dispatches_command_and_returns_task PASSED [ 38%]
+tests/unit/encryption_keys/test_service.py::TestDisableVolumeEncryptionKey::test_already_disabled_raises_conflict PASSED [ 39%]
+tests/unit/encryption_keys/test_service.py::TestDisableVolumeEncryptionKey::test_last_enabled_key_raises_conflict PASSED [ 39%]
+tests/unit/encryption_keys/test_service.py::TestDisableVolumeEncryptionKey::test_happy_path_dispatches_command_and_returns_task PASSED [ 39%]
+tests/unit/encryption_keys/test_service.py::TestGetVolumeKeys::test_unknown_volume_raises_not_found PASSED [ 39%]
+tests/unit/encryption_keys/test_service.py::TestGetVolumeKeys::test_happy_path_returns_converted_dtos PASSED [ 39%]
+tests/unit/encryption_keys/test_service.py::TestGetVolumeKeys::test_returns_bulk_task_once_at_collection_level PASSED [ 39%]
+tests/unit/encryption_keys/test_service.py::TestGetVolumeKeys::test_no_keys_still_returns_collection_task PASSED [ 40%]
+tests/unit/encryption_keys/test_service.py::test_list_keys_scopes_escrow_tasks_by_permission_independently_of_license[False-False] PASSED [ 40%]
+tests/unit/encryption_keys/test_service.py::test_list_keys_scopes_escrow_tasks_by_permission_independently_of_license[False-True] PASSED [ 40%]
+tests/unit/encryption_keys/test_service.py::test_list_keys_scopes_escrow_tasks_by_permission_independently_of_license[True-False] PASSED [ 40%]
+tests/unit/encryption_keys/test_service.py::test_list_keys_scopes_escrow_tasks_by_permission_independently_of_license[True-True] PASSED [ 40%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceEscrowPassphraseStatus::test_unknown_appliance_raises_not_found_before_task_lookup PASSED [ 41%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceEscrowPassphraseStatus::test_returns_status_and_active_tasks[False-None-synced] PASSED [ 41%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceEscrowPassphraseStatus::test_returns_status_and_active_tasks[True-None-synced] PASSED [ 41%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceEscrowPassphraseStatus::test_returns_status_and_active_tasks[False-in_progress-pending] PASSED [ 41%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceEscrowPassphraseStatus::test_returns_status_and_active_tasks[True-failed-failed] PASSED [ 41%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_unknown_appliance_raises_not_found PASSED [ 41%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_base_permission_only_sees_counts_only PASSED [ 42%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_escrow_permission_without_license_hides_escrow_fields PASSED [ 42%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_escrow_permission_with_license_shows_escrow_counts PASSED [ 42%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_backup_keys_permission_without_backup_key_shows_null PASSED [ 42%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_without_backup_keys_permission_hides_backup_key PASSED [ 42%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_backup_keys_permission_without_escrow_permission_hides_is_escrowed PASSED [ 43%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_backup_keys_and_escrow_permissions_show_is_escrowed PASSED [ 43%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_all_view_permissions_with_license_show_every_field PASSED [ 43%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_failed_passphrase_task_reports_failed_status_and_serializes_error PASSED [ 43%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_escrow_passphrase_permission_shows_passphrase_fields PASSED [ 43%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_other_appliance_and_resource_tasks_do_not_affect_passphrase_status PASSED [ 43%]
+tests/unit/encryption_keys/test_service.py::TestGetApplianceKeysSummary::test_without_escrow_passphrase_permission_hides_passphrase_fields PASSED [ 44%]
+tests/unit/encryption_keys/test_service.py::test_add_saves_only_preexisting_active_keys_and_sends_only_add[True] PASSED [ 44%]
+tests/unit/encryption_keys/test_service.py::test_add_saves_only_preexisting_active_keys_and_sends_only_add[False] PASSED [ 44%]
+tests/unit/tasks/test_converter.py::test_task_converters_preserve_params_in_internal_dtos[None] PASSED [ 44%]
+tests/unit/tasks/test_converter.py::test_task_converters_preserve_params_in_internal_dtos[params1] PASSED [ 44%]
+tests/unit/tasks/test_converter.py::test_task_converters_preserve_params_in_internal_dtos[params2] PASSED [ 44%]
+tests/unit/tasks/test_converter.py::test_internal_task_projection_exposes_only_customer_safe_failure_fields[None-in_progress] PASSED [ 45%]
+tests/unit/tasks/test_converter.py::test_internal_task_projection_exposes_only_customer_safe_failure_fields[None-completed] PASSED [ 45%]
+tests/unit/tasks/test_converter.py::test_internal_task_projection_exposes_only_customer_safe_failure_fields[None-failed] PASSED [ 45%]
+tests/unit/tasks/test_converter.py::test_internal_task_projection_exposes_only_customer_safe_failure_fields[The appliance could not complete the operation.-in_progress] PASSED [ 45%]
+tests/unit/tasks/test_converter.py::test_internal_task_projection_exposes_only_customer_safe_failure_fields[The appliance could not complete the operation.-completed] PASSED [ 45%]
+tests/unit/tasks/test_converter.py::test_internal_task_projection_exposes_only_customer_safe_failure_fields[The appliance could not complete the operation.-failed] PASSED [ 46%]
+tests/unit/tasks/test_converter.py::test_from_task_maps_failure_from_last_updated_at_and_reason PASSED [ 46%]
+tests/unit/tasks/test_converter.py::test_from_task_omits_error_when_not_failed PASSED [ 46%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[False-False-in_progress] PASSED [ 46%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[False-False-completed] PASSED [ 46%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[False-False-failed] PASSED [ 46%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[False-True-in_progress] PASSED [ 47%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[False-True-completed] PASSED [ 47%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[False-True-failed] PASSED [ 47%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[True-False-in_progress] PASSED [ 47%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[True-False-completed] PASSED [ 47%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[True-False-failed] PASSED [ 48%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[True-True-in_progress] PASSED [ 48%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[True-True-completed] PASSED [ 48%]
+tests/unit/tasks/test_converter.py::test_capability_requires_a_permitted_persisted_unacknowledged_failure[True-True-failed] PASSED [ 48%]
+tests/unit/tasks/test_converter.py::test_task_converter_preserves_failure_details_without_capability PASSED [ 48%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks0-False-synced] PASSED [ 48%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks1-False-pending] PASSED [ 49%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks2-False-failed] PASSED [ 49%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks3-False-pending] PASSED [ 49%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks4-True-creating] PASSED [ 49%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks5-True-creating] PASSED [ 49%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks6-True-failed] PASSED [ 50%]
+tests/unit/tasks/test_converter.py::test_derive_resource_status_rolls_active_tasks_up[tasks7-True-creating] PASSED [ 50%]
+tests/unit/tasks/test_service.py::test_pending_step_is_not_marked_dispatched_before_send[True] PASSED [ 50%]
+tests/unit/tasks/test_service.py::test_pending_step_is_not_marked_dispatched_before_send[False] PASSED [ 50%]
+tests/unit/tasks/test_service.py::test_pending_step_dispatch_skips_already_dispatched_steps[in_progress] PASSED [ 50%]
+tests/unit/tasks/test_service.py::test_pending_step_dispatch_skips_already_dispatched_steps[completed] PASSED [ 50%]
+tests/unit/tasks/test_service.py::test_pending_step_dispatch_skips_already_dispatched_steps[failed] PASSED [ 51%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_creation_persists_context_with_all_steps[False-False] PASSED [ 51%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_creation_persists_context_with_all_steps[False-True] PASSED [ 51%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_creation_persists_context_with_all_steps[True-False] PASSED [ 51%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_creation_persists_context_with_all_steps[True-True] PASSED [ 51%]
+tests/unit/tasks/test_service.py::TestTaskService::test_parameter_permission_context_is_empty_after_clear PASSED [ 51%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_command_uses_generic_action_step_resolution[upload_encryption_key0] PASSED [ 52%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_command_uses_generic_action_step_resolution[upload_encryption_key1] PASSED [ 52%]
+tests/unit/tasks/test_service.py::TestTaskService::test_upload_command_uses_generic_action_step_resolution[None] PASSED [ 52%]
+tests/unit/tasks/test_service.py::TestTaskService::test_add_volume_encryption_key_action_uses_registered_steps PASSED [ 52%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_delegates_to_repo[None-None] PASSED [ 52%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_delegates_to_repo[None-stack_id1] PASSED [ 53%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_delegates_to_repo[params1-None] PASSED [ 53%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_delegates_to_repo[params1-stack_id1] PASSED [ 53%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_delegates_to_repo[params2-None] PASSED [ 53%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_delegates_to_repo[params2-stack_id1] PASSED [ 53%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_add_task_forwards_one_association PASSED [ 53%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_propagates_conflict PASSED [ 54%]
+tests/unit/tasks/test_service.py::TestTaskService::test_list_unresolved_tasks_forwards_resource_and_actions PASSED [ 54%]
+tests/unit/tasks/test_service.py::TestTaskService::test_list_recent_completed_tasks_forwards_filters PASSED [ 54%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_and_send_fifo_message_creates_task_and_sends_message PASSED [ 54%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_and_send_message_with_all_fields PASSED [ 54%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_and_send_async_message_creates_task_and_sends_message PASSED [ 55%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_auto_acknowledges_when_requested 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 3f29f846-bc24-4f25-be5a-5aeb59a52ce4
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: broker down
+PASSED                                                                   [ 55%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_leaves_task_unacknowledged_by_default 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task c73ea0ac-c0f9-4455-a2f8-c7af39ee7bce
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: broker down
+PASSED                                                                   [ 55%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_with_task_action_materializes_mapped_steps PASSED [ 55%]
+tests/unit/tasks/test_service.py::TestTaskService::test_single_step_action_materializes_its_confirmation_step[update_edge_description-update_edge_description] PASSED [ 55%]
+tests/unit/tasks/test_service.py::TestTaskService::test_single_step_action_materializes_its_confirmation_step[download_encryption_keys-download_encryption_keys] PASSED [ 55%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_rejects_explicit_steps_with_task_action[volume_state_refresh] PASSED [ 56%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_rejects_explicit_steps_with_task_action[download_encryption_keys] PASSED [ 56%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_materializes_its_ordered_steps[upload_encryption_key-encryption_key-expected_steps0] PASSED [ 56%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_materializes_its_ordered_steps[escrow_encryption_key-encryption_key-expected_steps1] PASSED [ 56%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_materializes_its_ordered_steps[delete_encryption_key-encryption_key-expected_steps2] PASSED [ 56%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_materializes_its_ordered_steps[add_volume_encryption_keys-volume_encryption_key_association-expected_steps3] PASSED [ 56%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_materializes_its_ordered_steps[enable_volume_encryption_keys-volume_encryption_key_association-expected_steps4] PASSED [ 57%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_materializes_its_ordered_steps[disable_volume_encryption_keys-volume_encryption_key_association-expected_steps5] PASSED [ 57%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_rejects_explicit_steps_before_creating_task[upload_encryption_key-encryption_key] PASSED [ 57%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_rejects_explicit_steps_before_creating_task[escrow_encryption_key-encryption_key] PASSED [ 57%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_rejects_explicit_steps_before_creating_task[delete_encryption_key-encryption_key] PASSED [ 57%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_rejects_explicit_steps_before_creating_task[add_volume_encryption_keys-volume_encryption_key_association] PASSED [ 58%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_rejects_explicit_steps_before_creating_task[enable_volume_encryption_keys-volume_encryption_key_association] PASSED [ 58%]
+tests/unit/tasks/test_service.py::TestTaskService::test_encryption_key_action_rejects_explicit_steps_before_creating_task[disable_volume_encryption_keys-volume_encryption_key_association] PASSED [ 58%]
+tests/unit/tasks/test_service.py::TestTaskService::test_create_task_seeds_failed_state_when_requested PASSED [ 58%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_tags_the_error_with_the_rollup_it_caused PASSED [ 58%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_leaves_the_error_untagged_when_nothing_transitioned PASSED [ 58%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_can_defer_in_progress_until_success PASSED [ 59%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_deferred_start_still_fails_the_step_on_error PASSED [ 59%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_fails_the_step_on_transient_errors_by_default PASSED [ 59%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_resets_to_pending_when_caller_classifies_error_retryable PASSED [ 59%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_resets_to_pending_when_retryable_caller_times_out PASSED [ 59%]
+tests/unit/tasks/test_service.py::TestTaskService::test_tracked_step_without_retry_predicate_leaves_cancelled_step_untouched PASSED [ 60%]
+tests/unit/tasks/test_service.py::TestTaskService::test_step_rollup_is_scoped_to_its_own_task PASSED [ 60%]
+tests/unit/tasks/test_service.py::TestTaskService::test_acknowledge_failed_task_flips_unacked_failure PASSED [ 60%]
+tests/unit/tasks/test_service.py::TestTaskService::test_acknowledge_failed_task_returns_false_when_repo_loses_race PASSED [ 60%]
+tests/unit/tasks/test_service.py::TestTaskService::test_acknowledge_failed_task_skips_repo_when_already_acked PASSED [ 60%]
+tests/unit/tasks/test_service.py::TestTaskService::test_acknowledge_failed_task_rejects_non_failed_state PASSED [ 60%]
+tests/unit/tasks/test_service.py::TestTaskService::test_strict_send_preserves_legacy_exception_mapping[error0-CoreException] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 40bcb7dc-ecb4-4176-9d36-c7fc469667da
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+ValueError: internal detail
+PASSED                                                                   [ 61%]
+tests/unit/tasks/test_service.py::TestTaskService::test_strict_send_preserves_legacy_exception_mapping[error1-CoreException] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 045f3f23-7421-4416-b934-538e84ea6bf9
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: internal detail
+PASSED                                                                   [ 61%]
+tests/unit/tasks/test_service.py::TestTaskService::test_strict_send_preserves_legacy_exception_mapping[error2-CoreException] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 26832968-a484-4d12-88b8-d4e7cad8258f
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.CoreException: internal detail
+PASSED                                                                   [ 61%]
+tests/unit/tasks/test_service.py::TestTaskService::test_strict_send_preserves_legacy_exception_mapping[error3-CoreException] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 4e4e763e-1536-454c-8b3a-c9f3c11224e9
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ResourceConflict: internal detail
+PASSED                                                                   [ 61%]
+tests/unit/tasks/test_service.py::TestTaskService::test_strict_send_preserves_legacy_exception_mapping[error4-InternalConnectionFailure] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 81a38f74-11ed-4b0e-9993-5ad2d729d2ac
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: internal detail
+PASSED                                                                   [ 61%]
+tests/unit/tasks/test_service.py::TestTaskService::test_classified_uncertain_dispatch_leaves_created_task_in_progress 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task f96d301c-dc54-4add-9389-7cf8ae1f96d2
+RuntimeError: send failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessageDispatchError: Message dispatch failed.
+PASSED                                                                   [ 62%]
+tests/unit/tasks/test_service.py::TestTaskService::test_classified_create_error_retains_original_type_and_never_sends PASSED [ 62%]
+tests/unit/tasks/test_service.py::TestTaskService::test_classified_outbound_persistence_error_leaves_created_task_in_progress 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task e2f6d828-1fdf-438c-a782-29b7eb046d2c
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 62%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_classified_uncertainty_returns_original_in_progress_task[uncertain_dispatch] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 981bf638-d1da-489d-a0cf-de313f6ca7ab
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessageDispatchError: Message dispatch failed.
+PASSED                                                                   [ 62%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_classified_uncertainty_returns_original_in_progress_task[outbound_persistence] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 0be6cbd0-5f65-48a8-bb8b-7edbf05b1d97
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 62%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_recording_error_is_not_mislabeled_as_message_dispatch_error 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 3e38147d-b34b-4d87-842a-f27903a621a4
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessageDispatchError: Message dispatch failed.
+PASSED                                                                   [ 62%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_success_returns_created_task_and_forwards_dispatch_metadata PASSED [ 63%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_records_the_sole_step_or_legacy_parent[escrow_encryption_key-None-escrow_encryption_key-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task a14d7635-bf79-4d75-84ac-12b3355b502a
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: send failed
+PASSED                                                                   [ 63%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_records_the_sole_step_or_legacy_parent[escrow_encryption_key-None-escrow_encryption_key-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task fc790015-824e-4bd7-a0ee-43bc485caa52
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: send failed
+PASSED                                                                   [ 63%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_records_the_sole_step_or_legacy_parent[custom_operation-steps1-confirmation-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 6806d673-bf73-4516-841f-d3f638c81ddb
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: send failed
+PASSED                                                                   [ 63%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_records_the_sole_step_or_legacy_parent[custom_operation-steps1-confirmation-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task b823cbc0-3f09-4a57-a642-36ee29a9806c
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: send failed
+PASSED                                                                   [ 63%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_records_the_sole_step_or_legacy_parent[None-None-None-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task cb0ceb58-2faf-4fac-a4bf-102557ac8fd2
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: send failed
+PASSED                                                                   [ 63%]
+tests/unit/tasks/test_service.py::TestTaskService::test_send_failure_records_the_sole_step_or_legacy_parent[None-None-None-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 2e9742ce-93bb-44a6-a665-4ce194244be6
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: send failed
+PASSED                                                                   [ 64%]
+tests/unit/tasks/test_service.py::TestTaskService::test_convenience_dispatch_rejects_multiple_steps_before_creation[appliance_refresh-None-False] PASSED [ 64%]
+tests/unit/tasks/test_service.py::TestTaskService::test_convenience_dispatch_rejects_multiple_steps_before_creation[appliance_refresh-None-True] PASSED [ 64%]
+tests/unit/tasks/test_service.py::TestTaskService::test_convenience_dispatch_rejects_multiple_steps_before_creation[custom_operation-steps1-False] PASSED [ 64%]
+tests/unit/tasks/test_service.py::TestTaskService::test_convenience_dispatch_rejects_multiple_steps_before_creation[custom_operation-steps1-True] PASSED [ 64%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_client_failures_raise_safe_strict_error_or_return_bulk_failure[error0-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:111) Failed to send message: client detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 7a74f247-ebe4-43fc-a7fc-14f713b66d23
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+ValueError: client detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 119, in send_message
+    raise InternalConnectionFailure("Internal Error. Please contact Nasuni support.") from e
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 65%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_client_failures_raise_safe_strict_error_or_return_bulk_failure[error0-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:111) Failed to send message: client detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task bd3c8bb7-abd2-4c3d-91ea-0ffc6e737c5c
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+ValueError: client detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 119, in send_message
+    raise InternalConnectionFailure("Internal Error. Please contact Nasuni support.") from e
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 65%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_client_failures_raise_safe_strict_error_or_return_bulk_failure[error1-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:111) Failed to send message: client detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 2b964184-5b45-48b6-948e-d4b2cfc21b90
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: client detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 119, in send_message
+    raise InternalConnectionFailure("Internal Error. Please contact Nasuni support.") from e
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 65%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_client_failures_raise_safe_strict_error_or_return_bulk_failure[error1-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:111) Failed to send message: client detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 472d672f-b547-4c8b-8555-ac7aad2c5789
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: client detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 119, in send_message
+    raise InternalConnectionFailure("Internal Error. Please contact Nasuni support.") from e
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 65%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_client_failures_raise_safe_strict_error_or_return_bulk_failure[error2-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:111) Failed to send message: client detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 9bb48f43-23a7-4509-a2b8-a19029414e02
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.CoreException: client detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 119, in send_message
+    raise InternalConnectionFailure("Internal Error. Please contact Nasuni support.") from e
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 65%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_client_failures_raise_safe_strict_error_or_return_bulk_failure[error2-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:111) Failed to send message: client detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task b496b3da-ef7a-4052-bcc4-16eefcca518d
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.CoreException: client detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 119, in send_message
+    raise InternalConnectionFailure("Internal Error. Please contact Nasuni support.") from e
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 65%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_cancellation_propagates_without_failing_task[False-False] PASSED [ 66%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_cancellation_propagates_without_failing_task[False-True] PASSED [ 66%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_cancellation_propagates_without_failing_task[True-False] PASSED [ 66%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_cancellation_propagates_without_failing_task[True-True] PASSED [ 66%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_returns_persisted_outcome_after_dispatch_failure[failed] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task d1fa6bc5-b9e0-4bcc-8df9-e15d753cf318
+TimeoutError: transport timeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 66%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_returns_persisted_outcome_after_dispatch_failure[completed] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 58a06eef-9969-4979-a3ba-6e753371837b
+TimeoutError: transport timeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: Internal Error. Please contact Nasuni support.
+PASSED                                                                   [ 67%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_control_flow_exception_propagates_without_failing_task[error0] PASSED [ 67%]
+tests/unit/tasks/test_service.py::TestTaskService::test_bulk_control_flow_exception_propagates_without_failing_task[error1] PASSED [ 67%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_control_flow_exception_propagates[error0-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task bb410ebe-36ce-4b7f-a396-955d44ca09f0
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 67%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_control_flow_exception_propagates[error0-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 2d871953-b36d-4468-973f-cff01cfc57d1
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 67%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_control_flow_exception_propagates[error1-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task d29f0d8c-1b3f-4246-b17d-3271f56b8642
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 67%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_control_flow_exception_propagates[error1-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 65f898ec-88dc-4666-9a49-3df4fc26a9d9
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 68%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error0-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 616dde58-71a9-40f7-9206-02fa15cc22bb
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 68%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error0-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 0e377b8d-460f-46aa-be36-a38bf8647a7c
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task 0e377b8d-460f-46aa-be36-a38bf8647a7c; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.db.tenant_session.DBUnavailableError: database unavailable
+PASSED                                                                   [ 68%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error1-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 490b163c-e059-4383-beb8-b47bc419e52f
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 68%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error1-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task b890eb4c-5a72-4fce-831b-47f1cf94ffd5
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task b890eb4c-5a72-4fce-831b-47f1cf94ffd5; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+sqlalchemy.exc.DBAPIError: (asyncpg.exceptions.ConnectionDoesNotExistError) connection dropped
+[SQL: UPDATE tasks]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+PASSED                                                                   [ 68%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error2-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 7f113b11-f090-4ce8-9020-72521e39d236
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 68%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error2-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task f04e3f28-6e9f-4279-9117-7c2169f60411
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task f04e3f28-6e9f-4279-9117-7c2169f60411; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+asyncpg.exceptions.ConnectionDoesNotExistError: connection dropped
+PASSED                                                                   [ 69%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error3-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 8b5178ed-5cec-4a4d-9865-922c339b9591
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 69%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error3-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 9f382d21-59f6-423e-8454-45285d7e6cbd
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task 9f382d21-59f6-423e-8454-45285d7e6cbd; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+ConnectionResetError: connection reset
+PASSED                                                                   [ 69%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error4-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task c09d1c4a-d8ac-4e66-bfac-e9befed82911
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 69%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error4-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 5ed07845-7496-45f9-a653-0789a5f93763
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task 5ed07845-7496-45f9-a653-0789a5f93763; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: failure persistence bug
+PASSED                                                                   [ 69%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error5-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 98b867af-0a82-402a-b628-9ca14a596484
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 70%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error5-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task f12172cd-3f80-4a22-bb21-a831d32847bf
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task f12172cd-3f80-4a22-bb21-a831d32847bf; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: connection lost
+PASSED                                                                   [ 70%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error6-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task ad972772-e965-4594-98a0-31749c747354
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 70%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error6-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 6f3aebe9-7e03-41ba-a139-0660dc306eb4
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task 6f3aebe9-7e03-41ba-a139-0660dc306eb4; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ResourceNotFound: Task not found
+PASSED                                                                   [ 70%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error7-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task ecd1a281-d5be-4b21-92f6-95387dda3fc2
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 70%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error7-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task d2932354-6fb8-4e53-b6d5-550b2fcf062a
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task d2932354-6fb8-4e53-b6d5-550b2fcf062a; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+sqlalchemy.exc.IntegrityError: (builtins.RuntimeError) constraint violated
+[SQL: UPDATE tasks]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+PASSED                                                                   [ 70%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error8-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 0ebaf9e7-4f32-47e4-bb7e-fb1b14a7bc9e
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+PASSED                                                                   [ 71%]
+tests/unit/tasks/test_service.py::TestTaskService::test_failure_persistence_error_returns_original_snapshot_only_for_bulk[error8-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 67abdc01-d34d-4818-8722-6f7c612b3694
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: send failed
+2026-10-31 07:42:57 [   ERROR] (service.py:426) Could not persist dispatch failure for task 67abdc01-d34d-4818-8722-6f7c612b3694; returning the last known task state
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/tasks/test_service.py", line 1316, in test_failure_persistence_error_returns_original_snapshot_only_for_bulk
+    await task_service.create_task_and_send_message(
+    ...<5 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 360, in create_task_and_send_message
+    return await self.send_created_task(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 414, in send_created_task
+    persisted_task = await self.task_repo.fail_dispatch(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ResourceConflict: failure persistence conflict
+PASSED                                                                   [ 71%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error0-False] PASSED [ 71%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error0-True] PASSED [ 71%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error1-False] PASSED [ 71%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error1-True] PASSED [ 72%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error2-False] PASSED [ 72%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error2-True] PASSED [ 72%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error3-False] PASSED [ 72%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error3-True] PASSED [ 72%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error4-False] PASSED [ 72%]
+tests/unit/tasks/test_service.py::TestTaskService::test_creation_error_prevents_dispatch[error4-True] PASSED [ 73%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error0-False-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: message detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task e5c3bb28-acce-4652-969e-6fca045b7f75
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: message detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 137, in send_message
+    raise MessagePersistenceFailed(message_id=message_id, task_id=task_id, error=error) from error
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 73%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error0-False-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: message detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 85e8b120-a31b-4890-aeea-b1623bd56f21
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: message detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 137, in send_message
+    raise MessagePersistenceFailed(message_id=message_id, task_id=task_id, error=error) from error
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 73%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error0-True-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 5c92f81e-46f3-49ba-8fc2-7fc7bdd6f091
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 87, in send_message
+    command_dict = cast(JsonValue, command.model_dump(mode="json", context={"strip_secrets": True}))
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: message detail
+PASSED                                                                   [ 73%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error0-True-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 438fb47a-1a78-43f0-a7d0-a75e96d00416
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 87, in send_message
+    command_dict = cast(JsonValue, command.model_dump(mode="json", context={"strip_secrets": True}))
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 87, in send_message
+    command_dict = cast(JsonValue, command.model_dump(mode="json", context={"strip_secrets": True}))
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: message detail
+PASSED                                                                   [ 73%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error1-False-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: message detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 46a9bde2-720d-41b3-946c-1795b89e59d1
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: message detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 137, in send_message
+    raise MessagePersistenceFailed(message_id=message_id, task_id=task_id, error=error) from error
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 74%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error1-False-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: message detail
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task ae10a933-2cc2-4606-82cf-57322a51cb96
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: message detail
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 137, in send_message
+    raise MessagePersistenceFailed(message_id=message_id, task_id=task_id, error=error) from error
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 74%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error1-True-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 4612fef6-3d65-4708-ae2e-4f2fa0aad7b2
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 87, in send_message
+    command_dict = cast(JsonValue, command.model_dump(mode="json", context={"strip_secrets": True}))
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: message detail
+PASSED                                                                   [ 74%]
+tests/unit/tasks/test_service.py::TestTaskService::test_real_message_serialization_or_storage_failure_preserves_each_callers_contract[error1-True-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task 50a36908-3b91-4739-9d46-16867dd96801
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 87, in send_message
+    command_dict = cast(JsonValue, command.model_dump(mode="json", context={"strip_secrets": True}))
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 87, in send_message
+    command_dict = cast(JsonValue, command.model_dump(mode="json", context={"strip_secrets": True}))
+                                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 1234, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: message detail
+PASSED                                                                   [ 74%]
+tests/unit/tasks/test_service.py::TestTaskService::test_unsupported_command_retains_strict_error_or_bulk_task[False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task e147fd42-79e1-40d3-aca4-7116b299fb24
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ActionNotSupported: unsupported appliance
+PASSED                                                                   [ 74%]
+tests/unit/tasks/test_service.py::TestTaskService::test_unsupported_command_retains_strict_error_or_bulk_task[True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (service.py:396) Failed to send or store message for task b2baa3fc-550a-4e6f-80ec-61fa6aac3a38
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/tasks/service.py", line 387, in send_created_task
+    await self.message_service.send_message(
+    ...<6 lines>...
+    )
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 95, in send_message
+    await self.message_client.send_message(
+    ...<6 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ActionNotSupported: unsupported appliance
+PASSED                                                                   [ 74%]
+tests/unit/tasks/test_steps.py::test_every_family_has_a_step_contract PASSED [ 75%]
+tests/unit/tasks/test_steps.py::test_every_action_is_supported_by_some_family PASSED [ 75%]
+tests/unit/tasks/test_steps.py::test_strider_supports_only_actions_its_contract_can_dispatch PASSED [ 75%]
+tests/unit/tasks/test_steps.py::test_cloud_credential_create_steps_follow_the_family_wire_event[classic-expected0] PASSED [ 75%]
+tests/unit/tasks/test_steps.py::test_cloud_credential_create_steps_follow_the_family_wire_event[strider-expected1] PASSED [ 75%]
+tests/unit/tasks/test_steps.py::test_strider_stage_tracks_holder_dispatch_then_target_confirmation PASSED [ 75%]
+tests/unit/tasks/test_steps.py::test_strider_onboarding_is_one_details_fetch PASSED [ 76%]
+tests/unit/tasks/test_steps.py::test_unsupported_classic_actions_fail_loudly[cloud_credential_stage] PASSED [ 76%]
+tests/unit/tasks/test_steps.py::test_unsupported_classic_actions_fail_loudly[onboard_appliance] PASSED [ 76%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[volume_state_refresh] PASSED [ 76%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[uaas_volume_register] PASSED [ 76%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[uaas_volume_unregister] PASSED [ 77%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[appliance_refresh] PASSED [ 77%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[update_edge_description] PASSED [ 77%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[support_bridge_update] PASSED [ 77%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[create_volume] PASSED [ 77%]
+tests/unit/tasks/test_steps.py::test_classic_only_actions_fail_loudly_on_strider[create_volume_with_credential_fetch] PASSED [ 77%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_success PASSED [ 78%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_binary_key PASSED [ 78%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_no_key_raises 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [    INFO] (encryption.py:150) No account key registered for filer filer-guid-123
+PASSED                                                                   [ 78%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_uses_cached_key PASSED [ 78%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_no_key_retries_noc_each_time 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [    INFO] (encryption.py:150) No account key registered for filer filer-abc
+2026-10-31 07:42:57 [    INFO] (encryption.py:150) No account key registered for filer filer-abc
+PASSED                                                                   [ 78%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_noc_error_raises 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (encryption.py:159) NOC key server error for filer filer-guid-123:  (status=500)
+PASSED                                                                   [ 79%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_connection_error_raises 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (encryption.py:165) Failed to fetch account key for filer filer-guid-123: connection error
+PASSED                                                                   [ 79%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_invalid_binary_key_raises 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (encryption.py:183) Invalid PGP public key returned by NOC for filer filer-guid-123: 'NoneType' object has no attribute '__bytearray__' (4 bytes, first 4: 9900fffe)
+PASSED                                                                   [ 79%]
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_invalid_utf8_key_not_cached 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:57 [   ERROR] (encryption.py:183) Invalid PGP public key returned by NOC for filer filer-guid-123: Expected: ASCII-armored PGP data (13 bytes, first 4: 6e6f7420)
+PASSED                                                                   [ 79%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_returns_registered_key PASSED [ 79%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_uses_cached_key_without_calling_noc PASSED [ 79%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_missing_key_returns_none_rather_than_raising 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [    INFO] (encryption.py:150) No account key registered for filer filer-guid-123
+PASSED                                                                   [ 80%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_noc_http_errors_are_classified[408-KeyServerUnavailable] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:157) NOC key server unavailable for filer filer-guid-123: 
+PASSED                                                                   [ 80%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_noc_http_errors_are_classified[500-KeyServerBadResponse] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:159) NOC key server error for filer filer-guid-123:  (status=500)
+PASSED                                                                   [ 80%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_noc_http_errors_are_classified[503-KeyServerUnavailable] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:157) NOC key server unavailable for filer filer-guid-123: 
+PASSED                                                                   [ 80%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_noc_http_errors_are_classified[504-KeyServerUnavailable] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:157) NOC key server unavailable for filer filer-guid-123: 
+PASSED                                                                   [ 80%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_noc_connectivity_failures_are_classified_as_unavailable[failure0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:162) NOC key server unavailable for filer filer-guid-123: connection failed
+PASSED                                                                   [ 81%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_noc_connectivity_failures_are_classified_as_unavailable[failure1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:162) NOC key server unavailable for filer filer-guid-123: timed out
+PASSED                                                                   [ 81%]
+tests/unit/messages/test_encryption.py::TestGetAppliancePublicKey::test_invalid_key_response_is_classified_and_not_cached 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (encryption.py:183) Invalid PGP public key returned by NOC for filer filer-guid-123: Expected: ASCII-armored PGP data (20 bytes, first 4: 6e6f7420)
+PASSED                                                                   [ 81%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_send_fifo_encrypted PASSED [ 81%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_send_async_encrypted PASSED [ 81%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_send_async_uses_nea_route PASSED [ 81%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_cleartext_send_is_refused PASSED [ 82%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_send_without_a_transport_for_the_command_is_refused PASSED [ 82%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_async_payload_contains_command_message_envelope PASSED [ 82%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_fifo_payload_contains_command_message_envelope PASSED [ 82%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_resolver_raises_aborts_send 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (client.py:60) Outbound encryption failed for edge 0023acfe-c650-4938-80b5-c8de6f634aa0
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/client.py", line 55, in encrypt_for_filer
+    resolved_guid = await self.edge_repo.get_edge_guid(edge_serial)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+Exception: DB unavailable
+PASSED                                                                   [ 82%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_encryption_service_raises_aborts_send PASSED [ 82%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_no_edge_repo_raises_at_construction PASSED [ 83%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientEncryption::test_no_encryption_service_raises_at_construction PASSED [ 83%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientApplianceFamily::test_strider_edge_gets_the_strider_envelope PASSED [ 83%]
+tests/unit/messages/test_message_client_encryption.py::TestMessageClientApplianceFamily::test_command_outside_the_family_contract_is_not_sent PASSED [ 83%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_calls_api_client_for_fifo_command PASSED [ 83%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_reports_persistence_failure_after_publish 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: database unavailable
+PASSED                                                                   [ 84%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_persists_command_content_as_json_primitives PASSED [ 84%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_calls_async_client_for_async_command PASSED [ 84%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_calls_async_client_for_any_command PASSED [ 84%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_stores_message_with_task_id PASSED [ 84%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_forwards_task_id_to_client PASSED [ 84%]
+tests/unit/messages/test_service.py::TestMessageService::test_send_message_forwards_none_task_id_when_no_task PASSED [ 85%]
+tests/unit/messages/test_service.py::TestMessageService::test_receive_message_calls_repo_create_or_claim_message PASSED [ 85%]
+tests/unit/messages/test_service.py::TestMessageService::test_receive_message_serializes_basemodel_content PASSED [ 85%]
+tests/unit/messages/test_service.py::TestMessageService::test_receive_message_strips_secret_key_bundle_on_persist PASSED [ 85%]
+tests/unit/messages/test_service.py::TestMessageService::test_receive_message_propagates_already_completed_claim_status 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [    INFO] (service.py:194) Message 6c96b0d9-1030-42ea-b35a-1cfb7eec5684 already processed; returning existing row
+PASSED                                                                   [ 85%]
+tests/unit/messages/test_service.py::TestMessageService::test_lifecycle_transitions_delegate_to_repo PASSED [ 86%]
+tests/unit/messages/test_service.py::TestMessageService::test_serialization_error_propagates_without_sending_or_storage[error0-False] PASSED [ 86%]
+tests/unit/messages/test_service.py::TestMessageService::test_serialization_error_propagates_without_sending_or_storage[error0-True] PASSED [ 86%]
+tests/unit/messages/test_service.py::TestMessageService::test_serialization_error_propagates_without_sending_or_storage[error1-False] PASSED [ 86%]
+tests/unit/messages/test_service.py::TestMessageService::test_serialization_error_propagates_without_sending_or_storage[error1-True] PASSED [ 86%]
+tests/unit/messages/test_service.py::TestMessageService::test_post_send_storage_error_propagates_without_resend[error0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.InternalConnectionFailure: database connection failure
+PASSED                                                                   [ 86%]
+tests/unit/messages/test_service.py::TestMessageService::test_post_send_storage_error_propagates_without_resend[error1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.core.exceptions.ResourceNotFound: storage resource missing
+PASSED                                                                   [ 87%]
+tests/unit/messages/test_service.py::TestMessageService::test_post_send_storage_error_propagates_without_resend[error2] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: storage failure
+PASSED                                                                   [ 87%]
+tests/unit/messages/test_service.py::TestMessageService::test_classified_client_send_failure_is_message_dispatch_error[client_error0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: send failed
+PASSED                                                                   [ 87%]
+tests/unit/messages/test_service.py::TestMessageService::test_classified_client_send_failure_is_message_dispatch_error[client_error1] PASSED [ 87%]
+tests/unit/messages/test_service.py::TestMessageService::test_classified_outbound_storage_failure_has_message_context 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: outbound row unavailable
+PASSED                                                                   [ 87%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: client failure
+PASSED                                                                   [ 87%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: invalid client value
+PASSED                                                                   [ 88%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error2] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: client runtime failure
+PASSED                                                                   [ 88%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error3] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: invalid client type
+PASSED                                                                   [ 88%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error4] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: client resource missing
+PASSED                                                                   [ 88%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error5] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: nbn unavailable
+PASSED                                                                   [ 88%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error6] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: connection timeout
+PASSED                                                                   [ 89%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error7] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: HTTP transport failure
+PASSED                                                                   [ 89%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error8] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: encryption unavailable
+PASSED                                                                   [ 89%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error9] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: transport encryption unavailable
+PASSED                                                                   [ 89%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error10] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: missing transport
+PASSED                                                                   [ 89%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_exceptions_raise_mapped_error_without_storage[error11] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: An error occurred (AccessDenied) when calling the PutObject operation: transport rejected
+PASSED                                                                   [ 89%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_base_exception_propagates_without_storage[error0] PASSED [ 90%]
+tests/unit/messages/test_service.py::TestMessageService::test_client_base_exception_propagates_without_storage[error1] PASSED [ 90%]
+tests/unit/messages/test_service.py::TestMessageService::test_unsupported_error_preserves_exact_type PASSED [ 90%]
+tests/unit/messages/test_service.py::test_classifies_send_and_persistence_failures_separately[transport-MessageDispatchError] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: delivery result unavailable
+PASSED                                                                   [ 90%]
+tests/unit/messages/test_service.py::test_classifies_send_and_persistence_failures_separately[persistence-MessagePersistenceFailed] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:133) Published outbound message could not be persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/messages/service.py", line 122, in send_message
+    message_dto = await self.message_repo.create_message(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+RuntimeError: delivery result unavailable
+PASSED                                                                   [ 90%]
+tests/unit/messages/test_service.py::test_known_pre_send_errors_are_classified_as_definitely_unsent[error0] PASSED [ 91%]
+tests/unit/messages/test_service.py::test_known_pre_send_errors_are_classified_as_definitely_unsent[error1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: cannot encrypt
+PASSED                                                                   [ 91%]
+tests/unit/messages/test_service.py::test_known_pre_send_errors_are_classified_as_definitely_unsent[error2] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (service.py:111) Failed to send message: db down
+PASSED                                                                   [ 91%]
+tests/unit/test_volume_create_service.py::test_create_volume_protocol_mapping_covers_every_request_protocol PASSED [ 91%]
+tests/unit/test_volume_create_service.py::test_create_volume_direct_task_contract_has_no_fetch_step PASSED [ 91%]
+tests/unit/test_volume_create_service.py::test_create_volume_credential_fetch_task_contract_has_both_steps PASSED [ 91%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_unreachable_appliance_before_task_creation PASSED [ 92%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_ineligible_appliance[Strider-filer-ads] PASSED [ 92%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_ineligible_appliance[Edge-niq-ads] PASSED [ 92%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_ineligible_appliance[Edge-filer-ldap] PASSED [ 92%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_unsupported_ntfs_multiprotocol_policy[False-nfs-server] PASSED [ 92%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_unsupported_ntfs_multiprotocol_policy[None-nfs-ganesha] PASSED [ 93%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_unsupported_ntfs_multiprotocol_policy[True-None] PASSED [ 93%]
+tests/unit/test_volume_create_service.py::test_create_volume_allows_ntfs_multiprotocol_policy_on_supported_stack[nfs-server] PASSED [ 93%]
+tests/unit/test_volume_create_service.py::test_create_volume_allows_ntfs_multiprotocol_policy_on_supported_stack[nfs-ganesha] PASSED [ 93%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_posix_mixed_without_ad_unix_extensions[False] PASSED [ 93%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_posix_mixed_without_ad_unix_extensions[None] PASSED [ 93%]
+tests/unit/test_volume_create_service.py::test_create_volume_allows_posix_mixed_with_ad_unix_extensions PASSED [ 94%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_existing_key_missing_from_target_appliance PASSED [ 94%]
+tests/unit/test_volume_create_service.py::test_create_volume_with_generated_key_name_skips_existing_key_lookup PASSED [ 94%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_generated_key_without_required_entitlements[False-False] PASSED [ 94%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_generated_key_without_required_entitlements[False-True] PASSED [ 94%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_generated_key_without_required_entitlements[True-False] PASSED [ 94%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_unlicensed_provider_before_external_work[amazons3] PASSED [ 95%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_unlicensed_provider_before_external_work[azure] PASSED [ 95%]
+tests/unit/test_volume_create_service.py::test_create_volume_allows_s3_compatible_without_provider_license PASSED [ 95%]
+tests/unit/test_volume_create_service.py::test_create_command_prefers_generated_key_name_over_existing_key PASSED [ 95%]
+tests/unit/test_volume_create_service.py::test_create_command_translates_azure_region_to_the_filer_shortname PASSED [ 95%]
+tests/unit/test_volume_create_service.py::test_create_command_passes_non_azure_region_through_untranslated PASSED [ 96%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_azure_region_the_filer_cannot_create_in PASSED [ 96%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_appliance_at_or_above_volume_limit[5] PASSED [ 96%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_appliance_at_or_above_volume_limit[6] PASSED [ 96%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_when_in_flight_creates_reach_limit PASSED [ 96%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_name_already_used_on_the_appliance PASSED [ 96%]
+tests/unit/test_volume_create_service.py::test_create_volume_losing_the_placeholder_race_leaves_the_winners_row_alone PASSED [ 97%]
+tests/unit/test_volume_create_service.py::test_create_volume_cleans_up_its_own_row_when_the_connection_write_fails PASSED [ 97%]
+tests/unit/test_volume_create_service.py::test_create_volume_dispatches_directly_when_credential_is_on_target PASSED [ 97%]
+tests/unit/test_volume_create_service.py::test_create_volume_fetches_from_sibling_when_credential_is_missing_on_target PASSED [ 97%]
+tests/unit/test_volume_create_service.py::test_create_volume_fetches_from_sibling_when_target_credential_is_stub PASSED [ 97%]
+tests/unit/test_volume_create_service.py::test_create_volume_skips_unreachable_credential_source PASSED [ 98%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_when_all_credential_sources_are_unreachable PASSED [ 98%]
+tests/unit/test_volume_create_service.py::test_create_volume_returns_not_found_when_credential_is_missing_from_all_appliances PASSED [ 98%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_credential_held_only_by_strider_appliances PASSED [ 98%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_credential_cloud_provider_mismatch[True] PASSED [ 98%]
+tests/unit/test_volume_create_service.py::test_create_volume_rejects_credential_cloud_provider_mismatch[False] PASSED [ 98%]
+tests/unit/test_volume_create_service.py::test_create_volume_fails_task_when_dispatch_fails PASSED [ 99%]
+tests/unit/test_volume_create_service.py::test_create_volume_preserves_task_when_message_persistence_fails_after_publish 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (create_service.py:396) Volume command was published but its outbound message was not persisted
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/volumes/create_service.py", line 387, in _send_tracked_command
+    await self.task_service.send_command(
+    ...<4 lines>...
+    )
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2326, in _execute_mock_call
+    raise effect
+portal.data.messages.service.MessagePersistenceFailed: Command was sent but its delivery record could not be saved.
+PASSED                                                                   [ 99%]
+tests/unit/test_volume_create_service.py::test_create_volume_preserves_task_when_step_update_fails_after_publish 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:42:58 [   ERROR] (create_service.py:403) Volume command was published but its task step could not be updated
+Traceback (most recent call last):
+  File "<portal-repo>/backend/libs/portal-data/portal/data/volumes/create_service.py", line 381, in _send_tracked_command
+    async with self.task_service.tracked_step(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        task_id,
+        ^^^^^^^^
+        step_name,
+        ^^^^^^^^^^
+        success_state=TaskStepState.in_progress,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/contextlib.py", line 221, in __aexit__
+    await anext(self.gen)
+  File "<portal-repo>/backend/libs/portal-data/tests/unit/test_volume_create_service.py", line 921, in tracked_step_fails_on_exit
+    raise RuntimeError("step update failed")
+RuntimeError: step update failed
+PASSED                                                                   [ 99%]
+tests/unit/test_volume_create_service.py::test_create_volume_reraises_when_task_creation_fails PASSED [ 99%]
+tests/unit/test_volume_create_service.py::test_create_volume_fails_task_when_fetch_dispatch_fails PASSED [ 99%]
+tests/unit/test_volume_create_service.py::test_create_volume_succeeds_when_activity_logging_fails PASSED [100%]
+
+=============================== warnings summary ===============================
+.venv/lib/python3.14/site-packages/pgpy/constants.py:192
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_success
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_binary_key
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_uses_cached_key
+  <portal-repo>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/constants.py:192: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+    SymmetricKeyAlgorithm.TripleDES: algorithms.TripleDES,
+
+../portal-core/portal/core/pgp.py:396
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_success
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_binary_key
+tests/unit/messages/test_encryption.py::TestOutboundEncryption::test_encrypt_for_filer_uses_cached_key
+  <portal-repo>/backend/libs/portal-core/portal/core/pgp.py:396: UserWarning: Selected compression algorithm not in key preferences
+    ciphertext = pub_key.encrypt(msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: ./automated/data_unit.xml -
+======================= 558 passed, 8 warnings in 2.84s ========================
+exit=0

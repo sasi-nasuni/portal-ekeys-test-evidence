@@ -1,0 +1,43 @@
+{
+  "seq": 16,
+  "phase": "A",
+  "name": "list_noperm_forbidden",
+  "profile": "noperm",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "limit": 2
+  },
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=2",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/016_list_noperm_forbidden/list_noperm_forbidden_parameters_01.png",
+    "swagger/016_list_noperm_forbidden/list_noperm_forbidden_parameters_02.png",
+    "swagger/016_list_noperm_forbidden/list_noperm_forbidden_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permissions: View Volume Encryption Keys",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:17:14.555Z"
+}

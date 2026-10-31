@@ -1,0 +1,43 @@
+{
+  "seq": 110,
+  "phase": "B",
+  "name": "B_enable_key1_again_409",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "path_params": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "key_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc"
+  },
+  "params": null,
+  "expected_status": 409,
+  "status": 409,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 409",
+      "ok": true,
+      "observed": 409
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/8e6f1881-65a5-4597-94f9-c2783c66b8fc/enable",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/110_B_enable_key1_again_409/B_enable_key1_again_409_parameters_01.png",
+    "swagger/110_B_enable_key1_again_409/B_enable_key1_again_409_response.png"
+  ],
+  "body": {
+    "message": "Encryption key 8e6f1881-65a5-4597-94f9-c2783c66b8fc is already enabled on volume 0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:34:28.153Z"
+}

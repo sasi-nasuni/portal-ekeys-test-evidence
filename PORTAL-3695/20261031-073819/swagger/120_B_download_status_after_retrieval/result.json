@@ -1,0 +1,60 @@
+{
+  "seq": 120,
+  "phase": "B",
+  "name": "B_download_status_after_retrieval",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads/{task_id}",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "task_id": "1d5e9e78-048b-4320-853a-cd3a95836c7f"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "content_url removed after retrieval; id/count retained",
+      "ok": true,
+      "observed": {
+        "download_id": "eb726b1c-daa3-42b2-b33b-8fdcde1ead0e",
+        "content_url": null,
+        "included_count": 2,
+        "expires_at": "2026-10-31T02:41:18.973851Z"
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads/1d5e9e78-048b-4320-853a-cd3a95836c7f",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/120_B_download_status_after_retrieval/B_download_status_after_retrieval_parameters_01.png",
+    "swagger/120_B_download_status_after_retrieval/B_download_status_after_retrieval_response.png"
+  ],
+  "body": {
+    "task_id": "1d5e9e78-048b-4320-853a-cd3a95836c7f",
+    "status": "completed",
+    "result": {
+      "download_id": "eb726b1c-daa3-42b2-b33b-8fdcde1ead0e",
+      "content_url": null,
+      "included_count": 2,
+      "expires_at": "2026-10-31T02:41:18.973851Z"
+    },
+    "error": null
+  },
+  "captured_at": "2026-10-31T02:37:02.815Z"
+}

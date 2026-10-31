@@ -1,0 +1,40 @@
+{
+  "seq": 46,
+  "phase": "A",
+  "name": "escrow_manager_without_escrow_perm_403",
+  "profile": "manager_noescrow",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "path_params": null,
+  "params": null,
+  "expected_status": 403,
+  "status": 500,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": false,
+      "observed": 500
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/escrow",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/046_escrow_manager_without_escrow_perm_403/escrow_manager_without_escrow_perm_403_parameters_01.png",
+    "swagger/046_escrow_manager_without_escrow_perm_403/escrow_manager_without_escrow_perm_403_response.png"
+  ],
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:19:39.907Z"
+}

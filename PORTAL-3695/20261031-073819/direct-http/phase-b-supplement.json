@@ -1,0 +1,84 @@
+{
+  "note": "Rerun: first supplement attempt crashed on an activity_logs column name after consuming its bundle (seq 126-128).",
+  "escrow_task": {
+    "id": "95a15b73-f29e-4184-8635-881df254fba7",
+    "state": "completed",
+    "action": "escrow_encryption_key",
+    "resource": "encryption_key",
+    "resource_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc",
+    "params": null,
+    "reason": null,
+    "last_updated_at": "2026-10-31T02:30:42.769157+00:00"
+  },
+  "download_task": {
+    "id": "4d26bc5e-5177-41c4-865a-9caac7cc3f02",
+    "state": "completed",
+    "action": "download_encryption_keys",
+    "resource": "edge",
+    "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "params": null,
+    "reason": null,
+    "last_updated_at": "2026-10-31T02:40:45.820445+00:00"
+  },
+  "bundle": {
+    "transport": "direct HTTP GET (not Swagger); see module docstring",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "content_disposition": "attachment; filename=\"encryption-keys-aaff02b9-9afa-4475-817b-cb076487d4b0.gpg\"",
+    "cache_control": "no-store",
+    "ciphertext_bytes": 7647,
+    "decrypt_rc": 0,
+    "keyring_contains_secret_keys": true,
+    "primary_fingerprints_in_bundle": [
+      "29470C5AA8EB787948BD1CD60413FA75D609C500",
+      "315A2B36A084945B93772B84AC36F961A0356AFF"
+    ],
+    "db_generated_fingerprints": [
+      "29470C5AA8EB787948BD1CD60413FA75D609C500",
+      "315A2B36A084945B93772B84AC36F961A0356AFF"
+    ],
+    "included_count": 2,
+    "bundle_matches_db_generated": true,
+    "second_retrieval_status": 404
+  },
+  "download_activity_log": [
+    {
+      "action": "Encryption Keys Downloaded",
+      "summary": null,
+      "target": "Edge",
+      "timestamp": "2026-10-31T02:41:07.768912+00:00"
+    },
+    {
+      "action": "Encryption Keys Downloaded",
+      "summary": null,
+      "target": "Edge",
+      "timestamp": "2026-10-31T02:39:51.361057+00:00"
+    },
+    {
+      "action": "Encryption Keys Downloaded",
+      "summary": null,
+      "target": "Edge",
+      "timestamp": "2026-10-31T02:36:53.721598+00:00"
+    }
+  ],
+  "download_conflict": {
+    "transport": "direct HTTP",
+    "first": 202,
+    "second": 409,
+    "second_body": {
+      "message": "An operation is already in progress",
+      "detail": null
+    },
+    "first_task_final": {
+      "id": "75be7ed3-eb6d-4c18-be93-0e344f301b2f",
+      "state": "completed",
+      "action": "download_encryption_keys",
+      "resource": "edge",
+      "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "params": null,
+      "reason": null,
+      "last_updated_at": "2026-10-31T02:41:15.990492+00:00"
+    },
+    "note": "first bundle intentionally left unretrieved; it expires with its Redis TTL"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "seq": 56,
+  "phase": "A",
+  "name": "passphrase_set_noperm_403",
+  "profile": "volview",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 403,
+  "status": 500,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": false,
+      "observed": 500
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/056_passphrase_set_noperm_403/passphrase_set_noperm_403_parameters_01.png",
+    "swagger/056_passphrase_set_noperm_403/passphrase_set_noperm_403_response.png"
+  ],
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:20:22.285Z"
+}

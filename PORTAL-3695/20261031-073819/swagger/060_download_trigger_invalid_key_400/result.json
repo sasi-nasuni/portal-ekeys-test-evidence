@@ -1,0 +1,44 @@
+{
+  "seq": 60,
+  "phase": "A",
+  "name": "download_trigger_invalid_key_400",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/downloads",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": {
+    "public_key": "invalid"
+  },
+  "expected_status": 400,
+  "status": 400,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 400",
+      "ok": true,
+      "observed": 400
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/downloads?public_key=invalid",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/060_download_trigger_invalid_key_400/download_trigger_invalid_key_400_parameters_01.png",
+    "swagger/060_download_trigger_invalid_key_400/download_trigger_invalid_key_400_response.png"
+  ],
+  "body": {
+    "message": "public_key must be an ASCII-armored OpenPGP public key with an encryption-capable primary key or subkey",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:20:39.386Z"
+}

@@ -1,0 +1,55 @@
+{
+  "seq": 78,
+  "phase": "A",
+  "name": "passphrase_set_unknown_appliance_404",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "00000000-0000-4000-8000-000000003695"
+  },
+  "params": null,
+  "expected_status": 404,
+  "status": 422,
+  "passed": false,
+  "assertions": [
+    {
+      "check": "HTTP status == 404",
+      "ok": false,
+      "observed": 422
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/00000000-0000-4000-8000-000000003695/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/078_passphrase_set_unknown_appliance_404/passphrase_set_unknown_appliance_404_parameters_01.png",
+    "swagger/078_passphrase_set_unknown_appliance_404/passphrase_set_unknown_appliance_404_response.png"
+  ],
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "passphrase"
+        ],
+        "msg": "Value error, passphrase must be an encrypted PGP message",
+        "input": "-----BEGIN PGP MESSAGE-----\n\nhQEMA2saHdwr4p9GAQf/d40hJdV7D9S1Iw6q55gPBQ2JkwsqrF3rQ47OvxcyPD5J\nND+GUusfHI9JXvERhCdN48MnZoHlkHDfxeVZ3jok3X1mYHe/CCqQggw+MS/QPIai\nYiQVe8QJP4RQfdlyIwiPjOh1MhIJGe5x+baqAKG0HnRgc+jG8KtixZmE9Z8spVxJ\ntva3/5v+izOQlTTthGV4gMzdBMp4ycsDHeeMZ1nQ/O8u4ElEa5LeJbaZb9+AFW2a\n8yQi4bcY7jUX1GXuwsKrWFspGQHNtiMT7SOWQnvVTpr738ni0uaG4m3NW9EBz/e+\ndt0QG5dHHahIQfCxYbAmCLFyvPSri8xntFZTCa/ritRTAQkCEHIBi5jDttS8NcsD\nXo9kpd+hPkUbIDBcHD6G4YArmVRNguQuS8ULfmXwC3WsmuWm6hH3XRdXMWyROAP3\nC/1b/ZTeTgxQoMrYgMidy4BGqP0=\n=PJDQ\n-----END PGP MESSAGE-----\n",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-10-31T02:23:06.997Z"
+}

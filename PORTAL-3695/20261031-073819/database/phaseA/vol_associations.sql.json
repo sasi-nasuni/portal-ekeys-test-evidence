@@ -1,0 +1,33 @@
+{
+  "captured_at": "2026-10-31T02:15:35.917102+00:00",
+  "query": "select a.key_id, a.state, k.name from volume_encryption_key_associations a join encryption_keys k on k.id=a.key_id where a.volume_id='0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0' order by k.name",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "key_id": "8f022f09-d267-460a-969e-28c240fda3fc",
+      "state": "enabled",
+      "name": "E-Keys-EdgeConsole-63E6D744"
+    },
+    {
+      "key_id": "ceccb198-bd42-4f8e-bd62-9ca14983f18b",
+      "state": "enabled",
+      "name": "E-Keys-EdgeConsole-E097E395"
+    },
+    {
+      "key_id": "5ac4e010-4f50-47e4-baa6-c078937d38f1",
+      "state": "enabled",
+      "name": "E-Keys-MsgViewer"
+    },
+    {
+      "key_id": "21def027-f241-46a4-be67-b69b8e2c9889",
+      "state": "disabled",
+      "name": "E-Keys-Test-01"
+    },
+    {
+      "key_id": "dd162a3c-02d0-492e-aa46-d6a755c93517",
+      "state": "enabled",
+      "name": "E-Keys-Upload-Test-2"
+    }
+  ]
+}

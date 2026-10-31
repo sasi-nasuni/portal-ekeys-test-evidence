@@ -1,0 +1,15 @@
+{
+  "filer": "10.84.2.115",
+  "changed_at": "2026-10-31T02:25:24.949030+00:00",
+  "file": "/usr/share/nasuni/version.conf",
+  "backup": "/usr/share/nasuni/version.conf.orig",
+  "from": "10.5",
+  "to": "10.6",
+  "reason": "Portal MINIMUM_ENCRYPTION_KEY_SUPPORTED_FILER_VERSION is 10.6; user-authorized filer-side override instead of source change",
+  "restored_at": "2026-10-31T02:45:44.899804+00:00",
+  "restored_file_contents": "UNITY_VERSION=\"10.5\"\nUNITY_BUILD=\"6327\"\nUNITY_BUILD_ID=\"c1acef0770c5a4813fad43a067fbd83de422b2e1\"\n-rw-r--r-- 1 root root 98 Aug 21 07:37 /usr/share/nasuni/version.conf\n",
+  "portal_build_version_after_restore": {
+    "build_version": "10.5",
+    "updated_at": "2026-10-31T02:45:32.049152+00:00"
+  }
+}

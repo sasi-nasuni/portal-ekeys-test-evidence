@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-10-31T02:15:36.136791+00:00",
+  "query": "select count(*) n from encryption_keys where account_id='f902fd2c-796c-403b-837b-89d5625319a9' and name ilike '%EdgeConsole%'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "n": 53
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "seq": 11,
+  "phase": "A",
+  "name": "list_filter_escrowed_uploaded",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "is_escrowed": "true",
+    "origin": "uploaded",
+    "limit": 100
+  },
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "all escrowed+uploaded",
+      "ok": true,
+      "observed": 6
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?origin=uploaded&is_escrowed=true&sort_by=name&sort_direction=asc&limit=100",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_parameters_01.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_parameters_02.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_response_01.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_response_02.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_response_03.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_response_04.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_response_05.png",
+    "swagger/011_list_filter_escrowed_uploaded/list_filter_escrowed_uploaded_response_06.png"
+  ],
+  "body": {
+    "items": [
+      {
+        "id": "fa08cab9-9e50-4334-9d10-59acc56daaa4",
+        "name": "E-Keys-EdgeConsole-BE527471",
+        "fingerprint": "D84A67BD382F811CD30B156C6F5DC2E99EC18D08",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "ceccb198-bd42-4f8e-bd62-9ca14983f18b",
+        "name": "E-Keys-EdgeConsole-E097E395",
+        "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+            "volume_name": "E-Keys-Test-01",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "cc2ea9ad-56cb-4cd0-b0a9-94f2d9fb7e3d",
+        "name": "E-Keys-MsgViewer",
+        "fingerprint": "6C8BFF1D491773407101E2391EE2105F11756D4F",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "dd162a3c-02d0-492e-aa46-d6a755c93517",
+        "name": "E-Keys-Upload-Test-2",
+        "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+            "volume_name": "E-Keys-Test-01",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "fd25955f-c95d-4034-ab70-381a69c01d01",
+        "name": "NEA Test Key (valid upload test key) <nea-test@example.com>",
+        "fingerprint": "D14B19907DBE7DF89BFECDAC43C16F263C66CBC2",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "5822e98d-e552-4bed-88bd-26d3d4b04e9c",
+        "name": "Portal-Manual-Upload-D79C7E8B",
+        "fingerprint": "19179C6EC3547AE1E1A2A7ADBC76140F7EF576C7",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 100,
+      "total_pages": 1,
+      "total_items": 6,
+      "page": 1
+    }
+  },
+  "captured_at": "2026-10-31T02:16:45.747Z"
+}

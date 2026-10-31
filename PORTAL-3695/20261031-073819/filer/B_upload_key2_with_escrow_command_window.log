@@ -1,0 +1,5 @@
+# filer 10.84.2.115 broadcast_network.log window 2026-10-30 22:34:37 .. 2026-10-30 22:35:02 (filer local, UTC-4) for task dd07edeb-0e91-46bb-865b-ea2560e1765f (upload_encryption_key -> completed); periodic List* routing omitted; sanitized
+2026-10-30 22:34:45.289 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=dd07edeb-0e91-46bb-865b-ea2560e1765f status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack
+2026-10-30 22:34:45.488 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing UploadEncryptionKeyCommand -> configuration.encryption_keys.upload
+2026-10-30 22:34:55.971 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=dd07edeb-0e91-46bb-865b-ea2560e1765f status=accepted [LONG ENCODED VALUE WITHHELD]
+2026-10-30 22:34:55.971 dev-e-keys-poc nbn-service.py[23239]: INFO: Routing EscrowEncryptionKeyCommand -> configuration.encryption_keys.escrow

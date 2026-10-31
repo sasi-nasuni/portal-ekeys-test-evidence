@@ -1,0 +1,43 @@
+{
+  "seq": 1,
+  "phase": "A",
+  "name": "auth_no_token",
+  "profile": "none",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "limit": 2
+  },
+  "expected_status": 401,
+  "status": 401,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 401",
+      "ok": true,
+      "observed": 401
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=2",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/001_auth_no_token/auth_no_token_parameters_01.png",
+    "swagger/001_auth_no_token/auth_no_token_parameters_02.png",
+    "swagger/001_auth_no_token/auth_no_token_response.png"
+  ],
+  "body": {
+    "message": "No credentials provided",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:15:44.749Z"
+}

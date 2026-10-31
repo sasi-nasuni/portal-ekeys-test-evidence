@@ -1,0 +1,1 @@
+{"suite":"data_integration","cwd":"<portal-repo>/backend/libs/portal-data","command":"uv run --no-sync pytest -q tests/integration/encryption_keys tests/integration/tasks tests/integration/messages tests/integration/edges/test_repo.py","started_at_utc":"2026-10-31T02:12:59Z"}

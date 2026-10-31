@@ -1,0 +1,44 @@
+{
+  "seq": 101,
+  "phase": "B",
+  "name": "B_volume_add_key1",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "path_params": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+  },
+  "params": null,
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/101_B_volume_add_key1/B_volume_add_key1_parameters_01.png",
+    "swagger/101_B_volume_add_key1/B_volume_add_key1_response.png"
+  ],
+  "body": {
+    "id": "122107bc-4baf-4cbd-b978-701f658154ab",
+    "state": "in_progress",
+    "status_url": "/tasks/122107bc-4baf-4cbd-b978-701f658154ab",
+    "can_acknowledge": false
+  },
+  "captured_at": "2026-10-31T02:32:22.730Z"
+}

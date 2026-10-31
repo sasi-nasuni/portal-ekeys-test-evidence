@@ -1,0 +1,55 @@
+{
+  "seq": 9,
+  "phase": "A",
+  "name": "list_search_wildcard_literal",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "search": "%_",
+    "limit": 10
+  },
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "'%_' treated literally (no match-all)",
+      "ok": true,
+      "observed": 0
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?search=%25_&sort_by=name&sort_direction=asc&limit=10",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/009_list_search_wildcard_literal/list_search_wildcard_literal_parameters_01.png",
+    "swagger/009_list_search_wildcard_literal/list_search_wildcard_literal_parameters_02.png",
+    "swagger/009_list_search_wildcard_literal/list_search_wildcard_literal_response.png"
+  ],
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 10,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "captured_at": "2026-10-31T02:16:35.582Z"
+}

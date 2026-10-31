@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-10-31T02:15:35.987678+00:00",
+  "query": "select id, name, fingerprint, appliance_id, is_escrowed, is_backup_key, is_stub from encryption_keys where id='e8abf303-120b-4362-991c-08e2a691b543'",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "id": "e8abf303-120b-4362-991c-08e2a691b543",
+      "name": "E-Keys-EdgeConsole-B47C1504",
+      "fingerprint": "6652B591DF7D61ED4F31234D363D9CE915877CA9",
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "is_escrowed": false,
+      "is_backup_key": false,
+      "is_stub": false
+    }
+  ]
+}

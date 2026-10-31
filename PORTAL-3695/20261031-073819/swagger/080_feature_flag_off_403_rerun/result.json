@@ -1,0 +1,51 @@
+{
+  "seq": 80,
+  "phase": "A",
+  "name": "feature_flag_off_403_rerun",
+  "profile": "tenant2",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "limit": 2
+  },
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    },
+    {
+      "check": "feature-not-enabled message",
+      "ok": true,
+      "observed": {
+        "message": "This feature is not enabled for your account",
+        "detail": null
+      }
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=2",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/080_feature_flag_off_403_rerun/feature_flag_off_403_rerun_parameters_01.png",
+    "swagger/080_feature_flag_off_403_rerun/feature_flag_off_403_rerun_parameters_02.png",
+    "swagger/080_feature_flag_off_403_rerun/feature_flag_off_403_rerun_response.png"
+  ],
+  "body": {
+    "message": "This feature is not enabled for your account",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:23:15.246Z"
+}

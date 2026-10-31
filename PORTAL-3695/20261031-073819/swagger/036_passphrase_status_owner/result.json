@@ -1,0 +1,64 @@
+{
+  "seq": 36,
+  "phase": "A",
+  "name": "passphrase_status_owner",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/escrow-passphrase",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "appliance_id echoed and has_escrow_passphrase bool",
+      "ok": true,
+      "observed": {
+        "has_escrow_passphrase": true,
+        "status": "synced",
+        "tasks": [],
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+      }
+    },
+    {
+      "check": "no passphrase value disclosed",
+      "ok": true,
+      "observed": [
+        "has_escrow_passphrase",
+        "status",
+        "tasks",
+        "appliance_id"
+      ]
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/escrow-passphrase",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/036_passphrase_status_owner/passphrase_status_owner_parameters_01.png",
+    "swagger/036_passphrase_status_owner/passphrase_status_owner_response.png"
+  ],
+  "body": {
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": [],
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "captured_at": "2026-10-31T02:18:52.590Z"
+}

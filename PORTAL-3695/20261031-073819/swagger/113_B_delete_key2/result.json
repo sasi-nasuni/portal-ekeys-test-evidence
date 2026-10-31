@@ -1,0 +1,44 @@
+{
+  "seq": 113,
+  "phase": "B",
+  "name": "B_delete_key2",
+  "profile": "owner",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "61a9aee1-e1db-40c5-84eb-c3dfa7772b46"
+  },
+  "params": null,
+  "expected_status": 202,
+  "status": 202,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 202",
+      "ok": true,
+      "observed": 202
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/61a9aee1-e1db-40c5-84eb-c3dfa7772b46",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/113_B_delete_key2/B_delete_key2_parameters_01.png",
+    "swagger/113_B_delete_key2/B_delete_key2_response.png"
+  ],
+  "body": {
+    "id": "6b801b5a-b657-40a0-ae15-90c900f3422d",
+    "state": "in_progress",
+    "status_url": "/tasks/6b801b5a-b657-40a0-ae15-90c900f3422d",
+    "can_acknowledge": false
+  },
+  "captured_at": "2026-10-31T02:35:34.956Z"
+}

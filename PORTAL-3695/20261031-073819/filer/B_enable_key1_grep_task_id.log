@@ -1,0 +1,2 @@
+# filer 10.84.2.115 grep '731e4482-e550-427b-84bb-404ac85e13b8' /var/log/nasuni/broadcast_network.log captured 2026-10-31T02:34:12.811182+00:00 (sanitized)
+2026-10-30 22:33:57.071 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=731e4482-e550-427b-84bb-404ac85e13b8 status=accepted [LONG ENCODED VALUE WITHHELD]

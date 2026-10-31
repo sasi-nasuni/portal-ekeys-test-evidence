@@ -1,0 +1,2 @@
+# filer 10.84.2.115 grep '635c0788-2a6a-4bd3-9d6d-184550e1795e' /var/log/nasuni/broadcast_network.log captured 2026-10-31T02:30:05.090304+00:00 (sanitized)
+2026-10-30 22:29:19.450 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=635c0788-2a6a-4bd3-9d6d-184550e1795e status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack

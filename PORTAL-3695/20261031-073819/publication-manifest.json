@@ -1,0 +1,21 @@
+{
+  "source_run": "PORTAL-3695/20261031-073819",
+  "files": 817,
+  "pngs": 563,
+  "invalid_png": [],
+  "png_hash_mismatch": [],
+  "normalized_text_files": 19,
+  "omitted": [
+    "harness/ (test programs, token/PGP helpers)",
+    "fixture-ledger.json (fixture IDs and PostHog flag snapshot)",
+    "rendered/html, rendered/jobs.json, rendered/render.cjs (render inputs)"
+  ],
+  "scan_hits": [],
+  "redactions": [
+    {
+      "files_changed": 1,
+      "what": "unit-test generated PGP private-key blocks in automated logs replaced with [TEST PRIVATE KEY WITHHELD]"
+    }
+  ],
+  "remaining_private_key_hits": []
+}

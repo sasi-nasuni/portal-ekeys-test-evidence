@@ -1,0 +1,230 @@
+
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_fresh_tasks_within_grace_are_untouched 
+-------------------------------- live log setup --------------------------------
+2026-10-31 07:45:14 [    INFO] (schema_init.py:23) Created new database 'test_dvdlckad'
+2026-10-31 07:45:15 [    INFO] (migration.py:210) Context impl PostgresqlImpl.
+2026-10-31 07:45:15 [    INFO] (migration.py:213) Will assume transactional DDL.
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade  -> 40d3cdecc811
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 40d3cdecc811 -> 5537c08e16ab, Changed unique username
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 5537c08e16ab -> 265ad2be7f1f, Add permission migration to roles table
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 265ad2be7f1f -> 006dfbef7ade, add web access permissions
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 006dfbef7ade -> af6da4e1b8d8, add_new_nds_permissions
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade af6da4e1b8d8 -> 7a9b6a16d24c, add software download configuration
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 7a9b6a16d24c -> cd8fb0edf3b1, remove edit webaccess from readonly
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade cd8fb0edf3b1 -> 45a3cd77c9e2, combine can download software and can manage download configuration
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 45a3cd77c9e2 -> 0gfxarqg7bfs, rename_uaas_permissions
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 0gfxarqg7bfs -> ac010c7780e1, remove_uaas_permissions_from_readonly_role
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade ac010c7780e1 -> 5c22e84999e4, update_edge_fiq_audit_action_name
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 5c22e84999e4 -> 7e5ef91135ef, update_audit_records_details_action_key
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 7e5ef91135ef -> e5f0c2e08dc5, volume_edge_table_base
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade e5f0c2e08dc5 -> 3c150e07581e, add_task_message_models
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 3c150e07581e -> d4f8c2b1a9e3, backfill_fiq_renamed_fields_in_audit_details
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade d4f8c2b1a9e3 -> 18b0b091dd84, add notifications table with partitions and indexes
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 18b0b091dd84 -> 7cbe8ce353c2, add_view_notifications_permission_to_default_roles
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 7cbe8ce353c2 -> c31b517a460b, rename_audit_records_to_activity_logs
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade c31b517a460b -> 318177f62581, add_manage_licenses_permission
+2026-10-31 07:45:15 [    INFO] (migration.py:621) Running upgrade 318177f62581 -> b7c9d2e4f6a8, expand_edges_and_volumes_tables
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b7c9d2e4f6a8 -> c8e1a4f9b2d6, make_edge_volume_rollout_columns_nullable
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c8e1a4f9b2d6 -> f4e8b2c1d9a0, reapply_edge_volume_not_null_constraints
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade f4e8b2c1d9a0 -> e476e8feaebe, add_normalized_edge_volume_and_task_steps_tables
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade e476e8feaebe -> d1e2f3a4b5c6, add_auth_context_blob_to_tasks
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade d1e2f3a4b5c6 -> b2c3d4e5f6a7, cascade_delete_messages_when_task_deleted
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b2c3d4e5f6a7 -> 9b2d7e6f4a1c, update_view_all_roles_permission_label
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade 9b2d7e6f4a1c -> 18063fc11add, add_ai_activate_index_inventory_perms
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade 18063fc11add -> c5b8d3a4e7f2, consolidate_snapshot_status_and_volume_permissions
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c5b8d3a4e7f2 -> a1b7f4c2e5d3, drop_last_snapshot_status_from_volume_edge_states
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade a1b7f4c2e5d3 -> e9c1f2b7a3d4, add ds_type column to edges_v2
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade e9c1f2b7a3d4 -> a1b2c3d4e5f6, add_ai_activate_sub_tab_perms
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade a1b2c3d4e5f6 -> e0f8f9350fd8, add_volume_details_columns_and_capacity_history
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade e0f8f9350fd8 -> b1e3f5a7c9d2, add_credentials_and_associations_tables
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b1e3f5a7c9d2 -> f3a7c1d8e2b4, backfill_activity_log_details
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade f3a7c1d8e2b4 -> c4a7e91b3d60, widen_volume_numeric_columns
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c4a7e91b3d60 -> d7a2f1c8b9e3, drop_deprecated_volume_scalars
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade d7a2f1c8b9e3 -> c5f8e2b9d1a3, supportability_tables — portal_support and appliance_support
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c5f8e2b9d1a3 -> a3f7c2e91b04, add_volume_id_to_notifications
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade a3f7c2e91b04 -> f6g9h2i3j4k5, add_snapshot_status_updated_at_to_volume_edge_states
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade f6g9h2i3j4k5 -> f0c1e2d3a4b5, add appliance type to edges_v2
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade f0c1e2d3a4b5 -> a3b8c1d7e9f2, encryption_keys_schema
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade a3b8c1d7e9f2 -> b3d5f7a9c1e2, normalise volume_edge_states.last_snapshot_utc to ISO 8601 UTC
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b3d5f7a9c1e2 -> a7b3c9d1e2f4, add messages (account_id, task_id, sent_at DESC) index
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade a7b3c9d1e2f4 -> 7d4e9a1c2b3f, add external activity log metadata
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade 7d4e9a1c2b3f -> 2c6d8e4f9a1b, add_appliance_serial_to_notifications
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade 2c6d8e4f9a1b -> d2a6e9f3c7b1, add_view_appliances_permission
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade d2a6e9f3c7b1 -> a9c4e7f2b6d1, add activity log source event ID
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade a9c4e7f2b6d1 -> e4b8c2d6f1a3, add activity log event identity
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade e4b8c2d6f1a3 -> d9e4a1f7c3b8, add_enterprise_search_schema_and_perms
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade d9e4a1f7c3b8 -> f7a1c3e9b5d2, add messages task id index
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade f7a1c3e9b5d2 -> ae5e7c1b9d3f, add_edit_appliance_details_permission
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade ae5e7c1b9d3f -> b8e5f2c4a1d9, create_volume MVI: Manage Volumes permission
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b8e5f2c4a1d9 -> c9e2b5d8f1a4, add capability columns to edges_v2
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c9e2b5d8f1a4 -> b7d4e2f9a1c6, add task and edge tracking columns
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b7d4e2f9a1c6 -> d4f7a2c9e6b1, backfill AI Activate indexes view permission
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade d4f7a2c9e6b1 -> c0a1d2e3f4b5, add appliance system-detail read-model fields
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c0a1d2e3f4b5 -> d8a3c7e2f901, Add volume connection permissions and owner permission projection.
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade d8a3c7e2f901 -> 8d0f12378b40, add volume type
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade 8d0f12378b40 -> e1a7c3f9b2d6, create_volume MVI: task params and volume_connections surrogate FK
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade e1a7c3f9b2d6 -> f3a7c1d9e5b2, cloud credential canonical values
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade f3a7c1d9e5b2 -> c2d4e6f8a0b1, add message processing status columns
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade c2d4e6f8a0b1 -> b7e2c4a9d1f3, add edges_v2.backup_key_id fk; relax encryption_keys.name; retain is_backup_key
+2026-10-31 07:45:16 [    INFO] (migration.py:621) Running upgrade b7e2c4a9d1f3 -> f3c9a1e7b2d4, Add the task failure timestamp and cleanup indexes.
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:16.431184+00:00
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [  4%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_acknowledged_tasks_are_skipped_end_to_end 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:16.509202+00:00
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:16.524567+00:00
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [  8%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_unacked_add_keys_task_uses_the_flat_task_deadline[5-0] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:16.578203+00:00
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 13%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_unacked_add_keys_task_uses_the_flat_task_deadline[11-1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:16.634181+00:00
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 17%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_expired_appliance_refresh_uses_the_task_deadline 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 21%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_description_update_deadline_releases_the_edge_for_a_retry 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 26%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_rename_volume_deadline_releases_the_volume_for_a_retry 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 30%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_acknowledged_upload_expires_when_backup_result_never_arrives 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:16 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 34%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_fresh_appliance_refresh_stays_active_despite_an_old_step 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 39%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_encryption_key_timeout_uses_generic_reason_without_inferring_step[add-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.071569+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 43%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_encryption_key_timeout_uses_generic_reason_without_inferring_step[disable_after_add-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.139565+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 47%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_encryption_key_timeout_uses_generic_reason_without_inferring_step[standalone_disable-False] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.231302+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 52%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_encryption_key_timeout_uses_generic_reason_without_inferring_step[add-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.292036+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 56%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_encryption_key_timeout_uses_generic_reason_without_inferring_step[disable_after_add-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.384030+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 60%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_encryption_key_timeout_uses_generic_reason_without_inferring_step[standalone_disable-True] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.456737+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [ 65%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_add_keys_expiry_preserves_fresh_and_terminal_tasks[in_progress-1] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 69%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_add_keys_expiry_preserves_fresh_and_terminal_tasks[completed-15] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 73%]
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_add_keys_expiry_preserves_fresh_and_terminal_tasks[failed-15] 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 78%]
+tests/test_task_watchdog.py::TestTaskWatchdogs::test_no_rows_short_circuits_publisher 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.690863+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 82%]
+tests/test_task_watchdog.py::TestTaskWatchdogs::test_expired_rows_emit_task_failed_event 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.692992+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 3 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 3/3 TaskFailedEvent(s)
+PASSED                                                                   [ 86%]
+tests/test_task_watchdog.py::TestTaskWatchdogs::test_publish_failure_is_logged_and_does_not_abort 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.695603+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 2 task(s)
+2026-10-31 07:45:17 [   ERROR] (expire_unacked_tasks.py:143) Watchdog: failed to publish TaskFailedEvent for task 6ae74e89-c186-4692-adb8-52a7fd47f94c
+Traceback (most recent call last):
+  File "<portal-repo>/backend/stacks/portal-db-forge/src/portal_db_forge_stack/task_watchdog/expire_unacked_tasks.py", line 132, in _expire_tasks
+    ok = await portal_event_service.publish_event(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "~/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/unittest/mock.py", line 2335, in _execute_mock_call
+    raise result
+Exception: redis down
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/2 TaskFailedEvent(s)
+PASSED                                                                   [ 91%]
+tests/test_task_watchdog.py::TestTaskWatchdogs::test_update_uses_returning_for_id_and_account_id 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:64) Watchdog: scanning unacknowledged tasks before 2026-10-31T02:05:17.699392+00:00
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 0 task(s)
+PASSED                                                                   [ 95%]
+tests/test_task_watchdog.py::TestTaskWatchdogs::test_timed_out_tasks_emit_a_general_error 
+-------------------------------- live log call ---------------------------------
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:88) Watchdog: scanning acknowledged tasks against configured expiry deadlines
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:125) Watchdog: expired 1 task(s)
+2026-10-31 07:45:17 [    INFO] (expire_unacked_tasks.py:144) Watchdog: published 1/1 TaskFailedEvent(s)
+PASSED                                                                   [100%]
+------------------------------ live log teardown -------------------------------
+2026-10-31 07:45:19 [    INFO] (schema_init.py:29) Dropped database 'test_dvdlckad'
+
+
+=============================== warnings summary ===============================
+tests/integration/test_task_watchdog.py::TestTaskWatchdogs::test_fresh_tasks_within_grace_are_untouched
+  <portal-repo>/backend/stacks/portal-db-forge/.venv/lib/python3.14/site-packages/alembic/config.py:612: DeprecationWarning: No path_separator found in configuration; falling back to legacy splitting on spaces, commas, and colons for prepend_sys_path.  Consider adding path_separator=os to Alembic config.
+    util.warn_deprecated(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: ./automated/watchdog.xml -
+======================== 23 passed, 1 warning in 11.85s ========================
+exit=0

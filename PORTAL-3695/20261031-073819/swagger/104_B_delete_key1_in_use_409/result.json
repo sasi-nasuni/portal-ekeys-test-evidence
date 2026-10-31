@@ -1,0 +1,42 @@
+{
+  "seq": 104,
+  "phase": "B",
+  "name": "B_delete_key1_in_use_409",
+  "profile": "owner",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "8e6f1881-65a5-4597-94f9-c2783c66b8fc"
+  },
+  "params": null,
+  "expected_status": 409,
+  "status": 409,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 409",
+      "ok": true,
+      "observed": 409
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/8e6f1881-65a5-4597-94f9-c2783c66b8fc",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/104_B_delete_key1_in_use_409/B_delete_key1_in_use_409_parameters_01.png",
+    "swagger/104_B_delete_key1_in_use_409/B_delete_key1_in_use_409_response.png"
+  ],
+  "body": {
+    "message": "Cannot delete encryption key with ID 8e6f1881-65a5-4597-94f9-c2783c66b8fc as it is still in use",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:32:58.773Z"
+}

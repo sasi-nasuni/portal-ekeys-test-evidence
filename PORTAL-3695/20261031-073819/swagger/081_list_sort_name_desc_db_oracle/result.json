@@ -1,0 +1,582 @@
+{
+  "seq": 81,
+  "phase": "A",
+  "name": "list_sort_name_desc_db_oracle",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "sort_by": "name",
+    "sort_direction": "desc",
+    "limit": 20
+  },
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "names match DB ORDER BY is_stub desc, name desc (DB collation)",
+      "ok": true,
+      "observed": [
+        "Portal-Upload-Happy-8306D92B",
+        "test-vol-tc-79",
+        "test-vol-demo-check",
+        "test-vol-1-aws",
+        "test-vol1",
+        "test-aws-06",
+        "test-aws-05",
+        "test-aws-04"
+      ]
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=desc&limit=20",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_parameters_01.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_parameters_02.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_01.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_02.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_03.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_04.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_05.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_06.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_07.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_08.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_09.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_10.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_11.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_12.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_13.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_14.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_15.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_16.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_17.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_18.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_19.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_20.png",
+    "swagger/081_list_sort_name_desc_db_oracle/list_sort_name_desc_db_oracle_response_21.png"
+  ],
+  "body": {
+    "items": [
+      {
+        "id": "f91e9f1e-5fc0-4357-bdac-6e423301bc09",
+        "name": "Portal-Upload-Happy-8306D92B",
+        "fingerprint": "735558F135098B8140B37451DD15F494B7A9083D",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": null,
+        "length": null,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": true,
+        "status": "failed",
+        "tasks": [
+          {
+            "task_id": "8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f",
+            "action": "upload_encryption_key",
+            "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+            "state": "failed",
+            "error": {
+              "message": "The operation could not be completed. Please try again.",
+              "detected_at": "2026-10-21T07:05:45.057631Z"
+            },
+            "can_acknowledge": true
+          }
+        ],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "266b6912-2ee9-44ba-8d57-58c2de085399",
+        "name": "test-vol-tc-79",
+        "fingerprint": "FE65142BA8DEDFD630D7E631B9B33EBA7FCD8512",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_7",
+            "volume_name": "test-vol-tc-79",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "0e036d25-9b91-4f16-819f-b5083363471a",
+        "name": "test-vol-demo-check",
+        "fingerprint": "BD5815E2753FE001A605673B8BEB70CA6E76801D",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_8",
+            "volume_name": "test-vol-demo-check",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "5ea5748c-2f1d-479c-a9a5-fe318bb87844",
+        "name": "test-vol-1-aws",
+        "fingerprint": "7490E5EBDB426E33DBDB99B07BB615D2398423D0",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+            "volume_name": "test-aws-03",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_1",
+            "volume_name": "test-vol-1-aws",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "13b345be-ed7d-46d2-b27d-3d556790cb79",
+        "name": "test-vol1",
+        "fingerprint": "9314D71ABAC46F1815FFF7AE57D6A087F81D1F33",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+            "volume_name": "test-aws-03",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "a9f2057f-cb7c-4dc5-b820-6ad7681aae1e",
+        "name": "test-aws-06",
+        "fingerprint": "DADE36CF4A53FB24E80BA7E99D315889B177D0DD",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_6",
+            "volume_name": "test-aws-06",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "b1ff82c9-3748-4be4-9d88-a23597bffc45",
+        "name": "test-aws-05",
+        "fingerprint": "3CBCE09C463BD9FD3857F40FB4EEA11A65BEEBFB",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_5",
+            "volume_name": "test-aws-05",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "f327894e-459e-4a1d-a39d-918da29b710c",
+        "name": "test-aws-04",
+        "fingerprint": "24CF3BD17A1FB1BC008903379504F441CC81E036",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+            "volume_name": "test-aws-03",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          },
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_4",
+            "volume_name": "test-aws-04",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "e178b899-cdce-4042-9dd5-df7fb9592639",
+        "name": "test-aws-03",
+        "fingerprint": "F1A58FCB7082B2D45A1452DAE74C6E0239260937",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+            "volume_name": "test-aws-03",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "8f854028-6c96-4ff9-928c-e5516ef52c91",
+        "name": "test-aws-02",
+        "fingerprint": "789DF67487B6F014B0412540D4BFF26E08E831E0",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+            "volume_name": "test-aws-03",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "5822e98d-e552-4bed-88bd-26d3d4b04e9c",
+        "name": "Portal-Manual-Upload-D79C7E8B",
+        "fingerprint": "19179C6EC3547AE1E1A2A7ADBC76140F7EF576C7",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "backup",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      },
+      {
+        "id": "fd25955f-c95d-4034-ab70-381a69c01d01",
+        "name": "NEA Test Key (valid upload test key) <nea-test@example.com>",
+        "fingerprint": "D14B19907DBE7DF89BFECDAC43C16F263C66CBC2",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "dd162a3c-02d0-492e-aa46-d6a755c93517",
+        "name": "E-Keys-Upload-Test-2",
+        "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+            "volume_name": "E-Keys-Test-01",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "a520e45b-84d6-4b0e-b814-18c209e6d785",
+        "name": "EKEYS-Test-VOL",
+        "fingerprint": "D08D48831B921A7F085F115829276041BF29E385",
+        "appliance_id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "appliance_name": "DEV-ENCR-KEYS-2",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "21def027-f241-46a4-be67-b69b8e2c9889",
+        "name": "E-Keys-Test-01",
+        "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+            "volume_name": "E-Keys-Test-01",
+            "state": "disabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "f34e0e70-d139-4472-8878-3bd8cd4b75c0",
+        "name": "E-Keys-MsgViewer",
+        "fingerprint": "9C46BE25487AF95A481338614886D0BA45E7B722",
+        "appliance_id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "appliance_name": "DEV-ENCR-KEYS-2",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "f2e1f1e3-c405-4554-b029-db45b944aede",
+        "name": "E-Keys-MsgViewer",
+        "fingerprint": "63C73D75FA74D80992E6BFD5A92AC4D53FB1C2B6",
+        "appliance_id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "appliance_name": "DEV-ENCR-KEYS-2",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "cc2ea9ad-56cb-4cd0-b0a9-94f2d9fb7e3d",
+        "name": "E-Keys-MsgViewer",
+        "fingerprint": "6C8BFF1D491773407101E2391EE2105F11756D4F",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": false
+      },
+      {
+        "id": "5ac4e010-4f50-47e4-baa6-c078937d38f1",
+        "name": "E-Keys-MsgViewer",
+        "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+            "volume_name": "E-Keys-Test-01",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": false,
+        "is_backup_key": false
+      },
+      {
+        "id": "9d77eb5e-cdd9-4c3d-afb5-af04d213b0b3",
+        "name": "E-Keys-EdgeConsole-EE786D0B",
+        "fingerprint": "CDA788620FE65DA3D3F53B76F96B22FD176A6F34",
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "appliance_name": "DEV-E-KEYS-POC",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "volume",
+        "origin": "uploaded",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": false,
+        "is_backup_key": false
+      }
+    ],
+    "metadata": {
+      "iterator_id": "a115b442-30d8-4ae9-8d9e-4e4ea746fa31",
+      "page_size": 20,
+      "total_pages": 4,
+      "total_items": 75,
+      "page": 1
+    }
+  },
+  "captured_at": "2026-10-31T02:23:59.116Z"
+}

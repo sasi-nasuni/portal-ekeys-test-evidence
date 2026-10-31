@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-10-31T02:32:33.038737+00:00",
+  "query": "select name, state, reason, created_at, updated_at from task_steps where task_id='122107bc-4baf-4cbd-b978-701f658154ab' order by created_at",
+  "params": "",
+  "transaction": "READ ONLY",
+  "rows": [
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:32:21.120001+00:00",
+      "updated_at": "2026-10-31T02:32:26.514601+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-10-31T02:32:21.120001+00:00",
+      "updated_at": "2026-10-31T02:32:26.523749+00:00"
+    }
+  ]
+}

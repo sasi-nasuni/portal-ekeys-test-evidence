@@ -1,0 +1,39 @@
+{
+  "seq": 121,
+  "phase": "B",
+  "name": "B_ack_failed_upload_task",
+  "profile": "owner",
+  "method": "POST",
+  "path_template": "/tasks/{task_id}/acknowledge",
+  "path_params": {
+    "task_id": "8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f"
+  },
+  "params": null,
+  "expected_status": 204,
+  "status": 204,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 204",
+      "ok": true,
+      "observed": 204
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/tasks/8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f/acknowledge",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/121_B_ack_failed_upload_task/B_ack_failed_upload_task_parameters_01.png",
+    "swagger/121_B_ack_failed_upload_task/B_ack_failed_upload_task_response.png"
+  ],
+  "body": "",
+  "captured_at": "2026-10-31T02:37:07.130Z"
+}

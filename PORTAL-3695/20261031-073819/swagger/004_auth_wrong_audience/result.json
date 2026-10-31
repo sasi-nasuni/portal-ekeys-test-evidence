@@ -1,0 +1,43 @@
+{
+  "seq": 4,
+  "phase": "A",
+  "name": "auth_wrong_audience",
+  "profile": "wrongaud",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "limit": 2
+  },
+  "expected_status": 401,
+  "status": 401,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 401",
+      "ok": true,
+      "observed": 401
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&limit=2",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/004_auth_wrong_audience/auth_wrong_audience_parameters_01.png",
+    "swagger/004_auth_wrong_audience/auth_wrong_audience_parameters_02.png",
+    "swagger/004_auth_wrong_audience/auth_wrong_audience_response.png"
+  ],
+  "body": {
+    "message": "Token not valid for this service",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:16:04.534Z"
+}

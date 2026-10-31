@@ -1,0 +1,1 @@
+{"suite":"eventhub","cwd":"<portal-repo>/backend/stacks/portal-eventhub","command":"uv run --no-sync pytest -q tests/integration/processors/encryption_keys tests/integration/test_handler_idempotency.py tests/test_base_processor.py tests/test_task_step.py tests/test_uaas_processor.py tests/unit/processors","started_at_utc":"2026-10-31T02:14:37Z"}

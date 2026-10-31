@@ -1,0 +1,42 @@
+{
+  "seq": 44,
+  "phase": "A",
+  "name": "task_ack_noperm_403",
+  "profile": "noperm",
+  "method": "POST",
+  "path_template": "/tasks/{task_id}/acknowledge",
+  "path_params": {
+    "task_id": "8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f"
+  },
+  "params": null,
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "Expected 403 for a user without encryption-key manage permission; adjust if the ack policy differs.",
+  "request_url": "http://127.0.0.1:8000/tasks/8cf19b2b-6c5d-47a3-9c72-5e8fc527ec5f/acknowledge",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/044_task_ack_noperm_403/task_ack_noperm_403_parameters_01.png",
+    "swagger/044_task_ack_noperm_403/task_ack_noperm_403_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permission: Manage Volume Encryption Keys",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:19:28.810Z"
+}

@@ -1,0 +1,58 @@
+{
+  "seq": 72,
+  "phase": "A",
+  "name": "summary_volview_gated_rerun",
+  "profile": "volview",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "escrow/backup/passphrase fields omitted",
+      "ok": true,
+      "observed": [
+        "total",
+        "generated_count"
+      ]
+    },
+    {
+      "check": "base counts present",
+      "ok": true,
+      "observed": [
+        "total",
+        "generated_count"
+      ]
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/summary",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/072_summary_volview_gated_rerun/summary_volview_gated_rerun_parameters_01.png",
+    "swagger/072_summary_volview_gated_rerun/summary_volview_gated_rerun_response.png"
+  ],
+  "body": {
+    "total": 59,
+    "generated_count": 2
+  },
+  "captured_at": "2026-10-31T02:22:39.396Z"
+}

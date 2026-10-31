@@ -1,0 +1,76 @@
+{
+  "seq": 28,
+  "phase": "A",
+  "name": "summary_owner",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "path_params": {
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9"
+  },
+  "params": null,
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "total == DB non-stub POC keys",
+      "ok": true,
+      "observed": [
+        59,
+        59
+      ]
+    },
+    {
+      "check": "generated_count == DB",
+      "ok": true,
+      "observed": 2
+    },
+    {
+      "check": "escrowed == DB",
+      "ok": true,
+      "observed": 7
+    },
+    {
+      "check": "backup_key + has_escrow_passphrase present",
+      "ok": true,
+      "observed": null
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/summary",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/028_summary_owner/summary_owner_parameters_01.png",
+    "swagger/028_summary_owner/summary_owner_response.png"
+  ],
+  "body": {
+    "total": 59,
+    "generated_count": 2,
+    "escrowed": 7,
+    "not_escrowed": 52,
+    "backup_key": {
+      "id": "5822e98d-e552-4bed-88bd-26d3d4b04e9c",
+      "name": "Portal-Manual-Upload-D79C7E8B",
+      "fingerprint": "19179C6EC3547AE1E1A2A7ADBC76140F7EF576C7",
+      "is_escrowed": true
+    },
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": []
+  },
+  "captured_at": "2026-10-31T02:18:09.154Z"
+}

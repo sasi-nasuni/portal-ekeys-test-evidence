@@ -1,0 +1,40 @@
+{
+  "seq": 45,
+  "phase": "A",
+  "name": "escrow_noperm_403",
+  "profile": "noperm",
+  "method": "POST",
+  "path_template": "/encryption-keys/escrow",
+  "path_params": null,
+  "params": null,
+  "expected_status": 403,
+  "status": 403,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 403",
+      "ok": true,
+      "observed": 403
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/escrow",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/045_escrow_noperm_403/escrow_noperm_403_parameters_01.png",
+    "swagger/045_escrow_noperm_403/escrow_noperm_403_response.png"
+  ],
+  "body": {
+    "message": "User does not have the required permissions: Escrow Keys",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:19:33.053Z"
+}

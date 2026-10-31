@@ -1,0 +1,42 @@
+{
+  "seq": 49,
+  "phase": "A",
+  "name": "delete_in_use_409",
+  "profile": "owner",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "21def027-f241-46a4-be67-b69b8e2c9889"
+  },
+  "params": null,
+  "expected_status": 409,
+  "status": 409,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 409",
+      "ok": true,
+      "observed": 409
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/21def027-f241-46a4-be67-b69b8e2c9889",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/049_delete_in_use_409/delete_in_use_409_parameters_01.png",
+    "swagger/049_delete_in_use_409/delete_in_use_409_response.png"
+  ],
+  "body": {
+    "message": "Cannot delete encryption key with ID 21def027-f241-46a4-be67-b69b8e2c9889 as it is still in use",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:19:52.719Z"
+}

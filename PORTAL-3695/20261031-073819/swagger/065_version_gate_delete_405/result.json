@@ -1,0 +1,42 @@
+{
+  "seq": 65,
+  "phase": "A",
+  "name": "version_gate_delete_405",
+  "profile": "owner",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "path_params": {
+    "key_id": "e8abf303-120b-4362-991c-08e2a691b543"
+  },
+  "params": null,
+  "expected_status": 405,
+  "status": 405,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 405",
+      "ok": true,
+      "observed": 405
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys/e8abf303-120b-4362-991c-08e2a691b543",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/065_version_gate_delete_405/version_gate_delete_405_parameters_01.png",
+    "swagger/065_version_gate_delete_405/version_gate_delete_405_response.png"
+  ],
+  "body": {
+    "message": "Cannot delete encryption key with ID e8abf303-120b-4362-991c-08e2a691b543: Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "captured_at": "2026-10-31T02:21:01.981Z"
+}

@@ -1,0 +1,112 @@
+{
+  "seq": 6,
+  "phase": "A",
+  "name": "list_owner_page2_cursor",
+  "profile": "owner",
+  "method": "GET",
+  "path_template": "/encryption-keys",
+  "path_params": null,
+  "params": {
+    "limit": 2,
+    "iterator_id": "baa701df-cd24-4b4a-a38d-51bef1bec84f",
+    "page": 2
+  },
+  "expected_status": 200,
+  "status": 200,
+  "passed": true,
+  "assertions": [
+    {
+      "check": "HTTP status == 200",
+      "ok": true,
+      "observed": 200
+    },
+    {
+      "check": "page == 2",
+      "ok": true,
+      "observed": 2
+    },
+    {
+      "check": "no overlap with page 1",
+      "ok": true,
+      "observed": [
+        "7dae0cd6-16e0-4056-abd5-f03d2cf179d1",
+        "9f13532b-8828-40f8-8300-32ae16b52fbd"
+      ]
+    }
+  ],
+  "note": "",
+  "request_url": "http://127.0.0.1:8000/encryption-keys?sort_by=name&sort_direction=asc&iterator_id=baa701df-cd24-4b4a-a38d-51bef1bec84f&page=2&limit=2",
+  "transport_note": null,
+  "error": null,
+  "error_stage": null,
+  "unsupported": null,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/006_list_owner_page2_cursor/list_owner_page2_cursor_parameters_01.png",
+    "swagger/006_list_owner_page2_cursor/list_owner_page2_cursor_parameters_02.png",
+    "swagger/006_list_owner_page2_cursor/list_owner_page2_cursor_response_01.png",
+    "swagger/006_list_owner_page2_cursor/list_owner_page2_cursor_response_02.png",
+    "swagger/006_list_owner_page2_cursor/list_owner_page2_cursor_response_03.png"
+  ],
+  "body": {
+    "items": [
+      {
+        "id": "7dae0cd6-16e0-4056-abd5-f03d2cf179d1",
+        "name": "config-backup-key",
+        "fingerprint": "75EB5275C22B666F10CA9021E7A3ED356FEE9DEA",
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "backup",
+        "origin": "generated",
+        "used": true,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [
+          {
+            "volume_guid": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+            "volume_name": "test-aws-03",
+            "state": "enabled",
+            "is_stub": false,
+            "status": "synced",
+            "tasks": []
+          }
+        ],
+        "is_escrowed": true,
+        "is_backup_key": true
+      },
+      {
+        "id": "9f13532b-8828-40f8-8300-32ae16b52fbd",
+        "name": "config-backup-key",
+        "fingerprint": "CF3957F989A3F17202A41B287B1DC82D7B11F78A",
+        "appliance_id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "appliance_name": "DEV-ENCR-KEYS-2",
+        "algorithm": "rsa",
+        "length": 3072,
+        "type": "backup",
+        "origin": "generated",
+        "used": false,
+        "is_stub": false,
+        "status": "synced",
+        "tasks": [],
+        "volumes": [],
+        "is_escrowed": true,
+        "is_backup_key": true
+      }
+    ],
+    "metadata": {
+      "iterator_id": "bf7ca4a2-100a-4d37-b8c9-1d3321673558",
+      "page_size": 2,
+      "total_pages": 38,
+      "total_items": 75,
+      "page": 2
+    }
+  },
+  "captured_at": "2026-10-31T02:16:16.923Z"
+}
