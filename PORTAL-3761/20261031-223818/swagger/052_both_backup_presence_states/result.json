@@ -1,0 +1,24 @@
+{
+  "id": 52,
+  "name": "both_backup_presence_states",
+  "unsupported": true,
+  "reason": "Swagger has one dropdown for backup_key",
+  "screenshots": [
+    "swagger/052_both_backup_presence_states/both_backup_presence_states_parameters_01.png",
+    "swagger/052_both_backup_presence_states/both_backup_presence_states_parameters_02.png"
+  ],
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "backup_key": [
+      "present",
+      "missing"
+    ]
+  },
+  "outcome": "FAIL",
+  "assertion_error": "Swagger has one dropdown for backup_key"
+}

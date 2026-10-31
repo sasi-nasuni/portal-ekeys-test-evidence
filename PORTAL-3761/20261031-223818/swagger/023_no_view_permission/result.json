@@ -1,0 +1,37 @@
+{
+  "id": 23,
+  "name": "no_view_permission",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: View Volume Encryption Keys",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/023_no_view_permission/no_view_permission_parameters_01.png",
+    "swagger/023_no_view_permission/no_view_permission_parameters_02.png",
+    "swagger/023_no_view_permission/no_view_permission_response.png"
+  ],
+  "captured_at": "2026-10-31T22:44:59.675Z",
+  "expected_status": 403,
+  "profile": "no_permission",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {},
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

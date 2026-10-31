@@ -1,0 +1,53 @@
+{
+  "id": 71,
+  "name": "bad_iterator_uuid",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "query",
+          "iterator_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `u` at 5",
+        "input": "bad-uuid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `u` at 5"
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25&iterator_id=bad-uuid",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/071_bad_iterator_uuid/bad_iterator_uuid_parameters_01.png",
+    "swagger/071_bad_iterator_uuid/bad_iterator_uuid_parameters_02.png",
+    "swagger/071_bad_iterator_uuid/bad_iterator_uuid_response.png"
+  ],
+  "captured_at": "2026-10-31T22:51:21.195Z",
+  "expected_status": 422,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "iterator_id": "bad-uuid"
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

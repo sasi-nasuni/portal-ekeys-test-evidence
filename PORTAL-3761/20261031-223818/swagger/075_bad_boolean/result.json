@@ -1,0 +1,53 @@
+{
+  "id": 75,
+  "name": "bad_boolean",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "bool_parsing",
+        "loc": [
+          "query",
+          "is_escrowed",
+          0
+        ],
+        "msg": "Input should be a valid boolean, unable to interpret input",
+        "input": "maybe"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25&is_escrowed=maybe",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/075_bad_boolean/bad_boolean_parameters_01.png",
+    "swagger/075_bad_boolean/bad_boolean_parameters_02.png",
+    "swagger/075_bad_boolean/bad_boolean_response.png"
+  ],
+  "captured_at": "2026-10-31T22:51:51.818Z",
+  "expected_status": 422,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "is_escrowed": [
+      "maybe"
+    ]
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

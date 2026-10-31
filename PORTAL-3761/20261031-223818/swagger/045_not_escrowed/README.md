@@ -1,0 +1,518 @@
+# 045 — not_escrowed
+
+**PASS — HTTP 200**
+
+Source: Served Swagger UI Try it out / Execute. Swagger displayed status, Request URL, and complete body matched the actual network response.
+
+Permission profile: `full`. Fixture tenant: `A`. Escrow license control: `True`. Feature flag control: `True`.
+
+## Actual request
+
+`GET http://127.0.0.1:8000/edges/encryption-keys?is_escrowed=false&sort_by=appliance_name&sort_direction=asc&limit=25`
+
+Intended query: `{"is_escrowed": [false]}`
+
+## Assertions
+
+- Exact parent membership and order
+- Current filtered total_items
+- Current total_pages
+- Page and appliance limit metadata
+- Exact account-wide independently gated readiness counts
+- Appliance identity and volume role
+- Complete matching child set and order
+- Backup summary visibility
+- Independent assigned-backup summary
+- Passphrase fields, status and tasks visibility
+- Actual passphrase presence
+- Exact active/unacknowledged task membership
+- Appliance task rollup
+- Child id
+- Child name
+- Child fingerprint
+- Child origin
+- Child used
+- Child is_stub
+- Child type from assigned backup pointer
+- Child permission/license field omission
+- Child escrow fact
+- Child backup fact
+- Task state and action
+- Acknowledgement capability respects management permission
+- Child task status rollup
+
+## Response
+
+```json
+{
+  "items": [
+    {
+      "id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+      "name": "PORTAL3761TEST-20261031-223818-A-Alpha Owner",
+      "volume_role": "owner",
+      "keys": [
+        {
+          "id": "77075460-20ce-48f3-8f4c-f7be6b4cd98a",
+          "name": "PORTAL3761TEST-20261031-223818-A-Failed Upload",
+          "fingerprint": "27DF297A3B97468B98400BC55A4FCC6FABCDEF12",
+          "algorithm": null,
+          "length": null,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": true,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "e2aa5016-c1fb-4ed0-9094-56190e6af39a",
+              "action": "upload_encryption_key",
+              "executor_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+              "state": "failed",
+              "error": {
+                "message": "Synthetic test failure",
+                "detected_at": "2026-10-31T22:39:01.263958Z"
+              },
+              "can_acknowledge": true
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "0cfc6af7-fa04-4f39-814a-3f4a6717c0b3",
+          "name": null,
+          "fingerprint": "CF30605E74C348A78B05A4AF8FCBA223ABCDEF12",
+          "algorithm": null,
+          "length": null,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": true,
+          "status": "creating",
+          "tasks": [
+            {
+              "task_id": "aa80a492-4751-47cc-a2ce-dfbaa252db6e",
+              "action": "upload_encryption_key",
+              "executor_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+              "state": "in_progress",
+              "error": null,
+              "can_acknowledge": false
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "fafb817f-2f4d-4ecf-8f01-ae3f8dd1eb01",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 01",
+          "fingerprint": "857D0791D6EB4F43929990EDD1EF679EABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "bef923d9-b7e7-4840-8aa1-f30d3b2025c5",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 02",
+          "fingerprint": "AC7CEDDF873F4670A8443FCAFE649FCEABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "ea67bc06-af21-4958-9057-944064ae72b3",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 04",
+          "fingerprint": "9D5D2B634A87424FA57F8F5347E87AA5ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "27d48a83-bca2-4123-9835-a8784dd4cc24",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 05",
+          "fingerprint": "61788EB37E2E473080E136746D4FEA1AABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "ee493e72-dff2-4026-9905-d18ee1a14390",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 07",
+          "fingerprint": "89C546ED941142C3A63C015398275DDEABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "bd4bcadd-7896-434b-a026-6a3aff608796",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 08",
+          "fingerprint": "F289BC6F53824108A065A02B12972F39ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "2c393505-0791-46e1-9de9-3fc8f3c45a44",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 10",
+          "fingerprint": "1B2D509B086149B28ED282579BD82C02ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "c46af739-108f-43e1-b617-dafb9fe89e0a",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 11",
+          "fingerprint": "51B0B121F71149AA8B0B30D2A01DBAFBABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "97a9f4a4-321a-410c-a004-f4487da54429",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 13",
+          "fingerprint": "C8252EB6E07E4F8A94FB2D65934CE16CABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "f3bb7ee7-18a2-4e23-bd39-8cebaed86345",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 14",
+          "fingerprint": "BAD2091164C943758584A12E6B9AC5B9ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "4a66058e-c84c-4353-8eeb-c8e1b5d88b1d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 16",
+          "fingerprint": "128F7B1E209B46BF9018C87C969E67F9ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "c387136b-cc86-404b-8c06-56b749fbcf92",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 17",
+          "fingerprint": "133AA9A3648D411EB32C09F636E4C2C1ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "5626592f-d57a-41a4-98a4-16f284e1cbeb",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 19",
+          "fingerprint": "0AD0A2486E354499BCB81FF13A4F519EABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "bb7cb656-8a00-43d2-8db2-41b52e8fef99",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 20",
+          "fingerprint": "FD8D5B79E0434988B4E50E88B12111E1ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "8ed71bda-1284-4d3b-abe1-6f0ef2a1f5e2",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 22",
+          "fingerprint": "1500670F9FD04B43BCE6CF812F5FA201ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "eb84a78c-cfcf-4be8-92d7-a5209446686e",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 23",
+          "fingerprint": "DFE30F0E285A4E7F9EEBD10EC2ADBBC0ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "86edeb21-ded5-48e2-9662-6ccbc8b62d1f",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 25",
+          "fingerprint": "D4FB313051B74E7EA3F13AF3CFFE5E8EABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "4e94aae7-6953-4ce6-b639-df6e76b68aa1",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 26",
+          "fingerprint": "9D326A2F314845EF8D3F3A278D16D180ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "backup_key": null,
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+      "name": "PORTAL3761TEST-20261031-223818-A-Beta Remote",
+      "volume_role": "remote_only",
+      "keys": [
+        {
+          "id": "9a6b5a08-838e-45c2-83f6-3fe976eecff0",
+          "name": "PORTAL3761TEST-20261031-223818-A-Backup Secret",
+          "fingerprint": "BB6F7247174F4290826E6D7BDBE302ACABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "backup",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": true
+        },
+        {
+          "id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "name": "PORTAL3761TEST-20261031-223818-A-Used Uploaded",
+          "fingerprint": "8023E986028840F590CD89A5342639CCABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "e251caec-f788-4482-b295-27a10f1633d6",
+              "action": "delete_encryption_key",
+              "executor_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+              "state": "failed",
+              "error": {
+                "message": "Synthetic test failure",
+                "detected_at": "2026-10-31T22:39:01.263958Z"
+              },
+              "can_acknowledge": true
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "backup_key": {
+        "id": "9a6b5a08-838e-45c2-83f6-3fe976eecff0",
+        "name": "PORTAL3761TEST-20261031-223818-A-Backup Secret",
+        "fingerprint": "BB6F7247174F4290826E6D7BDBE302ACABCDEF12",
+        "is_escrowed": false
+      },
+      "has_escrow_passphrase": false,
+      "status": "failed",
+      "tasks": [
+        {
+          "task_id": "037c5658-b05f-455e-9dd8-8430e4006dc8",
+          "action": "update_escrow_passphrase",
+          "executor_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "state": "failed",
+          "error": {
+            "message": "Synthetic test failure",
+            "detected_at": "2026-10-31T22:39:01.263958Z"
+          },
+          "can_acknowledge": true
+        }
+      ]
+    },
+    {
+      "id": "b2538a13-3639-44ee-a1ce-f717ee2d8643",
+      "name": "PORTAL3761TEST-20261031-223818-A-Gamma Strider",
+      "volume_role": "remote_only",
+      "keys": [
+        {
+          "id": "518611ec-f932-4816-9582-0bfc938613f1",
+          "name": "PORTAL3761TEST-20261031-223818-A-Strider Uploaded",
+          "fingerprint": "A3D5A7092BFD453B9097241C21C8C422ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "backup_key": null,
+      "has_escrow_passphrase": false,
+      "status": "synced",
+      "tasks": []
+    }
+  ],
+  "metadata": {
+    "iterator_id": null,
+    "page_size": 25,
+    "total_pages": 1,
+    "total_items": 3,
+    "page": 1
+  },
+  "dr_counts": {
+    "appliances_without_passphrase": 3,
+    "remote_appliances_without_backup_key": 1,
+    "not_escrowed": 12
+  }
+}
+```
+
+## Native Swagger screenshots
+
+All parts of long responses are linked in capture order. The curl/authorization controls are masked.
+
+- [not_escrowed_parameters_01.png](not_escrowed_parameters_01.png)
+- [not_escrowed_parameters_02.png](not_escrowed_parameters_02.png)
+- [not_escrowed_response_01.png](not_escrowed_response_01.png)
+- [not_escrowed_response_02.png](not_escrowed_response_02.png)
+- [not_escrowed_response_03.png](not_escrowed_response_03.png)
+- [not_escrowed_response_04.png](not_escrowed_response_04.png)
+- [not_escrowed_response_05.png](not_escrowed_response_05.png)
+- [not_escrowed_response_06.png](not_escrowed_response_06.png)
+- [not_escrowed_response_07.png](not_escrowed_response_07.png)
+- [not_escrowed_response_08.png](not_escrowed_response_08.png)
+- [not_escrowed_response_09.png](not_escrowed_response_09.png)
+- [not_escrowed_response_10.png](not_escrowed_response_10.png)
+- [not_escrowed_response_11.png](not_escrowed_response_11.png)
+- [not_escrowed_response_12.png](not_escrowed_response_12.png)
+- [not_escrowed_response_13.png](not_escrowed_response_13.png)
+- [not_escrowed_response_14.png](not_escrowed_response_14.png)
+- [not_escrowed_response_15.png](not_escrowed_response_15.png)
+- [not_escrowed_response_16.png](not_escrowed_response_16.png)
+- [not_escrowed_response_17.png](not_escrowed_response_17.png)
+- [not_escrowed_response_18.png](not_escrowed_response_18.png)
+
+[Machine result](result.json)

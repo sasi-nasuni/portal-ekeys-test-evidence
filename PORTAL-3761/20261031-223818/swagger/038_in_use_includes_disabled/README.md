@@ -1,0 +1,251 @@
+# 038 — in_use_includes_disabled
+
+**PASS — HTTP 200**
+
+Source: Served Swagger UI Try it out / Execute. Swagger displayed status, Request URL, and complete body matched the actual network response.
+
+Permission profile: `full`. Fixture tenant: `A`. Escrow license control: `True`. Feature flag control: `True`.
+
+## Actual request
+
+`GET http://127.0.0.1:8000/edges/encryption-keys?state=in_use&sort_by=appliance_name&sort_direction=asc&limit=25`
+
+Intended query: `{"state": ["in_use"]}`
+
+## Assertions
+
+- Exact parent membership and order
+- Current filtered total_items
+- Current total_pages
+- Page and appliance limit metadata
+- Exact account-wide independently gated readiness counts
+- Appliance identity and volume role
+- Complete matching child set and order
+- Backup summary visibility
+- Independent assigned-backup summary
+- Passphrase fields, status and tasks visibility
+- Actual passphrase presence
+- Exact active/unacknowledged task membership
+- Appliance task rollup
+- Child id
+- Child name
+- Child fingerprint
+- Child origin
+- Child used
+- Child is_stub
+- Child type from assigned backup pointer
+- Child permission/license field omission
+- Child escrow fact
+- Child backup fact
+- Child task status rollup
+- Task state and action
+- Acknowledgement capability respects management permission
+
+## Response
+
+```json
+{
+  "items": [
+    {
+      "id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+      "name": "PORTAL3761TEST-20261031-223818-A-Alpha Owner",
+      "volume_role": "owner",
+      "keys": [
+        {
+          "id": "c31df2f9-bdd6-4b88-9397-4edd9f207679",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 00",
+          "fingerprint": "C12CC572D7B9424D97F090093F9177B6ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": true,
+          "is_backup_key": false
+        },
+        {
+          "id": "ea67bc06-af21-4958-9057-944064ae72b3",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 04",
+          "fingerprint": "9D5D2B634A87424FA57F8F5347E87AA5ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "bd4bcadd-7896-434b-a026-6a3aff608796",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 08",
+          "fingerprint": "F289BC6F53824108A065A02B12972F39ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "cc333165-1d67-4dff-8333-5a566e827a8b",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 12",
+          "fingerprint": "5685B9D66C054473B7821DC3582B704FABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": true,
+          "is_backup_key": false
+        },
+        {
+          "id": "4a66058e-c84c-4353-8eeb-c8e1b5d88b1d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 16",
+          "fingerprint": "128F7B1E209B46BF9018C87C969E67F9ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "bb7cb656-8a00-43d2-8db2-41b52e8fef99",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 20",
+          "fingerprint": "FD8D5B79E0434988B4E50E88B12111E1ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": false,
+          "is_backup_key": false
+        },
+        {
+          "id": "86d8cdf5-339a-4a6c-8c0e-5ebe8778da6c",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 24",
+          "fingerprint": "7D78AB67267D49228B70C2264E8EC13AABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": true,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": true,
+          "is_backup_key": false
+        }
+      ],
+      "backup_key": null,
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+      "name": "PORTAL3761TEST-20261031-223818-A-Beta Remote",
+      "volume_role": "remote_only",
+      "keys": [
+        {
+          "id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "name": "PORTAL3761TEST-20261031-223818-A-Used Uploaded",
+          "fingerprint": "8023E986028840F590CD89A5342639CCABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "uploaded",
+          "used": true,
+          "is_stub": false,
+          "status": "failed",
+          "tasks": [
+            {
+              "task_id": "e251caec-f788-4482-b295-27a10f1633d6",
+              "action": "delete_encryption_key",
+              "executor_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+              "state": "failed",
+              "error": {
+                "message": "Synthetic test failure",
+                "detected_at": "2026-10-31T22:39:01.263958Z"
+              },
+              "can_acknowledge": true
+            }
+          ],
+          "is_escrowed": false,
+          "is_backup_key": false
+        }
+      ],
+      "backup_key": {
+        "id": "9a6b5a08-838e-45c2-83f6-3fe976eecff0",
+        "name": "PORTAL3761TEST-20261031-223818-A-Backup Secret",
+        "fingerprint": "BB6F7247174F4290826E6D7BDBE302ACABCDEF12",
+        "is_escrowed": false
+      },
+      "has_escrow_passphrase": false,
+      "status": "failed",
+      "tasks": [
+        {
+          "task_id": "037c5658-b05f-455e-9dd8-8430e4006dc8",
+          "action": "update_escrow_passphrase",
+          "executor_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "state": "failed",
+          "error": {
+            "message": "Synthetic test failure",
+            "detected_at": "2026-10-31T22:39:01.263958Z"
+          },
+          "can_acknowledge": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "iterator_id": null,
+    "page_size": 25,
+    "total_pages": 1,
+    "total_items": 2,
+    "page": 1
+  },
+  "dr_counts": {
+    "appliances_without_passphrase": 3,
+    "remote_appliances_without_backup_key": 1,
+    "not_escrowed": 12
+  }
+}
+```
+
+## Native Swagger screenshots
+
+All parts of long responses are linked in capture order. The curl/authorization controls are masked.
+
+- [in_use_includes_disabled_parameters_01.png](in_use_includes_disabled_parameters_01.png)
+- [in_use_includes_disabled_parameters_02.png](in_use_includes_disabled_parameters_02.png)
+- [in_use_includes_disabled_response_01.png](in_use_includes_disabled_response_01.png)
+- [in_use_includes_disabled_response_02.png](in_use_includes_disabled_response_02.png)
+- [in_use_includes_disabled_response_03.png](in_use_includes_disabled_response_03.png)
+- [in_use_includes_disabled_response_04.png](in_use_includes_disabled_response_04.png)
+- [in_use_includes_disabled_response_05.png](in_use_includes_disabled_response_05.png)
+- [in_use_includes_disabled_response_06.png](in_use_includes_disabled_response_06.png)
+- [in_use_includes_disabled_response_07.png](in_use_includes_disabled_response_07.png)
+- [in_use_includes_disabled_response_08.png](in_use_includes_disabled_response_08.png)
+
+[Machine result](result.json)

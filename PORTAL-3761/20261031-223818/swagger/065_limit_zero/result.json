@@ -1,0 +1,53 @@
+{
+  "id": 65,
+  "name": "limit_zero",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "greater_than_equal",
+        "loc": [
+          "query",
+          "limit"
+        ],
+        "msg": "Input should be greater than or equal to 1",
+        "input": "0",
+        "ctx": {
+          "ge": 1
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=0",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/065_limit_zero/limit_zero_parameters_01.png",
+    "swagger/065_limit_zero/limit_zero_parameters_02.png",
+    "swagger/065_limit_zero/limit_zero_response.png"
+  ],
+  "captured_at": "2026-10-31T22:50:29.180Z",
+  "expected_status": 422,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "limit": 0
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

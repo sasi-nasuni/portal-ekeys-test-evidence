@@ -1,0 +1,29 @@
+{
+  "id": 91,
+  "name": "normalized_cursor_first",
+  "unsupported": true,
+  "reason": "Swagger has one dropdown for origin",
+  "screenshots": [
+    "swagger/091_normalized_cursor_first/normalized_cursor_first_parameters_01.png",
+    "swagger/091_normalized_cursor_first/normalized_cursor_first_parameters_02.png"
+  ],
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "appliance_ids": [
+      "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+      "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa"
+    ],
+    "origin": [
+      "generated",
+      "uploaded"
+    ],
+    "limit": 1
+  },
+  "outcome": "FAIL",
+  "assertion_error": "Swagger has one dropdown for origin"
+}

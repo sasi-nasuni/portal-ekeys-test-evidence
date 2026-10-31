@@ -1,0 +1,940 @@
+{
+  "source": "Actual PostgreSQL query results, not pgAdmin screenshots",
+  "scope": "Exact synthetic account UUIDs only",
+  "queries": {
+    "appliances": {
+      "sql": "SELECT account_id,id,name,is_stub,appliance_type,has_escrow_passphrase,backup_key_id FROM edges_v2 WHERE account_id=ANY(%s::uuid[]) ORDER BY account_id,name,id",
+      "rows": [
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "id": "6056bd0e-d29b-4ab8-a0d8-1b3af01aa554",
+          "name": "PORTAL3761TEST-20261031-223818-B-FOREIGN-SENTINEL",
+          "is_stub": false,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": false,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "ee7f6da2-9958-450c-b995-22f12befd15b",
+          "name": "PORTAL3761TEST-20261031-223818-A-100%_Path\\Name",
+          "is_stub": false,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": true,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Alpha Owner",
+          "is_stub": false,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": true,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "name": "PORTAL3761TEST-20261031-223818-A-Beta Remote",
+          "is_stub": false,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": false,
+          "backup_key_id": "9a6b5a08-838e-45c2-83f6-3fe976eecff0"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "b17f9c3d-7010-47c9-a225-dd53b870b167",
+          "name": "PORTAL3761TEST-20261031-223818-A-Delta Empty",
+          "is_stub": false,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": true,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "b2538a13-3639-44ee-a1ce-f717ee2d8643",
+          "name": "PORTAL3761TEST-20261031-223818-A-Gamma Strider",
+          "is_stub": false,
+          "appliance_type": "Strider",
+          "has_escrow_passphrase": false,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "953931fe-50f2-48ea-866c-51e00aa2d337",
+          "name": "PORTAL3761TEST-20261031-223818-A-Hidden Placeholder",
+          "is_stub": true,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": false,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "7a25c17a-0ebf-4446-a2ab-11366e3f5e30",
+          "name": "PORTAL3761TEST-20261031-223818-A-Same Name",
+          "is_stub": false,
+          "appliance_type": "Strider",
+          "has_escrow_passphrase": true,
+          "backup_key_id": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "eee84f3e-1c55-4d28-ac3d-c4e63bd1170d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Same Name",
+          "is_stub": false,
+          "appliance_type": "Edge",
+          "has_escrow_passphrase": false,
+          "backup_key_id": null
+        }
+      ]
+    },
+    "keys": {
+      "sql": "SELECT account_id,id,appliance_id,name,fingerprint,origin,is_escrowed,is_stub FROM encryption_keys WHERE account_id=ANY(%s::uuid[]) ORDER BY account_id,appliance_id,name,id",
+      "rows": [
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "id": "d67de4ed-da4a-4996-a57d-f40464905bf6",
+          "appliance_id": "6056bd0e-d29b-4ab8-a0d8-1b3af01aa554",
+          "name": "PORTAL3761TEST-20261031-223818-B-FOREIGN-KEY",
+          "fingerprint": "73F834EF7B9641628C9BD163A84F6844ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "77075460-20ce-48f3-8f4c-f7be6b4cd98a",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Failed Upload",
+          "fingerprint": "27DF297A3B97468B98400BC55A4FCC6FABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": true
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "c31df2f9-bdd6-4b88-9397-4edd9f207679",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 00",
+          "fingerprint": "C12CC572D7B9424D97F090093F9177B6ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "fafb817f-2f4d-4ecf-8f01-ae3f8dd1eb01",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 01",
+          "fingerprint": "857D0791D6EB4F43929990EDD1EF679EABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "bef923d9-b7e7-4840-8aa1-f30d3b2025c5",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 02",
+          "fingerprint": "AC7CEDDF873F4670A8443FCAFE649FCEABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "1dbe47d1-1a96-4171-a9d8-1fdabc0a96fa",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 03",
+          "fingerprint": "CE56DC4E88974111A23AAD0A06F41491ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "ea67bc06-af21-4958-9057-944064ae72b3",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 04",
+          "fingerprint": "9D5D2B634A87424FA57F8F5347E87AA5ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "27d48a83-bca2-4123-9835-a8784dd4cc24",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 05",
+          "fingerprint": "61788EB37E2E473080E136746D4FEA1AABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "a2b8521a-a6f3-4a0c-bffa-1cd2f305f341",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 06",
+          "fingerprint": "7FB8CC522173479EB3D5B0D2AE5E4CB7ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "ee493e72-dff2-4026-9905-d18ee1a14390",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 07",
+          "fingerprint": "89C546ED941142C3A63C015398275DDEABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "bd4bcadd-7896-434b-a026-6a3aff608796",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 08",
+          "fingerprint": "F289BC6F53824108A065A02B12972F39ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "eefd42d2-9e35-4923-af22-b6fe51d5252a",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 09",
+          "fingerprint": "B567B59347C84B38828BD3A5C6683C5FABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "2c393505-0791-46e1-9de9-3fc8f3c45a44",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 10",
+          "fingerprint": "1B2D509B086149B28ED282579BD82C02ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "c46af739-108f-43e1-b617-dafb9fe89e0a",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 11",
+          "fingerprint": "51B0B121F71149AA8B0B30D2A01DBAFBABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "cc333165-1d67-4dff-8333-5a566e827a8b",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 12",
+          "fingerprint": "5685B9D66C054473B7821DC3582B704FABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "97a9f4a4-321a-410c-a004-f4487da54429",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 13",
+          "fingerprint": "C8252EB6E07E4F8A94FB2D65934CE16CABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "f3bb7ee7-18a2-4e23-bd39-8cebaed86345",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 14",
+          "fingerprint": "BAD2091164C943758584A12E6B9AC5B9ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "fa00fa9c-37f3-4470-a9e1-a820eaecc84d",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 15",
+          "fingerprint": "7787738E57134369ABA89333843F8D34ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "4a66058e-c84c-4353-8eeb-c8e1b5d88b1d",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 16",
+          "fingerprint": "128F7B1E209B46BF9018C87C969E67F9ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "c387136b-cc86-404b-8c06-56b749fbcf92",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 17",
+          "fingerprint": "133AA9A3648D411EB32C09F636E4C2C1ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "7744f2e4-69cb-481b-a7af-74ca081a0b92",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 18",
+          "fingerprint": "C30EE4D2F8F34D8B81574B6E4887376EABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "5626592f-d57a-41a4-98a4-16f284e1cbeb",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 19",
+          "fingerprint": "0AD0A2486E354499BCB81FF13A4F519EABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "bb7cb656-8a00-43d2-8db2-41b52e8fef99",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 20",
+          "fingerprint": "FD8D5B79E0434988B4E50E88B12111E1ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "21737952-b056-417f-9e82-5ca0d9e6f571",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 21",
+          "fingerprint": "A4C2AC428EC640B4AAE05B9F59FDC660ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "8ed71bda-1284-4d3b-abe1-6f0ef2a1f5e2",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 22",
+          "fingerprint": "1500670F9FD04B43BCE6CF812F5FA201ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "eb84a78c-cfcf-4be8-92d7-a5209446686e",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 23",
+          "fingerprint": "DFE30F0E285A4E7F9EEBD10EC2ADBBC0ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "86d8cdf5-339a-4a6c-8c0e-5ebe8778da6c",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 24",
+          "fingerprint": "7D78AB67267D49228B70C2264E8EC13AABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "86edeb21-ded5-48e2-9662-6ccbc8b62d1f",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 25",
+          "fingerprint": "D4FB313051B74E7EA3F13AF3CFFE5E8EABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "4e94aae7-6953-4ce6-b639-df6e76b68aa1",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": "PORTAL3761TEST-20261031-223818-A-Owner Key 26",
+          "fingerprint": "9D326A2F314845EF8D3F3A278D16D180ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "0cfc6af7-fa04-4f39-814a-3f4a6717c0b3",
+          "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "name": null,
+          "fingerprint": "CF30605E74C348A78B05A4AF8FCBA223ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": true
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "9a6b5a08-838e-45c2-83f6-3fe976eecff0",
+          "appliance_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "name": "PORTAL3761TEST-20261031-223818-A-Backup Secret",
+          "fingerprint": "BB6F7247174F4290826E6D7BDBE302ACABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "55e7841e-e3b1-4d50-a13d-9d3eda5a3b4c",
+          "appliance_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "name": "PORTAL3761TEST-20261031-223818-A-Other Generated",
+          "fingerprint": "73A7B3E015184A9FB22313F799B0B525ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "appliance_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "name": "PORTAL3761TEST-20261031-223818-A-Used Uploaded",
+          "fingerprint": "8023E986028840F590CD89A5342639CCABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "1f95d7ef-f7c7-47b5-8913-d6c0a76eddb9",
+          "appliance_id": "953931fe-50f2-48ea-866c-51e00aa2d337",
+          "name": "PORTAL3761TEST-20261031-223818-A-Hidden Stub Appliance Key",
+          "fingerprint": "55BE95DC3EA848A785FA9FF9023E88AEABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "518611ec-f932-4816-9582-0bfc938613f1",
+          "appliance_id": "b2538a13-3639-44ee-a1ce-f717ee2d8643",
+          "name": "PORTAL3761TEST-20261031-223818-A-Strider Uploaded",
+          "fingerprint": "A3D5A7092BFD453B9097241C21C8C422ABCDEF12",
+          "origin": "uploaded",
+          "is_escrowed": false,
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "6569459f-6fe8-4692-870e-744b5082db7c",
+          "appliance_id": "ee7f6da2-9958-450c-b995-22f12befd15b",
+          "name": "PORTAL3761TEST-20261031-223818-A-Literal 100%_Path\\Name",
+          "fingerprint": "6F383093DDA34647B13505B847994ED7ABCDEF12",
+          "origin": "generated",
+          "is_escrowed": true,
+          "is_stub": false
+        }
+      ]
+    },
+    "volume_connections": {
+      "sql": "SELECT account_id,id,edge_id,volume_id,volume_ref_id,is_master FROM volume_connections WHERE account_id=ANY(%s::uuid[]) ORDER BY account_id,edge_id,id",
+      "rows": [
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "id": "0ed55cc3-77e3-4ad0-a12d-f41154b0bd0d",
+          "edge_id": "6056bd0e-d29b-4ab8-a0d8-1b3af01aa554",
+          "volume_id": "0672101e-1ddf-48f6-889d-02e60c10c8a6_0",
+          "volume_ref_id": "f543ae46-9a7b-4980-98ce-944b053a26d9",
+          "is_master": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "cafe6c6b-4297-4333-aece-56ed8a91ac67",
+          "edge_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "volume_ref_id": "b418e9f2-cdad-489c-8520-85a54a3ba16e",
+          "is_master": true
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "a197261a-65bd-4219-ae29-e59ed3b5e0e9",
+          "edge_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "volume_ref_id": "b418e9f2-cdad-489c-8520-85a54a3ba16e",
+          "is_master": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "dadeea02-7824-41c9-91e3-ccac89d95dc7",
+          "edge_id": "b2538a13-3639-44ee-a1ce-f717ee2d8643",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "volume_ref_id": "b418e9f2-cdad-489c-8520-85a54a3ba16e",
+          "is_master": false
+        }
+      ]
+    },
+    "associations": {
+      "sql": "SELECT account_id,id,volume_id,key_id,state,is_stub FROM volume_encryption_key_associations WHERE account_id=ANY(%s::uuid[]) ORDER BY account_id,key_id,id",
+      "rows": [
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "id": "8e616e15-b57e-4ebc-9fec-9c75282d52d5",
+          "volume_id": "0672101e-1ddf-48f6-889d-02e60c10c8a6_0",
+          "key_id": "d67de4ed-da4a-4996-a57d-f40464905bf6",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "6c8d14fc-301d-4b6f-9139-c4b12f1dc258",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "4a66058e-c84c-4353-8eeb-c8e1b5d88b1d",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "088353d2-00b6-457f-9ad9-d68b07563b29",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "c5ec1460-73ce-43af-a4c5-24ff39aa991a",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "86d8cdf5-339a-4a6c-8c0e-5ebe8778da6c",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "e68e9752-378f-4741-95d7-be18aaadbeb6",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "bb7cb656-8a00-43d2-8db2-41b52e8fef99",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "1eadf07d-1ca7-41fe-b68b-ff35c8807b49",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "bd4bcadd-7896-434b-a026-6a3aff608796",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "8876bccf-57c7-4b57-b844-6544a248a0ad",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "c31df2f9-bdd6-4b88-9397-4edd9f207679",
+          "state": "disabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "5d08077b-5624-4bd7-9cb6-596404bcf60b",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "cc333165-1d67-4dff-8333-5a566e827a8b",
+          "state": "enabled",
+          "is_stub": false
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "d49ad2a8-a41f-4ad8-a26b-e04301e50e14",
+          "volume_id": "c2b78ff1-3d84-4c9c-92fa-aceb1837a70e_0",
+          "key_id": "ea67bc06-af21-4958-9057-944064ae72b3",
+          "state": "enabled",
+          "is_stub": false
+        }
+      ]
+    },
+    "tasks": {
+      "sql": "SELECT account_id,id,resource,resource_id,action,state,user_acknowledged_at,params,reason FROM tasks WHERE account_id=ANY(%s::uuid[]) ORDER BY account_id,resource_id,id",
+      "rows": [
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "aa80a492-4751-47cc-a2ce-dfbaa252db6e",
+          "resource": "encryption_key",
+          "resource_id": "0cfc6af7-fa04-4f39-814a-3f4a6717c0b3",
+          "action": "upload_encryption_key",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "params": null,
+          "reason": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "037c5658-b05f-455e-9dd8-8430e4006dc8",
+          "resource": "edge",
+          "resource_id": "3cf60c57-2f0a-4c3b-96be-1db1e8e713fa",
+          "action": "update_escrow_passphrase",
+          "state": "failed",
+          "user_acknowledged_at": null,
+          "params": null,
+          "reason": "Synthetic test failure"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "648cac1c-2697-420b-a3fa-c2e8c85dd52d",
+          "resource": "encryption_key",
+          "resource_id": "55e7841e-e3b1-4d50-a13d-9d3eda5a3b4c",
+          "action": "escrow_encryption_key",
+          "state": "in_progress",
+          "user_acknowledged_at": null,
+          "params": null,
+          "reason": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "8a44f13c-a419-44bd-8288-2419057c1d4e",
+          "resource": "encryption_key",
+          "resource_id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "action": "delete_encryption_key",
+          "state": "failed",
+          "user_acknowledged_at": "2026-10-31 22:39:01.263958+00:00",
+          "params": null,
+          "reason": "Synthetic test failure"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "d2b88160-5995-4785-8c26-139cc49ceafe",
+          "resource": "encryption_key",
+          "resource_id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "action": "delete_encryption_key",
+          "state": "completed",
+          "user_acknowledged_at": null,
+          "params": null,
+          "reason": null
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "e251caec-f788-4482-b295-27a10f1633d6",
+          "resource": "encryption_key",
+          "resource_id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+          "action": "delete_encryption_key",
+          "state": "failed",
+          "user_acknowledged_at": null,
+          "params": null,
+          "reason": "Synthetic test failure"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "id": "e2aa5016-c1fb-4ed0-9094-56190e6af39a",
+          "resource": "encryption_key",
+          "resource_id": "77075460-20ce-48f3-8f4c-f7be6b4cd98a",
+          "action": "upload_encryption_key",
+          "state": "failed",
+          "user_acknowledged_at": null,
+          "params": {
+            "appliance_id": "312eac4c-bcd6-4576-971b-3e99e5fe509d",
+            "fingerprint": "27DF297A3B97468B98400BC55A4FCC6FABCDEF12",
+            "escrow": false,
+            "backup_key": false
+          },
+          "reason": "Synthetic test failure"
+        }
+      ]
+    },
+    "permissions": {
+      "sql": "SELECT u.account_id,u.username,rp.key FROM users u JOIN user_role ur ON ur.account_id=u.account_id AND ur.user_id=u.id JOIN role_permissions rp ON rp.role_id=ur.role_id AND rp.account_id=u.account_id WHERE u.account_id=ANY(%s::uuid[]) ORDER BY u.username,rp.key",
+      "rows": [
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "Delete Unused Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "Escrow Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "Manage Backup Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "Manage Escrow Passphrase"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "Manage Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-full",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_0",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_1",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_1",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_2",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_2",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_3",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_3",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_3",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_4",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_4",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_5",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_5",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_5",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_6",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_6",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_6",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_7",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_7",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_7",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+          "username": "PORTAL3761TEST-20261031-223818-A-view_7",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "Delete Unused Keys"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "Escrow Keys"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "Manage Backup Keys"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "Manage Escrow Passphrase"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "Manage Volume Encryption Keys"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+          "username": "PORTAL3761TEST-20261031-223818-B-full",
+          "key": "View Volume Encryption Keys"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "Delete Unused Keys"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "Escrow Keys"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "Manage Backup Keys"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "Manage Escrow Passphrase"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "Manage Volume Encryption Keys"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "View Backup Keys"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "View Escrow Passphrase"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "View Key Escrow"
+        },
+        {
+          "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+          "username": "PORTAL3761TEST-20261031-223818-Empty-full",
+          "key": "View Volume Encryption Keys"
+        }
+      ]
+    },
+    "readiness": {
+      "sql": "SELECT a.name,(SELECT count(*) FROM edges_v2 e WHERE e.account_id=a.id AND NOT e.is_stub AND NOT e.has_escrow_passphrase) AS appliances_without_passphrase,(SELECT count(*) FROM edges_v2 e WHERE e.account_id=a.id AND NOT e.is_stub AND e.backup_key_id IS NULL AND EXISTS(SELECT 1 FROM volume_connections vc WHERE vc.edge_id=e.id AND vc.account_id=a.id) AND NOT EXISTS(SELECT 1 FROM volume_connections vc WHERE vc.edge_id=e.id AND vc.account_id=a.id AND vc.is_master)) AS remote_appliances_without_backup_key,(SELECT count(*) FROM encryption_keys k JOIN edges_v2 e ON e.id=k.appliance_id AND e.account_id=k.account_id WHERE k.account_id=a.id AND NOT e.is_stub AND NOT k.is_stub AND k.origin='uploaded' AND NOT k.is_escrowed) AS not_escrowed_including_visible_backups FROM accounts a WHERE a.id=ANY(%s::uuid[]) ORDER BY a.name",
+      "rows": [
+        {
+          "name": "PORTAL3761TEST-20261031-223818-A",
+          "appliances_without_passphrase": 3,
+          "remote_appliances_without_backup_key": 1,
+          "not_escrowed_including_visible_backups": 12
+        },
+        {
+          "name": "PORTAL3761TEST-20261031-223818-B",
+          "appliances_without_passphrase": 1,
+          "remote_appliances_without_backup_key": 1,
+          "not_escrowed_including_visible_backups": 1
+        },
+        {
+          "name": "PORTAL3761TEST-20261031-223818-Empty",
+          "appliances_without_passphrase": 0,
+          "remote_appliances_without_backup_key": 0,
+          "not_escrowed_including_visible_backups": 0
+        }
+      ]
+    }
+  },
+  "alembic_head": "f3c9a1e7b2d4",
+  "rls": [
+    {
+      "relname": "volume_connections",
+      "relrowsecurity": true
+    },
+    {
+      "relname": "tasks",
+      "relrowsecurity": true
+    },
+    {
+      "relname": "edges_v2",
+      "relrowsecurity": true
+    },
+    {
+      "relname": "encryption_keys",
+      "relrowsecurity": true
+    }
+  ]
+}

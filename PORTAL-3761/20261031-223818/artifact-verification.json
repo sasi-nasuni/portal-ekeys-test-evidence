@@ -1,0 +1,390 @@
+{
+  "scenarios": 95,
+  "passed": 95,
+  "failures": [],
+  "query_checks": [
+    {
+      "scenario": "full_default",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "one_parent_complete_children",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_0_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_0_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_1_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_1_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_2_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_2_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_3_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_3_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_4_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_4_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_5_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_5_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_6_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_6_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_7_license_True",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "permission_matrix_7_license_False",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "no_auth",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "malformed_token",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "expired_token",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "wrong_audience",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "no_view_permission",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "feature_disabled",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "empty_tenant_authorized_zero_counts",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "foreign_tenant_isolation",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "foreign_appliance_id",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "by_parent_name",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "by_key_name_preserves_all_children",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "by_fingerprint",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "literal_search",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "wildcards_are_literal",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "hidden_backup_search",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "no_match",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "volume_keys",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "backup_keys",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "both_types",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "in_use_includes_disabled",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "unused",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "both_states",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "uploaded",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "generated",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "both_origins",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "escrowed",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "not_escrowed",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "both_escrow_states",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "passphrase_present",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "passphrase_missing",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "both_passphrase_states",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "remote_backup_present",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "remote_backup_missing_includes_strider",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "both_backup_presence_states",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "same_key_AND",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "backup_summary_ignores_child_filter",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "backup_summary_not_matching_origin",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "search_parent_AND_child",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "repeated_parent_ids",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "hidden_backup_search_excluded",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "forbidden_backup_type",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "forbidden_backup_presence",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "forbidden_escrow",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "forbidden_passphrase",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "unlicensed_filter_escrow",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "unlicensed_filter_passphrase",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "limit_zero",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "limit_over_max",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "page_zero",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "page_not_number",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "unknown_query",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_appliance_uuid",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_iterator_uuid",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_type",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_state",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_origin",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_boolean",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_sort_by",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_sort_direction",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "bad_backup_presence",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "missing_iterator",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "sort_descending",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "absolute_page_jump",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "beyond_last_page",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_first",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_tenant_isolation",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_filter_mismatch",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_limit_mismatch",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_backup_visibility_mismatch",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_continuation",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "consumed_cursor",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "cursor_backwards",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "normalized_cursor_first",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "dynamic_before_insert",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "dynamic_recount_saved_boundary",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "final_read_account_counts",
+      "actual_query_verified": true
+    },
+    {
+      "scenario": "normalized_repeated_sets",
+      "actual_query_verified": true
+    }
+  ],
+  "valid_pngs": 1169,
+  "png_checks": "PNG chunk CRCs, complete IDAT decompression, image byte counts, IEND, dimensions and SHA-256",
+  "all_actual_inputs_verified": true
+}

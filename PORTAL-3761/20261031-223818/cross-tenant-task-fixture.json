@@ -1,0 +1,6 @@
+{
+  "task_id": "2a15e3f6-f2db-4362-9cd0-62d2a19d1e80",
+  "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+  "resource_id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+  "purpose": "Foreign tenant task with an exact resource-ID match must never appear for tenant A"
+}

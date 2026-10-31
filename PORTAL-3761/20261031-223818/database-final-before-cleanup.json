@@ -1,0 +1,24 @@
+{
+  "source": "Actual PostgreSQL query before approved fixture cleanup",
+  "sql": "SELECT account_id,count(*) FILTER(WHERE NOT is_stub),count(*) FILTER(WHERE NOT is_stub AND NOT has_escrow_passphrase) FROM edges_v2 WHERE account_id=ANY(%s::uuid[]) GROUP BY account_id ORDER BY account_id",
+  "appliance_rows": [
+    {
+      "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+      "real_appliances": 1,
+      "appliances_without_passphrase": 1
+    },
+    {
+      "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+      "real_appliances": 9,
+      "appliances_without_passphrase": 5
+    }
+  ],
+  "foreign_resource_match_task": [
+    {
+      "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+      "id": "2a15e3f6-f2db-4362-9cd0-62d2a19d1e80",
+      "resource_id": "6df10b5b-cb88-4e9a-84a5-7bb60ebceb50",
+      "reason": "FOREIGN TASK MUST NOT LEAK"
+    }
+  ]
+}

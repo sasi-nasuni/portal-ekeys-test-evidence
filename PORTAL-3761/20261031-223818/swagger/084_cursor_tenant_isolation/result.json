@@ -1,0 +1,40 @@
+{
+  "id": 84,
+  "name": "cursor_tenant_isolation",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 400,
+  "body": {
+    "message": "Iterator expired or not found",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&iterator_id=804cd90c-e591-43a0-9159-99f4ec5eedf0&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/084_cursor_tenant_isolation/cursor_tenant_isolation_parameters_01.png",
+    "swagger/084_cursor_tenant_isolation/cursor_tenant_isolation_parameters_02.png",
+    "swagger/084_cursor_tenant_isolation/cursor_tenant_isolation_response.png"
+  ],
+  "captured_at": "2026-10-31T22:53:15.991Z",
+  "expected_status": 400,
+  "profile": "full",
+  "tenant": "B",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "limit": 2,
+    "iterator_id": "804cd90c-e591-43a0-9159-99f4ec5eedf0"
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

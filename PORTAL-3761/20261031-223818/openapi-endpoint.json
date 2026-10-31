@@ -1,0 +1,612 @@
+{
+  "path": {
+    "get": {
+      "tags": [
+        "Encryption Keys"
+      ],
+      "summary": "List Appliance Encryption Keys",
+      "description": "\u26a0\ufe0f **Private preview.** Contact your Nasuni account team to request access.\n\nList appliances with their complete matching encryption-key sets and account-wide disaster recovery readiness counts. The limit applies to appliances. Child filters keep only matching keys and exclude appliances with no matching keys. Reuse an iterator with the same filters, sort, and limit; changed parameters require a new request without the iterator. Pagination totals are recalculated on each request and may change between pages. Recovery information is included according to your View permissions; escrow and passphrase information also require an enabled Key Escrow license.",
+      "operationId": "list_appliance_encryption_keys_edges_encryption_keys_get",
+      "security": [
+        {
+          "HTTPBearer": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "search",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Search"
+          }
+        },
+        {
+          "name": "appliance_ids",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Appliance Ids"
+          }
+        },
+        {
+          "name": "type",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/EncryptionKeyType"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Key types; backup requires View Backup Keys permission.",
+            "title": "Type"
+          },
+          "description": "Key types; backup requires View Backup Keys permission."
+        },
+        {
+          "name": "state",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/EncryptionKeyState"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
+          }
+        },
+        {
+          "name": "origin",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/EncryptionKeyOrigin"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Origin"
+          }
+        },
+        {
+          "name": "is_escrowed",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Escrow states; requires View Key Escrow permission and an enabled Key Escrow license.",
+            "title": "Is Escrowed"
+          },
+          "description": "Escrow states; requires View Key Escrow permission and an enabled Key Escrow license."
+        },
+        {
+          "name": "has_escrow_passphrase",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Passphrase presence; requires View Escrow Passphrase permission and an enabled Key Escrow license.",
+            "title": "Has Escrow Passphrase"
+          },
+          "description": "Passphrase presence; requires View Escrow Passphrase permission and an enabled Key Escrow license."
+        },
+        {
+          "name": "backup_key",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "present",
+                    "missing"
+                  ],
+                  "type": "string"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Backup-key presence on remote-only appliances; requires View Backup Keys permission.",
+            "title": "Backup Key"
+          },
+          "description": "Backup-key presence on remote-only appliances; requires View Backup Keys permission."
+        },
+        {
+          "name": "sort_by",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "const": "appliance_name",
+            "type": "string",
+            "default": "appliance_name",
+            "title": "Sort By"
+          }
+        },
+        {
+          "name": "sort_direction",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "$ref": "#/components/schemas/SortDirection",
+            "default": "asc"
+          }
+        },
+        {
+          "name": "iterator_id",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Iterator Id"
+          }
+        },
+        {
+          "name": "page",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          }
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "integer",
+            "maximum": 25,
+            "minimum": 1,
+            "default": 25,
+            "title": "Limit"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplianceEncryptionKeysListDto"
+              }
+            }
+          }
+        },
+        "400": {
+          "description": "Bad request",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorResponse"
+              }
+            }
+          }
+        },
+        "401": {
+          "description": "Not authenticated",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorResponse"
+              }
+            }
+          }
+        },
+        "403": {
+          "description": "The encryption keys feature is unavailable, View Volume Encryption Keys permission is missing, or a requested filter requires additional access. Backup-key filters require View Backup Keys; passphrase filters require View Escrow Passphrase; escrow filters require View Key Escrow. Both passphrase and escrow filters also require an enabled Key Escrow license.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorResponse"
+              }
+            }
+          }
+        },
+        "500": {
+          "description": "Internal server error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorResponse"
+              }
+            }
+          }
+        },
+        "422": {
+          "description": "Invalid input data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidationErrorResponse"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemas": {
+    "ApplianceEncryptionKeysDto": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Id"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "volume_role": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "owner",
+                "remote_only"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Volume Role"
+        },
+        "keys": {
+          "items": {
+            "$ref": "#/components/schemas/EncryptionKeyDetailDto"
+          },
+          "type": "array",
+          "title": "Keys"
+        },
+        "backup_key": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/BackupKeySummaryDto"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Backup Key"
+        },
+        "has_escrow_passphrase": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Has Escrow Passphrase"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/ResourceSyncStatus"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tasks": {
+          "items": {
+            "$ref": "#/components/schemas/ResourceTaskDto"
+          },
+          "type": "array",
+          "title": "Tasks"
+        }
+      },
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "volume_role",
+        "keys"
+      ],
+      "title": "ApplianceEncryptionKeysDto",
+      "description": "An appliance and its complete matching key set, with entitled recovery information."
+    },
+    "ApplianceEncryptionKeysListDto": {
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/components/schemas/ApplianceEncryptionKeysDto"
+          },
+          "type": "array",
+          "title": "Items"
+        },
+        "metadata": {
+          "$ref": "#/components/schemas/EncryptionKeyPaginationMetadataDto"
+        },
+        "dr_counts": {
+          "$ref": "#/components/schemas/DrReadinessCountsDto"
+        }
+      },
+      "type": "object",
+      "required": [
+        "items",
+        "metadata",
+        "dr_counts"
+      ],
+      "title": "ApplianceEncryptionKeysListDto",
+      "description": "Paginated appliance groups and account-wide recovery readiness counts."
+    },
+    "BackupKeySummaryDto": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Id"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Name"
+        },
+        "fingerprint": {
+          "type": "string",
+          "pattern": "^(?:[0-9A-F]{32}|[0-9A-F]{40}|[0-9A-F]{64})$",
+          "title": "Fingerprint"
+        },
+        "is_escrowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Is Escrowed"
+        }
+      },
+      "type": "object",
+      "required": [
+        "id",
+        "fingerprint"
+      ],
+      "title": "BackupKeySummaryDto",
+      "description": "The appliance's designated backup encryption key.\n\nEscrow status is included only when the caller can view key escrow and the\naccount has key escrow enabled."
+    },
+    "DrReadinessCountsDto": {
+      "properties": {
+        "appliances_without_passphrase": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0.0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Appliances Without Passphrase",
+          "description": "Number of appliances with no escrow passphrase. Omitted unless you have View Escrow Passphrase permission and an enabled Key Escrow license."
+        },
+        "remote_appliances_without_backup_key": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0.0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Remote Appliances Without Backup Key",
+          "description": "Number of appliances that mount volumes, own none, and have no assigned backup key. Omitted unless you have View Backup Keys permission."
+        },
+        "not_escrowed": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0.0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Not Escrowed",
+          "description": "Number of uploaded encryption keys confirmed by an appliance and visible to you that are not escrowed. Generated keys and unconfirmed uploads are excluded. Omitted unless you have View Key Escrow permission and an enabled Key Escrow license."
+        }
+      },
+      "type": "object",
+      "title": "DrReadinessCountsDto",
+      "description": "Account-wide recovery readiness counts, independent of filters and pagination, included only when authorized."
+    },
+    "EncryptionKeyDetailDto": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Id"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Name"
+        },
+        "fingerprint": {
+          "type": "string",
+          "pattern": "^(?:[0-9A-F]{32}|[0-9A-F]{40}|[0-9A-F]{64})$",
+          "title": "Fingerprint"
+        },
+        "algorithm": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/EncryptionKeyAlgorithm"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "length": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Length"
+        },
+        "type": {
+          "$ref": "#/components/schemas/EncryptionKeyType"
+        },
+        "origin": {
+          "$ref": "#/components/schemas/EncryptionKeyOrigin"
+        },
+        "used": {
+          "type": "boolean",
+          "title": "Used"
+        },
+        "is_stub": {
+          "type": "boolean",
+          "title": "Is Stub"
+        },
+        "status": {
+          "$ref": "#/components/schemas/ResourceSyncStatus"
+        },
+        "tasks": {
+          "items": {
+            "$ref": "#/components/schemas/ResourceTaskDto"
+          },
+          "type": "array",
+          "title": "Tasks"
+        },
+        "is_escrowed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Is Escrowed"
+        },
+        "is_backup_key": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Is Backup Key"
+        }
+      },
+      "type": "object",
+      "required": [
+        "id",
+        "fingerprint",
+        "type",
+        "origin",
+        "used",
+        "is_stub",
+        "status"
+      ],
+      "title": "EncryptionKeyDetailDto",
+      "description": "Encryption-key metadata and task status."
+    }
+  }
+}

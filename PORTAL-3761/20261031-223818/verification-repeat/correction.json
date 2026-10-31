@@ -1,0 +1,7 @@
+{
+  "scenario": "foreign_tenant_isolation",
+  "initial_result": "swagger/026_foreign_tenant_isolation/result.json",
+  "problem": "The fixture metadata declared no volume role for tenant B although its SQL fixture inserted a non-master connection. The independent SQL snapshot and HTTP response both report one remote-only appliance.",
+  "correction": "Set expected tenant-B role to remote_only. No database or application changes.",
+  "evidence": "database-snapshot.json: readiness and volume_connections"
+}

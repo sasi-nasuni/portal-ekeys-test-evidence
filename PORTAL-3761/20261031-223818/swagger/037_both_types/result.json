@@ -1,0 +1,24 @@
+{
+  "id": 37,
+  "name": "both_types",
+  "unsupported": true,
+  "reason": "Swagger has one dropdown for type",
+  "screenshots": [
+    "swagger/037_both_types/both_types_parameters_01.png",
+    "swagger/037_both_types/both_types_parameters_02.png"
+  ],
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "type": [
+      "volume",
+      "backup"
+    ]
+  },
+  "outcome": "FAIL",
+  "assertion_error": "Swagger has one dropdown for type"
+}

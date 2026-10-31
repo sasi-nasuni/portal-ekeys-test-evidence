@@ -1,0 +1,51 @@
+{
+  "id": 25,
+  "name": "empty_tenant_authorized_zero_counts",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    },
+    "dr_counts": {
+      "appliances_without_passphrase": 0,
+      "remote_appliances_without_backup_key": 0,
+      "not_escrowed": 0
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/025_empty_tenant_authorized_zero_counts/empty_tenant_authorized_zero_counts_parameters_01.png",
+    "swagger/025_empty_tenant_authorized_zero_counts/empty_tenant_authorized_zero_counts_parameters_02.png",
+    "swagger/025_empty_tenant_authorized_zero_counts/empty_tenant_authorized_zero_counts_response.png"
+  ],
+  "captured_at": "2026-10-31T22:45:17.271Z",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "Empty",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {},
+  "assertions": [
+    "Exact parent membership and order",
+    "Current filtered total_items",
+    "Current total_pages",
+    "Page and appliance limit metadata",
+    "Exact account-wide independently gated readiness counts"
+  ],
+  "outcome": "PASS"
+}

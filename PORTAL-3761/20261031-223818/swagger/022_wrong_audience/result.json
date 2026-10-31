@@ -1,0 +1,37 @@
+{
+  "id": 22,
+  "name": "wrong_audience",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 401,
+  "body": {
+    "message": "Token not valid for this service",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/022_wrong_audience/wrong_audience_parameters_01.png",
+    "swagger/022_wrong_audience/wrong_audience_parameters_02.png",
+    "swagger/022_wrong_audience/wrong_audience_response.png"
+  ],
+  "captured_at": "2026-10-31T22:44:50.183Z",
+  "expected_status": 401,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {},
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

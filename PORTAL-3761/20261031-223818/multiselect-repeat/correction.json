@@ -1,0 +1,5 @@
+{
+  "problem": "The reused Swagger driver assumed enum dropdowns were single-select. The served controls use native SELECT multiple=true for type, state, origin and backup_key. These initial multi-value attempts stopped before HTTP.",
+  "correction": "Use native selectOption(values) for multiple=true controls. No request interceptor or application changes for these cases. Query value comparison treats repeated-value order as immaterial while preserving multiplicities.",
+  "original_attempts": "Retained in the original swagger scenario directories."
+}

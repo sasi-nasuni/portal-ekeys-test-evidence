@@ -1,0 +1,24 @@
+diff --git a/docker-compose.yml b/docker-compose.yml
+index 11d47ced48..98513dce80 100644
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -18,6 +18,9 @@ services:
+     depends_on:
+       base:
+         condition: service_started
++      db:
++        condition: service_healthy
++        required: false # Backend-only startup uses resources started separately.
+     build:
+       context: backend/portal-webapi
+       target: webapi
+@@ -74,6 +77,9 @@ services:
+     depends_on:
+       base:
+         condition: service_started
++      db:
++        condition: service_healthy
++        required: false # Backend-only startup uses resources started separately.
+     build:
+       context: backend/portal-webbff
+       target: webbff

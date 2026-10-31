@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>PORTAL-3761 actual PostgreSQL readiness results</title><style>body{font:16px system-ui;margin:40px;color:#202c3b}h1{font-size:26px}p{max-width:1100px}table{border-collapse:collapse;font-size:14px}th,td{border:1px solid #bbc4ce;padding:10px;text-align:left}th{background:#e6edf5}pre{white-space:pre-wrap;background:#f2f4f7;padding:16px;font-size:12px}</style><h1>PORTAL-3761 — actual PostgreSQL results</h1><p>Supporting evidence rendered from saved SQL results; this is not a pgAdmin or Swagger screenshot.</p><p>Snapshot before pagination-insertion scenarios. Alembic head: f3c9a1e7b2d4. Only the three synthetic test tenants are included. Key counts include visible backups; unconfirmed uploads and stub appliances are excluded.</p><table><tr><th>name</th><th>appliances_without_passphrase</th><th>remote_appliances_without_backup_key</th><th>not_escrowed_including_visible_backups</th></tr><tr><td>PORTAL3761TEST-20261031-223818-A</td><td>3</td><td>1</td><td>12</td></tr><tr><td>PORTAL3761TEST-20261031-223818-B</td><td>1</td><td>1</td><td>1</td></tr><tr><td>PORTAL3761TEST-20261031-223818-Empty</td><td>0</td><td>0</td><td>0</td></tr></table><h2>Executed query</h2><pre>SELECT a.name,(SELECT count(*) FROM edges_v2 e WHERE e.account_id=a.id AND NOT e.is_stub AND NOT e.has_escrow_passphrase) AS appliances_without_passphrase,(SELECT count(*) FROM edges_v2 e WHERE e.account_id=a.id AND NOT e.is_stub AND e.backup_key_id IS NULL AND EXISTS(SELECT 1 FROM volume_connections vc WHERE vc.edge_id=e.id AND vc.account_id=a.id) AND NOT EXISTS(SELECT 1 FROM volume_connections vc WHERE vc.edge_id=e.id AND vc.account_id=a.id AND vc.is_master)) AS remote_appliances_without_backup_key,(SELECT count(*) FROM encryption_keys k JOIN edges_v2 e ON e.id=k.appliance_id AND e.account_id=k.account_id WHERE k.account_id=a.id AND NOT e.is_stub AND NOT k.is_stub AND k.origin='uploaded' AND NOT k.is_escrowed) AS not_escrowed_including_visible_backups FROM accounts a WHERE a.id=ANY(%s::uuid[]) ORDER BY a.name</pre><h2>Row-level security</h2><pre>[
+  {
+    "relname": "volume_connections",
+    "relrowsecurity": true
+  },
+  {
+    "relname": "tasks",
+    "relrowsecurity": true
+  },
+  {
+    "relname": "edges_v2",
+    "relrowsecurity": true
+  },
+  {
+    "relname": "encryption_keys",
+    "relrowsecurity": true
+  }
+]</pre><p>Full SQL and result data: database-snapshot.json. JWTs, signing secrets, and database credentials are excluded.</p>

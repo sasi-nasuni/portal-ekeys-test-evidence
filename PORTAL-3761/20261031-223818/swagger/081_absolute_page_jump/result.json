@@ -1,0 +1,112 @@
+{
+  "id": 81,
+  "name": "absolute_page_jump",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "b2538a13-3639-44ee-a1ce-f717ee2d8643",
+        "name": "PORTAL3761TEST-20261031-223818-A-Gamma Strider",
+        "volume_role": "remote_only",
+        "keys": [
+          {
+            "id": "518611ec-f932-4816-9582-0bfc938613f1",
+            "name": "PORTAL3761TEST-20261031-223818-A-Strider Uploaded",
+            "fingerprint": "A3D5A7092BFD453B9097241C21C8C422ABCDEF12",
+            "algorithm": "rsa",
+            "length": 2048,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": false,
+            "is_backup_key": false
+          }
+        ],
+        "backup_key": null,
+        "has_escrow_passphrase": false,
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "7a25c17a-0ebf-4446-a2ab-11366e3f5e30",
+        "name": "PORTAL3761TEST-20261031-223818-A-Same Name",
+        "volume_role": null,
+        "keys": [],
+        "backup_key": null,
+        "has_escrow_passphrase": true,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "68e165d2-ee85-496a-bb66-15ad0442aa4c",
+      "page_size": 2,
+      "total_pages": 4,
+      "total_items": 7,
+      "page": 3
+    },
+    "dr_counts": {
+      "appliances_without_passphrase": 3,
+      "remote_appliances_without_backup_key": 1,
+      "not_escrowed": 12
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&page=3&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/081_absolute_page_jump/absolute_page_jump_parameters_01.png",
+    "swagger/081_absolute_page_jump/absolute_page_jump_parameters_02.png",
+    "swagger/081_absolute_page_jump/absolute_page_jump_response_01.png",
+    "swagger/081_absolute_page_jump/absolute_page_jump_response_02.png",
+    "swagger/081_absolute_page_jump/absolute_page_jump_response_03.png"
+  ],
+  "captured_at": "2026-10-31T22:52:48.099Z",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "limit": 2,
+    "page": 3
+  },
+  "assertions": [
+    "Exact parent membership and order",
+    "Current filtered total_items",
+    "Current total_pages",
+    "Page and appliance limit metadata",
+    "Exact account-wide independently gated readiness counts",
+    "Appliance identity and volume role",
+    "Complete matching child set and order",
+    "Backup summary visibility",
+    "Independent assigned-backup summary",
+    "Passphrase fields, status and tasks visibility",
+    "Actual passphrase presence",
+    "Exact active/unacknowledged task membership",
+    "Appliance task rollup",
+    "Child id",
+    "Child name",
+    "Child fingerprint",
+    "Child origin",
+    "Child used",
+    "Child is_stub",
+    "Child type from assigned backup pointer",
+    "Child permission/license field omission",
+    "Child escrow fact",
+    "Child backup fact",
+    "Child task status rollup"
+  ],
+  "outcome": "PASS"
+}

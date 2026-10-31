@@ -1,0 +1,53 @@
+{
+  "id": 34,
+  "name": "no_match",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    },
+    "dr_counts": {
+      "appliances_without_passphrase": 3,
+      "remote_appliances_without_backup_key": 1,
+      "not_escrowed": 12
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?search=NO-SUCH-FIXTURE&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/034_no_match/no_match_parameters_01.png",
+    "swagger/034_no_match/no_match_parameters_02.png",
+    "swagger/034_no_match/no_match_response.png"
+  ],
+  "captured_at": "2026-10-31T22:46:26.263Z",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "search": "NO-SUCH-FIXTURE"
+  },
+  "assertions": [
+    "Exact parent membership and order",
+    "Current filtered total_items",
+    "Current total_pages",
+    "Page and appliance limit metadata",
+    "Exact account-wide independently gated readiness counts"
+  ],
+  "outcome": "PASS"
+}

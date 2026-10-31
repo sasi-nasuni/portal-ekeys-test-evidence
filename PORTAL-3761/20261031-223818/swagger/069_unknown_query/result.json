@@ -1,0 +1,50 @@
+{
+  "id": 69,
+  "name": "unknown_query",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "extra_forbidden",
+        "loc": [
+          "query",
+          "unknown_filter"
+        ],
+        "msg": "Extra inputs are not permitted",
+        "input": "true"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25&unknown_filter=true",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/069_unknown_query/unknown_query_parameters_01.png",
+    "swagger/069_unknown_query/unknown_query_parameters_02.png",
+    "swagger/069_unknown_query/unknown_query_response.png"
+  ],
+  "captured_at": "2026-10-31T22:51:08.330Z",
+  "expected_status": 422,
+  "profile": "full",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "unknown_filter": "true"
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

@@ -1,0 +1,20 @@
+{
+  "scenarios": 95,
+  "passed": 95,
+  "failed": 0,
+  "finished_at": "2026-10-31T22:56:00.517921+00:00",
+  "scenario_definition": "Unique case names; corrected fixture-oracle and native-control retries supersede retained harness failures",
+  "raw_post_repair_attempts": 101,
+  "actual_post_repair_http_requests": 96,
+  "retained_oracle_failures": 1,
+  "retained_control_limitations": 5,
+  "retained_environment_failures": 1,
+  "retained_attempt_reports": [
+    "swagger/026_foreign_tenant_isolation/README.md",
+    "swagger/037_both_types/README.md",
+    "swagger/040_both_states/README.md",
+    "swagger/043_both_origins/README.md",
+    "swagger/052_both_backup_presence_states/README.md",
+    "swagger/091_normalized_cursor_first/README.md"
+  ]
+}

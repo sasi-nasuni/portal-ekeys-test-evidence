@@ -1,0 +1,98 @@
+# 031 — literal_search
+
+**PASS — HTTP 200**
+
+Source: Served Swagger UI Try it out / Execute. Swagger displayed status, Request URL, and complete body matched the actual network response.
+
+Permission profile: `full`. Fixture tenant: `A`. Escrow license control: `True`. Feature flag control: `True`.
+
+## Actual request
+
+`GET http://127.0.0.1:8000/edges/encryption-keys?search=100%25_Path%5CName&sort_by=appliance_name&sort_direction=asc&limit=25`
+
+Intended query: `{"search": "100%_Path\\Name"}`
+
+## Assertions
+
+- Exact parent membership and order
+- Current filtered total_items
+- Current total_pages
+- Page and appliance limit metadata
+- Exact account-wide independently gated readiness counts
+- Appliance identity and volume role
+- Complete matching child set and order
+- Backup summary visibility
+- Independent assigned-backup summary
+- Passphrase fields, status and tasks visibility
+- Actual passphrase presence
+- Exact active/unacknowledged task membership
+- Appliance task rollup
+- Child id
+- Child name
+- Child fingerprint
+- Child origin
+- Child used
+- Child is_stub
+- Child type from assigned backup pointer
+- Child permission/license field omission
+- Child escrow fact
+- Child backup fact
+- Child task status rollup
+
+## Response
+
+```json
+{
+  "items": [
+    {
+      "id": "ee7f6da2-9958-450c-b995-22f12befd15b",
+      "name": "PORTAL3761TEST-20261031-223818-A-100%_Path\\Name",
+      "volume_role": null,
+      "keys": [
+        {
+          "id": "6569459f-6fe8-4692-870e-744b5082db7c",
+          "name": "PORTAL3761TEST-20261031-223818-A-Literal 100%_Path\\Name",
+          "fingerprint": "6F383093DDA34647B13505B847994ED7ABCDEF12",
+          "algorithm": "rsa",
+          "length": 2048,
+          "type": "volume",
+          "origin": "generated",
+          "used": false,
+          "is_stub": false,
+          "status": "synced",
+          "tasks": [],
+          "is_escrowed": true,
+          "is_backup_key": false
+        }
+      ],
+      "backup_key": null,
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    }
+  ],
+  "metadata": {
+    "iterator_id": null,
+    "page_size": 25,
+    "total_pages": 1,
+    "total_items": 1,
+    "page": 1
+  },
+  "dr_counts": {
+    "appliances_without_passphrase": 3,
+    "remote_appliances_without_backup_key": 1,
+    "not_escrowed": 12
+  }
+}
+```
+
+## Native Swagger screenshots
+
+All parts of long responses are linked in capture order. The curl/authorization controls are masked.
+
+- [literal_search_parameters_01.png](literal_search_parameters_01.png)
+- [literal_search_parameters_02.png](literal_search_parameters_02.png)
+- [literal_search_response_01.png](literal_search_response_01.png)
+- [literal_search_response_02.png](literal_search_response_02.png)
+
+[Machine result](result.json)

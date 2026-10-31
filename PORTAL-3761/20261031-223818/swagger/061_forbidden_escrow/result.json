@@ -1,0 +1,41 @@
+{
+  "id": 61,
+  "name": "forbidden_escrow",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 403,
+  "body": {
+    "message": "Filtering by escrow status requires View Key Escrow permission and an enabled Key Escrow license",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?is_escrowed=false&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/061_forbidden_escrow/forbidden_escrow_parameters_01.png",
+    "swagger/061_forbidden_escrow/forbidden_escrow_parameters_02.png",
+    "swagger/061_forbidden_escrow/forbidden_escrow_response.png"
+  ],
+  "captured_at": "2026-10-31T22:49:57.583Z",
+  "expected_status": 403,
+  "profile": "view_0",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "is_escrowed": [
+      false
+    ]
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

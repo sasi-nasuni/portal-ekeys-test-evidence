@@ -1,0 +1,15 @@
+{
+  "migration": "e1a7c3f9b2d6_add_task_params_and_volume_ref_id.py",
+  "operation": "Existing additive upgrade replayed because the version was recorded but both columns absent",
+  "columns_verified": [
+    {
+      "table_name": "volume_connections",
+      "column_name": "volume_ref_id"
+    },
+    {
+      "table_name": "tasks",
+      "column_name": "params"
+    }
+  ],
+  "application_source_changed": false
+}

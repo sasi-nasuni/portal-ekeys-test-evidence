@@ -1,0 +1,52 @@
+{
+  "approval": "User approved cleanup of these three named synthetic accounts and their fixture/cache records",
+  "accounts": {
+    "A": {
+      "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+      "deleted": true,
+      "cache": {
+        "account_id": "6520a8e0-5960-4fa5-b0c4-711c4ee92534",
+        "keys_deleted": 5,
+        "remaining_tenant_cache_keys": 0,
+        "feature_flag_cache_exists": false,
+        "verified": true
+      }
+    },
+    "B": {
+      "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+      "deleted": true,
+      "cache": {
+        "account_id": "14e18f74-98cd-4411-a218-88def88bc217",
+        "keys_deleted": 2,
+        "remaining_tenant_cache_keys": 0,
+        "feature_flag_cache_exists": false,
+        "verified": true
+      }
+    },
+    "Empty": {
+      "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+      "deleted": true,
+      "cache": {
+        "account_id": "0a99527a-6acd-4ddc-85a8-a9208448c61a",
+        "keys_deleted": 2,
+        "remaining_tenant_cache_keys": 0,
+        "feature_flag_cache_exists": false,
+        "verified": true
+      }
+    }
+  },
+  "remaining_rows": {
+    "accounts": 0,
+    "users": 0,
+    "roles": 0,
+    "user_role": 0,
+    "role_permissions": 0,
+    "edges_v2": 0,
+    "encryption_keys": 0,
+    "volume_connections": 0,
+    "volumes_v2": 0,
+    "volume_encryption_key_associations": 0,
+    "tasks": 0
+  },
+  "verified": true
+}

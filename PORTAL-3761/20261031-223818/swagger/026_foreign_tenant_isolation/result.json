@@ -1,0 +1,73 @@
+{
+  "id": 26,
+  "name": "foreign_tenant_isolation",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "6056bd0e-d29b-4ab8-a0d8-1b3af01aa554",
+        "name": "PORTAL3761TEST-20261031-223818-B-FOREIGN-SENTINEL",
+        "volume_role": "remote_only",
+        "keys": [
+          {
+            "id": "d67de4ed-da4a-4996-a57d-f40464905bf6",
+            "name": "PORTAL3761TEST-20261031-223818-B-FOREIGN-KEY",
+            "fingerprint": "73F834EF7B9641628C9BD163A84F6844ABCDEF12",
+            "algorithm": "rsa",
+            "length": 2048,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": true,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": false,
+            "is_backup_key": false
+          }
+        ],
+        "backup_key": null,
+        "has_escrow_passphrase": false,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    },
+    "dr_counts": {
+      "appliances_without_passphrase": 1,
+      "remote_appliances_without_backup_key": 1,
+      "not_escrowed": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/026_foreign_tenant_isolation/foreign_tenant_isolation_parameters_01.png",
+    "swagger/026_foreign_tenant_isolation/foreign_tenant_isolation_parameters_02.png",
+    "swagger/026_foreign_tenant_isolation/foreign_tenant_isolation_response_01.png",
+    "swagger/026_foreign_tenant_isolation/foreign_tenant_isolation_response_02.png"
+  ],
+  "captured_at": "2026-10-31T22:45:27.816Z",
+  "expected_status": 200,
+  "profile": "full",
+  "tenant": "B",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {},
+  "outcome": "FAIL",
+  "assertion_error": "Exact account-wide independently gated readiness counts"
+}

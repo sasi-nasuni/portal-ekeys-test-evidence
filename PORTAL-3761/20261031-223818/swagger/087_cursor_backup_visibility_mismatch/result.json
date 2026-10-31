@@ -1,0 +1,40 @@
+{
+  "id": 87,
+  "name": "cursor_backup_visibility_mismatch",
+  "method": "GET",
+  "path_template": "/edges/encryption-keys",
+  "status": 400,
+  "body": {
+    "message": "Iterator parameters do not match current request.",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/edges/encryption-keys?sort_by=appliance_name&sort_direction=asc&iterator_id=804cd90c-e591-43a0-9159-99f4ec5eedf0&limit=2",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/list_appliance_encryption_keys_edges_encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/087_cursor_backup_visibility_mismatch/cursor_backup_visibility_mismatch_parameters_01.png",
+    "swagger/087_cursor_backup_visibility_mismatch/cursor_backup_visibility_mismatch_parameters_02.png",
+    "swagger/087_cursor_backup_visibility_mismatch/cursor_backup_visibility_mismatch_response.png"
+  ],
+  "captured_at": "2026-10-31T22:53:40.469Z",
+  "expected_status": 400,
+  "profile": "view_0",
+  "tenant": "A",
+  "licensed": true,
+  "feature_enabled": true,
+  "intended_query": {
+    "limit": 2,
+    "iterator_id": "804cd90c-e591-43a0-9159-99f4ec5eedf0"
+  },
+  "assertions": [
+    "Expected HTTP status",
+    "Swagger displayed response matches actual network response"
+  ],
+  "outcome": "PASS"
+}

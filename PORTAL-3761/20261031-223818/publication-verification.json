@@ -1,0 +1,16 @@
+{
+  "png_files": 1169,
+  "screenshot_bytes_preserved": true,
+  "missing_markdown_links": [],
+  "text_secret_findings": [],
+  "patterns_checked": [
+    "jwt",
+    "aws_access_key",
+    "pem_private_key",
+    "authenticated_url",
+    "bearer_value",
+    "secret_assignment"
+  ],
+  "visual_review": "Selected native Swagger controls and response screenshots reviewed for authorization/curl masks; rendered SQL image labeled. Text scanning does not OCR images.",
+  "all_checks_passed": true
+}

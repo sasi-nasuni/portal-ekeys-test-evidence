@@ -1,0 +1,9 @@
+{
+  "application_sha": "0b2ab3df90bcfce281f59460cdd5b85a85848e80",
+  "branch": "sbhushan/PORTAL-3761_edge_encr_keys_dr_readiness",
+  "working_tree": " M docker-compose.yml\n",
+  "started_at": "2026-10-31T22:41:28.632933+00:00",
+  "docs_url": "http://127.0.0.1:8000/docs",
+  "endpoint": "GET /edges/encryption-keys",
+  "scope": "Real local WebAPI, PostgreSQL, Redis, native Swagger. Synthetic tenants and stored IAM roles. Feature/license cache controls. No appliance writes or external entitlement verification."
+}

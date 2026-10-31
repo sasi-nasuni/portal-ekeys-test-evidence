@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-31T22:55:37.216972+00:00",
+  "application_sha": "0b2ab3df90bcfce281f59460cdd5b85a85848e80",
+  "working_tree": "M docker-compose.yml",
+  "compose_version": "5.6.0",
+  "harness_python": "Python 3.14.0",
+  "api_python": "Python 3.14.3",
+  "playwright": "1.59.1",
+  "webapi_image_architecture": "amd64",
+  "compose_services": "base\texited\tExited (0) 18 minutes ago\ndb\trunning\tUp 18 minutes (healthy)\ndb-migrate\texited\tExited (0) 18 minutes ago\neventhub-poller\texited\tExited (1) 18 minutes ago\nfrontend\trunning\tUp 19 minutes\nmcp\trunning\tUp 18 minutes\npgadmin\trunning\tUp 19 minutes\nredis\trunning\tUp 19 minutes\nwebapi\trunning\tUp 18 minutes\nwebbff\trunning\tUp 18 minutes\nwebbff-db-migrate\texited\tExited (0) 18 minutes ago\nwebbffsse\trunning\tUp 22 minutes",
+  "source_mounts": "<local-checkout>/backend/libs -> /app/libs\n<local-checkout>/backend/portal-webapi -> /app/portal-webapi\n<aws-profile-mount> -> /root/.aws",
+  "startup_log_excerpts": {
+    "portal3761-make-run.log": [
+      "Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint portal-encr-keys-5-db-1 (b15bcce99ba040272cfa2eb332274bcb82d1bc8eb146945b8bb90faddb0f6ec7): Bind for 0.0.0.0:5432 failed: port is already allocated"
+    ],
+    "portal3761-make-run-retry.log": [
+      "webbff-db-migrate-1  | psycopg2.OperationalError: could not translate host name \"db\" to address: Name or service not known",
+      "webbff-db-migrate-1  | sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name \"db\" to address: Name or service not known",
+      "webbff-db-migrate-1 exited with code 1",
+      "db-migrate-1         | psycopg2.OperationalError: could not translate host name \"db\" to address: Name or service not known",
+      "db-migrate-1         | sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name \"db\" to address: Name or service not known"
+    ],
+    "portal3761-make-run-health.log": [
+      " Container portal-encr-keys-5-db-1 Healthy ",
+      " Container portal-encr-keys-5-db-1 Healthy ",
+      "webbff-db-migrate-1 exited with code 0",
+      "db-migrate-1 exited with code 0",
+      "eventhub-poller-1    | Error: no queues configured. Set SQS_QUEUE_URL and/or SQS_NONFIFO_QUEUE_URL.",
+      "mcp-1                | 2026-10-31 22:37:26,526 - [INFO] [pid=71] [transaction_id=None] [module=uvicorn.error] Application startup complete.",
+      "webapi-1             | 2026-10-31 22:37:36,485 - [INFO] [pid=476] [transaction_id=None] [module=uvicorn.error] Application startup complete.",
+      "webbff-1             | 2026-10-31 22:37:39,301 - [INFO] [pid=1122] [transaction_id=None] [module=uvicorn.error] Application startup complete."
+    ]
+  },
+  "compose_profiles_verified": [
+    "resources + app",
+    "backend"
+  ],
+  "harness_sources": {
+    "run_swagger.py": "4bd28df8347f63984b988f900e0aff3ec9b4ea87edc6ccdcd7a977055cf29693",
+    "swagger_rpc.cjs": "e5ddedf2d7e644b19e70eb2315f9fab13bc35e24b9485f73dd6a8f27a91e9ad7",
+    "swagger_rpc_multiselect.cjs": "77456af38953b4b85557a41272e39ca3e3ef0048e8da5d89eee325c494184bce",
+    "fixtures.py": "a4d0a7f32303674fa82d429c8f0901cbecb9951f0ca4eca7562f91fb4aa5ab37",
+    "controls.py": "2c0da17af27007c4f1f5a63371abac918c1a55ad479739c1da77be5018544c77"
+  }
+}
