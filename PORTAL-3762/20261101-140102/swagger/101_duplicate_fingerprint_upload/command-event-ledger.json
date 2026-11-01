@@ -1,0 +1,33 @@
+{
+  "task_id": "4af2dedf-d599-43e5-9a66-a74cf265eec7",
+  "source": "Decoded persisted messages through the production CompressedJSON type; only event/command metadata retained",
+  "persisted_upload_secrets_absent": true,
+  "records": [
+    {
+      "id": "2ec9b243-3db4-4002-b436-862400565e36",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-01 14:13:41.328658+00:00",
+      "command": "upload_encryption_key"
+    },
+    {
+      "id": "209e6c1f-e798-4951-ab64-9b92164167bf",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:13:43.664472+00:00",
+      "event": "command_ack",
+      "status": "accepted",
+      "error": null
+    },
+    {
+      "id": "83f62cc2-ee59-4cc6-a5f5-d177cd63c890",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:13:45.020829+00:00",
+      "event": "error",
+      "code": 500,
+      "error": "unknown",
+      "message": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Key(s) with fingerprint(s): 4062195257C9FC95D26C886BFF65FB251B3CD155 already present."
+    }
+  ]
+}

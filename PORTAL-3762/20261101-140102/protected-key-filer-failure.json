@@ -1,0 +1,17 @@
+{
+  "task_id": "dbfe309d-549f-4b7f-90a8-1259e99275dd",
+  "finding": "The selected 10.5 appliance cannot unlock the key when supplied the appliance-encrypted passphrase required by the planning contract. The provided edge-console keygen sends a plaintext unlock password inside the encrypted command envelope. Empty unlock passphrases will be used for workflow testing.",
+  "incoming_events_sanitized": [
+    {
+      "task_id": "dbfe309d-549f-4b7f-90a8-1259e99275dd",
+      "status": "accepted",
+      "error": null
+    },
+    {
+      "code": 500,
+      "error": "unknown",
+      "message": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Key cannot be used with supplied passphrase on key: PORTAL-3762-E2E-20261101-140102-1."
+    }
+  ],
+  "application_contract_changed": false
+}

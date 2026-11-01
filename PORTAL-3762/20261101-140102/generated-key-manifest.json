@@ -1,0 +1,78 @@
+[
+  {
+    "index": 1,
+    "fingerprint": "B0D596A8EB995E7970AB95F788659010B7DEC3D1",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-1",
+    "escrow": false,
+    "disable_existing": false,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 2,
+    "fingerprint": "0B7DEAB3C0C480A5739477CA063FA97420D33AF4",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-2",
+    "escrow": true,
+    "disable_existing": false,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 3,
+    "fingerprint": "2351BCC7CAB3F53D618F4F3B4595280AEA159E37",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-3",
+    "escrow": false,
+    "disable_existing": true,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 4,
+    "fingerprint": "3F7956BC0B0F51EDD00E56F902AB8AE556AB19AA",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-4",
+    "escrow": true,
+    "disable_existing": true,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 5,
+    "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-5",
+    "unlock_passphrase_protected": false,
+    "escrow": false,
+    "disable_existing": false,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 6,
+    "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-6",
+    "unlock_passphrase_protected": false,
+    "escrow": true,
+    "disable_existing": false,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 7,
+    "fingerprint": "68E46A191BBCF99DA2399766F7FDE57A0C80C642",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-7",
+    "unlock_passphrase_protected": false,
+    "escrow": false,
+    "disable_existing": true,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  },
+  {
+    "index": 8,
+    "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E",
+    "appliance_name_from_uid": "PORTAL-3762-E2E-20261101-140102-8",
+    "unlock_passphrase_protected": false,
+    "escrow": true,
+    "disable_existing": true,
+    "algorithm": "RSA3072 primary certify/sign + encryption subkey",
+    "key_file": "Encrypted armored OpenPGP; excluded from publication"
+  }
+]

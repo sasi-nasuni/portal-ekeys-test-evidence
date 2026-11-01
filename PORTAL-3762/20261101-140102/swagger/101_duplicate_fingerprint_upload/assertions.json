@@ -1,0 +1,9 @@
+{
+  "unauthenticated_rejected": true,
+  "duplicate_is_async_failure": true,
+  "failure_volume_scoped": true,
+  "acknowledgement_removes_task_only": true,
+  "confirmed_rows_preserved": true,
+  "older_failure_auto_acknowledged_after_success": true,
+  "persisted_upload_secrets_absent": true
+}

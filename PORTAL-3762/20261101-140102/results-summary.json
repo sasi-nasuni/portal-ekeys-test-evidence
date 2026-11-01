@@ -1,0 +1,557 @@
+{
+  "application_sha": "69559978ecf3e7da43e1b318126223fbae03448f",
+  "generated_at": "2026-11-01T14:18:20.986143+00:00",
+  "native_swagger_requests": 35,
+  "native_requests_network_verified": true,
+  "workflow_cases_passed": 4,
+  "protected_passphrase_compatibility_failure": true,
+  "screenshot_count": 115,
+  "flows": [
+    {
+      "scenario": "007_retry_upload_escrow_false_disable_false",
+      "task_id": "064875d5-5d9a-4ac3-b821-5d92cf37d34b",
+      "escrow": false,
+      "disable_existing": false,
+      "checks": {
+        "task_completed": true,
+        "steps_completed": true,
+        "four_steps": true,
+        "volume_owned": true,
+        "key_present": true,
+        "appliance_name_authoritative": true,
+        "task_not_on_rows": true,
+        "persisted_upload_secrets_absent": true,
+        "exact_requested_command_sequence": true
+      }
+    },
+    {
+      "scenario": "008_retry_upload_escrow_true_disable_false",
+      "task_id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+      "escrow": true,
+      "disable_existing": false,
+      "checks": {
+        "task_completed": true,
+        "steps_completed": true,
+        "four_steps": true,
+        "volume_owned": true,
+        "key_present": true,
+        "appliance_name_authoritative": true,
+        "task_not_on_rows": true,
+        "disable_snapshot_matches_previously_enabled": true,
+        "new_key_enabled": true,
+        "no_stubs": true,
+        "escrow_confirmed": true,
+        "volume_task_absent_on_key": true,
+        "persisted_upload_secrets_absent": true,
+        "exact_requested_command_sequence": true
+      }
+    },
+    {
+      "scenario": "009_retry_upload_escrow_false_disable_true",
+      "task_id": "bcb4d21e-9247-4881-9686-832a707c26b5",
+      "escrow": false,
+      "disable_existing": true,
+      "checks": {
+        "task_completed": true,
+        "steps_completed": true,
+        "four_steps": true,
+        "volume_owned": true,
+        "key_present": true,
+        "appliance_name_authoritative": true,
+        "task_not_on_rows": true,
+        "disable_snapshot_matches_previously_enabled": true,
+        "new_key_enabled": true,
+        "no_stubs": true,
+        "escrow_confirmed": true,
+        "previous_enabled_keys_disabled": true,
+        "volume_task_absent_on_key": true,
+        "persisted_upload_secrets_absent": true,
+        "exact_requested_command_sequence": true
+      }
+    },
+    {
+      "scenario": "010_retry_upload_escrow_true_disable_true",
+      "task_id": "70ce4743-0f88-4f1f-8b2c-896612f4e1f2",
+      "escrow": true,
+      "disable_existing": true,
+      "checks": {
+        "task_completed": true,
+        "steps_completed": true,
+        "four_steps": true,
+        "volume_owned": true,
+        "key_present": true,
+        "appliance_name_authoritative": true,
+        "task_not_on_rows": true,
+        "disable_snapshot_matches_previously_enabled": true,
+        "new_key_enabled": true,
+        "no_stubs": true,
+        "escrow_confirmed": true,
+        "previous_enabled_keys_disabled": true,
+        "volume_task_absent_on_key": true,
+        "persisted_upload_secrets_absent": true,
+        "exact_requested_command_sequence": true
+      }
+    }
+  ],
+  "requests": [
+    {
+      "scenario": "001_baseline_volume_keys",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/001_baseline_volume_keys/result.json",
+      "screenshots": [
+        "swagger/001_baseline_volume_keys/001_baseline_volume_keys_parameters_01.png",
+        "swagger/001_baseline_volume_keys/001_baseline_volume_keys_response_01.png",
+        "swagger/001_baseline_volume_keys/001_baseline_volume_keys_response_02.png",
+        "swagger/001_baseline_volume_keys/001_baseline_volume_keys_response_03.png"
+      ]
+    },
+    {
+      "scenario": "002_baseline_appliance_summary",
+      "status": 200,
+      "method": "GET",
+      "path": "/edges/{appliance_id}/encryption-keys/summary",
+      "network_verified": true,
+      "result_file": "swagger/002_baseline_appliance_summary/result.json",
+      "screenshots": [
+        "swagger/002_baseline_appliance_summary/002_baseline_appliance_summary_parameters_01.png",
+        "swagger/002_baseline_appliance_summary/002_baseline_appliance_summary_response.png"
+      ]
+    },
+    {
+      "scenario": "003_retry_upload_escrow_false_disable_false",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/003_retry_upload_escrow_false_disable_false/result.json",
+      "screenshots": [
+        "swagger/003_retry_upload_escrow_false_disable_false/003_retry_upload_escrow_false_disable_false_parameters_01.png",
+        "swagger/003_retry_upload_escrow_false_disable_false/003_retry_upload_escrow_false_disable_false_response.png"
+      ]
+    },
+    {
+      "scenario": "003_retry_upload_escrow_false_disable_false_terminal_task",
+      "status": 200,
+      "method": "GET",
+      "path": "/tasks/{task_id}",
+      "network_verified": true,
+      "result_file": "swagger/003_retry_upload_escrow_false_disable_false_terminal_task/result.json",
+      "screenshots": [
+        "swagger/003_retry_upload_escrow_false_disable_false_terminal_task/003_retry_upload_escrow_false_disable_false_terminal_task_parameters_01.png",
+        "swagger/003_retry_upload_escrow_false_disable_false_terminal_task/003_retry_upload_escrow_false_disable_false_terminal_task_response.png"
+      ]
+    },
+    {
+      "scenario": "003_retry_upload_escrow_false_disable_false_volume_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/003_retry_upload_escrow_false_disable_false_volume_readback/result.json",
+      "screenshots": [
+        "swagger/003_retry_upload_escrow_false_disable_false_volume_readback/003_retry_upload_escrow_false_disable_false_volume_readback_parameters_01.png",
+        "swagger/003_retry_upload_escrow_false_disable_false_volume_readback/003_retry_upload_escrow_false_disable_false_volume_readback_response_01.png",
+        "swagger/003_retry_upload_escrow_false_disable_false_volume_readback/003_retry_upload_escrow_false_disable_false_volume_readback_response_02.png",
+        "swagger/003_retry_upload_escrow_false_disable_false_volume_readback/003_retry_upload_escrow_false_disable_false_volume_readback_response_03.png",
+        "swagger/003_retry_upload_escrow_false_disable_false_volume_readback/003_retry_upload_escrow_false_disable_false_volume_readback_response_04.png"
+      ]
+    },
+    {
+      "scenario": "003_upload_escrow_false_disable_false",
+      "status": 400,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/003_upload_escrow_false_disable_false/result.json",
+      "screenshots": [
+        "swagger/003_upload_escrow_false_disable_false/003_upload_escrow_false_disable_false_parameters_01.png",
+        "swagger/003_upload_escrow_false_disable_false/003_upload_escrow_false_disable_false_response.png"
+      ]
+    },
+    {
+      "scenario": "007_retry_upload_escrow_false_disable_false",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/007_retry_upload_escrow_false_disable_false/result.json",
+      "screenshots": [
+        "swagger/007_retry_upload_escrow_false_disable_false/007_retry_upload_escrow_false_disable_false_parameters_01.png",
+        "swagger/007_retry_upload_escrow_false_disable_false/007_retry_upload_escrow_false_disable_false_response.png"
+      ]
+    },
+    {
+      "scenario": "007_retry_upload_escrow_false_disable_false_terminal_task",
+      "status": 200,
+      "method": "GET",
+      "path": "/tasks/{task_id}",
+      "network_verified": true,
+      "result_file": "swagger/007_retry_upload_escrow_false_disable_false_terminal_task/result.json",
+      "screenshots": [
+        "swagger/007_retry_upload_escrow_false_disable_false_terminal_task/007_retry_upload_escrow_false_disable_false_terminal_task_parameters_01.png",
+        "swagger/007_retry_upload_escrow_false_disable_false_terminal_task/007_retry_upload_escrow_false_disable_false_terminal_task_response.png"
+      ]
+    },
+    {
+      "scenario": "007_retry_upload_escrow_false_disable_false_volume_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/007_retry_upload_escrow_false_disable_false_volume_readback/result.json",
+      "screenshots": [
+        "swagger/007_retry_upload_escrow_false_disable_false_volume_readback/007_retry_upload_escrow_false_disable_false_volume_readback_parameters_01.png",
+        "swagger/007_retry_upload_escrow_false_disable_false_volume_readback/007_retry_upload_escrow_false_disable_false_volume_readback_response_01.png",
+        "swagger/007_retry_upload_escrow_false_disable_false_volume_readback/007_retry_upload_escrow_false_disable_false_volume_readback_response_02.png",
+        "swagger/007_retry_upload_escrow_false_disable_false_volume_readback/007_retry_upload_escrow_false_disable_false_volume_readback_response_03.png",
+        "swagger/007_retry_upload_escrow_false_disable_false_volume_readback/007_retry_upload_escrow_false_disable_false_volume_readback_response_04.png"
+      ]
+    },
+    {
+      "scenario": "008_retry_upload_escrow_true_disable_false",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/008_retry_upload_escrow_true_disable_false/result.json",
+      "screenshots": [
+        "swagger/008_retry_upload_escrow_true_disable_false/008_retry_upload_escrow_true_disable_false_parameters_01.png",
+        "swagger/008_retry_upload_escrow_true_disable_false/008_retry_upload_escrow_true_disable_false_response.png"
+      ]
+    },
+    {
+      "scenario": "008_retry_upload_escrow_true_disable_false_key_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/encryption-keys/{key_id}",
+      "network_verified": true,
+      "result_file": "swagger/008_retry_upload_escrow_true_disable_false_key_readback/result.json",
+      "screenshots": [
+        "swagger/008_retry_upload_escrow_true_disable_false_key_readback/008_retry_upload_escrow_true_disable_false_key_readback_parameters_01.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_key_readback/008_retry_upload_escrow_true_disable_false_key_readback_response_01.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_key_readback/008_retry_upload_escrow_true_disable_false_key_readback_response_02.png"
+      ]
+    },
+    {
+      "scenario": "008_retry_upload_escrow_true_disable_false_terminal_task",
+      "status": 200,
+      "method": "GET",
+      "path": "/tasks/{task_id}",
+      "network_verified": true,
+      "result_file": "swagger/008_retry_upload_escrow_true_disable_false_terminal_task/result.json",
+      "screenshots": [
+        "swagger/008_retry_upload_escrow_true_disable_false_terminal_task/008_retry_upload_escrow_true_disable_false_terminal_task_parameters_01.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_terminal_task/008_retry_upload_escrow_true_disable_false_terminal_task_response.png"
+      ]
+    },
+    {
+      "scenario": "008_retry_upload_escrow_true_disable_false_volume_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/result.json",
+      "screenshots": [
+        "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/008_retry_upload_escrow_true_disable_false_volume_readback_parameters_01.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/008_retry_upload_escrow_true_disable_false_volume_readback_response_01.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/008_retry_upload_escrow_true_disable_false_volume_readback_response_02.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/008_retry_upload_escrow_true_disable_false_volume_readback_response_03.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/008_retry_upload_escrow_true_disable_false_volume_readback_response_04.png",
+        "swagger/008_retry_upload_escrow_true_disable_false_volume_readback/008_retry_upload_escrow_true_disable_false_volume_readback_response_05.png"
+      ]
+    },
+    {
+      "scenario": "009_retry_upload_escrow_false_disable_true",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/009_retry_upload_escrow_false_disable_true/result.json",
+      "screenshots": [
+        "swagger/009_retry_upload_escrow_false_disable_true/009_retry_upload_escrow_false_disable_true_parameters_01.png",
+        "swagger/009_retry_upload_escrow_false_disable_true/009_retry_upload_escrow_false_disable_true_response.png"
+      ]
+    },
+    {
+      "scenario": "009_retry_upload_escrow_false_disable_true_key_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/encryption-keys/{key_id}",
+      "network_verified": true,
+      "result_file": "swagger/009_retry_upload_escrow_false_disable_true_key_readback/result.json",
+      "screenshots": [
+        "swagger/009_retry_upload_escrow_false_disable_true_key_readback/009_retry_upload_escrow_false_disable_true_key_readback_parameters_01.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_key_readback/009_retry_upload_escrow_false_disable_true_key_readback_response_01.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_key_readback/009_retry_upload_escrow_false_disable_true_key_readback_response_02.png"
+      ]
+    },
+    {
+      "scenario": "009_retry_upload_escrow_false_disable_true_terminal_task",
+      "status": 200,
+      "method": "GET",
+      "path": "/tasks/{task_id}",
+      "network_verified": true,
+      "result_file": "swagger/009_retry_upload_escrow_false_disable_true_terminal_task/result.json",
+      "screenshots": [
+        "swagger/009_retry_upload_escrow_false_disable_true_terminal_task/009_retry_upload_escrow_false_disable_true_terminal_task_parameters_01.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_terminal_task/009_retry_upload_escrow_false_disable_true_terminal_task_response.png"
+      ]
+    },
+    {
+      "scenario": "009_retry_upload_escrow_false_disable_true_volume_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/result.json",
+      "screenshots": [
+        "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/009_retry_upload_escrow_false_disable_true_volume_readback_parameters_01.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/009_retry_upload_escrow_false_disable_true_volume_readback_response_01.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/009_retry_upload_escrow_false_disable_true_volume_readback_response_02.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/009_retry_upload_escrow_false_disable_true_volume_readback_response_03.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/009_retry_upload_escrow_false_disable_true_volume_readback_response_04.png",
+        "swagger/009_retry_upload_escrow_false_disable_true_volume_readback/009_retry_upload_escrow_false_disable_true_volume_readback_response_05.png"
+      ]
+    },
+    {
+      "scenario": "010_retry_upload_escrow_true_disable_true",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/010_retry_upload_escrow_true_disable_true/result.json",
+      "screenshots": [
+        "swagger/010_retry_upload_escrow_true_disable_true/010_retry_upload_escrow_true_disable_true_parameters_01.png",
+        "swagger/010_retry_upload_escrow_true_disable_true/010_retry_upload_escrow_true_disable_true_response.png"
+      ]
+    },
+    {
+      "scenario": "010_retry_upload_escrow_true_disable_true_key_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/encryption-keys/{key_id}",
+      "network_verified": true,
+      "result_file": "swagger/010_retry_upload_escrow_true_disable_true_key_readback/result.json",
+      "screenshots": [
+        "swagger/010_retry_upload_escrow_true_disable_true_key_readback/010_retry_upload_escrow_true_disable_true_key_readback_parameters_01.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_key_readback/010_retry_upload_escrow_true_disable_true_key_readback_response_01.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_key_readback/010_retry_upload_escrow_true_disable_true_key_readback_response_02.png"
+      ]
+    },
+    {
+      "scenario": "010_retry_upload_escrow_true_disable_true_terminal_task",
+      "status": 200,
+      "method": "GET",
+      "path": "/tasks/{task_id}",
+      "network_verified": true,
+      "result_file": "swagger/010_retry_upload_escrow_true_disable_true_terminal_task/result.json",
+      "screenshots": [
+        "swagger/010_retry_upload_escrow_true_disable_true_terminal_task/010_retry_upload_escrow_true_disable_true_terminal_task_parameters_01.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_terminal_task/010_retry_upload_escrow_true_disable_true_terminal_task_response.png"
+      ]
+    },
+    {
+      "scenario": "010_retry_upload_escrow_true_disable_true_volume_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/result.json",
+      "screenshots": [
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_parameters_01.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_response_01.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_response_02.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_response_03.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_response_04.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_response_05.png",
+        "swagger/010_retry_upload_escrow_true_disable_true_volume_readback/010_retry_upload_escrow_true_disable_true_volume_readback_response_06.png"
+      ]
+    },
+    {
+      "scenario": "100_unauthenticated_upload",
+      "status": 401,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/100_unauthenticated_upload/result.json",
+      "screenshots": [
+        "swagger/100_unauthenticated_upload/100_unauthenticated_upload_parameters_01.png",
+        "swagger/100_unauthenticated_upload/100_unauthenticated_upload_response.png"
+      ]
+    },
+    {
+      "scenario": "101_duplicate_fingerprint_upload",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/upload",
+      "network_verified": true,
+      "result_file": "swagger/101_duplicate_fingerprint_upload/result.json",
+      "screenshots": [
+        "swagger/101_duplicate_fingerprint_upload/101_duplicate_fingerprint_upload_parameters_01.png",
+        "swagger/101_duplicate_fingerprint_upload/101_duplicate_fingerprint_upload_response.png"
+      ]
+    },
+    {
+      "scenario": "102_duplicate_terminal_task",
+      "status": 200,
+      "method": "GET",
+      "path": "/tasks/{task_id}",
+      "network_verified": true,
+      "result_file": "swagger/102_duplicate_terminal_task/result.json",
+      "screenshots": [
+        "swagger/102_duplicate_terminal_task/102_duplicate_terminal_task_parameters_01.png",
+        "swagger/102_duplicate_terminal_task/102_duplicate_terminal_task_response.png"
+      ]
+    },
+    {
+      "scenario": "103_failed_volume_task_visibility",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/103_failed_volume_task_visibility/result.json",
+      "screenshots": [
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_parameters_01.png",
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_response_01.png",
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_response_02.png",
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_response_03.png",
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_response_04.png",
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_response_05.png",
+        "swagger/103_failed_volume_task_visibility/103_failed_volume_task_visibility_response_06.png"
+      ]
+    },
+    {
+      "scenario": "104_acknowledge_duplicate_failure",
+      "status": 204,
+      "method": "POST",
+      "path": "/tasks/{task_id}/acknowledge",
+      "network_verified": true,
+      "result_file": "swagger/104_acknowledge_duplicate_failure/result.json",
+      "screenshots": [
+        "swagger/104_acknowledge_duplicate_failure/104_acknowledge_duplicate_failure_parameters_01.png",
+        "swagger/104_acknowledge_duplicate_failure/104_acknowledge_duplicate_failure_response.png"
+      ]
+    },
+    {
+      "scenario": "105_volume_after_failure_acknowledgement",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/105_volume_after_failure_acknowledgement/result.json",
+      "screenshots": [
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_parameters_01.png",
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_response_01.png",
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_response_02.png",
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_response_03.png",
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_response_04.png",
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_response_05.png",
+        "swagger/105_volume_after_failure_acknowledgement/105_volume_after_failure_acknowledgement_response_06.png"
+      ]
+    },
+    {
+      "scenario": "200_restore_01_enable",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+      "network_verified": true,
+      "result_file": "swagger/200_restore_01_enable/result.json",
+      "screenshots": [
+        "swagger/200_restore_01_enable/200_restore_01_enable_parameters_01.png",
+        "swagger/200_restore_01_enable/200_restore_01_enable_response.png"
+      ]
+    },
+    {
+      "scenario": "200_restore_02_enable",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+      "network_verified": true,
+      "result_file": "swagger/200_restore_02_enable/result.json",
+      "screenshots": [
+        "swagger/200_restore_02_enable/200_restore_02_enable_parameters_01.png",
+        "swagger/200_restore_02_enable/200_restore_02_enable_response.png"
+      ]
+    },
+    {
+      "scenario": "200_restore_03_enable",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+      "network_verified": true,
+      "result_file": "swagger/200_restore_03_enable/result.json",
+      "screenshots": [
+        "swagger/200_restore_03_enable/200_restore_03_enable_parameters_01.png",
+        "swagger/200_restore_03_enable/200_restore_03_enable_response.png"
+      ]
+    },
+    {
+      "scenario": "200_restore_04_enable",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+      "network_verified": true,
+      "result_file": "swagger/200_restore_04_enable/result.json",
+      "screenshots": [
+        "swagger/200_restore_04_enable/200_restore_04_enable_parameters_01.png",
+        "swagger/200_restore_04_enable/200_restore_04_enable_response.png"
+      ]
+    },
+    {
+      "scenario": "200_restore_05_enable",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+      "network_verified": true,
+      "result_file": "swagger/200_restore_05_enable/result.json",
+      "screenshots": [
+        "swagger/200_restore_05_enable/200_restore_05_enable_parameters_01.png",
+        "swagger/200_restore_05_enable/200_restore_05_enable_response.png"
+      ]
+    },
+    {
+      "scenario": "200_restore_06_disable",
+      "status": 202,
+      "method": "POST",
+      "path": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+      "network_verified": true,
+      "result_file": "swagger/200_restore_06_disable/result.json",
+      "screenshots": [
+        "swagger/200_restore_06_disable/200_restore_06_disable_parameters_01.png",
+        "swagger/200_restore_06_disable/200_restore_06_disable_response.png"
+      ]
+    },
+    {
+      "scenario": "210_restored_volume_readback",
+      "status": 200,
+      "method": "GET",
+      "path": "/volumes/{volume_id}/encryption-keys",
+      "network_verified": true,
+      "result_file": "swagger/210_restored_volume_readback/result.json",
+      "screenshots": [
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_parameters_01.png",
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_response_01.png",
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_response_02.png",
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_response_03.png",
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_response_04.png",
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_response_05.png",
+        "swagger/210_restored_volume_readback/210_restored_volume_readback_response_06.png"
+      ]
+    },
+    {
+      "scenario": "211_final_appliance_summary",
+      "status": 200,
+      "method": "GET",
+      "path": "/edges/{appliance_id}/encryption-keys/summary",
+      "network_verified": true,
+      "result_file": "swagger/211_final_appliance_summary/result.json",
+      "screenshots": [
+        "swagger/211_final_appliance_summary/211_final_appliance_summary_parameters_01.png",
+        "swagger/211_final_appliance_summary/211_final_appliance_summary_response.png"
+      ]
+    }
+  ]
+}

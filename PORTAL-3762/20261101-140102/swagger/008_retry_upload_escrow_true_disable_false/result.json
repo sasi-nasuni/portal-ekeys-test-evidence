@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "name": "008_retry_upload_escrow_true_disable_false",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/upload",
+  "status": 202,
+  "body": {
+    "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+    "state": "in_progress",
+    "status_url": "/tasks/7e08c891-6f69-47cf-b765-282cf352c6f8",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/upload",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/upload_key_to_volume_volumes__volume_id__encryption_keys_upload_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/008_retry_upload_escrow_true_disable_false/008_retry_upload_escrow_true_disable_false_parameters_01.png",
+    "swagger/008_retry_upload_escrow_true_disable_false/008_retry_upload_escrow_true_disable_false_response.png"
+  ],
+  "captured_at": "2026-11-01T14:10:50.717Z"
+}

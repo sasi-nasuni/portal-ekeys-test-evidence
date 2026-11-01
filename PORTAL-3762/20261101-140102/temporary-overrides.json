@@ -1,0 +1,15 @@
+{
+  "include_in_schema": {
+    "original": false,
+    "testing": true,
+    "restored": true
+  },
+  "minimum_filer_version": {
+    "original": "10.6",
+    "testing": "10.5",
+    "user_authorized": true,
+    "restored": true
+  },
+  "served_openapi_upload_hidden_after_restoration": true,
+  "source_matches_application_commit": true
+}

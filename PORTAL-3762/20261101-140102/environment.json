@@ -1,0 +1,31 @@
+{
+  "application_sha": "69559978ecf3e7da43e1b318126223fbae03448f",
+  "alembic_revision": "f3c9a1e7b2d4",
+  "startup": "make run; expired CodeArtifact authentication refreshed with make aws-login, then make run succeeded",
+  "services": [
+    "portal-encr-keys-4-eventhub-poller-1\tUp 13 minutes\t",
+    "portal-encr-keys-4-redis-1\tUp 13 minutes\t0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp",
+    "portal-encr-keys-4-mcp-1\tUp 13 minutes\t0.0.0.0:8003->8003/tcp, [::]:8003->8003/tcp",
+    "portal-encr-keys-4-webapi-1\tUp 13 minutes\t0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp",
+    "portal-encr-keys-4-webbff-1\tUp 13 minutes\t0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp",
+    "portal-encr-keys-4-webbffsse-1\tUp 13 minutes\t0.0.0.0:8002->8002/tcp, [::]:8002->8002/tcp",
+    "portal-encr-keys-4-frontend-1\tUp 13 minutes\t0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp",
+    "portal-encr-keys-4-db-1\tUp 13 minutes (healthy)\t0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp",
+    "portal-encr-keys-4-pgadmin-1\tUp 13 minutes\t0.0.0.0:8888->80/tcp, [::]:8888->80/tcp"
+  ],
+  "account_key_escrow_license": {
+    "source": "Actual NOC AccountLicenseDto, not a synthetic entitlement",
+    "key_escrow_enabled": true,
+    "subscription_status": "current"
+  },
+  "stored_user_permissions": [
+    "Disable Encryption Keys",
+    "Escrow Keys",
+    "Manage Volume Encryption Keys",
+    "View Key Escrow",
+    "View Volume Encryption Keys"
+  ],
+  "auth_control": "Locally signed JWT for the existing persisted account-owner user; actual stored roles/permissions resolved by WebAPI. External IdP login not exercised. Tokens stayed in memory.",
+  "readiness_control": "SSH liveness observations used to refresh the local readiness timestamp because normal target heartbeat ingestion remained stale.",
+  "responses": "Actual filer events processed by the Docker EventHub SQS poller; no synthetic completion events or response mocks."
+}

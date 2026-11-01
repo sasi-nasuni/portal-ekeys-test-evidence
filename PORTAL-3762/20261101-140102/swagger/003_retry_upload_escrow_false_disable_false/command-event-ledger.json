@@ -1,0 +1,33 @@
+{
+  "task_id": "dbfe309d-549f-4b7f-90a8-1259e99275dd",
+  "source": "Decoded persisted messages through the production CompressedJSON type; only event/command metadata retained",
+  "persisted_upload_secrets_absent": true,
+  "records": [
+    {
+      "id": "6e33839b-e437-4e08-8492-b92f2face56f",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-01 14:07:24.448941+00:00",
+      "command": "upload_encryption_key"
+    },
+    {
+      "id": "099896fa-1ab2-445f-b417-7a14ef198703",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:07:35.054928+00:00",
+      "event": "command_ack",
+      "status": "accepted",
+      "error": null
+    },
+    {
+      "id": "cfe4b2e8-3fbe-4417-96e8-7fb6cb20c144",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:07:37.377745+00:00",
+      "event": "error",
+      "code": 500,
+      "error": "unknown",
+      "message": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Key cannot be used with supplied passphrase on key: PORTAL-3762-E2E-20261101-140102-1."
+    }
+  ]
+}

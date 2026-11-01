@@ -1,0 +1,23 @@
+{
+  "first_attempt": "Expected both failures to remain visible",
+  "correction": "Shared task completion automatically acknowledges older failures for the same resource and action. Verified that prior protected-key failure is already acknowledged, then acknowledged only the active duplicate failure. No upload was repeated.",
+  "prior_task_summary": {
+    "id": "dbfe309d-549f-4b7f-90a8-1259e99275dd",
+    "created_at": "2026-11-01T14:07:24.415950Z",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "stack_id": null,
+    "action": "upload_key_to_volume",
+    "executor": "edge",
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiated_by": "portal",
+    "initiator_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+    "activity_log_id": null,
+    "reason": "Unable to upload and add the encryption key to the volume.",
+    "state": "failed",
+    "last_updated_at": "2026-11-01T14:09:48.907470Z",
+    "user_acknowledged_at": "2026-11-01T14:09:48.907470Z",
+    "deletion_time": "2026-11-08T14:09:48.907470Z",
+    "can_acknowledge": false
+  }
+}

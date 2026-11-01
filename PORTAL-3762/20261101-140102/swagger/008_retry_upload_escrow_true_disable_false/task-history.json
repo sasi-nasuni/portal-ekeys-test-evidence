@@ -1,0 +1,1129 @@
+[
+  {
+    "poll": 0,
+    "task_response": {
+      "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+      "created_at": "2026-11-01T14:10:49.225182Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "stack_id": null,
+      "action": "upload_key_to_volume",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "in_progress",
+      "last_updated_at": "2026-11-01T14:10:49.225182Z",
+      "user_acknowledged_at": null,
+      "deletion_time": null,
+      "can_acknowledge": false
+    },
+    "database": {
+      "task": {
+        "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "resource": "volume_encryption_key_association",
+        "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "action": "upload_key_to_volume",
+        "state": "in_progress",
+        "status": null,
+        "reason": null,
+        "failed_at": null,
+        "params": {
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+          "escrow": true,
+          "disable_existing": false,
+          "keys_to_add": [],
+          "keys_to_disable": null
+        },
+        "created_at": "2026-11-01 14:10:49.225182+00:00",
+        "last_updated_at": "2026-11-01 14:10:49.225182+00:00"
+      },
+      "steps": [
+        {
+          "name": "upload_encryption_key",
+          "state": "in_progress",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.234256+00:00"
+        },
+        {
+          "name": "escrow_encryption_key",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        },
+        {
+          "name": "add_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        },
+        {
+          "name": "disable_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        }
+      ],
+      "messages": [
+        {
+          "id": "3d3ab876-b4aa-4f0c-a84e-45f824306e59",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": null,
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:49.237740+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        }
+      ],
+      "captured_at": "2026-11-01T14:10:52.397119+00:00"
+    },
+    "volume_response": {
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "tasks": [
+        {
+          "task_id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+          "action": "upload_key_to_volume",
+          "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "state": "in_progress",
+          "error": null,
+          "can_acknowledge": false
+        }
+      ],
+      "items": [
+        {
+          "id": "5cf882f7-7288-4597-833a-1d60b22dcf88",
+          "name": "E-Keys-Test-01",
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "generated",
+          "state": "disabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+          "name": "PORTAL-3762-E2E-20261101-140102-5",
+          "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d6dc370f-b71d-4db8-b7b3-8eab5e91f69c",
+          "name": "E-Keys-Upload-Test-2",
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "07947edb-1b06-4a4c-aae7-915ab8804391",
+          "name": "E-Keys-MsgViewer",
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+          "name": "E-Keys-EdgeConsole-7212E7D6",
+          "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "be7937b0-d96d-4776-acae-401c034b675a",
+          "name": "E-Keys-EdgeConsole-63E6D744",
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "5146f6c9-0161-4b75-8304-e4e960c02926",
+          "name": "E-Keys-EdgeConsole-E097E395",
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+          "name": "E-Keys-PORTAL3695-81FB50D9",
+          "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ]
+    }
+  },
+  {
+    "poll": 2,
+    "task_response": {
+      "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+      "created_at": "2026-11-01T14:10:49.225182Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "stack_id": null,
+      "action": "upload_key_to_volume",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "in_progress",
+      "last_updated_at": "2026-11-01T14:10:49.225182Z",
+      "user_acknowledged_at": null,
+      "deletion_time": null,
+      "can_acknowledge": false
+    },
+    "database": {
+      "task": {
+        "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "resource": "volume_encryption_key_association",
+        "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "action": "upload_key_to_volume",
+        "state": "in_progress",
+        "status": null,
+        "reason": null,
+        "failed_at": null,
+        "params": {
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+          "escrow": true,
+          "disable_existing": false,
+          "keys_to_add": [],
+          "keys_to_disable": null
+        },
+        "created_at": "2026-11-01 14:10:49.225182+00:00",
+        "last_updated_at": "2026-11-01 14:10:49.225182+00:00"
+      },
+      "steps": [
+        {
+          "name": "upload_encryption_key",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:55.716015+00:00"
+        },
+        {
+          "name": "escrow_encryption_key",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        },
+        {
+          "name": "add_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        },
+        {
+          "name": "disable_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        }
+      ],
+      "messages": [
+        {
+          "id": "3d3ab876-b4aa-4f0c-a84e-45f824306e59",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": null,
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:49.237740+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "61c486da-9827-466c-866f-40d4a44763ce",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:51.564867+00:00",
+          "received_at": "2026-11-01 14:10:52.526299+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "daded770-3486-48e7-bfaf-25e0e75b3e75",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:54.973735+00:00",
+          "received_at": "2026-11-01 14:10:55.637446+00:00",
+          "processing_status": "PENDING"
+        }
+      ],
+      "captured_at": "2026-11-01T14:10:56.473693+00:00"
+    },
+    "volume_response": {
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "tasks": [
+        {
+          "task_id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+          "action": "upload_key_to_volume",
+          "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "state": "in_progress",
+          "error": null,
+          "can_acknowledge": false
+        }
+      ],
+      "items": [
+        {
+          "id": "5cf882f7-7288-4597-833a-1d60b22dcf88",
+          "name": "E-Keys-Test-01",
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "generated",
+          "state": "disabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+          "name": "PORTAL-3762-E2E-20261101-140102-5",
+          "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d6dc370f-b71d-4db8-b7b3-8eab5e91f69c",
+          "name": "E-Keys-Upload-Test-2",
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "07947edb-1b06-4a4c-aae7-915ab8804391",
+          "name": "E-Keys-MsgViewer",
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+          "name": "E-Keys-EdgeConsole-7212E7D6",
+          "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "be7937b0-d96d-4776-acae-401c034b675a",
+          "name": "E-Keys-EdgeConsole-63E6D744",
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "5146f6c9-0161-4b75-8304-e4e960c02926",
+          "name": "E-Keys-EdgeConsole-E097E395",
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+          "name": "E-Keys-PORTAL3695-81FB50D9",
+          "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ]
+    }
+  },
+  {
+    "poll": 3,
+    "task_response": {
+      "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+      "created_at": "2026-11-01T14:10:49.225182Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "stack_id": null,
+      "action": "upload_key_to_volume",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "in_progress",
+      "last_updated_at": "2026-11-01T14:10:49.225182Z",
+      "user_acknowledged_at": null,
+      "deletion_time": null,
+      "can_acknowledge": false
+    },
+    "database": {
+      "task": {
+        "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "resource": "volume_encryption_key_association",
+        "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "action": "upload_key_to_volume",
+        "state": "in_progress",
+        "status": null,
+        "reason": null,
+        "failed_at": null,
+        "params": {
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+          "escrow": true,
+          "disable_existing": false,
+          "keys_to_add": [],
+          "keys_to_disable": null
+        },
+        "created_at": "2026-11-01 14:10:49.225182+00:00",
+        "last_updated_at": "2026-11-01 14:10:49.225182+00:00"
+      },
+      "steps": [
+        {
+          "name": "upload_encryption_key",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:55.716015+00:00"
+        },
+        {
+          "name": "escrow_encryption_key",
+          "state": "in_progress",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:55.726387+00:00"
+        },
+        {
+          "name": "add_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        },
+        {
+          "name": "disable_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        }
+      ],
+      "messages": [
+        {
+          "id": "3d3ab876-b4aa-4f0c-a84e-45f824306e59",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": null,
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:49.237740+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "61c486da-9827-466c-866f-40d4a44763ce",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:51.564867+00:00",
+          "received_at": "2026-11-01 14:10:52.526299+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "daded770-3486-48e7-bfaf-25e0e75b3e75",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:54.973735+00:00",
+          "received_at": "2026-11-01 14:10:55.637446+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "046b28fa-f138-544c-83dc-b50455ff6cba",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:55.730030+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        }
+      ],
+      "captured_at": "2026-11-01T14:10:58.516041+00:00"
+    },
+    "volume_response": {
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "tasks": [
+        {
+          "task_id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+          "action": "upload_key_to_volume",
+          "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "state": "in_progress",
+          "error": null,
+          "can_acknowledge": false
+        }
+      ],
+      "items": [
+        {
+          "id": "5cf882f7-7288-4597-833a-1d60b22dcf88",
+          "name": "E-Keys-Test-01",
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "generated",
+          "state": "disabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+          "name": "PORTAL-3762-E2E-20261101-140102-5",
+          "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d6dc370f-b71d-4db8-b7b3-8eab5e91f69c",
+          "name": "E-Keys-Upload-Test-2",
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "07947edb-1b06-4a4c-aae7-915ab8804391",
+          "name": "E-Keys-MsgViewer",
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+          "name": "E-Keys-EdgeConsole-7212E7D6",
+          "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "be7937b0-d96d-4776-acae-401c034b675a",
+          "name": "E-Keys-EdgeConsole-63E6D744",
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "5146f6c9-0161-4b75-8304-e4e960c02926",
+          "name": "E-Keys-EdgeConsole-E097E395",
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+          "name": "E-Keys-PORTAL3695-81FB50D9",
+          "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ]
+    }
+  },
+  {
+    "poll": 4,
+    "task_response": {
+      "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+      "created_at": "2026-11-01T14:10:49.225182Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "stack_id": null,
+      "action": "upload_key_to_volume",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "in_progress",
+      "last_updated_at": "2026-11-01T14:10:59.165542Z",
+      "user_acknowledged_at": null,
+      "deletion_time": null,
+      "can_acknowledge": false
+    },
+    "database": {
+      "task": {
+        "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "resource": "volume_encryption_key_association",
+        "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "action": "upload_key_to_volume",
+        "state": "in_progress",
+        "status": null,
+        "reason": null,
+        "failed_at": null,
+        "params": {
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+          "escrow": true,
+          "disable_existing": false,
+          "keys_to_add": [
+            {
+              "key_id": "d1d39522-f598-4ccf-8b4e-014463a7ab7c",
+              "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88"
+            }
+          ],
+          "keys_to_disable": []
+        },
+        "created_at": "2026-11-01 14:10:49.225182+00:00",
+        "last_updated_at": "2026-11-01 14:10:59.165542+00:00"
+      },
+      "steps": [
+        {
+          "name": "upload_encryption_key",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:55.716015+00:00"
+        },
+        {
+          "name": "escrow_encryption_key",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:59.153428+00:00"
+        },
+        {
+          "name": "add_volume_encryption_keys",
+          "state": "in_progress",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:59.171163+00:00"
+        },
+        {
+          "name": "disable_volume_encryption_keys",
+          "state": "pending",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:49.225182+00:00"
+        }
+      ],
+      "messages": [
+        {
+          "id": "3d3ab876-b4aa-4f0c-a84e-45f824306e59",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": null,
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:49.237740+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "61c486da-9827-466c-866f-40d4a44763ce",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:51.564867+00:00",
+          "received_at": "2026-11-01 14:10:52.526299+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "daded770-3486-48e7-bfaf-25e0e75b3e75",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:54.973735+00:00",
+          "received_at": "2026-11-01 14:10:55.637446+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "046b28fa-f138-544c-83dc-b50455ff6cba",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:55.730030+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "6b562d16-a476-49a4-b3ea-7c83ffff5df8",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "sent_at": "2026-11-01 14:10:58.437049+00:00",
+          "received_at": "2026-11-01 14:10:59.135905+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "b8990b9c-db65-5de5-932b-1e8a4ca10ed0",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:59.173897+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        }
+      ],
+      "captured_at": "2026-11-01T14:11:00.566225+00:00"
+    },
+    "volume_response": {
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "tasks": [
+        {
+          "task_id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+          "action": "upload_key_to_volume",
+          "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "state": "in_progress",
+          "error": null,
+          "can_acknowledge": false
+        }
+      ],
+      "items": [
+        {
+          "id": "5cf882f7-7288-4597-833a-1d60b22dcf88",
+          "name": "E-Keys-Test-01",
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "generated",
+          "state": "disabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+          "name": "PORTAL-3762-E2E-20261101-140102-5",
+          "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d6dc370f-b71d-4db8-b7b3-8eab5e91f69c",
+          "name": "E-Keys-Upload-Test-2",
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "07947edb-1b06-4a4c-aae7-915ab8804391",
+          "name": "E-Keys-MsgViewer",
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+          "name": "E-Keys-EdgeConsole-7212E7D6",
+          "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "be7937b0-d96d-4776-acae-401c034b675a",
+          "name": "E-Keys-EdgeConsole-63E6D744",
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "5146f6c9-0161-4b75-8304-e4e960c02926",
+          "name": "E-Keys-EdgeConsole-E097E395",
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+          "name": "E-Keys-PORTAL3695-81FB50D9",
+          "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ]
+    }
+  },
+  {
+    "poll": 6,
+    "task_response": {
+      "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+      "created_at": "2026-11-01T14:10:49.225182Z",
+      "resource": "volume_encryption_key_association",
+      "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "stack_id": null,
+      "action": "upload_key_to_volume",
+      "executor": "edge",
+      "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "initiated_by": "portal",
+      "initiator_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "activity_log_id": null,
+      "reason": null,
+      "state": "completed",
+      "last_updated_at": "2026-11-01T14:11:03.596590Z",
+      "user_acknowledged_at": null,
+      "deletion_time": "2026-11-08T14:11:03.596590Z",
+      "can_acknowledge": false
+    },
+    "database": {
+      "task": {
+        "id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+        "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+        "resource": "volume_encryption_key_association",
+        "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "action": "upload_key_to_volume",
+        "state": "completed",
+        "status": null,
+        "reason": null,
+        "failed_at": null,
+        "params": {
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+          "escrow": true,
+          "disable_existing": false,
+          "keys_to_add": [
+            {
+              "key_id": "d1d39522-f598-4ccf-8b4e-014463a7ab7c",
+              "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88"
+            }
+          ],
+          "keys_to_disable": []
+        },
+        "created_at": "2026-11-01 14:10:49.225182+00:00",
+        "last_updated_at": "2026-11-01 14:11:03.596590+00:00"
+      },
+      "steps": [
+        {
+          "name": "upload_encryption_key",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:55.716015+00:00"
+        },
+        {
+          "name": "escrow_encryption_key",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:10:59.153428+00:00"
+        },
+        {
+          "name": "add_volume_encryption_keys",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:11:03.590911+00:00"
+        },
+        {
+          "name": "disable_volume_encryption_keys",
+          "state": "completed",
+          "reason": null,
+          "created_at": "2026-11-01 14:10:49.225182+00:00",
+          "updated_at": "2026-11-01 14:11:03.596590+00:00"
+        }
+      ],
+      "messages": [
+        {
+          "id": "3d3ab876-b4aa-4f0c-a84e-45f824306e59",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": null,
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:49.237740+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "61c486da-9827-466c-866f-40d4a44763ce",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:51.564867+00:00",
+          "received_at": "2026-11-01 14:10:52.526299+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "daded770-3486-48e7-bfaf-25e0e75b3e75",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "dvista1",
+          "sent_at": "2026-11-01 14:10:54.973735+00:00",
+          "received_at": "2026-11-01 14:10:55.637446+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "046b28fa-f138-544c-83dc-b50455ff6cba",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:55.730030+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "6b562d16-a476-49a4-b3ea-7c83ffff5df8",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "sent_at": "2026-11-01 14:10:58.437049+00:00",
+          "received_at": "2026-11-01 14:10:59.135905+00:00",
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "b8990b9c-db65-5de5-932b-1e8a4ca10ed0",
+          "origin": "dvista1",
+          "target": "edge",
+          "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "sent_at": "2026-11-01 14:10:59.173897+00:00",
+          "received_at": null,
+          "processing_status": "COMPLETED"
+        },
+        {
+          "id": "5498e5d4-7359-4832-b61f-1191cf7def2f",
+          "origin": "edge",
+          "target": "dvista1",
+          "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+          "sent_at": "2026-11-01 14:11:02.709054+00:00",
+          "received_at": "2026-11-01 14:11:03.539770+00:00",
+          "processing_status": "COMPLETED"
+        }
+      ],
+      "captured_at": "2026-11-01T14:11:04.673541+00:00"
+    },
+    "volume_response": {
+      "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+      "tasks": [],
+      "items": [
+        {
+          "id": "5cf882f7-7288-4597-833a-1d60b22dcf88",
+          "name": "E-Keys-Test-01",
+          "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "generated",
+          "state": "disabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+          "name": "PORTAL-3762-E2E-20261101-140102-5",
+          "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d6dc370f-b71d-4db8-b7b3-8eab5e91f69c",
+          "name": "E-Keys-Upload-Test-2",
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "07947edb-1b06-4a4c-aae7-915ab8804391",
+          "name": "E-Keys-MsgViewer",
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "d1d39522-f598-4ccf-8b4e-014463a7ab7c",
+          "name": "PORTAL-3762-E2E-20261101-140102-6",
+          "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+          "name": "E-Keys-EdgeConsole-7212E7D6",
+          "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "be7937b0-d96d-4776-acae-401c034b675a",
+          "name": "E-Keys-EdgeConsole-63E6D744",
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "5146f6c9-0161-4b75-8304-e4e960c02926",
+          "name": "E-Keys-EdgeConsole-E097E395",
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        },
+        {
+          "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+          "name": "E-Keys-PORTAL3695-81FB50D9",
+          "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+          "algorithm": "rsa",
+          "length": 3072,
+          "origin": "uploaded",
+          "state": "enabled",
+          "status": "synced",
+          "tasks": []
+        }
+      ]
+    }
+  }
+]

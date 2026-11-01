@@ -1,0 +1,11 @@
+{
+  "migration_reference": "e1a7c3f9b2d6_add_task_params_and_volume_ref_id.py",
+  "reason": "Recorded migration missing only volume_ref_id; tasks.params already present",
+  "operations": [
+    "Add nullable volume_ref_id",
+    "Backfill from same-tenant volumes_v2.id",
+    "Add existing migration FK, unique constraint and index"
+  ],
+  "remaining_unresolved_connections": 0,
+  "application_source_changed": false
+}

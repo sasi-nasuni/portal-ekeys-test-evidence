@@ -1,0 +1,11 @@
+{
+  "source": "SSH tail of /var/log/nasuni/broadcast_network.log",
+  "captured_at": "2026-11-01T14:14:51.182543+00:00",
+  "task_ids": [
+    "4af2dedf-d599-43e5-9a66-a74cf265eec7"
+  ],
+  "payload_lines_omitted": true,
+  "lines": [
+    "2026-11-01 09:13:44.511 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=4af2dedf-d599-43e5-9a66-a74cf265eec7 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack"
+  ]
+}

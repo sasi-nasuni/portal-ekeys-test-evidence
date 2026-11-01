@@ -1,0 +1,156 @@
+{
+  "task": {
+    "id": "70ce4743-0f88-4f1f-8b2c-896612f4e1f2",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "action": "upload_key_to_volume",
+    "state": "completed",
+    "status": null,
+    "reason": null,
+    "failed_at": null,
+    "params": {
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E",
+      "escrow": true,
+      "disable_existing": true,
+      "keys_to_add": [
+        {
+          "key_id": "f93f22a8-425e-44ee-9804-c0ca63b2640f",
+          "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E"
+        }
+      ],
+      "keys_to_disable": [
+        {
+          "key_id": "4f7bce69-a7dd-42e1-94b1-b25d9eed2993",
+          "fingerprint": "68E46A191BBCF99DA2399766F7FDE57A0C80C642"
+        }
+      ]
+    },
+    "created_at": "2026-11-01 14:12:40.596529+00:00",
+    "last_updated_at": "2026-11-01 14:13:01.483053+00:00"
+  },
+  "steps": [
+    {
+      "name": "upload_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:47.625650+00:00"
+    },
+    {
+      "name": "escrow_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:52.654409+00:00"
+    },
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:57.510037+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:13:01.483053+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "95f2f33a-5e5d-4ece-b4a1-c81583274d22",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": null,
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:12:40.623574+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "71be027f-9895-460e-9f85-7435584a8b5f",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "dvista1",
+      "sent_at": "2026-11-01 14:12:42.624449+00:00",
+      "received_at": "2026-11-01 14:12:52.123266+00:00",
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "9a3b7a35-f510-4b60-b67a-1a07e415186a",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "dvista1",
+      "sent_at": "2026-11-01 14:12:45.980103+00:00",
+      "received_at": "2026-11-01 14:12:47.606534+00:00",
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "b8e4da8f-715a-5de9-aeb3-7097622bcf2c",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:12:47.637925+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "5a4fc13b-9d2a-493b-9a36-0fafe95aa75b",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "sent_at": "2026-11-01 14:12:50.623341+00:00",
+      "received_at": "2026-11-01 14:12:52.614257+00:00",
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "87a09649-31f0-5250-b7e0-c6d78eecaaa3",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:12:52.688907+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "146e07cb-1816-44ac-95db-c280a877dc61",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "sent_at": "2026-11-01 14:12:55.644598+00:00",
+      "received_at": "2026-11-01 14:12:57.478958+00:00",
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "35f4a05d-ae37-5751-b4bb-d1bb04e14cd6",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:12:57.529669+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "2f500eae-f9b5-4e73-b1e5-558bbb1915e0",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "sent_at": "2026-11-01 14:13:00.705586+00:00",
+      "received_at": "2026-11-01 14:13:01.456783+00:00",
+      "processing_status": "COMPLETED"
+    }
+  ],
+  "captured_at": "2026-11-01T14:13:11.783726+00:00"
+}

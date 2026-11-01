@@ -1,0 +1,13 @@
+{
+  "source": "SSH tail of /var/log/nasuni/broadcast_network.log",
+  "captured_at": "2026-11-01T14:11:27.984231+00:00",
+  "task_ids": [
+    "7e08c891-6f69-47cf-b765-282cf352c6f8"
+  ],
+  "payload_lines_omitted": true,
+  "lines": [
+    "2026-11-01 09:10:52.267 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=7e08c891-6f69-47cf-b765-282cf352c6f8 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:10:58.181 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=7e08c891-6f69-47cf-b765-282cf352c6f8 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:11:02.013 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=7e08c891-6f69-47cf-b765-282cf352c6f8 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack"
+  ]
+}

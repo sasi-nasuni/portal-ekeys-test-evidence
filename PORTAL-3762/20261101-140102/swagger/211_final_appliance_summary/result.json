@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "name": "211_final_appliance_summary",
+  "method": "GET",
+  "path_template": "/edges/{appliance_id}/encryption-keys/summary",
+  "status": 200,
+  "body": {
+    "total": 65,
+    "generated_count": 2,
+    "escrowed": 11,
+    "not_escrowed": 54,
+    "backup_key": {
+      "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+      "name": "E-Keys-EdgeConsole-7212E7D6",
+      "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+      "is_escrowed": true
+    },
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": []
+  },
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/summary",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/get_appliance_keys_summary_edges__appliance_id__encryption_keys_summary_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/211_final_appliance_summary/211_final_appliance_summary_parameters_01.png",
+    "swagger/211_final_appliance_summary/211_final_appliance_summary_response.png"
+  ],
+  "captured_at": "2026-11-01T14:16:49.110Z"
+}

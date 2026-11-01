@@ -1,0 +1,27 @@
+{
+  "id": 2,
+  "name": "101_duplicate_fingerprint_upload",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/upload",
+  "status": 202,
+  "body": {
+    "id": "4af2dedf-d599-43e5-9a66-a74cf265eec7",
+    "state": "in_progress",
+    "status_url": "/tasks/4af2dedf-d599-43e5-9a66-a74cf265eec7",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/upload",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/upload_key_to_volume_volumes__volume_id__encryption_keys_upload_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/101_duplicate_fingerprint_upload/101_duplicate_fingerprint_upload_parameters_01.png",
+    "swagger/101_duplicate_fingerprint_upload/101_duplicate_fingerprint_upload_response.png"
+  ],
+  "captured_at": "2026-11-01T14:13:42.586Z"
+}

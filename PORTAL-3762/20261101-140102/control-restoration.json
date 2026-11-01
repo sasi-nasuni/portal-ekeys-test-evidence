@@ -1,0 +1,13 @@
+{
+  "feature_cache": {
+    "encryption_keys_experience": false,
+    "prior_feature_flags_restored": true
+  },
+  "readiness_control": {
+    "restored_to_original": false,
+    "ssh_observations_used": 8,
+    "newer_runtime_state_timestamp_preserved": true,
+    "final_updated_at": "2026-11-01 14:15:31.437661+00:00"
+  },
+  "source_overrides_restored": true
+}

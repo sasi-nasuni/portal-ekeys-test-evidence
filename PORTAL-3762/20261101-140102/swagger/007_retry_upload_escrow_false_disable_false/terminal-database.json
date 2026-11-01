@@ -1,0 +1,111 @@
+{
+  "task": {
+    "id": "064875d5-5d9a-4ac3-b821-5d92cf37d34b",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "action": "upload_key_to_volume",
+    "state": "completed",
+    "status": null,
+    "reason": null,
+    "failed_at": null,
+    "params": {
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+      "escrow": false,
+      "disable_existing": false,
+      "keys_to_add": [
+        {
+          "key_id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+          "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155"
+        }
+      ],
+      "keys_to_disable": []
+    },
+    "created_at": "2026-11-01 14:09:31.008420+00:00",
+    "last_updated_at": "2026-11-01 14:09:48.907470+00:00"
+  },
+  "steps": [
+    {
+      "name": "upload_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:09:31.008420+00:00",
+      "updated_at": "2026-11-01 14:09:37.815351+00:00"
+    },
+    {
+      "name": "escrow_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:09:31.008420+00:00",
+      "updated_at": "2026-11-01 14:09:37.847807+00:00"
+    },
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:09:31.008420+00:00",
+      "updated_at": "2026-11-01 14:09:48.903170+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:09:31.008420+00:00",
+      "updated_at": "2026-11-01 14:09:48.907470+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "b07b06bb-9378-4733-aa84-a678abd4e8e1",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": null,
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:09:31.034556+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "5543b992-37c8-4a11-8dfc-d277e88281af",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "dvista1",
+      "sent_at": "2026-11-01 14:09:33.491891+00:00",
+      "received_at": "2026-11-01 14:09:34.807185+00:00",
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "456d1fc5-089f-4b76-94b1-6202fb6f3489",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "dvista1",
+      "sent_at": "2026-11-01 14:09:36.934052+00:00",
+      "received_at": "2026-11-01 14:09:37.790672+00:00",
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "86d9cbfc-9d5b-5bc8-99d9-05d3335a07cb",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:09:37.864081+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "10eaaa75-3cad-41e0-8076-70b4e41efb08",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "sent_at": "2026-11-01 14:09:46.028108+00:00",
+      "received_at": "2026-11-01 14:09:48.875673+00:00",
+      "processing_status": "COMPLETED"
+    }
+  ],
+  "captured_at": "2026-11-01T14:09:58.243996+00:00"
+}

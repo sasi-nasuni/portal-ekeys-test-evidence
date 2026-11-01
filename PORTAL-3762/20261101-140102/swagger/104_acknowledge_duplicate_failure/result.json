@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "name": "104_acknowledge_duplicate_failure",
+  "method": "POST",
+  "path_template": "/tasks/{task_id}/acknowledge",
+  "status": 204,
+  "body": "",
+  "request_url": "http://127.0.0.1:8000/tasks/4af2dedf-d599-43e5-9a66-a74cf265eec7/acknowledge",
+  "docs_url": "http://127.0.0.1:8000/docs#/Tasks/acknowledge_failed_task_tasks__task_id__acknowledge_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/104_acknowledge_duplicate_failure/104_acknowledge_duplicate_failure_parameters_01.png",
+    "swagger/104_acknowledge_duplicate_failure/104_acknowledge_duplicate_failure_response.png"
+  ],
+  "captured_at": "2026-11-01T14:14:30.022Z"
+}

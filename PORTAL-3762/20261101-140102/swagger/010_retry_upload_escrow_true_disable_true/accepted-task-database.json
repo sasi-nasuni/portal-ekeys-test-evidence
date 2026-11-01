@@ -1,0 +1,66 @@
+{
+  "task": {
+    "id": "70ce4743-0f88-4f1f-8b2c-896612f4e1f2",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "action": "upload_key_to_volume",
+    "state": "in_progress",
+    "status": null,
+    "reason": null,
+    "failed_at": null,
+    "params": {
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E",
+      "escrow": true,
+      "disable_existing": true,
+      "keys_to_add": [],
+      "keys_to_disable": null
+    },
+    "created_at": "2026-11-01 14:12:40.596529+00:00",
+    "last_updated_at": "2026-11-01 14:12:40.596529+00:00"
+  },
+  "steps": [
+    {
+      "name": "upload_encryption_key",
+      "state": "in_progress",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:40.618887+00:00"
+    },
+    {
+      "name": "escrow_encryption_key",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:40.596529+00:00"
+    },
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:40.596529+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-01 14:12:40.596529+00:00",
+      "updated_at": "2026-11-01 14:12:40.596529+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "95f2f33a-5e5d-4ece-b4a1-c81583274d22",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": null,
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:12:40.623574+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    }
+  ],
+  "captured_at": "2026-11-01T14:12:43.631519+00:00"
+}

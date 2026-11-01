@@ -1,0 +1,10 @@
+{
+  "task_completed": false,
+  "steps_completed": false,
+  "four_steps": true,
+  "volume_owned": true,
+  "key_present": false,
+  "appliance_name_authoritative": false,
+  "task_not_on_rows": true,
+  "persisted_upload_secrets_absent": true
+}

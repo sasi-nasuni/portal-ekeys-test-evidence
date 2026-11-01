@@ -1,0 +1,29 @@
+{
+  "original_association_states_restored": true,
+  "new_test_associations_disabled": true,
+  "all_restoration_tasks_completed": true,
+  "confirmed_test_keys_retained": true,
+  "test_key_count": 4,
+  "restoration_task_ids": [
+    "3a4ef141-ceee-4e15-ba3c-2995bffbcb6b",
+    "ad1068d5-c7a3-4453-975e-050ce30687f4",
+    "d4421373-3930-466b-a09c-7c2d28bca071",
+    "c12c469e-ea10-4af8-a4ca-c8c479fdf862",
+    "02b1d370-1211-4655-bba0-82bbe3e3d846",
+    "32f5b515-b6cc-41f5-9845-27471803ddc7"
+  ],
+  "test_key_ids": [
+    "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+    "d1d39522-f598-4ccf-8b4e-014463a7ab7c",
+    "4f7bce69-a7dd-42e1-94b1-b25d9eed2993",
+    "f93f22a8-425e-44ee-9804-c0ca63b2640f"
+  ],
+  "additional_existing_associations_synchronized_during_run": [
+    {
+      "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+      "name": "E-Keys-PORTAL3695-81FB50D9",
+      "state": "disabled",
+      "changed_by_test": false
+    }
+  ]
+}

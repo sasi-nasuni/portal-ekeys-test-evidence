@@ -1,0 +1,18 @@
+{
+  "files": 224,
+  "screenshots": 115,
+  "png_bytes_preserved": true,
+  "secret_scan_patterns": [
+    "jwt",
+    "aws_access_key",
+    "private_key",
+    "encrypted_upload_material",
+    "url_credentials",
+    "github_token"
+  ],
+  "secret_findings": [],
+  "missing_markdown_links": [],
+  "excluded": "Entire runtime directory: JWT helpers, harness programs, private GPG/upload artifacts, and credential/cache snapshots. Raw container/build logs were not published.",
+  "visual_review": "Reviewed native Swagger control and response masks, and rendered actual SQL/filer evidence. Password/curl/authorization controls masked; text scan is not OCR.",
+  "all_checks_passed": true
+}

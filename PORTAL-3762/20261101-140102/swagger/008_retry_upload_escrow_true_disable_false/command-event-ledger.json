@@ -1,0 +1,58 @@
+{
+  "task_id": "7e08c891-6f69-47cf-b765-282cf352c6f8",
+  "source": "Decoded persisted messages through the production CompressedJSON type; only event/command metadata retained",
+  "persisted_upload_secrets_absent": true,
+  "records": [
+    {
+      "id": "3d3ab876-b4aa-4f0c-a84e-45f824306e59",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-01 14:10:49.237740+00:00",
+      "command": "upload_encryption_key"
+    },
+    {
+      "id": "61c486da-9827-466c-866f-40d4a44763ce",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:10:51.564867+00:00",
+      "event": "command_ack",
+      "status": "accepted",
+      "error": null
+    },
+    {
+      "id": "daded770-3486-48e7-bfaf-25e0e75b3e75",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:10:54.973735+00:00",
+      "event": "encryption_key_uploaded"
+    },
+    {
+      "id": "046b28fa-f138-544c-83dc-b50455ff6cba",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-01 14:10:55.730030+00:00",
+      "command": "escrow_encryption_key"
+    },
+    {
+      "id": "6b562d16-a476-49a4-b3ea-7c83ffff5df8",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:10:58.437049+00:00",
+      "event": "encryption_key_escrowed"
+    },
+    {
+      "id": "b8990b9c-db65-5de5-932b-1e8a4ca10ed0",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-01 14:10:59.173897+00:00",
+      "command": "add_volume_encryption_keys"
+    },
+    {
+      "id": "5498e5d4-7359-4832-b61f-1191cf7def2f",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:11:02.709054+00:00",
+      "event": "volume_encryption_keys_added"
+    }
+  ]
+}
