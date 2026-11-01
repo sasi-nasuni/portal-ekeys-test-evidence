@@ -304,4 +304,3 @@ Verified real Upload/Escrow/Add/Disable confirmations, exact requested command o
 ![Native Swagger response](swagger/210_restored_volume_readback/210_restored_volume_readback_response_06.png)
 
 ![Native Swagger response](swagger/210_restored_volume_readback/210_restored_volume_readback_response_07.png)
-
