@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "name": "010_upload_supplied-b",
+  "method": "POST",
+  "path_template": "/edges/{appliance_id}/encryption-keys/upload",
+  "status": 202,
+  "body": {
+    "id": "05dd6a74-b719-4633-a548-943d603c813a",
+    "state": "in_progress",
+    "status_url": "/tasks/05dd6a74-b719-4633-a548-943d603c813a",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/upload",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/upload_encryption_key_edges__appliance_id__encryption_keys_upload_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/010_upload_supplied-b/010_upload_supplied-b_parameters_01.png",
+    "swagger/010_upload_supplied-b/010_upload_supplied-b_response.png"
+  ],
+  "captured_at": "2026-11-01T18:48:36.270Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-11-01T18:54:11.813506+00:00",
+  "swagger_escrow_setup_exposed": false,
+  "runtime_minimum_version": "10.6",
+  "host_files_match_HEAD": {
+    "backend/libs/portal-api/portal/api/appliance_versions.py": true,
+    "backend/portal-webapi/portal/webapi/v1/routes/encryption_keys/appliance_keys_configuration.py": true
+  },
+  "runtime_recreated_with_restored_source": true,
+  "user_devtools_changes_retained": true,
+  "application_sha": "dca34b220abb5acfe9ec3e41adbf67ef69b4a280"
+}

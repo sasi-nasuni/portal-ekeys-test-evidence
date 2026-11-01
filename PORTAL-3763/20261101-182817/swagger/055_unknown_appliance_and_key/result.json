@@ -1,0 +1,40 @@
+{
+  "id": 14,
+  "name": "055_unknown_appliance_and_key",
+  "method": "POST",
+  "path_template": "/edges/escrow-setup",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "appliance_id": "0ba41a7b-94f3-48ff-9027-f716efc6704b",
+        "keys": [
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "1c140ee0-f4a0-4af4-bcf7-a5eee10045ee"
+          }
+        ]
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/escrow-setup",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/escrow_setup_bulk_edges_escrow_setup_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/055_unknown_appliance_and_key/055_unknown_appliance_and_key_parameters_01.png",
+    "swagger/055_unknown_appliance_and_key/055_unknown_appliance_and_key_response.png"
+  ],
+  "captured_at": "2026-11-01T18:52:25.016Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

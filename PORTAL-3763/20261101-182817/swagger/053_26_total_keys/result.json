@@ -1,0 +1,79 @@
+{
+  "id": 12,
+  "name": "053_26_total_keys",
+  "method": "POST",
+  "path_template": "/edges/escrow-setup",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body"
+        ],
+        "msg": "Value error, A request can contain at most 25 keys across all appliances",
+        "input": {
+          "items": [
+            {
+              "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+              "key_ids": [
+                "1a3bf083-4a39-41f1-8b4e-8416c6704296",
+                "0ded0e49-4ce4-4f35-8ef3-0d40cece98f2",
+                "a9d2afe4-ed46-4287-8288-7b22c8060c63",
+                "d15ef7ef-bae2-4f73-8d7b-4ae30398b7c7",
+                "c70f4558-98ab-4e5b-acf7-76bc8e7dacf5",
+                "5587eeb8-f09d-4fbe-8320-3c0b9e77a831",
+                "cc8677e8-3fe8-47c5-8591-54890f0cb93c",
+                "5675de6c-3734-420a-94b3-18c5c13f4074",
+                "611857d5-4188-4b22-aea1-1dccb4db3295",
+                "8d30b9fc-6283-4127-8f8b-1b665f9a3457",
+                "44404211-6cd1-4fd8-926c-0687250cb751",
+                "30ddbc39-84b9-492e-875e-93c83293bd82",
+                "4bf506cf-11dd-42d5-953d-fd40f9418515"
+              ]
+            },
+            {
+              "appliance_id": "86829e0c-2c33-45d8-affd-43d1657da6d0",
+              "key_ids": [
+                "c20a5d1e-882f-4fce-9bca-ae7128ef5748",
+                "daa003fe-fc3c-4bd6-ad01-59c4bbc2ff32",
+                "ce5967c1-d6fc-442b-9b1d-f7b579b034ff",
+                "dcacf9a7-b18f-4488-8995-2fa42af78cda",
+                "554339a1-7974-496a-960c-e41eeea5b0ee",
+                "1c6741d1-d25b-4d49-924f-425c1c4efcd5",
+                "3e4092b8-5cac-4f26-b959-4122f124c77b",
+                "e88bc9a0-9814-4b0d-80c9-867727bd623a",
+                "7b307231-20d1-43c8-930d-fc04a8f40915",
+                "7bf2460e-92a6-4896-92ab-cbab4c11c388",
+                "02991d45-243e-4b70-889b-c6a537e4bdec",
+                "ab548dbe-54ff-4388-8dcf-91cfe49567cd",
+                "b8d07fa4-2d61-48b6-b1ad-5f24ca702e39"
+              ]
+            }
+          ]
+        },
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/escrow-setup",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/escrow_setup_bulk_edges_escrow_setup_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/053_26_total_keys/053_26_total_keys_parameters_01.png",
+    "swagger/053_26_total_keys/053_26_total_keys_response_01.png",
+    "swagger/053_26_total_keys/053_26_total_keys_response_02.png",
+    "swagger/053_26_total_keys/053_26_total_keys_response_03.png"
+  ],
+  "captured_at": "2026-11-01T18:52:17.148Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

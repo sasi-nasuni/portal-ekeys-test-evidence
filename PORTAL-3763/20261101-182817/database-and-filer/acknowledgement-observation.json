@@ -1,0 +1,7 @@
+{
+  "filer_accepted_commands": 8,
+  "portal_outbound_rows": 8,
+  "portal_acked_outbound_rows": 3,
+  "terminal_tasks_with_acknowledged_status": 0,
+  "note": "Completion and ACK are distinct. This 10.5 POC run completed all tasks; not all published ACKs were present in the local database. ACK routing/reconciliation is not claimed as passing."
+}

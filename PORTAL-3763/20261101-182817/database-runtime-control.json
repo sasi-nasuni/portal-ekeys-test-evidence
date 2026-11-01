@@ -1,0 +1,9 @@
+{
+  "database": "portal3763_e2e_20261101_182817",
+  "application_user": "p3763_20261101182817",
+  "migration_revision": "head",
+  "reason": "Pre-existing local portal database lacks edges_v2.fiq_disk despite its migration revision; fresh current-source migrations used instead",
+  "database_retained": true,
+  "existing_database_schema_altered": false,
+  "existing_database_identity_fixtures": "Initial bootstrap added local account/user/role identity fixtures to portal before schema mismatch was detected; retained without deleting records. All appliance write tests then used the fresh isolated database."
+}

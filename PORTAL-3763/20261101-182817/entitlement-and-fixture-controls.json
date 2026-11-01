@@ -1,0 +1,8 @@
+{
+  "key_escrow_enabled": true,
+  "license_mocked": false,
+  "filer_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f",
+  "has_existing_escrow_passphrase": true,
+  "identity_mode": "Locally persisted permission fixtures and locally signed JWTs; external IdP not tested",
+  "local_feature_cache_enabled": true
+}

@@ -1,0 +1,42 @@
+{
+  "id": 11,
+  "name": "053_plaintext_passphrase",
+  "method": "POST",
+  "path_template": "/edges/escrow-setup",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "items",
+          0,
+          "passphrase",
+          "passphrase"
+        ],
+        "msg": "Value error, passphrase must be an encrypted PGP message",
+        "input": "**********",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/escrow-setup",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/escrow_setup_bulk_edges_escrow_setup_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/053_plaintext_passphrase/053_plaintext_passphrase_parameters_01.png",
+    "swagger/053_plaintext_passphrase/053_plaintext_passphrase_response.png"
+  ],
+  "captured_at": "2026-11-01T18:52:13.238Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

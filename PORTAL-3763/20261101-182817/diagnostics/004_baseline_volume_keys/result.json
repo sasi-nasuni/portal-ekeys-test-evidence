@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "name": "004_baseline_volume_keys",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 500,
+  "body": {
+    "message": "Unknown error. Please contact Nasuni Support.",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "diagnostics/004_baseline_volume_keys/004_baseline_volume_keys_parameters_01.png",
+    "diagnostics/004_baseline_volume_keys/004_baseline_volume_keys_response.png"
+  ],
+  "captured_at": "2026-11-01T18:45:41.993Z",
+  "evidence_classification": "Harness setup failure retained; excluded from passing coverage"
+}

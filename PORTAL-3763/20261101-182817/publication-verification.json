@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "files_scanned": 154,
+  "known_secret_values_checked": 12,
+  "issues": [],
+  "private_runtime_excluded": true,
+  "screenshot_masks": "Native UI masks curl, auth and request bodies; protected password controls display dots. Preliminary display-name captures withheld; fresh neutral-name readbacks captured. Selected native responses and rendered filer evidence visually inspected.",
+  "png_hashes_verified": true
+}

@@ -1,0 +1,60 @@
+{
+  "task_id": "4f9c9cec-00f9-4d3c-b44a-2f4bfac35ab8",
+  "observations": [
+    {
+      "observed_at": "2026-11-01T18:50:33.589725+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:50:39.369373+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:50:45.215459+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:50:51.024607+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:50:56.881744+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:51:02.718196+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:51:08.525461+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:51:14.450217+00:00",
+      "state": "in_progress"
+    },
+    {
+      "observed_at": "2026-11-01T18:51:20.330361+00:00",
+      "state": "completed"
+    }
+  ],
+  "final": {
+    "id": "4f9c9cec-00f9-4d3c-b44a-2f4bfac35ab8",
+    "created_at": "2026-11-01T18:49:09.973408Z",
+    "resource": "encryption_key",
+    "resource_id": "30a63de6-6a98-4ba8-9197-1cbb76e97609",
+    "stack_id": null,
+    "action": "escrow_setup",
+    "executor": "edge",
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiated_by": "portal",
+    "initiator_id": "cedb33c6-5a24-42fd-a51e-8059059e0b12",
+    "activity_log_id": null,
+    "reason": null,
+    "state": "completed",
+    "last_updated_at": "2026-11-01T18:51:17.550013Z",
+    "user_acknowledged_at": null,
+    "deletion_time": "2026-11-08T18:51:17.550013Z",
+    "can_acknowledge": false
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "passing_native_requests": [
+    {
+      "name": "007_baseline_volume_keys",
+      "http_status": 200,
+      "result": "swagger/007_baseline_volume_keys/result.json",
+      "screenshots": [
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_parameters_01.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_01.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_02.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_03.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_04.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_05.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_06.png",
+        "swagger/007_baseline_volume_keys/007_baseline_volume_keys_response_07.png"
+      ]
+    },
+    {
+      "name": "008_baseline_appliance_summary",
+      "http_status": 200,
+      "result": "swagger/008_baseline_appliance_summary/result.json",
+      "screenshots": [
+        "swagger/008_baseline_appliance_summary/008_baseline_appliance_summary_parameters_01.png",
+        "swagger/008_baseline_appliance_summary/008_baseline_appliance_summary_response.png"
+      ]
+    },
+    {
+      "name": "009_appliance_public_key",
+      "http_status": 200,
+      "result": "swagger/009_appliance_public_key/result.json",
+      "screenshots": [
+        "swagger/009_appliance_public_key/009_appliance_public_key_parameters_01.png",
+        "swagger/009_appliance_public_key/009_appliance_public_key_response.png"
+      ]
+    },
+    {
+      "name": "010_upload_omitted",
+      "http_status": 202,
+      "result": "swagger/010_upload_omitted/result.json",
+      "screenshots": [
+        "swagger/010_upload_omitted/010_upload_omitted_parameters_01.png",
+        "swagger/010_upload_omitted/010_upload_omitted_response.png"
+      ]
+    },
+    {
+      "name": "010_upload_supplied-a",
+      "http_status": 202,
+      "result": "swagger/010_upload_supplied-a/result.json",
+      "screenshots": [
+        "swagger/010_upload_supplied-a/010_upload_supplied-a_parameters_01.png",
+        "swagger/010_upload_supplied-a/010_upload_supplied-a_response.png"
+      ]
+    },
+    {
+      "name": "010_upload_supplied-b",
+      "http_status": 202,
+      "result": "swagger/010_upload_supplied-b/result.json",
+      "screenshots": [
+        "swagger/010_upload_supplied-b/010_upload_supplied-b_parameters_01.png",
+        "swagger/010_upload_supplied-b/010_upload_supplied-b_response.png"
+      ]
+    },
+    {
+      "name": "020_supplied_passphrase_mixed_results",
+      "http_status": 202,
+      "result": "swagger/020_supplied_passphrase_mixed_results/result.json",
+      "screenshots": [
+        "swagger/020_supplied_passphrase_mixed_results/020_supplied_passphrase_mixed_results_parameters_01.png",
+        "swagger/020_supplied_passphrase_mixed_results/020_supplied_passphrase_mixed_results_response_01.png",
+        "swagger/020_supplied_passphrase_mixed_results/020_supplied_passphrase_mixed_results_response_02.png"
+      ]
+    },
+    {
+      "name": "021_completed_supplied-a",
+      "http_status": 200,
+      "result": "swagger/021_completed_supplied-a/result.json",
+      "screenshots": [
+        "swagger/021_completed_supplied-a/021_completed_supplied-a_parameters_01.png",
+        "swagger/021_completed_supplied-a/021_completed_supplied-a_response.png"
+      ]
+    },
+    {
+      "name": "021_completed_supplied-b",
+      "http_status": 200,
+      "result": "swagger/021_completed_supplied-b/result.json",
+      "screenshots": [
+        "swagger/021_completed_supplied-b/021_completed_supplied-b_parameters_01.png",
+        "swagger/021_completed_supplied-b/021_completed_supplied-b_response.png"
+      ]
+    },
+    {
+      "name": "030_omitted_passphrase",
+      "http_status": 202,
+      "result": "swagger/030_omitted_passphrase/result.json",
+      "screenshots": [
+        "swagger/030_omitted_passphrase/030_omitted_passphrase_parameters_01.png",
+        "swagger/030_omitted_passphrase/030_omitted_passphrase_response.png"
+      ]
+    },
+    {
+      "name": "031_completed_omitted",
+      "http_status": 200,
+      "result": "swagger/031_completed_omitted/result.json",
+      "screenshots": [
+        "swagger/031_completed_omitted/031_completed_omitted_parameters_01.png",
+        "swagger/031_completed_omitted/031_completed_omitted_response.png"
+      ]
+    },
+    {
+      "name": "040_final_volume_keys",
+      "http_status": 200,
+      "result": "swagger/040_final_volume_keys/result.json",
+      "screenshots": [
+        "swagger/040_final_volume_keys/040_final_volume_keys_parameters_01.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_01.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_02.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_03.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_04.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_05.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_06.png",
+        "swagger/040_final_volume_keys/040_final_volume_keys_response_07.png"
+      ]
+    },
+    {
+      "name": "050_no_authentication",
+      "http_status": 401,
+      "result": "swagger/050_no_authentication/result.json",
+      "screenshots": [
+        "swagger/050_no_authentication/050_no_authentication_parameters_01.png",
+        "swagger/050_no_authentication/050_no_authentication_response.png"
+      ]
+    },
+    {
+      "name": "051_no_escrow_permission",
+      "http_status": 403,
+      "result": "swagger/051_no_escrow_permission/result.json",
+      "screenshots": [
+        "swagger/051_no_escrow_permission/051_no_escrow_permission_parameters_01.png",
+        "swagger/051_no_escrow_permission/051_no_escrow_permission_response.png"
+      ]
+    },
+    {
+      "name": "051_no_passphrase_permission",
+      "http_status": 403,
+      "result": "swagger/051_no_passphrase_permission/result.json",
+      "screenshots": [
+        "swagger/051_no_passphrase_permission/051_no_passphrase_permission_parameters_01.png",
+        "swagger/051_no_passphrase_permission/051_no_passphrase_permission_response.png"
+      ]
+    },
+    {
+      "name": "052_disabled_feature",
+      "http_status": 403,
+      "result": "swagger/052_disabled_feature/result.json",
+      "screenshots": [
+        "swagger/052_disabled_feature/052_disabled_feature_parameters_01.png",
+        "swagger/052_disabled_feature/052_disabled_feature_response.png"
+      ]
+    },
+    {
+      "name": "052_disabled_license",
+      "http_status": 403,
+      "result": "swagger/052_disabled_license/result.json",
+      "screenshots": [
+        "swagger/052_disabled_license/052_disabled_license_parameters_01.png",
+        "swagger/052_disabled_license/052_disabled_license_response.png"
+      ]
+    },
+    {
+      "name": "053_26_total_keys",
+      "http_status": 422,
+      "result": "swagger/053_26_total_keys/result.json",
+      "screenshots": [
+        "swagger/053_26_total_keys/053_26_total_keys_parameters_01.png",
+        "swagger/053_26_total_keys/053_26_total_keys_response_01.png",
+        "swagger/053_26_total_keys/053_26_total_keys_response_02.png",
+        "swagger/053_26_total_keys/053_26_total_keys_response_03.png"
+      ]
+    },
+    {
+      "name": "053_duplicate_appliances",
+      "http_status": 422,
+      "result": "swagger/053_duplicate_appliances/result.json",
+      "screenshots": [
+        "swagger/053_duplicate_appliances/053_duplicate_appliances_parameters_01.png",
+        "swagger/053_duplicate_appliances/053_duplicate_appliances_response_01.png",
+        "swagger/053_duplicate_appliances/053_duplicate_appliances_response_02.png"
+      ]
+    },
+    {
+      "name": "053_duplicate_keys",
+      "http_status": 422,
+      "result": "swagger/053_duplicate_keys/result.json",
+      "screenshots": [
+        "swagger/053_duplicate_keys/053_duplicate_keys_parameters_01.png",
+        "swagger/053_duplicate_keys/053_duplicate_keys_response.png"
+      ]
+    },
+    {
+      "name": "053_empty_items",
+      "http_status": 422,
+      "result": "swagger/053_empty_items/result.json",
+      "screenshots": [
+        "swagger/053_empty_items/053_empty_items_parameters_01.png",
+        "swagger/053_empty_items/053_empty_items_response.png"
+      ]
+    },
+    {
+      "name": "053_empty_key_ids",
+      "http_status": 422,
+      "result": "swagger/053_empty_key_ids/result.json",
+      "screenshots": [
+        "swagger/053_empty_key_ids/053_empty_key_ids_parameters_01.png",
+        "swagger/053_empty_key_ids/053_empty_key_ids_response.png"
+      ]
+    },
+    {
+      "name": "053_plaintext_passphrase",
+      "http_status": 422,
+      "result": "swagger/053_plaintext_passphrase/result.json",
+      "screenshots": [
+        "swagger/053_plaintext_passphrase/053_plaintext_passphrase_parameters_01.png",
+        "swagger/053_plaintext_passphrase/053_plaintext_passphrase_response.png"
+      ]
+    },
+    {
+      "name": "053_unknown_request_field",
+      "http_status": 422,
+      "result": "swagger/053_unknown_request_field/result.json",
+      "screenshots": [
+        "swagger/053_unknown_request_field/053_unknown_request_field_parameters_01.png",
+        "swagger/053_unknown_request_field/053_unknown_request_field_response.png"
+      ]
+    },
+    {
+      "name": "054_already_escrowed",
+      "http_status": 202,
+      "result": "swagger/054_already_escrowed/result.json",
+      "screenshots": [
+        "swagger/054_already_escrowed/054_already_escrowed_parameters_01.png",
+        "swagger/054_already_escrowed/054_already_escrowed_response.png"
+      ]
+    },
+    {
+      "name": "055_unknown_appliance_and_key",
+      "http_status": 202,
+      "result": "swagger/055_unknown_appliance_and_key/result.json",
+      "screenshots": [
+        "swagger/055_unknown_appliance_and_key/055_unknown_appliance_and_key_parameters_01.png",
+        "swagger/055_unknown_appliance_and_key/055_unknown_appliance_and_key_response.png"
+      ]
+    },
+    {
+      "name": "056_25_total_keys_boundary",
+      "http_status": 202,
+      "result": "swagger/056_25_total_keys_boundary/result.json",
+      "screenshots": [
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_parameters_01.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_01.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_02.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_03.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_04.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_05.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_06.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_07.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_08.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_09.png",
+        "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_10.png"
+      ]
+    },
+    {
+      "name": "060_final_public_readback_omitted",
+      "http_status": 200,
+      "result": "swagger/060_final_public_readback_omitted/result.json",
+      "screenshots": [
+        "swagger/060_final_public_readback_omitted/060_final_public_readback_omitted_parameters_01.png",
+        "swagger/060_final_public_readback_omitted/060_final_public_readback_omitted_response.png"
+      ]
+    },
+    {
+      "name": "060_final_public_readback_supplied-a",
+      "http_status": 200,
+      "result": "swagger/060_final_public_readback_supplied-a/result.json",
+      "screenshots": [
+        "swagger/060_final_public_readback_supplied-a/060_final_public_readback_supplied-a_parameters_01.png",
+        "swagger/060_final_public_readback_supplied-a/060_final_public_readback_supplied-a_response.png"
+      ]
+    },
+    {
+      "name": "060_final_public_readback_supplied-b",
+      "http_status": 200,
+      "result": "swagger/060_final_public_readback_supplied-b/result.json",
+      "screenshots": [
+        "swagger/060_final_public_readback_supplied-b/060_final_public_readback_supplied-b_parameters_01.png",
+        "swagger/060_final_public_readback_supplied-b/060_final_public_readback_supplied-b_response.png"
+      ]
+    }
+  ],
+  "retained_harness_failures": [
+    {
+      "name": "001_baseline_volume_keys",
+      "http_status": 404,
+      "result": "diagnostics/001_baseline_volume_keys/result.json",
+      "screenshots": [
+        "diagnostics/001_baseline_volume_keys/001_baseline_volume_keys_parameters_01.png",
+        "diagnostics/001_baseline_volume_keys/001_baseline_volume_keys_response.png"
+      ]
+    },
+    {
+      "name": "004_baseline_volume_keys",
+      "http_status": 500,
+      "result": "diagnostics/004_baseline_volume_keys/result.json",
+      "screenshots": [
+        "diagnostics/004_baseline_volume_keys/004_baseline_volume_keys_parameters_01.png",
+        "diagnostics/004_baseline_volume_keys/004_baseline_volume_keys_response.png"
+      ]
+    }
+  ],
+  "native_passing_request_count": 30,
+  "total_png_count": 91,
+  "actual_result_render_count": 2
+}

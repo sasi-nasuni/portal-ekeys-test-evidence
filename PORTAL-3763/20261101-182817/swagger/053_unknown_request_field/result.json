@@ -1,0 +1,36 @@
+{
+  "id": 8,
+  "name": "053_unknown_request_field",
+  "method": "POST",
+  "path_template": "/edges/escrow-setup",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "extra_forbidden",
+        "loc": [
+          "body",
+          "unexpected"
+        ],
+        "msg": "Extra inputs are not permitted",
+        "input": "nonsecret"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/escrow-setup",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/escrow_setup_bulk_edges_escrow_setup_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/053_unknown_request_field/053_unknown_request_field_parameters_01.png",
+    "swagger/053_unknown_request_field/053_unknown_request_field_response.png"
+  ],
+  "captured_at": "2026-11-01T18:52:01.533Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

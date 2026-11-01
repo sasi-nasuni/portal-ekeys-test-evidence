@@ -1,0 +1,138 @@
+{
+  "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+  "before": {
+    "keys": [
+      {
+        "enabled": true,
+        "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "4A8AA81E0FBB71E7AF266C99A139B0FCBD485486"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "3DE3DE2485AEBF6FCCEFF7FD74DCC03CF6A884A0"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "3AFFE147ED9F6BC86042A4661689F4EA96DB0C05"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "EFB6AB9C0996ABC0CDF767BA0F4C226B81AF3D85"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "68E46A191BBCF99DA2399766F7FDE57A0C80C642"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500"
+      }
+    ],
+    "state": "Active",
+    "guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "name": "E-Keys-Test-01"
+  },
+  "after": {
+    "keys": [
+      {
+        "enabled": true,
+        "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0"
+      },
+      {
+        "enabled": true,
+        "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "4A8AA81E0FBB71E7AF266C99A139B0FCBD485486"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "3DE3DE2485AEBF6FCCEFF7FD74DCC03CF6A884A0"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "3AFFE147ED9F6BC86042A4661689F4EA96DB0C05"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "EFB6AB9C0996ABC0CDF767BA0F4C226B81AF3D85"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "68E46A191BBCF99DA2399766F7FDE57A0C80C642"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634"
+      },
+      {
+        "enabled": false,
+        "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500"
+      }
+    ],
+    "state": "Active",
+    "guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "name": "E-Keys-Test-01"
+  },
+  "unchanged": true
+}

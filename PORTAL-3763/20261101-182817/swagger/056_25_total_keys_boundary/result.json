@@ -1,0 +1,270 @@
+{
+  "id": 15,
+  "name": "056_25_total_keys_boundary",
+  "method": "POST",
+  "path_template": "/edges/escrow-setup",
+  "status": 202,
+  "body": {
+    "items": [
+      {
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "keys": [
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "b4d1ab5c-717b-4e05-b0a0-753425c07383"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "bd9dd96c-9aa0-42bb-9a68-786e776bc465"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "6addc2c8-17c8-4f7e-b59b-b286389be535"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "5543a568-cb10-42e2-a80b-e80bf86d3ee6"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "1e915d50-0f12-4aaa-ab4b-5d21cd9e62a7"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "22f84ce3-2bd4-4dd3-a94c-984439694837"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "43db7685-0102-414c-8a88-d3e86058e431"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "ccc004cf-d031-43ce-ab43-938c3ee32ec2"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "dca09783-9340-4c0e-a64b-0797c09c43e1"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "8d18d2fb-6faa-420f-8cae-c43c2360f181"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "81cce011-2298-40f2-a44f-57dcadbfe750"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "05e92bf8-39bc-4fb3-bff5-d3dba7f50001"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "d975c3ce-af45-4215-88f7-2dc93876c9ee"
+          }
+        ]
+      },
+      {
+        "appliance_id": "f09905dc-7e26-411a-9525-704ea3e5adb9",
+        "keys": [
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "c7b4c063-ac58-44b7-a029-859deddd5773"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "b7ae1349-7da2-4e33-84e3-e66f4b56c99f"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "9cabfdcf-4804-4f87-922e-e33bf61f4ebb"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "5ee353d0-855b-40ff-81f2-1f98159e6cad"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "f12b05ed-446b-4fa6-9e04-7d0db327bcd0"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "62f414c8-1a86-49da-a132-5c7d3cbbfeca"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "510b53ce-5ecb-450f-810b-324e2ba72074"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "4922692e-1d3f-44a1-957f-c869d42f3d58"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "ca6af5bc-065e-4877-b2f3-a5f7234c90f9"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "8f92463c-2fb5-4ec2-aca0-d0718c33a047"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "e5a1742f-b653-494c-aa8b-4e76eed4d88a"
+          },
+          {
+            "task": null,
+            "rejection": {
+              "reason": "not_found",
+              "message": "Not found",
+              "metadata": null
+            },
+            "key_id": "fda2aeee-3147-4e46-9952-572682ffdf5e"
+          }
+        ]
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/escrow-setup",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/escrow_setup_bulk_edges_escrow_setup_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_parameters_01.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_01.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_02.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_03.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_04.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_05.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_06.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_07.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_08.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_09.png",
+    "swagger/056_25_total_keys_boundary/056_25_total_keys_boundary_response_10.png"
+  ],
+  "captured_at": "2026-11-01T18:52:31.348Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

@@ -1,0 +1,12 @@
+{
+  "source": "Local projections seeded from real filer SSH metadata, not full-dump ingestion",
+  "readiness_source": "SSH liveness observed immediately before fixture setup",
+  "appliance_version": "10.5-6327",
+  "created_counts": {
+    "edges": 1,
+    "keys": 69,
+    "volumes": 1,
+    "associations": 15,
+    "connections": 1
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "assertions": [
+    {
+      "assertion": "All six real write tasks completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "All materialized task steps completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "Sibling supplied-passphrase tasks share one operation ID",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "Exactly one deterministic passphrase audit for the operation",
+      "passed": true,
+      "detail": {
+        "source_event_id": "dd138459-a8d2-5acf-b37d-5c06c2a0351a",
+        "count": 1
+      }
+    },
+    {
+      "assertion": "Supplied path sends passphrase then escrow: 359c9852-7d3a-4469-9693-72e6976f4e27",
+      "passed": true,
+      "detail": [
+        "update_escrow_passphrase",
+        "escrow_encryption_key"
+      ]
+    },
+    {
+      "assertion": "Supplied path receives both real completion events: 359c9852-7d3a-4469-9693-72e6976f4e27",
+      "passed": true,
+      "detail": [
+        "escrow_passphrase_updated",
+        "encryption_key_escrowed"
+      ]
+    },
+    {
+      "assertion": "Supplied path sends passphrase then escrow: 4f9c9cec-00f9-4d3c-b44a-2f4bfac35ab8",
+      "passed": true,
+      "detail": [
+        "update_escrow_passphrase",
+        "escrow_encryption_key"
+      ]
+    },
+    {
+      "assertion": "Supplied path receives both real completion events: 4f9c9cec-00f9-4d3c-b44a-2f4bfac35ab8",
+      "passed": true,
+      "detail": [
+        "escrow_passphrase_updated",
+        "encryption_key_escrowed"
+      ]
+    },
+    {
+      "assertion": "Omitted path sends only escrow; passphrase step is a no-op",
+      "passed": true,
+      "detail": [
+        "escrow_encryption_key"
+      ]
+    },
+    {
+      "assertion": "Three test keys are escrowed in Portal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "Three test keys are escrowed on the real filer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "Real filer key count increased only by three",
+      "passed": true,
+      "detail": {
+        "before": 69,
+        "after": 72
+      }
+    },
+    {
+      "assertion": "Requested volume associations and enabled states unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "Filer published acceptance for all eight dispatched commands",
+      "passed": true,
+      "detail": {
+        "2c5b6f29-8313-4a4b-8c62-69f8db471659": 1,
+        "05dd6a74-b719-4633-a548-943d603c813a": 1,
+        "359c9852-7d3a-4469-9693-72e6976f4e27": 2,
+        "4f9c9cec-00f9-4d3c-b44a-2f4bfac35ab8": 2,
+        "6f07aa68-8487-4069-a665-55405547c152": 1,
+        "26e28945-964d-4469-ac81-1848f6f788c9": 1
+      }
+    }
+  ],
+  "acknowledgement_observation": {
+    "filer_accepted_commands": 8,
+    "portal_outbound_rows": 8,
+    "portal_acked_outbound_rows": 3,
+    "terminal_tasks_with_acknowledged_status": 0,
+    "note": "Completion and ACK are distinct. This 10.5 POC run completed all tasks; not all published ACKs were present in the local database. ACK routing/reconciliation is not claimed as passing."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": 3,
+  "name": "060_final_public_readback_omitted",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 200,
+  "body": {
+    "id": "fbb7b445-a0ba-419f-a47b-027b20f1ad00",
+    "name": "PORTAL-3763-E2E-20261101-182817-omitted",
+    "fingerprint": "7DCB2F0E3502BD0CE12417C8E047BDF93F27A432",
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "appliance_name": "PORTAL-3763 Test Appliance",
+    "algorithm": "rsa",
+    "length": 3072,
+    "type": "volume",
+    "origin": "uploaded",
+    "used": false,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [],
+    "is_escrowed": true,
+    "is_backup_key": false
+  },
+  "request_url": "http://127.0.0.1:8000/encryption-keys/fbb7b445-a0ba-419f-a47b-027b20f1ad00",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/get_encryption_key_encryption_keys__key_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/060_final_public_readback_omitted/060_final_public_readback_omitted_parameters_01.png",
+    "swagger/060_final_public_readback_omitted/060_final_public_readback_omitted_response.png"
+  ],
+  "captured_at": "2026-11-01T18:58:05.994Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

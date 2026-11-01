@@ -1,0 +1,46 @@
+{
+  "id": 10,
+  "name": "053_duplicate_keys",
+  "method": "POST",
+  "path_template": "/edges/escrow-setup",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "items",
+          0
+        ],
+        "msg": "Value error, Duplicate key IDs are not allowed",
+        "input": {
+          "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+          "key_ids": [
+            "63f95760-f358-436b-8a7c-abf43c5d09d3",
+            "63f95760-f358-436b-8a7c-abf43c5d09d3"
+          ]
+        },
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8000/edges/escrow-setup",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/escrow_setup_bulk_edges_escrow_setup_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/053_duplicate_keys/053_duplicate_keys_parameters_01.png",
+    "swagger/053_duplicate_keys/053_duplicate_keys_response.png"
+  ],
+  "captured_at": "2026-11-01T18:52:09.441Z",
+  "evidence_classification": "Native Swagger request with actual network/UI equality verified"
+}

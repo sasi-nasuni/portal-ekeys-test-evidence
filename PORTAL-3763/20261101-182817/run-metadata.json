@@ -1,0 +1,22 @@
+{
+  "tested_sha": "dca34b220abb5acfe9ec3e41adbf67ef69b4a280",
+  "branch": "sbhushan/PORTAL-3763_escrow_setup",
+  "workspace_baseline": [
+    " M devtools/edge-console/Dockerfile",
+    " M devtools/edge-console/app/commands.py",
+    " M devtools/edge-console/app/main.py",
+    " M devtools/edge-console/app/senders/portal_task.py",
+    " M devtools/edge-console/app/templates/_command_form.html",
+    " M devtools/edge-console/app/templates/_command_options.html",
+    " M devtools/edge-console/app/templates/_message_detail.html",
+    " M devtools/edge-console/app/templates/_message_row.html",
+    " M devtools/edge-console/app/templates/index.html",
+    "?? devtools/edge-console/app/keygen.py",
+    "?? devtools/edge-console/app/keys/",
+    "?? devtools/edge-console/app/templates/_decrypt_result.html"
+  ],
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+  "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+  "started_at": "2026-11-01T18:28:17.618259+00:00"
+}

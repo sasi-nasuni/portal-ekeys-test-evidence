@@ -1,0 +1,58 @@
+{
+  "note": "Sanitized actual input structure. Ciphertext, unlock passwords, tokens and private key bytes are withheld. Native Swagger used Try it out / Execute, not direct browser fetch.",
+  "uploads": [
+    {
+      "method": "POST",
+      "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/upload",
+      "fingerprint": "94D43D227068B5D745454BD240297901F155F8EB",
+      "name": "PORTAL-3763-E2E-20261101-182817-supplied-a",
+      "escrow": false,
+      "backup_key": false,
+      "key_file": "[encrypted protected GnuPG secret key; withheld]",
+      "passphrase": "[random key unlock password; withheld]"
+    },
+    {
+      "method": "POST",
+      "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/upload",
+      "fingerprint": "7DCB2F0E3502BD0CE12417C8E047BDF93F27A432",
+      "name": "PORTAL-3763-E2E-20261101-182817-omitted",
+      "escrow": false,
+      "backup_key": false,
+      "key_file": "[encrypted protected GnuPG secret key; withheld]",
+      "passphrase": "[random key unlock password; withheld]"
+    },
+    {
+      "method": "POST",
+      "path": "/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-keys/upload",
+      "fingerprint": "067C3A9B581E4D963E232673569E60D5C979F776",
+      "name": "PORTAL-3763-E2E-20261101-182817-supplied-b",
+      "escrow": false,
+      "backup_key": false,
+      "key_file": "[encrypted protected GnuPG secret key; withheld]",
+      "passphrase": "[random key unlock password; withheld]"
+    }
+  ],
+  "supplied_setup": {
+    "items": [
+      {
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "key_ids": [
+          "63f95760-f358-436b-8a7c-abf43c5d09d3",
+          "855c2711-0261-430c-9c9d-5c8800d23ddb",
+          "30a63de6-6a98-4ba8-9197-1cbb76e97609"
+        ],
+        "passphrase": "[PGP ciphertext of the existing filer escrow passphrase; withheld]"
+      }
+    ]
+  },
+  "omitted_setup": {
+    "items": [
+      {
+        "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "key_ids": [
+          "fbb7b445-a0ba-419f-a47b-027b20f1ad00"
+        ]
+      }
+    ]
+  }
+}

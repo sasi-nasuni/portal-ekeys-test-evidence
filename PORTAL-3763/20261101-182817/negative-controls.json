@@ -1,0 +1,6 @@
+{
+  "negative_license_test": "Temporarily disabled only the local tenant license cache; real entitlement unchanged and original cache restored",
+  "negative_feature_test": "Temporarily disabled only the local feature cache and restored it",
+  "permission_tests": "Persisted local users and roles, each missing one required permission",
+  "device_writes_expected": 0
+}

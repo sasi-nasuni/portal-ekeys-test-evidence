@@ -1,0 +1,14 @@
+{
+  "source_sha": "dca34b220abb5acfe9ec3e41adbf67ef69b4a280",
+  "docker_start_requested": "make run",
+  "standard_start_failed": "Docker bind-mounted files raise EMFILE even with available process/system descriptors",
+  "fallback": "temporary Docker images copying the tested Git source; no source bind mounts",
+  "user_devtools_changes_preserved": true,
+  "swagger_exposed_for_testing": true,
+  "minimum_version_override": true,
+  "credentials_in_public_evidence": false,
+  "prepared_at": "2026-11-01T18:34:11.625706+00:00",
+  "minimum_version_original": "10.6",
+  "minimum_version_testing": "10.5",
+  "minimum_version_override_user_authorized": true
+}
