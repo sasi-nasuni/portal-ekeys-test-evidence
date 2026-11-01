@@ -1,0 +1,4 @@
+{
+  "owned_temporary_cluster_stopped": true,
+  "isolated_test_database_cleanup": "pytest finalizer completed"
+}

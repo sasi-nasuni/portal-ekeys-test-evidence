@@ -1,0 +1,17 @@
+{
+  "cwd": "backend/libs/portal-data",
+  "command": [
+    ".venv/bin/pytest",
+    "tests/integration/encryption_keys/test_volume_keys_list.py",
+    "-q",
+    "--tb=short",
+    "--show-capture=no",
+    "-o",
+    "addopts=",
+    "-o",
+    "log_cli=false",
+    "--junitxml=./postgres.xml"
+  ],
+  "exit_code": 0,
+  "database": "Isolated temporary PostgreSQL cluster with GSS negotiation disabled; no application database or Docker service is targeted."
+}

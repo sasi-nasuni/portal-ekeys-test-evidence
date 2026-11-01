@@ -1,0 +1,23 @@
+[sbhushan/PORTAL-3760_volume_encr_keys 2473f33ef4] [PORTAL-3760] Add volume encryption key collection read endpoint
+ Date: Sun Nov 1 00:42:24 2026 +0530
+ 14 files changed, 1311 insertions(+), 8 deletions(-)
+ create mode 100644 backend/libs/portal-api/portal/api/dto/encryption_keys/volume_keys.py
+ create mode 100644 backend/libs/portal-data/tests/unit/test_grouped_volume_keys.py
+ create mode 100644 backend/portal-webapi/tests/unit/encryption_key_routes/test_grouped_volume_keys.py
+check for added large files..............................................Passed
+fix utf-8 byte order marker..............................................Passed
+check for case conflicts.................................................Passed
+check for broken symlinks............................(no files to check)Skipped
+debug statements (python)................................................Passed
+detect private key.......................................................Passed
+check that executables have shebangs.................(no files to check)Skipped
+check that scripts with shebangs are executable..........................Passed
+check for merge conflicts................................................Passed
+Backend: format code.....................................................Passed
+Backend: lint code.......................................................Passed
+Backend: typecheck code..................................................Passed
+Backend: check uv.lock files.............................................Passed
+Frontend: format and lint code.......................(no files to check)Skipped
+Frontend: typecheck code.............................(no files to check)Skipped
+Postman: sync collections with OpenAPI specs.............................Passed
+jira-commit-msg..........................................................Passed

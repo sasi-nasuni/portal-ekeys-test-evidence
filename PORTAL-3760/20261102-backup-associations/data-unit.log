@@ -1,0 +1,30 @@
+........................................................................ [ 38%]
+........................................................................ [ 77%]
+..........................................                               [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.14/site-packages/pgpy/constants.py:192
+  <application-checkout>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/constants.py:192: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+    SymmetricKeyAlgorithm.TripleDES: algorithms.TripleDES,
+
+.venv/lib/python3.14/site-packages/pgpy/constants.py:199
+  <application-checkout>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/constants.py:199: CryptographyDeprecationWarning: Camellia has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.Camellia and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 49.0.0.
+    SymmetricKeyAlgorithm.Camellia128: algorithms.Camellia,
+
+.venv/lib/python3.14/site-packages/pgpy/constants.py:200
+  <application-checkout>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/constants.py:200: CryptographyDeprecationWarning: Camellia has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.Camellia and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 49.0.0.
+    SymmetricKeyAlgorithm.Camellia192: algorithms.Camellia,
+
+.venv/lib/python3.14/site-packages/pgpy/constants.py:201
+  <application-checkout>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/constants.py:201: CryptographyDeprecationWarning: Camellia has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.Camellia and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 49.0.0.
+    SymmetricKeyAlgorithm.Camellia256: algorithms.Camellia}
+
+../portal-core/portal/core/pgp.py:396
+  <application-checkout>/backend/libs/portal-core/portal/core/pgp.py:396: UserWarning: Selected compression algorithm not in key preferences
+    ciphertext = pub_key.encrypt(msg)
+
+.venv/lib/python3.14/site-packages/pgpy/symenc.py:29
+  <application-checkout>/backend/libs/portal-data/.venv/lib/python3.14/site-packages/pgpy/symenc.py:29: CryptographyDeprecationWarning: CFB has been moved to cryptography.hazmat.decrepit.ciphers.modes.CFB and will be removed from cryptography.hazmat.primitives.ciphers.modes in 49.0.0.
+    encryptor = Cipher(alg.cipher(key), modes.CFB(iv), default_backend()).encryptor()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+186 passed, 6 warnings in 1.65s

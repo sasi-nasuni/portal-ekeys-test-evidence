@@ -1,0 +1,42 @@
+{
+  "suites": [
+    {
+      "name": "data-unit",
+      "tests": 186,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit": "data-unit.xml",
+      "log": "data-unit.log",
+      "command": "data-unit-command.json"
+    },
+    {
+      "name": "webapi-unit",
+      "tests": 136,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit": "webapi-unit.xml",
+      "log": "webapi-unit.log",
+      "command": "webapi-unit-command.json"
+    },
+    {
+      "name": "postgres",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "junit": "postgres.xml",
+      "log": "postgres.log",
+      "command": "postgres-command.json"
+    }
+  ],
+  "total_passed": 347,
+  "checks": {
+    "ruff": "passed",
+    "format": "passed",
+    "pyright": "0 errors, 0 warnings",
+    "openapi_generation": "passed"
+  },
+  "scope": "Automated regression coverage of the backup-key association correction; Swagger was not rerun for this correction because application services were stopped."
+}

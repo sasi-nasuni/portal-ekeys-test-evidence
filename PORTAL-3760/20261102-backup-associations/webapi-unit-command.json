@@ -1,0 +1,16 @@
+{
+  "cwd": "backend/portal-webapi",
+  "command": [
+    ".venv/bin/pytest",
+    "tests/unit/encryption_key_routes",
+    "-q",
+    "--tb=short",
+    "--show-capture=no",
+    "-o",
+    "addopts=",
+    "-o",
+    "log_cli=false",
+    "--junitxml=./webapi-unit.xml"
+  ],
+  "exit_code": 0
+}

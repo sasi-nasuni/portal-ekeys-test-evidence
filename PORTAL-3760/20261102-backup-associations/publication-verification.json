@@ -1,0 +1,8 @@
+{
+  "text_files_scanned": 14,
+  "secret_pattern_findings": [],
+  "original_local_artifacts_preserved": true,
+  "tested_application_sha": "2473f33ef41c1badf4479075e310f783d7af36db",
+  "automated_passed": 347,
+  "swagger_not_rerun": true
+}

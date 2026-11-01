@@ -1,0 +1,19 @@
+{
+  "cwd": "backend/libs/portal-data",
+  "command": [
+    ".venv/bin/pytest",
+    "tests/unit/encryption_keys/test_service.py",
+    "tests/unit/test_grouped_volume_keys.py",
+    "tests/unit/test_encryption_key_repo.py",
+    "tests/unit/test_encryption_key_converters.py",
+    "-q",
+    "--tb=short",
+    "--show-capture=no",
+    "-o",
+    "addopts=",
+    "-o",
+    "log_cli=false",
+    "--junitxml=./data-unit.xml"
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,24 @@
+{
+  "tested_application_sha": "2473f33ef41c1badf4479075e310f783d7af36db",
+  "previous_application_sha": "c1b35ab01f8204fc862f8010d56f86110b5adff9",
+  "client_date": "2026-11-02",
+  "pr": "https://github.com/nasuni/portal/pull/3051",
+  "legacy_contract": "Existing master-owned backup-key associations reported by legacy filers remain visible and searchable; Portal rejects adding a backup key as a new volume association before task creation.",
+  "before_fix_reproduction": {
+    "postgres_read_cases_failed": 2,
+    "add_service_cases_failed": 4,
+    "observed_failures": [
+      "Existing associated backup key missing from response",
+      "Adding a backup key did not raise a validation error"
+    ]
+  },
+  "swagger": "Not rerun for the corrected application SHA; local app services were stopped. Earlier evidence is retained for its original SHA and its backup-exclusion expectation is superseded.",
+  "source_sha256": {
+    "backend/libs/portal-data/portal/data/encryption_keys/dtos.py": "73dd60757a1b0b55cd15a815c87556bf4a15f5517bb6682400be76c2585c1407",
+    "backend/libs/portal-data/portal/data/encryption_keys/repo/volume_reads.py": "b7ab62e1f7eb792b184bc5611a13a6d571faadea88c39fea3de2e03c120f4f6a",
+    "backend/libs/portal-data/portal/data/encryption_keys/service/volume_keys.py": "1663b8fcfdc70300480ef0887b0a5caa3397b68f8ffe1c41895c54540227dfdc",
+    "backend/libs/portal-data/tests/integration/encryption_keys/test_volume_keys_list.py": "6b55803172cacf7e36fa18d30772bf1113f33b6078a0f3cb7e7f1a6e0f767c45",
+    "backend/libs/portal-data/tests/unit/encryption_keys/test_service.py": "192c039f871a1a58609fe8692fcb5c46d8c3c217dc8ca3cf26e6119b1ab7b264",
+    "backend/portal-webapi/portal/webapi/v1/routes/encryption_keys/volume_keys.py": "8a98ee8644c5c5123511f1349b80389e896ebd0ef2274f18894e05573a3c858f"
+  }
+}
