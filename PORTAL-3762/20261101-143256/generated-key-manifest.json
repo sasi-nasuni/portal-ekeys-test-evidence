@@ -1,0 +1,42 @@
+[
+  {
+    "index": 1,
+    "fingerprint": "3AFFE147ED9F6BC86042A4661689F4EA96DB0C05",
+    "appliance_name_from_uid": "PORTAL-3762-PROTECTED-20261101-143256-1",
+    "escrow": false,
+    "disable_existing": false,
+    "unlock_passphrase_protected": true,
+    "unlock_passphrase_transport": "Plaintext SecretStr in multipart, forwarded unchanged within encrypted command envelope; never written to evidence",
+    "algorithm": "RSA3072 certify/sign primary + encryption subkey"
+  },
+  {
+    "index": 2,
+    "fingerprint": "EFB6AB9C0996ABC0CDF767BA0F4C226B81AF3D85",
+    "appliance_name_from_uid": "PORTAL-3762-PROTECTED-20261101-143256-2",
+    "escrow": true,
+    "disable_existing": false,
+    "unlock_passphrase_protected": true,
+    "unlock_passphrase_transport": "Plaintext SecretStr in multipart, forwarded unchanged within encrypted command envelope; never written to evidence",
+    "algorithm": "RSA3072 certify/sign primary + encryption subkey"
+  },
+  {
+    "index": 3,
+    "fingerprint": "3DE3DE2485AEBF6FCCEFF7FD74DCC03CF6A884A0",
+    "appliance_name_from_uid": "PORTAL-3762-PROTECTED-20261101-143256-3",
+    "escrow": false,
+    "disable_existing": true,
+    "unlock_passphrase_protected": true,
+    "unlock_passphrase_transport": "Plaintext SecretStr in multipart, forwarded unchanged within encrypted command envelope; never written to evidence",
+    "algorithm": "RSA3072 certify/sign primary + encryption subkey"
+  },
+  {
+    "index": 4,
+    "fingerprint": "4A8AA81E0FBB71E7AF266C99A139B0FCBD485486",
+    "appliance_name_from_uid": "PORTAL-3762-PROTECTED-20261101-143256-4",
+    "escrow": true,
+    "disable_existing": true,
+    "unlock_passphrase_protected": true,
+    "unlock_passphrase_transport": "Plaintext SecretStr in multipart, forwarded unchanged within encrypted command envelope; never written to evidence",
+    "algorithm": "RSA3072 certify/sign primary + encryption subkey"
+  }
+]

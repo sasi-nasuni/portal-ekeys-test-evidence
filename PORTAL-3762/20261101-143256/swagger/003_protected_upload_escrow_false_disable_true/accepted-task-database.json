@@ -1,0 +1,66 @@
+{
+  "task": {
+    "id": "de20380e-614a-4af0-83db-07feaa44ef8a",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "action": "upload_key_to_volume",
+    "state": "in_progress",
+    "status": null,
+    "reason": null,
+    "failed_at": null,
+    "params": {
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "fingerprint": "3DE3DE2485AEBF6FCCEFF7FD74DCC03CF6A884A0",
+      "escrow": false,
+      "disable_existing": true,
+      "keys_to_add": [],
+      "keys_to_disable": null
+    },
+    "created_at": "2026-11-01 14:36:36.070466+00:00",
+    "last_updated_at": "2026-11-01 14:36:36.070466+00:00"
+  },
+  "steps": [
+    {
+      "name": "upload_encryption_key",
+      "state": "in_progress",
+      "reason": null,
+      "created_at": "2026-11-01 14:36:36.070466+00:00",
+      "updated_at": "2026-11-01 14:36:36.103782+00:00"
+    },
+    {
+      "name": "escrow_encryption_key",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-01 14:36:36.070466+00:00",
+      "updated_at": "2026-11-01 14:36:36.070466+00:00"
+    },
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-01 14:36:36.070466+00:00",
+      "updated_at": "2026-11-01 14:36:36.070466+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-01 14:36:36.070466+00:00",
+      "updated_at": "2026-11-01 14:36:36.070466+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "9a944825-b675-4a75-84d6-5d8258346dc6",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": null,
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:36:36.110285+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    }
+  ],
+  "captured_at": "2026-11-01T14:36:44.480556+00:00"
+}

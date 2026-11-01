@@ -1,0 +1,49 @@
+{
+  "id": 4,
+  "name": "003_protected_upload_escrow_false_disable_true_key_readback",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 200,
+  "body": {
+    "id": "e900d64e-428b-4a95-ab9d-94356e49555a",
+    "name": "PORTAL-3762-PROTECTED-20261101-143256-3",
+    "fingerprint": "3DE3DE2485AEBF6FCCEFF7FD74DCC03CF6A884A0",
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "appliance_name": "DEV-E-KEYS-POC",
+    "algorithm": "rsa",
+    "length": 3072,
+    "type": "volume",
+    "origin": "uploaded",
+    "used": true,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [
+      {
+        "volume_guid": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "volume_name": "E-Keys-Test-01",
+        "state": "enabled",
+        "is_stub": false,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "is_escrowed": false,
+    "is_backup_key": false
+  },
+  "request_url": "http://127.0.0.1:8000/encryption-keys/e900d64e-428b-4a95-ab9d-94356e49555a",
+  "docs_url": "http://127.0.0.1:8000/docs#/Encryption%20Keys/get_encryption_key_encryption_keys__key_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/003_protected_upload_escrow_false_disable_true_key_readback/003_protected_upload_escrow_false_disable_true_key_readback_parameters_01.png",
+    "swagger/003_protected_upload_escrow_false_disable_true_key_readback/003_protected_upload_escrow_false_disable_true_key_readback_response_01.png",
+    "swagger/003_protected_upload_escrow_false_disable_true_key_readback/003_protected_upload_escrow_false_disable_true_key_readback_response_02.png"
+  ],
+  "captured_at": "2026-11-01T14:37:10.970Z"
+}

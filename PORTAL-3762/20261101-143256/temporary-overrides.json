@@ -1,0 +1,17 @@
+{
+  "include_in_schema": {
+    "original": false,
+    "testing": true,
+    "restored": true
+  },
+  "minimum_filer_version": {
+    "original": "10.6",
+    "testing": "10.5",
+    "user_authorized": true,
+    "restored": true
+  },
+  "actual_key_escrow_license": true,
+  "feature_cache_temporarily_enabled": true,
+  "feature_cache_restored": true,
+  "served_openapi_endpoint_hidden": true
+}

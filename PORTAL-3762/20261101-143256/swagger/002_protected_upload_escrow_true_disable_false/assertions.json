@@ -1,0 +1,16 @@
+{
+  "task_completed": true,
+  "steps_completed": true,
+  "four_steps": true,
+  "volume_owned": true,
+  "key_present": true,
+  "appliance_name_authoritative": true,
+  "task_not_on_rows": true,
+  "disable_snapshot_matches_previously_enabled": true,
+  "new_key_enabled": true,
+  "no_stubs": true,
+  "escrow_confirmed": true,
+  "volume_task_absent_on_key": true,
+  "persisted_upload_secrets_absent": true,
+  "exact_requested_command_sequence": true
+}

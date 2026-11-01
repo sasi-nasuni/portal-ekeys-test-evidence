@@ -1,0 +1,9 @@
+{
+  "ticket": "PORTAL-3762",
+  "baseline_application_sha": "69559978ecf3e7da43e1b318126223fbae03448f",
+  "tested_uncommitted_fix": "Remove encrypted-passphrase validation; forward plaintext upload unlock passphrase unchanged like existing appliance upload.",
+  "started_at": "2026-11-01T14:32:56.814862+00:00",
+  "target_account": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "target_filer": "31d629af-30b3-413e-a583-d5d3da651eb9",
+  "target_volume": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+}

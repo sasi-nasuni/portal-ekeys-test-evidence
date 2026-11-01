@@ -1,0 +1,21 @@
+{
+  "source": "SSH tail of /var/log/nasuni/broadcast_network.log",
+  "captured_at": "2026-11-01T14:40:13.379999+00:00",
+  "task_ids": [
+    "8d90a414-84ef-4c70-9c47-10e4b02c9faf",
+    "83d17a6e-ee14-4669-8bf4-6e49886ce43a",
+    "573540c0-62b7-456c-8dbb-4768c189f7f7",
+    "fcc46bc6-4203-476b-b90c-bab6998222eb",
+    "928a317b-831a-4191-8e4d-d8c99e219a3b",
+    "bee52875-7300-41d4-a3d8-aec67bf720cb"
+  ],
+  "payload_lines_omitted": true,
+  "lines": [
+    "2026-11-01 09:39:07.579 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=8d90a414-84ef-4c70-9c47-10e4b02c9faf status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:39:19.624 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=83d17a6e-ee14-4669-8bf4-6e49886ce43a status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:39:27.722 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=573540c0-62b7-456c-8dbb-4768c189f7f7 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:39:37.741 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=fcc46bc6-4203-476b-b90c-bab6998222eb status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:39:45.742 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=928a317b-831a-4191-8e4d-d8c99e219a3b status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack",
+    "2026-11-01 09:39:55.717 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=bee52875-7300-41d4-a3d8-aec67bf720cb status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/d0f66c2a-3344-4b1e-852c-fda0273eb580/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack"
+  ]
+}

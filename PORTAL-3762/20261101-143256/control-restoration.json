@@ -1,0 +1,8 @@
+{
+  "feature_cache": {
+    "prior_feature_cache_restored": true
+  },
+  "readiness_timestamp_restored": false,
+  "newer_runtime_state_preserved": true,
+  "source_overrides_restored": true
+}

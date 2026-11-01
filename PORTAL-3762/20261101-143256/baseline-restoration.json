@@ -1,0 +1,15 @@
+{
+  "original_association_states_restored": true,
+  "new_test_associations_disabled": true,
+  "all_restoration_tasks_completed": true,
+  "confirmed_test_keys_retained": true,
+  "test_key_count": 4,
+  "restoration_task_ids": [
+    "8d90a414-84ef-4c70-9c47-10e4b02c9faf",
+    "83d17a6e-ee14-4669-8bf4-6e49886ce43a",
+    "573540c0-62b7-456c-8dbb-4768c189f7f7",
+    "fcc46bc6-4203-476b-b90c-bab6998222eb",
+    "928a317b-831a-4191-8e4d-d8c99e219a3b",
+    "bee52875-7300-41d4-a3d8-aec67bf720cb"
+  ]
+}

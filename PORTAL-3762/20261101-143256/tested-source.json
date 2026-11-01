@@ -1,0 +1,16 @@
+{
+  "baseline_sha": "69559978ecf3e7da43e1b318126223fbae03448f",
+  "application_fix_uncommitted": true,
+  "changed_files": [
+    "backend/libs/portal-data/portal/data/encryption_keys/service/upload.py",
+    "backend/libs/portal-data/tests/unit/encryption_keys/test_service.py",
+    "backend/libs/portal-api/tests/unit/dto/test_volume_key_upload.py",
+    "backend/libs/portal-api/tests/unit/test_encryption_keys_client.py",
+    "backend/portal-webapi/tests/unit/encryption_key_routes/test_volume_upload.py",
+    "docs/feature_overviews/encryption_keys.md"
+  ],
+  "source_diff_sha256": "46a2ea98e11dd579ae220a387cc43b8ee103ca06d2af0f1cdf6b771421bb32bf",
+  "regression_before_fix": "Four nonempty-plaintext-passphrase combinations failed with the extra PGP validation. Empty-passphrase variants passed.",
+  "focused_unit_tests_passed": 273,
+  "lint_format_pyright": "passed"
+}

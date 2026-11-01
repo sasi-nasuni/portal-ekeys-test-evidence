@@ -1,5 +1,7 @@
 # PORTAL-3762 live appliance testing
 
+> **Correction after the protected-key retest:** the separately encrypted upload unlock-passphrase requirement was incorrect. The existing appliance endpoint forwards plaintext `SecretStr`. Removing the extra Portal validation made all four protected-key combinations pass. See the [passing protected-key retest](../20261101-143256/README.md). The results below remain the historical pre-fix run.
+
 Tested application commit: `69559978ecf3e7da43e1b318126223fbae03448f`.
 
 **Result:** all four workflow combinations completed against the real filer using encrypted key files with an empty unlock passphrase. A separate passphrase-protected key case failed on the selected 10.5 appliance; that compatibility gap remains unresolved.

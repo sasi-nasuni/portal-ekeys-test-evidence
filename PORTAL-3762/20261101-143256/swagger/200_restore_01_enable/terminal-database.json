@@ -1,0 +1,48 @@
+{
+  "task": {
+    "id": "8d90a414-84ef-4c70-9c47-10e4b02c9faf",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "3cbfd88a-472a-438c-95cf-64d3ac2ea55e",
+    "action": "enable_volume_encryption_keys",
+    "state": "completed",
+    "status": null,
+    "reason": null,
+    "failed_at": null,
+    "params": null,
+    "created_at": "2026-11-01 14:39:05.113151+00:00",
+    "last_updated_at": "2026-11-01 14:39:10.967115+00:00"
+  },
+  "steps": [
+    {
+      "name": "enable_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-01 14:39:05.113151+00:00",
+      "updated_at": "2026-11-01 14:39:10.967115+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": "29641a9e-9c43-4a1f-bb1b-dc16049220ac",
+      "origin": "dvista1",
+      "target": "edge",
+      "origin_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "target_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "sent_at": "2026-11-01 14:39:05.129680+00:00",
+      "received_at": null,
+      "processing_status": "COMPLETED"
+    },
+    {
+      "id": "b6dd6249-6ecc-4316-97b3-543a00a3ad95",
+      "origin": "edge",
+      "target": "dvista1",
+      "origin_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "target_id": "d0f66c2a-3344-4b1e-852c-fda0273eb580",
+      "sent_at": "2026-11-01 14:39:08.107963+00:00",
+      "received_at": "2026-11-01 14:39:10.938262+00:00",
+      "processing_status": "COMPLETED"
+    }
+  ],
+  "captured_at": "2026-11-01T14:39:13.353771+00:00"
+}

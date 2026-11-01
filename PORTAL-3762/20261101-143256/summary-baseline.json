@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "body": {
+    "total": 65,
+    "generated_count": 2,
+    "escrowed": 11,
+    "not_escrowed": 54,
+    "backup_key": {
+      "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+      "name": "E-Keys-EdgeConsole-7212E7D6",
+      "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+      "is_escrowed": true
+    },
+    "has_escrow_passphrase": true,
+    "status": "synced",
+    "tasks": []
+  }
+}

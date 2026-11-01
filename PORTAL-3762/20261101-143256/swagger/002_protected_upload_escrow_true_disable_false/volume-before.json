@@ -1,0 +1,138 @@
+{
+  "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+  "tasks": [],
+  "items": [
+    {
+      "id": "5cf882f7-7288-4597-833a-1d60b22dcf88",
+      "name": "E-Keys-Test-01",
+      "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "generated",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "d0f8ba2f-e7a1-4559-9d00-7495446b16b1",
+      "name": "PORTAL-3762-E2E-20261101-140102-5",
+      "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "d6dc370f-b71d-4db8-b7b3-8eab5e91f69c",
+      "name": "E-Keys-Upload-Test-2",
+      "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "07947edb-1b06-4a4c-aae7-915ab8804391",
+      "name": "E-Keys-MsgViewer",
+      "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "d1d39522-f598-4ccf-8b4e-014463a7ab7c",
+      "name": "PORTAL-3762-E2E-20261101-140102-6",
+      "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "4f7bce69-a7dd-42e1-94b1-b25d9eed2993",
+      "name": "PORTAL-3762-E2E-20261101-140102-7",
+      "fingerprint": "68E46A191BBCF99DA2399766F7FDE57A0C80C642",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "f93f22a8-425e-44ee-9804-c0ca63b2640f",
+      "name": "PORTAL-3762-E2E-20261101-140102-8",
+      "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "6c221801-28bf-44f3-961c-d76446a9f302",
+      "name": "E-Keys-EdgeConsole-7212E7D6",
+      "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "c7d98393-6aef-4d31-aa3e-2a10eb5d53c7",
+      "name": "PORTAL-3762-PROTECTED-20261101-143256-1",
+      "fingerprint": "3AFFE147ED9F6BC86042A4661689F4EA96DB0C05",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "be7937b0-d96d-4776-acae-401c034b675a",
+      "name": "E-Keys-EdgeConsole-63E6D744",
+      "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "5146f6c9-0161-4b75-8304-e4e960c02926",
+      "name": "E-Keys-EdgeConsole-E097E395",
+      "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    {
+      "id": "204d447b-4dc9-48c7-bb93-47cf8e3d931b",
+      "name": "E-Keys-PORTAL3695-81FB50D9",
+      "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    }
+  ]
+}

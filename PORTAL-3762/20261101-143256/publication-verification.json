@@ -1,0 +1,11 @@
+{
+  "files": 163,
+  "screenshots": 82,
+  "secret_scan_findings": [],
+  "missing_links": [],
+  "png_bytes_preserved": true,
+  "generated_plaintext_unlock_passphrases_individually_checked": "See plaintext-secret-scan.json; all four generated values absent from saved public artifacts",
+  "excluded": "Entire runtime: key material, upload files, tokens, cache snapshots and harness programs. No application source patch published.",
+  "visual_review": "Reviewed native protected-key request: password remains masked; curl/auth are hidden.",
+  "all_checks_passed": true
+}

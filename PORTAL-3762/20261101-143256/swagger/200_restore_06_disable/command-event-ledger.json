@@ -1,0 +1,21 @@
+{
+  "task_id": "bee52875-7300-41d4-a3d8-aec67bf720cb",
+  "source": "Decoded persisted messages through the production CompressedJSON type; only event/command metadata retained",
+  "persisted_upload_secrets_absent": true,
+  "records": [
+    {
+      "id": "01b277b2-9812-4b6d-97a8-10b8e3a93905",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-01 14:39:53.018285+00:00",
+      "command": "disable_volume_encryption_keys"
+    },
+    {
+      "id": "952ebfb0-400e-4e55-81c9-1f558aaa9549",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-01 14:39:56.249797+00:00",
+      "event": "volume_encryption_keys_disabled"
+    }
+  ]
+}
