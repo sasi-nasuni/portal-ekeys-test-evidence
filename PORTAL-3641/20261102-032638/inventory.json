@@ -1,0 +1,27 @@
+{
+  "source": "preserved isolated PostgreSQL snapshot portal3763_e2e_20261101_182817",
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "account_name": "sbhushan1",
+  "counts": {
+    "appliances": 4,
+    "volumes": 9,
+    "encryption_keys": 87
+  },
+  "appliances": [
+    {"name": "DEV-E-KEYS-POC", "id": "31d629af-30b3-413e-a583-d5d3da651eb9", "stub": false, "has_backup_key": true},
+    {"name": "DEV-ENCR-KEYS-2", "id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e", "stub": false, "has_backup_key": true},
+    {"name": "test-filer-01", "id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8", "stub": false, "has_backup_key": true},
+    {"name": "test-filer-02", "id": "b0534c27-ec9a-4ea4-b076-ec415bfdedb6", "stub": true, "has_backup_key": false}
+  ],
+  "volumes": [
+    {"name": "E-Keys-Test-01", "id": "847170c8-098b-452d-9ade-83edfd106e88", "stub": false},
+    {"name": "test-aws-03", "id": "de7e79a3-9d7d-5f5c-9aa8-ddfb6d71a494", "stub": false},
+    {"name": "test-aws-04", "id": "bad4036c-cccc-5b6d-b5ba-5b4eaeb40aec", "stub": false},
+    {"name": "test-aws-05", "id": "cc1a579a-6ede-5199-afee-3e15ff8dce2e", "stub": false},
+    {"name": "test-aws-06", "id": "59b1ce06-3e5e-5adf-b3d0-7ccd2049bc64", "stub": false},
+    {"name": "test-vol-1-aws", "id": "83004ff9-164c-5b7c-8a49-4e127d9fcc16", "stub": false},
+    {"name": "test-vol-demo-check", "id": "85126fe9-04f1-508a-8975-f9fdb56fcf83", "stub": false},
+    {"name": "test-vol-tc-79", "id": "4c2b3e98-98d7-5d1a-9f29-358a16fb5d87", "stub": false},
+    {"name": "test-vol-tc-80", "id": "fa1c3b92-becd-5398-8122-d1d3137a1fa5", "stub": true}
+  ]
+}

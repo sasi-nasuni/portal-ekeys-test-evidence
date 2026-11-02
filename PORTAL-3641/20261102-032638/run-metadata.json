@@ -1,0 +1,27 @@
+{
+  "ticket": "PORTAL-3641",
+  "tested_application_sha": "1698fcf43a59eeccb084bfe98aa2424d3d4616f7",
+  "branch": "sbhushan/PORTAL-3641_dr_readiness_webbff",
+  "environment": "Local WebBFF Swagger with WebAPI reading preserved isolated account snapshot portal3763_e2e_20261101_182817",
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "account_name": "sbhushan1",
+  "inventory_snapshot": {
+    "appliances": 4,
+    "volumes": 9,
+    "encryption_keys": 87
+  },
+  "request_transport": "Served WebBFF Swagger UI Try it out / Execute",
+  "authentication": "Locally signed JWT in same-origin access_token cookie; external IdP not tested",
+  "temporary_controls": "Feature and license cache enabled only for the test account and restored afterward",
+  "cache_restoration": {
+    "feature": {
+      "originally_present": false,
+      "original_ttl": -2
+    },
+    "license": {
+      "originally_present": false,
+      "original_ttl": -2
+    }
+  },
+  "source_database_mutated": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "name": "001_missing_authentication",
+  "method": "GET",
+  "path_template": "/encryption-keys/dr-readiness",
+  "status": 401,
+  "body": {
+    "message": "No credentials provided",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/dr-readiness?sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_dr_readiness_keys_encryption_keys_dr_readiness_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/001_missing_authentication/001_missing_authentication_parameters_01.png",
+    "swagger/001_missing_authentication/001_missing_authentication_parameters_02.png",
+    "swagger/001_missing_authentication/001_missing_authentication_response.png"
+  ],
+  "captured_at": "2026-11-02T03:26:51.331Z"
+}

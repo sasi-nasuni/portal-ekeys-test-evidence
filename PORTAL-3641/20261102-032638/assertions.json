@@ -1,0 +1,83 @@
+{
+  "002_default_full_access": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 3,
+    "displayed_keys": 26,
+    "total_items": 3
+  },
+  "003_sort_descending": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 3,
+    "displayed_keys": 26,
+    "total_items": 3,
+    "descending_names_verified": true
+  },
+  "004_page_one_limit_two": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 2,
+    "displayed_keys": 16,
+    "total_items": 3
+  },
+  "005_page_two_iterator": {
+    "status_200": true,
+    "page": 2,
+    "items": 1,
+    "total_items_preserved": true,
+    "no_parent_overlap_with_page_one": true,
+    "combined_pages_match_default_parent_set": true
+  },
+  "006_filter_appliance_id": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 1,
+    "displayed_keys": 15,
+    "total_items": 1,
+    "selected_appliance_only": true
+  },
+  "007_search_appliance_name": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 1,
+    "displayed_keys": 15,
+    "total_items": 1,
+    "nonempty_exact_name_search": true
+  },
+  "008_backup_key_present": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 0,
+    "displayed_keys": 0,
+    "total_items": 0,
+    "backup_presence_filter_verified": true
+  },
+  "009_backup_key_missing": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 0,
+    "displayed_keys": 0,
+    "total_items": 0,
+    "backup_presence_filter_verified": true
+  },
+  "010_filter_escrowed": {
+    "complete_response_matches_webapi_projection": true,
+    "independent_cursor_presence_matches": true,
+    "unused_non_backup_keys_removed": true,
+    "items": 3,
+    "displayed_keys": 20,
+    "total_items": 3
+  },
+  "011_duplicate_appliance_filter_validation": {
+    "status_422": true,
+    "duplicate_filter_rejected": true
+  }
+}
