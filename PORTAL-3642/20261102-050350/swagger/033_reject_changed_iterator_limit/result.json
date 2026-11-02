@@ -1,0 +1,25 @@
+{
+  "id": 33,
+  "name": "033_reject_changed_iterator_limit",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 400,
+  "body": {
+    "message": "Iterator parameters do not match current request.",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=desc&limit=2&iterator_id=7dbbfba6-ad9c-4034-ab54-5870bdeb1e66",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/033_reject_changed_iterator_limit/033_reject_changed_iterator_limit_parameters_01.png",
+    "swagger/033_reject_changed_iterator_limit/033_reject_changed_iterator_limit_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:58.885Z"
+}

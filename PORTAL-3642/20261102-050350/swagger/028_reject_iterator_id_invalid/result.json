@@ -1,0 +1,39 @@
+{
+  "id": 28,
+  "name": "028_reject_iterator_id_invalid",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "uuid_parsing",
+        "loc": [
+          "query",
+          "iterator_id"
+        ],
+        "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1",
+        "input": "invalid",
+        "ctx": {
+          "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1"
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=asc&limit=25&iterator_id=invalid",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/028_reject_iterator_id_invalid/028_reject_iterator_id_invalid_parameters_01.png",
+    "swagger/028_reject_iterator_id_invalid/028_reject_iterator_id_invalid_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:36.782Z"
+}

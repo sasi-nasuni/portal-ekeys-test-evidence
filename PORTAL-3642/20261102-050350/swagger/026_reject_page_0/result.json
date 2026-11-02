@@ -1,0 +1,39 @@
+{
+  "id": 26,
+  "name": "026_reject_page_0",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "greater_than_equal",
+        "loc": [
+          "query",
+          "page"
+        ],
+        "msg": "Input should be greater than or equal to 1",
+        "input": "0",
+        "ctx": {
+          "ge": 1
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=asc&limit=25&page=0",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/026_reject_page_0/026_reject_page_0_parameters_01.png",
+    "swagger/026_reject_page_0/026_reject_page_0_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:28.416Z"
+}

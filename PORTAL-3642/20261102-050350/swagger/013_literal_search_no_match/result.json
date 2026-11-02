@@ -1,0 +1,31 @@
+{
+  "id": 13,
+  "name": "013_literal_search_no_match",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?search=PORTAL3642_no_match_100%25_XYZ&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/013_literal_search_no_match/013_literal_search_no_match_parameters_01.png",
+    "swagger/013_literal_search_no_match/013_literal_search_no_match_response.png"
+  ],
+  "captured_at": "2026-11-02T05:07:33.529Z"
+}

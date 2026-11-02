@@ -1,0 +1,36 @@
+{
+  "id": 23,
+  "name": "023_reject_backup_key_missing",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "extra_forbidden",
+        "loc": [
+          "query",
+          "backup_key"
+        ],
+        "msg": "Extra inputs are not permitted",
+        "input": "missing"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=asc&limit=25&backup_key=missing",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/023_reject_backup_key_missing/023_reject_backup_key_missing_parameters_01.png",
+    "swagger/023_reject_backup_key_missing/023_reject_backup_key_missing_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:15.827Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 34,
+  "name": "034_feature_disabled",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 403,
+  "body": {
+    "message": "User does not have the 'View Volume Encryption Keys' role",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/034_feature_disabled/034_feature_disabled_parameters_01.png",
+    "swagger/034_feature_disabled/034_feature_disabled_response.png"
+  ],
+  "captured_at": "2026-11-02T05:09:07.651Z"
+}

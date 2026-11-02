@@ -1,0 +1,89 @@
+{
+  "id": 5,
+  "name": "005_iterator_page_2",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "appliance_id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "appliance_name": "DEV-ENCR-KEYS-2",
+        "volume_role": null,
+        "keys": [
+          {
+            "id": "794a60b9-0055-4bd4-a77e-385719d5ece7",
+            "name": "E-Keys-MsgViewer",
+            "fingerprint": "63C73D75FA74D80992E6BFD5A92AC4D53FB1C2B6",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": false,
+            "is_backup_key": false
+          },
+          {
+            "id": "f455be2f-547e-4ffd-b56c-820f613c7491",
+            "name": "E-Keys-MsgViewer",
+            "fingerprint": "9C46BE25487AF95A481338614886D0BA45E7B722",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": false,
+            "is_backup_key": false
+          },
+          {
+            "id": "91863c71-c321-4855-bc9b-2b27cde4834f",
+            "name": "EKEYS-Test-VOL",
+            "fingerprint": "D08D48831B921A7F085F115829276041BF29E385",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "generated",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": true,
+            "is_backup_key": false
+          }
+        ],
+        "has_escrow_passphrase": true,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": "31d5bea4-6d12-48dc-9eb7-1a6e8f6a1402",
+      "page_size": 1,
+      "total_pages": 3,
+      "total_items": 3,
+      "page": 2
+    }
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=desc&limit=1&page=2&iterator_id=401225f4-804a-42e9-aa7d-04c19fdd7d80",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/005_iterator_page_2/005_iterator_page_2_parameters_01.png",
+    "swagger/005_iterator_page_2/005_iterator_page_2_response_01.png",
+    "swagger/005_iterator_page_2/005_iterator_page_2_response_02.png",
+    "swagger/005_iterator_page_2/005_iterator_page_2_response_03.png"
+  ],
+  "captured_at": "2026-11-02T05:06:55.054Z"
+}

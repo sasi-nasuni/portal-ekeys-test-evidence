@@ -1,0 +1,23 @@
+{
+  "ticket": "PORTAL-3642",
+  "tested_application_sha": "7d937f40340e881a60a9c396039a02e3923021b4",
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "account_name": "sbhushan1",
+  "source_database": "portal3763_e2e_20261101_182817",
+  "inventory_counts": {
+    "appliances": 4,
+    "volumes": 9,
+    "keys": 87
+  },
+  "source_data_kind": "Preserved account snapshot including test fixtures; not a fresh live NOC sync or real-filer execution",
+  "auth": "Existing persisted full-permission test user and locally signed JWT in access_token cookie; external IdP not tested",
+  "feature_license_controls": "Temporary local account cache controls; original values restored",
+  "transport": "Native served WebBFF Swagger UI Try it out / Execute; malformed/unknown query inputs use its documented requestInterceptor",
+  "comparison_transport": "Supporting direct read-only HTTP calls to grouped WebAPI with fixed type=volume and state=unused",
+  "database_unchanged": true,
+  "scenarios": 36,
+  "pngs": 196,
+  "completed_at": "2026-11-02T05:09:21.126806+00:00",
+  "driver": "Reused PORTAL-3641 native Swagger cookie driver, with native boolean-array controls",
+  "helper": "Reused PORTAL-3641 local JWT/cache helpers; no old main function or fixture writes were run"
+}

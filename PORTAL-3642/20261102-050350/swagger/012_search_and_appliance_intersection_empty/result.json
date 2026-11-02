@@ -1,0 +1,31 @@
+{
+  "id": 12,
+  "name": "012_search_and_appliance_intersection_empty",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 200,
+  "body": {
+    "items": [],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 0,
+      "total_items": 0,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?search=test-filer-01&appliance_ids=31d629af-30b3-413e-a583-d5d3da651eb9&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/012_search_and_appliance_intersection_empty/012_search_and_appliance_intersection_empty_parameters_01.png",
+    "swagger/012_search_and_appliance_intersection_empty/012_search_and_appliance_intersection_empty_response.png"
+  ],
+  "captured_at": "2026-11-02T05:07:29.246Z"
+}

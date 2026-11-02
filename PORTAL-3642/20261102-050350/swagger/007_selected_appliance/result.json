@@ -1,0 +1,59 @@
+{
+  "id": 7,
+  "name": "007_selected_appliance",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "volume_role": "owner",
+        "keys": [
+          {
+            "id": "46f6c0fc-339a-4953-9b74-a0b17ce69944",
+            "name": "NEA Test Key (valid upload test key) <nea-test@example.com>",
+            "fingerprint": "D14B19907DBE7DF89BFECDAC43C16F263C66CBC2",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": true,
+            "is_backup_key": false
+          }
+        ],
+        "backup_key": "not_applicable",
+        "has_escrow_passphrase": true,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 1,
+      "total_items": 1,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?appliance_ids=42ba8551-4fb1-41da-98e3-cf40b1c328d8&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/007_selected_appliance/007_selected_appliance_parameters_01.png",
+    "swagger/007_selected_appliance/007_selected_appliance_response_01.png",
+    "swagger/007_selected_appliance/007_selected_appliance_response_02.png"
+  ],
+  "captured_at": "2026-11-02T05:07:06.789Z"
+}

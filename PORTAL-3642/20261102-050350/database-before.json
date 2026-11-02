@@ -1,0 +1,42 @@
+{
+  "edges_v2": {
+    "count": 4,
+    "digest": "95d5e7bf19433aa37eb65682c1286957"
+  },
+  "volumes_v2": {
+    "count": 9,
+    "digest": "2a19fa297d662a71399123f7d1c822d5"
+  },
+  "encryption_keys": {
+    "count": 87,
+    "digest": "bb23c8f0b2374dd841bf2f5f72f2d019"
+  },
+  "volume_encryption_key_associations": {
+    "count": 27,
+    "digest": "33fd202348b1ecfc8268057645309e64"
+  },
+  "volume_connections": {
+    "count": 10,
+    "digest": "4ca00db09c806e07170572c82aede7c9"
+  },
+  "tasks": {
+    "count": 140,
+    "digest": "b53c14b0d96a013079006699fb46af20"
+  },
+  "users": {
+    "count": 3,
+    "digest": "4a85d7275e4e02f85273fcc402e596d3"
+  },
+  "roles": {
+    "count": 3,
+    "digest": "08d7a17f680b2125eee55b46c6c0bfbb"
+  },
+  "user_role": {
+    "count": 3,
+    "digest": "43e131982a479d4c59f376df5d70ba0b"
+  },
+  "role_permissions": {
+    "count": 277,
+    "digest": "78f2fdf4281c66de945a4697fab8cb14"
+  }
+}

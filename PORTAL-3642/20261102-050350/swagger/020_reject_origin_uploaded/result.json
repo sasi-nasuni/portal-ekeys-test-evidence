@@ -1,0 +1,36 @@
+{
+  "id": 20,
+  "name": "020_reject_origin_uploaded",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "extra_forbidden",
+        "loc": [
+          "query",
+          "origin"
+        ],
+        "msg": "Extra inputs are not permitted",
+        "input": "uploaded"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=asc&limit=25&origin=uploaded",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/020_reject_origin_uploaded/020_reject_origin_uploaded_parameters_01.png",
+    "swagger/020_reject_origin_uploaded/020_reject_origin_uploaded_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:03.409Z"
+}

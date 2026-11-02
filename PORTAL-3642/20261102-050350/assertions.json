@@ -1,0 +1,298 @@
+{
+  "001_missing_authentication": {
+    "status_matches": true,
+    "display_matches_network": true
+  },
+  "002_default_full_access": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 3,
+    "children": 61,
+    "total_items": 3,
+    "complete_parent_and_child_sets_match_database": true
+  },
+  "003_descending_appliance_sort": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 3,
+    "children": 61,
+    "total_items": 3
+  },
+  "004_iterator_page_1": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 3
+  },
+  "005_iterator_page_2": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "parents": 1,
+    "children": 3,
+    "total_items": 3
+  },
+  "006_iterator_page_3": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "parents": 1,
+    "children": 57,
+    "total_items": 3
+  },
+  "007_selected_appliance": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 1
+  },
+  "008_repeated_appliance_ids": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 2,
+    "children": 4,
+    "total_items": 2
+  },
+  "009_search_appliance_name": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 1
+  },
+  "010_search_unused_key_fingerprint": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 1,
+    "search_retains_complete_unused_child_set": true
+  },
+  "011_search_used_key_selects_parent": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 1,
+    "used_key_search_selects_parent_but_returns_only_unused_keys": true
+  },
+  "012_search_and_appliance_intersection_empty": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 0,
+    "children": 0,
+    "total_items": 0
+  },
+  "013_literal_search_no_match": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 0,
+    "children": 0,
+    "total_items": 0
+  },
+  "014_unknown_appliance_empty": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 0,
+    "children": 0,
+    "total_items": 0
+  },
+  "015_page_beyond_last_empty": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 0,
+    "children": 0,
+    "total_items": 3
+  },
+  "016_reject_type_volume": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "017_reject_type_backup": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "018_reject_state_unused": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "019_reject_state_in_use": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "020_reject_origin_uploaded": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "021_reject_is_escrowed_false": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "022_reject_has_escrow_passphrase_false": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "023_reject_backup_key_missing": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "024_reject_limit_0": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "025_reject_limit_26": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "026_reject_page_0": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "027_reject_sort_by_key_name": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "028_reject_iterator_id_invalid": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "029_reject_unknown_1": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "malformed_input_transport": "Native Swagger requestInterceptor; actual URL/status/body verified; response unmodified"
+  },
+  "030_reject_duplicate_appliance_ids": {
+    "status_matches": true,
+    "display_matches_network": true
+  },
+  "031_unknown_iterator": {
+    "status_matches": true,
+    "display_matches_network": true
+  },
+  "032_cursor_for_mismatch_check": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 3
+  },
+  "033_reject_changed_iterator_limit": {
+    "status_matches": true,
+    "display_matches_network": true
+  },
+  "034_feature_disabled": {
+    "status_matches": true,
+    "display_matches_network": true
+  },
+  "035_license_disabled_optional_fields_omitted": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 1,
+    "escrow_passphrase_fields_absent_backup_and_unused_keys_preserved": true
+  },
+  "036_restored_full_access": {
+    "status_matches": true,
+    "display_matches_network": true,
+    "no_dr_counts": true,
+    "no_empty_parents": true,
+    "only_unused_volume_keys": true,
+    "database_key_facts_match": true,
+    "complete_body_matches_independent_webapi_projection": true,
+    "parents": 1,
+    "children": 1,
+    "total_items": 1
+  }
+}

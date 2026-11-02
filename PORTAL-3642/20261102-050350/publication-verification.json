@@ -1,0 +1,9 @@
+{
+  "scenarios": 36,
+  "pngs": 196,
+  "png_hashes_match": true,
+  "secret_pattern_scan_passed": true,
+  "machine_paths_removed": true,
+  "readme_links_resolve_locally": true,
+  "runtime_and_private_logs_excluded": true
+}

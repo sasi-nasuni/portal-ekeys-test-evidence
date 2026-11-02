@@ -1,0 +1,41 @@
+{
+  "id": 30,
+  "name": "030_reject_duplicate_appliance_ids",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "query",
+          "appliance_ids"
+        ],
+        "msg": "Value error, Duplicate appliance IDs are not allowed",
+        "input": [
+          "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+          "42ba8551-4fb1-41da-98e3-cf40b1c328d8"
+        ],
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?appliance_ids=42ba8551-4fb1-41da-98e3-cf40b1c328d8&appliance_ids=42ba8551-4fb1-41da-98e3-cf40b1c328d8&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/030_reject_duplicate_appliance_ids/030_reject_duplicate_appliance_ids_parameters_01.png",
+    "swagger/030_reject_duplicate_appliance_ids/030_reject_duplicate_appliance_ids_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:45.203Z"
+}

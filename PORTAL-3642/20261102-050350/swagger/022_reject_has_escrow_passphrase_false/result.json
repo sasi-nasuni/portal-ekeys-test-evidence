@@ -1,0 +1,36 @@
+{
+  "id": 22,
+  "name": "022_reject_has_escrow_passphrase_false",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "transport_note": "Swagger requestInterceptor: explicit malformed input; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "extra_forbidden",
+        "loc": [
+          "query",
+          "has_escrow_passphrase"
+        ],
+        "msg": "Extra inputs are not permitted",
+        "input": "false"
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?sort_by=appliance_name&sort_direction=asc&limit=25&has_escrow_passphrase=false",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/022_reject_has_escrow_passphrase_false/022_reject_has_escrow_passphrase_false_parameters_01.png",
+    "swagger/022_reject_has_escrow_passphrase_false/022_reject_has_escrow_passphrase_false_response.png"
+  ],
+  "captured_at": "2026-11-02T05:08:11.687Z"
+}

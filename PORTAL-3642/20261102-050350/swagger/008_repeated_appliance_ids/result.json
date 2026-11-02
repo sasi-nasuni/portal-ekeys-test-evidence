@@ -1,0 +1,116 @@
+{
+  "id": 8,
+  "name": "008_repeated_appliance_ids",
+  "method": "GET",
+  "path_template": "/encryption-keys/unassigned",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "appliance_id": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "appliance_name": "DEV-ENCR-KEYS-2",
+        "volume_role": null,
+        "keys": [
+          {
+            "id": "794a60b9-0055-4bd4-a77e-385719d5ece7",
+            "name": "E-Keys-MsgViewer",
+            "fingerprint": "63C73D75FA74D80992E6BFD5A92AC4D53FB1C2B6",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": false,
+            "is_backup_key": false
+          },
+          {
+            "id": "f455be2f-547e-4ffd-b56c-820f613c7491",
+            "name": "E-Keys-MsgViewer",
+            "fingerprint": "9C46BE25487AF95A481338614886D0BA45E7B722",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": false,
+            "is_backup_key": false
+          },
+          {
+            "id": "91863c71-c321-4855-bc9b-2b27cde4834f",
+            "name": "EKEYS-Test-VOL",
+            "fingerprint": "D08D48831B921A7F085F115829276041BF29E385",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "generated",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": true,
+            "is_backup_key": false
+          }
+        ],
+        "has_escrow_passphrase": true,
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "appliance_id": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "appliance_name": "test-filer-01",
+        "volume_role": "owner",
+        "keys": [
+          {
+            "id": "46f6c0fc-339a-4953-9b74-a0b17ce69944",
+            "name": "NEA Test Key (valid upload test key) <nea-test@example.com>",
+            "fingerprint": "D14B19907DBE7DF89BFECDAC43C16F263C66CBC2",
+            "algorithm": "rsa",
+            "length": 3072,
+            "type": "volume",
+            "origin": "uploaded",
+            "used": false,
+            "is_stub": false,
+            "status": "synced",
+            "tasks": [],
+            "is_escrowed": true,
+            "is_backup_key": false
+          }
+        ],
+        "backup_key": "not_applicable",
+        "has_escrow_passphrase": true,
+        "status": "synced",
+        "tasks": []
+      }
+    ],
+    "metadata": {
+      "iterator_id": null,
+      "page_size": 25,
+      "total_pages": 1,
+      "total_items": 2,
+      "page": 1
+    }
+  },
+  "request_url": "http://127.0.0.1:8001/encryption-keys/unassigned?appliance_ids=42ba8551-4fb1-41da-98e3-cf40b1c328d8&appliance_ids=65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e&sort_by=appliance_name&sort_direction=asc&limit=25",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/list_unassigned_keys_encryption_keys_unassigned_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "swagger/008_repeated_appliance_ids/008_repeated_appliance_ids_parameters_01.png",
+    "swagger/008_repeated_appliance_ids/008_repeated_appliance_ids_response_01.png",
+    "swagger/008_repeated_appliance_ids/008_repeated_appliance_ids_response_02.png",
+    "swagger/008_repeated_appliance_ids/008_repeated_appliance_ids_response_03.png",
+    "swagger/008_repeated_appliance_ids/008_repeated_appliance_ids_response_04.png"
+  ],
+  "captured_at": "2026-11-02T05:07:11.349Z"
+}

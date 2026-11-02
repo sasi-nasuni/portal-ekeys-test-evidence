@@ -1,0 +1,25 @@
+{
+  "tested_application_sha": "7d937f40340e881a60a9c396039a02e3923021b4",
+  "files": {
+    "backend/portal-webbff/portal/webbff/data/encryption_keys/converters.py": {
+      "committed_source_sha256": "5ff18ec204101ec0a0a15f4f9e854a3b24be8918d69b696257e3ba6065c3a6ab",
+      "running_source_sha256": "5ff18ec204101ec0a0a15f4f9e854a3b24be8918d69b696257e3ba6065c3a6ab",
+      "matches": true
+    },
+    "backend/portal-webbff/portal/webbff/data/encryption_keys/dtos.py": {
+      "committed_source_sha256": "ee58f0444bcc18a28b84faf220fbd4e27d2b26bff960e9f4bb650733d60e5bb0",
+      "running_source_sha256": "ee58f0444bcc18a28b84faf220fbd4e27d2b26bff960e9f4bb650733d60e5bb0",
+      "matches": true
+    },
+    "backend/portal-webbff/portal/webbff/data/encryption_keys/repo.py": {
+      "committed_source_sha256": "0eb3d1719037b6736897c734ef1f3d41f7e68f8cea5632306898dbcd55171c8b",
+      "running_source_sha256": "0eb3d1719037b6736897c734ef1f3d41f7e68f8cea5632306898dbcd55171c8b",
+      "matches": true
+    },
+    "backend/portal-webbff/portal/webbff/routes/encryption_keys.py": {
+      "committed_source_sha256": "ae51d266e2be317f78729cba474fce88ff73e0ce88afcf7d54bbae830d023e9d",
+      "running_source_sha256": "ae51d266e2be317f78729cba474fce88ff73e0ce88afcf7d54bbae830d023e9d",
+      "matches": true
+    }
+  }
+}
