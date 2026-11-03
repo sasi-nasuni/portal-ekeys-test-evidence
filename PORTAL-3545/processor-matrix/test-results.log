@@ -1,0 +1,6 @@
+Portal Eventhub: 347 passed, 21 warnings in 70.14s
+Portal Data: 191 passed, 6 skipped, 3 warnings in 32.37s
+Portal Events: 41 passed in 1.61s
+Portal WebAPI: 185 passed, 2 warnings in 37.39s
+
+Total: 764 passed, 6 skipped, no failures

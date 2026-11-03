@@ -45,3 +45,15 @@ keys with the test name remained.
 - [`redis-keyring-events.log`](redis-keyring-events.log): exact Redis payloads for
   upload and cleanup.
 - [`eventhub-upload.log`](eventhub-upload.log): Eventhub processing and publish log.
+
+## Expanded processor coverage
+
+The follow-up validation covers heartbeat, full dump, keyring list, volume list,
+volume-key enable/disable, passphrase rotation, key escrow, and backup-key
+designation, plus focused tests for the repository, event service, acknowledgement
+policies, snapshot volume lifecycle, and volume deletion.
+
+- [Processor coverage matrix](processor-matrix/README.md)
+- [Snapshot/reconciliation SSE evidence](processor-matrix/04-snapshot-processors-sse.png)
+- [Mutation processor SSE evidence](processor-matrix/05-mutation-processors-sse.png)
+- [Focused regression results](processor-matrix/06-focused-regression-tests.png)

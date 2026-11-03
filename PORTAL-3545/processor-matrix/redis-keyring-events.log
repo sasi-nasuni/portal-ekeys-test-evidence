@@ -1,0 +1,10 @@
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 heartbeat 7d402d78-aaf8-433c-995e-7457465fd854
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 full_dump b170b4e6-de1c-4ca5-9b5e-86a4b814700b
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 list_encryption_keys 64a387c5-5722-4288-9b50-408e41d4705f
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 list_volumes f37a5de1-ba9f-42af-9dd1-0219919f6737
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 enable_volume_encryption_keys 0a400265-3285-4d59-9991-2557b5ed0ff3
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 disable_volume_encryption_keys cb6f11ec-1c62-42c3-97b9-98aa3d07e1b9
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 update_escrow_passphrase f4232ff7-5058-4d27-8f82-9e86be535a87
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 escrow_encryption_key c4297bf1-6b13-4d18-97fa-49b988a63dd6
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 set_backup_encryption_key 142935ca-3640-424e-8817-4e3d026f4c23
+portal_events:edge:f902fd2c-796c-403b-837b-89d5625319a9 restore_backup_encryption_key 2fe7cadf-8320-4f6e-b829-c2c53af16b17
