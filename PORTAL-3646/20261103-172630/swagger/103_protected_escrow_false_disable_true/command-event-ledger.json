@@ -1,0 +1,65 @@
+{
+  "task_id": "0f7c769e-d87f-4b69-b9ec-60d84eb25422",
+  "source": "Production CompressedJSON decoder; payloads omitted",
+  "persisted_upload_secrets_absent": true,
+  "records": [
+    {
+      "id": "56cee67b-ce22-42b7-bb1c-70b19f38a258",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-03 17:49:34.100747+00:00",
+      "processing_status": "COMPLETED",
+      "command": "upload_encryption_key"
+    },
+    {
+      "id": "d73768ac-05db-4f39-9791-b6bde3a93afb",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-03 17:49:37.709484+00:00",
+      "processing_status": "COMPLETED",
+      "event": "command_ack",
+      "status": "accepted",
+      "error": null
+    },
+    {
+      "id": "c8764a09-2303-42e3-a09a-2b5995116cd6",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-03 17:49:42.538545+00:00",
+      "processing_status": "COMPLETED",
+      "event": "encryption_key_uploaded"
+    },
+    {
+      "id": "9a9b8bab-1227-52dd-8796-d4ace85d5f6a",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-03 17:49:43.867434+00:00",
+      "processing_status": "COMPLETED",
+      "command": "add_volume_encryption_keys"
+    },
+    {
+      "id": "1bc6459b-4506-4e82-966b-7b502da0ae50",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-03 17:49:46.941504+00:00",
+      "processing_status": "COMPLETED",
+      "event": "volume_encryption_keys_added"
+    },
+    {
+      "id": "3dd3de58-d241-5e2b-884d-ae55de075631",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-03 17:49:48.147134+00:00",
+      "processing_status": "COMPLETED",
+      "command": "disable_volume_encryption_keys"
+    },
+    {
+      "id": "9a855238-ad2c-47c1-ab29-6d225fa94ed3",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-03 17:49:51.356535+00:00",
+      "processing_status": "COMPLETED",
+      "event": "volume_encryption_keys_disabled"
+    }
+  ]
+}

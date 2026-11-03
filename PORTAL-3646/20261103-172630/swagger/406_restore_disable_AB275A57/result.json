@@ -1,0 +1,27 @@
+{
+  "id": 6,
+  "name": "406_restore_disable_AB275A57",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/disable",
+  "status": 202,
+  "body": {
+    "id": "180f685b-1b53-46d2-962c-c0c7b689b461",
+    "state": "in_progress",
+    "status_url": "/tasks/180f685b-1b53-46d2-962c-c0c7b689b461",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/e4493d1d-1192-4a12-8232-8d656aa2c76b/disable",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/disable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__disable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/406_restore_disable_AB275A57/406_restore_disable_AB275A57_parameters_01.png",
+    "./swagger/406_restore_disable_AB275A57/406_restore_disable_AB275A57_response.png"
+  ],
+  "captured_at": "2026-11-03T17:57:55.938Z"
+}

@@ -1,0 +1,61 @@
+{
+  "generator": "devtools/edge-console/app/keygen.py:_build_filedata",
+  "generator_sha256": "4f9106649374ba3702fe231ca07ef4956ef52cf86fd99abebb2599e6e1f7f23a",
+  "keys": [
+    {
+      "index": 1,
+      "fingerprint": "009B16F1C2E32B54DFB0468009392DA12E66397F",
+      "appliance_name_from_uid": "PORTAL-3646-E2E-20261103-172630-1",
+      "escrow": false,
+      "disable_existing": false,
+      "encrypted_file_bytes": 5846,
+      "encrypted_file_sha256": "b5f3b65fc5d86a317527a21e56937ffae53e3900a843013e4fb46c77a20a1f66",
+      "passphrase_protected": true
+    },
+    {
+      "index": 2,
+      "fingerprint": "9BF3BFA635E3F4070EB107E9CA2F231B14CB8040",
+      "appliance_name_from_uid": "PORTAL-3646-E2E-20261103-172630-2",
+      "escrow": true,
+      "disable_existing": false,
+      "encrypted_file_bytes": 5851,
+      "encrypted_file_sha256": "579c262fa8712a539cf99651a6034f7a42fd2a50da1882ca69940e56d3061ae4",
+      "passphrase_protected": true
+    },
+    {
+      "index": 3,
+      "fingerprint": "3D8F8F37FDBBFEFAEB865385CCAFCBD5BA7DD952",
+      "appliance_name_from_uid": "PORTAL-3646-E2E-20261103-172630-3",
+      "escrow": false,
+      "disable_existing": true,
+      "encrypted_file_bytes": 5842,
+      "encrypted_file_sha256": "863e8526e853bbe3da1200c47b9b8405038439331e031a3b43ef8a27480ff8bd",
+      "passphrase_protected": true
+    },
+    {
+      "index": 4,
+      "fingerprint": "AB275A57E936A055BF48AB42BD18246B0535F376",
+      "appliance_name_from_uid": "PORTAL-3646-E2E-20261103-172630-4",
+      "escrow": true,
+      "disable_existing": true,
+      "encrypted_file_bytes": 5855,
+      "encrypted_file_sha256": "633fe13b929ff6ef73141bd8feb84c40061ac279a76de1a0e7799dd50a038e50",
+      "passphrase_protected": true
+    },
+    {
+      "index": 5,
+      "fingerprint": "662D77D387846ACD9F7C3ED3CFE03AD7FB21A59F",
+      "appliance_name_from_uid": "PORTAL-3646-E2E-20261103-172630-5",
+      "escrow": true,
+      "disable_existing": false,
+      "encrypted_file_bytes": 5846,
+      "encrypted_file_sha256": "a1a586144e7c3a86148b77d5d4389bb0c9e80dc01bae7007c5131ee6797401aa",
+      "passphrase_protected": true,
+      "local_gpg_validation": {
+        "gpg_import_succeeded": true,
+        "wrong_passphrase_rejected": true,
+        "expected_passphrase_unlocks_secret_export": true
+      }
+    }
+  ]
+}

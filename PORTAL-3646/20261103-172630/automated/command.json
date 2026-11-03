@@ -1,0 +1,8 @@
+{
+  "cwd": "backend/portal-webbff",
+  "command": ".venv/bin/pytest tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey -q --junitxml=<local-output>",
+  "result": {
+    "passed": 43,
+    "expected_failures": 1
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "label": "no-manage",
+    "user_id": "e9852f3e-177b-4172-a1bb-102a15d5c3f5",
+    "permissions": [],
+    "database_scope": "Isolated test DB only"
+  },
+  {
+    "label": "no-disable",
+    "user_id": "90f9ff63-e676-40b6-bc1d-362812552ee3",
+    "permissions": [
+      "Manage Volume Encryption Keys",
+      "Escrow Keys"
+    ],
+    "database_scope": "Isolated test DB only"
+  }
+]

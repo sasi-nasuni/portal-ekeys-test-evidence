@@ -1,0 +1,139 @@
+{
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f",
+        "description": "DEV-E-KEYS-POC",
+        "type": "Edge",
+        "services": {
+          "s3_edge": false,
+          "file_iq": false
+        },
+        "serial": "31d629af-30b3-413e-a583-d5d3da651eb9",
+        "instance_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f",
+        "synced": false,
+        "is_reachable": false,
+        "last_seen_at": null,
+        "build": "10.6",
+        "ds_type": null,
+        "product": null,
+        "allow_ntfs_multiprotocol": null,
+        "nfs_stack_type": null,
+        "max_volumes": null,
+        "owned_volumes": null,
+        "ad_unix_extensions": null
+      },
+      {
+        "id": "04823d46-a9af-49f1-aa5f-52cc617ec142",
+        "description": "DEV-ENCR-KEYS-1",
+        "type": "Edge",
+        "services": {
+          "s3_edge": false,
+          "file_iq": false
+        },
+        "serial": "2b0f82ff-67d2-4239-8729-b30e4e825e10",
+        "instance_id": "04823d46-a9af-49f1-aa5f-52cc617ec142",
+        "synced": false,
+        "is_reachable": false,
+        "last_seen_at": null,
+        "build": "10.5",
+        "ds_type": null,
+        "product": null,
+        "allow_ntfs_multiprotocol": null,
+        "nfs_stack_type": null,
+        "max_volumes": null,
+        "owned_volumes": null,
+        "ad_unix_extensions": null
+      },
+      {
+        "id": "5ddddf3e-4faf-46dd-a04f-503e40701073",
+        "description": "DEV-ENCR-KEYS-2",
+        "type": "Edge",
+        "services": {
+          "s3_edge": false,
+          "file_iq": false
+        },
+        "serial": "65efce9b-b5a5-4bf3-9ae5-aa37a4bc9c8e",
+        "instance_id": "5ddddf3e-4faf-46dd-a04f-503e40701073",
+        "synced": false,
+        "is_reachable": false,
+        "last_seen_at": null,
+        "build": "10.6",
+        "ds_type": null,
+        "product": null,
+        "allow_ntfs_multiprotocol": null,
+        "nfs_stack_type": null,
+        "max_volumes": null,
+        "owned_volumes": null,
+        "ad_unix_extensions": null
+      },
+      {
+        "id": "12e56a10-abd1-4c89-bdc4-dd28e97d0471",
+        "description": "test-cloud-cred",
+        "type": "Edge",
+        "services": {
+          "s3_edge": false,
+          "file_iq": false
+        },
+        "serial": "b9f03d05-f811-4578-a72a-a5e4c5ded3ab",
+        "instance_id": "12e56a10-abd1-4c89-bdc4-dd28e97d0471",
+        "synced": false,
+        "is_reachable": false,
+        "last_seen_at": null,
+        "build": "10.5",
+        "ds_type": null,
+        "product": null,
+        "allow_ntfs_multiprotocol": null,
+        "nfs_stack_type": null,
+        "max_volumes": null,
+        "owned_volumes": null,
+        "ad_unix_extensions": null
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3",
+        "description": "test-filer-01",
+        "type": "Edge",
+        "services": {
+          "s3_edge": false,
+          "file_iq": false
+        },
+        "serial": "42ba8551-4fb1-41da-98e3-cf40b1c328d8",
+        "instance_id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3",
+        "synced": false,
+        "is_reachable": false,
+        "last_seen_at": null,
+        "build": "10.5",
+        "ds_type": null,
+        "product": null,
+        "allow_ntfs_multiprotocol": null,
+        "nfs_stack_type": null,
+        "max_volumes": null,
+        "owned_volumes": null,
+        "ad_unix_extensions": null
+      },
+      {
+        "id": "04d42a85-cf89-429c-8e6d-49ea24cb35bc",
+        "description": "test-filer-02",
+        "type": "Edge",
+        "services": {
+          "s3_edge": false,
+          "file_iq": false
+        },
+        "serial": "b0534c27-ec9a-4ea4-b076-ec415bfdedb6",
+        "instance_id": "04d42a85-cf89-429c-8e6d-49ea24cb35bc",
+        "synced": false,
+        "is_reachable": false,
+        "last_seen_at": null,
+        "build": "10.5",
+        "ds_type": null,
+        "product": null,
+        "allow_ntfs_multiprotocol": null,
+        "nfs_stack_type": null,
+        "max_volumes": null,
+        "owned_volumes": null,
+        "ad_unix_extensions": null
+      }
+    ]
+  }
+}

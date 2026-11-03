@@ -1,0 +1,27 @@
+{
+  "id": 2,
+  "name": "402_restore_enable_F030AC29",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 202,
+  "body": {
+    "id": "6ce55d64-cad5-4e0d-aa4c-85ea58b68a77",
+    "state": "in_progress",
+    "status_url": "/tasks/6ce55d64-cad5-4e0d-aa4c-85ea58b68a77",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/4ffc696f-832d-431f-8015-51e7ad634bc5/enable",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/402_restore_enable_F030AC29/402_restore_enable_F030AC29_parameters_01.png",
+    "./swagger/402_restore_enable_F030AC29/402_restore_enable_F030AC29_response.png"
+  ],
+  "captured_at": "2026-11-03T17:57:16.140Z"
+}

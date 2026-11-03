@@ -1,0 +1,251 @@
+
+----------------------------- live log collection ------------------------------
+2026-11-03 23:29:46 [    INFO] (secretmanager.py:47) Pulling portal_auth_noc_secret from AWS Secrets Manager
+2026-11-03 23:29:46 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-1:501399441218:secret:noc-vista-shared-jwt-secret-BwKy69 from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:46 [    INFO] (credentials.py:1403) Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-03 23:29:48 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-1:501399441218:secret:noc-vista-shared-jwt-secret-BwKy69: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:48 [ WARNING] (secretmanager.py:51) Unable to retrieve portal_auth_noc_secret from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+2026-11-03 23:29:48 [    INFO] (secretmanager.py:47) Pulling salesforce_client_id from AWS Secrets Manager
+2026-11-03 23:29:48 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-2:851725431039:secret:vista_salesforce_creds-E11gnI from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:49 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-2:851725431039:secret:vista_salesforce_creds-E11gnI: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:49 [ WARNING] (secretmanager.py:51) Unable to retrieve salesforce_client_id from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+2026-11-03 23:29:49 [    INFO] (secretmanager.py:47) Pulling salesforce_client_secret from AWS Secrets Manager
+2026-11-03 23:29:49 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-2:851725431039:secret:vista_salesforce_creds-E11gnI from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:49 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-2:851725431039:secret:vista_salesforce_creds-E11gnI: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:49 [ WARNING] (secretmanager.py:51) Unable to retrieve salesforce_client_secret from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+2026-11-03 23:29:49 [    INFO] (secretmanager.py:47) Pulling salesforce_base_url from AWS Secrets Manager
+2026-11-03 23:29:49 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-2:851725431039:secret:vista_salesforce_creds-E11gnI from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:50 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-2:851725431039:secret:vista_salesforce_creds-E11gnI: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:50 [ WARNING] (secretmanager.py:51) Unable to retrieve salesforce_base_url from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+2026-11-03 23:29:50 [    INFO] (secretmanager.py:47) Pulling portal_posthog_user_project_id from AWS Secrets Manager
+2026-11-03 23:29:50 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-2:851725431039:secret:portal_posthog_user_info-tFFLsA from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:51 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-2:851725431039:secret:portal_posthog_user_info-tFFLsA: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:51 [ WARNING] (secretmanager.py:51) Unable to retrieve portal_posthog_user_project_id from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+2026-11-03 23:29:51 [    INFO] (secretmanager.py:47) Pulling portal_posthog_user_api_key from AWS Secrets Manager
+2026-11-03 23:29:51 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-2:851725431039:secret:portal_posthog_user_info-tFFLsA from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:52 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-2:851725431039:secret:portal_posthog_user_info-tFFLsA: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:52 [ WARNING] (secretmanager.py:51) Unable to retrieve portal_posthog_user_api_key from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+2026-11-03 23:29:52 [    INFO] (secretmanager.py:47) Pulling portal_account_managers_slack_webhook_url from AWS Secrets Manager
+2026-11-03 23:29:52 [    INFO] (secret_manager.py:48) Attempting to get secret arn:aws:secretsmanager:us-east-2:851725431039:secret:portal_account_managers_slack_webhook-wfuWHz from AWS Secrets Manager (attempt 1)
+2026-11-03 23:29:52 [   ERROR] (secret_manager.py:83) Unexpected error getting secret arn:aws:secretsmanager:us-east-2:851725431039:secret:portal_account_managers_slack_webhook-wfuWHz: An error occurred (UnrecognizedClientException) when calling the GetSecretValue operation: The security token included in the request is invalid
+2026-11-03 23:29:52 [ WARNING] (secretmanager.py:51) Unable to retrieve portal_account_managers_slack_webhook_url from AWS Secrets Manager: Server is unable to read from AWS Secrets Manager
+
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[-False-False] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [  2%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[-False-True] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [  4%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[-True-False] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [  6%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[-True-True] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [  9%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[ plaintext unlock phrase -False-False] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 11%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[ plaintext unlock phrase -False-True] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 13%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[ plaintext unlock phrase -True-False] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 15%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_forwards_shared_request_and_preserves_options[ plaintext unlock phrase -True-True] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 18%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_task_identity_state_capability_and_url[in_progress] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 20%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_task_identity_state_capability_and_url[completed] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 22%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_task_identity_state_capability_and_url[failed] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 25%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_requires_complete_form_before_forwarding_escrow[False] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1740) HTTP Request: POST http://portal.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+XFAIL (The installed multipart parser accepts a truncated trailing o...) [ 27%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_requires_complete_form_before_forwarding_escrow[True] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1740) HTTP Request: POST http://portal.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 29%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields0] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'missing', 'loc': ('body', 'fingerprint'), 'msg': 'Field required', 'input': None}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 31%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields1] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'missing', 'loc': ('body', 'disable_existing'), 'msg': 'Field required', 'input': None}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 34%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields2] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'value_error', 'loc': ('body', 'fingerprint'), 'msg': 'Value error, Fingerprint must be 32, 40, 64 hex characters long, got 39', 'input': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'ctx': {'error': ValueError('Fingerprint must be 32, 40, 64 hex characters long, got 39')}}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 36%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields3] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'value_error', 'loc': ('body', 'fingerprint'), 'msg': 'Value error, Fingerprint must contain only hexadecimal characters', 'input': 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz', 'ctx': {'error': ValueError('Fingerprint must contain only hexadecimal characters')}}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 38%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields4] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'bool_parsing', 'loc': ('body', 'disable_existing'), 'msg': 'Input should be a valid boolean, unable to interpret input', 'input': 'maybe'}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 40%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields5] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'bool_parsing', 'loc': ('body', 'escrow'), 'msg': 'Input should be a valid boolean, unable to interpret input', 'input': 'maybe'}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 43%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_metadata[fields6] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload error: [{'type': 'string_too_long', 'loc': ('body', 'name'), 'msg': 'String should have at most 255 characters', 'input': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'ctx': {'max_length': 255}}]
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 45%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_only_declared_form_fields_are_forwarded 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 47%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_file_size_limit_is_inclusive[0] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (app.py:316) Non critical error occurred: 422 <class 'portal.core.exceptions.MalformedData'> The encrypted key file must not be empty, {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '422', 'content-type': 'multipart/form-data; boundary=ea690175bf3fcbe6a80213475ad4d981'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 50%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_file_size_limit_is_inclusive[5242880] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:53 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 52%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_file_size_limit_is_inclusive[5242881] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:302) Error occurred: 413 PayloadTooLarge: Encrypted key file exceeds 5 MiB - Request: {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '5243303', 'content-type': 'multipart/form-data; boundary=826a6416828b3606a5c121baf16c7a82'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 413 Request Entity Too Large"
+PASSED                                                                   [ 54%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_file_size_limit_is_inclusive[7340032] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:302) Error occurred: 413 PayloadTooLarge: Encrypted key file exceeds 5 MiB - Request: {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '7340454', 'content-type': 'multipart/form-data; boundary=2c76189544ab3c06863a25b760208cec'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 413 Request Entity Too Large"
+PASSED                                                                   [ 56%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_selected_permissions_are_required_together[False-False-Manage Volume Encryption Keys] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [    INFO] (app.py:316) Non critical error occurred: 403 <class 'portal.core.exceptions.ActionNotAllowed'> User does not have the required permissions: Manage Volume Encryption Keys, {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '523', 'content-type': 'multipart/form-data; boundary=ad5edbd9c4950ddb28c54cbc99d1c106'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 403 Forbidden"
+PASSED                                                                   [ 59%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_selected_permissions_are_required_together[True-False-Escrow Keys] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [    INFO] (app.py:316) Non critical error occurred: 403 <class 'portal.core.exceptions.ActionNotAllowed'> User does not have the required permissions: Escrow Keys, {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '522', 'content-type': 'multipart/form-data; boundary=9f5be419ebf37dfec04315887d68016f'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 403 Forbidden"
+PASSED                                                                   [ 61%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_selected_permissions_are_required_together[False-True-Disable Encryption Keys] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [    INFO] (app.py:316) Non critical error occurred: 403 <class 'portal.core.exceptions.ActionNotAllowed'> User does not have the required permissions: Disable Encryption Keys, {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '522', 'content-type': 'multipart/form-data; boundary=6dbc04c56bb0562e36cd35a5f9eb83be'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 403 Forbidden"
+PASSED                                                                   [ 63%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_selected_permissions_are_required_together[True-True-Escrow Keys] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [    INFO] (app.py:316) Non critical error occurred: 403 <class 'portal.core.exceptions.ActionNotAllowed'> User does not have the required permissions: Escrow Keys, {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '521', 'content-type': 'multipart/form-data; boundary=5c7f013ee32c83df7d8da9dead47ffab'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 403 Forbidden"
+PASSED                                                                   [ 65%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_selected_permissions_are_required_together[True-True-Disable Encryption Keys] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [    INFO] (app.py:316) Non critical error occurred: 403 <class 'portal.core.exceptions.ActionNotAllowed'> User does not have the required permissions: Disable Encryption Keys, {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '521', 'content-type': 'multipart/form-data; boundary=763e987639746570388011bb0a4111af'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 403 Forbidden"
+PASSED                                                                   [ 68%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_manage_permission_alone_allows_upload_without_optional_actions 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 202 Accepted"
+PASSED                                                                   [ 70%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[400] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=400
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 400 Bad Request"
+PASSED                                                                   [ 72%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[403] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=403
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 403 Forbidden"
+PASSED                                                                   [ 75%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[404] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=404
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 404 Not Found"
+PASSED                                                                   [ 77%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[405] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=405
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 405 Method Not Allowed"
+PASSED                                                                   [ 79%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[409] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=409
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 409 Conflict"
+PASSED                                                                   [ 81%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[413] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=413
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 413 Request Entity Too Large"
+PASSED                                                                   [ 84%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[422] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=422
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 86%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[502] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=502
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 502 Bad Gateway"
+PASSED                                                                   [ 88%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_preserves_curated_upstream_errors_and_does_not_retry[503] 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/upload status=503
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 503 Service Unavailable"
+PASSED                                                                   [ 90%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_openapi_matches_shared_multipart_contract PASSED [ 93%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_rejects_invalid_volume_id 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:249) Input validation error occurred: request.url http://testserver/volumes/invalid/encryption-keys/add/upload error: [{'type': 'value_error', 'loc': ('path', 'volume_id'), 'msg': 'Value error, Value must be in format <uuid>_<suffix>, <hex>, or <uuid>, got: invalid', 'input': 'invalid', 'ctx': {'error': ValueError('Value must be in format <uuid>_<suffix>, <hex>, or <uuid>, got: invalid')}}]
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/invalid/encryption-keys/add/upload "HTTP/1.1 422 Unprocessable Entity"
+PASSED                                                                   [ 95%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_non_json_upstream_failure_does_not_echo_upload_values 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:136) WebAPI file upload failed: POST https://webapi.test/upload status=502
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 502 Bad Gateway"
+PASSED                                                                   [ 97%]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_uncertain_acceptance_returns_timeout_without_retrying 
+-------------------------------- live log call ---------------------------------
+2026-11-03 23:29:54 [ WARNING] (app.py:302) Error occurred: 504 ReadTimeout: Upload acceptance is unknown - Request: {'method': 'POST', 'url': 'http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload', 'headers': {'host': 'testserver', 'accept': '*/*', 'accept-encoding': 'gzip, deflate, zstd', 'connection': 'keep-alive', 'user-agent': 'testclient', 'content-length': '431', 'content-type': 'multipart/form-data; boundary=9cf0b1b839c181f6f6e0493b29d5af03'}, 'cookies': {}, 'query_params': {}, 'path_params': {'volume_id': '7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data'}}
+2026-11-03 23:29:54 [    INFO] (_client.py:1025) HTTP Request: POST http://testserver/volumes/7f9d2b18-3f2a-4a6d-9c3e-1f5f0a8d4c21_data/encryption-keys/add/upload "HTTP/1.1 504 Gateway Timeout"
+PASSED                                                                   [100%]
+
+=============================== warnings summary ===============================
+portal/webbff/app.py:9
+  <worktree>/backend/portal-webbff/portal/webbff/app.py:9: DeprecationWarning: 'HTTP_413_REQUEST_ENTITY_TOO_LARGE' is deprecated. Use 'HTTP_413_CONTENT_TOO_LARGE' instead.
+    from portal.web.app import SECURITY_HEADERS, DocsConfig, build_web_app
+
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_file_size_limit_is_inclusive[5242881]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_file_size_limit_is_inclusive[7340032]
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_uncertain_acceptance_returns_timeout_without_retrying
+  <worktree>/backend/libs/portal-runtime/portal/runtime/sentry.py:251: DeprecationWarning: sentry_sdk.push_scope is deprecated and will be removed in the next major version. Please consult our migration guide to learn how to migrate to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x#scope-pushing
+    with sentry_sdk.push_scope() as scope:
+
+tests/integration/test_encryption_keys_routes.py::TestUploadAndAddVolumeKey::test_openapi_matches_shared_multipart_contract
+  <worktree>/.venv/lib/python3.14/site-packages/pydantic/json_schema.py:2448: PydanticJsonSchemaWarning: Default value UNSET is not JSON serializable; excluding default from JSON schema [non-serializable-default]
+    warnings.warn(message, PydanticJsonSchemaWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+---------- generated xml file: /tmp/portal3646-final-upload-junit.xml ----------
+================== 43 passed, 1 xfailed, 5 warnings in 9.01s ===================

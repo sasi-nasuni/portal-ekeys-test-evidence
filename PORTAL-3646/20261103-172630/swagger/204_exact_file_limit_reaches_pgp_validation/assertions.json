@@ -1,0 +1,7 @@
+{
+  "name": "204_exact_file_limit_reaches_pgp_validation",
+  "expected_status": 400,
+  "actual_status": 400,
+  "network_verified": true,
+  "passed": true
+}

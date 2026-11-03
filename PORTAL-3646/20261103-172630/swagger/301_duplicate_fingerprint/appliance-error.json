@@ -1,0 +1,6 @@
+{
+  "event": "error",
+  "code": 500,
+  "error": "unknown",
+  "message": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Key(s) with fingerprint(s): 009B16F1C2E32B54DFB0468009392DA12E66397F already present."
+}

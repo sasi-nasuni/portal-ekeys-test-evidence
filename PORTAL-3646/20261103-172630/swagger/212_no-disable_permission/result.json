@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "name": "212_no-disable_permission",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/add/upload",
+  "status": 403,
+  "body": {
+    "message": "User does not have the required permissions: Disable Encryption Keys",
+    "detail": null
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/add/upload",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/upload_and_add_volume_encryption_key_volumes__volume_id__encryption_keys_add_upload_post",
+  "swagger_pre_transport_form_checks": {
+    "fingerprint": true,
+    "escrow": true,
+    "disable_existing": true
+  },
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/212_no-disable_permission/212_no-disable_permission_parameters_01.png",
+    "./swagger/212_no-disable_permission/212_no-disable_permission_response.png"
+  ],
+  "captured_at": "2026-11-03T17:54:09.130Z"
+}

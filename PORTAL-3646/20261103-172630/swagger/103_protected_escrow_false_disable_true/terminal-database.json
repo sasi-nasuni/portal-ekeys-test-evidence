@@ -1,0 +1,82 @@
+{
+  "captured_at": "2026-11-03T17:50:15.043318+00:00",
+  "task": {
+    "id": "0f7c769e-d87f-4b69-b9ec-60d84eb25422",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "action": "upload_key_to_volume",
+    "state": "completed",
+    "reason": null,
+    "params": {
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "fingerprint": "3D8F8F37FDBBFEFAEB865385CCAFCBD5BA7DD952",
+      "escrow": false,
+      "disable_existing": true,
+      "keys_to_add": [
+        {
+          "key_id": "e1b31e19-d700-42f6-97cd-666b000bc92e",
+          "fingerprint": "3D8F8F37FDBBFEFAEB865385CCAFCBD5BA7DD952"
+        }
+      ],
+      "keys_to_disable": [
+        {
+          "key_id": "2978cd57-61a7-4e9d-a851-d1251bd7fb48",
+          "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83"
+        },
+        {
+          "key_id": "4ffc696f-832d-431f-8015-51e7ad634bc5",
+          "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8"
+        },
+        {
+          "key_id": "5d41e19d-6f3c-4b76-ae87-2d77f72f75e3",
+          "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8"
+        },
+        {
+          "key_id": "c5170377-1bb2-4cd6-87a2-fff252944f13",
+          "fingerprint": "009B16F1C2E32B54DFB0468009392DA12E66397F"
+        },
+        {
+          "key_id": "cd79fb22-16f9-4864-9a24-71411cb13011",
+          "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0"
+        },
+        {
+          "key_id": "dfdf3499-e8aa-40b8-ac5c-05c14dc4d025",
+          "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD"
+        }
+      ]
+    },
+    "created_at": "2026-11-03 17:49:34.056310+00:00",
+    "last_updated_at": "2026-11-03 17:49:52.500520+00:00"
+  },
+  "steps": [
+    {
+      "name": "upload_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-03 17:49:34.056310+00:00",
+      "updated_at": "2026-11-03 17:49:43.800215+00:00"
+    },
+    {
+      "name": "escrow_encryption_key",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-03 17:49:34.056310+00:00",
+      "updated_at": "2026-11-03 17:49:43.834514+00:00"
+    },
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-03 17:49:34.056310+00:00",
+      "updated_at": "2026-11-03 17:49:48.117737+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-03 17:49:34.056310+00:00",
+      "updated_at": "2026-11-03 17:49:52.500520+00:00"
+    }
+  ]
+}

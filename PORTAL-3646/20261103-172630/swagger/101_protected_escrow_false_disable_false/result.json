@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "name": "101_protected_escrow_false_disable_false",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/add/upload",
+  "status": 202,
+  "body": {
+    "id": "f4f39053-12ba-440d-bf7a-37f7d3f8e0c8",
+    "state": "in_progress",
+    "status_url": "/tasks/f4f39053-12ba-440d-bf7a-37f7d3f8e0c8",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/add/upload",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/upload_and_add_volume_encryption_key_volumes__volume_id__encryption_keys_add_upload_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/101_protected_escrow_false_disable_false/101_protected_escrow_false_disable_false_parameters_01.png",
+    "./swagger/101_protected_escrow_false_disable_false/101_protected_escrow_false_disable_false_response.png"
+  ],
+  "captured_at": "2026-11-03T17:44:52.846Z"
+}

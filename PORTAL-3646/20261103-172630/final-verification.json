@@ -1,0 +1,14 @@
+{
+  "application_sha": "5483956e1b0bccc902d9061a8b0a8111c0863771",
+  "backend_source_restored": true,
+  "pre_existing_user_files_preserved": true,
+  "changed_pre_existing_paths": [],
+  "minimum_version_restored_to_10_6": true,
+  "swagger_source_modified": false,
+  "feature_cache_restored": true,
+  "test_database_retained": true,
+  "response_queues_retained": true,
+  "containers_left_running": true,
+  "original_database_altered": false,
+  "original_association_states_restored": true
+}

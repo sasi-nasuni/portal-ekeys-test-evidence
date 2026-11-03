@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "name": "401_restore_enable_751DA6FC",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 202,
+  "body": {
+    "id": "cc2465c4-004f-4f89-86fb-be0a16985b05",
+    "state": "in_progress",
+    "status_url": "/tasks/cc2465c4-004f-4f89-86fb-be0a16985b05",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/2978cd57-61a7-4e9d-a851-d1251bd7fb48/enable",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/401_restore_enable_751DA6FC/401_restore_enable_751DA6FC_parameters_01.png",
+    "./swagger/401_restore_enable_751DA6FC/401_restore_enable_751DA6FC_response.png"
+  ],
+  "captured_at": "2026-11-03T17:57:05.928Z"
+}

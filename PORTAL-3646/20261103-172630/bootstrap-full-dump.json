@@ -1,0 +1,33 @@
+{
+  "bootstrap": "NOC identity stub followed by real FullDumpCommand; no volume or key rows seeded",
+  "task": {
+    "id": "7dba351b-5ebc-4d1e-9eca-d872e929f6c2",
+    "created_at": "2026-11-03T17:38:01.458718Z",
+    "resource": "edge",
+    "resource_id": null,
+    "stack_id": null,
+    "action": "full_dump",
+    "executor": "edge",
+    "executor_id": null,
+    "initiated_by": "portal",
+    "initiator_id": null,
+    "activity_log_id": null,
+    "reason": null,
+    "state": "in_progress",
+    "last_updated_at": "2026-11-03T17:38:01.458718Z",
+    "user_acknowledged_at": null,
+    "deletion_time": null,
+    "can_acknowledge": false,
+    "steps": [
+      {
+        "name": "full_dump",
+        "state": "pending",
+        "reason": null,
+        "created_at": "2026-11-03T17:38:01.458718Z",
+        "updated_at": "2026-11-03T17:38:01.458718Z"
+      }
+    ],
+    "auth_context": null,
+    "params": null
+  }
+}

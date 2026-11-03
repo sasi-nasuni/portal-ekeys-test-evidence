@@ -1,0 +1,6 @@
+{
+  "event": "error",
+  "code": 500,
+  "error": "unknown",
+  "message": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Key cannot be used with supplied passphrase on key: PORTAL-3646-E2E-20261103-172630-2."
+}

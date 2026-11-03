@@ -1,0 +1,24 @@
+{
+  "captured_at": "2026-11-03T17:58:12.922376+00:00",
+  "task": {
+    "id": "d414b14c-1909-49a3-b316-b1539bc9b242",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "f11d2b79-7198-4a7b-b193-c3cff302c7f0",
+    "action": "disable_volume_encryption_keys",
+    "state": "completed",
+    "reason": null,
+    "params": null,
+    "created_at": "2026-11-03 17:58:05.531724+00:00",
+    "last_updated_at": "2026-11-03 17:58:11.478628+00:00"
+  },
+  "steps": [
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "completed",
+      "reason": null,
+      "created_at": "2026-11-03 17:58:05.531724+00:00",
+      "updated_at": "2026-11-03 17:58:11.478628+00:00"
+    }
+  ]
+}

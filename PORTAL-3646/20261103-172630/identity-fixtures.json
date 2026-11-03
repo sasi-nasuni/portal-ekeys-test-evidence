@@ -1,0 +1,15 @@
+{
+  "copied_counts": {
+    "accounts": 1,
+    "users": 3,
+    "roles": 3,
+    "role_permissions": 277,
+    "user_role": 3
+  },
+  "source_database": "portal",
+  "destination_database": "portal3646_e2e_20261103_172630",
+  "alembic_heads": [
+    "f3c9a1e7b2d4"
+  ],
+  "permissions_changed": false
+}

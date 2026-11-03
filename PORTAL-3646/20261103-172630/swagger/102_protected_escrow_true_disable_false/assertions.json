@@ -1,0 +1,9 @@
+{
+  "accepted_202": true,
+  "appliance_acknowledged": true,
+  "terminal_task_completed": false,
+  "failure_stage": "Upload",
+  "appliance_error": "Key cannot be used with supplied passphrase",
+  "escrow_or_add_dispatched": false,
+  "outcome": "FAIL; retained for investigation"
+}

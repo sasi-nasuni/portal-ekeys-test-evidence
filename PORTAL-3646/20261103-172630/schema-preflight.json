@@ -1,0 +1,261 @@
+[
+  {
+    "table": "volumes_v2",
+    "column": "volume_type",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": "Gen1"
+  },
+  {
+    "table": "volumes_v2",
+    "column": "remote_access_permission",
+    "type": "JSON",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "fiq_disk",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "remote_support",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "automatic_update_schedule",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "time_configuration",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "cache_eviction_settings",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "ip_source",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "default_gateway",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "dns_servers",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "search_domains",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "snmp_enabled",
+    "type": "BOOLEAN",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "qos_rule_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "syslog_enabled",
+    "type": "BOOLEAN",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "disk_encryption",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "encryption_key_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "escrow_passphrase_enabled",
+    "type": "BOOLEAN",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "ssl_certificate_name",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "ssl_certificate_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "web_access_enabled",
+    "type": "BOOLEAN",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "web_access_share_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "smb_share_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "smb_client_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "smb_lock_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "nfs_export_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "edges_v2",
+    "column": "ftp_directory_count",
+    "type": "INTEGER",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "messages",
+    "column": "processing_status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "server_default": "COMPLETED"
+  },
+  {
+    "table": "messages",
+    "column": "claimed_at",
+    "type": "DATETIME",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "messages",
+    "column": "processed_at",
+    "type": "DATETIME",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "name",
+    "type": "VARCHAR",
+    "nullable": false,
+    "server_default": ""
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "hostname",
+    "type": "VARCHAR",
+    "nullable": false,
+    "server_default": ""
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "access_key",
+    "type": "VARCHAR",
+    "nullable": false,
+    "server_default": ""
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "note",
+    "type": "VARCHAR",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "verify_certificates",
+    "type": "BOOLEAN",
+    "nullable": false,
+    "server_default": "true"
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "certificate",
+    "type": "TEXT",
+    "nullable": true,
+    "server_default": null
+  },
+  {
+    "table": "cloud_credentials",
+    "column": "updated_at",
+    "type": "DATETIME",
+    "nullable": false,
+    "server_default": "now()"
+  },
+  {
+    "table": "cloud_credential_edge_links",
+    "column": "is_overridden",
+    "type": "BOOLEAN",
+    "nullable": false,
+    "server_default": "false"
+  }
+]

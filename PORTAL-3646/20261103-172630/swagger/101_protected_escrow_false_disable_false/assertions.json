@@ -1,0 +1,17 @@
+{
+  "accepted_202_native_swagger": true,
+  "canonical_task_status_url": true,
+  "terminal_task_completed": true,
+  "all_four_steps_completed": true,
+  "volume_owned_task": true,
+  "requested_options_preserved": true,
+  "disable_snapshot_matches_previously_enabled": true,
+  "new_key_enabled": true,
+  "appliance_name_authoritative": true,
+  "task_absent_from_key_rows": true,
+  "exact_requested_command_sequence": true,
+  "persisted_upload_secrets_absent": true,
+  "filer_acceptance_correlated": true,
+  "native_readback_verified": true,
+  "confirmed_rows_not_stubs": true
+}

@@ -1,0 +1,20 @@
+{
+  "reason": "Dedicated empty queues avoid blocked FIFO groups from an earlier failed local decryption attempt",
+  "account_filter": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "created": [
+    {
+      "url": "https://sqs.us-east-2.amazonaws.com/851725431039/portal-dev-sbhushan-portal3646-20261103-172630-fifo.fifo",
+      "arn": "arn:aws:sqs:us-east-2:851725431039:portal-dev-sbhushan-portal3646-20261103-172630-fifo.fifo",
+      "topics": [
+        "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-pipeline.fifo"
+      ]
+    },
+    {
+      "url": "https://sqs.us-east-2.amazonaws.com/851725431039/portal-dev-sbhushan-portal3646-20261103-172630-events",
+      "arn": "arn:aws:sqs:us-east-2:851725431039:portal-dev-sbhushan-portal3646-20261103-172630-events",
+      "topics": [
+        "arn:aws:sns:us-east-2:861199565355:dvista-1-2-sns-non-fifo"
+      ]
+    }
+  ]
+}

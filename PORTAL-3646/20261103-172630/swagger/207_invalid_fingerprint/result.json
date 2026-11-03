@@ -1,0 +1,39 @@
+{
+  "id": 7,
+  "name": "207_invalid_fingerprint",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/add/upload",
+  "transport_note": "Swagger requestInterceptor: explicit malformed multipart fields; controls show valid placeholders; requestInterceptor supplies documented test values; response unmodified",
+  "status": 422,
+  "body": {
+    "message": "Validation Error",
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "fingerprint"
+        ],
+        "msg": "Value error, Fingerprint must contain only hexadecimal characters",
+        "input": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/add/upload",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/upload_and_add_volume_encryption_key_volumes__volume_id__encryption_keys_add_upload_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/207_invalid_fingerprint/207_invalid_fingerprint_parameters_01.png",
+    "./swagger/207_invalid_fingerprint/207_invalid_fingerprint_response.png"
+  ],
+  "captured_at": "2026-11-03T17:45:52.109Z"
+}

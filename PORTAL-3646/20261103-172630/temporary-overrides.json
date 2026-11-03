@@ -1,0 +1,15 @@
+{
+  "minimum_filer_version": {
+    "original": "10.6",
+    "testing": "10.5",
+    "actual_filer": "10.5",
+    "noc_reported_filer": "10.6",
+    "previously_user_authorized": true,
+    "restored": true
+  },
+  "swagger_source_changes": false,
+  "escrow_license_mocked": false,
+  "feature_cache_temporarily_enabled": true,
+  "restored_source_sha256": "98e4b6235b8c9d88c430bccc453a80aa8e058c65794fdb352a0fd901fbff748a",
+  "feature_cache_restored": true
+}

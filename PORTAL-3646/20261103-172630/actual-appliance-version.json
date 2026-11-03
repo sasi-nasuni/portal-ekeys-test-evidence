@@ -1,0 +1,10 @@
+{
+  "noc_inventory_build": "10.6",
+  "full_dump_build": "10.5",
+  "unmodified_endpoint_status": 405,
+  "response": {
+    "message": "Appliance is below the minimum supported version",
+    "detail": null
+  },
+  "temporary_local_10_5_override_previously_authorized": true
+}

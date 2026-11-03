@@ -1,0 +1,118 @@
+{
+  "id": 2,
+  "name": "002_account_volumes",
+  "method": "GET",
+  "path_template": "/volumes",
+  "status": 200,
+  "body": {
+    "items": [
+      {
+        "id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+        "description": "E-Keys-Test-01",
+        "remote_access_enabled": false,
+        "cloud_provider": "amazons3",
+        "nds_capable": false,
+        "nds_disqualifications": [
+          "Volume is not shared"
+        ]
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_3",
+        "description": "test-aws-03",
+        "remote_access_enabled": true,
+        "cloud_provider": "amazons3",
+        "nds_capable": true,
+        "nds_disqualifications": []
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_4",
+        "description": "test-aws-04",
+        "remote_access_enabled": false,
+        "cloud_provider": "amazons3",
+        "nds_capable": false,
+        "nds_disqualifications": [
+          "Volume is not shared"
+        ]
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_5",
+        "description": "test-aws-05",
+        "remote_access_enabled": true,
+        "cloud_provider": "amazons3",
+        "nds_capable": true,
+        "nds_disqualifications": []
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_6",
+        "description": "test-aws-06",
+        "remote_access_enabled": true,
+        "cloud_provider": "amazons3",
+        "nds_capable": true,
+        "nds_disqualifications": []
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_1",
+        "description": "test-vol-1-aws",
+        "remote_access_enabled": true,
+        "cloud_provider": "amazons3",
+        "nds_capable": true,
+        "nds_disqualifications": []
+      },
+      {
+        "id": "04d42a85-cf89-429c-8e6d-49ea24cb35bc_2",
+        "description": "test-vol-create-demo",
+        "remote_access_enabled": false,
+        "cloud_provider": "amazons3",
+        "nds_capable": false,
+        "nds_disqualifications": [
+          "Volume is not shared"
+        ]
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_8",
+        "description": "test-vol-demo-check",
+        "remote_access_enabled": false,
+        "cloud_provider": "amazons3",
+        "nds_capable": false,
+        "nds_disqualifications": [
+          "Volume is not shared"
+        ]
+      },
+      {
+        "id": "28de65c4-2a93-493b-886f-3a71dc3ec5e3_7",
+        "description": "test-vol-tc-79",
+        "remote_access_enabled": false,
+        "cloud_provider": "amazons3",
+        "nds_capable": false,
+        "nds_disqualifications": [
+          "Volume is not shared"
+        ]
+      },
+      {
+        "id": "04d42a85-cf89-429c-8e6d-49ea24cb35bc_1",
+        "description": "test-vol-tc-80",
+        "remote_access_enabled": true,
+        "cloud_provider": "amazons3",
+        "nds_capable": true,
+        "nds_disqualifications": []
+      }
+    ]
+  },
+  "request_url": "http://127.0.0.1:8001/volumes",
+  "docs_url": "http://127.0.0.1:8001/docs#/volumes/get_volumes_volumes_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/002_account_volumes/002_account_volumes_parameters_01.png",
+    "./swagger/002_account_volumes/002_account_volumes_response_01.png",
+    "./swagger/002_account_volumes/002_account_volumes_response_02.png",
+    "./swagger/002_account_volumes/002_account_volumes_response_03.png",
+    "./swagger/002_account_volumes/002_account_volumes_response_04.png"
+  ],
+  "captured_at": "2026-11-03T17:40:15.101Z"
+}

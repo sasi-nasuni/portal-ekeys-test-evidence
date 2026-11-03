@@ -1,0 +1,14 @@
+{
+  "accepted_202": true,
+  "failed_asynchronously": true,
+  "failure_on_volume_parent": true,
+  "failure_absent_on_key_rows": true,
+  "failure_absent_from_dr_readiness": true,
+  "upload_command_only": true,
+  "key_states_preserved": true,
+  "can_acknowledge": true,
+  "acknowledgement_204": true,
+  "acknowledgement_hides_failure": true,
+  "acknowledgement_preserves_failed_state": true,
+  "appliance_reports_duplicate": true
+}

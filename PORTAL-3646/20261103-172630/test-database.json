@@ -1,0 +1,5 @@
+{
+  "database": "portal3646_e2e_20261103_172630",
+  "reason": "37 missing columns despite recorded migrations in existing portal database",
+  "source_database_unchanged": true
+}

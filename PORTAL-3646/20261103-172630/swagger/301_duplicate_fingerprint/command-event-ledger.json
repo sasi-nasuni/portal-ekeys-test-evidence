@@ -1,0 +1,35 @@
+{
+  "task_id": "baa771f7-2394-4d7b-b319-11b78f56ac20",
+  "source": "Production CompressedJSON decoder; payloads omitted",
+  "persisted_upload_secrets_absent": true,
+  "records": [
+    {
+      "id": "ab989371-b735-4623-b946-20dae1af7198",
+      "origin": "dvista1",
+      "target": "edge",
+      "sent_at": "2026-11-03 17:55:30.317582+00:00",
+      "processing_status": "COMPLETED",
+      "command": "upload_encryption_key"
+    },
+    {
+      "id": "d67e2e41-9e4a-470d-8299-0f385b8ddba2",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-03 17:55:33.575902+00:00",
+      "processing_status": "COMPLETED",
+      "event": "command_ack",
+      "status": "accepted",
+      "error": null
+    },
+    {
+      "id": "9f527fcf-9638-4eea-a6cb-5a0795abf3fe",
+      "origin": "edge",
+      "target": "dvista1",
+      "sent_at": "2026-11-03 17:55:35.164874+00:00",
+      "processing_status": "COMPLETED",
+      "event": "error",
+      "code": 500,
+      "error": "unknown"
+    }
+  ]
+}

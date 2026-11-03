@@ -1,0 +1,6 @@
+{
+  "control": "Temporarily enabled encryption_keys_experience in the local Redis cache",
+  "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+  "ttl_seconds": 7200,
+  "license_mocked": false
+}

@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "all_original_association_states_restored": true,
+    "new_confirmed_keys_disabled": true,
+    "all_restore_tasks_completed": true,
+    "no_live_volume_failure": true
+  },
+  "original_states": {
+    "2978cd57-61a7-4e9d-a851-d1251bd7fb48": "enabled",
+    "4ffc696f-832d-431f-8015-51e7ad634bc5": "enabled",
+    "dfdf3499-e8aa-40b8-ac5c-05c14dc4d025": "enabled",
+    "cd79fb22-16f9-4864-9a24-71411cb13011": "enabled",
+    "e1be2d5a-5c79-45c6-bffd-f0f2394345c2": "disabled",
+    "49d870c8-23d6-4ee0-8c23-d82dbf99b6b0": "disabled",
+    "5d41e19d-6f3c-4b76-ae87-2d77f72f75e3": "enabled",
+    "dfd14fad-c79b-470c-ac73-32c8f271f025": "disabled",
+    "88348ee2-11ed-449b-9088-d73b4c5ed5d5": "disabled",
+    "dbbcd76e-3d77-47e9-98d2-fdcc2057fb3e": "disabled",
+    "ed6c1feb-6529-4bd9-9cbf-9db033547f30": "disabled",
+    "5fe3cc1c-5856-4e61-980a-63a4c84ce2d2": "disabled",
+    "f359927c-fab5-4ac4-b5d4-6e013ee0a640": "disabled",
+    "93b2a989-994a-4a59-8f14-42fc7a847904": "disabled",
+    "3669fa99-eaf0-49b2-aa19-eac9ee654747": "disabled"
+  },
+  "final_states": {
+    "2978cd57-61a7-4e9d-a851-d1251bd7fb48": "enabled",
+    "4ffc696f-832d-431f-8015-51e7ad634bc5": "enabled",
+    "dfdf3499-e8aa-40b8-ac5c-05c14dc4d025": "enabled",
+    "cd79fb22-16f9-4864-9a24-71411cb13011": "enabled",
+    "e1be2d5a-5c79-45c6-bffd-f0f2394345c2": "disabled",
+    "49d870c8-23d6-4ee0-8c23-d82dbf99b6b0": "disabled",
+    "5d41e19d-6f3c-4b76-ae87-2d77f72f75e3": "enabled",
+    "c5170377-1bb2-4cd6-87a2-fff252944f13": "disabled",
+    "e1b31e19-d700-42f6-97cd-666b000bc92e": "disabled",
+    "e4493d1d-1192-4a12-8232-8d656aa2c76b": "disabled",
+    "501a9d9e-6e6e-4e38-91bc-aa1b5b927e06": "disabled",
+    "dfd14fad-c79b-470c-ac73-32c8f271f025": "disabled",
+    "88348ee2-11ed-449b-9088-d73b4c5ed5d5": "disabled",
+    "dbbcd76e-3d77-47e9-98d2-fdcc2057fb3e": "disabled",
+    "ed6c1feb-6529-4bd9-9cbf-9db033547f30": "disabled",
+    "5fe3cc1c-5856-4e61-980a-63a4c84ce2d2": "disabled",
+    "f359927c-fab5-4ac4-b5d4-6e013ee0a640": "disabled",
+    "93b2a989-994a-4a59-8f14-42fc7a847904": "disabled",
+    "3669fa99-eaf0-49b2-aa19-eac9ee654747": "disabled"
+  },
+  "restoration_tasks": [
+    {
+      "key_id": "2978cd57-61a7-4e9d-a851-d1251bd7fb48",
+      "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+      "action": "enable",
+      "task_id": "cc2465c4-004f-4f89-86fb-be0a16985b05",
+      "state": "completed"
+    },
+    {
+      "key_id": "4ffc696f-832d-431f-8015-51e7ad634bc5",
+      "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+      "action": "enable",
+      "task_id": "6ce55d64-cad5-4e0d-aa4c-85ea58b68a77",
+      "state": "completed"
+    },
+    {
+      "key_id": "dfdf3499-e8aa-40b8-ac5c-05c14dc4d025",
+      "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+      "action": "enable",
+      "task_id": "1204ddca-cea0-47b8-8297-bf121d22800a",
+      "state": "completed"
+    },
+    {
+      "key_id": "cd79fb22-16f9-4864-9a24-71411cb13011",
+      "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+      "action": "enable",
+      "task_id": "1be7a1f5-e1e4-41af-9572-8e693fa274b5",
+      "state": "completed"
+    },
+    {
+      "key_id": "5d41e19d-6f3c-4b76-ae87-2d77f72f75e3",
+      "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+      "action": "enable",
+      "task_id": "9425722f-91b7-460d-b14e-a8dea9844f86",
+      "state": "completed"
+    },
+    {
+      "key_id": "e4493d1d-1192-4a12-8232-8d656aa2c76b",
+      "fingerprint": "AB275A57E936A055BF48AB42BD18246B0535F376",
+      "action": "disable",
+      "task_id": "180f685b-1b53-46d2-962c-c0c7b689b461",
+      "state": "completed"
+    },
+    {
+      "key_id": "501a9d9e-6e6e-4e38-91bc-aa1b5b927e06",
+      "fingerprint": "662D77D387846ACD9F7C3ED3CFE03AD7FB21A59F",
+      "action": "disable",
+      "task_id": "d414b14c-1909-49a3-b316-b1539bc9b242",
+      "state": "completed"
+    }
+  ],
+  "remaining_test_associations": [
+    {
+      "id": "c5170377-1bb2-4cd6-87a2-fff252944f13",
+      "fingerprint": "009B16F1C2E32B54DFB0468009392DA12E66397F",
+      "state": "disabled"
+    },
+    {
+      "id": "e1b31e19-d700-42f6-97cd-666b000bc92e",
+      "fingerprint": "3D8F8F37FDBBFEFAEB865385CCAFCBD5BA7DD952",
+      "state": "disabled"
+    },
+    {
+      "id": "e4493d1d-1192-4a12-8232-8d656aa2c76b",
+      "fingerprint": "AB275A57E936A055BF48AB42BD18246B0535F376",
+      "state": "disabled"
+    },
+    {
+      "id": "501a9d9e-6e6e-4e38-91bc-aa1b5b927e06",
+      "fingerprint": "662D77D387846ACD9F7C3ED3CFE03AD7FB21A59F",
+      "state": "disabled"
+    }
+  ],
+  "deletions_performed": false
+}

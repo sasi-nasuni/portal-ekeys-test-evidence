@@ -1,0 +1,9 @@
+{
+  "task_id": "7dba351b-5ebc-4d1e-9eca-d872e929f6c2",
+  "captured_at": "2026-11-03T17:38:43.701965+00:00",
+  "ssh_returncode": 0,
+  "payload_lines_omitted": true,
+  "lines": [
+    "2026-11-03 12:38:12.482 dev-e-keys-poc nbn-service.py[23239]: INFO: CommandAckEvent published task_id=7dba351b-5ebc-4d1e-9eca-d872e929f6c2 status=accepted topic=dbn1/f902fd2c-796c-403b-837b-89d5625319a9/nea/dvista1/31d629af-30b3-413e-a583-d5d3da651eb9/command_ack"
+  ]
+}

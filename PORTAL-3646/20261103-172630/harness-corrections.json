@@ -1,0 +1,28 @@
+[
+  {
+    "phase": "First workflow post-run SQL assertion",
+    "error": "Harness compared UUID volumes_v2.id against legacy string association volume_id",
+    "correction": "Select the association by its actual volume_id contract",
+    "upload_repeated": false,
+    "api_or_appliance_failure": false
+  },
+  {
+    "phase": "Combined escrow/disable command assertion",
+    "error": "Historical harness expected obsolete escrow_keys command name",
+    "correction": "Assert current escrow_encryption_key command contract and its actual confirmation event",
+    "upload_repeated": false,
+    "api_or_appliance_failure": false
+  },
+  {
+    "phase": "Failed task verification",
+    "error": "Unbuilt Disable target list is null after an Upload failure",
+    "correction": "Handle null target snapshots in the harness while preserving the actual task failure",
+    "upload_repeated": false
+  },
+  {
+    "phase": "Additional multipart telemetry on the third upload",
+    "error": "Chromium postDataBuffer did not expose multipart fields; diagnostic comparisons all returned false despite confirmed successful workflow",
+    "correction": "Mark these telemetry results unsupported and verify later inputs in Swagger requestInterceptor before transmission; application responses were never modified",
+    "api_or_appliance_failure": false
+  }
+]

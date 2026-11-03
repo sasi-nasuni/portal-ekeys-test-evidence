@@ -1,0 +1,6 @@
+{
+  "expected_status": 403,
+  "actual_status": 403,
+  "network_verified": true,
+  "passed": true
+}

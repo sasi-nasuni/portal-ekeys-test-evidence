@@ -1,0 +1,52 @@
+{
+  "captured_at": "2026-11-03T17:51:44.189289+00:00",
+  "task": {
+    "id": "cbfdeb32-72d0-4477-833a-eb3c1e9a83dd",
+    "account_id": "f902fd2c-796c-403b-837b-89d5625319a9",
+    "resource": "volume_encryption_key_association",
+    "resource_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "action": "upload_key_to_volume",
+    "state": "in_progress",
+    "reason": null,
+    "params": {
+      "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+      "fingerprint": "AB275A57E936A055BF48AB42BD18246B0535F376",
+      "escrow": true,
+      "disable_existing": true,
+      "keys_to_add": [],
+      "keys_to_disable": null
+    },
+    "created_at": "2026-11-03 17:51:39.986901+00:00",
+    "last_updated_at": "2026-11-03 17:51:39.986901+00:00"
+  },
+  "steps": [
+    {
+      "name": "escrow_encryption_key",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-03 17:51:39.986901+00:00",
+      "updated_at": "2026-11-03 17:51:39.986901+00:00"
+    },
+    {
+      "name": "add_volume_encryption_keys",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-03 17:51:39.986901+00:00",
+      "updated_at": "2026-11-03 17:51:39.986901+00:00"
+    },
+    {
+      "name": "disable_volume_encryption_keys",
+      "state": "pending",
+      "reason": null,
+      "created_at": "2026-11-03 17:51:39.986901+00:00",
+      "updated_at": "2026-11-03 17:51:39.986901+00:00"
+    },
+    {
+      "name": "upload_encryption_key",
+      "state": "in_progress",
+      "reason": null,
+      "created_at": "2026-11-03 17:51:39.986901+00:00",
+      "updated_at": "2026-11-03 17:51:40.008712+00:00"
+    }
+  ]
+}

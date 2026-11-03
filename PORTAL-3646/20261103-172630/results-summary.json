@@ -1,0 +1,61 @@
+{
+  "application_sha": "5483956e1b0bccc902d9061a8b0a8111c0863771",
+  "native_swagger_requests": 48,
+  "native_swagger_network_ui_matches": 48,
+  "screenshots": 208,
+  "native_swagger_screenshots": 202,
+  "rendered_database_filer_screenshots": 6,
+  "upload_endpoint_requests": 20,
+  "completed_workflow_combinations": [
+    {
+      "scenario": "101_protected_escrow_false_disable_false",
+      "task_id": "f4f39053-12ba-440d-bf7a-37f7d3f8e0c8",
+      "escrow": false,
+      "disable_existing": false,
+      "state": "completed",
+      "assertions_passed": true
+    },
+    {
+      "scenario": "105_protected_escrow_true_disable_false",
+      "task_id": "7ccf46a7-6cd8-4eac-9608-0e682232ef6b",
+      "escrow": true,
+      "disable_existing": false,
+      "state": "completed",
+      "assertions_passed": true
+    },
+    {
+      "scenario": "103_protected_escrow_false_disable_true",
+      "task_id": "0f7c769e-d87f-4b69-b9ec-60d84eb25422",
+      "escrow": false,
+      "disable_existing": true,
+      "state": "completed",
+      "assertions_passed": true
+    },
+    {
+      "scenario": "104_protected_escrow_true_disable_true",
+      "task_id": "cbfdeb32-72d0-4477-833a-eb3c1e9a83dd",
+      "escrow": true,
+      "disable_existing": true,
+      "state": "completed",
+      "assertions_passed": true
+    }
+  ],
+  "unexpected_appliance_failures": [
+    {
+      "scenario": "102_protected_escrow_true_disable_false",
+      "task_id": "5ef3c6a2-0c1d-41f9-9a44-09b5d7aec11d",
+      "stage": "Upload",
+      "reason": "Appliance rejected one generated protected key as unusable with its supplied passphrase; root cause unconfirmed; distinct locally GPG-validated replacement succeeded"
+    }
+  ],
+  "expected_negative_scenarios": 15,
+  "duplicate_and_acknowledgement_passed": true,
+  "baseline_restoration_passed": true,
+  "generated_keys_reported_by_final_appliance_dump": 4,
+  "failed_fingerprint_reported_by_final_dump": false,
+  "final_focused_automated_tests": {
+    "passed": 43,
+    "expected_failures": 1,
+    "existing_xfail": "Installed parser accepts an incomplete trailing optional multipart field"
+  }
+}

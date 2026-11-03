@@ -1,0 +1,27 @@
+{
+  "id": 4,
+  "name": "404_restore_enable_154B630A",
+  "method": "POST",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}/enable",
+  "status": 202,
+  "body": {
+    "id": "1be7a1f5-e1e4-41af-9572-8e693fa274b5",
+    "state": "in_progress",
+    "status_url": "/tasks/1be7a1f5-e1e4-41af-9572-8e693fa274b5",
+    "can_acknowledge": false
+  },
+  "request_url": "http://127.0.0.1:8001/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/cd79fb22-16f9-4864-9a24-71411cb13011/enable",
+  "docs_url": "http://127.0.0.1:8001/docs#/encryption_keys/enable_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__enable_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true
+  },
+  "screenshots": [
+    "./swagger/404_restore_enable_154B630A/404_restore_enable_154B630A_parameters_01.png",
+    "./swagger/404_restore_enable_154B630A/404_restore_enable_154B630A_response.png"
+  ],
+  "captured_at": "2026-11-03T17:57:36.025Z"
+}

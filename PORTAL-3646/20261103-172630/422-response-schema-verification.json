@@ -1,0 +1,49 @@
+{
+  "served_schema": {
+    "anyOf": [
+      {
+        "$ref": "#/components/schemas/ValidationErrorResponse"
+      },
+      {
+        "$ref": "#/components/schemas/ErrorResponse"
+      }
+    ],
+    "title": "Response 422 Upload And Add Volume Encryption Key Volumes  Volume Id  Encryption Keys Add Upload Post"
+  },
+  "documented_variants": [
+    "ErrorResponse",
+    "ValidationErrorResponse"
+  ],
+  "actual_responses": [
+    {
+      "scenario": "202_empty_file",
+      "validated_model": "ErrorResponse",
+      "detail_is_null": true,
+      "passed": true
+    },
+    {
+      "scenario": "206_missing_disable_choice",
+      "validated_model": "ValidationErrorResponse",
+      "detail_is_null": false,
+      "passed": true
+    },
+    {
+      "scenario": "207_invalid_fingerprint",
+      "validated_model": "ValidationErrorResponse",
+      "detail_is_null": false,
+      "passed": true
+    },
+    {
+      "scenario": "208_invalid_escrow_choice",
+      "validated_model": "ValidationErrorResponse",
+      "detail_is_null": false,
+      "passed": true
+    },
+    {
+      "scenario": "209_missing_file",
+      "validated_model": "ValidationErrorResponse",
+      "detail_is_null": false,
+      "passed": true
+    }
+  ]
+}
