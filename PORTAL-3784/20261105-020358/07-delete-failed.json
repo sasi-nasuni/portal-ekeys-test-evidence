@@ -1,0 +1,61 @@
+{
+  "name": "07-delete-failed",
+  "title": "task.failed exposes the deletion error and acknowledgement control",
+  "capturedAt": "2026-11-04T20:37:28.262Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {},
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:37:28.189Z",
+      "topic": "task",
+      "event_type": "task.failed",
+      "id": "9e6d4cb7-b08d-449c-b323-1c46a0df9bc9",
+      "timestamp": "2026-11-04T20:37:28.189Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "task_id": "1ebba982-cfaf-4464-a2dd-2c3cf0d4582e",
+      "action": "delete_encryption_key",
+      "error": "The appliance could not delete this key."
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:37:28.190Z",
+      "id": "9e6d4cb7-b08d-449c-b323-1c46a0df9bc9",
+      "timestamp": "2026-11-04T20:37:28.189Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "task",
+      "task_id": "1ebba982-cfaf-4464-a2dd-2c3cf0d4582e",
+      "event_type": "task.failed",
+      "error": "The appliance could not delete this key.",
+      "action": "delete_encryption_key"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/encryption-keys/e6c45a78-2e47-4d10-bee4-70e93a2f4826",
+      "query": "",
+      "status": 202
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

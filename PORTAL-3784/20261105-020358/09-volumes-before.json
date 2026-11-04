@@ -1,0 +1,12 @@
+{
+  "name": "09-volumes-before",
+  "title": "Volumes list before a simulated keyring event",
+  "capturedAt": "2026-11-04T20:38:09.559Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "volumeQueryCount": 3
+  },
+  "publishedEvents": [],
+  "receivedEvents": [],
+  "requests": []
+}

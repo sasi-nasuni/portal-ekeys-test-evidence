@@ -1,0 +1,66 @@
+{
+  "name": "06-ack-after",
+  "title": "Acknowledgement clears the failed task; replay publishes no extra event",
+  "capturedAt": "2026-11-04T20:37:26.436Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "publishedEvents": 1
+  },
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:37:26.382Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "0cd906c9-91af-4409-a15a-b11dd160881f",
+      "timestamp": "2026-11-04T20:37:26.382Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:37:26.383Z",
+      "id": "0cd906c9-91af-4409-a15a-b11dd160881f",
+      "timestamp": "2026-11-04T20:37:26.382Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:26.383Z",
+      "id": "0cd906c9-91af-4409-a15a-b11dd160881f",
+      "timestamp": "2026-11-04T20:37:26.382Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/volumes/encryption-keys",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=volume_name",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/tasks/705e1bcd-7f32-4361-8a9e-21002889f778/acknowledge",
+      "query": "",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/volumes/encryption-keys",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=volume_name",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/tasks/705e1bcd-7f32-4361-8a9e-21002889f778/acknowledge",
+      "query": "",
+      "status": 204
+    }
+  ]
+}

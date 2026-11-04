@@ -1,0 +1,17 @@
+{
+  "name": "04-rotate-passphrase-before",
+  "title": "DR Readiness before rotate passphrase",
+  "capturedAt": "2026-11-04T20:37:24.738Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {},
+  "publishedEvents": [],
+  "receivedEvents": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/dr-readiness",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

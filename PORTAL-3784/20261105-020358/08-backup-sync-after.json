@@ -1,0 +1,55 @@
+{
+  "name": "08-backup-sync-after",
+  "title": "Backup designation updated from a simulated sync; no Portal mutation request",
+  "capturedAt": "2026-11-04T20:38:09.271Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "isBackup": true,
+    "mutationRequests": 0
+  },
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:38:09.164Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "49d60a7b-9fed-4d60-91f1-430deb8118f6",
+      "timestamp": "2026-11-04T20:38:09.164Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:38:09.166Z",
+      "id": "49d60a7b-9fed-4d60-91f1-430deb8118f6",
+      "timestamp": "2026-11-04T20:38:09.164Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:38:09.167Z",
+      "id": "49d60a7b-9fed-4d60-91f1-430deb8118f6",
+      "timestamp": "2026-11-04T20:38:09.164Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/dr-readiness",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/dr-readiness",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

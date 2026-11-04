@@ -1,0 +1,11 @@
+
+ RUN  v4.1.5 /Users/sbhushan/Documents/workspace/portal-encr-keys-4/frontend
+
+ ✓ |int (chromium)| .local/portal-3784-evidence/external.capture.test.tsx (2 tests) 1030ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  02:08:05
+   Duration  4.36s (transform 0ms, setup 1.44s, import 297ms, tests 1.03s, environment 0ms)
+
+JSON report written to /Users/sbhushan/Documents/workspace/ss/PORTAL-3784/20261105-020358/additional-results.json

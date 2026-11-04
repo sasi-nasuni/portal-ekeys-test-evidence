@@ -1,0 +1,26 @@
+{
+  "name": "02-picker-before",
+  "title": "Open Select Existing picker before a simulated keyring change",
+  "capturedAt": "2026-11-04T20:37:22.821Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "pickerReads": 1,
+    "downloadReads": 1
+  },
+  "publishedEvents": [],
+  "receivedEvents": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/volumes/d2d2b74d-9a2a-4bc5-92bf-ee3a11e7bdd7_data/encryption-keys/available",
+      "query": "",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/downloads/tasks/766ebff1-ae4e-4274-8d5a-fcb599497ddd",
+      "query": "?appliance_id=5d7dfe86-8845-48a1-a2aa-997dc62a216e",
+      "status": 200
+    }
+  ]
+}

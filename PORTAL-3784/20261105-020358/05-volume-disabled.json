@@ -1,0 +1,106 @@
+{
+  "name": "05-volume-disabled",
+  "title": "Volume key disabled after HTTP request and keyring event",
+  "capturedAt": "2026-11-04T20:37:25.922Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "keyState": "disabled",
+    "publishedEvents": 2
+  },
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:37:25.695Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "7d7defd1-ebc1-4f34-82ac-d6cc8506435d",
+      "timestamp": "2026-11-04T20:37:25.695Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    },
+    {
+      "publishedAt": "2026-11-04T20:37:25.856Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "9c4c87d9-bfca-485d-94b2-1f28cccd8328",
+      "timestamp": "2026-11-04T20:37:25.856Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:37:25.695Z",
+      "id": "7d7defd1-ebc1-4f34-82ac-d6cc8506435d",
+      "timestamp": "2026-11-04T20:37:25.695Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:25.695Z",
+      "id": "7d7defd1-ebc1-4f34-82ac-d6cc8506435d",
+      "timestamp": "2026-11-04T20:37:25.695Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:25.857Z",
+      "id": "9c4c87d9-bfca-485d-94b2-1f28cccd8328",
+      "timestamp": "2026-11-04T20:37:25.856Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:25.857Z",
+      "id": "9c4c87d9-bfca-485d-94b2-1f28cccd8328",
+      "timestamp": "2026-11-04T20:37:25.856Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/volumes/encryption-keys",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=volume_name",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/volumes/3135b4cb-3777-48c0-a745-c94442117601/encryption-keys/99999999-9999-4999-8999-000000000002/enable",
+      "query": "",
+      "status": 202
+    },
+    {
+      "method": "GET",
+      "path": "/volumes/encryption-keys",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=volume_name",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/volumes/3135b4cb-3777-48c0-a745-c94442117601/encryption-keys/99999999-9999-4999-8999-000000000002/enable",
+      "query": "",
+      "status": 202
+    },
+    {
+      "method": "POST",
+      "path": "/volumes/3135b4cb-3777-48c0-a745-c94442117601/encryption-keys/99999999-9999-4999-8999-000000000002/disable",
+      "query": "",
+      "status": 202
+    },
+    {
+      "method": "GET",
+      "path": "/volumes/encryption-keys",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=volume_name",
+      "status": 200
+    }
+  ]
+}

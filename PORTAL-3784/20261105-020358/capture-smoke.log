@@ -1,0 +1,9 @@
+
+ RUN  v4.1.5 /Users/sbhushan/Documents/workspace/portal-encr-keys-4/frontend
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 13 skipped (14)
+   Start at  02:05:45
+   Duration  3.12s (transform 0ms, setup 1.47s, import 300ms, tests 357ms, environment 0ms)
+

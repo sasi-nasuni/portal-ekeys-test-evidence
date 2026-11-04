@@ -1,0 +1,55 @@
+
+ RUN  v4.1.5 /Users/sbhushan/Documents/workspace/portal-encr-keys-4/frontend
+
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx (28 tests | 26 skipped) 1461ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyMutationEvents.test.tsx (8 tests | 2 skipped) 2252ms
+ ❯ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyEvents.test.tsx (14 tests | 1 failed | 3 skipped) 3916ms
+   ✓ refreshes volume-keys and other key lists after keyring-change without invalidating details 378ms
+   ✓ refreshes volume-keys and other key lists after failed-key-task without invalidating details 247ms
+   ✓ refreshes volume-keys and other key lists after completed-key-task without invalidating details 192ms
+   ✓ refreshes dr-readiness and other key lists after keyring-change without invalidating details 298ms
+   ✓ refreshes dr-readiness and other key lists after failed-key-task without invalidating details 193ms
+   ✓ refreshes dr-readiness and other key lists after completed-key-task without invalidating details 244ms
+   ✓ refreshes unassigned and other key lists after keyring-change without invalidating details 272ms
+   ✓ refreshes unassigned and other key lists after failed-key-task without invalidating details 174ms
+   ✓ refreshes unassigned and other key lists after completed-key-task without invalidating details 176ms
+   ✓ refreshes choices in an open picker without refetching download status 225ms
+   × task completion cancels an older keyring refetch and clears pending state without another key change 1516ms
+   ↓ ignores unrelated task completions and failures, acknowledgement, and unrelated edge events
+   ↓ invalidates key lists for each encryption-key mutation action on task.failed
+   ↓ invalidates key lists for each encryption-key mutation action on task.completed
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyEvents.test.tsx > task completion cancels an older keyring refetch and clears pending state without another key change
+AssertionError: expected false to be true // Object.is equality
+
+Failure screenshot:
+  - tests/int/routes/_authed.encryption-keys/__screenshots__/EncryptionKeyEvents.test.tsx/task-completion-cancels-an-older-keyring-refetch-and-clears-pending-state-without-another-key-change-2.png
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- true[39m
+[31m+ false[39m
+
+ ❯ toBe tests/int/routes/_authed.encryption-keys/EncryptionKeyEvents.test.tsx:208:45
+    206| });
+    207|
+    208| test('ignores unrelated task completions and failures, acknowledgement…
+       |                                             ^
+    209|   const scenario = useScenario(new SSEConnectionOpen());
+    210|   await renderRoute({ to: '/encryption-keys/dr-readiness' });
+
+Caused by: Error: Matcher did not succeed in time.
+ ❯ tests/int/routes/_authed.encryption-keys/EncryptionKeyEvents.test.tsx:208:4
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  1 failed | 18 passed | 31 skipped (50)
+   Start at  02:06:18
+   Duration  12.59s (transform 0ms, setup 2.59s, import 763ms, tests 7.63s, environment 0ms)
+
+JSON report written to /Users/sbhushan/Documents/workspace/ss/PORTAL-3784/20261105-020358/capture-results.json

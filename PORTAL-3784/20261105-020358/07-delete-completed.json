@@ -1,0 +1,92 @@
+{
+  "name": "07-delete-completed",
+  "title": "Successful deletion removes the key without a page reload",
+  "capturedAt": "2026-11-04T20:37:27.784Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {},
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:37:27.732Z",
+      "topic": "task",
+      "event_type": "task.completed",
+      "id": "b07259ab-0904-47a3-a483-7a86aaa39792",
+      "timestamp": "2026-11-04T20:37:27.732Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "task_id": "525185b1-e220-49f9-ae81-992c2544650e",
+      "action": "delete_encryption_key"
+    },
+    {
+      "publishedAt": "2026-11-04T20:37:27.732Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "4749d5df-d2ca-4289-915e-4375031c7e4a",
+      "timestamp": "2026-11-04T20:37:27.732Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:37:27.733Z",
+      "id": "b07259ab-0904-47a3-a483-7a86aaa39792",
+      "timestamp": "2026-11-04T20:37:27.732Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "task",
+      "task_id": "525185b1-e220-49f9-ae81-992c2544650e",
+      "event_type": "task.completed",
+      "action": "delete_encryption_key"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:27.748Z",
+      "id": "4749d5df-d2ca-4289-915e-4375031c7e4a",
+      "timestamp": "2026-11-04T20:37:27.732Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:27.748Z",
+      "id": "4749d5df-d2ca-4289-915e-4375031c7e4a",
+      "timestamp": "2026-11-04T20:37:27.732Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/encryption-keys/e6c45a78-2e47-4d10-bee4-70e93a2f4826",
+      "query": "",
+      "status": 202
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": "aborted"
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

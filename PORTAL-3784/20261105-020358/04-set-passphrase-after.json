@@ -1,0 +1,62 @@
+{
+  "name": "04-set-passphrase-after",
+  "title": "DR Readiness refreshed after set passphrase",
+  "capturedAt": "2026-11-04T20:37:24.554Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "hasPassphrase": true,
+    "isEscrowed": false,
+    "publishedEvents": 1
+  },
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:37:24.502Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "8a993bc1-92a4-4b66-90ad-0906c6914205",
+      "timestamp": "2026-11-04T20:37:24.502Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:37:24.502Z",
+      "id": "8a993bc1-92a4-4b66-90ad-0906c6914205",
+      "timestamp": "2026-11-04T20:37:24.502Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:24.502Z",
+      "id": "8a993bc1-92a4-4b66-90ad-0906c6914205",
+      "timestamp": "2026-11-04T20:37:24.502Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/dr-readiness",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/encryption-keys/escrow-passphrase",
+      "query": "",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/dr-readiness",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

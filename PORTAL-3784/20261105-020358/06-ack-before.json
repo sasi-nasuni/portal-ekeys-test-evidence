@@ -1,0 +1,17 @@
+{
+  "name": "06-ack-before",
+  "title": "Failed volume-key operation before acknowledgement",
+  "capturedAt": "2026-11-04T20:37:26.332Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {},
+  "publishedEvents": [],
+  "receivedEvents": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/volumes/encryption-keys",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=volume_name",
+      "status": 200
+    }
+  ]
+}

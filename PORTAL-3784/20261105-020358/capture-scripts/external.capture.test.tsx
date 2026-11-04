@@ -1,0 +1,61 @@
+import {expect, onTestFinished, vi} from 'vitest';
+import {http, HttpResponse} from 'msw';
+import {test} from '@tests/int/testing-utils/test-extend';
+import {renderRoute} from '@tests/int/testing-utils/render';
+import queryClient from '@/queryClient';
+import {SSEConnectionOpen} from '@msw-portal/webbffsse/scenarios';
+import {getEncryptionKeyringChangeEvent} from '@msw-portal/webbffsse/data';
+import {SSEConnectionManager} from '@webbffsse/connection-manager';
+import {encryptionKeysKeys} from '@webbff/keys/encryption-keys';
+import {volumesKeys} from '@webbff/keys/volumes';
+import {encryptionKeysRoutes} from '@webbff/routes/encryption-keys';
+import {BffRoute} from '@webbff/utils';
+import type {DrReadinessListDto} from '@webbff/dtos/encryption-keys';
+import {capture} from './capture-support';
+
+test('appliance sync refreshes backup designation without a Portal mutation', async ({worker,useScenario}) => {
+  const scenario=useScenario(new SSEConnectionOpen());
+  const page=await renderRoute({to:'/encryption-keys/dr-readiness'});
+  await scenario.waitForConnection();
+  await expect.poll(()=>queryClient.isFetching()).toBe(0);
+  const query=queryClient.getQueryCache().find<DrReadinessListDto>({queryKey:[...encryptionKeysKeys.lists(),'dr-readiness'],exact:false});
+  if(!query?.state.data) throw new Error('Missing DR readiness feed');
+  const updated=structuredClone(query.state.data);
+  const group=updated.items.find(group=>group.keys.some(key=>key.is_backup_key===false));
+  if(!group) throw new Error('Missing non-backup key fixture');
+  const key=group.keys.find(key=>key.is_backup_key===false)!;
+  group.keys.forEach(candidate=>{candidate.is_backup_key=false;});
+  key.is_backup_key=true;
+  key.name='Backup key synchronized from appliance';
+  worker.use(http.get(BffRoute(encryptionKeysRoutes.drReadiness),()=>HttpResponse.json(updated)));
+  await page.getByRole('button',{name:'Expand all',exact:true}).click();
+  await capture('08-backup-sync-before','DR Readiness before a simulated appliance sync');
+  const post=vi.spyOn(window,'fetch');
+  scenario.sendEvent(getEncryptionKeyringChangeEvent());
+  await expect.element(page.getByText(key.name,{exact:true})).toBeVisible();
+  await expect.poll(()=>query.state.data?.items.flatMap(item=>item.keys).find(candidate=>candidate.id===key.id)?.is_backup_key).toBe(true);
+  expect(post.mock.calls.every(([,options])=>!options?.method||options.method==='GET')).toBe(true);
+  await capture('08-backup-sync-after','Backup designation updated from a simulated sync; no Portal mutation request',{isBackup:query.state.data?.items.flatMap(item=>item.keys).find(candidate=>candidate.id===key.id)?.is_backup_key,mutationRequests:0});
+});
+
+test('keyring change does not refetch the volumes list',async({useScenario})=>{
+  const scenario=useScenario(new SSEConnectionOpen());
+  await renderRoute({to:'/volumes'});
+  const manager=SSEConnectionManager.getInstance();
+  let receive!:()=>void;
+  const received=new Promise<void>(resolve=>{receive=resolve;});
+  const subscription=manager.subscribe(['edge'],()=>receive());
+  onTestFinished(()=>manager.unsubscribe(subscription));
+  await scenario.waitForConnection();
+  await expect.poll(()=>queryClient.isFetching()).toBe(0);
+  const reads=()=>queryClient.getQueryCache().findAll({queryKey:volumesKeys.all}).map(query=>({query:query.queryHash,updates:query.state.dataUpdateCount,invalidated:query.state.isInvalidated}));
+  const before=reads();
+  expect(before.length).toBeGreaterThan(0);
+  await capture('09-volumes-before','Volumes list before a simulated keyring event',{volumeQueryCount:before.length});
+  scenario.sendEvent(getEncryptionKeyringChangeEvent());
+  await received;
+  expect(reads()).toEqual(before);
+  expect(queryClient.isFetching({queryKey:volumesKeys.all})).toBe(0);
+  await capture('09-volumes-after','Keyring event received; volumes list queries unchanged',{volumeQueryCount:before.length,extraVolumeRefetches:0});
+});
+

@@ -1,0 +1,13 @@
+
+ RUN  v4.1.5 /Users/sbhushan/Documents/workspace/portal-encr-keys-4/frontend
+
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyEvents.test.tsx (14 tests | 3 skipped) 3027ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyMutationEvents.test.tsx (8 tests | 2 skipped) 2206ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx (28 tests | 26 skipped) 1369ms
+
+ Test Files  3 passed (3)
+      Tests  19 passed | 31 skipped (50)
+   Start at  02:07:18
+   Duration  10.60s (transform 0ms, setup 2.61s, import 687ms, tests 6.60s, environment 0ms)
+
+JSON report written to /Users/sbhushan/Documents/workspace/ss/PORTAL-3784/20261105-020358/capture-results.json

@@ -1,0 +1,235 @@
+{
+  "ticket": "PORTAL-3784",
+  "pull_request": "https://github.com/nasuni/portal/pull/3079",
+  "application_commit": "efdee5799dd8895216ec58721e1f8c12578d65a6",
+  "application_branch": "sbhushan/PORTAL-3784_sse_events_frontend",
+  "captured_at_utc": "2026-11-04T20:38:45.523029+00:00",
+  "application_working_tree": "",
+  "environment": "Chromium / Vitest browser mode; MSW simulated backend; real EventSource transport, frontend subscribers, React Query and UI",
+  "limitations": [
+    "Does not claim execution against a live appliance, Redis, or deployed backend. Backend evidence is separately linked from PR #3078.",
+    "SSE remains best-effort; reconnect replay/refetch and independent appliance metadata freshness are outside this ticket, per review decisions."
+  ],
+  "results": {
+    "unit": {
+      "success": true,
+      "numTotalTestSuites": 91,
+      "numPassedTestSuites": 91,
+      "numTotalTests": 348,
+      "numPassedTests": 348,
+      "numFailedTests": 0,
+      "numPendingTests": 0,
+      "test_file_count": 27
+    },
+    "browser": {
+      "success": true,
+      "numTotalTestSuites": 33,
+      "numPassedTestSuites": 33,
+      "numTotalTests": 293,
+      "numPassedTests": 293,
+      "numFailedTests": 0,
+      "numPendingTests": 0,
+      "test_file_count": 19
+    },
+    "capture": {
+      "success": true,
+      "numTotalTestSuites": 3,
+      "numPassedTestSuites": 3,
+      "numTotalTests": 50,
+      "numPassedTests": 19,
+      "numFailedTests": 0,
+      "numPendingTests": 31
+    },
+    "additional": {
+      "success": true,
+      "numTotalTestSuites": 1,
+      "numPassedTestSuites": 1,
+      "numTotalTests": 2,
+      "numPassedTests": 2,
+      "numFailedTests": 0,
+      "numPendingTests": 0
+    }
+  },
+  "checks": {
+    "typescript": "pnpm exec tsc -b passed",
+    "eslint": "Scoped encryption-key routes, mocks, SSE modules and tests passed",
+    "diff_check": "git diff --check passed"
+  },
+  "screenshots": [
+    {
+      "name": "00-test-summary.png",
+      "bytes": 384541,
+      "sha256": "cb3a699bd019483cd6f76ca43d2180caddf86ea002171307424525284385576a"
+    },
+    {
+      "name": "01-dr-readiness-after.png",
+      "bytes": 101184,
+      "sha256": "911977fd45cca55dad19a07f4e9f0d77871a68df3305f2c17778daed4a83e705"
+    },
+    {
+      "name": "01-dr-readiness-before.png",
+      "bytes": 92048,
+      "sha256": "6510808c27094d5a0243aa04fa458bc9d52573413aaa3e5f12002a50dadd2bed"
+    },
+    {
+      "name": "01-unassigned-after.png",
+      "bytes": 72132,
+      "sha256": "cf7debce34185af9fb00c734eca68f1bb3b7a7e38b6c7dba7e34763fdd27ce19"
+    },
+    {
+      "name": "01-unassigned-before.png",
+      "bytes": 56794,
+      "sha256": "dabb3b293b73bc9c4497d3f3dc2b9922d5585f40bad56baa222e2f183b9b1e49"
+    },
+    {
+      "name": "01-volume-keys-after.png",
+      "bytes": 74371,
+      "sha256": "44207b07c5a5836f3f85eb99164dd944a545cf98109b9461997c33418086e057"
+    },
+    {
+      "name": "01-volume-keys-before.png",
+      "bytes": 59038,
+      "sha256": "9380d4446b8b0345175f446abb90ace71574c3242d6c2871a6a6b59177486dd7"
+    },
+    {
+      "name": "02-picker-after.png",
+      "bytes": 52138,
+      "sha256": "c403fc44a20ad5196729639c4a81ba5ff48543a466b9d72492b1dd9b4317c1a7"
+    },
+    {
+      "name": "02-picker-before.png",
+      "bytes": 39010,
+      "sha256": "f3e5bded60d064448c56179b73540382c51a113bd2e35bd88f03df796c9617b1"
+    },
+    {
+      "name": "03-task-completed.png",
+      "bytes": 87370,
+      "sha256": "9b33da96388e91ffd13baa176e0fbe02591f8a54a51078b81bb4ab65a29e76cf"
+    },
+    {
+      "name": "03-task-pending.png",
+      "bytes": 80583,
+      "sha256": "6593c7d68147b3745a00999ed04916975c27888637e0db762faa3a34f949bb54"
+    },
+    {
+      "name": "04-escrow-after.png",
+      "bytes": 69879,
+      "sha256": "740149b274afcb037424556e590d522746ba4ddfd6a2d3fdb7dee6fa60f23212"
+    },
+    {
+      "name": "04-escrow-before.png",
+      "bytes": 61129,
+      "sha256": "cd4b139ac579d515602ed39ad35fe2c64283938b1f1e224124b2b44ed3ac2a59"
+    },
+    {
+      "name": "04-rotate-passphrase-after.png",
+      "bytes": 78616,
+      "sha256": "1513ec39ded2ed70965253bb6a5314af430ac21657b695d70838141dfe49991f"
+    },
+    {
+      "name": "04-rotate-passphrase-before.png",
+      "bytes": 61586,
+      "sha256": "f51cc9785ac83d69322eec239893854d8819dec8251d48120302a3402ed423be"
+    },
+    {
+      "name": "04-set-passphrase-after.png",
+      "bytes": 78734,
+      "sha256": "b8a0f1db1212c38182f745cbb20271fba7a4a5f0ae0bd4270e2394b96a1a5200"
+    },
+    {
+      "name": "04-set-passphrase-and-escrow-after.png",
+      "bytes": 70276,
+      "sha256": "d5bd3ffa842033a646a14c13950ca4a07107fa04cf14e1897bf8f93d2c7fb09c"
+    },
+    {
+      "name": "04-set-passphrase-and-escrow-before.png",
+      "bytes": 68050,
+      "sha256": "a08fdbfa35628f2ec869cafb461ef75e2927d6b3a0a1f07574d215e42fe484b4"
+    },
+    {
+      "name": "04-set-passphrase-before.png",
+      "bytes": 67494,
+      "sha256": "c226228100058d595c99ca33172954a8c755e8c05d7891a273790bf340121e6b"
+    },
+    {
+      "name": "05-volume-added.png",
+      "bytes": 107527,
+      "sha256": "b79c33c98dfa289610f175ce3e4e2a0f856027b8168cd658b80250a83c26b18c"
+    },
+    {
+      "name": "05-volume-before.png",
+      "bytes": 82427,
+      "sha256": "0a8cbdea3e36e7a239e9f286f25729343cf8527c75bdaee15b1a55aee1c51675"
+    },
+    {
+      "name": "05-volume-disabled.png",
+      "bytes": 109562,
+      "sha256": "1fe57cd77d8dab46659164c8b82a2e385034d0b129d620479e9274e70d3202f3"
+    },
+    {
+      "name": "05-volume-enabled.png",
+      "bytes": 98233,
+      "sha256": "f358983a113dad25189554cec0dbe02b43df4b5dbfd59e12ec8760a06a0c6205"
+    },
+    {
+      "name": "05-volume-uploaded.png",
+      "bytes": 103623,
+      "sha256": "1a09d210ba9d72cf14f4128d9a01506e2121f8025153073cf50b8f4608b18509"
+    },
+    {
+      "name": "06-ack-after.png",
+      "bytes": 97456,
+      "sha256": "2be0ff001c37fd18d72319e86f4a5fbb314f06426a97f264d6ec53272be54f4b"
+    },
+    {
+      "name": "06-ack-before.png",
+      "bytes": 77889,
+      "sha256": "6b4c5bab0bac6f1f015626fefe7e8a270d23bf139a6d9725f5da5e3f98e74988"
+    },
+    {
+      "name": "07-delete-completed.png",
+      "bytes": 68335,
+      "sha256": "f4b7360137667cf5e8c8681ad43a6922ca9e0d3783be5d81264f44fe8d3a7cf4"
+    },
+    {
+      "name": "07-delete-failed.png",
+      "bytes": 80918,
+      "sha256": "2026417b10dcd1c88e5883b990e04ae29910b2a0b316bdb998ffb43497def435"
+    },
+    {
+      "name": "07-delete-failure-acknowledged.png",
+      "bytes": 73349,
+      "sha256": "8dc0377cee6bb80576571ea086f3eb10054f36ebe3521a1a82f7b9bd6df3ac36"
+    },
+    {
+      "name": "07-delete-failure-pending.png",
+      "bytes": 59589,
+      "sha256": "b54a793230ffe7222a8579d217ceed92d29b0203197bee18d593be3acb8b5da2"
+    },
+    {
+      "name": "07-delete-success-pending.png",
+      "bytes": 59589,
+      "sha256": "b54a793230ffe7222a8579d217ceed92d29b0203197bee18d593be3acb8b5da2"
+    },
+    {
+      "name": "08-backup-sync-after.png",
+      "bytes": 106629,
+      "sha256": "346382dce2161a848695a7d153d46092c2bda99b59d1d036e0c0bc09c9846dca"
+    },
+    {
+      "name": "08-backup-sync-before.png",
+      "bytes": 95647,
+      "sha256": "4a91077f12aee03122b7a0da3ed187a6384ea80d3e3e5f899ed8cdc83f870470"
+    },
+    {
+      "name": "09-volumes-after.png",
+      "bytes": 112967,
+      "sha256": "51196c72976affce30eb0c9b7fb7e9f60e8d88c6fec8a2007ea85b22df837de7"
+    },
+    {
+      "name": "09-volumes-before.png",
+      "bytes": 106134,
+      "sha256": "00c4362a7810c80058e28ed22bd4350a2dae8a6713a7b4e24627fae8810fb29f"
+    }
+  ]
+}

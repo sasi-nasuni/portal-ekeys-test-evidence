@@ -1,0 +1,56 @@
+{
+  "name": "01-unassigned-after",
+  "title": "unassigned: keyring event refreshed the view",
+  "capturedAt": "2026-11-04T20:37:22.245Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "pickerInvalidated": true,
+    "downloadInvalidated": false,
+    "publicKeyInvalidated": false
+  },
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:37:22.192Z",
+      "id": "c8f66ce6-9d6d-497d-85d0-65ff8e444a0e",
+      "timestamp": "2026-11-04T20:37:22.192Z",
+      "account_id": "11111111-1111-4111-8111-111111111111",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:37:22.193Z",
+      "id": "c8f66ce6-9d6d-497d-85d0-65ff8e444a0e",
+      "timestamp": "2026-11-04T20:37:22.192Z",
+      "account_id": "11111111-1111-4111-8111-111111111111",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:37:22.193Z",
+      "id": "c8f66ce6-9d6d-497d-85d0-65ff8e444a0e",
+      "timestamp": "2026-11-04T20:37:22.192Z",
+      "account_id": "11111111-1111-4111-8111-111111111111",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/encryption-keys/unassigned",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "04-set-passphrase-and-escrow-before",
+  "title": "DR Readiness before set passphrase and escrow",
+  "capturedAt": "2026-11-04T20:37:25.273Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {},
+  "publishedEvents": [],
+  "receivedEvents": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/encryption-keys/dr-readiness",
+      "query": "?page=1&limit=25&sort_direction=asc&sort_by=appliance_name",
+      "status": 200
+    }
+  ]
+}

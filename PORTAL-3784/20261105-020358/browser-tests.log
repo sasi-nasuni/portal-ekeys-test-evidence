@@ -1,0 +1,76 @@
+
+ RUN  v4.1.5 /Users/sbhushan/Documents/workspace/portal-encr-keys-4/frontend
+
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > keeps collection acknowledgement errors inside the popover instead of the status cell
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > keeps collection acknowledgement errors inside the popover instead of the status cell
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > keeps collection acknowledgement errors inside the popover instead of the status cell
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline request acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline request acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline request acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline refresh acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline refresh acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline refresh acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx > shows an inline refresh acknowledgement failure and allows retry on a volume key
+[Error: ResizeObserver loop completed with undelivered notifications.]
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/dr-readiness-escrow-keys.test.tsx (13 tests) 4892ms
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: false)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: false)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: false)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: false)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: false)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: true)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: true)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: true)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+stderr | tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx > shows acknowledgement errors inline in Unassigned Keys (refresh failure: true)
+[Error: ResizeObserver loop completed with undelivered notifications.]
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/unassigned-keys.test.tsx (28 tests) 7701ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/dr-readiness-set-passphrase.test.tsx (20 tests) 9083ms
+     ✓ reports each rejected appliance and retries only those  1920ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionTaskStatus.test.tsx (11 tests) 1795ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/dr-readiness-bulk-actions.test.tsx (10 tests) 6915ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/dr-readiness-download-generated-keys.test.tsx (4 tests) 14066ms
+     ✓ saves the generated keys decrypted with a key pair that never leaves the browser  3839ms
+     ✓ reports a empty download without saving a file  4345ms
+     ✓ reports a failed download without saving a file  3897ms
+     ✓ shows the server reason when a download cannot start  1985ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/search-navigation.test.tsx (5 tests) 4028ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyEvents.test.tsx (14 tests) 3822ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx (30 tests) 17728ms
+   ✓ preserves a filtered bulk upload session and retries only failures after a successful target disappears  3091ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/VolumeKeysRefresh.test.tsx (5 tests) 1082ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/EncryptionKeyMutationEvents.test.tsx (8 tests) 2032ms
+ ✓ |int (chromium)| tests/int/webbff/mutations/encryption-keys.test.tsx (2 tests) 122ms
+ ✓ |int (chromium)| tests/int/webbff/queries/encryption-keys.test.tsx (5 tests) 233ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/toolbar.test.tsx (2 tests) 740ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/route-access.test.tsx (4 tests) 357ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/useEncryptionKeysExportId.test.tsx (4 tests) 111ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/column-config.test.tsx (4 tests) 69ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/AddKeyDrawer.test.tsx (53 tests) 24061ms
+     ✓ keeps submission errors in the drawer and resets selection on close and reopen  2540ms
+     ✓ prevents dismissal and duplicate submission while the add request is pending  2854ms
+ ✓ |int (chromium)| tests/int/routes/_authed.encryption-keys/dr-readiness.test.tsx (71 tests) 22699ms
+     ✓ filters by an appliance from the same inventory and keeps account-wide warning counts  3200ms
+
+ Test Files  19 passed (19)
+      Tests  293 passed (293)
+   Start at  02:04:08
+   Duration  49.28s (transform 0ms, setup 45.48s, import 15.58s, tests 121.54s, environment 0ms)
+
+JSON report written to /Users/sbhushan/Documents/workspace/ss/PORTAL-3784/20261105-020358/browser-results.json

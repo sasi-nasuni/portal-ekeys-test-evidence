@@ -1,0 +1,42 @@
+{
+  "name": "09-volumes-after",
+  "title": "Keyring event received; volumes list queries unchanged",
+  "capturedAt": "2026-11-04T20:38:09.630Z",
+  "environment": "Chromium browser integration; simulated backend via MSW; real EventSource and React Query",
+  "facts": {
+    "volumeQueryCount": 3,
+    "extraVolumeRefetches": 0
+  },
+  "publishedEvents": [
+    {
+      "publishedAt": "2026-11-04T20:38:09.630Z",
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change",
+      "id": "50ec9570-8978-4b7d-83a8-2abab2868e1c",
+      "timestamp": "2026-11-04T20:38:09.630Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null
+    }
+  ],
+  "receivedEvents": [
+    {
+      "receivedAt": "2026-11-04T20:38:09.630Z",
+      "id": "50ec9570-8978-4b7d-83a8-2abab2868e1c",
+      "timestamp": "2026-11-04T20:38:09.630Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    },
+    {
+      "receivedAt": "2026-11-04T20:38:09.630Z",
+      "id": "50ec9570-8978-4b7d-83a8-2abab2868e1c",
+      "timestamp": "2026-11-04T20:38:09.630Z",
+      "account_id": "123e4567-e89b-12d3-a456-426614174001",
+      "user_id": null,
+      "topic": "edge",
+      "event_type": "edge.encryption_keyring_change"
+    }
+  ],
+  "requests": []
+}
