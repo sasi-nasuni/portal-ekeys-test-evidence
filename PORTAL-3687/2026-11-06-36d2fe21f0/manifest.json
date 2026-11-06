@@ -1,0 +1,157 @@
+{
+  "sourceCommit": "36d2fe21f0",
+  "viewport": {
+    "width": 1440,
+    "height": 980
+  },
+  "screenshots": [
+    {
+      "file": "00-before-existing-key-pills.png",
+      "description": "Earlier pre-change actual Add Key drawer capture with individual gray pills,448x980; captured2026-11-06 before PORTAL-3687 selection summary change.",
+      "width": 448,
+      "height": 980,
+      "sha256": "37711af2f378bf35ed16a8ffeb251d298aaf878ecd6b36045946d045a66b095f"
+    },
+    {
+      "file": "01-volume-keys-header-warning-dot.png",
+      "description": "Version requirement and static warning dot; unselected parent rows.",
+      "url": "http://localhost:3000/encryption-keys/volume-keys",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 980
+      },
+      "width": 1440,
+      "height": 980,
+      "sha256": "15cb90e11e9d150870f993bf0078f4a6a859e6b20793de9c64da1110926117db"
+    },
+    {
+      "file": "03-existing-keys-loading-no-text.png",
+      "description": "Existing-key query pending: Select stays disabled without Loading keys text.",
+      "url": "http://localhost:3000/encryption-keys/volume-keys",
+      "bounds": {
+        "x": 992,
+        "y": 0,
+        "width": 448,
+        "height": 980
+      },
+      "width": 448,
+      "height": 980,
+      "sha256": "499fdb848f29a1caf7362a4f23cc9221cb8fea1d68882112ccb532ad32871dff"
+    },
+    {
+      "file": "04-existing-single-key-summary.png",
+      "description": "One selected key shows its name and compact fingerprint, plus Change.",
+      "url": "http://localhost:3000/encryption-keys/volume-keys",
+      "bounds": {
+        "x": 992,
+        "y": 0,
+        "width": 448,
+        "height": 980
+      },
+      "width": 448,
+      "height": 980,
+      "sha256": "ab9e3b508c0bd52794d0773ebeaecfabfcd669e3e3427da7097ec2eb687805a0"
+    },
+    {
+      "file": "05-existing-multiple-key-count.png",
+      "description": "Multiple selected keys show only the count; Change reopens selection.",
+      "url": "http://localhost:3000/encryption-keys/volume-keys",
+      "bounds": {
+        "x": 992,
+        "y": 0,
+        "width": 448,
+        "height": 980
+      },
+      "width": 448,
+      "height": 980,
+      "sha256": "3c5ec3e2b061dc96040ae21f6bb077937e33b68555681c819a592c50e302f355"
+    },
+    {
+      "file": "06-export-pending-spinner.png",
+      "description": "Export spinner remains visible while the accepted export is being collected.",
+      "url": "http://localhost:3000/encryption-keys/volume-keys",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 980
+      },
+      "width": 1440,
+      "height": 980,
+      "sha256": "9f8c97fec28758be7da8a8fd77636118b24038fb535868a802d6c65432167dae"
+    },
+    {
+      "file": "07-dr-readiness-before-filter.png",
+      "description": "Account-wide readiness banner and unfiltered appliance rows.",
+      "url": "http://localhost:3000/encryption-keys/dr-readiness",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 980
+      },
+      "width": 1440,
+      "height": 980,
+      "sha256": "ce361514504cd01a4b7b2093f7e25b53b6714f8996daf4dcb085bbf44dce3327"
+    },
+    {
+      "file": "08-dr-readiness-filter-pending.png",
+      "description": "Warning filter request is held pending: banner and previous rows remain visible.",
+      "url": "http://localhost:3000/encryption-keys/dr-readiness?has_escrow_passphrase=unset",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 980
+      },
+      "width": 1440,
+      "height": 980,
+      "sha256": "acf9cc529818559ff0dca6c3f588c55f9907eacce544aa211692d9e0093c14a8"
+    },
+    {
+      "file": "09-dr-readiness-filtered.png",
+      "description": "After response: matching appliance rows replace the prior rows and banner remains.",
+      "url": "http://localhost:3000/encryption-keys/dr-readiness?has_escrow_passphrase=unset",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 980
+      },
+      "width": 1440,
+      "height": 980,
+      "sha256": "0f7cbdb8deb3d0c301cd95f0e3ffa3f37746119d49693ca71e27af89cd6948c3"
+    }
+  ],
+  "checks": [
+    "Add Key drawer width is448px.",
+    {
+      "exportButtonSize": {
+        "idle": {
+          "x": 1370,
+          "y": 294.5,
+          "width": 38,
+          "height": 38
+        },
+        "pending": {
+          "x": 1370,
+          "y": 294.5,
+          "width": 38,
+          "height": 38
+        }
+      },
+      "retainedAfterAcceptance": true
+    },
+    "DR banner and Finance row stay visible during a held filter request; Finance disappears only after the filtered response."
+  ],
+  "sourceBranch": "sbhushan/PORTAL-3687_frontend_fixes",
+  "baseCommit": "1deb991baf",
+  "captureEnvironment": "Chromium, http://localhost:3000, synthetic MSW scenarios, third-party traffic blocked",
+  "limitations": [
+    "Screenshots exercise real route components with synthetic responses; no live appliance operation or real export backend was exercised.",
+    "The before image was captured earlier on2026-11-06 before the selected-key summary change and is not a recapture of the rebased base commit.",
+    "Static screenshots show visible states; the accompanying capture checks verify the held-request timing and export dimensions."
+  ]
+}
