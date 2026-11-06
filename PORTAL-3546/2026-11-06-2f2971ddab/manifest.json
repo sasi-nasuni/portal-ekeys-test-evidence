@@ -17,8 +17,14 @@
       "file": "02-add-key-file-validation.png",
       "width": 1440,
       "height": 980,
-      "bytes": 72151,
-      "sha256": "ca8a1cb195d1998dfdaf71f7c531b8e2af8bcc8a6f4d8d5ac1c67a4b7a18cd07"
+      "bytes": 126472,
+      "sha256": "2b2c3b7844a5f21c476ab9cfd321d47c8316fc7c797a1fe899fad21e16e2ff21",
+      "capture_commit": "1e8ebf812f9a69960fad153b0d3b6d9927dcd343",
+      "drawer_width_css_pixels": 448,
+      "stylesheets": [
+        "@portal/ui/styles.css",
+        "@/main.css"
+      ]
     },
     {
       "file": "03-unreachable-last-seen-tooltip.png",
@@ -31,8 +37,14 @@
       "file": "04-bulk-upload-partial-failure.png",
       "width": 1440,
       "height": 980,
-      "bytes": 76109,
-      "sha256": "0060ccd3008a4981e626fa94dfe14261ad05ab385fa9078e4a109e8dc85f9e81"
+      "bytes": 140204,
+      "sha256": "f23cc83e6ac6e73b1b4c6f29bd4d5dd3fca41316ba537ec9ebd557a45cbfbd1d",
+      "capture_commit": "1e8ebf812f9a69960fad153b0d3b6d9927dcd343",
+      "drawer_width_css_pixels": 448,
+      "stylesheets": [
+        "@portal/ui/styles.css",
+        "@/main.css"
+      ]
     },
     {
       "file": "05-enable-progress-through-refresh.png",
@@ -80,29 +92,53 @@
       "file": "11-dr-retained-blocked-key.png",
       "width": 1440,
       "height": 980,
-      "bytes": 60140,
-      "sha256": "4b2c169fc7b8796d9ab54a52640afeea7476db522e593d1eef8492bfe4c613a7"
+      "bytes": 151363,
+      "sha256": "c939713c17e4fbe9581071a877cf8e702938c2a561ac26c91ae89eedf17abcde",
+      "capture_commit": "1e8ebf812f9a69960fad153b0d3b6d9927dcd343",
+      "drawer_width_css_pixels": 448,
+      "stylesheets": [
+        "@portal/ui/styles.css",
+        "@/main.css"
+      ]
     },
     {
       "file": "12-dr-retained-blocked-appliance.png",
       "width": 1440,
       "height": 980,
-      "bytes": 56111,
-      "sha256": "83aab2ab19dc367a20f934a7209b368cc411cb2f71c5bfbcac7304884be53142"
+      "bytes": 134176,
+      "sha256": "6dd030f73131221dc187034d8a4a811346112451d92499f8e23935fc942a49a7",
+      "capture_commit": "1e8ebf812f9a69960fad153b0d3b6d9927dcd343",
+      "drawer_width_css_pixels": 448,
+      "stylesheets": [
+        "@portal/ui/styles.css",
+        "@/main.css"
+      ]
     },
     {
       "file": "13-escrow-policy-validation.png",
       "width": 1440,
       "height": 980,
-      "bytes": 53519,
-      "sha256": "1ed4c2a5a2da136450168b4aab3e7e709089bcc776ce40a6b17d8dd886910eec"
+      "bytes": 132570,
+      "sha256": "581d242219dfb70bc0e70d2498e44d21e487a7549a7849cf37102caee8eff163",
+      "capture_commit": "1e8ebf812f9a69960fad153b0d3b6d9927dcd343",
+      "drawer_width_css_pixels": 448,
+      "stylesheets": [
+        "@portal/ui/styles.css",
+        "@/main.css"
+      ]
     },
     {
       "file": "14-passphrase-confirmation-validation.png",
       "width": 1440,
       "height": 980,
-      "bytes": 50057,
-      "sha256": "1e9d879da2c0943d4dfdc316a88b2a813d08c55f0bb0d4510fdc9ca77ecf91c9"
+      "bytes": 123286,
+      "sha256": "0a2150bf33c3e6e190890018407e7cf2ef469f15d738984c855ac96d84dc3782",
+      "capture_commit": "1e8ebf812f9a69960fad153b0d3b6d9927dcd343",
+      "drawer_width_css_pixels": 448,
+      "stylesheets": [
+        "@portal/ui/styles.css",
+        "@/main.css"
+      ]
     },
     {
       "file": "15-unassigned-key-task-states.png",

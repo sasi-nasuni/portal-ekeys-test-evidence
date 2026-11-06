@@ -4,6 +4,10 @@ Pull request: [nasuni/portal#3099](https://github.com/nasuni/portal/pull/3099).
 Portal source: [`2f2971ddab91703c29d307c31fef2e32e00e7fe7`](https://github.com/nasuni/portal/commit/2f2971ddab91703c29d307c31fef2e32e00e7fe7).
 Captured on 2026-11-06 using Chromium at a 1440 × 980 CSS-pixel viewport.
 
+## Capture correction
+
+The six drawer images were recaptured with both production stylesheets (`@portal/ui/styles.css` and `@/main.css`). The original browser harness omitted the shared UI stylesheet, causing incorrect widths. Each corrected capture verifies the production drawer width is 28rem (448px). The recapture uses Portal commit `1e8ebf812f9a69960fad153b0d3b6d9927dcd343`; its only difference from the source commit above is the select-all test selector fix, so product code is unchanged.
+
 ## Scope
 
 These are unedited screenshots of the actual Portal route components exercised through the browser integration runner, using the existing MSW scenarios and synthetic data. They are UI evidence, not evidence of live appliance or backend success. No customer data or key contents are included. The screenshot harness was temporary and is not part of the Portal change.
@@ -154,6 +158,10 @@ The global handler shows the download-started notification on Cloud Credentials 
 The download action sends the initiation request and displays the collecting notification.
 
 ![Generated keys: collection started](2026-11-06-2f2971ddab/20-generated-keys-collecting.png)
+
+## Enable/Disable verification
+
+Five existing real-page checks in `VolumeKeysPage.test.tsx` passed on 2026-11-06: pending Enable and Disable are scoped to the affected volume/key association, progress persists through collapse/re-expand and the accepted-response refresh, merged rows preserve Add Key availability, a keyring SSE update renders the final Disabled state, and synchronous request rejection remains visible even after the initiating row collapses. These use MSW and do not verify execution on a live appliance. No timeout increases or new permanent tests were added.
 
 ## Limits and follow-ups
 
