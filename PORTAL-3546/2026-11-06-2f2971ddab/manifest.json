@@ -1,0 +1,150 @@
+{
+  "source_repository": "nasuni/portal",
+  "source_commit": "2f2971ddab91703c29d307c31fef2e32e00e7fe7",
+  "pull_request": 3099,
+  "captured_on": "2026-11-06",
+  "browser": "Chromium",
+  "data": "MSW synthetic scenarios",
+  "images": [
+    {
+      "file": "01-volume-keys-expanded.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 95870,
+      "sha256": "15fa558ad185bb1a46b74fc076856c83b260c032c03a675268f082ebad11e973"
+    },
+    {
+      "file": "02-add-key-file-validation.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 72151,
+      "sha256": "ca8a1cb195d1998dfdaf71f7c531b8e2af8bcc8a6f4d8d5ac1c67a4b7a18cd07"
+    },
+    {
+      "file": "03-unreachable-last-seen-tooltip.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 99772,
+      "sha256": "67a547f68179fd19d29dfa5b77c95f117451a7ab90d835da3d69e6f8809d5e51"
+    },
+    {
+      "file": "04-bulk-upload-partial-failure.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 76109,
+      "sha256": "0060ccd3008a4981e626fa94dfe14261ad05ab385fa9078e4a109e8dc85f9e81"
+    },
+    {
+      "file": "05-enable-progress-through-refresh.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 96264,
+      "sha256": "30794d2bab99080184565bb001f3a36ba3b6a20b7cfcfad99aaf9850b954dda9"
+    },
+    {
+      "file": "06-volume-error-details.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 130766,
+      "sha256": "8bb1c10b9e1b09a37da75f011593e8a9b870ff789b704fb0c8545a4cc91e0009"
+    },
+    {
+      "file": "07-destination-links-disabled.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 98442,
+      "sha256": "f458e7b3142976fe39b6935459f55a11fbc1c54b1be179e488cd140d9568651a"
+    },
+    {
+      "file": "08-volume-links-only.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 97577,
+      "sha256": "280878cf6e12e5edef99d3bd849dbd6228f164cc3b7e3e09943d6ed0c6d31971"
+    },
+    {
+      "file": "09-appliance-links-only.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 97622,
+      "sha256": "caf25a903759af94a9300c22815cab95bb72745414756177242e5b57a61ce556"
+    },
+    {
+      "file": "10-dr-readiness-expanded.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 124151,
+      "sha256": "4462eb05227ebd4eb0176bc4fdfbf24eea9e5ed97d335351f99f3a7aaecea172"
+    },
+    {
+      "file": "11-dr-retained-blocked-key.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 60140,
+      "sha256": "4b2c169fc7b8796d9ab54a52640afeea7476db522e593d1eef8492bfe4c613a7"
+    },
+    {
+      "file": "12-dr-retained-blocked-appliance.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 56111,
+      "sha256": "83aab2ab19dc367a20f934a7209b368cc411cb2f71c5bfbcac7304884be53142"
+    },
+    {
+      "file": "13-escrow-policy-validation.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 53519,
+      "sha256": "1ed4c2a5a2da136450168b4aab3e7e709089bcc776ce40a6b17d8dd886910eec"
+    },
+    {
+      "file": "14-passphrase-confirmation-validation.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 50057,
+      "sha256": "1e9d879da2c0943d4dfdc316a88b2a813d08c55f0bb0d4510fdc9ca77ecf91c9"
+    },
+    {
+      "file": "15-unassigned-key-task-states.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 112178,
+      "sha256": "abd003013c1228d9fd2ee08076d9be0569422afed2acc3809e5906ccbe933e91"
+    },
+    {
+      "file": "16-delete-key-confirmation.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 136555,
+      "sha256": "5bffa03013940447b4a46a0804f2a211a573c0e52af95805a1d9874e91d9bb79"
+    },
+    {
+      "file": "17-delete-key-request-error.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 139365,
+      "sha256": "aaec04b57f7c296398243a92e1ed8869d6a9b97b1c75a656f74c9bb36bb4c983"
+    },
+    {
+      "file": "18-volume-keys-page-two.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 119733,
+      "sha256": "88fe83ac1f1e6cdb7cd554e32537f4b49ab1ba5cd6e829cbd487cad3fdec3c11"
+    },
+    {
+      "file": "19-csv-export-after-navigation.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 166988,
+      "sha256": "711a5bdb8cd4c6f42547d6a8521f7c04d2d4b9105a5dfad916f77b8131b12b58"
+    },
+    {
+      "file": "20-generated-keys-collecting.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 87272,
+      "sha256": "6ddd92fa3476a2af2dc4f05073c4746980199a4746d907ba9eb7ce1381733909"
+    }
+  ]
+}
