@@ -1,0 +1,45 @@
+{
+  "note": "Suite runs overlap; counts are reported separately and are not summed into a unique test total. Original logs remain local.",
+  "runs": [
+    {
+      "suite_log": "3857-webapi-contract-final.log",
+      "result": "289 passed, 17 warnings in 8.26s",
+      "log_sha256": "b40ad1608f525826393fe26052e8b2579dfcad51f1b9ef86fd4afaae7bfea2d5"
+    },
+    {
+      "suite_log": "3857-api-unit.log",
+      "result": "63 passed in 0.63s",
+      "log_sha256": "de005d9093ba16dd916fd7c4e82abd220b8ea580427b0400dd157ee18493fbdc"
+    },
+    {
+      "suite_log": "3857-data-integration.log",
+      "result": "101 passed, 1 warning in 12.86s",
+      "log_sha256": "821ccaa82fb47b18bd0c7083418759d34b731ab092e00a4cc8c266897cf0e99c"
+    },
+    {
+      "suite_log": "3857-bff-tests.log",
+      "result": "9 passed, 1 warning in 8.60s",
+      "log_sha256": "f1376588014ccfd9d707f04e6bf8ede5c6a90110b09ac186ea71263cc8501439"
+    },
+    {
+      "suite_log": "3857-mcp-tests.log",
+      "result": "58 passed, 1 warning in 0.28s",
+      "log_sha256": "d626739e6d24a9f6209e873d675537c4e02019c1cde38ecad06ff329d00d0eb4"
+    },
+    {
+      "suite_log": "3857-download-limit-tests.log",
+      "result": "44 passed, 6 warnings in 13.89s",
+      "log_sha256": "1eaf738a3baa6d28b6fd436ae7611fb2de02e2347fd3c028b9562e2669ae2c46"
+    },
+    {
+      "suite_log": "3857-volume-permissions-tests.log",
+      "result": "39 passed, 7 warnings in 3.55s",
+      "log_sha256": "41366c55ea77d09c7271bd46e463445e01ecb1bfe554dade0c5c49806a885996"
+    },
+    {
+      "suite_log": "3857-migration-preflight.log",
+      "result": "2 passed, 2 warnings in 2.27s",
+      "log_sha256": "4d61b0b36454da198af84ae1db13a6db727ea41978a68dfff8b97f6d41622445"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "shared_pagination_validated": true,
+  "volume_id_naming_validated": true,
+  "individual_volume_dto_matches_collection": true,
+  "read_models_validated": 4
+}

@@ -1,0 +1,16 @@
+{
+  "README.md": "3287308da84687a37059dd5dafb1e3d5b6a11120b895b3bc333132c6b95cc2b8",
+  "appliance-restoration.json": "04c1cb4d5eb8705b759e74d42f1782add5ad18af199fd1d78d6f1f875d9fc9af",
+  "automated-test-results.json": "5c74c232becf001e40f451dea44cff795a13e1bd54ae082a5d6a6f981d7805ea",
+  "commit-checks.json": "b9f5ba60a0b84cc660a7b5c1b28f5529f6e8f2ab8391c1aadda99a97f2f6c374",
+  "delete-readback.json": "2ed1ec8576c5228857c8b2b29caa0d334ac1696377fdfc3f6c1aa68036dc8fce",
+  "endpoint-results.json": "0d4726a13209b2b18ee84b382ff305ef693c5b6754cfcdd8192c4c518936830a",
+  "final-results.json": "b552efa48774c670be326ba49f4a3a289b38e2049032c90dbd595b369e959721",
+  "http-checks.json": "94d5e91358d9225b84ae8829b887c30f3b2e49fff0228f9561966f7f329a745b",
+  "migration-preflight.json": "532d1fe8e7db855caa108535750030494da38c89608bfab9a2bf2c7e7e4449eb",
+  "passphrase-preservation.json": "5a456d4cc1952ebea25520a39005280e07d15d8319f8719cbdca6f256b5eaff8",
+  "provenance.json": "851e0ee04e57ad1cabc7fee005028307e03c26b148985680595ca19d984f780b",
+  "publication-checks.json": "f15879e13e83bd2203f52e95d0e568eb0180e43944100a1164b20b71acc838e5",
+  "read-contract-assertions.json": "2efcb296f1536a780aaa353778d7f7e73dea67338f8498a77cf173077b4454c0",
+  "task-results.json": "ff0812e785f3328f3d060073c0b3b6d68278701874c60d0d34fbac0c4cbdef04"
+}

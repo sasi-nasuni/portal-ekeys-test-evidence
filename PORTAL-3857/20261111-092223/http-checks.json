@@ -1,0 +1,585 @@
+[
+  {
+    "scenario": "summary",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/encryption-keys/summary",
+    "status": 200,
+    "body": {
+      "total": 76,
+      "generated_count": 2,
+      "escrowed": 19,
+      "not_escrowed": 57,
+      "backup_key": {
+        "id": "id-fe41a84f0f7e",
+        "name": "<resource-name>",
+        "fingerprint": "fingerprint-20337370d944",
+        "is_escrowed": true
+      },
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": []
+    },
+    "passed": true
+  },
+  {
+    "scenario": "public_key",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/public-key",
+    "status": 200,
+    "body": {
+      "public_key": true,
+      "fingerprint": "fingerprint-dec6ad97d81b"
+    },
+    "passed": true
+  },
+  {
+    "scenario": "passphrase_status",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/escrow-passphrase",
+    "status": 200,
+    "body": {
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": [],
+      "appliance_id": "id-bc1e7ba853ee"
+    },
+    "passed": true
+  },
+  {
+    "scenario": "key_list",
+    "method": "GET",
+    "path": "/encryption-keys",
+    "status": 200,
+    "body": {
+      "returned_item_count": 50,
+      "metadata": {
+        "iterator_id": "id-3491b4ead645",
+        "page": 1,
+        "page_size": 50,
+        "total_pages": 2,
+        "total_items": 92
+      },
+      "item_fields": [
+        "algorithm",
+        "appliance_id",
+        "appliance_name",
+        "fingerprint",
+        "id",
+        "is_backup_key",
+        "is_escrowed",
+        "is_stub",
+        "length",
+        "name",
+        "origin",
+        "status",
+        "tasks",
+        "type",
+        "used",
+        "volumes"
+      ],
+      "collection_task_count": 0
+    },
+    "passed": true
+  },
+  {
+    "scenario": "volume_key_list",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+    "status": 200,
+    "body": {
+      "returned_item_count": 19,
+      "metadata": null,
+      "item_fields": [
+        "algorithm",
+        "fingerprint",
+        "id",
+        "length",
+        "name",
+        "origin",
+        "state",
+        "status",
+        "tasks"
+      ],
+      "collection_task_count": 0
+    },
+    "passed": true
+  },
+  {
+    "scenario": "delete",
+    "method": "DELETE",
+    "path": "/encryption-keys/id-c06c8c248de0",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "id": "id-cedfdfd7d56b",
+      "state": "in_progress",
+      "status_url": "/tasks/id-cedfdfd7d56b",
+      "can_acknowledge": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "export_start",
+    "method": "POST",
+    "path": "/edges/id-bc1e7ba853ee/encryption-keys/downloads",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "id": "id-76a94a9b6a35",
+      "state": "in_progress",
+      "status_url": "/edges/id-bc1e7ba853ee/encryption-keys/downloads/id-76a94a9b6a35",
+      "can_acknowledge": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "export_status",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/encryption-keys/downloads/id-76a94a9b6a35",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "task_id": "id-76a94a9b6a35",
+      "status": "completed",
+      "result": {
+        "download_id": "id-c3bb4b3f6883",
+        "content_url": "/edges/id-bc1e7ba853ee/encryption-keys/downloads/id-c3bb4b3f6883/content",
+        "included_count": 2,
+        "expires_at": "2026-11-11T09:48:12.071520Z"
+      },
+      "error": null
+    },
+    "passed": true
+  },
+  {
+    "scenario": "export_content",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/encryption-keys/downloads/id-c3bb4b3f6883/content",
+    "status": 200,
+    "passed": true,
+    "bytes": 7519,
+    "sha256": "92e0b8e5a0cda906036749373015b0bb0484b4dc1ca49c9f93b3c43bc4632e5c",
+    "decryption_succeeded": true,
+    "included_count": 2
+  },
+  {
+    "scenario": "export_status_after_download",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/encryption-keys/downloads/id-76a94a9b6a35",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "task_id": "id-76a94a9b6a35",
+      "status": "completed",
+      "result": {
+        "download_id": "id-c3bb4b3f6883",
+        "content_url": null,
+        "included_count": 2,
+        "expires_at": "2026-11-11T09:48:12.071520Z"
+      },
+      "error": null
+    },
+    "passed": true
+  },
+  {
+    "scenario": "escrow",
+    "method": "POST",
+    "path": "/encryption-keys/escrow",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "items": [
+        {
+          "task": {
+            "task_id": "id-cceec2372352",
+            "action": "escrow_encryption_key",
+            "executor_id": "id-bc1e7ba853ee",
+            "state": "in_progress",
+            "error": null,
+            "can_acknowledge": false
+          },
+          "rejection": null,
+          "key_id": "id-c06c8c248de0"
+        }
+      ]
+    },
+    "passed": true
+  },
+  {
+    "scenario": "escrowed_key_detail",
+    "method": "GET",
+    "path": "/encryption-keys/id-c06c8c248de0",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-c06c8c248de0",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-48ca66bf6ece",
+      "appliance_id": "id-bc1e7ba853ee",
+      "appliance_name": "<resource-name>",
+      "algorithm": "rsa",
+      "length": 2048,
+      "type": "volume",
+      "origin": "uploaded",
+      "used": false,
+      "is_stub": false,
+      "status": "synced",
+      "tasks": [],
+      "volumes": [],
+      "is_escrowed": true,
+      "is_backup_key": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "volume_key_list",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "returned_item_count": 19,
+      "metadata": null,
+      "item_fields": [
+        "algorithm",
+        "fingerprint",
+        "id",
+        "length",
+        "name",
+        "origin",
+        "state",
+        "status",
+        "tasks"
+      ],
+      "collection_task_count": 0
+    },
+    "passed": true
+  },
+  {
+    "scenario": "volume_key",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-e7c27ef2c567",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-76a2c87eb2a2",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    "passed": true
+  },
+  {
+    "scenario": "key_detail",
+    "method": "GET",
+    "path": "/encryption-keys/id-e7c27ef2c567",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-e7c27ef2c567",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-76a2c87eb2a2",
+      "appliance_id": "id-bc1e7ba853ee",
+      "appliance_name": "<resource-name>",
+      "algorithm": "rsa",
+      "length": 3072,
+      "type": "volume",
+      "origin": "uploaded",
+      "used": true,
+      "is_stub": false,
+      "status": "synced",
+      "tasks": [],
+      "volumes": [
+        {
+          "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+          "volume_name": "<resource-name>",
+          "state": "disabled",
+          "is_stub": false,
+          "status": "synced",
+          "tasks": []
+        }
+      ],
+      "is_escrowed": true,
+      "is_backup_key": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "key_list",
+    "method": "GET",
+    "path": "/encryption-keys",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "returned_item_count": 50,
+      "metadata": {
+        "iterator_id": "id-4c918ddf3a9e",
+        "page": 1,
+        "page_size": 50,
+        "total_pages": 2,
+        "total_items": 93
+      },
+      "item_fields": [
+        "algorithm",
+        "appliance_id",
+        "appliance_name",
+        "fingerprint",
+        "id",
+        "is_backup_key",
+        "is_escrowed",
+        "is_stub",
+        "length",
+        "name",
+        "origin",
+        "status",
+        "tasks",
+        "type",
+        "used",
+        "volumes"
+      ],
+      "collection_task_count": 0
+    },
+    "passed": true
+  },
+  {
+    "scenario": "public_key",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/public-key",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "fingerprint": "fingerprint-dec6ad97d81b",
+      "public_key_present": true
+    },
+    "passed": true
+  },
+  {
+    "scenario": "passphrase_set",
+    "method": "PUT",
+    "path": "/edges/id-bc1e7ba853ee/escrow-passphrase",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "id": "id-cea838f6d45c",
+      "state": "in_progress",
+      "status_url": "/tasks/id-cea838f6d45c",
+      "can_acknowledge": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "passphrase_status",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/escrow-passphrase",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "has_escrow_passphrase": true,
+      "status": "synced",
+      "tasks": [],
+      "appliance_id": "id-bc1e7ba853ee"
+    },
+    "passed": true
+  },
+  {
+    "scenario": "public_key",
+    "method": "GET",
+    "path": "/edges/id-bc1e7ba853ee/public-key",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "fingerprint": "fingerprint-dec6ad97d81b",
+      "public_key_present": true
+    },
+    "passed": true
+  },
+  {
+    "scenario": "upload",
+    "method": "POST",
+    "path": "/edges/id-bc1e7ba853ee/encryption-keys",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "id": "id-4e942ee2ec87",
+      "state": "in_progress",
+      "status_url": "/tasks/id-4e942ee2ec87",
+      "can_acknowledge": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "uploaded_key_detail",
+    "method": "GET",
+    "path": "/encryption-keys/id-c06c8c248de0",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-c06c8c248de0",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-48ca66bf6ece",
+      "appliance_id": "id-bc1e7ba853ee",
+      "appliance_name": "<resource-name>",
+      "algorithm": "rsa",
+      "length": 2048,
+      "type": "volume",
+      "origin": "uploaded",
+      "used": false,
+      "is_stub": false,
+      "status": "synced",
+      "tasks": [],
+      "volumes": [],
+      "is_escrowed": false,
+      "is_backup_key": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "volume_key_list",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "returned_item_count": 19,
+      "metadata": null,
+      "item_fields": [
+        "algorithm",
+        "fingerprint",
+        "id",
+        "length",
+        "name",
+        "origin",
+        "state",
+        "status",
+        "tasks"
+      ],
+      "collection_task_count": 0
+    },
+    "passed": true
+  },
+  {
+    "scenario": "volume_key",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-e7c27ef2c567",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-76a2c87eb2a2",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    "passed": true
+  },
+  {
+    "scenario": "key_detail",
+    "method": "GET",
+    "path": "/encryption-keys/id-e7c27ef2c567",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-e7c27ef2c567",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-76a2c87eb2a2",
+      "appliance_id": "id-bc1e7ba853ee",
+      "appliance_name": "<resource-name>",
+      "algorithm": "rsa",
+      "length": 3072,
+      "type": "volume",
+      "origin": "uploaded",
+      "used": true,
+      "is_stub": false,
+      "status": "synced",
+      "tasks": [],
+      "volumes": [
+        {
+          "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+          "volume_name": "<resource-name>",
+          "state": "disabled",
+          "is_stub": false,
+          "status": "synced",
+          "tasks": []
+        }
+      ],
+      "is_escrowed": true,
+      "is_backup_key": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "enable",
+    "method": "PATCH",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "id": "id-2229d2fa3001",
+      "state": "in_progress",
+      "status_url": "/tasks/id-2229d2fa3001",
+      "can_acknowledge": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "enabled_readback",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-e7c27ef2c567",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-76a2c87eb2a2",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "enabled",
+      "status": "synced",
+      "tasks": []
+    },
+    "passed": true
+  },
+  {
+    "scenario": "disable",
+    "method": "PATCH",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "status": 202,
+    "expected": 202,
+    "body": {
+      "id": "id-98605b068eab",
+      "state": "in_progress",
+      "status_url": "/tasks/id-98605b068eab",
+      "can_acknowledge": false
+    },
+    "passed": true
+  },
+  {
+    "scenario": "disabled_readback",
+    "method": "GET",
+    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "status": 200,
+    "expected": 200,
+    "body": {
+      "id": "id-e7c27ef2c567",
+      "name": "<resource-name>",
+      "fingerprint": "fingerprint-76a2c87eb2a2",
+      "algorithm": "rsa",
+      "length": 3072,
+      "origin": "uploaded",
+      "state": "disabled",
+      "status": "synced",
+      "tasks": []
+    },
+    "passed": true
+  }
+]

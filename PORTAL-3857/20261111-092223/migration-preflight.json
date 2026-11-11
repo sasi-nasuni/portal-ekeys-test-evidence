@@ -1,0 +1,14 @@
+{
+  "revision_count": 65,
+  "head": "d7e8f9a0b1c2",
+  "linear": true,
+  "matches_mvi3_base": true,
+  "local_database_already_at_head": true,
+  "migration_tests_passed": 2,
+  "checks": [
+    "fresh database upgrade",
+    "single migration head"
+  ],
+  "application_database_migrated": false,
+  "newer_main_ordering_difference": "Inherited from MVI-3; separate PORTAL-3856 scope"
+}

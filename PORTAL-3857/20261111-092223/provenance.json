@@ -1,0 +1,29 @@
+{
+  "ticket": "PORTAL-3857",
+  "source_repository": "nasuni/portal",
+  "source_branch": "sbhushan/PORTAL-3857_encryption_key_api_endpoints",
+  "source_commit": "0d857daf2df3fc2dfbf214e0944a2eb72d003ebd",
+  "source_tree": "c58245fe36d5ec6fcfd0f5c53caf027c6043fe31",
+  "base_commit": "de14b6fc96f227f59bd984beb8b704a53a525c14",
+  "tested_on": "2026-11-11",
+  "appliance_version": "10.6-6327",
+  "evidence_type": "HTTP requests, task/database observations and SSH appliance readbacks; no new Swagger screenshots",
+  "source_artifact_sha256": {
+    "endpoint-results.json": "0d4726a13209b2b18ee84b382ff305ef693c5b6754cfcdd8192c4c518936830a",
+    "task-results.json": "dc30c33d76629aaa2e29a74bdbe5eaf254dd11c1d40d70d89ee52f563f13fdf2",
+    "final-results.json": "b552efa48774c670be326ba49f4a3a289b38e2049032c90dbd595b369e959721",
+    "read-contract-assertions.json": "2efcb296f1536a780aaa353778d7f7e73dea67338f8498a77cf173077b4454c0",
+    "appliance-restoration.json": "04c1cb4d5eb8705b759e74d42f1782add5ad18af199fd1d78d6f1f875d9fc9af",
+    "passphrase-preservation.json": "5a456d4cc1952ebea25520a39005280e07d15d8319f8719cbdca6f256b5eaff8",
+    "delete-readback.json": "2ed1ec8576c5228857c8b2b29caa0d334ac1696377fdfc3f6c1aa68036dc8fce",
+    "read-results.json": "be007043790ac251bb3fc7f93695b00a9becaafe9cc0acedf411f4f1ad310a27",
+    "flow-delete-094342.json": "9a31062362292175e5df8b714297bfe79be03ea02e1811b55cbae127eedd1440",
+    "flow-download-094304.json": "e3b9f5533af0895c021b297485156e77c687050ce8aadf89305c9b638f55bfd0",
+    "flow-escrow-094159.json": "6cc0c5c39fd512ca9ffe11e634b54fb641ef06aa37ec0e4531e7a56f0ec28aab",
+    "flow-extra-reads-093956.json": "80e2eba50acfb18c3079fd3a5b1a55a8e4e753fd0592290463c56eff21e8d5e5",
+    "flow-passphrase-094320.json": "266bfbe55d2a34b8b9c16b16569c41517289c6b783808abaea654f6e6c948738",
+    "flow-upload-093833.json": "29e5fadaa0cb1d4dc8d1e0db835a96f19ddb28bc253b5eeaaad42b5cf26e08ca",
+    "flow-volume-094221.json": "e81f310e2deda20d3dc2a3032d58318ed8ec30060fdb37d0617c0edf1000e26e"
+  },
+  "sanitization": "Identifiers consistently pseudonymized; resource names masked; list inventories reduced to counts and field names. No auth headers, keys, passphrases, runtime configuration or raw process logs included."
+}

@@ -1,0 +1,10 @@
+{
+  "scenarios_passed": 16,
+  "scenarios_failed": 0,
+  "completed_appliance_tasks": 7,
+  "http_checks": 29,
+  "migration_tests_passed": 2,
+  "scope": "Happy paths only; no new negative-path coverage",
+  "runtime_retained": true,
+  "production_code_changes": false
+}

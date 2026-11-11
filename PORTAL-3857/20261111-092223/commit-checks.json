@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "check for added large files..............................................Passed",
+    "fix utf-8 byte order marker..............................................Passed",
+    "check for case conflicts.................................................Passed",
+    "debug statements (python)................................................Passed",
+    "detect private key.......................................................Passed",
+    "check that scripts with shebangs are executable..........................Passed",
+    "check for merge conflicts................................................Passed",
+    "Backend: format code.....................................................Passed",
+    "Backend: lint code.......................................................Passed",
+    "Backend: typecheck code..................................................Passed",
+    "Backend: check uv.lock files.............................................Passed",
+    "Postman: sync collections with OpenAPI specs.............................Passed",
+    "jira-commit-msg..........................................................Passed"
+  ],
+  "hooks_bypassed": false,
+  "initial_environment_issue": "uv was installed but absent from shell PATH; PATH corrected and all hooks rerun successfully"
+}

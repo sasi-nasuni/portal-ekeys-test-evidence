@@ -1,0 +1,60 @@
+[
+  {
+    "task_id": "id-4e942ee2ec87",
+    "action": "upload_encryption_key",
+    "state": "completed",
+    "step_states": {
+      "escrow_encryption_key": "completed",
+      "set_backup_encryption_key": "completed",
+      "upload_encryption_key": "completed"
+    }
+  },
+  {
+    "task_id": "id-cceec2372352",
+    "action": "escrow_encryption_key",
+    "state": "completed",
+    "step_states": {
+      "escrow_encryption_key": "completed"
+    }
+  },
+  {
+    "task_id": "id-2229d2fa3001",
+    "action": "enable_volume_encryption_keys",
+    "state": "completed",
+    "step_states": {
+      "enable_volume_encryption_keys": "completed"
+    }
+  },
+  {
+    "task_id": "id-98605b068eab",
+    "action": "disable_volume_encryption_keys",
+    "state": "completed",
+    "step_states": {
+      "disable_volume_encryption_keys": "completed"
+    }
+  },
+  {
+    "task_id": "id-76a94a9b6a35",
+    "action": "download_encryption_keys",
+    "state": "completed",
+    "step_states": {
+      "download_encryption_keys": "completed"
+    }
+  },
+  {
+    "task_id": "id-cea838f6d45c",
+    "action": "update_escrow_passphrase",
+    "state": "completed",
+    "step_states": {
+      "update_escrow_passphrase": "completed"
+    }
+  },
+  {
+    "task_id": "id-cedfdfd7d56b",
+    "action": "delete_encryption_key",
+    "state": "completed",
+    "step_states": {
+      "delete_encryption_key": "completed"
+    }
+  }
+]

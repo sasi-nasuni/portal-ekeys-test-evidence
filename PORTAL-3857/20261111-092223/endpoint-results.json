@@ -1,0 +1,146 @@
+[
+  {
+    "scenario": "upload",
+    "method": "POST",
+    "path": "/edges/{edge_id}/encryption-keys",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "passphrase_set",
+    "method": "PUT",
+    "path": "/edges/{edge_id}/escrow-passphrase",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "public_key",
+    "method": "GET",
+    "path": "/edges/{edge_id}/public-key",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "summary",
+    "method": "GET",
+    "path": "/edges/{edge_id}/encryption-keys/summary",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "passphrase_status",
+    "method": "GET",
+    "path": "/edges/{edge_id}/escrow-passphrase",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "export_start",
+    "method": "POST",
+    "path": "/edges/{edge_id}/encryption-keys/downloads",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "export_status",
+    "method": "GET",
+    "path": "/edges/{edge_id}/encryption-keys/downloads/{task_id}",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "export_content",
+    "method": "GET",
+    "path": "/edges/{edge_id}/encryption-keys/downloads/{download_id}/content",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "escrow",
+    "method": "POST",
+    "path": "/encryption-keys/escrow",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "delete",
+    "method": "DELETE",
+    "path": "/encryption-keys/{key_id}",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "volume_key",
+    "method": "GET",
+    "path": "/volumes/{volume_id}/encryption-keys/{key_id}",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "enable",
+    "method": "PATCH",
+    "path": "/volumes/{volume_id}/encryption-keys/{key_id}",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "disable",
+    "method": "PATCH",
+    "path": "/volumes/{volume_id}/encryption-keys/{key_id}",
+    "status": "PASS",
+    "http_statuses": [
+      202
+    ]
+  },
+  {
+    "scenario": "key_list",
+    "method": "GET",
+    "path": "/encryption-keys",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "key_detail",
+    "method": "GET",
+    "path": "/encryption-keys/{key_id}",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  },
+  {
+    "scenario": "volume_key_list",
+    "method": "GET",
+    "path": "/volumes/{volume_id}/encryption-keys",
+    "status": "PASS",
+    "http_statuses": [
+      200
+    ]
+  }
+]
