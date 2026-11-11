@@ -1,0 +1,13 @@
+{
+  "source_commit": "92617b8ae8938e052a10e4271fc95af7c4766c8b",
+  "failed_ci_run": "https://github.com/nasuni/portal/actions/runs/42998441638",
+  "cause": "Three integration-test assertions (seven parameterized failures) still expected BadRequest after duplicate uploads changed to ResourceConflict/HTTP 409.",
+  "change": "Update those assertions to ResourceConflict and remove the unused BadRequest import.",
+  "production_code_changed": false,
+  "command": "PGGSSENCMODE=disable PGCONNECT_TIMEOUT=10 .venv/bin/pytest tests/integration/encryption_keys -o addopts='' -o log_cli=false -q --tb=short",
+  "working_directory": "backend/libs/portal-data",
+  "result": "224 passed, 7 warnings in 21.55s",
+  "log_sha256": "7dd2cedbc6f0c1e7f1ae57ace80aefd33637ca934f3a5a04114718b838c40898",
+  "live_appliance_run_repeated": false,
+  "live_appliance_evidence_source_commit": "0d857daf2df3fc2dfbf214e0944a2eb72d003ebd"
+}

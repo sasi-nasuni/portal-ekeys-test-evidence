@@ -84,7 +84,7 @@
   {
     "scenario": "volume_key_list",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys",
     "status": 200,
     "body": {
       "returned_item_count": 19,
@@ -234,7 +234,7 @@
   {
     "scenario": "volume_key_list",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys",
     "status": 200,
     "expected": 200,
     "body": {
@@ -258,7 +258,7 @@
   {
     "scenario": "volume_key",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys/id-e7c27ef2c567",
     "status": 200,
     "expected": 200,
     "body": {
@@ -296,7 +296,7 @@
       "tasks": [],
       "volumes": [
         {
-          "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+          "volume_id": "id-27a061b51a33_0",
           "volume_name": "<resource-name>",
           "state": "disabled",
           "is_stub": false,
@@ -441,7 +441,7 @@
   {
     "scenario": "volume_key_list",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys",
     "status": 200,
     "expected": 200,
     "body": {
@@ -465,7 +465,7 @@
   {
     "scenario": "volume_key",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys/id-e7c27ef2c567",
     "status": 200,
     "expected": 200,
     "body": {
@@ -503,7 +503,7 @@
       "tasks": [],
       "volumes": [
         {
-          "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+          "volume_id": "id-27a061b51a33_0",
           "volume_name": "<resource-name>",
           "state": "disabled",
           "is_stub": false,
@@ -519,7 +519,7 @@
   {
     "scenario": "enable",
     "method": "PATCH",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys/id-e7c27ef2c567",
     "status": 202,
     "expected": 202,
     "body": {
@@ -533,7 +533,7 @@
   {
     "scenario": "enabled_readback",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys/id-e7c27ef2c567",
     "status": 200,
     "expected": 200,
     "body": {
@@ -552,7 +552,7 @@
   {
     "scenario": "disable",
     "method": "PATCH",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys/id-e7c27ef2c567",
     "status": 202,
     "expected": 202,
     "body": {
@@ -566,7 +566,7 @@
   {
     "scenario": "disabled_readback",
     "method": "GET",
-    "path": "/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/id-e7c27ef2c567",
+    "path": "/volumes/id-27a061b51a33_0/encryption-keys/id-e7c27ef2c567",
     "status": 200,
     "expected": 200,
     "body": {

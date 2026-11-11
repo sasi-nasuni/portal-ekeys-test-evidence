@@ -51,3 +51,7 @@ The inherited migration-ordering difference between MVI-3 and newer main belongs
 ## Publication scope
 
 This is a sanitized evidence copy. Identifiers are consistent pseudonyms, resource names are masked, and full inventories, credentials, passphrases, key material, runtime scripts/configuration and raw process logs are excluded. These are HTTP/API results, not screenshots from the historical Swagger run.
+
+## CI follow-up
+
+The first CI run exposed seven parameterized upload tests that still expected `BadRequest` instead of the new `ResourceConflict`/409 contract. Commit `92617b8ae8938e052a10e4271fc95af7c4766c8b` updates those assertions only. The full encryption-key integration suite now passes: **224 passed, 7 warnings in 21.55s**. Production code is unchanged, so the real-appliance evidence above remains tied to its original tested commit. See [command, result, and log hash](ci-followup.json).
