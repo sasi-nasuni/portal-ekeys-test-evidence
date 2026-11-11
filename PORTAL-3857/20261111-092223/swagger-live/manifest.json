@@ -1,0 +1,406 @@
+[
+  {
+    "name": "summary",
+    "method": "GET",
+    "path_template": "/edges/{edge_id}/encryption-keys/summary",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:17.719Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "summary_parameters_01.png",
+        "sha256": "40b0742e1d3a939d6895dad6ef4b58edb7b5bb301bd88fcfd2324a20d183471b"
+      },
+      {
+        "file": "summary_response.png",
+        "sha256": "b0ce0ba618dfb1c768f90719a0136425977d0cf9f9054566286aafac04e79399"
+      }
+    ]
+  },
+  {
+    "name": "public-key",
+    "method": "GET",
+    "path_template": "/edges/{edge_id}/public-key",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:21.862Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "public-key_parameters_01.png",
+        "sha256": "2f376758a9d3ed52a188b4d4c0c79983e6cdada5ac01d1581f3c0ba945976b0e"
+      },
+      {
+        "file": "public-key_response.png",
+        "sha256": "f698ea31a745beabcf9223331863337e4e0d91a51355e2cab584b484f409eb10"
+      }
+    ]
+  },
+  {
+    "name": "passphrase-status",
+    "method": "GET",
+    "path_template": "/edges/{edge_id}/escrow-passphrase",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:25.960Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "passphrase-status_parameters_01.png",
+        "sha256": "fd00c57c43de85cff62e55dd4de004cfe6b3dca6b092bd7b6ec9a47e7e3f0c78"
+      },
+      {
+        "file": "passphrase-status_response.png",
+        "sha256": "cbdc055df2af7ef15ea3442c85fe10422535ebd9a00a2d3482ca3fe41fb48719"
+      }
+    ]
+  },
+  {
+    "name": "key-list",
+    "method": "GET",
+    "path_template": "/encryption-keys",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:30.678Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "key-list_parameters_01.png",
+        "sha256": "3cc2898fa34e5595bdafa0a7c807947a4b1dc25ca3eed347336dc98c27f42e60"
+      },
+      {
+        "file": "key-list_parameters_02.png",
+        "sha256": "06c8971731b513cf5cf88dfd1802538906325da20b37c40427c4dba2c3c56945"
+      },
+      {
+        "file": "key-list_response_01.png",
+        "sha256": "e26637fb435a643b418656b8f3678f5bc2cd6663095bd69c8812927c72353748"
+      },
+      {
+        "file": "key-list_response_02.png",
+        "sha256": "9db4793443b8c7b8994f2f4c95d4bb3f0d4eab0f4286f0d4b2af008967c104f0"
+      }
+    ]
+  },
+  {
+    "name": "key-detail",
+    "method": "GET",
+    "path_template": "/encryption-keys/{key_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:34.911Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "key-detail_parameters_01.png",
+        "sha256": "35a4dfa4f7d26e170a2a7ec27472b23671342f479f51e9320fca9cc509094581"
+      },
+      {
+        "file": "key-detail_response_01.png",
+        "sha256": "f76d7ed77ddaf04092354d752f9ec4547f9f74bc8bb385626d3ebceae928a91d"
+      },
+      {
+        "file": "key-detail_response_02.png",
+        "sha256": "d5f1e97f61670992a1f5ce73e47f74192219dc3a9de6d345e85c1e559ef21f07"
+      }
+    ]
+  },
+  {
+    "name": "volume-key-detail",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:39.038Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "volume-key-detail_parameters_01.png",
+        "sha256": "bfbd7694fed83f13583975b95e0435f3dd51050a6c3cd0ab8f0734372154b42c"
+      },
+      {
+        "file": "volume-key-detail_response.png",
+        "sha256": "9baf3f27fdb67884f94de65fc11193355cd921e38ac6f8b2e718eae2ec052117"
+      }
+    ]
+  },
+  {
+    "name": "task-upload_encryption_key",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:46.834Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-upload_encryption_key_parameters_01.png",
+        "sha256": "bf92ccd482b73eb5be65b24bcb91a363fbbb39ea1bc0c2f6ad36b1e0c3828361"
+      },
+      {
+        "file": "task-upload_encryption_key_response.png",
+        "sha256": "8c86572a36da896713953cf073ce6ec226e918b249b68e2e2ad1ca7c60634cee"
+      }
+    ]
+  },
+  {
+    "name": "task-escrow_encryption_key",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:51.395Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-escrow_encryption_key_parameters_01.png",
+        "sha256": "2691c04e4a7e74714b3fdd3c277a4a4f486c91c751dcc0792ad304c803027328"
+      },
+      {
+        "file": "task-escrow_encryption_key_response.png",
+        "sha256": "bc49559783cadd5f16f546d17af861810f4ec351776b6f863a34fb56c2666617"
+      }
+    ]
+  },
+  {
+    "name": "task-enable_volume_encryption_keys",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:55.685Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-enable_volume_encryption_keys_parameters_01.png",
+        "sha256": "f96c49e7f7f50840be97099f0aeb6e20af42188e9a257337530148bde4f85682"
+      },
+      {
+        "file": "task-enable_volume_encryption_keys_response.png",
+        "sha256": "5039e8a0eeced44c1ec1faab3130ec0abfc2dae0c9bd485f3e349b08de28ccac"
+      }
+    ]
+  },
+  {
+    "name": "task-disable_volume_encryption_keys",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:02:59.985Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-disable_volume_encryption_keys_parameters_01.png",
+        "sha256": "21c8988a058daaaa77a52a7d5f9c9ac733f02fed6127ecfb40f6c156d5bb53c7"
+      },
+      {
+        "file": "task-disable_volume_encryption_keys_response.png",
+        "sha256": "8de068f402e39b92d6be86eedb8b2980628182e8580c4d46790d16c136ebf710"
+      }
+    ]
+  },
+  {
+    "name": "task-download_encryption_keys",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:03:04.225Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-download_encryption_keys_parameters_01.png",
+        "sha256": "c94ef8db7859be24cb971704fb721b0e94be23d8899afa1a87a16096539c7cbe"
+      },
+      {
+        "file": "task-download_encryption_keys_response.png",
+        "sha256": "3ca7283ef8da5c2423737d3c4b66a557237d8d84ac9be00631a4e187488a3113"
+      }
+    ]
+  },
+  {
+    "name": "task-update_escrow_passphrase",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:03:08.448Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-update_escrow_passphrase_parameters_01.png",
+        "sha256": "ebc2dad386b1a368852dbebecaefdd78c62596472248cf9dd3c1212bec9e7b50"
+      },
+      {
+        "file": "task-update_escrow_passphrase_response.png",
+        "sha256": "f14164ab3424c756b16c602abed5c93ac5db0c17612fa449b0b3d3f1b0829046"
+      }
+    ]
+  },
+  {
+    "name": "task-delete_encryption_key",
+    "method": "GET",
+    "path_template": "/tasks/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:03:12.704Z",
+    "task_state": "completed",
+    "images": [
+      {
+        "file": "task-delete_encryption_key_parameters_01.png",
+        "sha256": "103c9f533f5ea35da443333dbda578caefa945e564aeb7d8eef5b3aa28ec3be6"
+      },
+      {
+        "file": "task-delete_encryption_key_response.png",
+        "sha256": "4b1bbe83caa781fb98e6727adae8875e8ef0ab82bdc38cddc9bfc069190dc5e5"
+      }
+    ]
+  },
+  {
+    "name": "download-status",
+    "method": "GET",
+    "path_template": "/edges/{edge_id}/encryption-keys/downloads/{task_id}",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:03:17.059Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "download-status_parameters_01.png",
+        "sha256": "fc56273cbaf32e94d9901efbbecd7b006e46c1969cde859eadf4b4482c9f7e90"
+      },
+      {
+        "file": "download-status_response.png",
+        "sha256": "2c5f8956532d094745d0a65d643b7f37710d95d3e91b0ca537a7d926ad1c0104"
+      }
+    ]
+  },
+  {
+    "name": "volume-key-list",
+    "method": "GET",
+    "path_template": "/volumes/{volume_id}/encryption-keys",
+    "status": 200,
+    "source": "Served Swagger UI Try it out / Execute",
+    "verification": {
+      "displayed_status_matches": true,
+      "displayed_url_matches": true,
+      "displayed_body_matches": true
+    },
+    "captured_at": "2026-11-11T11:03:31.191Z",
+    "task_state": null,
+    "images": [
+      {
+        "file": "volume-key-list_parameters_01.png",
+        "sha256": "7201d3519b736cf8caf090d37b875c35367e5c98c2b96ba25f9af7352e014127"
+      },
+      {
+        "file": "volume-key-list_response_01.png",
+        "sha256": "ffa9136b050a5b3e93a81d9f0cf44e02371ca678632467bd4bd18c9f0d083016"
+      },
+      {
+        "file": "volume-key-list_response_02.png",
+        "sha256": "12123b5446ff8da8403d88d1d9cd7e3a2cb2b58aa1166145edf8e09488eb0982"
+      },
+      {
+        "file": "volume-key-list_response_03.png",
+        "sha256": "18d8211224ccc60f804eeb2bc193709732142868e6dfbe7c03434ef659a4a9b6"
+      },
+      {
+        "file": "volume-key-list_response_04.png",
+        "sha256": "6926b7883bc6275726e0b0b025f4811aa120d8c78f549fa63401efe7678f40ef"
+      },
+      {
+        "file": "volume-key-list_response_05.png",
+        "sha256": "ef6f4fe18055aa219e3fa650eca1a8031b213279b563c353a5d9c06a1319c60e"
+      },
+      {
+        "file": "volume-key-list_response_06.png",
+        "sha256": "50eaff4d527c4c7b3dbf02e288b24223a7ae191732d3446919c26930700a5548"
+      },
+      {
+        "file": "volume-key-list_response_07.png",
+        "sha256": "a6fc6bc8a0b71580203276ceeb1d41fa0972d29c0d929079f466b7e3bbc58a46"
+      },
+      {
+        "file": "volume-key-list_response_08.png",
+        "sha256": "c341038578baaf0cef78e9dc0ee7c3011e0ad9495dd243fe216e2f2c57d918cb"
+      },
+      {
+        "file": "volume-key-list_response_09.png",
+        "sha256": "7b90c9cdc81dba75a46de360ba78484ad89205ef8927677f7b7cfbb5cb8a394b"
+      }
+    ]
+  }
+]

@@ -79,3 +79,7 @@ This is a sanitized evidence copy. Identifiers are consistent pseudonyms, resour
 ## CI follow-up
 
 The first CI run exposed seven parameterized upload tests that still expected `BadRequest` instead of the new `ResourceConflict`/409 contract. Commit `92617b8ae8938e052a10e4271fc95af7c4766c8b` updates those assertions only. The full encryption-key integration suite now passes: **224 passed, 7 warnings in 21.55s**. Production code is unchanged, so the real-appliance evidence above remains tied to its original tested commit. See [command, result, and log hash](ci-followup.json).
+
+## Actual Swagger screenshots
+
+[View browser captures](swagger-live/README.md) of current read responses and the seven completed tasks from this run. These replace the rendered reports in the PR. See the screenshot report for the exact capture scope.
