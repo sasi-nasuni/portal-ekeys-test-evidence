@@ -1,0 +1,48 @@
+{
+  "kind": "Screenshots of rendered saved test evidence, not live Swagger screenshots",
+  "test_run": "2026-11-11",
+  "application_tested_commit": "0d857daf2df3fc2dfbf214e0944a2eb72d003ebd",
+  "source_hashes": {
+    "http-checks.json": "31f26ce734467c66e6a8227aaff82958beb25318fbcc35908555eeb93254cb38",
+    "task-results.json": "ff0812e785f3328f3d060073c0b3b6d68278701874c60d0d34fbac0c4cbdef04",
+    "delete-readback.json": "2ed1ec8576c5228857c8b2b29caa0d334ac1696377fdfc3f6c1aa68036dc8fce",
+    "appliance-restoration.json": "04c1cb4d5eb8705b759e74d42f1782add5ad18af199fd1d78d6f1f875d9fc9af",
+    "passphrase-preservation.json": "5a456d4cc1952ebea25520a39005280e07d15d8319f8719cbdca6f256b5eaff8",
+    "read-contract-assertions.json": "2efcb296f1536a780aaa353778d7f7e73dea67338f8498a77cf173077b4454c0"
+  },
+  "image_ids": [
+    "key-lifecycle",
+    "volume-key",
+    "export",
+    "passphrase",
+    "read-contracts"
+  ],
+  "images": [
+    {
+      "path": "export.png",
+      "bytes": 164072,
+      "sha256": "0020e936d999aba26310b16d2c5cb6725cd54a275a1f0fda648b14fc2ff62ab0"
+    },
+    {
+      "path": "key-lifecycle.png",
+      "bytes": 181660,
+      "sha256": "1e7aa4177a22f0181f0d2afbc889f37c143d870585b9bf56105468ca6d9a4841"
+    },
+    {
+      "path": "passphrase.png",
+      "bytes": 152207,
+      "sha256": "21238bdf6608b27c3a06cfb7f71931c4784dfd2dc9e19416ab129880ae8a55ee"
+    },
+    {
+      "path": "read-contracts.png",
+      "bytes": 182318,
+      "sha256": "323abc07878a610ab53d1821a9dcda4b47491bb373ca288a94d0cc86cff3d5fd"
+    },
+    {
+      "path": "volume-key.png",
+      "bytes": 154791,
+      "sha256": "01d96929b8ca85336e2b3c73cd3fc633b147a1f8b5f9eb21eb365f33900925f9"
+    }
+  ],
+  "visual_review": "All five images inspected for readability and completeness; DOM checks found no horizontal overflow."
+}

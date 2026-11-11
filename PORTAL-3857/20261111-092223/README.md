@@ -38,6 +38,30 @@ Tested source: [`nasuni/portal@0d857daf2d`](https://github.com/nasuni/portal/com
 - [Commit checks](commit-checks.json): all applicable pre-commit hooks passed without bypassing them.
 - [Provenance](provenance.json): application revision, tree and source artifact hashes.
 
+## Evidence images
+
+These images render the saved, sanitized API responses and task/readback results. They are not live Swagger screenshots. Source hashes and image hashes are recorded in [image provenance](images/provenance.json).
+
+### Upload, escrow and deletion
+
+![Recorded upload, escrow and deletion results](images/key-lifecycle.png)
+
+### Volume-key GET and PATCH
+
+![Recorded volume-key read and enable-disable results](images/volume-key.png)
+
+### Generated-key export
+
+![Recorded export creation, status and retrieval results](images/export.png)
+
+### Escrow passphrase and preservation
+
+![Recorded passphrase PUT and appliance preservation checks](images/passphrase.png)
+
+### Read endpoint contracts
+
+![Recorded read endpoints and DTO contract checks](images/read-contracts.png)
+
 ## Execution and limits
 
 Requests used the temporary WebAPI from the feature worktree, a persisted local test user/role, and real appliance commands/replies through the existing developer SQS queues. Final write verification included task/step completion and database/appliance readbacks. Generated-key export retrieval was decrypted in memory; no bundle or private key material was saved.

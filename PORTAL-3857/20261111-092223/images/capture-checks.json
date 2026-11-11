@@ -1,0 +1,32 @@
+[
+  {
+    "id": "key-lifecycle",
+    "width": 1200,
+    "height": 1401.078125,
+    "overflow": false
+  },
+  {
+    "id": "volume-key",
+    "width": 1200,
+    "height": 1365.484375,
+    "overflow": false
+  },
+  {
+    "id": "export",
+    "width": 1200,
+    "height": 1433.171875,
+    "overflow": false
+  },
+  {
+    "id": "passphrase",
+    "width": 1200,
+    "height": 1221.203125,
+    "overflow": false
+  },
+  {
+    "id": "read-contracts",
+    "width": 1200,
+    "height": 1791.234375,
+    "overflow": false
+  }
+]
