@@ -1,0 +1,27 @@
+{
+  "name": "07_upload_v3_volume",
+  "method": "POST",
+  "path_template": "/encryption-keys",
+  "status": 202,
+  "body": {
+    "id": "19198dd9-b5a3-4b7f-b2cb-9186327d4c0a",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/upload_encryption_key_encryption_keys_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "07_upload_v3_volume/07_upload_v3_volume_parameters_01.png",
+    "07_upload_v3_volume/07_upload_v3_volume_response.png"
+  ],
+  "captured_at": "2026-11-15T18:52:29.994Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}

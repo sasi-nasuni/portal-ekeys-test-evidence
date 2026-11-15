@@ -1,0 +1,12 @@
+{
+  "key_id": "e9ef0b54-9b38-4ec8-a37e-985cee31a719",
+  "task_ids": [
+    "588d7bba-d6d2-4e0e-95c0-e6e8ccad7b54",
+    "cf0516a9-f460-4ef9-8913-fe5e63c7734e",
+    "a8824b1e-ba51-491e-ad70-6196a4dd8bb7",
+    "74db6d62-47cc-4ce8-b9fb-bf9bb79bebf6"
+  ],
+  "all_tasks_completed": true,
+  "requested_final_state": "disabled",
+  "retained_fixture": "New disabled association; there is no unassociate endpoint."
+}

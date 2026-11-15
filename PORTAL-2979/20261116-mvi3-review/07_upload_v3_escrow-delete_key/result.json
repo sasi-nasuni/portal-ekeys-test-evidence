@@ -1,0 +1,41 @@
+{
+  "name": "07_upload_v3_escrow-delete_key",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 200,
+  "body": {
+    "id": "41af9387-6e8f-4230-919d-846f682f5434",
+    "name": "PORTAL-2979-20261116-v3-escrow-delete",
+    "fingerprint": "7D7BB2F738D8A2966F0DE9C76238492C4BCA34A0",
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "appliance_name": "DEV-E-KEYS-POC",
+    "algorithm": "rsa",
+    "length": 2048,
+    "type": "volume",
+    "origin": "uploaded",
+    "used": false,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [],
+    "is_escrowed": false,
+    "is_backup_key": false
+  },
+  "request_url": "http://localhost:8000/encryption-keys/41af9387-6e8f-4230-919d-846f682f5434",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_encryption_key_encryption_keys__key_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "07_upload_v3_escrow-delete_key/07_upload_v3_escrow-delete_key_parameters_01.png",
+    "07_upload_v3_escrow-delete_key/07_upload_v3_escrow-delete_key_response.png"
+  ],
+  "captured_at": "2026-11-15T18:52:51.128Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

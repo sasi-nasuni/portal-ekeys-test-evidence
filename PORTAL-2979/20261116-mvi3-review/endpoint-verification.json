@@ -1,0 +1,147 @@
+[
+  {
+    "method": "GET",
+    "path": "/encryption-keys",
+    "evidence": [
+      "01_list"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "POST",
+    "path": "/encryption-keys",
+    "evidence": [
+      "32_upload_console_keygen"
+    ],
+    "task_evidence": "32_upload_console_task",
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/encryption-keys/{key_id}",
+    "evidence": [
+      "33_get_console_key"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "POST",
+    "path": "/encryption-keys/{key_id}/escrow",
+    "evidence": [
+      "37_escrow"
+    ],
+    "task_evidence": "38_escrow_task",
+    "status": "PASS"
+  },
+  {
+    "method": "DELETE",
+    "path": "/encryption-keys/{key_id}",
+    "evidence": [
+      "40_delete"
+    ],
+    "task_evidence": "41_delete_task",
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/edges/{edge_id}/public-key",
+    "evidence": [
+      "03_public_key"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/edges/{edge_id}/encryption-key-summary",
+    "evidence": [
+      "02_summary"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/edges/{edge_id}/escrow-passphrase",
+    "evidence": [
+      "36_passphrase_readback"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "PUT",
+    "path": "/edges/{edge_id}/escrow-passphrase",
+    "evidence": [
+      "34_put_passphrase"
+    ],
+    "task_evidence": "35_passphrase_task",
+    "status": "PASS"
+  },
+  {
+    "method": "POST",
+    "path": "/edges/{edge_id}/encryption-key-downloads",
+    "evidence": [
+      "15_export_console_request"
+    ],
+    "task_evidence": "19_export_console_task",
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/edges/{edge_id}/encryption-key-downloads/{task_id}",
+    "evidence": [
+      "16_export_console_status"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/edges/{edge_id}/encryption-key-downloads/{task_id}/content",
+    "evidence": [
+      "17_export_console_content"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/volumes/{volume_id}/encryption-keys",
+    "evidence": [
+      "23_volume_list"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "POST",
+    "path": "/volumes/{volume_id}/encryption-keys",
+    "evidence": [
+      "20_volume_add"
+    ],
+    "task_evidence": "21_volume_add_task",
+    "status": "PASS"
+  },
+  {
+    "method": "GET",
+    "path": "/volumes/{volume_id}/encryption-keys/{key_id}",
+    "evidence": [
+      "29_volume_key_enabled"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  },
+  {
+    "method": "PATCH",
+    "path": "/volumes/{volume_id}/encryption-keys/{key_id}",
+    "evidence": [
+      "24_volume_disabled",
+      "27_volume_enabled"
+    ],
+    "task_evidence": null,
+    "status": "PASS"
+  }
+]

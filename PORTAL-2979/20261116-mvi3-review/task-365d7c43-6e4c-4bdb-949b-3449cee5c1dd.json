@@ -1,0 +1,7 @@
+{
+  "id": "365d7c43-6e4c-4bdb-949b-3449cee5c1dd",
+  "resource_id": "3da2511d-b8df-4659-bf09-0ae0911221b8",
+  "state": "failed",
+  "reason": "Unable to upload the encryption key.",
+  "created_at": "2026-11-15T18:53:55.07032+00:00"
+}

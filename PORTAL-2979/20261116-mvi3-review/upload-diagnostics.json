@@ -1,0 +1,158 @@
+[
+  {
+    "id": "8ea36fb5-03d7-4e66-a854-c14c78f43423",
+    "origin": "dvista1",
+    "processing_status": "COMPLETED",
+    "task_id": "d431e315-b8a7-40ca-b209-f8c372096117",
+    "content_fields": [
+      "command",
+      "fingerprint",
+      "filedata",
+      "password"
+    ],
+    "diagnostics": []
+  },
+  {
+    "id": "41c306f6-9fda-4f0d-bf98-ccf97eac5cea",
+    "origin": "edge",
+    "processing_status": "COMPLETED",
+    "task_id": "d431e315-b8a7-40ca-b209-f8c372096117",
+    "content_fields": [
+      "event",
+      "code",
+      "error",
+      "message"
+    ],
+    "diagnostics": [
+      {
+        "path": "code",
+        "value": 500
+      },
+      {
+        "path": "error",
+        "value": "unknown"
+      },
+      {
+        "path": "message",
+        "value": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Keys marked as sign-only are not supported."
+      }
+    ]
+  },
+  {
+    "id": "4be1157f-c565-48d8-affe-2a2ba986d34c",
+    "origin": "dvista1",
+    "processing_status": "COMPLETED",
+    "task_id": "3e1798f5-9142-49ac-8fee-75b448ff514a",
+    "content_fields": [
+      "command",
+      "fingerprint",
+      "filedata",
+      "password"
+    ],
+    "diagnostics": []
+  },
+  {
+    "id": "f406fe50-85bb-4fa7-9961-69b535b550d9",
+    "origin": "edge",
+    "processing_status": "COMPLETED",
+    "task_id": "3e1798f5-9142-49ac-8fee-75b448ff514a",
+    "content_fields": [
+      "event",
+      "code",
+      "error",
+      "message"
+    ],
+    "diagnostics": [
+      {
+        "path": "code",
+        "value": 500
+      },
+      {
+        "path": "error",
+        "value": "unknown"
+      },
+      {
+        "path": "message",
+        "value": "Internal error processing command: [Code 101] Cannot decode ASCII Armor data."
+      }
+    ]
+  },
+  {
+    "id": "8f5881d9-588d-48e0-b13e-de6ad1cf3fbd",
+    "origin": "dvista1",
+    "processing_status": "COMPLETED",
+    "task_id": "cba2be18-10cf-44f0-ade7-6ba1dceb30f1",
+    "content_fields": [
+      "command",
+      "fingerprint",
+      "filedata",
+      "password"
+    ],
+    "diagnostics": []
+  },
+  {
+    "id": "82ea2db2-f04f-4483-a55c-88b9c786b081",
+    "origin": "edge",
+    "processing_status": "COMPLETED",
+    "task_id": "cba2be18-10cf-44f0-ade7-6ba1dceb30f1",
+    "content_fields": [
+      "event",
+      "code",
+      "error",
+      "message"
+    ],
+    "diagnostics": [
+      {
+        "path": "code",
+        "value": 500
+      },
+      {
+        "path": "error",
+        "value": "unknown"
+      },
+      {
+        "path": "message",
+        "value": "Internal error processing command: [Code 101] Cannot decode ASCII Armor data."
+      }
+    ]
+  },
+  {
+    "id": "a0dcf5e2-891e-4a1c-81de-a02a98ece78f",
+    "origin": "dvista1",
+    "processing_status": "COMPLETED",
+    "task_id": "365d7c43-6e4c-4bdb-949b-3449cee5c1dd",
+    "content_fields": [
+      "command",
+      "fingerprint",
+      "filedata",
+      "password"
+    ],
+    "diagnostics": []
+  },
+  {
+    "id": "3266ce80-3c73-459c-8aa6-08fe89e7afc2",
+    "origin": "edge",
+    "processing_status": "COMPLETED",
+    "task_id": "365d7c43-6e4c-4bdb-949b-3449cee5c1dd",
+    "content_fields": [
+      "event",
+      "code",
+      "error",
+      "message"
+    ],
+    "diagnostics": [
+      {
+        "path": "code",
+        "value": 500
+      },
+      {
+        "path": "error",
+        "value": "unknown"
+      },
+      {
+        "path": "message",
+        "value": "Internal error processing command: Legacy route configuration.encryption_keys.upload failed: Key cannot be used with supplied passphrase on key: PORTAL-2979-20261116-GPG."
+      }
+    ]
+  }
+]

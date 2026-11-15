@@ -1,0 +1,258 @@
+{
+  "name": "23_volume_list",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys",
+  "status": 200,
+  "body": {
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0",
+    "tasks": [],
+    "items": [
+      {
+        "id": "e9ef0b54-9b38-4ec8-a37e-985cee31a719",
+        "name": "PORTAL-2979-20261116-v3-volume",
+        "fingerprint": "6B6C286B777B91599EBC4BB20A0EF12D9E3C9B68",
+        "algorithm": "rsa",
+        "length": 2048,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "75808eac-16a4-4e34-b85f-5f17abf1c261",
+        "name": "PORTAL-3646-E2E-20261103-172630-1",
+        "fingerprint": "009B16F1C2E32B54DFB0468009392DA12E66397F",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "87ce35d2-871d-4eff-bb2c-df989a0bf835",
+        "name": "PORTAL-3762-E2E-20261101-140102-8",
+        "fingerprint": "245BCBB2A9AD1C1F1282358FA94C90A5D0D95F9E",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "411ddf2c-b069-49c8-9338-d521da6297a0",
+        "name": "E-Keys-Test-01",
+        "fingerprint": "29470C5AA8EB787948BD1CD60413FA75D609C500",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "generated",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "6b93c7ed-5ce7-42f4-9d7f-7e312cd55ae3",
+        "name": "PORTAL-3762-PROTECTED-20261101-143256-1",
+        "fingerprint": "3AFFE147ED9F6BC86042A4661689F4EA96DB0C05",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "f4a189ce-0d39-4648-97bf-67bebeb95151",
+        "name": "PORTAL-3762-PROTECTED-20261101-143256-4",
+        "fingerprint": "4A8AA81E0FBB71E7AF266C99A139B0FCBD485486",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "05a3c26e-0da9-42d2-8a7b-c41354d398c4",
+        "name": "E-Keys-MsgViewer",
+        "fingerprint": "154B630A18E7912EA6BB3F12AA9C364C1EB3E9A0",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "471d202e-e43f-4685-ba53-f3770b3e9b88",
+        "name": "PORTAL-3762-E2E-20261101-140102-6",
+        "fingerprint": "659A84C1AE5884C9D32B7FDD2BE4C6B12C8FAF88",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "74eb0a08-0ffa-4f44-be2b-f7b7b1f9d0d7",
+        "name": "PORTAL-3646-E2E-20261103-172630-5",
+        "fingerprint": "662D77D387846ACD9F7C3ED3CFE03AD7FB21A59F",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "eac9c9e3-ff25-46aa-8d53-359bbd195cf2",
+        "name": "E-Keys-EdgeConsole-63E6D744",
+        "fingerprint": "751DA6FCF08B55CE28C1A38EA816A71D3BD28F83",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "8a245181-3dd6-4a94-8350-5073f42cb32c",
+        "name": "E-Keys-PORTAL3695-81FB50D9",
+        "fingerprint": "A867796F8008315E8FC3592A15B8DD547B10A634",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "31232c0d-6381-4dcd-9ee3-8e82ddae4325",
+        "name": "PORTAL-3646-E2E-20261103-172630-4",
+        "fingerprint": "AB275A57E936A055BF48AB42BD18246B0535F376",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "35780de0-e2e4-497b-a7c8-a26f3fc70e7d",
+        "name": "PORTAL-3762-E2E-20261101-140102-7",
+        "fingerprint": "68E46A191BBCF99DA2399766F7FDE57A0C80C642",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "3a1df3db-0ef0-4f97-a260-c73d96f78242",
+        "name": "E-Keys-Upload-Test-2",
+        "fingerprint": "D7E6FB0FADAA5DAF473D7D11A481A936D7CD4FC8",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "893d205f-2966-45af-b237-44ce192f0241",
+        "name": "PORTAL-3762-PROTECTED-20261101-143256-2",
+        "fingerprint": "EFB6AB9C0996ABC0CDF767BA0F4C226B81AF3D85",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "a9d05f39-b804-4983-8cbc-5aa6e4f45167",
+        "name": "E-Keys-EdgeConsole-7212E7D6",
+        "fingerprint": "F030AC29287A738E7E215B55E8EB1BEE883467B8",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "1ac1832b-8d91-44d1-85fd-be8288d1f9e4",
+        "name": "PORTAL-3646-E2E-20261103-172630-3",
+        "fingerprint": "3D8F8F37FDBBFEFAEB865385CCAFCBD5BA7DD952",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "2c66970f-cf30-4709-a77e-3bf60cf97bbe",
+        "name": "PORTAL-3762-PROTECTED-20261101-143256-3",
+        "fingerprint": "3DE3DE2485AEBF6FCCEFF7FD74DCC03CF6A884A0",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "6b2f4104-c055-4285-a501-65657d67a993",
+        "name": "E-Keys-EdgeConsole-E097E395",
+        "fingerprint": "BB8A6AB06E9E972CA5BBD7C78F2742EEDBF74FDD",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "enabled",
+        "status": "synced",
+        "tasks": []
+      },
+      {
+        "id": "b9402619-f420-41ba-855c-8fa6bbfcf173",
+        "name": "PORTAL-3762-E2E-20261101-140102-5",
+        "fingerprint": "4062195257C9FC95D26C886BFF65FB251B3CD155",
+        "algorithm": "rsa",
+        "length": 3072,
+        "origin": "uploaded",
+        "state": "disabled",
+        "status": "synced",
+        "tasks": []
+      }
+    ]
+  },
+  "request_url": "http://localhost:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_keys_volumes__volume_id__encryption_keys_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "23_volume_list/23_volume_list_parameters_01.png",
+    "23_volume_list/23_volume_list_response_01.png",
+    "23_volume_list/23_volume_list_response_02.png",
+    "23_volume_list/23_volume_list_response_03.png",
+    "23_volume_list/23_volume_list_response_04.png",
+    "23_volume_list/23_volume_list_response_05.png",
+    "23_volume_list/23_volume_list_response_06.png",
+    "23_volume_list/23_volume_list_response_07.png",
+    "23_volume_list/23_volume_list_response_08.png",
+    "23_volume_list/23_volume_list_response_09.png",
+    "23_volume_list/23_volume_list_response_10.png"
+  ],
+  "captured_at": "2026-11-15T18:55:05.103Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

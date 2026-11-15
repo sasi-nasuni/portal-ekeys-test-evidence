@@ -1,0 +1,27 @@
+{
+  "name": "07_upload_v3_escrow-delete",
+  "method": "POST",
+  "path_template": "/encryption-keys",
+  "status": 202,
+  "body": {
+    "id": "d8a3f63e-7d77-4da8-aa8f-a341eb74c0ed",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/upload_encryption_key_encryption_keys_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "07_upload_v3_escrow-delete/07_upload_v3_escrow-delete_parameters_01.png",
+    "07_upload_v3_escrow-delete/07_upload_v3_escrow-delete_response.png"
+  ],
+  "captured_at": "2026-11-15T18:52:24.857Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}

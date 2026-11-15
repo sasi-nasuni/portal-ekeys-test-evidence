@@ -1,0 +1,15 @@
+{
+  "baseline_key_metadata_preserved": true,
+  "baseline_volume_associations_preserved": true,
+  "passphrase_unchanged": true,
+  "unused_disposable_keys_removed": true,
+  "failed_fixture_stubs_removed": true,
+  "retained_disabled_test_key": {
+    "fingerprint": "6B6C286B777B91599EBC4BB20A0EF12D9E3C9B68",
+    "key_id": "e9ef0b54-9b38-4ec8-a37e-985cee31a719",
+    "volume_id": "0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0"
+  },
+  "keygen_source_sha256": "4f9106649374ba3702fe231ca07ef4956ef52cf86fd99abebb2599e6e1f7f23a",
+  "application_commit": "70012eea09",
+  "all_resource_state_assertions_passed": true
+}

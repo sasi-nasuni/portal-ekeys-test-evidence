@@ -1,0 +1,27 @@
+{
+  "name": "40_delete",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 202,
+  "body": {
+    "id": "75eda010-7eda-4b5e-90d1-338eedc3fec4",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/encryption-keys/8b1c98f9-83f3-43a5-ba23-5ef71ba3011d",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "40_delete/40_delete_parameters_01.png",
+    "40_delete/40_delete_response.png"
+  ],
+  "captured_at": "2026-11-15T18:56:24.375Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}

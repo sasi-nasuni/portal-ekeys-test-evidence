@@ -1,0 +1,24 @@
+{
+  "name": "cleanup_ack_2",
+  "method": "POST",
+  "path_template": "/tasks/{task_id}/acknowledge",
+  "status": 204,
+  "body": "",
+  "request_url": "http://localhost:8000/tasks/3e1798f5-9142-49ac-8fee-75b448ff514a/acknowledge",
+  "docs_url": "http://localhost:8000/docs#/Tasks/acknowledge_failed_task_tasks__task_id__acknowledge_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "cleanup_ack_2/cleanup_ack_2_parameters_01.png",
+    "cleanup_ack_2/cleanup_ack_2_response.png"
+  ],
+  "captured_at": "2026-11-15T18:56:18.864Z",
+  "outcome": "PASS",
+  "expected_status": 204
+}

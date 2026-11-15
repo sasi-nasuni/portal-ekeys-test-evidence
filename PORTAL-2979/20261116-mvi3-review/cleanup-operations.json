@@ -1,0 +1,10 @@
+{
+  "failed_fixture_tasks_acknowledged": [
+    "d431e315-b8a7-40ca-b209-f8c372096117",
+    "3e1798f5-9142-49ac-8fee-75b448ff514a",
+    "cba2be18-10cf-44f0-ade7-6ba1dceb30f1",
+    "365d7c43-6e4c-4bdb-949b-3449cee5c1dd"
+  ],
+  "unused_key_deleted": "41af9387-6e8f-4230-919d-846f682f5434",
+  "delete_task": "29c79898-e602-47b0-b513-5eea8eb6e443"
+}

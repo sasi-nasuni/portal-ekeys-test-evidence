@@ -1,0 +1,12 @@
+{
+  "readiness": {
+    "restored_original": true,
+    "preserved_newer_update": false
+  },
+  "feature_cache": {
+    "restored_original": true,
+    "preserved_newer_value": false,
+    "expired_original_removed": true
+  },
+  "services_left_running": true
+}

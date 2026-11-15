@@ -1,0 +1,34 @@
+{
+  "name": "29_volume_key_enabled",
+  "method": "GET",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}",
+  "status": 200,
+  "body": {
+    "id": "e9ef0b54-9b38-4ec8-a37e-985cee31a719",
+    "name": "PORTAL-2979-20261116-v3-volume",
+    "fingerprint": "6B6C286B777B91599EBC4BB20A0EF12D9E3C9B68",
+    "algorithm": "rsa",
+    "length": 2048,
+    "origin": "uploaded",
+    "state": "enabled",
+    "status": "synced",
+    "tasks": []
+  },
+  "request_url": "http://localhost:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/e9ef0b54-9b38-4ec8-a37e-985cee31a719",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "29_volume_key_enabled/29_volume_key_enabled_parameters_01.png",
+    "29_volume_key_enabled/29_volume_key_enabled_response.png"
+  ],
+  "captured_at": "2026-11-15T18:56:18.773Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

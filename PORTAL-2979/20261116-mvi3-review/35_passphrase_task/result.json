@@ -1,0 +1,42 @@
+{
+  "name": "35_passphrase_task",
+  "method": "GET",
+  "path_template": "/tasks/{task_id}",
+  "status": 200,
+  "body": {
+    "id": "d5fa33b1-15a2-4a2c-a932-acb7c2672a23",
+    "created_at": "2026-11-15T18:55:22.781169Z",
+    "resource": "edge",
+    "resource_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "stack_id": null,
+    "action": "update_escrow_passphrase",
+    "executor": "edge",
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiated_by": "portal",
+    "initiator_id": "4edc49cf-270e-4f39-b7d9-694810e7b27b",
+    "activity_log_id": null,
+    "reason": null,
+    "state": "completed",
+    "last_updated_at": "2026-11-15T18:55:29.712530Z",
+    "user_acknowledged_at": null,
+    "deletion_time": "2026-11-22T18:55:29.712530Z",
+    "can_acknowledge": false
+  },
+  "request_url": "http://localhost:8000/tasks/d5fa33b1-15a2-4a2c-a932-acb7c2672a23",
+  "docs_url": "http://localhost:8000/docs#/Tasks/get_task_tasks__task_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "35_passphrase_task/35_passphrase_task_parameters_01.png",
+    "35_passphrase_task/35_passphrase_task_response.png"
+  ],
+  "captured_at": "2026-11-15T18:55:46.458Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

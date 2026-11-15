@@ -1,0 +1,27 @@
+{
+  "name": "37_escrow",
+  "method": "POST",
+  "path_template": "/encryption-keys/{key_id}/escrow",
+  "status": 202,
+  "body": {
+    "id": "a0d1efee-2d43-4f45-8585-5dff304aa176",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/encryption-keys/8b1c98f9-83f3-43a5-ba23-5ef71ba3011d/escrow",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/escrow_encryption_key_encryption_keys__key_id__escrow_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "37_escrow/37_escrow_parameters_01.png",
+    "37_escrow/37_escrow_response.png"
+  ],
+  "captured_at": "2026-11-15T18:55:50.910Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}

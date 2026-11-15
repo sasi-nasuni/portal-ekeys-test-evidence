@@ -1,0 +1,14 @@
+{
+  "task_id": "2f7ff26d-9eb7-48c2-93f7-369f0afd51f9",
+  "task_completed": true,
+  "downloaded_bytes": 7647,
+  "decryption_succeeded": true,
+  "generated_fingerprints_match_appliance": true,
+  "key_count": 2,
+  "fingerprints": [
+    "29470C5AA8EB787948BD1CD60413FA75D609C500",
+    "315A2B36A084945B93772B84AC36F961A0356AFF"
+  ],
+  "content_url_removed_after_retrieval": true,
+  "keygen_helper": "devtools/edge-console/app/keygen.py"
+}

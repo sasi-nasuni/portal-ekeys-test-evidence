@@ -1,0 +1,27 @@
+{
+  "name": "32_upload_console_keygen",
+  "method": "POST",
+  "path_template": "/encryption-keys",
+  "status": 202,
+  "body": {
+    "id": "5be04412-258d-48f4-858a-024e16f6ac46",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/encryption-keys",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/upload_encryption_key_encryption_keys_post",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "32_upload_console_keygen/32_upload_console_keygen_parameters_01.png",
+    "32_upload_console_keygen/32_upload_console_keygen_response.png"
+  ],
+  "captured_at": "2026-11-15T18:55:03.913Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}

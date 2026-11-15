@@ -1,0 +1,27 @@
+{
+  "name": "cleanup_unused_v3_key",
+  "method": "DELETE",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 202,
+  "body": {
+    "id": "29c79898-e602-47b0-b513-5eea8eb6e443",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/encryption-keys/41af9387-6e8f-4230-919d-846f682f5434",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/delete_encryption_key_encryption_keys__key_id__delete",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "cleanup_unused_v3_key/cleanup_unused_v3_key_parameters_01.png",
+    "cleanup_unused_v3_key/cleanup_unused_v3_key_response.png"
+  ],
+  "captured_at": "2026-11-15T18:56:44.472Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}
