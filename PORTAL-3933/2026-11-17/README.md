@@ -2,7 +2,7 @@
 
 - Ticket: https://nasuni.atlassian.net/browse/PORTAL-3933
 - Pull request: https://github.com/nasuni/portal/pull/3148
-- Application commit: `3bac71cf180803431536127b9cb17c02378419ad`. Shots 01–03, 10, 11 and 19 were recaptured from the working tree with a not-yet-pushed FileSelector change: the chooser (upload icon / "Change") now uses the shared white bordered `OutlinedButton`, matching the existing-keys card, instead of plain text on the grey card.
+- Application commit: `a517dc03947bc586bb818816a159211bb2bff98a`. Shots 01–03, 10, 11 and 19 were recaptured after the FileSelector chooser (upload icon / "Change") switched to the shared white bordered `OutlinedButton`, matching the existing-keys card.
 - Application branch: `sbhushan/PORTAL-3933_picker_drawer_ux`
 - Base: `feature/PM-1957-EKEYS_MVI_4` (`226ab1affc`, includes PORTAL-3934 #3149)
 - Captured: November 17, 2026. App: Chromium at 1440 × 1000, local frontend with Portal Dev Tools MSW scenarios and mock login. Storybook: 760 × 420 at 2× scale.
@@ -13,15 +13,13 @@
 Commands from `frontend/`:
 
 ```sh
-pnpm vitest run --project=int --browser.headless=true tests/int/routes/_authed.encryption-keys/VolumeKeysPage.test.tsx tests/int/routes/_authed.encryption-keys/dr-readiness.test.tsx
 pnpm vitest run --project=int --browser.headless=true tests/int/routes/_authed.encryption-keys tests/int/components/lib/forms/FileSelector.test.tsx tests/int/components/lib/forms/Checkbox.test.tsx tests/int/webbff/mutations/encryption-keys.test.tsx
 pnpm test:storybook packages/ui/component-docs/buttons/PrimaryButton.stories.tsx packages/ui/component-docs/buttons/OutlinedButton.stories.tsx packages/ui/component-docs/forms/FileSelector.stories.tsx packages/ui/component-docs/forms/Checkbox.stories.tsx
 pnpm ts:build --noEmit
 pnpm lint --fix <changed files>
 ```
 
-- `VolumeKeysPage.test.tsx` and `dr-readiness.test.tsx` together: 126/126 passed.
-- All 17 related files at once: 295–298/300 passed across runs. The failures were long `VolumeKeysPage` picker tests and one `dr-readiness` test, mostly 5 s timeouts plus a tooltip that didn't appear in time. They change from run to run, pass when their files run on their own, and appear only with 17 browser files running in parallel.
+- All 17 related files at once: 306/306 passed, in two consecutive full parallel runs. The long existing-key picker flows are split into nine focused tests (0.3–0.9 s each); before the split they timed out intermittently under parallel load.
 - Storybook: 38/38 passed across the 4 story files.
 - Type-check and lint passed.
 
