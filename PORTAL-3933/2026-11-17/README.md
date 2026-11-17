@@ -2,7 +2,7 @@
 
 - Ticket: https://nasuni.atlassian.net/browse/PORTAL-3933
 - Pull request: https://github.com/nasuni/portal/pull/3148
-- Application commit: `3bac71cf180803431536127b9cb17c02378419ad`
+- Application commit: `3bac71cf180803431536127b9cb17c02378419ad`. Shots 01–03, 10, 11 and 19 were recaptured from the working tree with a not-yet-pushed FileSelector change: the chooser (upload icon / "Change") now uses the shared white bordered `OutlinedButton`, matching the existing-keys card, instead of plain text on the grey card.
 - Application branch: `sbhushan/PORTAL-3933_picker_drawer_ux`
 - Base: `feature/PM-1957-EKEYS_MVI_4` (`226ab1affc`, includes PORTAL-3934 #3149)
 - Captured: November 17, 2026. App: Chromium at 1440 × 1000, local frontend with Portal Dev Tools MSW scenarios and mock login. Storybook: 760 × 420 at 2× scale.
@@ -29,8 +29,8 @@ pnpm lint --fix <changed files>
 
 | Image | Scenario and observation |
 | --- | --- |
-| [01 Add key](01-add-key.png) | Volume Keys actions → Engineering-Share → Add key. "Add key" heading with the volume and owner below it, the file card with requirements above, and Disable current keys unchecked. |
-| [02 Upload validation](02-upload-validation-long-filename.png) | Choose a non-OpenPGP file with a long name. Inline error below the card, name cut off with "…", Change and Remove controls. |
+| [01 Add key](01-add-key.png) | Volume Keys actions → Engineering-Share → Add key. "Add key" heading with the volume and owner below it, the file card with requirements above and a bordered upload button, and Disable current keys unchecked. |
+| [02 Upload validation](02-upload-validation-long-filename.png) | Choose a non-OpenPGP file with a long name. Inline error below the card, name cut off with "…", a bordered Change button and Remove. |
 | [03 Long filename on keyboard focus](03-long-filename-keyboard-tooltip.png) | Shift+Tab from Change to the cut-off filename: a tooltip shows the full name. |
 | [04 Empty existing keys](04-empty-existing-keys.png) | Select Existing (empty) → Research-Data. Select is greyed out but focusable (shared `OutlinedButton` with `aria-disabled`) and explains why on focus. |
 | [05 25-key limit](05-picker-25-limit.png) | Select Existing (26 keys) → select 25, search for the 26th: it can't be selected and the count reads "25 selected · Maximum 25 keys". |
