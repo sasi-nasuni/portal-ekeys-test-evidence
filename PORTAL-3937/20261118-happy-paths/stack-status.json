@@ -1,0 +1,86 @@
+[
+  {
+    "Service": "base",
+    "State": "exited",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:09:55 +0530 IST"
+  },
+  {
+    "Service": "db",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "CreatedAt": "2026-11-01 04:06:51 +0530 IST"
+  },
+  {
+    "Service": "db-migrate",
+    "State": "exited",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:06 +0530 IST"
+  },
+  {
+    "Service": "eventhub-poller",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:22 +0530 IST"
+  },
+  {
+    "Service": "frontend",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:09:55 +0530 IST"
+  },
+  {
+    "Service": "mcp",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:27 +0530 IST"
+  },
+  {
+    "Service": "pgadmin",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-01 04:05:52 +0530 IST"
+  },
+  {
+    "Service": "redis",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-01 04:05:52 +0530 IST"
+  },
+  {
+    "Service": "webapi",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:22 +0530 IST"
+  },
+  {
+    "Service": "webbff",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:23 +0530 IST"
+  },
+  {
+    "Service": "webbff-db-migrate",
+    "State": "exited",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:06 +0530 IST"
+  },
+  {
+    "Service": "webbffsse",
+    "State": "running",
+    "ExitCode": 0,
+    "Health": "",
+    "CreatedAt": "2026-11-18 20:10:06 +0530 IST"
+  }
+]

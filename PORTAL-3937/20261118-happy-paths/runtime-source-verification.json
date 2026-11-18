@@ -1,0 +1,9 @@
+{
+  "webapi_mounted_sources_match_worktree": true,
+  "sha256": {
+    "libs/portal-data/portal/data/encryption_keys/service.py": "0f99471c87f132fde08dbe39492d8493a61b5db28091000e7c95ae3a4ab1cebc",
+    "libs/portal-data/portal/data/encryption_keys/repo.py": "47626f42b558b0675410dd83b6c4ac88bd777f2e963e9a909be7738655dca027",
+    "portal-webapi/portal/webapi/v1/routes/encryption_keys.py": "08b6f9f73dce06341191182bf4dfc28fb63c5e7dbba3d2ec979168ec7486e9a4",
+    "libs/portal-api/portal/api/dto/encryption_keys.py": "401352e562dda5ee0670bb60f3bd02d236a776e2f29faf1433bc77d22206fe14"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "24_volume_disabled",
+  "method": "PATCH",
+  "path_template": "/volumes/{volume_id}/encryption-keys/{key_id}",
+  "status": 202,
+  "body": {
+    "id": "6ecdf38e-da8c-47bf-803a-7396c629b12e",
+    "state": "in_progress"
+  },
+  "request_url": "http://localhost:8000/volumes/0a1d5257-81d2-4bfd-ab67-06f6d9d12a3f_0/encryption-keys/bfe38174-dae7-429e-8ddc-f11938dd7437",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/update_volume_encryption_key_volumes__volume_id__encryption_keys__key_id__patch",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "24_volume_disabled_parameters_01.png",
+    "24_volume_disabled_response.png"
+  ],
+  "captured_at": "2026-11-18T14:47:24.854Z",
+  "outcome": "PASS",
+  "expected_status": 202
+}

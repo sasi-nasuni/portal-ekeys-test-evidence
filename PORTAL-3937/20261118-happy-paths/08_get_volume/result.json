@@ -1,0 +1,41 @@
+{
+  "name": "08_get_volume",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 200,
+  "body": {
+    "id": "bfe38174-dae7-429e-8ddc-f11938dd7437",
+    "name": "PORTAL-3937-20261118-volume",
+    "fingerprint": "6D2001ADA810FEB9DADCAC00C1ACFFF301F9C1D5",
+    "appliance_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "appliance_name": "DEV-E-KEYS-POC",
+    "algorithm": "rsa",
+    "length": 3072,
+    "type": "volume",
+    "origin": "uploaded",
+    "used": false,
+    "is_stub": false,
+    "status": "synced",
+    "tasks": [],
+    "volumes": [],
+    "is_escrowed": false,
+    "is_backup_key": false
+  },
+  "request_url": "http://localhost:8000/encryption-keys/bfe38174-dae7-429e-8ddc-f11938dd7437",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_encryption_key_encryption_keys__key_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "08_get_volume_parameters_01.png",
+    "08_get_volume_response.png"
+  ],
+  "captured_at": "2026-11-18T14:43:58.893Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

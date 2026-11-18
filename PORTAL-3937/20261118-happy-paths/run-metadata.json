@@ -1,0 +1,12 @@
+{
+  "application_commit": "ce4ad5840a33705c69e031bc9df65946b1eaa4f1",
+  "date": "2026-11-18",
+  "appliance": "DEV-E-KEYS-POC",
+  "volume": "E-Keys-Test-01",
+  "status": "complete",
+  "finished_at": "2026-11-18T14:50:41.443086+00:00",
+  "operations_covered": 16,
+  "swagger_requests_passed": 38,
+  "completed_tasks": 10,
+  "screenshots": 97
+}

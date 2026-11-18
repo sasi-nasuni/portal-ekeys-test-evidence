@@ -1,0 +1,28 @@
+{
+  "name": "17_export_console_content",
+  "method": "GET",
+  "path_template": "/edges/{edge_id}/encryption-key-downloads/{task_id}/content",
+  "status": 200,
+  "body": {
+    "bytes": 7647,
+    "sha256": "3d753d6a372c5a4587066908481e3317706a9078b5f6ca04a784c0b538430d96",
+    "content_type": "application/octet-stream"
+  },
+  "request_url": "http://localhost:8000/edges/31d629af-30b3-413e-a583-d5d3da651eb9/encryption-key-downloads/2a7887ef-f07f-4c8c-a2b2-04727419d13f/content",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/download_artifact_edges__edge_id__encryption_key_downloads__task_id__content_get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": null,
+    "binary_metadata_only": true
+  },
+  "screenshots": [
+    "17_export_console_content_parameters_01.png",
+    "17_export_console_content_response.png"
+  ],
+  "captured_at": "2026-11-18T14:46:22.186Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

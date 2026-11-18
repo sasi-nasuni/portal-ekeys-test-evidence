@@ -1,0 +1,27 @@
+{
+  "name": "42_deleted_key_readback",
+  "method": "GET",
+  "path_template": "/encryption-keys/{key_id}",
+  "status": 404,
+  "body": {
+    "message": "Encryption key not found",
+    "detail": null
+  },
+  "request_url": "http://localhost:8000/encryption-keys/7ecb5478-3179-4d91-9bf0-e7702091cf51",
+  "docs_url": "http://localhost:8000/docs#/Encryption%20Keys/get_encryption_key_encryption_keys__key_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "42_deleted_key_readback_parameters_01.png",
+    "42_deleted_key_readback_response.png"
+  ],
+  "captured_at": "2026-11-18T14:50:13.646Z",
+  "outcome": "PASS",
+  "expected_status": 404
+}

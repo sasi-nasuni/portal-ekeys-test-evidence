@@ -1,0 +1,42 @@
+{
+  "name": "07_upload_escrow-delete_task",
+  "method": "GET",
+  "path_template": "/tasks/{task_id}",
+  "status": 200,
+  "body": {
+    "id": "5786a9cb-15b9-4ece-bfd1-092e4f4e6369",
+    "created_at": "2026-11-18T14:42:35.110446Z",
+    "resource": "encryption_key",
+    "resource_id": "7ecb5478-3179-4d91-9bf0-e7702091cf51",
+    "stack_id": null,
+    "action": "upload_encryption_key",
+    "executor": "edge",
+    "executor_id": "31d629af-30b3-413e-a583-d5d3da651eb9",
+    "initiated_by": "portal",
+    "initiator_id": "4edc49cf-270e-4f39-b7d9-694810e7b27b",
+    "activity_log_id": null,
+    "reason": null,
+    "state": "completed",
+    "last_updated_at": "2026-11-18T14:43:00.068938Z",
+    "user_acknowledged_at": null,
+    "deletion_time": "2026-11-25T14:43:00.068938Z",
+    "can_acknowledge": false
+  },
+  "request_url": "http://localhost:8000/tasks/5786a9cb-15b9-4ece-bfd1-092e4f4e6369",
+  "docs_url": "http://localhost:8000/docs#/Tasks/get_task_tasks__task_id__get",
+  "source": "Served Swagger UI Try it out / Execute",
+  "network_verified": true,
+  "verification": {
+    "displayed_status_matches": true,
+    "displayed_url_matches": true,
+    "displayed_body_matches": true,
+    "binary_metadata_only": false
+  },
+  "screenshots": [
+    "07_upload_escrow-delete_task_parameters_01.png",
+    "07_upload_escrow-delete_task_response.png"
+  ],
+  "captured_at": "2026-11-18T14:43:11.038Z",
+  "outcome": "PASS",
+  "expected_status": 200
+}

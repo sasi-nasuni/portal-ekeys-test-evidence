@@ -1,0 +1,9 @@
+{
+  "key_id": "7ecb5478-3179-4d91-9bf0-e7702091cf51",
+  "upload_task": "5786a9cb-15b9-4ece-bfd1-092e4f4e6369",
+  "escrow_task": "defd08e1-2f34-4b4a-ba6b-cb71fb018343",
+  "delete_task": "2f88ff63-a7f4-46ee-aada-2efa73579dcf",
+  "all_completed": true,
+  "escrow_readback_true": true,
+  "deleted_key_readback_status": 404
+}
