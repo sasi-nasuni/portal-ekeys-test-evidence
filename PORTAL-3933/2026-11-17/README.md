@@ -2,7 +2,7 @@
 
 - Ticket: https://nasuni.atlassian.net/browse/PORTAL-3933
 - Pull request: https://github.com/nasuni/portal/pull/3148
-- Application commit: `a517dc03947bc586bb818816a159211bb2bff98a`. Shots 01–03, 10, 11 and 19 were recaptured after the FileSelector chooser (upload icon / "Change") switched to the shared white bordered `OutlinedButton`, matching the existing-keys card.
+- Application commit: `58fe5f2304`. Shots 01–03, 10, 11 and 19 were recaptured after the FileSelector chooser (upload icon / "Change") switched to the shared white bordered `OutlinedButton`; shots 08, 09 and 21 were recaptured after Done stopped blocking an empty selection. Other shots are unchanged by later commits.
 - Application branch: `sbhushan/PORTAL-3933_picker_drawer_ux`
 - Base: `feature/PM-1957-EKEYS_MVI_4` (`226ab1affc`, includes PORTAL-3934 #3149)
 - Captured: November 17, 2026. App: Chromium at 1440 × 1000, local frontend with Portal Dev Tools MSW scenarios and mock login. Storybook: 760 × 420 at 2× scale.
@@ -19,8 +19,8 @@ pnpm ts:build --noEmit
 pnpm lint --fix <changed files>
 ```
 
-- All 17 related files at once: 306/306 passed, in two consecutive full parallel runs. The long existing-key picker flows are split into nine focused tests (0.3–0.9 s each); before the split they timed out intermittently under parallel load.
-- Storybook: 38/38 passed across the 4 story files.
+- All 17 related files at once: 307/307 passed on `58fe5f2304`. The long existing-key picker flows are split into nine focused tests (0.3–0.9 s each); before the split they timed out intermittently under parallel load.
+- Storybook: 38/38 passed across the 4 story files on `58fe5f2304`.
 - Type-check and lint passed.
 
 ## Screenshot scenarios
@@ -34,7 +34,7 @@ pnpm lint --fix <changed files>
 | [05 25-key limit](05-picker-25-limit.png) | Select Existing (26 keys) → select 25, search for the 26th: it can't be selected and the count reads "25 selected · Maximum 25 keys". |
 | [06 Done while refreshing](06-done-refreshing-tooltip.png) | Select Existing (key disappears) → select Key A–D and focus Done. During the keyring refresh Done is greyed out (shared `PrimaryButton` with `aria-disabled`), keeps focus, and explains why. |
 | [07 Key no longer available](07-key-no-longer-available.png) | After the refresh, Key C is listed under "Keys no longer available" with its reason, A, B and D stay selected, and Done is enabled again. |
-| [08 All keys no longer available](08-all-keys-no-longer-available.png) | Select Existing (all keys disappear) → save Key A–D, reopen Change, wait for the refresh. All four are listed; "No other keys are available. Closing keeps your previous selection." Done is greyed out. |
+| [08 All keys no longer available](08-all-keys-no-longer-available.png) | Select Existing (all keys disappear) → save Key A–D, reopen Change, wait for the refresh. All four are listed with "No other keys are available. Closing keeps your previous selection." Done stays available; pressing it with nothing selected shows the requirement (shot 21) instead of saving. |
 | [09 Closing keeps the saved selection](09-closing-keeps-selection-server-rejects.png) | Close the picker: the drawer still shows 4 keys selected. Add key → the server rejects the keys that are no longer available, and the drawer shows the message. |
 | [10 Bulk Add key selection](10-bulk-add-selected-volumes.png) | Bulk Add Key Partial Failure → select all → Add key (10). "10 volumes" below the heading, the Selected volumes help tooltip, and the button "Add key to 10 volumes". |
 | [11 Bulk Add key partial failure](11-bulk-add-partial-failure.png) | Upload a generated key: "Key submitted for processing for 8 of 10 volumes. 2 failed…". The scope and button now read 2 volumes, and the failed volumes show their reason tooltip. |
@@ -47,3 +47,4 @@ pnpm lint --fix <changed files>
 | [18 OutlinedButton story](18-story-outlined-button-disabled-with-reason.png) | The same for `OutlinedButton`. |
 | [19 FileSelector story](19-story-file-selector-long-name-focus.png) | `LongFileName`: Tab to the cut-off filename to see its full name. |
 | [20 Checkbox story](20-story-checkbox-multiline-label.png) | `MultilineLabel`: the check lines up with the first line of a wrapped label. |
+| [21 Done with nothing selected](21-done-requires-selection.png) | Select Existing (26 keys) → open the picker and press Done without selecting a key. "Select at least one key." appears under the selection count, nothing is saved, and the drawer still shows No keys selected. |
